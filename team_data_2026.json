@@ -1,0 +1,55 @@
+{
+  "scrape_source": "manual_template",
+  "team_count": 4,
+  "teams": [
+    {
+      "name": "Duke",
+      "seed": 1,
+      "region": "East",
+      "adj_o": 123.5,
+      "adj_d": 89.2,
+      "adj_tempo": 68.1,
+      "record": "30-3",
+      "conference": "ACC",
+      "kenpom_rank": 1,
+      "three_pt_pct": 38.2
+    },
+    {
+      "name": "Michigan",
+      "seed": 1,
+      "region": "Midwest",
+      "adj_o": 121.8,
+      "adj_d": 90.1,
+      "adj_tempo": 67.5,
+      "record": "29-4",
+      "conference": "Big Ten",
+      "kenpom_rank": 2,
+      "three_pt_pct": 37.8
+    },
+    {
+      "name": "Arizona",
+      "seed": 1,
+      "region": "West",
+      "adj_o": 122.1,
+      "adj_d": 91.0,
+      "adj_tempo": 69.2,
+      "record": "28-4",
+      "conference": "Big 12",
+      "kenpom_rank": 3,
+      "three_pt_pct": 36.5
+    },
+    {
+      "name": "Florida",
+      "seed": 1,
+      "region": "South",
+      "adj_o": 120.9,
+      "adj_d": 89.8,
+      "adj_tempo": 66.8,
+      "record": "29-3",
+      "conference": "SEC",
+      "kenpom_rank": 4,
+      "three_pt_pct": 37.1
+    }
+  ],
+  "injury_reports": []
+}
