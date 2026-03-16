@@ -181,7 +181,7 @@ def write_to_supabase(bracket: dict):
         all_teams = []
         for region, teams in bracket.items():
             for team in teams:
-                all_teams.append({
+                row = {
                     "name": team["name"],
                     "seed": team["seed"],
                     "region": team["region"],
@@ -192,7 +192,10 @@ def write_to_supabase(bracket: dict):
                     "conference": team["conference"],
                     "kenpom_rank": team["kenpom_rank"],
                     "three_pt_pct": team["three_pt_pct"],
-                })
+                }
+                if team.get("injury_notes"):
+                    row["injury_notes"] = team["injury_notes"]
+                all_teams.append(row)
 
         result = client.table("mm_teams").upsert(all_teams, on_conflict="name").execute()
         print(f"\n✓ Wrote {len(all_teams)} teams to Supabase mm_teams table")

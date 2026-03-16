@@ -27,7 +27,8 @@ BRACKET_2026 = {
       "last_10_record": "9-1",
       "current_streak": "W7",
       "conference_tourney_result": "ACC Champion (beat Virginia 74-70, beat Clemson, beat FSU)",
-      "recent_form_notes": "Won ACC tourney, dominant all year, #1 overall seed"
+      "recent_form_notes": "Won ACC tourney, dominant all year, #1 overall seed",
+      "injury_notes": "Caleb Foster (G) — fractured foot in regular season finale vs UNC, had surgery. Likely OUT unless Duke makes deep run. Averaged 8.5 PPG, elite perimeter defender. Also Patrick Ngongba II questionable with foot soreness."
     },
     {
       "name": "Ohio State",
@@ -397,7 +398,8 @@ BRACKET_2026 = {
       "last_10_record": "5-5",
       "current_streak": "L2",
       "conference_tourney_result": "Lost Big 12 second round",
-      "recent_form_notes": "Fading, early conference tourney exit"
+      "recent_form_notes": "Fading, early conference tourney exit",
+      "injury_notes": "Richie Saunders (W) — torn ACL Feb 14, OUT for season. Averaged 18.0 PPG, shot 38% from three. Team went through rough stretch after injury but recovered late."
     },
     {
       "name": "NC State",
@@ -543,7 +545,8 @@ BRACKET_2026 = {
       "last_10_record": "8-2",
       "current_streak": "L1",
       "conference_tourney_result": "Lost Big Ten final to Purdue 72-80",
-      "recent_form_notes": "Great season but lost Big Ten final"
+      "recent_form_notes": "Great season but lost Big Ten final",
+      "injury_notes": "L.J. Cason (G) — torn ACL late February, OUT. Averaged 8.4 PPG off bench. Hurts depth but Michigan still has plenty of firepower."
     },
     {
       "name": "Georgia",
@@ -591,7 +594,8 @@ BRACKET_2026 = {
       "last_10_record": "6-4",
       "current_streak": "L1",
       "conference_tourney_result": "Lost Big 12 QF to Iowa State 53-75",
-      "recent_form_notes": "Blown out by Iowa State in conf tourney"
+      "recent_form_notes": "Blown out by Iowa State in conf tourney",
+      "injury_notes": "JT Toppin (F) — torn ACL Feb 17, OUT for season. Was averaging 21.8 PPG, 10.8 RPG on 54.8% shooting. Consensus All-American, Big 12 Player of the Year. Team went 3-3 without him. Replaced by Luke Bamgboye (3.9 PPG). This is a completely different team without their best player."
     },
     {
       "name": "Akron",
@@ -913,7 +917,8 @@ BRACKET_2026 = {
       "last_10_record": "6-4",
       "current_streak": "L1",
       "conference_tourney_result": "Lost ACC QF to Clemson 79-80",
-      "recent_form_notes": "Lost close game to Clemson in ACC tourney"
+      "recent_form_notes": "Lost close game to Clemson in ACC tourney",
+      "injury_notes": "Caleb Wilson (F) — OUT for tournament. Originally fractured left hand Feb 10, then broke right thumb in practice March 5 while rehabbing. Was averaging ~20 PPG, 9+ RPG. Team is significantly weakened without their best player."
     },
     {
       "name": "VCU",

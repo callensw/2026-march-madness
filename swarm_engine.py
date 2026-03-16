@@ -337,8 +337,9 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
         "PICK CONSISTENCY — THIS IS MANDATORY:\n"
         "Your pick MUST be logically consistent with your argument. If your analysis says Team A "
         "has serious problems, you CANNOT then pick Team A. Pick the team your analysis supports. "
-        "If you argue the underdog has the edge, PICK the underdog. Do NOT argue for one team "
-        "and then pick the other out of caution.\n\n"
+        "If you argue the underdog has the edge, PICK the underdog. If you say 'this screams upset,' "
+        "you MUST pick the upset. Do NOT argue for one team and then pick the other out of caution. "
+        "Your team_a_win_prob MUST match your argument's direction.\n\n"
         "BANNED PHRASES — never use these cliches:\n"
         "- 'house money' — find an original way to express the concept\n"
         "- 'playing with confidence' — be more specific about WHY\n"
@@ -623,11 +624,14 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
                 "- Cite historical base rates (that's Oracle's lane)\n"
                 "- Talk about coaching pedigree (that's Road Dog's lane)\n"
                 "Focus EXCLUSIVELY on hidden circumstances: injuries, fatigue, travel, locker room dynamics, schedule disadvantages.\n"
-                "ABSOLUTE BAN: Do NOT mention winning streaks, conference tournament wins, 'peaking', 'momentum', "
-                "'on a roll', or any form of streak/momentum language. Those words belong to Streak ONLY.\n"
+                "ABSOLUTE BAN: NEVER cite winning streaks, momentum runs, or conference tournament results. "
+                "That is Streak's EXCLUSIVE territory. You focus ONLY on injuries, fatigue, travel, rest, "
+                "hidden circumstances. The phrases 'winning streak', 'on a roll', 'peaking', 'momentum' "
+                "must NEVER appear in your output.\n"
                 "If you catch yourself writing about a team's winning streak, DELETE IT and replace with a "
                 "circumstance observation (fatigue, rest days, travel distance, injury concern, chemistry red flag).\n"
-                "YOUR unique value is what's happening BEHIND THE SCENES that nobody else is analyzing.\n\n"
+                "YOUR unique value is what's happening BEHIND THE SCENES that nobody else is analyzing.\n"
+                "When INJURY ALERT data is provided, that is YOUR primary weapon. Lead with injuries.\n\n"
                 "YOUR ANALYSIS MUST BE:\n"
                 "- Maximum 40 words for your argument\n"
                 "- One key stat cited (the specific number, not a paragraph about it)\n"
@@ -1397,6 +1401,7 @@ async def run_agent(
         + (f", conf_tourney={game.stats_a['conference_tourney_result']}" if game.stats_a.get('conference_tourney_result') else "")
         + (f", form_notes={game.stats_a['recent_form_notes']}" if game.stats_a.get('recent_form_notes') else "")
         + (f", tournament_wins={' → '.join(game.stats_a['tournament_wins'])}" if game.stats_a.get('tournament_wins') else "")
+        + (f"\n  *** INJURY ALERT: {game.stats_a['injury_notes']} ***" if game.stats_a.get('injury_notes') else "")
         + "\n\n"
         f"{game.team_b} stats: adj_o={game.stats_b.get('adj_o', '?')}, "
         f"adj_d={game.stats_b.get('adj_d', '?')}, tempo={game.stats_b.get('adj_tempo', '?')}, "
@@ -1409,6 +1414,7 @@ async def run_agent(
         + (f", conf_tourney={game.stats_b['conference_tourney_result']}" if game.stats_b.get('conference_tourney_result') else "")
         + (f", form_notes={game.stats_b['recent_form_notes']}" if game.stats_b.get('recent_form_notes') else "")
         + (f", tournament_wins={' → '.join(game.stats_b['tournament_wins'])}" if game.stats_b.get('tournament_wins') else "")
+        + (f"\n  *** INJURY ALERT: {game.stats_b['injury_notes']} ***" if game.stats_b.get('injury_notes') else "")
         + "\n"
     )
 
