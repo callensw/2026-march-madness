@@ -3049,27 +3049,11 @@ async def run_bracket(args):
                             if getattr(args, 'verbose', False):
                                 print_full_advancement_table(mc_result)
 
-                            # Write to Supabase if available
+                            # Write to Supabase
                             try:
-                                sb = supabase_client.get_client()
-                                if sb:
-                                    mc_records = []
-                                    for team_name, probs in mc_result.advancement_probs.items():
-                                        team = mc_result.team_info[team_name]
-                                        mc_records.append({
-                                            "team_name": team_name,
-                                            "seed": team.seed,
-                                            "region": team.region,
-                                            "prob_r32": round(probs.get("R32", 0), 4),
-                                            "prob_s16": round(probs.get("S16", 0), 4),
-                                            "prob_e8": round(probs.get("E8", 0), 4),
-                                            "prob_f4": round(probs.get("F4", 0), 4),
-                                            "prob_championship": round(probs.get("NCG", 0), 4),
-                                            "prob_winner": round(probs.get("Winner", 0), 4),
-                                            "n_simulations": mc_result.n_simulations,
-                                        })
-                                    # We'd write to mm_monte_carlo table here if it exists
-                                    log.info(f"  Monte Carlo: {len(mc_records)} team probabilities computed")
+                                from monte_carlo import write_results_to_supabase
+                                write_results_to_supabase(mc_result)
+                                log.info(f"  Monte Carlo: {len(mc_result.advancement_probs)} team probabilities written to Supabase")
                             except Exception as e:
                                 log.warning(f"  Monte Carlo Supabase write failed: {e}")
                     except Exception as e:

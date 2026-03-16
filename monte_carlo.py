@@ -396,42 +396,165 @@ def print_monte_carlo_report(result: MonteCarloResult):
 
 
 # ---------------------------------------------------------------------------
-# Standalone test
+# Load game probabilities from Supabase for standalone re-run
 # ---------------------------------------------------------------------------
-if __name__ == "__main__":
-    # Quick test with synthetic data
-    test_games = []
-    teams_data = [
-        ("Duke", 1, "East", 1), ("Siena", 16, "East", 192),
-        ("Ohio State", 8, "East", 26), ("TCU", 9, "East", 43),
-        ("St. John's", 5, "East", 16), ("Northern Iowa", 12, "East", 71),
-        ("Kansas", 4, "East", 21), ("Cal Baptist", 13, "East", 106),
-        ("Louisville", 6, "East", 19), ("USF", 11, "East", 49),
-        ("Michigan State", 3, "East", 9), ("North Dakota State", 14, "East", 113),
-        ("UCLA", 7, "East", 27), ("UCF", 10, "East", 54),
-        ("UConn", 2, "East", 12), ("Furman", 15, "East", 190),
-    ]
+def load_games_from_supabase() -> list[GameProb]:
+    """Load R64 game probabilities from mm_games table."""
+    import supabase_client
 
-    teams = {name: TeamSim(name, seed, region, kenpom)
-             for name, seed, region, kenpom in teams_data}
+    sb = supabase_client.get_client()
+    if not sb:
+        raise RuntimeError("Supabase client not available — check .env")
 
-    matchups = [(1, 16), (8, 9), (5, 12), (4, 13), (6, 11), (3, 14), (7, 10), (2, 15)]
-    probs = [0.99, 0.52, 0.64, 0.79, 0.62, 0.85, 0.61, 0.94]
+    resp = (
+        sb.table("mm_games")
+        .select("id, team_a, team_b, seed_a, seed_b, region, round, team_a_win_prob")
+        .eq("round", "R64")
+        .execute()
+    )
 
-    for (s1, s2), prob in zip(matchups, probs):
-        t1 = [t for t in teams.values() if t.seed == s1 and t.region == "East"][0]
-        t2 = [t for t in teams.values() if t.seed == s2 and t.region == "East"][0]
-        test_games.append(GameProb(
-            game_id=f"test_{s1}v{s2}",
-            team_a=t1, team_b=t2,
-            team_a_win_prob=prob,
+    games = []
+    for row in resp.data:
+        t_a = TeamSim(row["team_a"], row["seed_a"], row["region"])
+        t_b = TeamSim(row["team_b"], row["seed_b"], row["region"])
+        games.append(GameProb(
+            game_id=row["id"],
+            team_a=t_a,
+            team_b=t_b,
+            team_a_win_prob=float(row["team_a_win_prob"]),
             round_name="R64",
         ))
 
-    result = simulate_bracket(test_games, n_sims=10000, seed=42)
-    print_monte_carlo_report(result)
-    print_full_advancement_table(result)
+    return games
 
-    # Verify probabilities sum correctly
+
+def write_results_to_supabase(result: MonteCarloResult):
+    """Write Monte Carlo results to mm_monte_carlo table."""
+    import supabase_client
+
+    sb = supabase_client.get_client()
+    if not sb:
+        print("  Supabase client not available — skipping DB write")
+        return
+
+    # Get the current tournament ID
+    resp = sb.table("mm_tournaments").select("id").order("created_at", desc=True).limit(1).execute()
+    if not resp.data:
+        print("  No tournament found in mm_tournaments — skipping DB write")
+        return
+    tournament_id = resp.data[0]["id"]
+
+    mc_records = []
+    for team_name, probs in result.advancement_probs.items():
+        team = result.team_info[team_name]
+        mc_records.append({
+            "tournament_id": tournament_id,
+            "team_name": team_name,
+            "seed": team.seed,
+            "region": team.region,
+            "prob_r32": round(probs.get("R32", 0), 4),
+            "prob_s16": round(probs.get("S16", 0), 4),
+            "prob_e8": round(probs.get("E8", 0), 4),
+            "prob_f4": round(probs.get("F4", 0), 4),
+            "prob_championship": round(probs.get("NCG", 0), 4),
+            "prob_winner": round(probs.get("Winner", 0), 4),
+            "n_simulations": result.n_simulations,
+        })
+
+    sb.table("mm_monte_carlo").upsert(
+        mc_records, on_conflict="tournament_id,team_name"
+    ).execute()
+    print(f"  Wrote {len(mc_records)} team probabilities to mm_monte_carlo")
+
+
+# ---------------------------------------------------------------------------
+# Standalone entry point
+# ---------------------------------------------------------------------------
+if __name__ == "__main__":
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Monte Carlo Bracket Simulation")
+    parser.add_argument("--test", action="store_true", help="Run with synthetic test data")
+    parser.add_argument("--sims", type=int, default=10000, help="Number of simulations")
+    parser.add_argument("--verbose", action="store_true", help="Print full advancement table")
+    args = parser.parse_args()
+
+    if args.test:
+        # Synthetic 4-region test data
+        test_games = []
+        region_teams = {
+            "East": [
+                ("Duke", 1, 1), ("Siena", 16, 192),
+                ("Ohio State", 8, 26), ("TCU", 9, 43),
+                ("St. John's", 5, 16), ("Northern Iowa", 12, 71),
+                ("Kansas", 4, 21), ("Cal Baptist", 13, 106),
+                ("Louisville", 6, 19), ("USF", 11, 49),
+                ("Michigan State", 3, 9), ("North Dakota State", 14, 113),
+                ("UCLA", 7, 27), ("UCF", 10, 54),
+                ("UConn", 2, 12), ("Furman", 15, 190),
+            ],
+            "West": [
+                ("Arizona", 1, 2), ("LIU", 16, 250),
+                ("Villanova", 8, 30), ("Utah State", 9, 45),
+                ("Wisconsin", 5, 18), ("High Point", 12, 95),
+                ("Arkansas", 4, 22), ("Hawaii", 13, 110),
+                ("BYU", 6, 25), ("Texas", 11, 50),
+                ("Gonzaga", 3, 8), ("Kennesaw State", 14, 120),
+                ("Texas Tech", 7, 28), ("Akron", 10, 55),
+                ("Purdue", 2, 5), ("Queens", 15, 200),
+            ],
+            "South": [
+                ("Florida", 1, 3), ("Prairie View A&M", 16, 280),
+                ("Clemson", 8, 32), ("Iowa", 9, 40),
+                ("Vanderbilt", 5, 15), ("McNeese", 12, 80),
+                ("Nebraska", 4, 20), ("Troy", 13, 105),
+                ("UNC", 6, 24), ("VCU", 11, 48),
+                ("Virginia", 3, 10), ("Wright State", 14, 115),
+                ("Illinois", 7, 29), ("Penn", 10, 60),
+                ("Houston", 2, 4), ("Idaho", 15, 195),
+            ],
+            "Midwest": [
+                ("Michigan", 1, 6), ("Howard", 16, 260),
+                ("Georgia", 8, 33), ("Saint Louis", 9, 42),
+                ("Miami FL", 5, 17), ("Missouri", 12, 75),
+                ("Kentucky", 4, 23), ("Santa Clara", 13, 100),
+                ("Tennessee", 6, 26), ("Miami OH", 11, 52),
+                ("Alabama", 3, 11), ("Hofstra", 14, 118),
+                ("Saint Mary's", 7, 31), ("Texas A&M", 10, 56),
+                ("Iowa State", 2, 7), ("Tennessee State", 15, 210),
+            ],
+        }
+
+        matchups = [(1, 16), (8, 9), (5, 12), (4, 13), (6, 11), (3, 14), (7, 10), (2, 15)]
+        probs = [0.99, 0.52, 0.64, 0.79, 0.62, 0.85, 0.61, 0.94]
+
+        for region, teams_list in region_teams.items():
+            teams = {name: TeamSim(name, seed, region, kenpom) for name, seed, kenpom in teams_list}
+            for (s1, s2), prob in zip(matchups, probs):
+                t1 = [t for t in teams.values() if t.seed == s1][0]
+                t2 = [t for t in teams.values() if t.seed == s2][0]
+                test_games.append(GameProb(
+                    game_id=f"test_{region}_{s1}v{s2}",
+                    team_a=t1, team_b=t2,
+                    team_a_win_prob=prob,
+                    round_name="R64",
+                ))
+
+        result = simulate_bracket(test_games, n_sims=args.sims, seed=42)
+    else:
+        # Production mode: load from Supabase
+        print("Loading R64 game probabilities from Supabase...")
+        games = load_games_from_supabase()
+        print(f"  Loaded {len(games)} R64 games across {len(set(g.team_a.region for g in games))} regions")
+
+        result = simulate_bracket(games, n_sims=args.sims)
+
+        # Write results to Supabase
+        write_results_to_supabase(result)
+
+    print_monte_carlo_report(result)
+    if args.verbose:
+        print_full_advancement_table(result)
+
     total_champ = sum(result.championship_probs.values())
     print(f"\nTotal championship probability: {total_champ:.4f} (should be ~1.0)")
