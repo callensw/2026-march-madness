@@ -1,132 +1,132 @@
 # 🏀 #5 Vanderbilt vs #1 Michigan — Final Four Region, Final Four
-*2026-03-16T16:57:14.494764+00:00*
+*2026-03-16T17:47:41.558379+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Vandy's 67.1 tempo vs Michigan's 71.4 creates mismatch, but Wolverines' 2.4-point efficiency edge and elite defense (87.0 vs 89.4) overcomes pace control."
-   Win probability: Vanderbilt 0.42 ± 0.18
+🦅 **TEMPO HAWK**: "Vanderbilt's 67.1 tempo forces Michigan into uncomfortable half-court sets. Fewer possessions favor the experienced, disciplined team."
+   Win probability: Vanderbilt 0.54 ± 0.18
    *Key stat: 4.3 possession tempo gap favors Vanderbilt's grinding style*
 
-🛡️ **IRON CURTAIN**: "Vanderbilt's elite defense travels. They've suffocated better offenses than Michigan's. Tournament-tested stops beat regular season numbers."
-   Win probability: Vanderbilt 0.52 ± 0.18
-   *Key stat: Vanderbilt allows .427 opponent FG% vs Michigan's .384*
+🛡️ **IRON CURTAIN**: "Vanderbilt's elite defense travels. They held Houston to season-low scoring. Michigan's young core hasn't faced this suffocating pressure."
+   Win probability: Vanderbilt 0.54 ± 0.18
+   *Key stat: Vanderbilt allows 42.7% shooting vs Michigan's 38.4% - defensive gap is closing*
 
-💥 **GLASS CANNON** `[gemini]`: "Vanderbilt's 36.6% from three is DANGEROUS, especially against a Michigan team that's not elite at defending the perimeter! One hot night from Tanner or Nickel and it's OVER!"
+💥 **GLASS CANNON** `[gemini]`: "Vanderbilt's 36.6% from three is DANGEROUS! Michigan's only slightly better at 37.6%, but Vanderbilt's run shows they get hot when it matters. One big shooting night changes everything!"
    Win probability: Vanderbilt 0.48 ± 0.15
-   *Key stat: Vanderbilt 3PT%: 36.6%*
+   *Key stat: Vanderbilt 3PT% = 36.6%*
 
-🐺 **ROAD DOG** `[gemini]`: "Vanderbilt's senior-led roster, with Duke Miles and Devin McGlockton, has been here before. Michigan's younger core will crack under Final Four pressure. Experience wins."
-   Win probability: Vanderbilt 0.62 ± 0.15
-   *Key stat: Vanderbilt experience: 7.0/10 vs Michigan experience: 5.0/10*
-
-👁️ **WHISPER** `[gemini]`: "Everyone knows about Cason's ACL, but Michigan's travel is 3x Vanderbilt's. That extra fatigue, compounded by a deep tournament run, changes everything. Something doesn't add up."
+🐺 **ROAD DOG** `[gemini]`: "Vanderbilt's senior leadership, with Duke Miles and Devin McGlockton, has been here before. Michigan's younger roster will crack under this Final Four pressure. Experience wins."
    Win probability: Vanderbilt 0.58 ± 0.15
-   *Key stat: Michigan travel: 876.0mi vs Vanderbilt: 263.0mi*
+   *Key stat: Vanderbilt experience = 7.0/10 vs Michigan experience = 5.0/10*
 
-📜 **ORACLE**: "This screams 1985 Villanova over Georgetown. Vandy's tournament run mirrors classic Cinderellas - beat three higher seeds, elite shooting, veteran leadership."
+👁️ **WHISPER** `[gemini]`: "Everyone knows about Cason's ACL, but Michigan traveled 600+ more miles. Vanderbilt's veteran backcourt and fewer miles could be the hidden edge. Follow the breadcrumbs."
+   Win probability: Vanderbilt 0.58 ± 0.15
+   *Key stat: Michigan travel: 876.0mi vs Vanderbilt travel: 263.0mi*
+
+📜 **ORACLE**: "This screams 1985 Villanova. Vandy's tournament run mirrors classic Cinderellas - beat three higher seeds including #1 Florida. Michigan's young core lacks Final Four experience."
    Win probability: Vanderbilt 0.48 ± 0.18
-   *Key stat: Since 1985, 5-seeds are 3-11 in Final Fours but shot 38%+ from three in all three wins*
+   *Key stat: Since 1985, 5-seeds are 4-11 vs 1-seeds in Final Fours but won when they had veteran leadership*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching! Vanderbilt is 10-0 in their last 10, peaking at the perfect time. Michigan lost their conference final. Momentum is REAL!"
-   Win probability: Vanderbilt 0.62 ± 0.10
-   *Key stat: Vanderbilt's last 10: 10-0*
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. Vanderbilt is on a 4-game NCAA streak, beating two #1 seeds and a #2! Michigan's path was easier. Momentum is REAL!"
+   Win probability: Vanderbilt 0.58 ± 0.10
+   *Key stat: Vanderbilt's NCAA Tournament wins: 4 straight*
 
 
 ## Round 2 — Cross-Examination
 
 🦅 **TEMPO HAWK** (position: STRENGTHENED):
 
-   *Disagrees with:* Road Dog oversells experience when pace control is the real X-factor - Vanderbilt's 67.1 tempo forces Michigan into an uncomfortable half-court game.
+   *Disagrees with:* Glass Cannon ignores that pace control limits shooting opportunities — you can't get hot if you only get 12 three-point attempts instead of 18.
 
-   *Agrees with:* Iron Curtain correctly identifies that Vanderbilt's defense travels, which matters when they can dictate a slower pace that amplifies defensive stops.
+   *Agrees with:* Iron Curtain's defensive pressure analysis aligns perfectly — elite defense plus tempo control is a suffocating combination that travels well.
 
-   "Road Dog's experience argument ignores pace reality. Vanderbilt's slow grind neutralizes Michigan's talent edge, but Wolverines still have superior efficiency metrics."
-   Updated probability: Vanderbilt 0.38 ± 0.16
+   "Glass Cannon misses the point — Vanderbilt's tempo control neutralizes Michigan's shooting variance. Fewer possessions mean hot streaks matter less."
+   Updated probability: Vanderbilt 0.62 ± 0.15
 
 🛡️ **IRON CURTAIN** (position: STRENGTHENED):
 
-   *Disagrees with:* Tempo Hawk thinks Michigan's 'elite defense' at 87.0 will overcome Vandy's pace control, but 87.0 is mediocre at best.
+   *Disagrees with:* Glass Cannon thinks three-point shooting variance will save Michigan, but Vanderbilt's suffocating defense doesn't allow clean looks from deep.
 
-   *Agrees with:* Whisper's travel fatigue point reinforces that Michigan's legs will be heavy when Vandy grinds them down in the half-court.
+   *Agrees with:* Tempo Hawk reinforced that fewer possessions favor disciplined defensive teams like Vanderbilt in pressure situations.
 
-   "Tempo Hawk is WRONG. Michigan's 87.0 adj_d is SOFT. Vandy held Kentucky to 63 points. Defense travels, pace doesn't."
-   Updated probability: Vanderbilt 0.58 ± 0.16
+   "Glass Cannon is WRONG. Vanderbilt's defense held three top offenses under 65 points. Three-point variance doesn't matter when you can't get clean looks."
+   Updated probability: Vanderbilt 0.62 ± 0.12
 
-💥 **GLASS CANNON** (position: FLIPPED) `[gemini]`:
+💥 **GLASS CANNON** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain keeps talking about defense like it's 1995. We're in the three-point ERA!
+   *Disagrees with:* Iron Curtain keeps talking defense, but Michigan's perimeter D isn't stopping a hot shooting night. Their opponents shoot 35.1% from three.
 
-   *Agrees with:* Oracle gets it! Vanderbilt's shooting mirrors past Cinderellas, proving a hot hand can beat anyone.
+   *Agrees with:* Oracle gets it! This is a high-variance game. Vanderbilt's run is incredible, but Michigan can match their firepower!
 
-   "Vanderbilt's 36.6% from three IS the equalizer! Iron Curtain's defense talk ignores how one hot shooter makes ANY defense irrelevant. You can't coach a flamethrower!"
-   Updated probability: Vanderbilt 0.55 ± 0.15
+   "Vanderbilt's 36.6% from three is good, but Michigan's 37.6% is even better! And Michigan's Key Player 3 averages 40% on 7 attempts. They're going to get HOT!"
+   Updated probability: Vanderbilt 0.45 ± 0.16
 
 🐺 **ROAD DOG** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk's focus on tempo and efficiency misses the point; senior leadership dictates pace in March, not spreadsheets.
+   *Disagrees with:* Oracle's '1985 Villanova' comparison is just numbers. Michigan's young core lacks the battle-tested seniors that Villanova had.
 
-   *Agrees with:* Streak's focus on Vanderbilt's 10-0 run shows a veteran team peaking, which is exactly what my experience lens predicts.
+   *Agrees with:* Streak gets it. Vanderbilt's four straight NCAA wins show they've got the veteran grit to keep this run going.
 
-   "Tempo Hawk loves numbers, but experience trumps pace. Vanderbilt's senior guards, like Miles, have seen every tempo and won't be rattled. You can't measure that heart."
-   Updated probability: Vanderbilt 0.65 ± 0.12
+   "Michigan's young core hasn't seen this Final Four stage. Vanderbilt's veterans, like Miles, have been here before. Experience wins when the lights are brightest."
+   Updated probability: Vanderbilt 0.62 ± 0.12
 
 👁️ **WHISPER** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Road Dog focuses on experience, but fatigue from Michigan's deep run and minimal rest trumps any 'experience' advantage.
+   *Disagrees with:* Glass Cannon misses the point. Vanderbilt's shooting variance is less critical than Michigan's mounting fatigue and disrupted chemistry from injuries.
 
-   *Agrees with:* Streak understands that current form and circumstances matter, and Vanderbilt's lack of travel issues reinforces their advantage.
+   *Agrees with:* Road Dog understands the value of experience. That veteran leadership helps manage the physical toll of deep tournament runs.
 
-   "Everyone is debating numbers. But Michigan's deeper tournament run means more minutes and less recovery. The fatigue will hit hard. Follow the breadcrumbs."
+   "Everyone is still missing the fatigue factor. Michigan's deep tournament run means their bench minutes are up, compounding travel disadvantage. Vanderbilt's rotation is deeper."
    Updated probability: Vanderbilt 0.62 ± 0.12
 
 📜 **ORACLE** (position: FLIPPED):
 
-   *Disagrees with:* Road Dog overvalues experience - historically, upset 9-seeds won with elite shooting first, veteran leadership second.
+   *Disagrees with:* Road Dog claims experience wins, but historically veteran mid-majors get exposed against elite competition in later rounds.
 
-   *Agrees with:* Glass Cannon nailed it - Vanderbilt's 36.6% three-point shooting is the classic Cinderella weapon that's toppled 1-seeds before.
+   *Agrees with:* Streak's momentum argument aligns with 1985 Villanova - hot teams can ride variance through multiple games.
 
-   "Road Dog's experience argument ignores history. Since 1985, 9-seeds beat 1-seeds when they had SHOOTING, not just seniors. Vandy has both."
+   "Road Dog overrates experience. Since 1985, veteran 11-seeds are 12-45 vs higher seeds in Elite Eight+. Youth beats age."
    Updated probability: Vanderbilt 0.52 ± 0.16
 
 🔥 **STREAK** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Oracle wants to talk about 1985. I care about Vanderbilt's 10-0 run RIGHT NOW; history is stale.
+   *Disagrees with:* Oracle is wrong; historical base rates are irrelevant. Vanderbilt's current 4-game win streak in the NCAA Tournament matters more than any 1985 comparison.
 
-   *Agrees with:* Road Dog sees the senior experience. That's a team that knows how to keep winning when it matters, reinforcing their current streak.
+   *Agrees with:* Whisper reinforced my view; Michigan's travel miles and Vanderbilt's veteran backcourt add another layer to their current hot streak.
 
-   "Vanderbilt's 10-game streak is peak performance. Michigan lost their final — that's a momentum killer. Recent form is everything; Oracle's history is irrelevant."
-   Updated probability: Vanderbilt 0.65 ± 0.12
+   "Vanderbilt's momentum is undeniable! Oracle wants to talk about 1985. I want to talk about LAST WEEK. This team just beat two #1 seeds and a #2. They are peaking RIGHT NOW!"
+   Updated probability: Vanderbilt 0.62 ± 0.12
 
 
 ### Upset Watch
-**Upset Score: 41.4/100** | Upset score 41/100 for #5 Vanderbilt over #1 Michigan. Historical upset rate: 50.0%. Agent support: 4-3 for Vanderbilt.
-   *Agent split: 4-3 for Vanderbilt | Historical upset rate: 50.0%*
+**Upset Score: 47.1/100** | Upset score 47/100 for #5 Vanderbilt over #1 Michigan. Historical upset rate: 50.0%. Agent support: 5-2 for Vanderbilt.
+   *Agent split: 5-2 for Vanderbilt | Historical upset rate: 50.0%*
    *Statistical edges: Tempo mismatch (4.3 poss/game gap)*
 
 
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Vanderbilt 0.56 ± 0.17
+Combined probability: Vanderbilt 0.58 ± 0.15
 
-**PICK: Vanderbilt** (56% — lean, high uncertainty)
+**PICK: Vanderbilt** (58% — lean, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Road Dog and Streak won this debate — Vanderbilt's senior experience and 10-0 streak trump Michigan's efficiency edge. Glass Cannon's flip to Vandy's shooting threat was compelling. Iron Curtain's defense-travels argument sealed it. When five seeds get hot in March, spreadsheets become kindling."
+🎼 **THE CONDUCTOR**: "Iron Curtain and Streak won this debate — elite defense plus momentum beats youth. Oracle's flip to Michigan based on historical patterns was compelling but overruled by Vanderbilt's current 4-game NCAA streak. Glass Cannon's shooting variance argument couldn't overcome defensive suffocation. The Commodores' Final Four run continues."
 
-   *Key factor: Senior experience and current momentum vs efficiency metrics*
+   *Key factor: Elite defense combined with tournament momentum*
 
-   *Most weighted: Road Dog*
+   *Most weighted: Iron Curtain*
 
-   *Dissent report: Tempo Hawk lost by overvaluing Michigan's marginal efficiency edge while underestimating how Vanderbilt's pace control neutralizes talent gaps. Glass Cannon's flip showed even shooting specialists see Vandy's three-point threat as decisive.*
+   *Dissent report: Glass Cannon and Oracle argued for Michigan's shooting upside and historical precedent, but Oracle's flip showed uncertainty about veteran mid-majors in late rounds — their base rate argument was solid but couldn't match Vanderbilt's current hot streak evidence.*
 
 
 ---
 ### Specialist Vote: 6-1 Vanderbilt
 
-🦅Michigan 🛡️Vanderbilt 💥Vanderbilt 🐺Vanderbilt 👁️Vanderbilt 📜Vanderbilt 🔥Vanderbilt
+🦅Vanderbilt 🛡️Vanderbilt 💥Michigan 🐺Vanderbilt 👁️Vanderbilt 📜Vanderbilt 🔥Vanderbilt
 
 CONDUCTOR AGREES: Vanderbilt (50%)
 
@@ -134,5 +134,5 @@ CONDUCTOR AGREES: Vanderbilt (50%)
 ---
 ### Vote Tally
 
-- **Michigan**: Tempo Hawk (1 votes)
-- **Vanderbilt**: Iron Curtain, Glass Cannon, Road Dog, Whisper, Oracle, Streak (6 votes)
+- **Vanderbilt**: Tempo Hawk, Iron Curtain, Road Dog, Whisper, Oracle, Streak (6 votes)
+- **Michigan**: Glass Cannon (1 votes)

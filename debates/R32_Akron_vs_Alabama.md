@@ -1,103 +1,103 @@
 # 🏀 #12 Akron vs #4 Alabama — Midwest Region, Round of 32
-*2026-03-16T16:49:25.732168+00:00*
+*2026-03-16T17:40:22.761935+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Akron's grinding 70.7 tempo forces Alabama into uncomfortable half-court sets. Veteran guards control pace, neutralizing talent gap in fewer possessions."
-   Win probability: Akron 0.32 ± 0.16
-   *Key stat: 70.7 possessions per game (Akron tempo)*
+🦅 **TEMPO HAWK**: "Minimal tempo gap negates Akron's pace advantage. Alabama's 5.5-point efficiency edge decisive in similar-possession game."
+   Win probability: Akron 0.32 ± 0.12
+   *Key stat: Alabama 126.8 adj_o vs Akron 121.3 — 5.5 point edge per 100 possessions*
 
-🛡️ **IRON CURTAIN**: "Alabama's 92.6 defensive efficiency vs Akron's 96.5. Crimson Tide gets stops when it matters. Defense travels in March."
-   Win probability: Akron 0.32 ± 0.15
-   *Key stat: Alabama allows 43.3% shooting vs Akron's 42.1% - Alabama's D is legitimately better*
+🛡️ **IRON CURTAIN**: "Alabama's 92.6 adj_d isn't elite. Akron's seniors can grind in half-court. Defense gap too small for blowout."
+   Win probability: Akron 0.32 ± 0.18
+   *Key stat: Alabama allows 43.3% opponent FG% - vulnerable to Akron's balanced attack*
 
-💥 **GLASS CANNON** `[gemini]`: "Akron's 36.6% from three is DANGEROUS, especially with Scott shooting 42.2%! They just beat a 5-seed, they're hot! One hot quarter and it's OVER!"
+💥 **GLASS CANNON** `[gemini]`: "Akron is shooting lights out, and Alabama's defense is vulnerable! Scott and Hardman are FLAMETHROWERS! One hot quarter changes everything!"
    Win probability: Akron 0.48 ± 0.15
-   *Key stat: Akron 3PT% = 36.6%*
+   *Key stat: Akron 3PT% 36.6% vs Alabama 3PT% 36.9%*
 
-🐺 **ROAD DOG** `[gemini]`: "Akron's senior-led roster, with Tavari Johnson and Amani Lyles, just beat a Power-5 team. Alabama's young squad, experience 4.0, will crack under pressure. I've seen this movie."
+🐺 **ROAD DOG** `[gemini]`: "Akron's senior-led squad, with Tavari Johnson and Amani Lyles, just beat a Power 5 team. Alabama's young roster, experience 4.0/10, will crack under that pressure. I've seen this movie."
    Win probability: Akron 0.62 ± 0.15
-   *Key stat: Akron experience: 8.0/10 vs Alabama experience: 4.0/10*
+   *Key stat: Akron experience: 8.0/10*
 
-👁️ **WHISPER** `[gemini]`: "Akron's short rest and 900+ miles of travel after a tough R64 game is a major red flag. Alabama has two more rest days and less travel."
-   Win probability: Akron 0.61 ± 0.15
-   *Key stat: Akron: 3 rest days, 949 miles travel vs Alabama: 5 rest days, 590 miles travel*
+👁️ **WHISPER** `[gemini]`: "Alabama's early SEC tourney exit points to hidden issues. Akron has less rest and more travel, but that earlier upset suggests they're finding a rhythm."
+   Win probability: Akron 0.58 ± 0.15
+   *Key stat: Alabama lost QF to 15-seed Ole Miss*
 
-📜 **ORACLE**: "Classic 4v12 upset setup. Alabama's young roster (4.0 experience) and SEC tourney collapse mirrors 2013 Georgetown vs FGCU."
-   Win probability: Akron 0.42 ± 0.15
+📜 **ORACLE**: "4v12 base rate is 79% but Alabama's SEC collapse mirrors 2018 Virginia. Akron's senior experience trumps talent gap."
+   Win probability: Akron 0.32 ± 0.15
    *Key stat: Alabama lost SEC QF as 2-seed to 15-seed Ole Miss*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching! Akron is RED-HOT, riding a 6-game win streak including a huge upset. Alabama lost their conference opener. Momentum is REAL!"
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets—I've been watching! Akron is on a 6-game winning streak, just won their conference, and took down a 5-seed. Alabama is vulnerable, losing their last conference tournament game. Momentum is REAL!"
    Win probability: Akron 0.62 ± 0.15
-   *Key stat: Akron's last 10: 10-0*
+   *Key stat: Akron's last 10 games: 10-0*
 
 
 ## Round 2 — Cross-Examination
 
-🦅 **TEMPO HAWK** (position: STRENGTHENED):
+🦅 **TEMPO HAWK** (position: WEAKENED):
 
-   *Disagrees with:* Whisper overvalues travel fatigue when Akron's grinding pace actually conserves energy through fewer possessions.
+   *Disagrees with:* Road Dog ignores that slower pace neutralizes experience advantage by reducing total possessions where veterans can impact the game.
 
-   *Agrees with:* Road Dog correctly identifies Akron's veteran leadership as crucial for executing disciplined pace control.
+   *Agrees with:* Glass Cannon correctly identifies that similar three-point percentages create variance that could swing this game either direction.
 
-   "Whisper's travel concern is overblown - Akron's 70.7 tempo neutralizes fatigue by limiting possessions. Fewer sprints, more control."
-   Updated probability: Akron 0.35 ± 0.14
+   "Road Dog overrates experience. Akron's 67.5 possessions per game means fewer chances to exploit Alabama's efficiency edge."
+   Updated probability: Akron 0.38 ± 0.14
 
-🛡️ **IRON CURTAIN** (position: STRENGTHENED):
+🛡️ **IRON CURTAIN** (position: WEAKENED):
 
-   *Disagrees with:* Road Dog thinks experience matters more than defense - Alabama's young legs will run Akron's old guards into the ground.
+   *Disagrees with:* Glass Cannon is living in fantasy land - Alabama's 43.3% opponent FG% shows they can get stops when it matters.
 
-   *Agrees with:* Tempo Hawk gets it - slower pace helps underdogs, but Alabama's defense is built for grinding games.
+   *Agrees with:* Road Dog nailed the experience factor - Akron's seniors won't fold under pressure like Alabama's young roster might.
 
-   "Road Dog is DEAD WRONG about experience. Alabama's defense held Auburn to 49 points. Defense doesn't need experience - it needs fundamentals."
-   Updated probability: Akron 0.28 ± 0.14
+   "Road Dog's right about experience, but Alabama's defense ISN'T that bad. 92.6 adj_d is solid. Akron's offense faces real resistance."
+   Updated probability: Akron 0.42 ± 0.16
 
-💥 **GLASS CANNON** (position: WEAKENED) `[gemini]`:
+💥 **GLASS CANNON** (position: FLIPPED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain keeps talking about defensive efficiency like it stops three-pointers when they're falling, which it doesn't.
+   *Disagrees with:* Tempo Hawk is wrong; pace means nothing when a team is hitting from anywhere on the court! Their 'efficiency edge' is meaningless if shots aren't falling.
 
-   *Agrees with:* Streak gets it! Akron's 6-game win streak shows they're scorching hot right now, and you can't coach that kind of shooting!
+   *Agrees with:* Streak gets it! Akron's 6-game win streak shows they're scorching hot at the right time. Momentum for a shooter is EVERYTHING!
 
-   "Akron's 36.6% from deep IS the equalizer! Iron Curtain keeps talking defense, but one hot night from beyond the arc and Alabama's efficiency is MEANINGLESS!"
-   Updated probability: Akron 0.52 ± 0.16
+   "Akron's 36.6% from three is still DANGEROUS, especially against a team allowing 34.2% from deep. One hot shooter changes everything!"
+   Updated probability: Akron 0.52 ± 0.15
 
 🐺 **ROAD DOG** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Oracle's '2013 Georgetown' comparison is just history. This Akron team has a 28-5 record and veteran leadership, not a fluke.
+   *Disagrees with:* Tempo Hawk loves the numbers, but they don't capture how Alabama's young roster, with only 4.0 experience, cracks under pressure, regardless of efficiency.
 
-   *Agrees with:* Streak gets it. Akron's 6-game win streak, with those seniors leading, shows they're battle-hardened and ready for March.
+   *Agrees with:* Streak gets it. Akron's winning streak, fueled by veterans, shows real toughness and chemistry that analytics can't measure.
 
-   "Akron's seniors, like Tavari Johnson, just proved their mettle against a Power-5. Alabama's youth won't handle that pressure. You can't measure heart on a spreadsheet."
+   "Akron's seniors, like Tavari Johnson, just proved they can handle March pressure. Alabama's young squad with a 4.0 experience score will fold again. Experience wins."
    Updated probability: Akron 0.65 ± 0.12
 
 👁️ **WHISPER** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk believes Akron's tempo neutralizes Alabama's talent, but fatigue changes all tempo plans, favoring the fresher legs of Alabama's deeper bench, not Akron's starting five.
+   *Disagrees with:* Glass Cannon isn't seeing the full picture; Akron's 3PT% is strong, but Alabama's injury is the real unknown that changes everything, not just shooting.
 
-   *Agrees with:* Glass Cannon highlights Akron's dangerous shooting, and while not my lane, it suggests a team that can overcome fatigue if the other team isn't truly rested.
+   *Agrees with:* Road Dog sees the experience factor, but Akron's specific injury situation makes Alabama's youth even more vulnerable.
 
-   "Everyone is still missing that Alabama's lack of rest and 590 travel miles for a 'home' game in this context is a fatigue trap. Akron's rest disadvantage is real, but Alabama isn't fresh."
-   Updated probability: Akron 0.68 ± 0.12
+   "Everyone's debating numbers, but Alabama's deeper issues are showing. Their starting forward played 15 minutes last game, nursing a leg injury. Something's off."
+   Updated probability: Akron 0.62 ± 0.12
 
 📜 **ORACLE** (position: STRENGTHENED):
 
-   *Disagrees with:* Whisper overvalues travel fatigue - historically, Cinderella teams thrive on adrenaline regardless of miles.
+   *Disagrees with:* Glass Cannon thinks hot shooting guarantees upsets, but historically elite 3PT teams like 2019 Auburn (42.6%) still lose when shots don't fall.
 
-   *Agrees with:* Road Dog nailed the experience gap - Alabama's 4.0 rating screams upset victim like 2013 Georgetown.
+   *Agrees with:* Road Dog nailed the experience factor - Alabama's 4.0/10 experience mirrors past 4-seed upset victims like 2018 Virginia.
 
-   "Whisper's travel excuse is weak. 2018 Loyola-Chicago traveled 1,200+ miles between games, still made Final Four. Experience trumps logistics."
-   Updated probability: Akron 0.38 ± 0.15
+   "Glass Cannon ignores history: 3PT shooting variance kills underdogs. 2019 Auburn shot 42% all season, went 5-23 vs Virginia."
+   Updated probability: Akron 0.28 ± 0.16
 
 🔥 **STREAK** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk wants to talk about pace. I say, what about Alabama's 1-1 record in their last two games? Momentum crushes pace arguments.
+   *Disagrees with:* Tempo Hawk's efficiency metrics are stale. Akron's current win streak completely negates his season-long numbers. What have they done LATELY?
 
-   *Agrees with:* Road Dog sees Akron's senior leadership and recent upset, just like I see a team that's playing its best basketball RIGHT NOW.
+   *Agrees with:* Whisper correctly points out Alabama's early conference exit, showing they're deflated. Akron's recent upset proves their momentum is real.
 
-   "Akron's 10-0 streak in their last 10 games, including the conference title and an upset, shows they're peaking. Alabama lost their last game; that's FADING."
-   Updated probability: Akron 0.68 ± 0.12
+   "Tempo Hawk talks efficiency, but Akron's 10-0 streak in their last 10 games shows they're peaking. Alabama's recent form is weak. Momentum is still with the Zips!"
+   Updated probability: Akron 0.65 ± 0.12
 
 
 ### Upset Watch
@@ -109,18 +109,18 @@
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Akron 0.52 ± 0.21
+Combined probability: Akron 0.51 ± 0.20
 
-**PICK: Akron** (52% — genuine toss-up, high uncertainty)
+**PICK: Akron** (51% — genuine toss-up, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Road Dog and Streak won this debate - Akron's veteran leadership and 6-game win streak trump Alabama's talent. Glass Cannon's flip to uncertainty shows even the offense specialist sees Alabama's vulnerabilities. Experience beats youth in March madness."
+🎼 **THE CONDUCTOR**: "Road Dog and Streak won this debate decisively. Glass Cannon's flip to Akron after recognizing momentum over metrics was compelling. Alabama's youth (4.0 experience) versus Akron's battle-tested seniors creates the decisive mismatch. When March madness calls, experience answers."
 
-   *Key factor: Experience gap between veteran Akron seniors and young Alabama roster*
+   *Key factor: Experience gap between Alabama's young roster and Akron's senior-heavy team*
 
    *Most weighted: Road Dog*
 
-   *Dissent report: Iron Curtain and Tempo Hawk lost - defensive efficiency and pace control can't overcome the fundamental issue of Alabama's 4.0 experience rating facing battle-tested seniors who just upset a Power-5 team*
+   *Dissent report: Oracle and Tempo Hawk lost by overweighting efficiency metrics while undervaluing Akron's proven March experience and current momentum streak*
 
 
 ---

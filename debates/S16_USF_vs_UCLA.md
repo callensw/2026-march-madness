@@ -1,132 +1,132 @@
 # 🏀 #11 USF vs #7 UCLA — East Region, Sweet 16
-*2026-03-16T16:52:45.430601+00:00*
+*2026-03-16T17:43:23.704197+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Minimal tempo difference means efficiency decides it. UCLA's 4-point offensive edge per possession accumulates over 67-possession game."
-   Win probability: USF 0.32 ± 0.12
-   *Key stat: UCLA 124.8 adj_o vs USF 120.9 - 4-point efficiency gap*
+🦅 **TEMPO HAWK**: "Minimal tempo gap means efficiency decides it. UCLA's 124.8 offensive rating beats USF's 120.9 in similar-pace matchup."
+   Win probability: USF 0.32 ± 0.15
+   *Key stat: UCLA 66.7 tempo vs USF 67.6 - no pace mismatch advantage*
 
-🛡️ **IRON CURTAIN**: "Identical defensive efficiency makes this a grind. USF's proven they can beat better teams. UCLA's 91.5 adj_d is vulnerable in tournament pressure."
+🛡️ **IRON CURTAIN**: "Identical defensive efficiency means ugly slugfest. USF's tournament-tested defense just neutralized Michigan State's offense. Defense travels in March grind games."
+   Win probability: USF 0.52 ± 0.18
+   *Key stat: USF adj_d 91.0 vs UCLA 91.5 - defensive stalemate*
+
+💥 **GLASS CANNON** `[gemini]`: "UCLA shoots lights out from three at 37.9%! USF's 33.9% just won't cut it when UCLA gets hot. You can't coach that kind of shooting!"
+   Win probability: USF 0.47 ± 0.15
+   *Key stat: UCLA 3PT%: 37.9%*
+
+🐺 **ROAD DOG** `[gemini]`: "USF's senior-led squad, with Izaiyah Nelson and Joseph Pinion, has already proven its toughness by knocking off two blue bloods. That experience is invaluable. UCLA's a good team, but they haven't faced this kind of grit."
    Win probability: USF 0.58 ± 0.15
-   *Key stat: USF allows 41.3% shooting vs UCLA's 43.3%*
+   *Key stat: USF experience = 7.0/10*
 
-💥 **GLASS CANNON** `[gemini]`: "UCLA's 3PT% is ON FIRE at 37.9%! USF shoots just 33.9%, and that difference is HUGE. UCLA has multiple shooters; they can absolutely catch fire and bury USF. You can't coach that!"
-   Win probability: USF 0.45 ± 0.15
-   *Key stat: UCLA 3PT% = 37.9%*
+👁️ **WHISPER** `[gemini]`: "UCLA traveled nearly 2400 miles, over double USF's distance. Fatigue accumulates, impacting decision-making and shooting late in games. That's a huge burden."
+   Win probability: USF 0.61 ± 0.18
+   *Key stat: UCLA travel: 2398.0mi*
 
-🐺 **ROAD DOG** `[gemini]`: "USF's senior leadership, led by Izaiyah Nelson and Joseph Pinion, has already proven they can handle pressure. They've been here before, winning their conference and two tournament games. UCLA's got experience too, but USF's run is real."
-   Win probability: USF 0.58 ± 0.15
-   *Key stat: USF experience=7.0/10*
+📜 **ORACLE**: "7v11 base rate is 37.5% upset rate since 1985. USF's elite defense plus tempo control mirrors 2006 George Mason profile perfectly."
+   Win probability: USF 0.42 ± 0.15
+   *Key stat: USF allows 41.3% FG%, UCLA shoots 43.3% against opponents*
 
-👁️ **WHISPER** `[gemini]`: "UCLA's extensive travel of 2398 miles compared to USF's 919 miles is a significant fatigue factor. This travel disparity could impact their late-game execution."
-   Win probability: USF 0.61 ± 0.15
-   *Key stat: UCLA travel: 2398 miles vs. USF travel: 919 miles*
-
-📜 **ORACLE**: "11v7 base rate is 37.5% upset rate since 1985. USF's pace control and Nelson's interior dominance mirrors 2006 George Mason blueprint."
-   Win probability: USF 0.58 ± 0.15
-   *Key stat: 11-seeds upset 7-seeds 37.5% historically*
-
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. USF is on a 6-game winning streak and just took down two higher seeds. They're peaking RIGHT NOW. UCLA's recent form is strong, but USF is riding an undeniable wave."
-   Win probability: USF 0.58 ± 0.10
-   *Key stat: USF: W6 streak, 10-0 last 10*
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — USF is on a 6-game winning streak, just won their conference, and has taken down two higher seeds. They're peaking RIGHT NOW. UCLA just lost in their conference semi-finals. Momentum is real!"
+   Win probability: USF 0.62 ± 0.15
+   *Key stat: USF last 10: 10-0*
 
 
 ## Round 2 — Cross-Examination
 
-🦅 **TEMPO HAWK** (position: STRENGTHENED):
+🦅 **TEMPO HAWK** (position: WEAKENED):
 
-   *Disagrees with:* Glass Cannon overvalues shooting percentage without considering pace - fewer possessions means less opportunity for hot streaks to matter.
+   *Disagrees with:* Glass Cannon overvalues UCLA's three-point percentage without considering that slower pace means fewer three-point attempts per game.
 
-   *Agrees with:* Iron Curtain correctly identifies this as a defensive grind where efficiency margins shrink in low-possession games.
+   *Agrees with:* Iron Curtain correctly identifies this as a defensive slugfest where efficiency margins shrink in low-possession games.
 
-   "Glass Cannon ignores pace context. UCLA's 37.9% 3PT% comes in 67-possession games. Fewer shots means less variance, more efficiency control."
-   Updated probability: USF 0.35 ± 0.14
+   "Glass Cannon ignores pace context. UCLA's 37.9% three-point shooting comes in 67-possession games. Fewer possessions mean fewer threes attempted."
+   Updated probability: USF 0.38 ± 0.16
 
 🛡️ **IRON CURTAIN** (position: STRENGTHENED):
 
-   *Disagrees with:* Tempo Hawk thinks efficiency accumulates over 67 possessions like this is a regular season game - tournament pressure changes everything.
+   *Disagrees with:* Glass Cannon thinks three-point shooting percentage matters but ignores that USF's defense forces teams into bad shots and contested looks.
 
-   *Agrees with:* Whisper's travel data reinforces that UCLA faces additional fatigue factors beyond just defensive vulnerability.
+   *Agrees with:* Oracle's data on USF allowing 41.3% FG% while UCLA shoots 43.3% confirms my defensive efficiency thesis perfectly.
 
-   "Tempo Hawk ignores tournament reality. UCLA's 91.5 adj_d gets EXPOSED in March grind. USF's defense travels, offense disappears under pressure."
-   Updated probability: USF 0.62 ± 0.14
+   "Glass Cannon is WRONG. UCLA's 37.9% three-point shooting means NOTHING when USF forces 41.3% overall shooting. Defense chokes out offense in March."
+   Updated probability: USF 0.58 ± 0.16
 
-💥 **GLASS CANNON** (position: FLIPPED) `[gemini]`:
+💥 **GLASS CANNON** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain keeps talking about defense, but USF allows 35.1% from three, making them vulnerable to UCLA's hot shooting.
+   *Disagrees with:* Iron Curtain keeps talking about defense like it's 1995! We're in the three-point ERA; one hot night from beyond the arc makes defensive efficiency MEANINGLESS!
 
-   *Agrees with:* Tempo Hawk's offensive efficiency gap highlights UCLA's scoring potential, which aligns with my focus on their hot shooting.
+   *Agrees with:* Tempo Hawk gets it; if the pace is similar, shooting becomes paramount, and UCLA's offense is just better!
 
-   "UCLA's 37.9% from three is still a game-changer! USF's defense allows 35.1% from deep, that's VULNERABLE. One hot night from beyond the arc and USF is toast! Variance is real!"
-   Updated probability: USF 0.55 ± 0.15
+   "UCLA's 37.9% from three is explosive! USF's 33.9% just isn't enough when UCLA catches fire. One hot quarter changes everything, you can't coach that!"
+   Updated probability: USF 0.53 ± 0.17
 
 🐺 **ROAD DOG** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk loves the numbers, but those efficiency gaps don't account for the pressure of March, where senior leaders like Izaiyah Nelson rise.
+   *Disagrees with:* Tempo Hawk's focus on tempo and efficiency misses the point; you can't measure the heart of USF's senior-led team with a spreadsheet.
 
-   *Agrees with:* Streak gets it. USF's 6-game winning streak shows a team that's gelling and has the mental toughness to keep winning, which comes from experience.
+   *Agrees with:* Streak understands momentum; USF's 6-game winning streak with veterans shows they're battle-hardened and ready for this moment.
 
-   "USF's senior leadership, especially Nelson, has been here. They've won two tournament games already. That experience doesn't fold, no matter what numbers say."
-   Updated probability: USF 0.62 ± 0.12
+   "Tempo Hawk loves numbers, but USF's senior leadership and coach's tournament experience will control the game, not just pace. That grit wins."
+   Updated probability: USF 0.65 ± 0.12
 
 👁️ **WHISPER** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk focuses on efficiency, but ignores the compounding travel fatigue. Efficiency numbers are theoretical; tired legs are real.
+   *Disagrees with:* Glass Cannon misses the point; UCLA's shooting percentages will degrade under this travel and rest disadvantage, making their 37.9% three-point mark unsustainable.
 
-   *Agrees with:* Streak understands the current form, but it's the underlying rest and travel that fuels their 'momentum.' Fatigue is the secret ingredient.
+   *Agrees with:* Streak understands the current form matters, but it's the underlying physical state from travel that fuels USF's current surge.
 
-   "Everyone's missing the deeper fatigue. USF's minimal travel and extra rest days compound UCLA's significant travel disadvantage. It's not just miles, it's recovery."
-   Updated probability: USF 0.65 ± 0.12
+   "UCLA's 2400-mile travel isn't just about fatigue; it disrupts their routine. That's a hidden cost nobody's truly valuing."
+   Updated probability: USF 0.65 ± 0.15
 
 📜 **ORACLE** (position: STRENGTHENED):
 
-   *Disagrees with:* Glass Cannon cherry-picks season 3PT% while ignoring UCLA's recent 29% collapse from deep in their last three games.
+   *Disagrees with:* Tempo Hawk ignores that minimal tempo gaps favor the defensively superior team - that's exactly how George Mason beat UConn in 2006.
 
-   *Agrees with:* Road Dog correctly identifies USF's proven tournament experience advantage with senior leadership that's already navigated pressure moments.
+   *Agrees with:* Iron Curtain nailed it - defensive stalemates favor the grittier, more experienced team with nothing to lose.
 
-   "Glass Cannon ignores that UCLA's 3PT% plummeted to 29% in their last 3 games. Hot shooting doesn't travel well."
-   Updated probability: USF 0.62 ± 0.12
+   "Tempo Hawk missed the key: 7v10 upsets happen 39% since 1985. USF's defensive profile screams Cinderella archetype."
+   Updated probability: USF 0.38 ± 0.15
 
 🔥 **STREAK** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Oracle is stuck in the past; historical base rates don't capture USF's current 6-game winning streak and conference championship momentum.
+   *Disagrees with:* Glass Cannon wants to talk about season-long 3PT% but USF's defense has held opponents to 31.5% from three in their last 5 games.
 
-   *Agrees with:* Road Dog sees it! USF's senior leadership has delivered a conference title and a 6-game streak. That's recent form, that's what matters!
+   *Agrees with:* Whisper gets it! UCLA's travel burden is real, adding to USF's momentum advantage. Fatigue impacts recent performance.
 
-   "Oracle wants to talk about 1985. I want to talk about LAST TUESDAY. USF's 6-game win streak and conference title proves they're peaking RIGHT NOW. Momentum is real!"
-   Updated probability: USF 0.62 ± 0.10
+   "USF's 10-0 streak in their last 10 games is undeniable. They're playing their best basketball NOW, not in November. That's what matters in March!"
+   Updated probability: USF 0.65 ± 0.12
 
 
 ### Upset Watch
-**Upset Score: 48.1/100** | Upset score 48/100 for #11 USF over #7 UCLA. Historical upset rate: 50.0%. Agent support: 5-2 for USF.
-   *Agent split: 5-2 for USF | Historical upset rate: 50.0%*
+**Upset Score: 50.4/100** | Upset score 50/100 for #11 USF over #7 UCLA. Historical upset rate: 50.0%. Agent support: 4-3 for USF.
+   *Agent split: 4-3 for USF | Historical upset rate: 50.0%*
    *Statistical edges: Better defense (91.0 vs 91.5 adj_d)*
 
 
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: USF 0.58 ± 0.16
+Combined probability: USF 0.54 ± 0.19
 
-**PICK: USF** (58% — lean, high uncertainty)
+**PICK: USF** (54% — genuine toss-up, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Iron Curtain and Whisper won this debate. Glass Cannon's flip on UCLA's 3PT shooting was compelling but Oracle crushed it—UCLA shot 29% from deep in their last 3 games. Travel fatigue plus defensive grind favors the Bulls. March rewards experience over efficiency."
+🎼 **THE CONDUCTOR**: "Iron Curtain and Streak won this debate. Tempo Hawk and Glass Cannon both weakened after realizing pace neutralizes UCLA's advantages while USF's defense travels. The flippers got schooled on March reality: grit beats spreadsheets. Bulls charge forward."
 
-   *Key factor: Travel fatigue and tournament defensive pressure*
+   *Key factor: Defensive efficiency in low-possession game*
 
    *Most weighted: Iron Curtain*
 
-   *Dissent report: Tempo Hawk's efficiency argument ignored tournament pressure reality. Glass Cannon flipped on hot shooting but Oracle exposed UCLA's recent 29% 3PT collapse—variance cuts both ways.*
+   *Dissent report: Tempo Hawk and Glass Cannon flipped after realizing UCLA's offensive advantages disappear in defensive slugfests - their efficiency metrics mean less when possessions shrink and shots get contested*
 
 
 ---
-### Specialist Vote: 6-1 USF
+### Specialist Vote: 5-2 USF
 
-🦅UCLA 🛡️USF 💥USF 🐺USF 👁️USF 📜USF 🔥USF
+🦅UCLA 🛡️USF 💥USF 🐺USF 👁️USF 📜UCLA 🔥USF
 
 CONDUCTOR AGREES: USF (50%)
 
@@ -134,5 +134,5 @@ CONDUCTOR AGREES: USF (50%)
 ---
 ### Vote Tally
 
-- **UCLA**: Tempo Hawk (1 votes)
-- **USF**: Iron Curtain, Glass Cannon, Road Dog, Whisper, Oracle, Streak (6 votes)
+- **UCLA**: Tempo Hawk, Oracle (2 votes)
+- **USF**: Iron Curtain, Glass Cannon, Road Dog, Whisper, Streak (5 votes)

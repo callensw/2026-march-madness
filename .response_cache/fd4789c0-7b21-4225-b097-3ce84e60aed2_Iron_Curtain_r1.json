@@ -1,0 +1,7 @@
+STEP 1 — UPSET THESIS: Wisconsin forces Arizona into a half-court grind where their defensive experience and rim protection from Winter neutralizes Arizona's freshman-heavy offense. Badgers' veteran guards Boyd and Blackwell exploit Arizona's perimeter defense in clutch moments.
+
+STEP 2 — RATE THE UPSET THESIS: 6/10. Wisconsin has the defensive scheme and experience to slow down Arizona's young stars, but Arizona's elite defense (87.2 adj_d) travels better than Wisconsin's offense.
+
+STEP 3 — PICK: Arizona's defense is suffocating (opp_fg_pct .392) while Wisconsin allows .447 shooting. Krivas blocks 1.9 per game — that rim protection shuts down Wisconsin's interior game. Defense wins in March.
+
+{"team_a_win_prob": 0.68, "uncertainty": 0.12, "reasoning": "Arizona's elite defense (87.2 adj_d, .392 opp_fg_pct) versus Wisconsin's porous perimeter D (.447). Krivas blocks 1.9 per game. Defense travels, offense disappears under pressure.", "key_stat": "Wisconsin allows .447 opponent FG% vs Arizona's .392"}

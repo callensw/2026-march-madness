@@ -1,103 +1,103 @@
 # 🏀 #11 Texas vs #3 Gonzaga — West Region, Round of 32
-*2026-03-16T16:48:16.833937+00:00*
+*2026-03-16T17:39:15.421497+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Identical tempos neutralize Gonzaga's talent edge. Texas has better offensive efficiency and Gonzaga missing interior scorer Huff in controlled pace."
-   Win probability: Texas 0.52 ± 0.18
-   *Key stat: Texas 125.8 offensive efficiency vs Gonzaga 124.0*
+🦅 **TEMPO HAWK**: "Identical tempo at 70 possessions neutralizes Gonzaga's talent edge. Without Huff's 17.8 PPG, Texas's twin towers Swain/Vokietaitis control interior."
+   Win probability: Texas 0.55 ± 0.18
+   *Key stat: Both teams play 70-possession pace, eliminating tempo mismatch*
 
-🛡️ **IRON CURTAIN**: "Gonzaga's 87.7 defensive efficiency dominates Texas's mediocre offense. Ike controls paint without Huff. Defense travels in March grind."
+🛡️ **IRON CURTAIN**: "Gonzaga's elite defense travels, but missing Huff limits their offense. Texas has size to grind this into ugly half-court battle."
    Win probability: Texas 0.32 ± 0.18
-   *Key stat: Gonzaga holds opponents to 39.5% shooting vs Texas's 44.9%*
+   *Key stat: Gonzaga allows 39.5% shooting vs Texas's 44.9% — that 5.4% gap is massive*
 
-💥 **GLASS CANNON** `[gemini]`: "Texas just beat BYU by getting hot from three! They have a great shooter in Jordan Pope. Gonzaga's 3PT% is good, but Texas is DANGEROUS!"
+💥 **GLASS CANNON** `[gemini]`: "Texas just beat BYU, they're feeling it! Gonzaga's defense is VULNERABLE to a hot shooting night. Texas's Jordan Pope is a sharpshooter, and they're due for a breakout from deep!"
    Win probability: Texas 0.48 ± 0.15
-   *Key stat: Texas beat BYU shooting 42.9% from three.*
+   *Key stat: Gonzaga allows 33.7% from three, Texas shot 35.3% season-long.*
 
-🐺 **ROAD DOG** `[gemini]`: "Texas has veteran guards like Tramon Mark and Jordan Pope who've been here. Gonzaga's coach Mark Few is a Final Four regular, but their experience score is lower. That matters."
+🐺 **ROAD DOG** `[gemini]`: "Texas has veteran guards like Tramon Mark and Jordan Pope who've been there. Gonzaga's coach, Mark Few, has Final Four experience, but their key players are younger. Experience wins."
    Win probability: Texas 0.58 ± 0.15
-   *Key stat: Texas experience=6.0/10 vs Gonzaga experience=5.0/10*
+   *Key stat: Texas experience: 6.0/10 vs Gonzaga: 5.0/10*
 
-👁️ **WHISPER** `[gemini]`: "Everyone knows about Huff, but nobody's talking about how his absence burdens Ike. Texas' Swain (17.8 PPG) will exploit this inside. Gonzaga's defense is weaker without him."
+👁️ **WHISPER** `[gemini]`: "Everyone knows about Huff's injury, but the true impact is the lost 17.8 PPG from the rotation. Texas has more rest and less travel."
    Win probability: Texas 0.58 ± 0.15
-   *Key stat: Braden Huff (17.8 PPG) out for Gonzaga.*
+   *Key stat: Gonzaga's Huff (17.8 PPG) is out*
 
-📜 **ORACLE**: "3v11 base rate is 85% but Gonzaga without Huff reminds me of 2016 Texas losing to Northern Iowa. Frontcourt mismatch favors Texas size."
+📜 **ORACLE**: "Reminds me of 2016 Northern Iowa over Texas. Gonzaga without Huff lacks frontcourt depth against Texas size. 3v11 upsets happen 15% historically."
    Win probability: Texas 0.45 ± 0.15
-   *Key stat: Gonzaga missing 17.8 PPG/5.6 RPG Braden Huff*
+   *Key stat: Gonzaga missing 17.8 PPG/5.6 RPG Huff vs Texas frontcourt duo averaging 33.3 PPG combined*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. Gonzaga is peaking, winning their conference and on a 5-game streak. Texas lost their conference opener. Momentum is real!"
-   Win probability: Texas 0.45 ± 0.15
-   *Key stat: Gonzaga last 10 games: 10-0*
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. Gonzaga is on fire, winning their conference tournament and riding a W5 streak. Texas lost their first conference game. Momentum is everything!"
+   Win probability: Texas 0.38 ± 0.15
+   *Key stat: Gonzaga: W5 streak; Texas: L1 in conf. tourney*
 
 
 ## Round 2 — Cross-Examination
 
 🦅 **TEMPO HAWK** (position: STRENGTHENED):
 
-   *Disagrees with:* Iron Curtain overvalues defensive efficiency without considering how identical tempos neutralize Gonzaga's transition-based defensive pressure.
+   *Disagrees with:* Streak ignores that momentum means nothing when pace control determines the game — Texas's size advantage at identical tempo is decisive.
 
-   *Agrees with:* Whisper correctly identifies how Huff's absence creates interior vulnerabilities that Texas can exploit in a controlled-pace game.
+   *Agrees with:* Whisper correctly identifies Huff's absence as the key factor, which amplifies my pace-control thesis in Texas's favor.
 
-   "Iron Curtain ignores pace reality. Gonzaga's defense means nothing if Texas controls possessions and limits their transition opportunities."
-   Updated probability: Texas 0.55 ± 0.16
+   "Streak's momentum talk is noise. Texas controls pace at 70 possessions, neutralizing Gonzaga's talent edge. Without Huff, they can't match Texas's interior presence."
+   Updated probability: Texas 0.62 ± 0.16
 
-🛡️ **IRON CURTAIN** (position: STRENGTHENED):
+🛡️ **IRON CURTAIN** (position: FLIPPED):
 
-   *Disagrees with:* Road Dog thinks experience beats defense but March games are won by stops, not veteran leadership.
+   *Disagrees with:* Streak thinks momentum matters but defense is what wins in March - Texas has better defensive metrics where it counts.
 
-   *Agrees with:* Whisper correctly identified that Huff's absence weakens Gonzaga's interior defense, making this closer than the seed suggests.
+   *Agrees with:* Tempo Hawk nailed it - without Huff's scoring, Texas's size advantage becomes decisive in a grind-it-out game.
 
-   "Road Dog is WRONG about experience mattering. Defense matters. Gonzaga's 87.7 adj_d will suffocate Texas in halfcourt grind."
-   Updated probability: Texas 0.28 ± 0.16
+   "Streak is DEAD WRONG about momentum. Defense travels, offense doesn't. Texas held opponents to 42.1% shooting in Big 12 play."
+   Updated probability: Texas 0.62 ± 0.16
 
 💥 **GLASS CANNON** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain keeps talking about defense like it's 1995! Their 87.7 defensive efficiency means nothing against a hot-shooting team!
+   *Disagrees with:* Iron Curtain keeps talking about defense like it's 1995. Gonzaga's 39.5% opponent FG% won't stop a barrage from deep!
 
-   *Agrees with:* Whisper correctly points out the burden on Ike; that opens up the perimeter even more for Texas's shooters!
+   *Agrees with:* Road Dog is right, veteran guards can CATCH FIRE. Texas's experienced backcourt can exploit Gonzaga's perimeter.
 
-   "Texas showed against BYU they can get RED-HOT! Gonzaga's defense is not impenetrable. One hot night, one deep run, and you can't coach that!"
-   Updated probability: Texas 0.53 ± 0.16
+   "Texas shot 35.3% from three all season and Gonzaga gives up 33.7%! That's the equalizer! One hot night, and they're ON. This screams upset!"
+   Updated probability: Texas 0.48 ± 0.16
 
-🐺 **ROAD DOG** (position: UNCHANGED) `[gemini]`:
+🐺 **ROAD DOG** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Streak's focus on short-term streaks ignores the long-term tournament experience that truly wins games.
+   *Disagrees with:* Streak loves momentum, but I've seen too many 'hot' teams with young rosters fold. Gonzaga's W5 streak means nothing against Texas's battle-tested seniors.
 
-   *Agrees with:* Whisper correctly highlights Huff's absence, which puts more pressure on Gonzaga's less experienced frontcourt.
+   *Agrees with:* Whisper gets it. Losing Huff isn't just numbers; it's losing a veteran presence who's 'been there' for Gonzaga, making their remaining core even younger.
 
-   "Streak talks about momentum, but I've seen veteran Texas teams like this handle pressure. Experience trumps hot streaks in March."
-   Updated probability: Texas 0.55 ± 0.16
+   "Texas's veteran guards, like Tramon Mark, have played in big games. Gonzaga's younger core will crack under March pressure. Experience still wins."
+   Updated probability: Texas 0.62 ± 0.12
 
 👁️ **WHISPER** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* I disagree with Streak. His talk of 'momentum' ignores that Gonzaga is now forced to play a short rotation due to injuries, making them vulnerable to fatigue.
+   *Disagrees with:* Glass Cannon's focus on a 'hot shooting night' ignores the physical toll of Gonzaga's travel and lack of recovery time.
 
-   *Agrees with:* I agree with Oracle. His mention of the frontcourt mismatch and Huff's absence reinforces my view that Gonzaga's interior defense and depth are compromised.
+   *Agrees with:* Oracle understands that missing Huff's 17.8 PPG creates a significant frontcourt void, especially against Texas's size, which fatigue will only amplify.
 
-   "Everyone's missing the deeper impact of Huff's absence. Gonzaga's bench depth is now paper-thin, leading to fatigue and foul trouble for Ike. Texas's deeper rotation exploits this."
+   "Everyone is still fixated on efficiency, but the real story is Gonzaga's travel. They have fewer rest days and 1500+ more miles, impacting their rotation depth."
    Updated probability: Texas 0.62 ± 0.12
 
 📜 **ORACLE** (position: STRENGTHENED):
 
-   *Disagrees with:* Streak's momentum argument ignores that Gonzaga's streak came against weak WCC competition, not tournament-caliber teams.
+   *Disagrees with:* Road Dog oversimplifies experience - 2019 Auburn had less experience than Kansas but won because their system was better suited for March chaos.
 
-   *Agrees with:* Whisper correctly identified that Huff's absence creates the structural mismatch that historically dooms higher seeds in upsets.
+   *Agrees with:* Whisper correctly identified Huff's absence as the key factor - historically, teams missing their leading scorer struggle in single-elimination formats.
 
-   "Streak ignores that Gonzaga's 10-0 run included weak WCC teams. 2019 Gonzaga went 33-4 but lost to Texas Tech without key player."
+   "Road Dog's experience metric is flawed. 2019 Auburn beat Kansas despite less experience. Gonzaga's system matters more than individual résumés."
    Updated probability: Texas 0.42 ± 0.16
 
 🔥 **STREAK** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Road Dog wants to talk about 'veteran guards' but Texas's recent form is inconsistent, losing their first conference tournament game. That's not momentum.
+   *Disagrees with:* Tempo Hawk wants to talk about pace. I care about what Texas did LAST WEEKEND. They lost, showing a lack of recent form that pace can't fix.
 
-   *Agrees with:* Iron Curtain understands that defense travels, and Gonzaga's defense is playing lights out right now, holding opponents to 39.5% shooting.
+   *Agrees with:* Oracle cites history, but even he acknowledges Gonzaga's frontcourt depth issues without Huff. Still, their recent form is too strong to ignore.
 
-   "Texas just lost their conference opener! Gonzaga is riding a 10-0 streak. Oracle wants to talk about 2016. I care about what's happening RIGHT NOW!"
-   Updated probability: Texas 0.40 ± 0.15
+   "Texas lost their last game, showing no momentum. Gonzaga is peaking, with a W5 streak coming into this. Recent form matters more than any season-long stat!"
+   Updated probability: Texas 0.35 ± 0.15
 
 
 ### Upset Watch
@@ -109,30 +109,30 @@
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Texas 0.45 ± 0.19
+Combined probability: Texas 0.54 ± 0.18
 
-**PICK: Gonzaga** (45% — genuine toss-up, high uncertainty)
+**PICK: Texas** (54% — genuine toss-up, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Whisper and Tempo Hawk won this debate. Glass Cannon's flip from Gonzaga to Texas shows the shooting variance concern is real. Huff's absence creates interior vulnerability that Texas can exploit. Gonzaga's defense is elite, but identical tempos neutralize their advantages. When the dust settles, experience and depth matter."
+🎼 **THE CONDUCTOR**: "Iron Curtain's flip sealed it—defense travels, but so does size. Tempo Hawk, Road Dog, and Whisper won by hammering Huff's absence against Texas's twin towers. Glass Cannon and Streak lost betting on shooting variance and momentum myths. Here's my ruling: when the Zags lose their best big man, the Longhorns' frontcourt feasts."
 
-   *Key factor: Huff's absence creating interior vulnerability and depth concerns*
+   *Key factor: Missing Braden Huff (17.8 PPG) against Texas's size advantage*
 
-   *Most weighted: Whisper*
+   *Most weighted: Tempo Hawk*
 
-   *Dissent report: Iron Curtain lost by overvaluing defensive efficiency without considering how identical tempos limit Gonzaga's transition pressure. Streak's momentum argument crumbled against Texas's veteran experience edge.*
+   *Dissent report: Streak and Glass Cannon lost by overvaluing momentum and shooting variance. Iron Curtain's flip from Gonzaga to Texas shows even defensive specialists recognize that missing Huff creates an insurmountable size mismatch in a pace-controlled game.*
 
 
 ---
 ### Specialist Vote: 4-3 Texas
 
-🦅Texas 🛡️Gonzaga 💥Texas 🐺Texas 👁️Texas 📜Gonzaga 🔥Gonzaga
+🦅Texas 🛡️Texas 💥Gonzaga 🐺Texas 👁️Texas 📜Gonzaga 🔥Gonzaga
 
-CONDUCTOR OVERRIDE: Gonzaga (50%) — sided with the minority
+CONDUCTOR AGREES: Texas (50%)
 
 
 ---
 ### Vote Tally
 
-- **Texas**: Tempo Hawk, Glass Cannon, Road Dog, Whisper (4 votes)
-- **Gonzaga**: Iron Curtain, Oracle, Streak (3 votes)
+- **Texas**: Tempo Hawk, Iron Curtain, Road Dog, Whisper (4 votes)
+- **Gonzaga**: Glass Cannon, Oracle, Streak (3 votes)

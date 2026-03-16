@@ -1,126 +1,126 @@
 # 🏀 #10 Texas A&M vs #2 Houston — South Region, Round of 32
-*2026-03-16T16:52:01.695929+00:00*
+*2026-03-16T17:42:39.996092+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Houston's 8-point efficiency edge trumps A&M's slight tempo advantage. Cougars adapt to pace better than Aggies overcome talent gap."
-   Win probability: Texas A&M 0.32 ± 0.12
-   *Key stat: Houston 68.5 tempo vs A&M 65.0 - manageable gap for superior team*
+🦅 **TEMPO HAWK**: "A&M controls pace at 65 possessions vs Houston's 68.5. Fewer possessions favor the experienced underdog in March."
+   Win probability: Texas A&M 0.32 ± 0.15
+   *Key stat: A&M tempo: 65.0 possessions per game vs Houston's 68.5*
 
-🛡️ **IRON CURTAIN**: "A&M's elite defense can turn this into ugly grind. Houston hasn't faced this level of suffocating defense since conference play."
-   Win probability: Texas A&M 0.32 ± 0.18
-   *Key stat: A&M allows 44.2% opponent FG% vs Houston's 40.0%*
+🛡️ **IRON CURTAIN**: "A&M's 90.3 adj_d can grind this into ugly half-court battle. Houston struggles against elite defenses, A&M has size to disrupt."
+   Win probability: Texas A&M 0.32 ± 0.15
+   *Key stat: A&M allows 44.2% opponent FG% - elite perimeter defense*
 
-💥 **GLASS CANNON** `[gemini]`: "Texas A&M shoots 35.2% from three! They're dangerous! Houston's 36.3% isn't enough to scare off a hot-shooting upset. One hot night changes everything!"
-   Win probability: Texas A&M 0.45 ± 0.15
+💥 **GLASS CANNON** `[gemini]`: "Houston's 3PT% is only marginally better! Texas A&M can catch fire, especially with Ruben Dominguez and Rylan Griffen! One hot quarter changes everything!"
+   Win probability: Texas A&M 0.48 ± 0.15
    *Key stat: Texas A&M 3PT%: 35.2%*
 
-🐺 **ROAD DOG** `[gemini]`: "Texas A&M's senior-led roster, with Jacari Lane and Rylan Griffen, has the experience to handle Houston's young talent. Kelvin Sampson has been here, but A&M's 8.0 experience score is key."
+🐺 **ROAD DOG** `[gemini]`: "Texas A&M's senior guards, Jacari Lane and Rylan Griffen, have been here before. Houston's young talent will crack under this pressure. Experience wins in March."
    Win probability: Texas A&M 0.58 ± 0.15
    *Key stat: Texas A&M experience: 8.0/10*
 
-👁️ **WHISPER** `[gemini]`: "Houston has fewer rest days and just faced a grueling Big 12 tournament. Texas A&M has an experience edge. Fatigue is real."
-   Win probability: Texas A&M 0.46 ± 0.18
-   *Key stat: Houston: 4 rest days vs A&M: 5 rest days*
+👁️ **WHISPER** `[gemini]`: "Texas A&M has an experience edge (8.0 vs 5.0) and more rest days (5 vs 4). Houston's youth and fatigue could be exploited here."
+   Win probability: Texas A&M 0.48 ± 0.15
+   *Key stat: Texas A&M experience: 8.0/10*
 
-📜 **ORACLE**: "Classic 2v10 upset profile: A&M's veteran experience, elite defense, tempo control mirrors 2018 Loyola-Chicago. Houston's youth vulnerable in March pressure."
-   Win probability: Texas A&M 0.32 ± 0.15
-   *Key stat: A&M's 8.0/10 experience vs Houston's 5.0/10 — biggest gap I've seen this tournament*
+📜 **ORACLE**: "2v10 base rate is 93.8%, but this screams 2018 UMBC. A&M's experience edge and elite defense in slow tempo favors upset."
+   Win probability: Texas A&M 0.28 ± 0.18
+   *Key stat: A&M 8.0 experience vs Houston 5.0 — veteran edge matters in March*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets – let me tell you what I've been watching! Texas A&M just beat a hot Saint Mary's team and now they're on a 2-game winning streak. Houston lost their conference final; that's a deflating ending."
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching! Houston lost their conference final and Texas A&M just beat a #7 seed. Momentum is with the Aggies, who are peaking."
    Win probability: Texas A&M 0.45 ± 0.15
-   *Key stat: Texas A&M's 2-game winning streak vs Houston's Big 12 final loss.*
+   *Key stat: Texas A&M: W1 entering R32, Houston: L1 in conference final.*
 
 
 ## Round 2 — Cross-Examination
 
-🦅 **TEMPO HAWK** (position: FLIPPED):
+🦅 **TEMPO HAWK** (position: STRENGTHENED):
 
-   *Disagrees with:* Glass Cannon ignores that A&M's 35.2% three-point shooting comes on just 18 attempts per game - they're not a volume shooting team.
+   *Disagrees with:* Glass Cannon focuses on shooting percentages but ignores that A&M's slow pace (65 possessions) limits Houston's opportunities to use their talent advantage.
 
-   *Agrees with:* Oracle nailed the 2018 Loyola parallel - experienced defensive teams that control tempo are classic upset machines in March.
+   *Agrees with:* Oracle correctly identifies this as an upset candidate — A&M's pace control creates the exact conditions where experience trumps raw talent.
 
-   "Oracle's right about the upset profile, but I was wrong about Houston controlling pace. A&M's grind-it-out style neutralizes talent gaps."
-   Updated probability: Texas A&M 0.65 ± 0.14
+   "Glass Cannon misses the point — A&M's 65-possession pace neutralizes Houston's talent edge. Fewer possessions, more variance, upset-friendly math."
+   Updated probability: Texas A&M 0.35 ± 0.16
 
-🛡️ **IRON CURTAIN** (position: STRENGTHENED):
+🛡️ **IRON CURTAIN** (position: FLIPPED):
 
-   *Disagrees with:* Glass Cannon ignores that Houston's elite perimeter defense (29.8% opp 3PT%) will neutralize A&M's three-point shooting.
+   *Disagrees with:* Glass Cannon thinks A&M's 35.2% three-point shooting matters when they allow just 30.1% from deep - defense wins in March.
 
-   *Agrees with:* Oracle nailed it - A&M's defensive profile and experience edge creates the classic upset formula that's burned young teams before.
+   *Agrees with:* Oracle sees the UMBC parallel - A&M's elite defense and experience edge creates the perfect upset storm.
 
-   "Glass Cannon's wrong - A&M shoots 35% from three but Houston allows just 29.8% from deep. Elite perimeter defense shuts down shooters."
-   Updated probability: Texas A&M 0.28 ± 0.16
+   "Glass Cannon is WRONG. A&M shoots 35.2% from three but DEFENDS the arc at 30.1%. Defense travels, offense disappears."
+   Updated probability: Texas A&M 0.65 ± 0.12
 
 💥 **GLASS CANNON** (position: FLIPPED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain keeps talking about defense like it's 1995. We're in the three-point ERA; one hot night from beyond the arc makes defensive efficiency MEANINGLESS!
+   *Disagrees with:* Iron Curtain's argument for Houston's defense is meaningless against a hot-shooting team. One hot quarter changes everything!
 
-   *Agrees with:* Road Dog sees the experience; that's key when you need someone to hit big shots under pressure. Veterans can get hot!
+   *Agrees with:* Streak gets it! Momentum for A&M, coming off a win, means they're feeling that shot. That's a dangerous team!
 
-   "Houston's defense can't stop a team that's ON! A&M's 3-point shooting is good enough to catch fire. Variance is REAL, and it rewards the hot hand!"
-   Updated probability: Texas A&M 0.55 ± 0.17
+   "Iron Curtain keeps talking defense! A&M's 35.2% from three, with shooters like Wade Taylor IV, can absolutely light up any 'elite' defense. When they're on, they're ON!"
+   Updated probability: Texas A&M 0.52 ± 0.15
 
 🐺 **ROAD DOG** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk loves the numbers. I love watching the game. And what I've WATCHED is a team that folds under pressure when it matters. No spreadsheet captures that.
+   *Disagrees with:* Tempo Hawk focuses on tempo, but A&M's senior guards, with 8.0 experience, dictate the game's flow when it matters, not a spreadsheet.
 
-   *Agrees with:* Oracle understands that experience gap, 8.0/10 for A&M vs 5.0/10 for Houston, is the real story in March.
+   *Agrees with:* Oracle gets it. This A&M team, with 8.0 experience, is the classic upset archetype against a younger Houston squad.
 
-   "Oracle gets it. Experience wins. A&M's senior leaders, like Wade Taylor IV, have played in big games. Houston's youth cracks under March pressure. I've seen this movie."
-   Updated probability: Texas A&M 0.55 ± 0.16
+   "Tempo Hawk loves numbers, but A&M's senior leadership, with Wade Taylor IV having 130+ games, has seen every tempo. Experience trumps pace control in March."
+   Updated probability: Texas A&M 0.62 ± 0.12
 
 👁️ **WHISPER** (position: FLIPPED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk talks efficiency, but overlooks Houston's travel fatigue and fewer rest days impacting their ability to maintain that edge.
+   *Disagrees with:* Glass Cannon is focused on 3PT% but ignores the underlying fatigue affecting Houston's shooting consistency.
 
-   *Agrees with:* Road Dog sees A&M's experience, but the true impact is how it helps manage the fatigue Houston will feel.
+   *Agrees with:* Road Dog sees the experience edge; that translates to better decision-making when tired, a key hidden factor.
 
-   "Everyone's missing the fatigue factor. Houston has fewer rest days after a brutal conference tournament, while A&M is more rested. That compounds."
-   Updated probability: Texas A&M 0.52 ± 0.17
+   "Everyone's missing the deeper fatigue from Houston's back-to-back intense games. Their 4 rest days versus A&M's 5 adds up to an edge nobody's seeing."
+   Updated probability: Texas A&M 0.52 ± 0.16
 
 📜 **ORACLE** (position: STRENGTHENED):
 
-   *Disagrees with:* Tempo Hawk dismisses A&M's experience advantage when historically, veteran teams with elite defense consistently outperform efficiency metrics in single-elimination tournaments.
+   *Disagrees with:* Glass Cannon is wrong because historically, upset 2-seeds actually shoot BETTER than A&M's 35.2% season average in their losses.
 
-   *Agrees with:* Road Dog correctly identified A&M's experience edge - this mirrors every major 7+ seed upset since 2010 where veterans beat talented youth.
+   *Agrees with:* Iron Curtain reinforced my view because elite defense (90.3 adj_d) is exactly what creates 2v15 upsets like UMBC.
 
-   "Tempo Hawk ignores history! 2018 Loyola had similar 8-point efficiency deficit vs Miami. Experience trumps efficiency in March madness."
-   Updated probability: Texas A&M 0.42 ± 0.16
+   "Glass Cannon ignores history. 35.2% three-point shooting means nothing when 2-seeds shoot 38% in losses. Defense wins upsets."
+   Updated probability: Texas A&M 0.25 ± 0.16
 
 🔥 **STREAK** (position: FLIPPED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk wants to talk efficiency. That's stale! Houston's recent loss shows they're not playing at peak efficiency RIGHT NOW.
+   *Disagrees with:* Oracle wants to talk about 2018 UMBC, but that's history. I care about what happened LAST WEEK. The Aggies are peaking.
 
-   *Agrees with:* Oracle gets it! A&M's veteran experience is fueling this late-season surge. Momentum and experience go hand-in-hand in March.
+   *Agrees with:* Road Dog sees the experience in A&M's guards, and that's crucial for maintaining momentum in high-pressure games.
 
-   "Texas A&M's momentum is REAL. They've won 3 of their last 4, including a huge upset. Houston lost their conference final; that's a deflating ending. What have they done LATELY?"
+   "Texas A&M's momentum is REAL. Houston just lost their conference final, while the Aggies are riding a win streak. That matters RIGHT NOW!"
    Updated probability: Texas A&M 0.52 ± 0.12
 
 
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Texas A&M 0.50 ± 0.19
+Combined probability: Texas A&M 0.48 ± 0.20
 
-**PICK: Houston** (50% — genuine toss-up, high uncertainty)
+**PICK: Houston** (48% — genuine toss-up, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Four agents flipped to A&M after Round 2 - that's decisive. Oracle and Road Dog won with the experience argument: 8.0 vs 5.0 experience score matters in March. Iron Curtain lost defending Houston's defense against A&M's shooting variance. The Aggies have March magic."
+🎼 **THE CONDUCTOR**: "Four agents flipped to A&M after Round 2, swayed by experience and momentum arguments. Road Dog and Oracle won this debate - experience trumps talent in March madness. Iron Curtain's defensive flip sealed it. This is why they play the games."
 
-   *Key factor: Experience gap in March Madness pressure situations*
+   *Key factor: Experience gap and momentum mismatch*
 
-   *Most weighted: Oracle*
+   *Most weighted: Road Dog*
 
-   *Dissent report: Iron Curtain held firm on Houston's elite perimeter defense (29.8% opp 3PT%) but couldn't overcome the historical precedent of experienced defensive teams pulling upsets*
+   *Dissent report: Tempo Hawk stuck with pace control theory but couldn't counter the experience argument that swayed four agents to flip positions in Round 2*
 
 
 ---
 ### Specialist Vote: 5-2 Texas A&M
 
-🦅Texas A&M 🛡️Houston 💥Texas A&M 🐺Texas A&M 👁️Texas A&M 📜Houston 🔥Texas A&M
+🦅Houston 🛡️Texas A&M 💥Texas A&M 🐺Texas A&M 👁️Texas A&M 📜Houston 🔥Texas A&M
 
 CONDUCTOR OVERRIDE: Houston (50%) — sided with the minority
 
@@ -128,5 +128,5 @@ CONDUCTOR OVERRIDE: Houston (50%) — sided with the minority
 ---
 ### Vote Tally
 
-- **Texas A&M**: Tempo Hawk, Glass Cannon, Road Dog, Whisper, Streak (5 votes)
-- **Houston**: Iron Curtain, Oracle (2 votes)
+- **Houston**: Tempo Hawk, Oracle (2 votes)
+- **Texas A&M**: Iron Curtain, Glass Cannon, Road Dog, Whisper, Streak (5 votes)

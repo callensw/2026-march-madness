@@ -1,0 +1,7 @@
+STEP 1 — UPSET THESIS: Ohio State forces Duke into a half-court grind where their defensive experience and physicality neutralizes Duke's freshman stars. Buckeyes' veteran backcourt exploits Duke's injury-depleted perimeter defense.
+
+STEP 2 — RATE THE UPSET THESIS: 7/10. Duke's defense is elite (87.1 adj_d) but they're missing their best perimeter defender in Foster. Ohio State shoots .439 opponent FG% - that's exploitable defense, but their experience edge is real.
+
+STEP 3 — PICK: Duke's defense is suffocating (87.1 adj_d, .392 opp_fg_pct) but Ohio State's veteran guards will test that injured perimeter. This screams grind-it-out game where experience matters.
+
+{"team_a_win_prob": 0.68, "uncertainty": 0.15, "reasoning": "Duke's elite defense travels but missing Foster hurts perimeter coverage. Ohio State's veteran guards exploit defensive gaps in tournament pressure.", "key_stat": "Duke allows .392 FG% vs Ohio State's .439 - defensive edge matters in March"}

@@ -1,0 +1,7 @@
+STEP 1 — UPSET THESIS: TCU controls pace at 70.9 possessions vs Ohio State's 70.6, creating a virtual dead heat. In identical tempo games, the team with better defensive efficiency wins — TCU allows 88.8 points per 100 possessions vs Ohio State's 91.4. TCU's slightly higher turnover rate (10.9 vs 10.4) in a same-pace game creates just enough extra possessions to neutralize Ohio State's offensive edge.
+
+STEP 2 — RATE THE UPSET THESIS: 6/10. This is genuinely plausible. When tempo is identical, defensive efficiency becomes the deciding factor, and TCU has a meaningful 2.6-point edge there.
+
+STEP 3 — PICK: The pace mismatch I hunt for doesn't exist here — both teams play at virtually identical tempo. This becomes a pure efficiency battle, and TCU's defensive edge in a controlled-pace game gives them the slight advantage.
+
+{"team_a_win_prob": 0.47, "uncertainty": 0.15, "reasoning": "Identical tempo at 70.7 possessions eliminates pace advantage. TCU's superior defensive efficiency (88.8 vs 91.4) controls this same-pace battle.", "key_stat": "TCU allows 2.6 fewer points per 100 possessions"}

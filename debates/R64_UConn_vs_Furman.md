@@ -1,42 +1,42 @@
 # 🏀 #2 UConn vs #15 Furman — East Region, Round of 64
-*2026-03-16T16:36:37.044575+00:00*
+*2026-03-16T17:27:38.648849+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Furman slows pace to 65 possessions but UConn's massive efficiency edge (36.1 vs 3.3) still produces double-digit margin in grind-out game."
-   Win probability: UConn 0.78 ± 0.12
-   *Key stat: UConn 70.4 tempo vs Furman 64.9 — 5.5 possession gap*
-
-🛡️ **IRON CURTAIN**: "UConn's 87.8 defensive efficiency destroys Furman's mediocre offense. Paladins allow 42.5% shooting - Reed and Karaban will feast inside."
+🦅 **TEMPO HAWK**: "Furman's slow pace helps but can't overcome 33-point efficiency gap. UConn wins fewer possessions but dominates each one."
    Win probability: UConn 0.82 ± 0.12
-   *Key stat: UConn allows 40.2% shooting vs Furman's 42.5%*
+   *Key stat: UConn 70.4 tempo vs Furman 64.9 - only 5.5 possession difference*
 
-💥 **GLASS CANNON** `[gemini]`: "UConn shoots 35.9% from three, and Furman is only at 34.4%. UConn isn't just better; they also shoot better. Furman won't catch fire here. Too much firepower for the Huskies!"
-   Win probability: UConn 0.88 ± 0.08
+🛡️ **IRON CURTAIN**: "UConn holds opponents to 40.2% shooting. Furman's offense isn't built to crack legitimate defense. Eighteen-point efficiency gap is massive."
+   Win probability: UConn 0.88 ± 0.12
+   *Key stat: UConn allows 40.2% opponent field goal percentage*
+
+💥 **GLASS CANNON** `[gemini]`: "UConn's 35.9% from three is solid, and Furman's 34.4% doesn't scare me. One hot quarter won't overcome this talent gap."
+   Win probability: UConn 0.85 ± 0.10
    *Key stat: UConn 3PT% = 35.9%*
 
-🐺 **ROAD DOG** `[gemini]`: "UConn's coach has been here before, winning two national titles. Furman's freshman star will crack under March pressure. Experience wins."
-   Win probability: UConn 0.82 ± 0.10
-   *Key stat: UConn coach has 2 national titles*
+🐺 **ROAD DOG** `[gemini]`: "UConn's coach has been here before, winning two national titles. Furman's young roster, led by a freshman, hasn't seen this pressure. Experience wins in March."
+   Win probability: UConn 0.85 ± 0.08
+   *Key stat: UConn's coach has 2 national titles.*
 
-👁️ **WHISPER** `[gemini]`: "Everyone knows Demary Jr. is expected back, but nobody's talking about his ankle. A key ball-handler at less than 100% changes everything for UConn."
+👁️ **WHISPER** `[gemini]`: "Everyone knows about Demary, but nobody's talking about his ankle affecting UConn's chemistry, especially after a 20-point loss. Furman has less travel, more rest."
    Win probability: UConn 0.68 ± 0.15
-   *Key stat: Silas Demary Jr. (10.9 PPG, 4.5 RPG)*
+   *Key stat: Demary Jr. (10.9 PPG) injury*
 
-📜 **ORACLE**: "Base rate 93.8% since 1985. Reminds me of 2018 UNC-Iona: massive efficiency gap, experienced favorite cruises. Reed Jr. dominates inside."
-   Win probability: UConn 0.88 ± 0.08
-   *Key stat: 36-point KenPom gap (12 vs 190)*
+📜 **ORACLE**: "Since 1985, 2-seeds are 93.8% vs 15s. Furman's pace control reminds me of 2019 Colgate, but UConn's interior size advantage is decisive."
+   Win probability: UConn 0.88 ± 0.12
+   *Key stat: UConn +18.3 efficiency margin vs Furman*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets—UConn just got BLOWN OUT in their conference final! Furman, meanwhile, is riding a 3-game winning streak and won their conference. Momentum is real!"
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — UConn just got demolished by 20 in their conference final! Furman, meanwhile, won their conference tournament, peaking at the perfect time. Momentum is real!"
    Win probability: UConn 0.62 ± 0.15
-   *Key stat: Furman W3, UConn L1 (by 20 pts)*
+   *Key stat: Furman won 3 straight to win their conference tournament.*
 
 
 ### Devil's Advocate (unanimous vote triggered)
-🛡️ **IRON CURTAIN** *(forced contrarian)*: "UConn's 87.8 adj_d will suffocate Furman's mediocre offense. Paladins allow 42.5% shooting - too soft for March survival."
-   *Pick: **UConn** (88%) | Key stat: UConn allows 40.2% opponent FG%, Furman allows 42.5%*
+🐺 **ROAD DOG** *(forced contrarian)*: "UConn's coach has been here before, winning titles. Furman's young roster, led by a freshman, hasn't seen this stage. Experience wins in March. UConn's Alex Karaban has two rings."
+   *Pick: **UConn** (67%) | Key stat: UConn experience: 6.0/10 vs Furman experience: 4.0/10*
 
 
 ### Swarm vs Vegas
@@ -46,18 +46,18 @@
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: UConn 0.72 ± 0.25
+Combined probability: UConn 0.74 ± 0.25
 
-**PICK: UConn** (72% — clear favorite, high uncertainty)
+**PICK: UConn** (74% — clear favorite, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Iron Curtain and Oracle dominated this debate with their efficiency gap analysis. Glass Cannon's shooting edge sealed it. Streak's momentum concern and Whisper's injury worry couldn't overcome the mathematical reality. When a 2-seed has this big an edge, bet the favorite."
+🎼 **THE CONDUCTOR**: "Iron Curtain and Oracle won this debate with their defensive dominance arguments. The 18-point efficiency gap is insurmountable. Streak's momentum concerns and Whisper's injury worries couldn't overcome the mathematical reality. When talent meets March, talent usually wins."
 
-   *Key factor: Massive efficiency gap (36.1 vs 3.3 KenPom margin)*
+   *Key factor: Defensive efficiency gap*
 
-   *Most weighted: Iron Curtain and Oracle*
+   *Most weighted: Iron Curtain*
 
-   *Dissent report: Streak worried about UConn's conference final blowout loss and Whisper flagged Demary's ankle, but neither concern outweighs the fundamental talent disparity*
+   *Dissent report: Streak emphasized UConn's 20-point conference final loss and Furman's tournament momentum, but hot streaks rarely overcome 33-point KenPom gaps in 2v15 matchups.*
 
 
 ---
@@ -76,9 +76,9 @@ CONDUCTOR AGREES: UConn (50%)
 
 ## Market Analysis
 
-- Swarm probability: UConn 72% ± 25%
+- Swarm probability: UConn 74% ± 25%
 - Vegas implied probability: UConn 95%
-- Edge: 23.4% (market favors Furman)
+- Edge: 21.3% (market favors Furman)
 - Vegas spread: UConn -21.0
-- Contrarian signal: Streak (-33% vs market) and Whisper (-27% vs market) and Tempo Hawk (-17% vs market) and Iron Curtain (-13% vs market) and Road Dog (-13% vs market)
-- Recommendation: NO BET — edge (23.4%) exists but uncertainty too high (25.0%)
+- Contrarian signal: Streak (-33% vs market) and Whisper (-27% vs market) and Tempo Hawk (-13% vs market) and Glass Cannon (-10% vs market) and Road Dog (-10% vs market)
+- Recommendation: NO BET — edge (21.3%) exists but uncertainty too high (25.0%)

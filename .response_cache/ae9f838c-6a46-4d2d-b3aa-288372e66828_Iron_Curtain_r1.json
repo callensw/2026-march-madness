@@ -1,0 +1,7 @@
+STEP 1 — UPSET THESIS: Tennessee's elite defense (88.2 adj_d vs Iowa State's 87.3) can neutralize Iowa State's offense in a grind-it-out game. Felix Okpara rim protection and 40.9% opponent shooting creates enough stops to keep pace low and increase variance.
+
+STEP 2 — RATE THE UPSET THESIS: 6/10. Defensive metrics are nearly identical, but Tennessee's opp_fg_pct (.409 vs .426) gives them a slight edge in a half-court slugfest.
+
+STEP 3 — PICK: This screams defensive battle. Both teams force opponents under 41% shooting. Iowa State's offense is marginally better, but Tennessee's perimeter defense travels better in March pressure.
+
+{"team_a_win_prob": 0.42, "uncertainty": 0.18, "reasoning": "Elite defenses cancel out. Tennessee's 40.9% opponent shooting vs Iowa State's 42.6% - that edge matters in March grind.", "key_stat": "Tennessee holds opponents to 40.9% shooting vs Iowa State's 42.6%"}

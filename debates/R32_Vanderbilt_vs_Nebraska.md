@@ -1,132 +1,132 @@
 # 🏀 #5 Vanderbilt vs #4 Nebraska — South Region, Round of 32
-*2026-03-16T16:50:59.890464+00:00*
+*2026-03-16T17:41:57.929190+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Vandy's 15.8 efficiency margin beats Nebraska's 12.5 in this 67-possession grind. More points per trip in fewer chances."
-   Win probability: Vanderbilt 0.62 ± 0.12
-   *Key stat: Vanderbilt 67.1 tempo vs Nebraska 66.2 - similar pace, efficiency decides*
+🦅 **TEMPO HAWK**: "Identical tempo preferences neutralize pace advantage. Nebraska's superior defense wins the possession-by-possession grind in a slow game."
+   Win probability: Vanderbilt 0.45 ± 0.15
+   *Key stat: Nebraska allows 40.4% opponent FG% vs Vanderbilt's 42.7%*
 
-🛡️ **IRON CURTAIN**: "Nebraska's elite perimeter D (40.4% opp FG%) strangles Vanderbilt's offense. Better defensive efficiency wins ugly tournament games."
+🛡️ **IRON CURTAIN**: "Nebraska's elite perimeter defense (40.4% opp FG%) neutralizes Vandy's three-point attack. Defensive grind favors the better perimeter stoppers."
    Win probability: Vanderbilt 0.42 ± 0.15
-   *Key stat: Nebraska allows 40.4% shooting vs Vanderbilt's 42.7%*
+   *Key stat: Nebraska allows 40.4% opponent shooting vs Vanderbilt's 42.7%*
 
-💥 **GLASS CANNON** `[gemini]`: "Vanderbilt shoots better from three, 36.6% to 35.7%! That's the edge. Tyler Nickel is a sharpshooter. One hot quarter changes everything!"
-   Win probability: Vanderbilt 0.52 ± 0.15
-   *Key stat: Vanderbilt 3PT% = 36.6%*
+💥 **GLASS CANNON** `[gemini]`: "Vanderbilt shoots better from deep, 36.6% to Nebraska's 35.7%! That's the difference right there. Tyler Nickel is a sharpshooter. One hot quarter changes everything!"
+   Win probability: Vanderbilt 0.58 ± 0.15
+   *Key stat: Vanderbilt 3PT% 36.6%*
 
-🐺 **ROAD DOG** `[gemini]`: "Vanderbilt's senior-led backcourt with Miles and Tanner, alongside veteran forwards, has been here before. Nebraska has a freshman key player, that cracks in March. Experience wins."
+🐺 **ROAD DOG** `[gemini]`: "Vanderbilt's senior leadership, especially Duke Miles, has been here before. Nebraska has a freshman key player, and that cracks under R32 pressure. Experience wins."
    Win probability: Vanderbilt 0.62 ± 0.10
-   *Key stat: Vanderbilt experience: 7.0/10 vs Nebraska: 6.0/10*
+   *Key stat: Vanderbilt experience: 7.0/10*
 
-👁️ **WHISPER** `[gemini]`: "Nebraska's early Big Ten tournament exit suggests deeper issues, despite their rest advantage. Vanderbilt's back-to-back deep runs show current form."
+👁️ **WHISPER** `[gemini]`: "Nebraska's early Big Ten tournament exit suggests deeper issues, despite the extra rest. Vanderbilt's backcourt experience should exploit this."
    Win probability: Vanderbilt 0.62 ± 0.15
-   *Key stat: Nebraska lost Big Ten QF by 16 points.*
+   *Key stat: Nebraska lost Big Ten QF by 16 points*
 
-📜 **ORACLE**: "4v5 historically splits 50-50. Vanderbilt's superior offensive efficiency mirrors 2019 Auburn over Kansas. SEC tournament run shows clutch gene."
-   Win probability: Vanderbilt 0.62 ± 0.15
-   *Key stat: 4v5 games since 1985: 52% to higher seed*
+📜 **ORACLE**: "Classic 4v5 upset setup. Nebraska's defense mirrors 2019 Auburn beating Kansas. Vandy's shaky conference tourney finish screams vulnerable 5-seed."
+   Win probability: Vanderbilt 0.35 ± 0.15
+   *Key stat: 4-seeds beat 5-seeds 65.3% historically - Nebraska fits the upset archetype*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. Vanderbilt is peaking, coming off an SEC final. Nebraska lost early in their conference tourney. Momentum is REAL!"
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets—Vanderbilt just made a deep SEC tourney run, winning two straight. Nebraska got blown out in their first Big Ten tourney game. Momentum is REAL!"
    Win probability: Vanderbilt 0.68 ± 0.10
-   *Key stat: Vanderbilt: 8-2 in last 10 games*
+   *Key stat: Vanderbilt: W1, Nebraska: W1 (after a bad loss)*
 
 
 ## Round 2 — Cross-Examination
 
-🦅 **TEMPO HAWK** (position: WEAKENED):
+🦅 **TEMPO HAWK** (position: STRENGTHENED):
 
-   *Disagrees with:* Iron Curtain focuses on shooting percentages but ignores that fewer possessions amplify efficiency gaps — Vandy's 3.3-point edge per possession matters more.
+   *Disagrees with:* Glass Cannon overvalues marginal three-point shooting differences when pace neutralizes variance in a defensive slugfest.
 
-   *Agrees with:* Glass Cannon's three-point shooting edge aligns with my efficiency thesis — better shooting creates more points per possession.
+   *Agrees with:* Iron Curtain correctly identifies that Nebraska's superior defensive efficiency wins possession-by-possession battles in slow games.
 
-   "Iron Curtain misses the point — Nebraska's defense creates fewer possessions, but Vandy's efficiency edge compounds over 67 trips."
-   Updated probability: Vanderbilt 0.58 ± 0.14
+   "Glass Cannon ignores pace reality. Both teams play 67 possessions—shooting percentage matters less when defensive efficiency dominates in slow games."
+   Updated probability: Vanderbilt 0.38 ± 0.12
 
 🛡️ **IRON CURTAIN** (position: STRENGTHENED):
 
-   *Disagrees with:* Streak dismisses Nebraska's Big Ten loss without context - Iowa went nuclear from three, which won't repeat.
+   *Disagrees with:* Glass Cannon thinks three-point shooting percentage matters more than overall defensive suffocation - that's exactly the offensive delusion that gets teams bounced in March.
 
-   *Agrees with:* Tempo Hawk correctly identifies this as an efficiency battle, though he picked wrong on which efficiency matters more.
+   *Agrees with:* Tempo Hawk correctly identified that Nebraska's superior defense wins the possession-by-possession grind when pace is neutralized.
 
-   "Streak ignores that Nebraska's 'early exit' was to Iowa, who shot 60% from three. Defense travels, hot shooting doesn't."
-   Updated probability: Vanderbilt 0.38 ± 0.18
+   "Glass Cannon is WRONG. Vanderbilt's 36.6% from three means NOTHING when Nebraska forces 40.4% overall shooting. Defense travels, offense disappears."
+   Updated probability: Vanderbilt 0.38 ± 0.12
 
 💥 **GLASS CANNON** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain is so wrong! Nebraska's opponent FG% doesn't stop a hot shooting team in the three-point era. We're not in the 90s!
+   *Disagrees with:* Iron Curtain is wrong; defense means nothing against a hot shooting team. Vanderbilt's 36.6% 3PT% makes their defensive efficiency meaningless!
 
-   *Agrees with:* Streak gets it! Vanderbilt's SEC run shows they're catching fire when it counts. Momentum for shooters is EVERYTHING!
+   *Agrees with:* Road Dog gets it! Vanderbilt's senior leaders like Duke Miles can absolutely catch fire from beyond the arc, exploiting any pressure.
 
-   "Iron Curtain keeps talking defense! But Vanderbilt's 36.6% from three just needs to get hot. One flamethrower night, and that defense means NOTHING!"
-   Updated probability: Vanderbilt 0.55 ± 0.16
+   "Iron Curtain keeps talking defense, but Vanderbilt's 36.6% from deep is the equalizer! You can't coach that kind of shooting when they're ON. One hot quarter changes everything!"
+   Updated probability: Vanderbilt 0.60 ± 0.12
 
 🐺 **ROAD DOG** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk's efficiency argument ignores that young teams often fail to execute efficiently when the lights are brightest. You can't measure heart on a spreadsheet.
+   *Disagrees with:* Oracle's reliance on historical 4v5 win rates ignores the specific roster makeup. You can't measure heart and veteran savvy with a spreadsheet.
 
-   *Agrees with:* Streak gets it. Vanderbilt's senior leaders just made a deep conference run. That kind of battle-tested momentum is invaluable in March.
+   *Agrees with:* Streak understands momentum from a deep conference run. That kind of battle-tested experience builds toughness, which is what I've been saying all along.
 
-   "Tempo Hawk loves numbers, but experience trumps efficiency. Nebraska's young key player will crack under March pressure. Vanderbilt's senior guards have been here."
+   "Oracle's historical data doesn't account for Vanderbilt's senior-led roster. Experience trumps general trends in March. My pick holds."
    Updated probability: Vanderbilt 0.65 ± 0.10
 
-👁️ **WHISPER** (position: WEAKENED) `[gemini]`:
+👁️ **WHISPER** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Streak's 'momentum' ignores the physical cost of Vanderbilt's SEC run. Fatigue compounds, regardless of wins.
+   *Disagrees with:* Glass Cannon is wrong. Vanderbilt's shooting isn't the key; their backcourt's health and cohesion, despite recent games, is what matters.
 
-   *Agrees with:* Road Dog sees the veteran experience, but that doesn't negate the wear-and-tear of a grueling schedule.
+   *Agrees with:* Road Dog sees the experience gap. Vanderbilt's senior leadership has navigated pressure, while Nebraska's freshman core shows cracks.
 
-   "Everyone's missing Vanderbilt's hidden fatigue. They played 4 games in 4 days in the SEC tournament, then travel. That's a real physical toll."
-   Updated probability: Vanderbilt 0.58 ± 0.17
+   "Everyone's missing the deeper fatigue. Nebraska's early exit means more rest, but also a fractured locker room. Vanderbilt's travel was minimal."
+   Updated probability: Vanderbilt 0.65 ± 0.12
 
-📜 **ORACLE** (position: WEAKENED):
+📜 **ORACLE** (position: STRENGTHENED):
 
-   *Disagrees with:* Iron Curtain overvalues Nebraska's defense — historically, 5-seeds with elite D but mediocre offense lose to balanced 4-seeds like 2014 Dayton vs Stanford.
+   *Disagrees with:* Streak completely misreads Nebraska's Big Ten loss - losing to the #1 overall seed isn't momentum-killing, it's expected.
 
-   *Agrees with:* Tempo Hawk's efficiency gap analysis mirrors my historical pattern — superior offensive teams win these coin-flip matchups more often.
+   *Agrees with:* Iron Curtain nailed the defensive matchup - Nebraska's 40.4% opponent shooting is the key stat that wins this grind-it-out game.
 
-   "Iron Curtain ignores history: 2014 Dayton had elite defense too, lost to Stanford's offense. Defense alone doesn't win 4v5 games."
-   Updated probability: Vanderbilt 0.58 ± 0.18
+   "Streak ignores that Nebraska's 'bad loss' was to #1 seed Purdue. Vandy lost to Mississippi State. Historical upset patterns strengthened."
+   Updated probability: Vanderbilt 0.32 ± 0.12
 
-🔥 **STREAK** (position: UNCHANGED) `[gemini]`:
+🔥 **STREAK** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Oracle wants to talk about 1985. I want to talk about LAST TUESDAY. This team just won four games in four days to win their conference. They're playing the best basketball of their season RIGHT NOW. That matters more than any historical base rate.
+   *Disagrees with:* Oracle wants to talk about 4-seeds historically, but what have they done LATELY? Nebraska's recent form is a massive red flag, not an upset archetype.
 
-   *Agrees with:* Whisper gets it; Nebraska's early Big Ten exit is a huge red flag. They're deflated, not rested. Vanderbilt is riding a high.
+   *Agrees with:* Whisper is right, Nebraska's early Big Ten exit is a huge red flag. That's a team deflating, not building momentum!
 
-   "Vanderbilt's momentum from an 8-2 finish and SEC final run is undeniable. Nebraska's early exit shows they're not peaking right now. What have they done LATELY?"
-   Updated probability: Vanderbilt 0.68 ± 0.10
+   "Forget Oracle's history! Vanderbilt's recent run, winning 2 straight in their conference tourney, shows they're peaking. Nebraska's early exit means they're vulnerable."
+   Updated probability: Vanderbilt 0.72 ± 0.10
 
 
 ### Upset Watch
-**Upset Score: 61.8/100** | Upset score 62/100 for #5 Vanderbilt over #4 Nebraska. Historical upset rate: 50.0%. Agent support: 6-1 for Vanderbilt.
-   *Agent split: 6-1 for Vanderbilt | Historical upset rate: 50.0%*
+**Upset Score: 50.4/100** | Upset score 50/100 for #5 Vanderbilt over #4 Nebraska. Historical upset rate: 50.0%. Agent support: 4-3 for Vanderbilt.
+   *Agent split: 4-3 for Vanderbilt | Historical upset rate: 50.0%*
    *Statistical edges: Better 3PT% (36.6 vs 35.7)*
 
 
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Vanderbilt 0.57 ± 0.17
+Combined probability: Vanderbilt 0.51 ± 0.19
 
-**PICK: Vanderbilt** (57% — lean, high uncertainty)
+**PICK: Vanderbilt** (51% — genuine toss-up, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Road Dog and Streak won this debate on experience and momentum. Three agents weakened on Vanderbilt but couldn't flip — Tempo Hawk's efficiency math got shaky, Whisper found fatigue concerns, Oracle lost historical confidence. But Nebraska's early Big Ten exit remains damning. Senior guards beat freshman cracks."
+🎼 **THE CONDUCTOR**: "Road Dog and Streak won this debate - experience and momentum trump defense in March. Glass Cannon's shooting edge held despite Iron Curtain's defensive arguments. Oracle's upset archetype couldn't overcome Vanderbilt's senior leadership. When veterans get hot, spreadsheets become kindling."
 
-   *Key factor: Experience gap and current momentum*
+   *Key factor: Senior leadership and recent momentum vs defensive efficiency*
 
-   *Most weighted: Road Dog*
+   *Most weighted: Road Dog and Streak*
 
-   *Dissent report: Iron Curtain argued Nebraska's elite perimeter defense would strangle Vanderbilt's offense, but couldn't overcome the momentum narrative and experience edge that dominated the debate*
+   *Dissent report: Iron Curtain, Tempo Hawk, and Oracle lost by overvaluing Nebraska's defensive metrics while underestimating Vanderbilt's battle-tested backcourt and conference tournament momentum*
 
 
 ---
-### Specialist Vote: 6-1 Vanderbilt
+### Specialist Vote: 4-3 Vanderbilt
 
-🦅Vanderbilt 🛡️Nebraska 💥Vanderbilt 🐺Vanderbilt 👁️Vanderbilt 📜Vanderbilt 🔥Vanderbilt
+🦅Nebraska 🛡️Nebraska 💥Vanderbilt 🐺Vanderbilt 👁️Vanderbilt 📜Nebraska 🔥Vanderbilt
 
 CONDUCTOR AGREES: Vanderbilt (50%)
 
@@ -134,5 +134,5 @@ CONDUCTOR AGREES: Vanderbilt (50%)
 ---
 ### Vote Tally
 
-- **Vanderbilt**: Tempo Hawk, Glass Cannon, Road Dog, Whisper, Oracle, Streak (6 votes)
-- **Nebraska**: Iron Curtain (1 votes)
+- **Nebraska**: Tempo Hawk, Iron Curtain, Oracle (3 votes)
+- **Vanderbilt**: Glass Cannon, Road Dog, Whisper, Streak (4 votes)

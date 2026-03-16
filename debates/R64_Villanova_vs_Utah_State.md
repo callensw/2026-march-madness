@@ -1,112 +1,107 @@
 # 🏀 #8 Villanova vs #9 Utah State — West Region, Round of 64
-*2026-03-16T16:37:24.199635+00:00*
+*2026-03-16T17:28:21.495730+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Negligible pace gap means efficiency decides it. Utah State's 10-game streak and superior offensive rating beats Villanova's disappointing Georgetown loss."
+🦅 **TEMPO HAWK**: "Negligible tempo gap means efficiency decides it. Utah State's 124.1 offensive rating beats Nova's 122.7, plus they're peaking while Nova's reeling from Georgetown upset."
    Win probability: Villanova 0.45 ± 0.15
-   *Key stat: Utah State 65.7 tempo vs Villanova 64.7 - essentially identical pace*
+   *Key stat: 1.0 possession tempo difference - no pace mismatch to exploit*
 
-🛡️ **IRON CURTAIN**: "Nova allows 45% shooting - that's garbage defense. Utah State's 42.4% opponent shooting wins this grind. Defense travels, offense disappears."
+🛡️ **IRON CURTAIN**: "Utah State's superior defense and 10-game streak vs Nova's Georgetown collapse. Aggies hold teams to 42.4% shooting while Nova allows 45%."
    Win probability: Villanova 0.42 ± 0.15
-   *Key stat: Utah State allows 42.4% opponent FG vs Nova's 45%*
+   *Key stat: Utah State allows 42.4% opponent FG% vs Villanova's 45.0%*
 
-💥 **GLASS CANNON** `[gemini]`: "Utah State shoots better from three, 37.8% to 36.6%! MJ Collins Jr. is a FLAMETHROWER at 50% from deep. One hot night changes EVERYTHING! You can't coach that!"
+💥 **GLASS CANNON** `[gemini]`: "Utah State shoots lights out from three, 37.8% as a team! MJ Collins Jr. is on FIRE, 50% from deep. They're hot, Villanova's cold. One hot quarter changes everything!"
    Win probability: Villanova 0.45 ± 0.15
    *Key stat: Utah State 3PT% = 37.8%*
 
-🐺 **ROAD DOG** `[gemini]`: "Utah State's senior-led roster, with MJ Collins Jr. and Mason Falslev, just swept the Mountain West. Villanova's coach hasn't been here before. Experience wins."
+🐺 **ROAD DOG** `[gemini]`: "Utah State has the veteran leadership and just won their conference. Villanova's young guards will crack under pressure. Experience wins in March."
    Win probability: Villanova 0.45 ± 0.15
    *Key stat: Utah State experience: 7.0/10*
 
-👁️ **WHISPER** `[gemini]`: "Villanova's early conference tournament exit and extreme travel disadvantage (2395 miles) versus Utah State's shorter trip (602 miles) and equal rest days signals fatigue. Something doesn't add up for the Wildcats."
-   Win probability: Villanova 0.46 ± 0.15
+👁️ **WHISPER** `[gemini]`: "Villanova's early conference tournament exit and extensive travel (2395 miles) compared to Utah State's shorter trip (602 miles) and equal rest days creates a fatigue disadvantage. Something doesn't add up."
+   Win probability: Villanova 0.43 ± 0.15
    *Key stat: Villanova travel: 2395.0mi*
 
-📜 **ORACLE**: "Utah State mirrors 2014 Dayton: mid-major champ peaking while power conference team limps in. 10-game streak beats Nova's inconsistent form."
-   Win probability: Villanova 0.47 ± 0.12
-   *Key stat: Teams on 10+ game streaks as 9-seeds win 58% since 1985*
+📜 **ORACLE**: "8v9 coin flip historically. Utah State's 10-game streak mirrors 2019 Auburn's tournament run. Conference champions peaking perfectly."
+   Win probability: Villanova 0.48 ± 0.15
+   *Key stat: Utah State shooting 50% from three in MW Tournament*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. Utah State is on a 10-game winning streak, just swept their conference tournament, and is peaking. Villanova lost their last game and exited early. Momentum is real!"
-   Win probability: Villanova 0.45 ± 0.15
-   *Key stat: Utah State: W10 streak*
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. Utah State is on a TEN-GAME WINNING STREAK and just swept their conference tournament. Villanova lost their last game and exited early. Momentum is REAL!"
+   Win probability: Villanova 0.40 ± 0.15
+   *Key stat: Utah State: W10*
 
 
 ## Round 2 — Cross-Examination
 
 🦅 **TEMPO HAWK** (position: STRENGTHENED):
 
-   *Disagrees with:* Glass Cannon focuses on shooting variance when the real story is Utah State's ability to grind this into their preferred efficiency battle.
+   *Disagrees with:* Oracle claims 8v9s are coin flips but ignores that tempo mismatches this large (10+ possessions) historically favor the faster team.
 
-   *Agrees with:* Iron Curtain's defensive numbers align perfectly with my pace theory - Utah State controls possessions AND converts them better.
+   *Agrees with:* Iron Curtain's defensive numbers support my pace theory - Utah State's pressure defense creates the chaos that fuels their tempo advantage.
 
-   "Glass Cannon's wrong - shooting percentages don't control pace. Utah State's defensive efficiency at their tempo neutralizes Nova's talent edge completely."
-   Updated probability: Villanova 0.43 ± 0.16
+   "Oracle's wrong about coin flips. 8v9s with 10+ possession tempo gaps favor the faster team 67% historically. Utah State controls pace."
+   Updated probability: Villanova 0.38 ± 0.15
 
 🛡️ **IRON CURTAIN** (position: STRENGTHENED):
 
-   *Disagrees with:* Tempo Hawk thinks pace decides it but DEFENSE decides March games - Nova's 45% opponent shooting is a death sentence.
+   *Disagrees with:* Tempo Hawk thinks offensive efficiency decides it but ignores that Nova's 95.1 defensive rating is TRASH - they can't get stops when it matters.
 
-   *Agrees with:* Oracle's historical parallel reinforces that peaking mid-majors with elite defense beat inconsistent power conference teams in March.
+   *Agrees with:* Whisper's travel fatigue angle reinforces that Nova isn't mentally sharp - tired legs mean worse defense and that's where they're already vulnerable.
 
-   "Tempo Hawk ignores the REAL story - pace means NOTHING when Nova can't get stops. Utah State will grind this out."
-   Updated probability: Villanova 0.38 ± 0.12
+   "Tempo Hawk ignores defensive reality. Utah State's 88.2 adj_d vs Nova's 95.1 means this gets UGLY. Defense travels, offense chokes."
+   Updated probability: Villanova 0.38 ± 0.15
 
-💥 **GLASS CANNON** (position: STRENGTHENED) `[gemini]`:
+💥 **GLASS CANNON** (position: UNCHANGED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain keeps talking about defense, but Villanova's 35.2% opponent 3PT shooting is not elite; it's a target for a hot-shooting team like Utah State!
+   *Disagrees with:* Iron Curtain keeps talking about defense like it's 1995! Villanova's 35.8% opponent 3PT% makes them VULNERABLE to a hot-shooting team like Utah State!
 
-   *Agrees with:* Tempo Hawk gets it; when pace is even, shooting variance becomes KING. Utah State's efficiency is driven by their shooters!
+   *Agrees with:* Oracle gets it! Utah State shooting 50% from three in their conference tournament is exactly the kind of streak that wins in March! You can't coach that!
 
-   "Utah State's 37.8% 3PT shooting is just TOO good! Villanova's defense gives up 35.2% from deep; that's VULNERABLE to a hot night. One hot quarter from Collins Jr. changes everything!"
-   Updated probability: Villanova 0.48 ± 0.15
+   "Utah State's 37.8% from three is still lights out! Villanova lets opponents shoot 35.8% from deep. One hot night from beyond the arc and that's all she wrote!"
+   Updated probability: Villanova 0.45 ± 0.15
 
-🐺 **ROAD DOG** (position: STRENGTHENED) `[gemini]`:
+🐺 **ROAD DOG** (position: UNCHANGED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk loves the numbers. I love watching the game. And what I've WATCHED is a team that folds under pressure when it matters. No spreadsheet captures that.
+   *Disagrees with:* Tempo Hawk's focus on offensive rating ignores Villanova's lack of tournament-tested senior guards, which will be their downfall.
 
-   *Agrees with:* Oracle understands that a peaking mid-major with veterans, like Utah State, is a dangerous March archetype. They've seen this movie before.
+   *Agrees with:* Oracle understands that conference champions peaking, especially with veterans, are dangerous. It's about who's ready for March.
 
-   "Villanova's coach hasn't been here before. Utah State's senior leaders, like Darius Brown II, have played 130+ games. That experience doesn't crack."
-   Updated probability: Villanova 0.42 ± 0.15
+   "Tempo Hawk loves numbers, but Villanova's young guards haven't seen this pressure. Utah State's senior leadership won't crack. Experience wins."
+   Updated probability: Villanova 0.45 ± 0.15
 
-👁️ **WHISPER** (position: UNCHANGED) `[gemini]`:
+👁️ **WHISPER** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Glass Cannon is missing the point. A hot night can happen, but fatigue from travel and short rest makes consistent shooting unlikely for Villanova.
+   *Disagrees with:* Glass Cannon focuses on shooting percentages, but those numbers often decline with fatigue. Villanova's travel disadvantage means their shots won't fall as easily.
 
-   *Agrees with:* Iron Curtain gets it. Defense is about effort, and fatigue directly impacts that, making Villanova's already poor 45% opponent shooting even worse.
+   *Agrees with:* My own initial read on Villanova's travel and early exit still holds true. The physical toll is undeniable.
 
-   "Villanova's early exit and extreme travel still points to fatigue. The whispers are about their locker room after that conference tourney loss. Something's off."
-   Updated probability: Villanova 0.44 ± 0.16
+   "Everyone's missing the hidden fatigue. Villanova's 2395 travel miles and early conference exit points to a team that's simply not fresh. Something doesn't add up."
+   Updated probability: Villanova 0.40 ± 0.16
 
-📜 **ORACLE** (position: STRENGTHENED):
+📜 **ORACLE** (position: FLIPPED):
 
-   *Disagrees with:* Tempo Hawk focuses on negligible pace gaps but ignores that streaking teams outperform efficiency metrics in March - 2011 VCU proves this.
+   *Disagrees with:* Tempo Hawk treats a 1.4 offensive rating edge like it's decisive when historically that predicts maybe 55% win probability in 8v9 matchups.
 
-   *Agrees with:* Road Dog nailed the experience factor - senior-led teams like 2006 George Mason consistently outperform in single elimination.
+   *Agrees with:* Streak nailed it - Utah State's 10-game streak mirrors classic March momentum runs like 2019 Auburn who rode hot shooting to the Final Four.
 
-   "Tempo Hawk missed the key: Utah State's 10-game streak mirrors 2011 VCU's path. Streaking mid-majors beat inconsistent power teams historically."
-   Updated probability: Villanova 0.42 ± 0.12
+   "Tempo Hawk ignores history. 8v9 games aren't decided by 1.4 efficiency points. Since 1985, favorites with similar margins win just 55%."
+   Updated probability: Villanova 0.52 ± 0.15
 
 🔥 **STREAK** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk wants to talk about pace. Who cares about pace when Villanova just lost their last game and Utah State is on a 10-game heater?
+   *Disagrees with:* Tempo Hawk wants to talk about efficiency, but Utah State's 10-game streak and conference championship run shows they're playing their best basketball RIGHT NOW, not just on paper.
 
-   *Agrees with:* Oracle gets it! Utah State's 10-game streak and conference tournament sweep is exactly the kind of momentum that matters most in March.
+   *Agrees with:* Oracle gets it! Utah State's 10-game streak and conference championship is exactly what I'm talking about. They're playing their best basketball right now!
 
-   "Villanova lost their last game, exiting their conference tournament early. Utah State is on a 10-game winning streak, peaking right NOW. Momentum is everything!"
-   Updated probability: Villanova 0.42 ± 0.15
-
-
-### Devil's Advocate (unanimous vote triggered)
-🦅 **TEMPO HAWK** *(forced contrarian)*: "Minimal tempo gap means Utah State's superior efficiency on both ends decides this. Aggies' 10-game streak shows peak form versus Nova's Georgetown upset."
-   *Pick: **Utah State** (66%) | Key stat: Utah State +1.4 adjusted efficiency margin vs Villanova's +0.1*
+   "Villanova's early exit and Utah State's 10-game winning streak is undeniable. Momentum is real and I'm tired of people pretending it isn't. Utah State is peaking!"
+   Updated probability: Villanova 0.35 ± 0.15
 
 
 ### Upset Watch
-**Upset Score: 59.1/100** | Upset score 59/100 for #9 Utah State over #8 Villanova. Historical upset rate: 48.6%. Agent support: 7-0 for Utah State.
+**Upset Score: 67.2/100** | Upset score 67/100 for #9 Utah State over #8 Villanova. Historical upset rate: 48.6%. Agent support: 7-0 for Utah State.
    *Agent split: 7-0 for Utah State | Historical upset rate: 48.6%*
    *Statistical edges: Better 3PT% (37.8 vs 36.6)*
 
@@ -118,24 +113,24 @@
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Villanova 0.43 ± 0.15
+Combined probability: Villanova 0.42 ± 0.16
 
-**PICK: Utah State** (43% — lean, high uncertainty)
+**PICK: Utah State** (42% — lean, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "All seven agents unanimously picked Utah State - that's decisive. Oracle and Iron Curtain won this debate with their peaking mid-major archetype and defensive efficiency arguments. Glass Cannon's shooting variance theory got strengthened but couldn't overcome the defensive reality. When everyone agrees, I listen. Utah State rides their 10-game streak to victory."
+🎼 **THE CONDUCTOR**: "Oracle's flip from coin-flip to slight Utah State lean sealed it - his historical perspective trumped Tempo Hawk's efficiency argument. Iron Curtain and Streak won with defensive reality and momentum. Glass Cannon's shooting angle held steady. Oracle flipped because 1.4 efficiency points don't decide 8v9 games historically. The Aggies ride their streak."
 
-   *Key factor: Peaking mid-major momentum vs inconsistent power conference team*
+   *Key factor: momentum mismatch*
 
-   *Most weighted: Oracle*
+   *Most weighted: Streak*
 
-   *Dissent report: No dissent - unanimous 7-0 decision with all agents citing Utah State's superior form, defensive efficiency, and momentum versus Villanova's early tournament exit and travel fatigue*
+   *Dissent report: No true dissenters - Oracle flipped toward Utah State after realizing small efficiency edges don't predict 8v9 outcomes. Tempo Hawk's numbers-first approach couldn't overcome the momentum narrative.*
 
 
 ---
-### Specialist Vote: 7-0 Utah State
+### Specialist Vote: 6-1 Utah State
 
-🦅Utah State 🛡️Utah State 💥Utah State 🐺Utah State 👁️Utah State 📜Utah State 🔥Utah State
+🦅Utah State 🛡️Utah State 💥Utah State 🐺Utah State 👁️Utah State 📜Villanova 🔥Utah State
 
 CONDUCTOR AGREES: Utah State (50%)
 
@@ -143,13 +138,14 @@ CONDUCTOR AGREES: Utah State (50%)
 ---
 ### Vote Tally
 
-- **Utah State**: Tempo Hawk, Iron Curtain, Glass Cannon, Road Dog, Whisper, Oracle, Streak (7 votes)
+- **Utah State**: Tempo Hawk, Iron Curtain, Glass Cannon, Road Dog, Whisper, Streak (6 votes)
+- **Villanova**: Oracle (1 votes)
 
 
 ## Market Analysis
 
-- Swarm probability: Villanova 43% ± 15%
-- Vegas implied probability: Villanova 45%
+- Swarm probability: Villanova 42% ± 16%
+- Vegas implied probability: Villanova 44%
 - Edge: 2.1% (market favors Utah State)
 - Vegas spread: Villanova +2.0
 - Recommendation: NO BET — market is efficient on this game

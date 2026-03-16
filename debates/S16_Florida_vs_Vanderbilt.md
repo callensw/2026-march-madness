@@ -1,132 +1,132 @@
 # 🏀 #1 Florida vs #5 Vanderbilt — South Region, Sweet 16
-*2026-03-16T16:54:45.790208+00:00*
+*2026-03-16T17:45:09.228748+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Vanderbilt's 67.1 tempo vs Florida's 72.0 creates the grind-it-out game that already worked once. Fewer possessions favor the disciplined underdog."
+🦅 **TEMPO HAWK**: "Vanderbilt's 5-possession slower tempo creates uncomfortable grind for Florida. Already beat them 91-74 controlling pace in SEC semis."
    Win probability: Florida 0.42 ± 0.15
-   *Key stat: 5-possession tempo gap (72.0 vs 67.1) with Vanderbilt controlling pace*
+   *Key stat: Tempo gap: Florida 72.0 vs Vanderbilt 67.1 possessions per game*
 
-🛡️ **IRON CURTAIN**: "Vanderbilt held Florida to 74 points three weeks ago, winning by 17. Defense travels. Minimal defensive gap means ugly grind."
-   Win probability: Florida 0.45 ± 0.15
-   *Key stat: Vanderbilt's 89.4 adj_d within 2 points of Florida's 87.4*
+🛡️ **IRON CURTAIN**: "Vandy already cracked Florida's defense once, blowing them out 91-74. Florida's 87.4 adj_d meets Vandy's physicality but can't stop their balanced attack."
+   Win probability: Florida 0.32 ± 0.15
+   *Key stat: Vanderbilt held opponents to 42.7% shooting vs Florida's 40.8% - defensive edge to the underdog*
 
-💥 **GLASS CANNON** `[gemini]`: "Vanderbilt already blew Florida out with hot shooting in the SEC tourney! Both teams shoot 36.6% from three. Vanderbilt's Tyler Nickel is a sharpshooter. One hot quarter changes everything!"
-   Win probability: Florida 0.47 ± 0.15
+💥 **GLASS CANNON** `[gemini]`: "Vanderbilt already blew out Florida from three in the SEC tourney! They shoot the same percentage, but Vandy showed they can get HOT. One hot night changes everything!"
+   Win probability: Florida 0.48 ± 0.15
    *Key stat: Vanderbilt beat Florida 91-74 in SEC SF*
 
-🐺 **ROAD DOG** `[gemini]`: "Vanderbilt's senior leadership, especially Duke Miles and Tyler Nickel, won't crack. They just blew out Florida in the SEC tourney. Experience wins in March."
+🐺 **ROAD DOG** `[gemini]`: "Vanderbilt's senior leadership, especially Duke Miles and Tyler Nickel, won the last matchup. Florida's young core cracked under pressure. Experience wins here."
    Win probability: Florida 0.48 ± 0.15
-   *Key stat: Vanderbilt experience: 7.0/10 vs Florida: 6.0/10*
+   *Key stat: Vanderbilt experience: 7.0/10 vs Florida experience: 6.0/10*
 
-👁️ **WHISPER** `[gemini]`: "Everyone's talking about Florida's record, but Vanderbilt blew them out by 17 in the SEC Tournament. That's a deep-seated mental edge nobody's considering. Something doesn't add up with that Florida loss."
-   Win probability: Florida 0.46 ± 0.18
-   *Key stat: Vanderbilt beat Florida 91-74*
+👁️ **WHISPER** `[gemini]`: "Nobody's talking about how Florida's 12-game win streak was snapped by Vanderbilt just weeks ago, a 17-point blowout. That's a mental hurdle."
+   Win probability: Florida 0.58 ± 0.15
+   *Key stat: Vanderbilt beat Florida by 17 points (91-74)*
 
-📜 **ORACLE**: "1v5 base rate is 79%. But Vandy already beat Florida 91-74 in SEC semis. This screams 2011 VCU over Kansas."
-   Win probability: Florida 0.62 ± 0.12
+📜 **ORACLE**: "Since 1985, 1-seeds are 89-21 vs 5-seeds in Sweet 16. But Vandy already beat Florida 91-74 in SEC semis. Reminds me of 2014 Dayton stunning Syracuse."
+   Win probability: Florida 0.65 ± 0.12
    *Key stat: Vanderbilt won the head-to-head matchup 91-74 just three weeks ago*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — Vanderbilt just DOMINATED Florida in the SEC Semifinals, winning by 17! They're peaking and have the momentum from that huge conference tournament run. Florida's recent wins aren't convincing."
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — Vanderbilt just blew out Florida in their conference tournament! They're peaking, winning 9 of their last 10. Florida's momentum was just snapped."
    Win probability: Florida 0.45 ± 0.15
-   *Key stat: Vanderbilt beat Florida 91-74 in their last matchup.*
+   *Key stat: Vanderbilt beat Florida 91-74 in the SEC SF.*
 
 
 ## Round 2 — Cross-Examination
 
 🦅 **TEMPO HAWK** (position: STRENGTHENED):
 
-   *Disagrees with:* Oracle's VCU comparison ignores that VCU played FAST (71.8 tempo) while Vanderbilt wins by slowing games down.
+   *Disagrees with:* Oracle relies on historical base rates without considering that pace mismatches can neutralize talent gaps entirely.
 
-   *Agrees with:* Iron Curtain nailed it — defense travels, and Vanderbilt's grind-it-out style neutralizes Florida's talent edge.
+   *Agrees with:* Iron Curtain correctly identified that Vanderbilt already proved they can execute their game plan against Florida's defense.
 
-   "Oracle's missing the tempo story. VCU-Kansas was pace chaos. This is Vanderbilt grinding Florida into submission at 67 possessions."
-   Updated probability: Florida 0.38 ± 0.16
+   "Oracle's missing the pace story. 1-seeds vs 5-seeds don't account for tempo mismatches. Vandy's grind neutralizes Florida's talent edge completely."
+   Updated probability: Florida 0.38 ± 0.15
 
 🛡️ **IRON CURTAIN** (position: STRENGTHENED):
 
-   *Disagrees with:* Oracle is clinging to 1v5 base rates when Vanderbilt already proved they can shut down Florida's offense in a real game.
+   *Disagrees with:* Oracle is citing 1v5 historical records when Vanderbilt already proved they can shut down Florida's offense in a head-to-head matchup.
 
-   *Agrees with:* Tempo Hawk nailed it — fewer possessions in a grind-it-out game increases variance and favors the disciplined defensive team.
+   *Agrees with:* Tempo Hawk reinforced that Vanderbilt controls the pace and makes Florida uncomfortable in their preferred style of play.
 
-   "Oracle's wrong about base rates. Defense travels better than offense. Vanderbilt's 89.4 adj_d will grind Florida down again."
-   Updated probability: Florida 0.40 ± 0.16
+   "Oracle's wrong about 1v5 history. This is about DEFENSE. Vandy held Florida to 74 points when they average 82. Defense travels."
+   Updated probability: Florida 0.28 ± 0.15
 
-💥 **GLASS CANNON** (position: UNCHANGED) `[gemini]`:
+💥 **GLASS CANNON** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Oracle is wrong; the 1v5 base rate is meaningless when Vanderbilt just shot lights out and blew Florida out by 17 points! One hot quarter changes everything!
+   *Disagrees with:* Whisper is missing the point. That 17-point blowout means Vandy CAN beat them, not that Florida has a mental hurdle they'll overcome. The shooting disparity was too great!
 
-   *Agrees with:* Streak reinforced my view; Vanderbilt's recent dominant win shows they're on a hot streak from deep and peaking at the right time. Momentum is real!
+   *Agrees with:* Streak gets it! Vanderbilt's recent hot streak, culminating in that SEC SF blowout, proves they're peaking at the right time. Momentum for shooters is EVERYTHING!
 
-   "Vanderbilt's 36.6% from three is still right there with Florida's! We saw what happened when they got hot in the SEC tourney. You can't coach that shooting!"
+   "Vanderbilt already showed they can light it up from deep, hitting 50% from three against Florida in their last game. That's not a fluke, that's a flamethrower!"
    Updated probability: Florida 0.45 ± 0.15
 
 🐺 **ROAD DOG** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Oracle's 1v5 base rate is just numbers. Vanderbilt's veterans already beat Florida by 17, proving that historical average doesn't apply here.
+   *Disagrees with:* Oracle's historical trends ignore the specific roster experience and coaching pedigree in this matchup. Every game is different.
 
-   *Agrees with:* Glass Cannon gets it. Vanderbilt's senior sharpshooter Tyler Nickel already showed he can light up Florida, and that kind of veteran performance is what wins in March.
+   *Agrees with:* Streak understands that Vanderbilt's recent conference tournament win shows they're peaking with veteran leadership.
 
-   "Vanderbilt's senior leaders, like Duke Miles, just proved they can handle Florida's pressure. That experience and recent win means they won't fold."
+   "Oracle's historical data doesn't account for Vanderbilt's senior leaders, like Duke Miles, who've already beaten Florida. Experience trumps history in March."
    Updated probability: Florida 0.45 ± 0.15
 
-👁️ **WHISPER** (position: STRENGTHENED) `[gemini]`:
+👁️ **WHISPER** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Oracle's 79% base rate ignores the recent 17-point Florida loss, which suggests deeper issues not reflected in season-long data.
+   *Disagrees with:* Glass Cannon is wrong. Vanderbilt's win wasn't about 'getting hot,' it was a full systemic breakdown for Florida, not a fluke shooting night.
 
-   *Agrees with:* Glass Cannon and Streak noted the 17-point blowout, which hints at a deeper internal dynamic for Florida that nobody's truly investigating.
+   *Agrees with:* Road Dog sees the leadership difference. Vanderbilt's senior core knows how to exploit Florida's youth, which compounds their recent loss.
 
-   "Everyone's missing Florida's deeper issues after that 17-point blowout. The box score lies; the circumstances don't. Something's truly off with their chemistry."
-   Updated probability: Florida 0.44 ± 0.19
+   "Florida's 12-game win streak was snapped by Vanderbilt just weeks ago; a 17-point blowout. That's a mental hurdle that's still present."
+   Updated probability: Florida 0.52 ± 0.17
 
 📜 **ORACLE** (position: WEAKENED):
 
-   *Disagrees with:* Glass Cannon thinks one SEC tournament win predicts March outcomes, but historically 12-seeds with recent wins over their 5-seed opponent still lose 64% of the time.
+   *Disagrees with:* Tempo Hawk thinks pace control beats talent, but historically slower underdogs struggle against elite 1-seeds in March.
 
-   *Agrees with:* Road Dog's experience angle matches 2019 Auburn over Kansas - senior leadership matters in rematches where the favorite has motivation.
+   *Agrees with:* Whisper correctly identified the mental hurdle - that recent loss creates doubt, just like 2019 Auburn over UNC after regular season sweep.
 
-   "Glass Cannon ignores that 12-seeds who beat their opponent recently still lose 64% historically. One game doesn't override structural patterns."
-   Updated probability: Florida 0.58 ± 0.14
+   "Tempo Hawk ignores history: since 1985, slower teams are 23-41 as underdogs vs faster 1-seeds. Pace control doesn't overcome talent gaps."
+   Updated probability: Florida 0.58 ± 0.15
 
 🔥 **STREAK** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Oracle wants to talk about 1v5 base rates, but that's ancient history! Vanderbilt just beat Florida by 17 points LAST WEEK.
+   *Disagrees with:* Oracle wants to talk about historical base rates. I care about Vanderbilt's 9-1 record in their last 10 games, not 1985.
 
-   *Agrees with:* Glass Cannon gets it! Vanderbilt's hot shooting in the SEC tourney wasn't a fluke; they're peaking right now, and that's all that matters.
+   *Agrees with:* Glass Cannon gets it: Vanderbilt already blew out Florida from three. That recent performance is what matters, not season-long averages.
 
-   "Vanderbilt's recent form is undeniable. They've won 4 of their last 5, including that dominant 17-point win over Florida. Momentum is REAL and it's with Vandy."
-   Updated probability: Florida 0.38 ± 0.10
+   "Vanderbilt's 9 wins in their last 10 games, including blowing out Florida, shows they are peaking. Florida's recent momentum was just snapped."
+   Updated probability: Florida 0.42 ± 0.15
 
 
 ### Upset Watch
-**Upset Score: 52.8/100** | Upset score 53/100 for #5 Vanderbilt over #1 Florida. Historical upset rate: 50.0%. Agent support: 6-1 for Vanderbilt.
-   *Agent split: 6-1 for Vanderbilt | Historical upset rate: 50.0%*
+**Upset Score: 55.1/100** | Upset score 55/100 for #5 Vanderbilt over #1 Florida. Historical upset rate: 50.0%. Agent support: 5-2 for Vanderbilt.
+   *Agent split: 5-2 for Vanderbilt | Historical upset rate: 50.0%*
    *Statistical edges: Tempo mismatch (4.9 poss/game gap)*
 
 
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Florida 0.44 ± 0.16
+Combined probability: Florida 0.44 ± 0.18
 
 **PICK: Vanderbilt** (44% — lean, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Oracle weakened under cross-examination — his base rates crumbled against the 17-point blowout evidence. Tempo Hawk and Streak won by hammering recent results over historical patterns. Oracle's flip from confident to hesitant sealed it. Defense travels, momentum matters."
+🎼 **THE CONDUCTOR**: "Tempo Hawk and Iron Curtain won this debate — Vanderbilt's recent 91-74 demolition of Florida proves they can execute their game plan. Oracle and Whisper lost, with Oracle weakening when confronted about pace mismatches trumping historical base rates. The tape doesn't lie — Vandy already cracked the code."
 
    *Key factor: Recent head-to-head dominance*
 
-   *Most weighted: Tempo Hawk*
+   *Most weighted: Tempo Hawk, Iron Curtain*
 
-   *Dissent report: Oracle lost credibility by retreating from 62% to 58% confidence when challenged on base rates vs recent results. His VCU comparison fell apart under scrutiny of tempo differences.*
+   *Dissent report: Oracle weakened when challenged that 1v5 historical records don't account for specific pace mismatches. Whisper flipped from seeing the blowout as Florida's mental hurdle to acknowledging it as systemic breakdown, undermining their own argument.*
 
 
 ---
-### Specialist Vote: 6-1 Vanderbilt
+### Specialist Vote: 5-2 Vanderbilt
 
-🦅Vanderbilt 🛡️Vanderbilt 💥Vanderbilt 🐺Vanderbilt 👁️Vanderbilt 📜Florida 🔥Vanderbilt
+🦅Vanderbilt 🛡️Vanderbilt 💥Vanderbilt 🐺Vanderbilt 👁️Florida 📜Florida 🔥Vanderbilt
 
 CONDUCTOR AGREES: Vanderbilt (50%)
 
@@ -134,5 +134,5 @@ CONDUCTOR AGREES: Vanderbilt (50%)
 ---
 ### Vote Tally
 
-- **Vanderbilt**: Tempo Hawk, Iron Curtain, Glass Cannon, Road Dog, Whisper, Streak (6 votes)
-- **Florida**: Oracle (1 votes)
+- **Vanderbilt**: Tempo Hawk, Iron Curtain, Glass Cannon, Road Dog, Streak (5 votes)
+- **Florida**: Whisper, Oracle (2 votes)

@@ -1,132 +1,126 @@
 # 🏀 #4 Arkansas vs #13 Hawaii — West Region, Round of 64
-*2026-03-16T16:38:06.649003+00:00*
+*2026-03-16T17:29:05.752141+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Hawaii's 64.0 tempo vs Arkansas 71.3 creates 7+ possession gap. Fewer possessions neutralizes talent, favors experienced grinders over young runners."
-   Win probability: Arkansas 0.32 ± 0.18
-   *Key stat: 7.3 possession tempo differential favors Hawaii's half-court execution*
-
-🛡️ **IRON CURTAIN**: "Hawaii's defense matches Arkansas (90.5 vs 91.3 adj_d). Isaac Johnson's 7-0 frame clogs paint. Experience gap (8.0 vs 3.0) huge in grind-out game."
+🦅 **TEMPO HAWK**: "Hawaii's slow tempo forces Arkansas into uncomfortable grind-it-out game where veteran experience can neutralize talent gap in fewer possessions."
    Win probability: Arkansas 0.68 ± 0.15
-   *Key stat: Hawaii allows 41.1% shooting - elite perimeter defense*
+   *Key stat: 7-possession tempo gap (Arkansas 71.3 vs Hawaii 64.0)*
 
-💥 **GLASS CANNON** `[gemini]`: "Arkansas is on FIRE from deep at 36.4%! Hawaii's 30.9% just CAN'T keep up. One hot quarter changes everything, but Hawaii isn't bringing the heat!"
-   Win probability: Arkansas 0.82 ± 0.08
-   *Key stat: Arkansas 3PT%: 36.4%*
+🛡️ **IRON CURTAIN**: "Hawaii's elite defense (90.5 adj_d) matches Arkansas. Johnson's rim protection slows pace to 64 possessions. Defense travels, offense evaporates in March grind."
+   Win probability: Arkansas 0.62 ± 0.18
+   *Key stat: Hawaii allows 41.1% opponent shooting vs Arkansas's vulnerable 45.3%*
 
-🐺 **ROAD DOG** `[gemini]`: "Hawaii's senior-led roster, with an experience score of 8.0, won't flinch. Arkansas's young talent, 3.0 experience, hasn't seen this kind of March pressure yet. Coach Calipari has been here before, but his young team hasn't."
-   Win probability: Arkansas 0.58 ± 0.15
-   *Key stat: Hawaii experience=8.0/10 vs Arkansas experience=3.0/10*
+💥 **GLASS CANNON** `[gemini]`: "Arkansas is on FIRE from deep, shooting 36.4%! Hawaii's 30.9% just isn't going to cut it against that kind of offensive firepower. You can't coach that!"
+   Win probability: Arkansas 0.82 ± 0.15
+   *Key stat: Arkansas 3PT% = 36.4%*
 
-👁️ **WHISPER** `[gemini]`: "Arkansas has a substantial travel advantage with fewer miles. Hawaii's 2593 miles and only 3 rest days could lead to fatigue. That's a quiet disadvantage nobody's talking about."
+🐺 **ROAD DOG** `[gemini]`: "Hawaii's senior-led roster (8.0 experience) against Arkansas's young talent (3.0 experience) is a classic upset setup. Calipari's been here, but these young guys haven't."
+   Win probability: Arkansas 0.48 ± 0.15
+   *Key stat: Hawaii experience: 8.0/10*
+
+👁️ **WHISPER** `[gemini]`: "Nobody's talking about the travel. Hawaii has 2593 miles and 3 rest days. Arkansas has 1617 miles and 3 rest days. That extra 976 miles for Hawaii is a significant fatigue factor."
    Win probability: Arkansas 0.61 ± 0.15
-   *Key stat: Hawaii travel: 2593.0mi*
+   *Key stat: Hawaii's 2593 travel miles*
 
-📜 **ORACLE**: "4v13 base rate is 79.1% since 1985. Hawaii's tempo control and Isaac Johnson's size mirror 2016 upset over Cal."
-   Win probability: Arkansas 0.72 ± 0.12
-   *Key stat: Hawaii allows 41.1% FG, Arkansas shoots 36.4% from three - classic grind-it-out upset setup*
+📜 **ORACLE**: "4v13 base rate is 79%. Arkansas mirrors 2019 Auburn — Calipari team peaking with elite guard play. Hawaii lacks offensive firepower."
+   Win probability: Arkansas 0.76 ± 0.12
+   *Key stat: Only 8 of 152 13-seeds have beaten 4-seeds since 1985*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching! Arkansas is PEAKING, winning the SEC tournament on a 5-game streak. Hawaii won their conference, but Arkansas is playing at another level RIGHT NOW."
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. Arkansas just won the SEC Tournament on a 5-game streak. They're peaking RIGHT NOW. Hawaii's good, but Arkansas is on another level of momentum."
    Win probability: Arkansas 0.68 ± 0.10
-   *Key stat: Arkansas: W5 streak*
+   *Key stat: Arkansas: W5 streak, SEC Tournament Champions*
 
 
 ## Round 2 — Cross-Examination
 
 🦅 **TEMPO HAWK** (position: STRENGTHENED):
 
-   *Disagrees with:* Glass Cannon completely misses that shooting percentages mean less in low-possession games - fewer attempts reduce variance.
+   *Disagrees with:* Glass Cannon ignores that Arkansas's defense allows 35.2% from three, making Hawaii's 30.9% shooting actually competitive in this matchup.
 
-   *Agrees with:* Iron Curtain correctly identifies this as a grind-out game where Hawaii's half-court execution and Johnson's rim protection shine.
+   *Agrees with:* Iron Curtain correctly identifies that Hawaii's elite defense can slow this game down, which is exactly the pace mismatch I highlighted.
 
-   "Glass Cannon ignores pace reality. Arkansas shoots 36.4% from three in 71-possession games. Hawaii forces 64-possession slogs where hot shooting matters less."
-   Updated probability: Arkansas 0.28 ± 0.16
-
-🛡️ **IRON CURTAIN** (position: STRENGTHENED):
-
-   *Disagrees with:* Tempo Hawk thinks slower pace helps Hawaii, but fewer possessions just gives Arkansas more time to methodically attack Hawaii's soft interior.
-
-   *Agrees with:* Oracle sees the defensive mismatch - Hawaii's 41.1% opponent shooting won't stop Arkansas from getting good looks inside.
-
-   "Tempo Hawk is WRONG. Hawaii's 64.0 tempo means MORE possessions for Arkansas to expose Hawaii's weak interior defense. Pace helps the better team."
+   "Glass Cannon's wrong — Hawaii shoots 30.9% from three but Arkansas allows 35.2%. Pace control matters more than shooting percentages."
    Updated probability: Arkansas 0.72 ± 0.12
+
+🛡️ **IRON CURTAIN** (position: WEAKENED):
+
+   *Disagrees with:* Glass Cannon ignores that Hawaii's perimeter defense (29.1% opp 3PT%) will neutralize Arkansas's shooting.
+
+   *Agrees with:* Tempo Hawk gets it — fewer possessions means Hawaii's defense can grind this into an ugly game where talent gaps shrink.
+
+   "Glass Cannon is WRONG. Arkansas shoots 36% from three but Hawaii's defense holds opponents to 29.1% from deep. Defense travels."
+   Updated probability: Arkansas 0.58 ± 0.16
 
 💥 **GLASS CANNON** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain is WRONG because Hawaii's defensive efficiency means nothing if they can't hit a shot, and their 30.9% from deep is ice cold!
+   *Disagrees with:* Iron Curtain keeps talking about defense like it's 1995! We're in the three-point ERA; defense can't stop a flamethrower.
 
-   *Agrees with:* Oracle's mention of Hawaii's tempo control and size could grind it out, making it harder for Arkansas to get enough possessions to get truly hot.
+   *Agrees with:* Streak gets it! Arkansas's W5 streak means they're peaking, and that includes their shooting. Momentum is real!
 
-   "Okay, Iron Curtain, you keep talking defense like it's 1995! Hawaii's 30.9% from three is a brick factory. Arkansas's 36.4% is still too hot!"
+   "Iron Curtain's defense is meaningless against a hot shooting team! Arkansas's 36.4% from three will overpower any D. One hot quarter changes everything!"
+   Updated probability: Arkansas 0.75 ± 0.18
+
+🐺 **ROAD DOG** (position: STRENGTHENED) `[gemini]`:
+
+   *Disagrees with:* Oracle loves the numbers, but those base rates don't account for a mid-major with 4+ seniors playing 130+ games together.
+
+   *Agrees with:* Tempo Hawk's point about Hawaii's tempo forcing a grind-it-out game reinforces that experience will shine in fewer possessions.
+
+   "Oracle's base rates don't account for Hawaii's 8.0 experience. You can't measure heart on a spreadsheet. These seniors have seen it all."
+   Updated probability: Arkansas 0.45 ± 0.15
+
+👁️ **WHISPER** (position: WEAKENED) `[gemini]`:
+
+   *Disagrees with:* Glass Cannon is wrong. Arkansas's 36.4% 3PT shooting can vanish with fatigue; travel distance can impact shooting touch more than raw talent.
+
+   *Agrees with:* Road Dog reinforced my view that experience matters. Inexperienced teams falter under hidden pressures like travel and short rest.
+
+   "Everyone is missing that Hawaii's roster is 8.0 experience, while Arkansas's is 3.0. Fatigue hits inexperienced teams harder, making that travel mileage disparity for Hawaii even more dangerous."
    Updated probability: Arkansas 0.58 ± 0.17
 
-🐺 **ROAD DOG** (position: WEAKENED) `[gemini]`:
+📜 **ORACLE** (position: WEAKENED):
 
-   *Disagrees with:* Tempo Hawk's focus on tempo differential misses that experienced teams adapt. Hawaii's veterans have played slow and fast.
+   *Disagrees with:* Road Dog overrates experience - 2011 VCU's 2.8 experience demolished Kansas's veterans in the Elite Eight.
 
-   *Agrees with:* Iron Curtain understands that Hawaii's experience, 8.0, and Isaac Johnson's presence makes them tough. You can't measure that heart.
+   *Agrees with:* Iron Curtain nailed the pace factor - Hawaii's 64 possessions neutralizes Arkansas's talent advantage like 2018 UMBC.
 
-   "Tempo Hawk loves numbers, but Hawaii's senior-led squad, with 8.0 experience, won't be rattled by pace. They've seen every tempo. Calipari's young team will crack."
-   Updated probability: Arkansas 0.52 ± 0.18
+   "Road Dog's experience edge? 2011 VCU had 2.8 experience, beat Kansas. Young teams peak in March when talent matters most."
+   Updated probability: Arkansas 0.72 ± 0.14
 
-👁️ **WHISPER** (position: STRENGTHENED) `[gemini]`:
+🔥 **STREAK** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Glass Cannon is wrong; 3PT% fades when legs are heavy. Hawaii's fatigue will hinder their ability to keep up, not just their shooting.
+   *Disagrees with:* Road Dog's focus on season-long experience ignores Hawaii's recent slump and Arkansas's current surge. Recent form trumps overall experience.
 
-   *Agrees with:* Road Dog sees the experience gap, but I'm hearing whispers of Hawaii's veterans tiring; that experience won't save them from heavy legs.
+   *Agrees with:* Glass Cannon gets it! Arkansas is peaking, shooting lights out, and riding that wave. You can't ignore a team playing their best basketball right now!
 
-   "Everyone's missing how Hawaii's travel and rest disadvantage compounds. Arkansas's relative freshness will be a quiet factor, especially late."
-   Updated probability: Arkansas 0.64 ± 0.14
-
-📜 **ORACLE** (position: STRENGTHENED):
-
-   *Disagrees with:* Glass Cannon overrates Arkansas's 36.4% shooting - historically, defense beats offense in March upsets like 2016 Hawaii over Cal.
-
-   *Agrees with:* Iron Curtain nailed Hawaii's defensive profile - that 41.1% FG allowed mirrors classic upset defenses since 1985.
-
-   "Glass Cannon ignores history. 2016 Hawaii shot 31% from three, beat Cal anyway. Defense travels, shooting doesn't."
-   Updated probability: Arkansas 0.65 ± 0.14
-
-🔥 **STREAK** (position: WEAKENED) `[gemini]`:
-
-   *Disagrees with:* Tempo Hawk wants to talk tempo. I want to talk about what Hawaii has done LATELY: they only won two games in their conference tournament, not three or four. That's not a strong peak.
-
-   *Agrees with:* Glass Cannon gets it! Arkansas is hot from deep, and that's exactly the kind of peaking performance that carries into March, changing games fast.
-
-   "Hawaii's conference tournament win was less impressive, only two games. Arkansas just ran through a tougher SEC bracket, showing real momentum. That's the difference RIGHT NOW."
-   Updated probability: Arkansas 0.65 ± 0.12
-
-
-### Upset Watch
-**Upset Score: 31.9/100** | Upset score 32/100 for #13 Hawaii over #4 Arkansas. Historical upset rate: 20.9%. Agent support: 1-6 for Hawaii.
-   *Agent split: 1-6 for Hawaii | Historical upset rate: 20.9%*
-   *Statistical edges: Better defense (90.5 vs 91.3 adj_d); Tempo mismatch (7.3 poss/game gap)*
+   "Road Dog wants to talk about experience, but Hawaii just lost 2 of their last 3. Momentum is real and it's with Arkansas, who won their conference. What have you done LATELY?"
+   Updated probability: Arkansas 0.70 ± 0.12
 
 
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Arkansas 0.54 ± 0.21
+Combined probability: Arkansas 0.64 ± 0.18
 
-**PICK: Arkansas** (54% — genuine toss-up, high uncertainty)
+**PICK: Arkansas** (64% — lean, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Iron Curtain and Whisper won this debate. Glass Cannon's flip exposed the shooting variance myth - Arkansas's talent advantage shines regardless of pace. Tempo Hawk's possession theory crumbled under cross-examination. Hawaii's experience can't overcome Arkansas's superior firepower. The Razorbacks cut down the Rainbow Warriors."
+🎼 **THE CONDUCTOR**: "Four agents weakened in Round 2, but Arkansas still wins 6-1. Glass Cannon and Oracle won - Arkansas's offensive firepower and historical precedent trump Hawaii's experience edge. Road Dog's upset call falls short despite valid experience concerns. When talent meets momentum, bet the Razorbacks."
 
-   *Key factor: talent and offensive efficiency gap*
+   *Key factor: Offensive firepower disparity*
 
-   *Most weighted: Iron Curtain*
+   *Most weighted: Glass Cannon*
 
-   *Dissent report: Tempo Hawk's pace theory looked compelling initially but Iron Curtain demolished it - fewer possessions actually help the better team execute. Glass Cannon flipped after realizing shooting percentages matter less in low-possession games, weakening the upset case.*
+   *Dissent report: Road Dog's experience argument had merit but couldn't overcome the talent gap. Four agents weakened as they recognized Hawaii's defensive capabilities, but Arkansas's 21.5 KenPom advantage proved decisive.*
 
 
 ---
 ### Specialist Vote: 6-1 Arkansas
 
-🦅Hawaii 🛡️Arkansas 💥Arkansas 🐺Arkansas 👁️Arkansas 📜Arkansas 🔥Arkansas
+🦅Arkansas 🛡️Arkansas 💥Arkansas 🐺Hawaii 👁️Arkansas 📜Arkansas 🔥Arkansas
 
 CONDUCTOR AGREES: Arkansas (50%)
 
@@ -134,5 +128,5 @@ CONDUCTOR AGREES: Arkansas (50%)
 ---
 ### Vote Tally
 
-- **Hawaii**: Tempo Hawk (1 votes)
-- **Arkansas**: Iron Curtain, Glass Cannon, Road Dog, Whisper, Oracle, Streak (6 votes)
+- **Arkansas**: Tempo Hawk, Iron Curtain, Glass Cannon, Whisper, Oracle, Streak (6 votes)
+- **Hawaii**: Road Dog (1 votes)

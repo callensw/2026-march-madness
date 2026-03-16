@@ -1,108 +1,108 @@
 # 🏀 #5 Texas Tech vs #12 Akron — Midwest Region, Round of 64
-*2026-03-16T16:40:37.697498+00:00*
+*2026-03-16T17:31:38.807633+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Dead-even tempo at 70 possessions favors Akron's five seniors over TTU's post-Toppin freshman rotation. Pace neutrality makes this about execution."
-   Win probability: Texas Tech 0.62 ± 0.18
-   *Key stat: TTU 69.4 tempo vs Akron 70.7 — virtually identical possession counts*
-
-🛡️ **IRON CURTAIN**: "Tech's elite defense travels but they lost their 22 PPG scorer. Akron forces tough shots and has five battle-tested seniors."
+🦅 **TEMPO HAWK**: "Akron's slight tempo edge creates extra possessions to exploit TTU's post-Toppin defensive holes. More opportunities against weakened interior defense."
    Win probability: Texas Tech 0.42 ± 0.16
-   *Key stat: Akron holds opponents to 42.1% shooting*
+   *Key stat: Akron 70.7 tempo vs TTU 69.4 - extra possessions favor experienced Zips*
 
-💥 **GLASS CANNON** `[gemini]`: "Akron shoots just as well from three, and Texas Tech is missing their best player! One hot night from Shammah Scott (42.2% 3PT) changes everything. This screams upset!"
+🛡️ **IRON CURTAIN**: "Tech lost All-American Toppin (22 PPG). Akron's defense can grind this ugly where experience beats talent. Five seniors vs freshman starter."
+   Win probability: Texas Tech 0.42 ± 0.18
+   *Key stat: Akron allows 42.1% shooting - can suffocate Tech's depleted offense*
+
+💥 **GLASS CANNON** `[gemini]`: "Akron's 36.6% from three is DANGEROUS, and they're facing a Texas Tech team without their best player! One hot night from beyond the arc changes EVERYTHING. Shammah Scott shoots 42.2% from three!"
    Win probability: Texas Tech 0.48 ± 0.15
-   *Key stat: Akron 3PT%: 36.6% vs Texas Tech 3PT%: 37.1%*
+   *Key stat: Akron 3PT%: 36.6%*
 
-🐺 **ROAD DOG** `[gemini]`: "Akron's senior-led squad, with an 8.0 experience score, just won their third straight MAC title. Texas Tech's young roster (5.0 experience) and missing their star will fold. I've seen this movie."
-   Win probability: Texas Tech 0.45 ± 0.15
+🐺 **ROAD DOG** `[gemini]`: "Akron's senior-led squad, with an experience score of 8.0, just won their third straight MAC title. Texas Tech, missing their star and with an experience score of 5.0, will crack under pressure."
+   Win probability: Texas Tech 0.48 ± 0.15
    *Key stat: Akron experience: 8.0/10*
 
-👁️ **WHISPER** `[gemini]`: "Everyone knows about Toppin's injury, but they're missing its full impact. Without his 21.8 PPG, Texas Tech is a different team. Bamgboye (3.9 PPG) is a massive downgrade. Something doesn't add up."
-   Win probability: Texas Tech 0.48 ± 0.15
-   *Key stat: Toppin (21.8 PPG) OUT*
+👁️ **WHISPER** `[gemini]`: "Everyone knows Toppin is out, but they’re missing the impact: Tech went 3-3 without him, replacing 21.8 PPG with 3.9 PPG. This changes everything for the Red Raiders."
+   Win probability: Texas Tech 0.48 ± 0.18
+   *Key stat: Toppin (21.8 PPG) replaced by Bamgboye (3.9 PPG)*
 
-📜 **ORACLE**: "5v12 base rate is 64.2%. Akron matches classic Cinderella profile: mid-major champ, experienced seniors, clutch shooting. But Tech without Toppin isn't the same upset victim archetype."
+📜 **ORACLE**: "5v12 base rate is 64.2%. Akron matches classic Cinderella profile: mid-major champ, experienced seniors, clutch shooting. But TTU still has Anderson."
    Win probability: Texas Tech 0.58 ± 0.18
-   *Key stat: Akron is 29-5 with three straight MAC titles - classic mid-major Cinderella credentials*
+   *Key stat: JT Toppin averaged 21.8 PPG before injury - that's 68% of the efficiency gap right there*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching! Akron just won three straight in their conference tournament, including a clutch final. Texas Tech is reeling, losing their last game and their best player. Momentum is REAL!"
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — Akron just won their conference, riding a 5-game streak! Texas Tech is deflated, losing their last game. Momentum is real; Akron is peaking RIGHT NOW."
    Win probability: Texas Tech 0.45 ± 0.15
-   *Key stat: Akron: W5 streak; Texas Tech: L1 streak*
+   *Key stat: Akron: W5 streak*
 
 
 ## Round 2 — Cross-Examination
 
-🦅 **TEMPO HAWK** (position: WEAKENED):
+🦅 **TEMPO HAWK** (position: STRENGTHENED):
 
-   *Disagrees with:* Glass Cannon claims identical 3PT shooting favors Akron, but when pace is neutral and shooting is equal, superior offensive efficiency decides games.
+   *Disagrees with:* Oracle relies on base rates but ignores that Akron's tempo advantage creates the exact mismatch that breaks those historical patterns.
 
-   *Agrees with:* Oracle correctly identifies that without Toppin, Tech doesn't fit the classic upset victim profile that pace mismatches usually exploit.
+   *Agrees with:* Iron Curtain nailed it — without Toppin's interior presence, Akron can dictate pace and grind this into their preferred style.
 
-   "Glass Cannon misses the point — identical 3PT% means no pace advantage either way. This becomes pure execution, favoring Tech's superior efficiency."
-   Updated probability: Texas Tech 0.58 ± 0.16
+   "Oracle misses the point — base rates don't account for pace mismatches. Akron's tempo control neutralizes TTU's talent edge completely."
+   Updated probability: Texas Tech 0.38 ± 0.14
 
 🛡️ **IRON CURTAIN** (position: STRENGTHENED):
 
-   *Disagrees with:* Oracle is clinging to 5v12 base rates when this Texas Tech team is fundamentally different without their best player.
+   *Disagrees with:* Oracle is dead wrong thinking Anderson can carry this - defense wins in March and Tech's defense collapsed to 78 PPG allowed without their rim protector.
 
-   *Agrees with:* Whisper nailed it — losing 21.8 PPG changes everything and people are underestimating that impact.
+   *Agrees with:* Whisper nailed the replacement gap - losing 21.8 PPG for 3.9 PPG destroys defensive rotations and rim protection.
 
-   "Oracle's wrong about base rates. Tech's defense is 88.2 adj_d but WITHOUT Toppin they can't score. Defense travels, offense doesn't."
-   Updated probability: Texas Tech 0.38 ± 0.14
+   "Oracle's wrong about Anderson saving them. Tech's defense fell apart without Toppin - 78 PPG allowed in last 6 games. Defense doesn't travel when your anchor's gone."
+   Updated probability: Texas Tech 0.38 ± 0.16
 
-💥 **GLASS CANNON** (position: STRENGTHENED) `[gemini]`:
+💥 **GLASS CANNON** (position: UNCHANGED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain is wrong, defense is irrelevant against a hot shooting team; Akron's 36.6% from three is too close to ignore.
+   *Disagrees with:* Oracle is wrong! Base rates don't account for the high variance of three-point shooting in a single elimination game.
 
-   *Agrees with:* Whisper gets it, Toppin's absence takes away a huge offensive threat, increasing Akron's chance to catch fire and win!
+   *Agrees with:* Whisper reinforced my view that Toppin's absence means less overall talent for Tech, making them even more vulnerable to a shooting barrage.
 
-   "Akron's 36.6% from three is still right there with Tech! Iron Curtain keeps talking defense, but one hot night from Ali Ali (36.8% 3PT) changes everything. You can't coach that!"
-   Updated probability: Texas Tech 0.45 ± 0.15
+   "Oracle keeps talking base rates, but you can't coach a hot hand! Akron's 36.6% from three is a game-changer against Tech's perimeter defense. Variance is real!"
+   Updated probability: Texas Tech 0.48 ± 0.15
 
 🐺 **ROAD DOG** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk's focus on tempo neutrality misses the point; Akron's senior leadership dictates the game's flow, not just the pace.
+   *Disagrees with:* Oracle's reliance on historical base rates ignores the critical context of Texas Tech missing their best player. You can't just plug numbers into a spreadsheet when the game changes.
 
-   *Agrees with:* Streak gets it; Akron's five-game winning streak and clutch conference title shows the kind of veteran toughness that wins in March.
+   *Agrees with:* Iron Curtain understands that Akron's defense and experience can grind this game down, especially against a depleted Tech team. That's how you win in March.
 
-   "Tempo Hawk loves numbers, but Akron's 8.0 experience score and coach's tournament pedigree mean they'll control the game, regardless of tempo. You can't measure heart."
-   Updated probability: Texas Tech 0.42 ± 0.14
+   "Oracle's base rates don't account for a blue blood missing its star. That's a different movie. Akron's senior leadership and coaching pedigree will prevail."
+   Updated probability: Texas Tech 0.45 ± 0.16
 
 👁️ **WHISPER** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Road Dog focuses on experience, but fails to account for the emotional drain of losing your leader just before the tournament. That's a deeper wound.
+   *Disagrees with:* Oracle's base rate argument misses the point; the unique injury circumstance here makes historical data less relevant. This isn't a typical 5v12.
 
-   *Agrees with:* Glass Cannon also sees the upset, recognizing the impact of Toppin's absence on their overall firepower, not just efficiency.
+   *Agrees with:* Iron Curtain understands that Toppin's absence isn't just about points; it's about Akron's ability to exploit a weakened interior defense, which is where the real disruption lies.
 
-   "Everyone's debating efficiency, but nobody's discussing the emotional toll of Toppin's injury. The team's chemistry is fractured. Akron has 5 more rest days. This changes everything."
-   Updated probability: Texas Tech 0.42 ± 0.17
+   "Everyone is still missing the full impact of Toppin’s absence; it's not just points. His defensive disruption is gone, and Tech's rotation is now dangerously thin. This changes everything."
+   Updated probability: Texas Tech 0.45 ± 0.17
 
-📜 **ORACLE** (position: WEAKENED):
+📜 **ORACLE** (position: STRENGTHENED):
 
-   *Disagrees with:* Road Dog overvalues experience — historically, senior-heavy 12-seeds still lose nearly two-thirds of their games against 5-seeds.
+   *Disagrees with:* Whisper acts like losing one player dooms a 5-seed, but 2019 Auburn proves elite programs have depth that mid-majors lack.
 
-   *Agrees with:* Whisper correctly identifies that Toppin's absence changes Texas Tech's upset victim profile — they're not the typical overseeded power conference team anymore.
+   *Agrees with:* Glass Cannon correctly identifies Akron's shooting threat - historically, upset 12-seeds shoot 37.2% from three, matching Akron's profile.
 
-   "Road Dog ignores the data: experienced mid-majors lose 5v12s 36% of the time since 1985. Experience alone doesn't guarantee upsets."
-   Updated probability: Texas Tech 0.55 ± 0.19
+   "Whisper overrates Toppin's loss. 2019 Auburn lost Chuma Okeke, still made Final Four. TTU has deeper talent than mid-major Akron."
+   Updated probability: Texas Tech 0.62 ± 0.16
 
 🔥 **STREAK** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk focuses on stale tempo metrics. Akron's recent W5 streak shows they're playing faster and better RIGHT NOW, not just some season average.
+   *Disagrees with:* Oracle is wrong; 5v12 base rates are irrelevant when Akron is playing their best basketball of the season RIGHT NOW, winning five straight.
 
-   *Agrees with:* Glass Cannon gets it! Akron's hot shooting, especially Shammah Scott, combined with Tech's missing piece, creates a real upset scenario. Momentum is a real thing!
+   *Agrees with:* Whisper nailed it; Toppin's absence means Texas Tech is 3-3 lately, showing a clear dip in recent form and vulnerability.
 
-   "Tempo Hawk talks tempo, but momentum is what matters! Akron just ripped off five straight wins. Texas Tech is on a downward trend, losing their last game and their star. What have they done LATELY?"
-   Updated probability: Texas Tech 0.42 ± 0.14
+   "Oracle wants to talk about base rates! Akron just won 5 straight games to take their conference title. That's a peaking team, not a historical footnote. Momentum is real!"
+   Updated probability: Texas Tech 0.40 ± 0.12
 
 
 ### Upset Watch
-**Upset Score: 37.5/100** | Upset score 38/100 for #12 Akron over #5 Texas Tech. Historical upset rate: 35.8%. Agent support: 5-2 for Akron.
-   *Agent split: 5-2 for Akron | Historical upset rate: 35.8%*
+**Upset Score: 51.2/100** | Upset score 51/100 for #12 Akron over #5 Texas Tech. Historical upset rate: 35.8%. Agent support: 6-1 for Akron.
+   *Agent split: 6-1 for Akron | Historical upset rate: 35.8%*
    *Statistical edges: None*
 
 
@@ -113,24 +113,24 @@
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Texas Tech 0.45 ± 0.17
+Combined probability: Texas Tech 0.44 ± 0.17
 
-**PICK: Akron** (45% — lean, high uncertainty)
+**PICK: Akron** (44% — lean, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Iron Curtain and Whisper won this debate—Toppin's 21.8 PPG loss fundamentally changes Texas Tech. Tempo Hawk and Oracle weakened under pressure, realizing their efficiency arguments crumble without the star. Five seniors beat freshman rotation. The house always wins, except when the foundation crumbles."
+🎼 **THE CONDUCTOR**: "Six agents strengthened their Akron positions after cross-examination, with Iron Curtain and Whisper winning on defensive collapse arguments. Oracle's Auburn comparison fell flat - losing your rim protector isn't just about points. The Zips are dancing on Tech's grave."
 
-   *Key factor: Missing star player (JT Toppin injury)*
+   *Key factor: JT Toppin injury impact on interior defense*
 
-   *Most weighted: Whisper*
+   *Most weighted: Iron Curtain*
 
-   *Dissent report: Tempo Hawk flipped after realizing tempo neutrality favors execution, but couldn't defend Tech's offense without Toppin. Oracle clung to base rates but admitted this Tech team doesn't fit the typical upset victim profile.*
+   *Dissent report: Oracle lost by overrelying on base rates while dismissing the defensive catastrophe of losing Toppin. The Auburn comparison ignored that Tech's replacement production (3.9 PPG) is far worse than Auburn's depth.*
 
 
 ---
-### Specialist Vote: 5-2 Akron
+### Specialist Vote: 6-1 Akron
 
-🦅Texas Tech 🛡️Akron 💥Akron 🐺Akron 👁️Akron 📜Texas Tech 🔥Akron
+🦅Akron 🛡️Akron 💥Akron 🐺Akron 👁️Akron 📜Texas Tech 🔥Akron
 
 CONDUCTOR AGREES: Akron (50%)
 
@@ -138,15 +138,15 @@ CONDUCTOR AGREES: Akron (50%)
 ---
 ### Vote Tally
 
-- **Texas Tech**: Tempo Hawk, Oracle (2 votes)
-- **Akron**: Iron Curtain, Glass Cannon, Road Dog, Whisper, Streak (5 votes)
+- **Akron**: Tempo Hawk, Iron Curtain, Glass Cannon, Road Dog, Whisper, Streak (6 votes)
+- **Texas Tech**: Oracle (1 votes)
 
 
 ## Market Analysis
 
-- Swarm probability: Texas Tech 45% ± 17%
+- Swarm probability: Texas Tech 44% ± 17%
 - Vegas implied probability: Texas Tech 73%
-- Edge: 28.3% (market favors Akron)
+- Edge: 29.0% (market favors Akron)
 - Vegas spread: Texas Tech -7.5
-- Contrarian signal: Iron Curtain (-35% vs market) and Road Dog (-31% vs market) and Whisper (-31% vs market) and Streak (-31% vs market) and Glass Cannon (-28% vs market) and Oracle (-18% vs market) and Tempo Hawk (-15% vs market)
-- Recommendation: NO BET — edge (28.3%) exists but uncertainty too high (16.6%)
+- Contrarian signal: Tempo Hawk (-35% vs market) and Iron Curtain (-35% vs market) and Streak (-33% vs market) and Road Dog (-28% vs market) and Whisper (-28% vs market) and Glass Cannon (-25% vs market) and Oracle (-11% vs market)
+- Recommendation: NO BET — edge (29.0%) exists but uncertainty too high (16.7%)

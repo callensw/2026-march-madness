@@ -1,0 +1,7 @@
+STEP 1 — UPSET THESIS: Howard forces Michigan into a half-court grind with their experienced backcourt, exploiting Michigan's recent turnover issues and lack of tournament experience. Their 8-game win streak shows they can execute in pressure moments.
+
+STEP 2 — RATE THE UPSET THESIS: 3/10. Michigan's defense is suffocating (87.0 adj_d, .384 opp_fg_pct). Howard shoots .418 against — they'll struggle to score 55 points against this defense.
+
+STEP 3 — PICK: This is what elite defense does in March. Howard hasn't faced anything close to Michigan's rim protection with Mara anchoring the paint. Defense travels, offense disappears.
+
+{"team_a_win_prob": 0.97, "uncertainty": 0.05, "reasoning": "Michigan's elite defense (.384 opp_fg_pct) will suffocate Howard's offense. Mara's rim protection changes everything in half-court sets.", "key_stat": "Michigan allows .384 opponent field goal percentage"}

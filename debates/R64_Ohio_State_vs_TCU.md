@@ -1,35 +1,35 @@
 # 🏀 #8 Ohio State vs #9 TCU — East Region, Round of 64
-*2026-03-16T16:34:11.342755+00:00*
+*2026-03-16T17:25:19.866632+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Pace-neutral matchup favors TCU's superior defense. In 70-possession grind, defensive efficiency gap creates 4-point edge for Horned Frogs."
+🦅 **TEMPO HAWK**: "Identical tempo at 70.7 possessions eliminates pace advantage. TCU's superior defensive efficiency (88.8 vs 91.4) controls this same-pace battle."
+   Win probability: Ohio State 0.47 ± 0.15
+   *Key stat: TCU allows 2.6 fewer points per 100 possessions*
+
+🛡️ **IRON CURTAIN**: "TCU's superior defense (88.8 vs 91.4) controls this grind. Ohio State's mediocre perimeter D gets exposed in March pressure."
    Win probability: Ohio State 0.45 ± 0.15
-   *Key stat: TCU allows 2.6 fewer points per 100 possessions (88.8 vs 91.4)*
+   *Key stat: TCU allows 44.6% shooting vs Ohio State's 43.9%*
 
-🛡️ **IRON CURTAIN**: "TCU's superior defense (88.8 vs 91.4) controls this grind-it-out game. Ohio State allows 43.9% shooting - vulnerable when offense disappears."
-   Win probability: Ohio State 0.45 ± 0.15
-   *Key stat: TCU adj_d 88.8 vs Ohio State 91.4*
+💥 **GLASS CANNON** `[gemini]`: "Ohio State's got the shooting! Mobley Jr. is an elite three-point specialist, and their 3PT% is higher. When they're on, they're ON!"
+   Win probability: Ohio State 0.55 ± 0.15
+   *Key stat: Ohio State 3PT%: 36.3%*
 
-💥 **GLASS CANNON** `[gemini]`: "Ohio State shoots better from deep, and Mobley Jr. is a flamethrower! When they're on, they're ON. You can't coach that. One hot quarter changes everything!"
-   Win probability: Ohio State 0.60 ± 0.15
-   *Key stat: Ohio State 3PT% = 36.3%*
-
-🐺 **ROAD DOG** `[gemini]`: "Ohio State's senior guard, Bruce Thornton, has been here before. That experience, especially from a floor general, is crucial in March. TCU's younger roster will crack."
+🐺 **ROAD DOG** `[gemini]`: "Ohio State's senior leadership, especially Bruce Thornton, gives them the edge. They've played in more big games. Experience score: Ohio State 5.0 vs TCU 4.0."
    Win probability: Ohio State 0.62 ± 0.15
-   *Key stat: Ohio State experience: 5.0/10 vs TCU experience: 4.0/10*
+   *Key stat: Ohio State experience 5.0/10*
 
-👁️ **WHISPER** `[gemini]`: "Everyone's talking about TCU's Big 12 record, but nobody's talking about their travel. They've traveled 1226 miles, over 900 more than Ohio State. Fatigue is real."
-   Win probability: Ohio State 0.62 ± 0.15
-   *Key stat: TCU travel: 1226 miles*
+👁️ **WHISPER** `[gemini]`: "Nobody's talking about the travel disparity. TCU traveled 1226 miles, Ohio State only 292. That's a real fatigue factor for the Horned Frogs."
+   Win probability: Ohio State 0.58 ± 0.15
+   *Key stat: TCU travel 1226 miles vs Ohio State 292 miles*
 
-📜 **ORACLE**: "Classic 8v9 coin flip. Ohio State's offensive efficiency edge minimal in single elimination. Reminds me of 2019 when 9-seeds went 3-1."
+📜 **ORACLE**: "Classic 8v9 coin flip. TCU's superior defense matches 2011 VCU profile. Ohio State's late inconsistency fits upset victim archetype."
    Win probability: Ohio State 0.52 ± 0.18
-   *Key stat: 8-seeds win 51.4% historically since 1985*
+   *Key stat: 8v9 games: 51.4% for higher seed since 1985*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. Both teams are 6-4 in their last 10, but Ohio State showed more fight in their conference tournament, winning a game. TCU is coming off a loss."
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. Both teams are 6-4 in their last 10, both lost their last game. Ohio State's Big Ten Quarterfinals run shows they're peaking. TCU's Big 12 exit feels flat. Ohio State is playing better RIGHT NOW."
    Win probability: Ohio State 0.58 ± 0.15
    *Key stat: Ohio State: 6-4 in last 10*
 
@@ -38,66 +38,66 @@
 
 🦅 **TEMPO HAWK** (position: STRENGTHENED):
 
-   *Disagrees with:* Glass Cannon overvalues shooting percentage without considering pace context - hot shooting means nothing if you only get 12 three-point attempts.
+   *Disagrees with:* Glass Cannon overvalues shooting percentage without considering shot volume and defensive context in a controlled-pace game.
 
-   *Agrees with:* Iron Curtain correctly identifies this as a defensive grind where TCU's efficiency edge compounds over fewer possessions.
+   *Agrees with:* Iron Curtain correctly identifies TCU's defensive superiority as the controlling factor in this tempo-neutral matchup.
 
-   "Glass Cannon ignores pace reality. Ohio State's 3PT% drops to 31% in slow games. TCU controls tempo, neutralizes shooting variance."
+   "Glass Cannon ignores efficiency reality. Ohio State's 36.3% from three means nothing if TCU controls possessions and limits attempts through pace."
    Updated probability: Ohio State 0.42 ± 0.16
 
 🛡️ **IRON CURTAIN** (position: STRENGTHENED):
 
-   *Disagrees with:* Glass Cannon ignores that hot shooting disappears under defensive pressure - TCU's perimeter defense will shut down their three-point party.
+   *Disagrees with:* Glass Cannon ignores that Ohio State's three-point defense is worse than their offense — TCU can match their shooting while playing better defense.
 
-   *Agrees with:* Tempo Hawk correctly identified this as a defensive grind where TCU's efficiency gap creates the winning margin.
+   *Agrees with:* Tempo Hawk nailed it — identical pace means this comes down to who gets stops, and TCU's defensive efficiency edge is decisive.
 
-   "Glass Cannon is WRONG. Ohio State's 36.3% from three means NOTHING when TCU forces 38.1% overall shooting. Defense travels, offense chokes."
-   Updated probability: Ohio State 0.42 ± 0.12
+   "Glass Cannon's wrong — Ohio State shoots 36.3% from three but allows 34.8%. TCU's defense will neutralize their shooting."
+   Updated probability: Ohio State 0.42 ± 0.16
 
 💥 **GLASS CANNON** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain is wrong; defense doesn't matter as much when a team gets hot from three, especially with Ohio State's 36.3% from deep.
+   *Disagrees with:* Iron Curtain is wrong; defense is meaningless against a hot shooting night. Ohio State's 36.3% from three trumps any defensive efficiency.
 
-   *Agrees with:* Road Dog reinforced my view; experience helps Ohio State's shooters stay composed and hit those crucial threes when it counts!
+   *Agrees with:* Road Dog gets it! Leadership like Bruce Thornton can ignite a shooting run, and you can't coach that fire.
 
-   "Iron Curtain keeps talking defense, but offense wins! Ohio State's 36.3% from three is a game-changer. One hot night from deep erases any defensive gap!"
-   Updated probability: Ohio State 0.65 ± 0.12
+   "Iron Curtain keeps talking defense! But Ohio State's 36.3% from deep changes everything. TCU's D means nothing when shots are falling!"
+   Updated probability: Ohio State 0.58 ± 0.12
 
 🐺 **ROAD DOG** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk's focus on defensive efficiency misses the human element. Experience, not just numbers, wins in March.
+   *Disagrees with:* Tempo Hawk's focus on defensive efficiency misses the point. You can't measure heart and veteran poise with a spreadsheet.
 
-   *Agrees with:* Glass Cannon sees that spark in Mobley Jr. that comes from a tough culture. That's the kind of player who steps up when it matters.
+   *Agrees with:* Whisper gets it. Travel fatigue on TCU means less time for their younger guys to recover and prepare, favoring Ohio State's veterans.
 
-   "Tempo Hawk loves numbers, but I've seen teams with less experience fold. Ohio State's senior guard, Bruce Thornton, won't let them crack under pressure. You can't measure heart."
+   "Tempo Hawk loves numbers, I love watching. Ohio State's senior guard Bruce Thornton has played 100+ career games; that experience doesn't fold. My pick holds."
    Updated probability: Ohio State 0.65 ± 0.12
 
 👁️ **WHISPER** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk's focus on defensive efficiency overlooks the physical toll of TCU's travel and fewer rest days, which impacts defensive execution.
+   *Disagrees with:* Tempo Hawk's focus on defensive efficiency overlooks the physical toll on TCU's players from extensive travel and less rest.
 
-   *Agrees with:* Road Dog sees the value of experience, but it's the hidden physical toll of travel on TCU that truly amplifies Ohio State's veteran presence.
+   *Agrees with:* Road Dog sees the value in experience, but the hidden factor here is the physical drain on TCU, making Ohio State's leadership even more impactful.
 
-   "Everyone's missing the deeper fatigue. TCU's traveled 1226 miles and had 2 rest days, while Ohio State had 4 rest days and only 300 miles. That's a compounding disadvantage."
-   Updated probability: Ohio State 0.65 ± 0.12
+   "Everyone's missing the compounding effect. TCU's 1226 travel miles and fewer rest days make that defensive efficiency a mirage. Fatigue is real."
+   Updated probability: Ohio State 0.62 ± 0.12
 
 📜 **ORACLE** (position: FLIPPED):
 
-   *Disagrees with:* Road Dog's experience metric has zero predictive value in 8v9 matchups historically - it's manufactured narrative over actual tournament results.
+   *Disagrees with:* Road Dog's experience score is meaningless — 2018 Loyola-Chicago proved defense beats résumé every time.
 
-   *Agrees with:* Iron Curtain's defensive efficiency gap aligns with historical upset patterns - defense travels better than offense in single elimination.
+   *Agrees with:* Iron Curtain nailed it — TCU's defensive efficiency advantage is the historical upset predictor that matters.
 
-   "Road Dog's experience argument is nonsense. Since 1985, 8-seeds with 'more experience' are 50-50 against 9-seeds. Defense wins in March."
+   "Road Dog's experience metric is garbage. 2018 Loyola-Chicago had zero March experience, beat Miami. Defense trumps résumé."
    Updated probability: Ohio State 0.48 ± 0.16
 
-🔥 **STREAK** (position: UNCHANGED) `[gemini]`:
+🔥 **STREAK** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk wants to talk about pace-neutral defense, but what have they done LATELY? TCU's defense just gave up 81 points in their last game!
+   *Disagrees with:* Tempo Hawk wants to talk about season-long defensive efficiency, but TCU's defense has been inconsistent, allowing 75+ points in 4 of their last 10 games.
 
-   *Agrees with:* Glass Cannon gets it! Ohio State's potential for a hot shooting night, especially from Mobley Jr., is a recent form indicator that matters more than stale stats.
+   *Agrees with:* Road Dog sees Ohio State's leadership and big-game experience, which is exactly what fuels a late-season surge and carries momentum.
 
-   "Ohio State's recent conference tournament win shows they're peaking. TCU's last game was a loss. Momentum is REAL and it's with the Buckeyes."
-   Updated probability: Ohio State 0.58 ± 0.15
+   "Ohio State's Big Ten Quarterfinals run shows they're peaking right now. TCU's early Big 12 exit feels flat. Momentum is real and it's with the Buckeyes."
+   Updated probability: Ohio State 0.62 ± 0.12
 
 
 ### Upset Watch
@@ -118,13 +118,13 @@ Combined probability: Ohio State 0.54 ± 0.17
 **PICK: Ohio State** (54% — genuine toss-up, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Oracle's flip from Ohio State back to TCU on defensive efficiency was compelling but couldn't overcome the 5-2 majority. Glass Cannon and Road Dog won this debate - shooting variance and experience trump defensive margins in coin-flip games. When the math is this close, trust the hot hand."
+🎼 **THE CONDUCTOR**: "Oracle's flip from Ohio State to TCU based on defensive efficiency was compelling, but Road Dog and Streak won this debate. Experience and momentum trump spreadsheet defense. Ohio State's veterans and Big Ten run carry the day. March rewards the hot hand."
 
-   *Key factor: shooting variance in close games*
+   *Key factor: Experience and late-season momentum*
 
-   *Most weighted: Glass Cannon*
+   *Most weighted: Road Dog*
 
-   *Dissent report: Tempo Hawk and Iron Curtain made strong defensive efficiency arguments, and Oracle's flip highlighted legitimate concerns about manufactured experience narratives, but they couldn't account for shooting variance impact in single-elimination basketball.*
+   *Dissent report: Tempo Hawk and Iron Curtain lost by overvaluing season-long defensive metrics. Oracle's flip to TCU defense was logical but ignored Ohio State's peaking trajectory and veteran leadership advantage.*
 
 
 ---
@@ -146,7 +146,7 @@ CONDUCTOR AGREES: Ohio State (50%)
 
 - Swarm probability: Ohio State 54% ± 17%
 - Vegas implied probability: Ohio State 57%
-- Edge: 2.8% (market favors TCU)
+- Edge: 3.6% (market favors TCU)
 - Vegas spread: Ohio State -2.5
 - Contrarian signal: Tempo Hawk (-15% vs market) and Iron Curtain (-15% vs market)
 - Recommendation: NO BET — market is efficient on this game

@@ -1,35 +1,35 @@
 # 🏀 #1 Duke vs #16 American — East Region, Round of 64
-*2026-03-16T12:04:30.650636+00:00*
+*2026-03-16T17:24:38.699359+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Let me run the numbers on pace and efficiency here. Efficiency margin of +28.3 vs +19.1 is decisive. Duke controls tempo at 68.1 possessions per game which neutralizes American's preferred slow pace."
+🦅 **TEMPO HAWK**: "Efficiency margin of +28.3 vs +19.1 is decisive. Duke controls tempo at 68.1 possessions per game which neutralizes American's preferred slow pace."
    Win probability: Duke 0.72 ± 0.08
    *Key stat: Efficiency margin: +28.3 vs +19.1*
 
-🛡️ **IRON CURTAIN**: "Look, I don't care what the offense looks like. Duke allows just 89.2 adj_d — elite level. American has not faced a defense this disciplined. Their offense will stall."
+🛡️ **IRON CURTAIN**: "Duke allows just 89.2 adj_d — elite level. American has not faced a defense this disciplined. Their offense will stall."
    Win probability: Duke 0.78 ± 0.05
    *Key stat: Opponent adj_d: 89.2 (top 5 nationally)*
 
-💥 **GLASS CANNON**: "Forget the spreadsheets for a second. American shoots 38.5% from three with 4 capable shooters. In a dome setting, shooting variance actually increases — higher ceiling for the better shooting team."
+💥 **GLASS CANNON**: "American shoots 38.5% from three with 4 capable shooters. In a dome setting, shooting variance actually increases — higher ceiling for the better shooting team."
    Win probability: Duke 0.33 ± 0.12
    *Key stat: 3PT%: 38.5% on 28 attempts/game*
 
-🐺 **ROAD DOG**: "I've seen this movie before. Duke's coach has 12 tournament wins and 3 Final Four appearances. Their senior backcourt has logged 47 career tournament minutes. That matters when it's tight with 4 minutes left."
+🐺 **ROAD DOG**: "Duke's coach has 12 tournament wins and 3 Final Four appearances. Their senior backcourt has logged 47 career tournament minutes. That matters when it's tight with 4 minutes left."
    Win probability: Duke 0.74 ± 0.07
    *Key stat: Coach tournament record: 12-5*
 
-👁️ **WHISPER**: "Something doesn't add up here, and nobody's talking about it. Something is off with Duke. Their star went 3-for-14 in the conference tournament final and has been notably absent from team social media. American is flying under the radar with a 7-game win streak."
+👁️ **WHISPER**: "Something is off with Duke. Their star went 3-for-14 in the conference tournament final and has been notably absent from team social media. American is flying under the radar with a 7-game win streak."
    Win probability: Duke 0.37 ± 0.15
    *Key stat: Duke star: 3-for-14 in conf tournament final*
 
-📜 **ORACLE**: "The historical record is clear on this. Historical base rate for this seed matchup gives Duke a 64.2% edge. Both teams are close to their seed averages in quality metrics, so I see no reason to deviate significantly from the base rate."
+📜 **ORACLE**: "Historical base rate for this seed matchup gives Duke a 64.2% edge. Both teams are close to their seed averages in quality metrics, so I see no reason to deviate significantly from the base rate."
    Win probability: Duke 0.64 ± 0.06
    *Key stat: Historical win rate for higher seed: 64.2% (since 1985, n=152)*
 
-🔥 **STREAK**: "Forget the spreadsheets — let me tell you what I've been watching... Duke is 7-3 in their last 10 but American has been surging late. Conference tournament momentum matters more than season-long metrics in March. American's recent form gives them a live shot."
+🔥 **STREAK**: "Duke is 7-3 in their last 10 but American has been surging late. Conference tournament momentum matters more than season-long metrics in March. American's recent form gives them a live shot."
    Win probability: Duke 0.58 ± 0.11
    *Key stat: American last 10: 8-2 with 4-game win streak*
 
@@ -108,7 +108,7 @@ Combined probability: Duke 0.63 ± 0.16
 **PICK: Duke** (63% — lean, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "I've heard every argument. Here's what actually matters. Combined probability analysis yields 0.63 for Duke. The panel's weighted consensus with uncertainty 0.16 favors Duke."
+🎼 **THE CONDUCTOR**: "Combined probability analysis yields 0.63 for Duke. The panel's weighted consensus with uncertainty 0.16 favors Duke."
 
    *Key factor: Weighted probability combination from 2-round debate*
 

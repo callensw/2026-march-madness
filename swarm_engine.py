@@ -113,6 +113,34 @@ perf_tracker = AgentPerformanceTracker()
 calibration_tracker = CalibrationTracker()
 
 # ---------------------------------------------------------------------------
+# Response cache for debugging reruns (file-based)
+# ---------------------------------------------------------------------------
+CACHE_DIR = Path(__file__).parent / ".response_cache"
+
+
+def _cache_key(game_id: str, agent_name: str, round_number: int) -> Path:
+    safe = f"{game_id}_{agent_name}_r{round_number}.json".replace(" ", "_")
+    return CACHE_DIR / safe
+
+
+def cache_response(game_id: str, agent_name: str, round_number: int, response: str):
+    """Cache a raw API response for debugging reruns."""
+    try:
+        CACHE_DIR.mkdir(exist_ok=True)
+        _cache_key(game_id, agent_name, round_number).write_text(response)
+    except Exception as e:
+        log.debug(f"Cache write failed: {e}")
+
+
+def get_cached_response(game_id: str, agent_name: str, round_number: int) -> str | None:
+    """Retrieve a cached response. Returns None on miss."""
+    path = _cache_key(game_id, agent_name, round_number)
+    if path.exists():
+        return path.read_text()
+    return None
+
+
+# ---------------------------------------------------------------------------
 # Semaphore for rate limiting
 # ---------------------------------------------------------------------------
 API_SEMAPHORE = asyncio.Semaphore(5)
@@ -970,7 +998,7 @@ def build_conductor_prompt(
         "That evidence deserves a direct response, not a hand-wave.\n\n"
         "YOUR VERDICT MUST BE:\n"
         "- Maximum 50 words total\n"
-        "- Name the winner(s) and loser(s) of the debate\n"
+        "- Name the winner(s) and loser(s) of the debate (debate winner = the agent(s) whose pick aligned with the final mathematical probability, not who argued most persuasively)\n"
         "- Your pick with conviction\n"
         "- One memorable closing line\n\n"
         "Respond with ONLY a JSON object:\n"
@@ -1537,6 +1565,10 @@ async def run_agent(
             )
 
     elapsed = time.monotonic() - start
+
+    # Cache response for debugging reruns
+    round_num = 2 if extra_prompt and "ROUND 2" in extra_prompt else 1
+    cache_response(game.id, agent.name, round_num, raw)
 
     parsed = parse_agent_response(raw, game.team_a, game.team_b)
     if parsed is None:
@@ -2667,7 +2699,8 @@ def generate_first_round_games(bracket: dict) -> list[Game]:
             if team_a and team_b:
                 games.append(Game(
                     id=str(uuid.uuid4()),
-                    team_a=team_a["name"], team_b=team_b["name"],
+                    team_a=sanitize_team_name(team_a["name"]),
+                    team_b=sanitize_team_name(team_b["name"]),
                     seed_a=seed_a, seed_b=seed_b,
                     region=region, round_name="R64",
                     stats_a=team_a, stats_b=team_b,

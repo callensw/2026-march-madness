@@ -1,0 +1,7 @@
+STEP 1 — UPSET THESIS: Nebraska controls this game by grinding it into a defensive slugfest. Both teams prefer slow tempo (67.1 vs 66.2), but Nebraska's superior defense (87.5 vs 89.4 adj_d) and better opponent FG% (.404 vs .427) gives them the edge in a possession-by-possession battle.
+
+STEP 2 — RATE THE UPSET THESIS: 7/10. This is a classic pace-neutral matchup where defensive efficiency becomes the deciding factor. Nebraska's defensive edge is real and meaningful in a slow game.
+
+STEP 3 — PICK: Nebraska. When both teams want to play slow, the better defensive team wins the grind.
+
+{"team_a_win_prob": 0.45, "uncertainty": 0.15, "reasoning": "Identical tempo preferences neutralize pace advantage. Nebraska's superior defense wins the possession-by-possession grind in a slow game.", "key_stat": "Nebraska allows 40.4% opponent FG% vs Vanderbilt's 42.7%"}

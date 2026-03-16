@@ -1,63 +1,63 @@
 # 🏀 #1 Arizona vs #16 LIU — West Region, Round of 64
-*2026-03-16T16:36:51.313511+00:00*
+*2026-03-16T17:27:57.675884+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Identical tempos at 67 possessions favor Arizona's massive efficiency edge. LIU can't slow this down enough to matter."
-   Win probability: Arizona 0.98 ± 0.05
-   *Key stat: Arizona's 25.1-point efficiency margin vs LIU's -1.2*
+🦅 **TEMPO HAWK**: "Identical tempos eliminate pace mismatch. Arizona's 25-point efficiency edge too massive for low-possession game variance to overcome."
+   Win probability: Arizona 0.95 ± 0.05
+   *Key stat: Both teams play 67 possessions per game*
 
-🛡️ **IRON CURTAIN**: "Arizona's defense holds opponents to 39.2% shooting with Krivas anchoring the paint. LIU's anemic offense can't crack elite defenses."
-   Win probability: Arizona 0.97 ± 0.05
-   *Key stat: 25-point KenPom efficiency gap (87.2 vs 102.7 adj_d)*
+🛡️ **IRON CURTAIN**: "Arizona's suffocating defense (.392 opp_fg_pct) will destroy LIU's weak offense. Krivas blocks everything inside. Defense travels to domination."
+   Win probability: Arizona 0.97 ± 0.03
+   *Key stat: Arizona allows .392 shooting vs LIU's .445 allowed*
 
-💥 **GLASS CANNON** `[gemini]`: "LIU's 3PT% is too low. You can't catch fire from three if you don't shoot it well! Arizona's firepower is overwhelming. This isn't the upset I'm looking for!"
+💥 **GLASS CANNON** `[gemini]`: "LIU's 31.3% from deep won't cut it. Arizona shoots 37.3%! You can't outshoot a flamethrower when you're bricking. This isn't the upset scenario."
+   Win probability: Arizona 0.95 ± 0.05
+   *Key stat: Arizona 3PT% = 37.3% vs. LIU 3PT% = 31.3%*
+
+🐺 **ROAD DOG** `[gemini]`: "LIU's veterans have seen it all, but Arizona's coach has been to the Final Four. That experience gap for the coach is too wide, even for tough seniors."
+   Win probability: Arizona 0.96 ± 0.05
+   *Key stat: Arizona coach has Final Four experience*
+
+👁️ **WHISPER** `[gemini]`: "LIU has a significant travel disadvantage, logging 2441 miles compared to Arizona's 1112. Fatigue is real, especially for a low-major facing a top seed."
    Win probability: Arizona 0.99 ± 0.01
-   *Key stat: LIU 3PT% = 31.3%*
-
-🐺 **ROAD DOG** `[gemini]`: "LIU's seniors have experience, but Arizona's coach has been here. A 16-seed upset needs more than just a few old heads; it needs a coaching mismatch. This isn't it."
-   Win probability: Arizona 0.96 ± 0.05
-   *Key stat: Arizona coach has 5+ tournament appearances*
-
-👁️ **WHISPER** `[gemini]`: "LIU's brutal travel of 2,441 miles and just three rest days against Arizona's 1,112 miles and same rest is a critical disadvantage. This sets them up for fatigue."
-   Win probability: Arizona 0.96 ± 0.05
    *Key stat: LIU travel: 2441 miles*
 
-📜 **ORACLE**: "39.4 KenPom gap is largest 1v16 mismatch in tournament history. Makes 2018 Virginia-UMBC look competitive."
-   Win probability: Arizona 0.99 ± 0.02
-   *Key stat: 39.4-point KenPom differential*
+📜 **ORACLE**: "Since 1985, only one 16-seed has beaten a 1-seed. Arizona's 25-point KenPom edge matches historical blowout 1v16 games."
+   Win probability: Arizona 0.99 ± 0.05
+   *Key stat: 1-seeds are 150-1 vs 16-seeds since 1985*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching! Arizona is on a 9-game win streak, sweeping the Big 12. LIU just isn't peaking at that level."
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. Arizona is PEAKING, a 9-game win streak, just swept the Big 12. LIU won their low-major tourney but this is a different animal."
    Win probability: Arizona 0.99 ± 0.01
-   *Key stat: Arizona W9 streak*
+   *Key stat: Arizona: W9 streak*
 
 
 ### Devil's Advocate (unanimous vote triggered)
-🔥 **STREAK** *(forced contrarian)*: "Forget the spreadsheets—LIU's momentum is real, winning the NEC! But Arizona is on a 9-game streak, just swept the Big 12, and is peaking. This is a freight train vs. a bicycle."
-   *Pick: **Arizona** (99%) | Key stat: Arizona W9 streak*
+💥 **GLASS CANNON** *(forced contrarian)*: "Arizona shoots 37.3% from three! That's elite, and LIU's 31.3% won't cut it. One hot quarter isn't enough to overcome that gap."
+   *Pick: **Arizona** (95%) | Key stat: Arizona 3PT% = 37.3%*
 
 
 ### Swarm vs Vegas
-   *Swarm: 77% on Arizona | Vegas implied: 97% | Delta: 20pp more bearish*
+   *Swarm: 76% on Arizona | Vegas implied: 97% | Delta: 21pp more bearish*
 
 
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Arizona 0.89 ± 0.25
+Combined probability: Arizona 0.88 ± 0.25
 
-**PICK: Arizona** (89% — dominant favorite, high uncertainty)
+**PICK: Arizona** (88% — dominant favorite, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Oracle and Glass Cannon won this debate with the brutal math: 39.4 KenPom gap is historically massive for 1v16. Even Devil's Advocate couldn't find a credible counter-argument. This isn't David vs Goliath - it's David vs a nuclear weapon."
+🎼 **THE CONDUCTOR**: "Unanimous 7-0 verdict with average 97% confidence. Oracle and Whisper won with historical dominance and travel fatigue arguments. No dissent to address - even Devil's Advocate couldn't find LIU's path. This isn't basketball, it's mathematical inevitability."
 
-   *Key factor: Historically unprecedented talent/efficiency gap*
+   *Key factor: Historical 1v16 dominance pattern*
 
    *Most weighted: Oracle*
 
-   *Dissent report: No meaningful dissent - even Devil's Advocate admitted this is 'a freight train vs. a bicycle' despite trying to argue for LIU*
+   *Dissent report: No meaningful dissent - even Glass Cannon's devil's advocate role couldn't construct a credible LIU upset scenario*
 
 
 ---
@@ -65,7 +65,7 @@ Combined probability: Arizona 0.89 ± 0.25
 
 🦅Arizona 🛡️Arizona 💥Arizona 🐺Arizona 👁️Arizona 📜Arizona 🔥Arizona
 
-CONDUCTOR AGREES: Arizona (77%)
+CONDUCTOR AGREES: Arizona (76%)
 
 
 ---
@@ -76,8 +76,8 @@ CONDUCTOR AGREES: Arizona (77%)
 
 ## Market Analysis
 
-- Swarm probability: Arizona 89% ± 25%
-- Vegas implied probability: Arizona 97%
-- Edge: 8.4% (market favors LIU)
+- Swarm probability: Arizona 88% ± 25%
+- Vegas implied probability: Arizona 98%
+- Edge: 9.1% (market favors LIU)
 - Vegas spread: Arizona -31.5
-- Recommendation: NO BET — edge (8.4%) exists but uncertainty too high (25.0%)
+- Recommendation: NO BET — edge (9.1%) exists but uncertainty too high (25.0%)

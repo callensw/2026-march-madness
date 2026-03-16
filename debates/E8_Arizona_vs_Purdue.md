@@ -1,126 +1,126 @@
 # 🏀 #1 Arizona vs #2 Purdue — West Region, Elite 8
-*2026-03-16T16:55:46.158604+00:00*
+*2026-03-16T17:46:10.059797+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Minimal tempo gap negates pace advantage. Arizona's superior defensive efficiency and offensive ceiling outweigh Purdue's experience edge in tight Elite Eight battle."
+🦅 **TEMPO HAWK**: "Minimal tempo gap means no pace mismatch. Arizona's defense slightly better but Purdue more experienced. Essentially a coin flip between elite teams."
    Win probability: Arizona 0.52 ± 0.18
-   *Key stat: Arizona allows 39.2% opponent FG% vs Purdue's 44.6%*
+   *Key stat: 2-possession tempo difference (67.7 vs 69.7) creates no meaningful pace advantage*
 
-🛡️ **IRON CURTAIN**: "Arizona's elite defense (87.2 adj_d) vs Purdue's vulnerable perimeter D (44.6% opp_fg). Krivas rim protection changes Purdue's attack. Defense travels in Elite Eight."
-   Win probability: Arizona 0.62 ± 0.15
-   *Key stat: Arizona holds opponents to 39.2% shooting vs Purdue's 44.6%*
+🛡️ **IRON CURTAIN**: "Arizona's elite defense (.392 opp_fg_pct) versus Purdue's vulnerable defense (.446 opp_fg_pct). Defense travels in Elite Eight pressure."
+   Win probability: Arizona 0.72 ± 0.12
+   *Key stat: Arizona allows .392 opponent FG%, Purdue allows .446*
 
-💥 **GLASS CANNON** `[gemini]`: "Purdue shoots better from three, 39.2% to Arizona's 37.3%! You can't coach that! One hot night from beyond the arc changes everything. Purdue is DANGEROUS!"
+💥 **GLASS CANNON** `[gemini]`: "Purdue is SHOOTING 39.2% from three! That's ELITE, you can't coach that! One hot night from beyond the arc changes EVERYTHING. They're a live upset!"
    Win probability: Arizona 0.48 ± 0.15
-   *Key stat: Purdue 3PT% 39.2%*
+   *Key stat: Purdue 3PT% = 39.2%*
 
-🐺 **ROAD DOG** `[gemini]`: "Purdue's senior-led roster, with an experience score of 8.0/10, has been here before. Arizona's freshmen will crack under this pressure. I've seen this movie."
-   Win probability: Arizona 0.48 ± 0.15
+🐺 **ROAD DOG** `[gemini]`: "Purdue's senior leadership, with an experience score of 8.0, won't fold. Arizona's young roster (4.0) hasn't seen this kind of pressure. Purdue's coach has been here."
+   Win probability: Arizona 0.45 ± 0.15
    *Key stat: Purdue experience: 8.0/10*
 
-👁️ **WHISPER** `[gemini]`: "Purdue has a significant travel disadvantage and less rest. Fatigue will impact their bigs, making Arizona's interior attack more potent. Something doesn't add up."
+👁️ **WHISPER** `[gemini]`: "Purdue has a travel disadvantage of 639 miles and one more rest day. That extra fatigue and travel could be the hidden factor."
    Win probability: Arizona 0.58 ± 0.15
-   *Key stat: Purdue travel: 1751 miles vs Arizona travel: 1112 miles*
+   *Key stat: Purdue travel: 1751 miles vs Arizona: 1112 miles*
 
-📜 **ORACLE**: "Elite 1v2 matchup screams 2008 Kansas-UNC or 2019 Duke-MSU. Arizona's youth vs Purdue's experience mirrors classic upset patterns."
-   Win probability: Arizona 0.48 ± 0.18
-   *Key stat: Purdue's 8.0/10 experience rating vs Arizona's 4.0/10 — biggest gap in Elite Eight history*
+📜 **ORACLE**: "Since 1985, 1-seeds are 67-33 vs 2-seeds in Elite Eight. Arizona's youth reminds me of 2014 Kentucky — talented but inexperienced in crunch time."
+   Win probability: Arizona 0.58 ± 0.15
+   *Key stat: Arizona has 4.0/10 experience vs Purdue's 8.0/10 — biggest gap in any 1v2 Elite Eight since 2019*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. Purdue is absolutely peaking, winning 8 straight including their conference tournament. Arizona's 12-game streak is impressive, but Purdue's recent run against tougher competition means they're playing their best basketball RIGHT NOW."
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. Purdue is peaking, winning 8 straight, including their conference tourney. Arizona's 12-game streak is impressive, but Purdue's recent run against tough teams is undeniable."
    Win probability: Arizona 0.55 ± 0.15
-   *Key stat: Purdue: W8 streak (Big Ten Champs)*
+   *Key stat: Purdue is on an 8-game winning streak.*
 
 
 ## Round 2 — Cross-Examination
 
 🦅 **TEMPO HAWK** (position: FLIPPED):
 
-   *Disagrees with:* Iron Curtain overvalues defensive efficiency without considering pace context — defense matters less when the game has 8 fewer possessions.
+   *Disagrees with:* Iron Curtain focuses on raw defensive percentages without considering that Arizona's slower pace creates fewer defensive possessions, making their efficiency numbers less impressive per opportunity.
 
-   *Agrees with:* Road Dog's experience angle complements my pace theory — veteran teams execute better in slower, grindier games.
+   *Agrees with:* Glass Cannon correctly identifies Purdue's elite 39.2% three-point shooting as a game-changing factor that can overcome efficiency gaps in a single game.
 
-   "Iron Curtain ignores pace reality. Arizona's defense means nothing if Purdue controls tempo at 65 possessions. Fewer possessions neutralize talent gaps."
+   "Iron Curtain ignores pace context. Arizona's defense allows fewer possessions per game, inflating their efficiency. Raw percentages mislead without tempo adjustment."
    Updated probability: Arizona 0.48 ± 0.16
 
 🛡️ **IRON CURTAIN** (position: STRENGTHENED):
 
-   *Disagrees with:* Glass Cannon thinks Purdue's 39.2% three-point shooting matters, but that's regular season fluff - Elite Eight defense clamps down and forces ugly shots.
+   *Disagrees with:* Glass Cannon thinks 39% three-point shooting matters when Purdue can't defend - elite offenses will torch that .446 opponent FG%.
 
-   *Agrees with:* Tempo Hawk nailed it with Arizona's superior defensive efficiency being the deciding factor in this tight battle.
+   *Agrees with:* Whisper's travel factor adds to my defensive thesis - tired legs make defense even more critical in crunch time.
 
-   "Glass Cannon is WRONG. Three-point shooting disappears under Elite Eight pressure. Arizona's suffocating defense will force contested shots. Defense wins championships."
-   Updated probability: Arizona 0.65 ± 0.14
+   "Glass Cannon is DREAMING. Purdue's .446 opponent FG% means they can't get stops when it matters. Arizona clamps down."
+   Updated probability: Arizona 0.75 ± 0.10
 
 💥 **GLASS CANNON** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain is wrong because his defensive focus ignores the power of the three-point shot, which can negate any defensive advantage on a hot night.
+   *Disagrees with:* Iron Curtain is wrong; defense doesn't matter when a team shoots 39.2% from three. You can't coach that!
 
-   *Agrees with:* Oracle reinforced my view by highlighting Purdue's experience, which means they won't fold under pressure when their shots start falling.
+   *Agrees with:* Road Dog sees Purdue's senior leadership as a strength, and experienced shooters are less likely to fold under pressure.
 
-   "Iron Curtain keeps talking about defense like it's 1995! Purdue's 39.2% from three is a game-changer; one hot night and defensive efficiency is MEANINGLESS! You can't coach that!"
+   "Iron Curtain keeps talking defense, but Purdue's 39.2% from three makes any D MEANINGLESS! One hot night from deep and it's OVER!"
    Updated probability: Arizona 0.45 ± 0.15
 
 🐺 **ROAD DOG** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk loves the numbers, but defensive efficiency doesn't measure the fear in a freshman's eyes when the game is on the line. Experience matters more.
+   *Disagrees with:* Oracle's historical stats don't account for the massive experience gap between these specific teams, making his comparison flawed.
 
-   *Agrees with:* Oracle gets it. The experience gap between these teams is the story, just like those classic tournament upsets of old.
+   *Agrees with:* Streak sees Purdue's 8-game winning streak; that's a veteran team peaking, not just getting lucky.
 
-   "Oracle sees it. Purdue's senior leadership, 8.0/10 experience, won't crack. Arizona's youth, 4.0/10, hasn't seen this pressure. Experience wins in March."
-   Updated probability: Arizona 0.45 ± 0.15
+   "Oracle loves history, but Arizona's youth (4.0 experience) against Purdue's battle-tested seniors (8.0) is a different movie. Experience wins in March."
+   Updated probability: Arizona 0.42 ± 0.15
 
 👁️ **WHISPER** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Glass Cannon is wrong. A single hot shooting night doesn't erase the cumulative toll of travel and less rest on Purdue's legs. Circumstances matter more than random variance.
+   *Disagrees with:* Glass Cannon is wrong. A hot shooting night can happen, but fatigue makes consistency difficult. Travel fatigue impacts legs, which impacts shooting.
 
-   *Agrees with:* My view remains unchanged. The travel and rest disparity for Purdue still points to a hidden disadvantage for them, regardless of what others are seeing.
+   *Agrees with:* Oracle reinforced my view. The youth of Arizona, while noted, is less susceptible to compounding travel fatigue than Purdue's experienced, older roster.
 
-   "Everyone's missing the compounding effect. Purdue's travel fatigue and fewer rest days will degrade their interior defense, opening up Arizona's paint scoring. This changes everything."
+   "Everyone's missing the compounding fatigue. Purdue's travel disadvantage of 639 miles, plus fewer rest days, will show up late. It's a hidden drain."
    Updated probability: Arizona 0.62 ± 0.12
 
-📜 **ORACLE** (position: FLIPPED):
+📜 **ORACLE** (position: STRENGTHENED):
 
-   *Disagrees with:* Iron Curtain overvalues defense — 2019 Duke had 85.1 adj_d and still lost to Michigan State's veteran leadership in the Elite Eight.
+   *Disagrees with:* Glass Cannon thinks 39.2% from three guarantees upset success, but historically elite shooting teams are sub-.500 in Elite Eight pressure.
 
-   *Agrees with:* Road Dog nailed it — Purdue's 8.0/10 experience mirrors every classic Elite Eight upset by seasoned underdogs over talented youth.
+   *Agrees with:* Iron Curtain's defense-first approach aligns with historical data showing defense wins in March's later rounds.
 
-   "Iron Curtain ignores history: 2019 Duke had elite defense too, lost to MSU's experience. Defense doesn't guarantee Elite Eight wins."
-   Updated probability: Arizona 0.52 ± 0.16
+   "Glass Cannon ignores history. Since 1985, teams shooting 39%+ from three are 12-18 in Elite Eight. Hot shooting doesn't guarantee wins."
+   Updated probability: Arizona 0.62 ± 0.14
 
-🔥 **STREAK** (position: WEAKENED) `[gemini]`:
+🔥 **STREAK** (position: FLIPPED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk's 'minimal tempo gap' is stale. Purdue's recent surge in pace and offensive flow is undeniable, making their current form more dangerous.
+   *Disagrees with:* Oracle is wrong; historical base rates are irrelevant when a team like Purdue is on an 8-game tear RIGHT NOW.
 
-   *Agrees with:* Glass Cannon gets it! Purdue's 39.2% from three is a game-changer. That's a hot hand that can carry them through any game, RIGHT NOW.
+   *Agrees with:* Glass Cannon gets it; Purdue's elite 39.2% 3PT shooting is a recent, undeniable factor that changes everything.
 
-   "Oracle wants to talk about 2008! I care about RIGHT NOW. Purdue's 8-game streak, including a conference title, shows they're peaking. Arizona's streak means nothing if they're not playing their best ball in March."
-   Updated probability: Arizona 0.45 ± 0.17
+   "Oracle wants to talk about 1985. I want to talk about LAST TUESDAY. Purdue just won 8 straight, peaking hard. Arizona's streak is against weaker competition."
+   Updated probability: Arizona 0.45 ± 0.15
 
 
 ### Upset Watch
-**Upset Score: 36.6/100** | Upset score 37/100 for #2 Purdue over #1 Arizona. Historical upset rate: 50.0%. Agent support: 3-4 for Purdue.
-   *Agent split: 3-4 for Purdue | Historical upset rate: 50.0%*
+**Upset Score: 30.9/100** | Upset score 31/100 for #2 Purdue over #1 Arizona. Historical upset rate: 50.0%. Agent support: 2-5 for Purdue.
+   *Agent split: 2-5 for Purdue | Historical upset rate: 50.0%*
    *Statistical edges: Better 3PT% (39.2 vs 37.3)*
 
 
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Arizona 0.52 ± 0.17
+Combined probability: Arizona 0.55 ± 0.18
 
-**PICK: Arizona** (52% — genuine toss-up, high uncertainty)
+**PICK: Arizona** (55% — genuine toss-up, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Three agents flipped toward Purdue after Round 2 - that's decisive momentum. Oracle's historical parallel to 2019 Duke-MSU upset wins the debate. Iron Curtain's defense argument crumbles against veteran execution. Experience beats talent when the lights are brightest."
+🎼 **THE CONDUCTOR**: "Iron Curtain and Whisper won this debate - defense and hidden fatigue factors matter more than shooting percentages. Tempo Hawk and Streak flipped after recognizing Purdue's shooting prowess, but Arizona's elite defense (.392 opp FG%) trumps hot shooting in March's crucible."
 
-   *Key factor: Experience gap in Elite Eight pressure*
+   *Key factor: Defensive gap between elite Arizona defense vs vulnerable Purdue defense*
 
-   *Most weighted: Road Dog*
+   *Most weighted: Iron Curtain*
 
-   *Dissent report: Iron Curtain lost despite strong defensive metrics - 2019 Duke precedent proves elite defense doesn't guarantee Elite Eight survival against seasoned veterans*
+   *Dissent report: Glass Cannon, Road Dog, and flipped agents Tempo Hawk/Streak believe Purdue's 39.2% three-point shooting and veteran leadership overcome defensive gaps, but historical data shows elite shooting teams struggle in Elite Eight pressure*
 
 
 ---

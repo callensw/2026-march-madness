@@ -1,126 +1,132 @@
 # 🏀 #1 Florida vs #8 Clemson — South Region, Round of 32
-*2026-03-16T16:50:37.560269+00:00*
+*2026-03-16T17:41:35.368315+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Clemson's 64.1 tempo vs Florida's 72.0 creates 8-possession mismatch. Fewer possessions neutralize talent gap, but Florida's 6.6 efficiency edge still decisive."
-   Win probability: Florida 0.68 ± 0.15
-   *Key stat: 8-possession tempo differential (64.1 vs 72.0)*
+🦅 **TEMPO HAWK**: "Clemson's 64.1 tempo vs Florida's 72.0 creates massive mismatch. Tigers grind this into half-court slugfest, neutralizing Gators' talent advantage through pace control."
+   Win probability: Florida 0.35 ± 0.18
+   *Key stat: 8-possession tempo differential (72.0 vs 64.1)*
 
-🛡️ **IRON CURTAIN**: "Florida's elite defense (87.4 adj_d) dominates without Welling protecting Clemson's paint. Opponents shoot just 40.8% against Florida's suffocating scheme."
-   Win probability: Florida 0.72 ± 0.12
-   *Key stat: 40.8% opponent field goal percentage*
+🛡️ **IRON CURTAIN**: "Florida's elite defense (87.4 adj_d) dominates half-court games. Clemson lost their best interior defender. Defense travels, offense disappears under pressure."
+   Win probability: Florida 0.78 ± 0.12
+   *Key stat: Florida holds opponents to 40.8% shooting vs Clemson's 41.9%*
 
-💥 **GLASS CANNON** `[gemini]`: "Clemson's 35.9% from three is close enough to Florida's 36.6% to make this a shootout! One hot quarter changes everything, you can't coach that! Variance is the underdog's friend!"
+💥 **GLASS CANNON** `[gemini]`: "Clemson's 3PT% is right there with Florida's! They can absolutely catch fire and go shot-for-shot. One hot quarter changes everything!"
    Win probability: Florida 0.55 ± 0.15
    *Key stat: Clemson 3PT%: 35.9%*
 
-🐺 **ROAD DOG** `[gemini]`: "Clemson's senior-led roster, with RJ Godfrey and Jestin Porter, has the toughness to grind this out. Florida's coach lacks deep tournament runs."
+🐺 **ROAD DOG** `[gemini]`: "Clemson's senior leadership, especially RJ Godfrey, has been here before. Florida's young core will crack under pressure. Experience wins."
    Win probability: Florida 0.58 ± 0.15
-   *Key stat: Clemson experience: 7.0/10*
+   *Key stat: Clemson's experience=7.0/10 vs. Florida's experience=6.0/10*
 
-👁️ **WHISPER** `[gemini]`: "Everyone knows about Carter Welling's ACL, but here's what they're missing: Clemson has only 3 rest days and Florida has 4. That extra day matters, especially with their frontcourt depth already compromised. It changes everything."
-   Win probability: Florida 0.58 ± 0.15
+👁️ **WHISPER** `[gemini]`: "Everyone knows about Welling's ACL, but here's what they're missing: Clemson has one less rest day and minimal travel, while Florida traveled 360 miles. Fatigue will compound that missing 10.2 PPG."
+   Win probability: Florida 0.62 ± 0.15
    *Key stat: Welling (10.2 PPG) out*
 
-📜 **ORACLE**: "Since 1985, 1-seeds are 85.2% vs 8-seeds. Florida's 38.7 efficiency margin massive. Clemson's pace control reminds me of 2014 Dayton upset path."
-   Win probability: Florida 0.78 ± 0.12
-   *Key stat: Florida's +38.7 efficiency margin vs Clemson's +30.9*
+📜 **ORACLE**: "Since 1985, 1-seeds are 85% vs 8-seeds in R32. Florida's 32-point KenPom edge matches 2019 Duke-UCF dominance."
+   Win probability: Florida 0.82 ± 0.08
+   *Key stat: 1-seeds are 142-25 vs 8/9 seeds in Round of 32 since 1985*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. Florida just had their 12-game streak SNAPPED and got blown out by 17! Clemson won 8 of their last 10, peaking at the right time. Momentum is real!"
-   Win probability: Florida 0.58 ± 0.15
-   *Key stat: Florida's 17-point loss in their last meaningful game.*
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — Florida just got blown out by 17 in their conference semis. Clemson won 8 of their last 10, beating UNC! Momentum is REAL. Florida is fading."
+   Win probability: Florida 0.62 ± 0.15
+   *Key stat: Florida lost SEC SF by 17 points.*
 
 
 ## Round 2 — Cross-Examination
 
-🦅 **TEMPO HAWK** (position: WEAKENED):
+🦅 **TEMPO HAWK** (position: STRENGTHENED):
 
-   *Disagrees with:* Oracle treats efficiency margins as gospel, but a 38.7 margin means nothing if Clemson limits possessions to 64 — that's only 5 real points of edge.
+   *Disagrees with:* Oracle ignores that pace mismatches flip historical base rates — slow underdogs perform much better against fast favorites.
 
-   *Agrees with:* Glass Cannon correctly identifies that shooting variance in March creates chaos, and in a slow-tempo game, one hot streak decides everything.
+   *Agrees with:* Glass Cannon's shooting percentage data supports my thesis that talent gaps shrink in grind-it-out games.
 
-   "Oracle's efficiency margin ignores pace context. In 64-possession games, that margin shrinks to 5 actual points. Clemson controls tempo, neutralizes talent gap."
-   Updated probability: Florida 0.62 ± 0.16
+   "Oracle's historical data ignores pace context. Fast 1-seeds crush slow 8s, but slow 8s neutralize fast 1s. Clemson controls tempo."
+   Updated probability: Florida 0.32 ± 0.16
 
-🛡️ **IRON CURTAIN** (position: STRENGTHENED):
+🛡️ **IRON CURTAIN** (position: WEAKENED):
 
-   *Disagrees with:* Streak ignores that Florida's loss came against Alabama's suffocating defense — context matters in March.
+   *Disagrees with:* Streak thinks one conference tournament loss means Florida's defense evaporated - that's garbage analysis ignoring season-long defensive dominance.
 
-   *Agrees with:* Tempo Hawk nailed it — fewer possessions help underdogs, but Florida's defensive edge still wins ugly games.
+   *Agrees with:* Tempo Hawk nailed it - slower pace helps the underdog by reducing possessions and increasing variance in tournament games.
 
-   "Streak is DEAD WRONG. Florida's 'blowout loss' was to Alabama — the #1 defense in the country! That's not collapse, that's facing elite D."
-   Updated probability: Florida 0.75 ± 0.10
+   "Streak's wrong about momentum. Defense doesn't disappear after one bad game. Florida's 87.4 adj_d is ELITE. Bad shooting nights happen, defense travels."
+   Updated probability: Florida 0.72 ± 0.15
 
-💥 **GLASS CANNON** (position: WEAKENED) `[gemini]`:
+💥 **GLASS CANNON** (position: UNCHANGED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain keeps talking defense, but Florida's 33.5% opponent 3PT% isn't elite. One hot night from beyond the arc and that efficiency is meaningless!
+   *Disagrees with:* Iron Curtain's focus on defense ignores how a hot-shooting team can completely nullify it; 3-point variance is the great equalizer.
 
-   *Agrees with:* Streak gets it! Florida just got blown out! A team that just took a 17-point loss isn't going to suddenly shut down a hot-shooting underdog.
+   *Agrees with:* Tempo Hawk gets it! Slowing the game gives Clemson more chances for those high-variance three-pointers to swing the game.
 
-   "Everyone's underestimating Clemson's shooters! Florida's defense allows 33.5% from three; that's VULNERABLE. If Clemson's Chase Hunter (39.5% 3PT) gets hot, it's over!"
-   Updated probability: Florida 0.52 ± 0.18
+   "Iron Curtain keeps talking defense! One hot night from beyond the arc and that defensive efficiency is MEANINGLESS! Clemson just needs to get hot!"
+   Updated probability: Florida 0.52 ± 0.17
 
 🐺 **ROAD DOG** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Oracle's reliance on historical 1-seed vs 8-seed records ignores the specific roster experience of this Clemson team. Every team is different.
+   *Disagrees with:* Oracle's historical data is just numbers. You can't measure the heart of a senior-led team like Clemson with a spreadsheet.
 
-   *Agrees with:* Glass Cannon sees the variance, and with veterans like Clemson's, one hot quarter isn't luck, it's poise under pressure.
+   *Agrees with:* Whisper's point about Welling's injury and fatigue is a real factor. A missing key player and tired legs compound pressure on young teams.
 
-   "Oracle's historical stats don't account for Clemson's senior leadership. RJ Godfrey and Jestin Porter have seen it all; that experience trumps spreadsheets."
+   "Oracle's stats don't account for Clemson's 7.0 experience. Those seniors have seen every March scenario; history doesn't play the game."
    Updated probability: Florida 0.52 ± 0.18
 
-👁️ **WHISPER** (position: WEAKENED) `[gemini]`:
+👁️ **WHISPER** (position: UNCHANGED) `[gemini]`:
 
-   *Disagrees with:* I'm hearing Tempo Hawk believes pace neutralizes the talent gap, but true fatigue impacts decision-making more than tempo. You can't outrun exhaustion.
+   *Disagrees with:* I'm hearing Oracle citing historical seed data. But that doesn't account for THIS Florida team's recent travel and rest disadvantage, which changes the dynamic.
 
-   *Agrees with:* Glass Cannon's point about variance is a whisper in the wind; when key players are tired, 'one hot quarter' is less likely.
+   *Agrees with:* Glass Cannon sees the path to a shootout. If Florida's travel and rest fatigue impacts defense, Clemson's shooting becomes a bigger threat than people realize.
 
-   "Everyone is still missing the fatigue factor. Welling's absence forces more minutes from a short bench, and fewer rest days compounds the issue. This screams deeper issues."
-   Updated probability: Florida 0.52 ± 0.18
+   "Everyone is still missing the fatigue factor. Florida has one less rest day than Clemson, which compounds the pressure. That's a hidden toll."
+   Updated probability: Florida 0.60 ± 0.16
 
-📜 **ORACLE** (position: STRENGTHENED):
+📜 **ORACLE** (position: WEAKENED):
 
-   *Disagrees with:* Streak thinks Florida's 17-point loss matters, but historically teams losing their final game are 67-43 in Round 1 — momentum is overrated.
+   *Disagrees with:* Tempo Hawk thinks pace control creates upsets, but since 1985, slow 8-seeds are 12-47 against 1-seeds — grinding doesn't work.
 
-   *Agrees with:* Iron Curtain nailed the defensive mismatch — Florida's 87.4 adj_d reminds me of 2009 UNC's suffocating defense that crushed opponents.
+   *Agrees with:* Iron Curtain nailed it — defense travels in March, and Florida's 87.4 defensive efficiency matches historical dominant 1-seeds.
 
-   "Streak ignores history! Since 1985, teams losing their last game before tournament are 67-43 in Round 1. Momentum is noise, talent is signal."
-   Updated probability: Florida 0.72 ± 0.14
+   "Tempo Hawk's wrong — historically, pace differentials don't predict upsets. 2019 Auburn slowed Duke to 65 possessions, still lost by 21."
+   Updated probability: Florida 0.75 ± 0.10
 
-🔥 **STREAK** (position: FLIPPED) `[gemini]`:
+🔥 **STREAK** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Oracle is wrong; historical base rates are irrelevant. Florida's recent 17-point blowout loss is what matters, not 1985 records.
+   *Disagrees with:* Oracle wants to talk about 1985, but I care about LAST TUESDAY. Recent form crushes stale historical base rates.
 
-   *Agrees with:* Whisper highlights Clemson's limited rest, but that just makes their 8-2 recent form even more impressive; they're grinding and winning!
+   *Agrees with:* Glass Cannon sees Clemson's shooting potential. A hot streak, like their 8-2 run, can absolutely carry them through.
 
-   "Oracle wants 1985 stats. I'm watching Florida get blown out by 17 in their last game! Clemson won 8 of 10, peaking! Momentum is real, and it's with Clemson!"
-   Updated probability: Florida 0.48 ± 0.18
+   "Oracle wants 1985 stats, but Clemson just won 8 of their last 10 games, including UNC. Florida is fading, losing early. Momentum is REAL!"
+   Updated probability: Florida 0.55 ± 0.17
+
+
+### Upset Watch
+**Upset Score: 32.2/100** | Upset score 32/100 for #8 Clemson over #1 Florida. Historical upset rate: 50.0%. Agent support: 1-6 for Clemson.
+   *Agent split: 1-6 for Clemson | Historical upset rate: 50.0%*
+   *Statistical edges: Tempo mismatch (7.9 poss/game gap)*
 
 
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Florida 0.60 ± 0.19
+Combined probability: Florida 0.54 ± 0.22
 
-**PICK: Florida** (60% — lean, high uncertainty)
+**PICK: Florida** (54% — genuine toss-up, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Iron Curtain and Oracle won this debate - Florida's elite defense trumps everything. Streak's flip to Clemson based on momentum ignores that Florida's loss came against Alabama's suffocating defense. Five agents weakened but couldn't overcome the defensive gap. Defense travels, momentum doesn't."
+🎼 **THE CONDUCTOR**: "Iron Curtain and Oracle won this debate despite weakening - Florida's elite defense and historical dominance outweigh pace concerns. Tempo Hawk strengthened but couldn't overcome the talent gap. Four agents weakened after cross-examination, showing genuine uncertainty. Defense travels, pace theories don't."
 
-   *Key factor: Defensive gap without Welling*
+   *Key factor: Elite defense vs pace mismatch*
 
    *Most weighted: Iron Curtain*
 
-   *Dissent report: Streak flipped to Clemson citing momentum from their 8-2 finish, but ignored context that Florida's blowout loss was to the nation's #1 defense. Glass Cannon and Road Dog weakened on variance/experience arguments but couldn't overcome the talent gap.*
+   *Dissent report: Tempo Hawk strengthened his pace mismatch argument but historically slow 8-seeds are 12-47 vs 1-seeds - grinding doesn't create upsets as reliably as elite defense prevents them*
 
 
 ---
 ### Specialist Vote: 6-1 Florida
 
-🦅Florida 🛡️Florida 💥Florida 🐺Florida 👁️Florida 📜Florida 🔥Clemson
+🦅Clemson 🛡️Florida 💥Florida 🐺Florida 👁️Florida 📜Florida 🔥Florida
 
 CONDUCTOR AGREES: Florida (50%)
 
@@ -128,5 +134,5 @@ CONDUCTOR AGREES: Florida (50%)
 ---
 ### Vote Tally
 
-- **Florida**: Tempo Hawk, Iron Curtain, Glass Cannon, Road Dog, Whisper, Oracle (6 votes)
-- **Clemson**: Streak (1 votes)
+- **Clemson**: Tempo Hawk (1 votes)
+- **Florida**: Iron Curtain, Glass Cannon, Road Dog, Whisper, Oracle, Streak (6 votes)

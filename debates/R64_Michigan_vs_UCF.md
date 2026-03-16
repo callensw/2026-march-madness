@@ -1,35 +1,35 @@
 # 🏀 #5 Michigan vs #12 UCF — Midwest Region, Round of 64
-*2026-03-16T12:04:31.672561+00:00*
+*2026-03-16T17:24:39.677202+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Let me run the numbers on pace and efficiency here. Efficiency margin of +28.3 vs +19.1 is decisive. Michigan controls tempo at 68.1 possessions per game which neutralizes UCF's preferred slow pace."
+🦅 **TEMPO HAWK**: "Efficiency margin of +28.3 vs +19.1 is decisive. Michigan controls tempo at 68.1 possessions per game which neutralizes UCF's preferred slow pace."
    Win probability: Michigan 0.72 ± 0.08
    *Key stat: Efficiency margin: +28.3 vs +19.1*
 
-🛡️ **IRON CURTAIN**: "Look, I don't care what the offense looks like. Michigan allows just 89.2 adj_d — elite level. UCF has not faced a defense this disciplined. Their offense will stall."
+🛡️ **IRON CURTAIN**: "Michigan allows just 89.2 adj_d — elite level. UCF has not faced a defense this disciplined. Their offense will stall."
    Win probability: Michigan 0.78 ± 0.05
    *Key stat: Opponent adj_d: 89.2 (top 5 nationally)*
 
-💥 **GLASS CANNON**: "Forget the spreadsheets for a second. UCF shoots 38.5% from three with 4 capable shooters. In a dome setting, shooting variance actually increases — higher ceiling for the better shooting team."
+💥 **GLASS CANNON**: "UCF shoots 38.5% from three with 4 capable shooters. In a dome setting, shooting variance actually increases — higher ceiling for the better shooting team."
    Win probability: Michigan 0.33 ± 0.12
    *Key stat: 3PT%: 38.5% on 28 attempts/game*
 
-🐺 **ROAD DOG**: "I've seen this movie before. Michigan's coach has 12 tournament wins and 3 Final Four appearances. Their senior backcourt has logged 47 career tournament minutes. That matters when it's tight with 4 minutes left."
+🐺 **ROAD DOG**: "Michigan's coach has 12 tournament wins and 3 Final Four appearances. Their senior backcourt has logged 47 career tournament minutes. That matters when it's tight with 4 minutes left."
    Win probability: Michigan 0.74 ± 0.07
    *Key stat: Coach tournament record: 12-5*
 
-👁️ **WHISPER**: "Something doesn't add up here, and nobody's talking about it. Something is off with Michigan. Their star went 3-for-14 in the conference tournament final and has been notably absent from team social media. UCF is flying under the radar with a 7-game win streak."
+👁️ **WHISPER**: "Something is off with Michigan. Their star went 3-for-14 in the conference tournament final and has been notably absent from team social media. UCF is flying under the radar with a 7-game win streak."
    Win probability: Michigan 0.37 ± 0.15
    *Key stat: Michigan star: 3-for-14 in conf tournament final*
 
-📜 **ORACLE**: "The historical record is clear on this. Historical base rate for this seed matchup gives Michigan a 64.2% edge. Both teams are close to their seed averages in quality metrics, so I see no reason to deviate significantly from the base rate."
+📜 **ORACLE**: "Historical base rate for this seed matchup gives Michigan a 64.2% edge. Both teams are close to their seed averages in quality metrics, so I see no reason to deviate significantly from the base rate."
    Win probability: Michigan 0.64 ± 0.06
    *Key stat: Historical win rate for higher seed: 64.2% (since 1985, n=152)*
 
-🔥 **STREAK**: "Forget the spreadsheets — let me tell you what I've been watching... Michigan is 7-3 in their last 10 but UCF has been surging late. Conference tournament momentum matters more than season-long metrics in March. UCF's recent form gives them a live shot."
+🔥 **STREAK**: "Michigan is 7-3 in their last 10 but UCF has been surging late. Conference tournament momentum matters more than season-long metrics in March. UCF's recent form gives them a live shot."
    Win probability: Michigan 0.58 ± 0.11
    *Key stat: UCF last 10: 8-2 with 4-game win streak*
 
@@ -100,6 +100,12 @@
    Updated probability: Michigan 0.55 ± 0.12
 
 
+### Upset Watch
+**Upset Score: 28.4/100** | Upset score 28/100 for #12 UCF over #5 Michigan. Historical upset rate: 35.8%. Agent support: 2-5 for UCF.
+   *Agent split: 2-5 for UCF | Historical upset rate: 35.8%*
+   *Statistical edges: None*
+
+
 ---
 ## 🎼 The Conductor — Final Analysis
 
@@ -108,7 +114,7 @@ Combined probability: Michigan 0.60 ± 0.17
 **PICK: Michigan** (60% — lean, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "I've heard every argument. Here's what actually matters. Combined probability analysis yields 0.60 for Michigan. The panel's weighted consensus with uncertainty 0.17 favors Michigan."
+🎼 **THE CONDUCTOR**: "Combined probability analysis yields 0.60 for Michigan. The panel's weighted consensus with uncertainty 0.17 favors Michigan."
 
    *Key factor: Weighted probability combination from 2-round debate*
 

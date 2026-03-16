@@ -1,0 +1,9 @@
+**STEP 1 — UPSET THESIS:** Queens forces Purdue into a half-court grind where their defensive intensity and physicality disrupts Purdue's rhythm. Purdue allows 44.6% shooting - vulnerable perimeter defense that Queens can exploit with Ashby and their balanced scoring attack.
+
+**STEP 2 — RATE THE UPSET THESIS:** 4/10. Queens' 114.3 adj_d is terrible - they can't get stops when it matters. Purdue's 90.0 adj_d travels to March.
+
+**STEP 3 — PICK:** Purdue wins this. Queens can't defend well enough to hang with a Big Ten champion that just beat quality teams five straight times.
+
+```json
+{"team_a_win_prob": 0.88, "uncertainty": 0.08, "reasoning": "Purdue's 90.0 defensive efficiency dominates Queens' 114.3. Big Ten champion defense travels. Queens can't get stops when possessions matter.", "key_stat": "Queens allows 46.6% shooting - exploitable in March"}
+```

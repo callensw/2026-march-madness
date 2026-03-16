@@ -1,35 +1,35 @@
 # 🏀 #6 BYU vs #11 Texas — West Region, Round of 64
-*2026-03-16T16:38:29.717389+00:00*
+*2026-03-16T17:29:29.567261+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Texas controls tempo at 69.8 vs 68.4, creating more possessions for elite offense to exploit BYU's Saunders-less defense. Pace favors the Longhorns."
+🦅 **TEMPO HAWK**: "Texas controls pace at 69.8 possessions, creating more opportunities for their elite offense against BYU's Saunders-less defense. Efficiency gap minimal but tempo favors Longhorns."
    Win probability: BYU 0.42 ± 0.15
-   *Key stat: Texas tempo 69.8 vs BYU 68.4 possessions per game*
+   *Key stat: Texas 69.8 tempo vs BYU 68.4 - more possessions for 13th-ranked offense*
 
-🛡️ **IRON CURTAIN**: "BYU's defense is soft at 91.8 efficiency. Texas pounds paint with Vokietaitis, controls tempo in half-court grind. Defense travels."
-   Win probability: BYU 0.42 ± 0.16
-   *Key stat: BYU allows 44.3% opponent shooting - vulnerable perimeter defense*
+🛡️ **IRON CURTAIN**: "Both teams allow 44%+ shooting - terrible defense creates ugly grind. Texas has size advantage inside without Saunders."
+   Win probability: BYU 0.45 ± 0.18
+   *Key stat: BYU allows .443 opponent FG%, Texas .449 - neither can get stops*
 
-💥 **GLASS CANNON** `[gemini]`: "BYU shoots 37.4% from three! That's ELITE! Texas's 35.3% just doesn't compare. BYU can catch fire and go on a run in an instant, especially with Dybantsa!"
-   Win probability: BYU 0.55 ± 0.15
-   *Key stat: BYU 3PT%: 37.4%*
+💥 **GLASS CANNON** `[gemini]`: "BYU shoots fire from deep (37.4%)! Texas's 35.3% from three just won't cut it. BYU's Dybantsa is a flamethrower; one hot night changes everything!"
+   Win probability: BYU 0.53 ± 0.15
+   *Key stat: BYU 3PT% = 37.4%*
 
-🐺 **ROAD DOG** `[gemini]`: "Texas has more veterans, especially with BYU's key injury. That 6.0 experience score for Texas against BYU's 4.0 will show up in March. I've seen this movie before."
+🐺 **ROAD DOG** `[gemini]`: "Texas has veteran guards Tramon Mark and Jordan Pope. BYU's young talent, led by freshman AJ Dybantsa, will crack under March pressure. Experience wins."
    Win probability: BYU 0.48 ± 0.15
-   *Key stat: Experience gap: Texas 6.0 vs BYU 4.0*
+   *Key stat: Texas experience=6.0/10 vs BYU experience=4.0/10*
 
-👁️ **WHISPER** `[gemini]`: "Everyone knows about Saunders, but the impact of his 18.0 PPG loss is compounded by BYU's travel disadvantage (603 vs 1155 miles) and fewer rest days (4 vs 3)."
+👁️ **WHISPER** `[gemini]`: "Everyone knows about Saunders' injury, but nobody's talking about the travel. BYU has 4 rest days and 603 miles. Texas has only 3 rest days and 1155 miles. That fatigue differential is significant."
    Win probability: BYU 0.58 ± 0.15
-   *Key stat: Richie Saunders (18.0 PPG) OUT*
+   *Key stat: Texas travel: 1155 miles*
 
-📜 **ORACLE**: "Classic 6v11 upset profile: BYU missing 18 PPG scorer Saunders, Texas has elite offense. Reminds me of 2018 Syracuse over TCU."
-   Win probability: BYU 0.45 ± 0.15
-   *Key stat: Texas ranks 13th nationally in adjusted offensive efficiency*
+📜 **ORACLE**: "Classic 6v11 upset profile: BYU missing 18 PPG scorer Saunders, Texas has superior size/experience. Reminds me of 2018 Syracuse over TCU."
+   Win probability: BYU 0.42 ± 0.15
+   *Key stat: 6-seeds are just 62.5% historically, and BYU went 5-5 without Saunders*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets—let me tell you what I've been watching. Texas is ice cold, losing three straight and exiting their conference tourney early. BYU just beat Kansas State and West Virginia, showing they're peaking RIGHT NOW."
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. Texas is collapsing, losing 3 straight and 4 of their last 5. BYU is peaking, winning 2 in their conference tourney before losing to #1 Houston. Momentum is real!"
    Win probability: BYU 0.62 ± 0.15
    *Key stat: Texas: L3 streak*
 
@@ -38,65 +38,65 @@
 
 🦅 **TEMPO HAWK** (position: STRENGTHENED):
 
-   *Disagrees with:* Glass Cannon is wrong because shooting percentage is meaningless without shot volume, and Texas's tempo advantage limits BYU's three-point attempts.
+   *Disagrees with:* Glass Cannon ignores that BYU's elite 3PT shooting drops significantly without their primary scorer Saunders.
 
-   *Agrees with:* Iron Curtain reinforced my view by identifying BYU's defensive vulnerability, which becomes more exploitable when Texas controls the pace.
+   *Agrees with:* Oracle correctly identifies this as a classic upset profile with BYU missing their key scorer and going 5-5 without him.
 
-   "Glass Cannon ignores pace reality. BYU's 37.4% from three means nothing if Texas controls possessions and limits their attempts through tempo."
+   "Glass Cannon misses the point - BYU's 3PT% drops to 33.1% without Saunders. Texas controls pace, creates more possessions for their offense."
    Updated probability: BYU 0.38 ± 0.16
 
 🛡️ **IRON CURTAIN** (position: STRENGTHENED):
 
-   *Disagrees with:* Glass Cannon thinks BYU's three-point shooting will save them, but Texas's 40.8% opponent shooting percentage shows they shut down perimeter offense.
+   *Disagrees with:* Glass Cannon ignores that BYU's three-point shooting drops to 33.1% without Saunders creating open looks.
 
-   *Agrees with:* Tempo Hawk reinforced that Texas controls pace, which means more possessions for their defense to impose its will on BYU's offense.
+   *Agrees with:* Road Dog nailed it - Texas's veteran guards will exploit BYU's inexperienced backcourt in crunch time.
 
-   "Glass Cannon is WRONG. BYU's 37.4% three-point shooting means NOTHING when Texas holds opponents to 40.8% overall. Defense travels, offense disappears."
-   Updated probability: BYU 0.38 ± 0.17
+   "Glass Cannon is WRONG. BYU's 37.4% from three means NOTHING without Saunders. Texas gets stops in paint without rim protection."
+   Updated probability: BYU 0.38 ± 0.16
 
 💥 **GLASS CANNON** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain is just wrong! He ignores that BYU's 37.4% from three is better than Texas's opponent three-point shooting of 35.3%!
+   *Disagrees with:* Iron Curtain keeps talking about defense but Texas's perimeter defense is WEAK, allowing 34.5% from deep!
 
-   *Agrees with:* Whisper gets it! Losing Saunders means more shots for the remaining flamethrowers to catch fire! Variance is real!
+   *Agrees with:* Streak gets it! Texas is cold, BYU is hot. That momentum fuels shooting streaks, and streaks win games!
 
-   "Texas's perimeter defense is just 35.3% allowed from three! BYU shoots 37.4%! Iron Curtain keeps talking defense, but one hot night from beyond the arc changes everything!"
-   Updated probability: BYU 0.58 ± 0.15
+   "Texas's defense gives up too many threes, 34.5% to opponents! BYU's shooters are gonna feast. One hot quarter and it's OVER!"
+   Updated probability: BYU 0.55 ± 0.15
 
 🐺 **ROAD DOG** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Streak focuses on recent wins, but March is about coaching and roster experience, not just who won last week. Those streaks don't measure toughness.
+   *Disagrees with:* Streak loves momentum, but Texas's coach Rodney Terry has been to the tournament 5 times; he'll have them ready despite recent losses.
 
-   *Agrees with:* Whisper's point about Saunders' loss is critical; it impacts BYU's overall experience and puts more pressure on their remaining veterans.
+   *Agrees with:* Glass Cannon sees BYU's shooting prowess, and that kind of offensive firepower, when it's clicking, can overcome any experience gap in a single game.
 
-   "Texas's experience edge is real, but BYU's senior Dybantsa has played 140+ games. That kind of battle-tested leadership doesn't crack easily, even without Saunders."
+   "Texas has veteran guards, but BYU's been in hostile Big 12 environments all year. That kind of toughness doesn't crack, even with young talent."
    Updated probability: BYU 0.52 ± 0.16
 
 👁️ **WHISPER** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Road Dog's focus on experience ignores the hidden physical toll; Texas's veterans are more susceptible to fatigue from extensive travel.
+   *Disagrees with:* Road Dog's focus on 'experience' ignores the physical toll of travel and less rest. Fatigue negates any experience edge.
 
-   *Agrees with:* Glass Cannon highlights BYU's elite 3PT%, which is crucial when the opponent (Texas) is physically drained and struggling from distance.
+   *Agrees with:* Streak understands that current circumstances, like travel and rest, dictate who truly has the edge, not season-long stats.
 
-   "Everyone's missing the deeper fatigue. Texas's 1155 travel miles and fewer rest days are a silent killer, compounding Saunders' absence for BYU."
-   Updated probability: BYU 0.62 ± 0.14
+   "Everyone's missing the deeper fatigue. Texas had 1155 miles and 3 rest days before this game. BYU had just 603 miles and 4 rest days. That compounds."
+   Updated probability: BYU 0.62 ± 0.12
 
 📜 **ORACLE** (position: STRENGTHENED):
 
-   *Disagrees with:* Glass Cannon overvalues BYU's shooting percentage without considering that elite 3PT shooting 6-seeds have historically underperformed in upsets.
+   *Disagrees with:* Streak's momentum argument ignores that BYU is fundamentally different without Saunders - they're not the same team that built that conference tournament run.
 
-   *Agrees with:* Road Dog correctly identifies Texas's experience edge as crucial - veteran teams historically outperform in March when facing injury-depleted opponents.
+   *Agrees with:* Road Dog correctly identifies experience as crucial - this mirrors 2019 when experienced Auburn upset New Mexico State's talented but young roster.
 
-   "Glass Cannon ignores history: 6-seeds shooting 37%+ from three are 4-8 since 2010. Elite shooting doesn't guarantee upset success."
-   Updated probability: BYU 0.38 ± 0.16
+   "Streak ignores the data: Texas went 5-5 without Saunders historically. BYU's 'momentum' means nothing when missing their leading scorer."
+   Updated probability: BYU 0.38 ± 0.15
 
 🔥 **STREAK** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Oracle wants to talk about 2018. I want to talk about the fact Texas just lost three straight games and exited their conference tournament early. That's a cold team.
+   *Disagrees with:* Oracle wants to talk about 2018 and historical base rates; that's stale. Texas's current form (L4 of 5) is all that matters.
 
-   *Agrees with:* Whisper is right; Saunders' absence combined with Texas's recent slump makes BYU's current form even more impactful against a vulnerable favorite.
+   *Agrees with:* Whisper is right, travel fatigue for Texas (1155 miles) adds to their recent slump, making them even more vulnerable.
 
-   "Texas lost three straight! Oracle wants to talk about 2018. I care about LAST WEEK. BYU is playing better basketball RIGHT NOW, with wins over quality opponents. Momentum is real!"
+   "Texas is fading fast, losing 4 of their last 5. BYU just took #1 Houston to the wire! Oracle wants to talk about 2018; I'm watching what's happening RIGHT NOW!"
    Updated probability: BYU 0.65 ± 0.12
 
 
@@ -109,18 +109,18 @@
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: BYU 0.48 ± 0.19
+Combined probability: BYU 0.48 ± 0.18
 
 **PICK: Texas** (48% — genuine toss-up, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Iron Curtain and Tempo Hawk won this debate—BYU's soft 91.8 defense can't survive Texas controlling pace at 69.8. Road Dog's flip from experience to acknowledging Dybantsa's toughness shows even veteran advantages have limits. Glass Cannon's shooting dreams die in half-court grind. Defense travels, offense wilts."
+🎼 **THE CONDUCTOR**: "Oracle and Iron Curtain won this debate - BYU without Saunders is fundamentally broken, shooting just 33.1% from three. Road Dog's flip toward BYU shows even experience advocates see the shooting talent, but Texas's size advantage and BYU's missing 18 PPG scorer tips the scales. When your best player tears his ACL, March becomes unforgiving."
 
-   *Key factor: Pace control advantage allowing Texas to exploit BYU's defensive weakness*
+   *Key factor: Missing key scorer (Saunders injury)*
 
-   *Most weighted: Iron Curtain*
+   *Most weighted: Oracle*
 
-   *Dissent report: Glass Cannon overvalued BYU's 37.4% three-point shooting without considering Texas's pace control limits attempts. Streak's momentum argument ignores that recent form means less when facing superior tempo control.*
+   *Dissent report: Streak and Whisper lost - momentum and travel fatigue can't overcome losing your leading scorer and primary shot creator in March*
 
 
 ---

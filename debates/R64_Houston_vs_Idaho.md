@@ -1,42 +1,42 @@
 # 🏀 #2 Houston vs #15 Idaho — South Region, Round of 64
-*2026-03-16T16:45:36.877011+00:00*
+*2026-03-16T17:36:32.954391+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Houston's 17.3-point efficiency edge overwhelms Idaho's pace-control strategy. Elite defense travels, mediocre offense doesn't."
-   Win probability: Houston 0.92 ± 0.08
-   *Key stat: Houston 68.5 tempo vs Idaho 64.4 — only 4-possession gap*
-
-🛡️ **IRON CURTAIN**: "Houston's suffocating defense (87.3 adj_d, 40% opp_fg_pct) will demolish Idaho's anemic offense (108.3 adj_o, 145th nationally). Complete mismatch."
+🦅 **TEMPO HAWK**: "Houston's elite defense neutralizes Idaho's pace-control strategy. 17-point efficiency margin holds even in slower games."
    Win probability: Houston 0.88 ± 0.08
+   *Key stat: Houston 68.5 tempo vs Idaho 64.4 — manageable gap for elite defense*
+
+🛡️ **IRON CURTAIN**: "Houston holds opponents to 40% shooting and Idaho's offense ranks 145th nationally. This isn't close - Houston's elite defense travels perfectly to March."
+   Win probability: Houston 0.92 ± 0.08
    *Key stat: Houston allows 40.0% opponent field goal percentage*
 
-💥 **GLASS CANNON** `[gemini]`: "Houston's 3-point shooting at 36.3% is solid, but Idaho's 32.4% is just too low. We need that hot hand, and Idaho doesn't have it! No upset here."
+💥 **GLASS CANNON** `[gemini]`: "Houston shoots it way better from deep, 36.3% to Idaho's 32.4%! When they're on, they're ON, and that's a huge gap to overcome. Idaho can't match that firepower!"
+   Win probability: Houston 0.90 ± 0.10
+   *Key stat: Houston 3PT%: 36.3%*
+
+🐺 **ROAD DOG** `[gemini]`: "Houston's coach has been to 6 straight Sweet 16s. That experience, even with a younger roster, doesn't crack against a low-major. Idaho's seniors haven't seen this stage."
+   Win probability: Houston 0.90 ± 0.08
+   *Key stat: Houston coach: 6 Sweet 16s*
+
+👁️ **WHISPER** `[gemini]`: "Nobody's talking about Idaho's brutal travel. That 2270-mile journey for a low-major facing a top-5 team will compound fatigue issues. Houston has a real advantage here."
    Win probability: Houston 0.88 ± 0.12
-   *Key stat: Idaho 3PT% = 32.4%*
+   *Key stat: Idaho travel: 2270.0mi*
 
-🐺 **ROAD DOG** `[gemini]`: "Houston's coach has been to 6 straight Sweet 16s. Idaho's coach is a first-timer. Experience like that doesn't lose to a team that just broke a 36-year drought."
-   Win probability: Houston 0.88 ± 0.05
-   *Key stat: Houston coach's 6 straight Sweet 16s*
-
-👁️ **WHISPER** `[gemini]`: "Everyone's focused on Houston's Big 12 run, but Idaho has traveled over 2200 miles with only 4 rest days. That travel burden compounds against a top-tier defense."
-   Win probability: Houston 0.88 ± 0.10
-   *Key stat: Idaho travel: 2270 miles*
-
-📜 **ORACLE**: "Since 1985, 2v15 base rate is 93.8%. Houston's elite defense reminds me of 2019 Virginia's suffocating system that crushed mid-majors."
-   Win probability: Houston 0.94 ± 0.08
-   *Key stat: 38-point KenPom gap (5 vs 145)*
-
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. Houston just dominated the Big 12 tournament before a tight final loss. Idaho's W3 streak is nice, but Houston's momentum is REAL. Last 10: Houston 8-2."
+📜 **ORACLE**: "Since 1985, elite defensive 2-seeds like Houston rarely fall. Norfolk State 2012 beat Missouri because Mizzou couldn't defend. Houston allows 40% shooting."
    Win probability: Houston 0.88 ± 0.08
-   *Key stat: Houston's 8-2 in their last 10 games*
+   *Key stat: Houston's 87.3 defensive efficiency ranks 5th nationally*
+
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. Houston just dominated the Big 12 tourney, smashing Kansas by 22! Idaho's W3 streak is nice, but Houston's momentum is REAL. Last 10: Houston 8-2."
+   Win probability: Houston 0.85 ± 0.10
+   *Key stat: Houston beat Kansas 69-47 in Big 12 SF*
 
 
 ### Devil's Advocate (unanimous vote triggered)
-📜 **ORACLE** *(forced contrarian)*: "Since 1985, 2-seeds are 124-4 vs 15-seeds. Idaho's 17-point KenPom deficit matches Norfolk State 2012 — they lost by 20."
-   *Pick: **Houston** (94%) | Key stat: 2v15 historical win rate: 96.9%*
+👁️ **WHISPER** *(forced contrarian)*: "Everyone's overlooking Houston's significant travel. They're flying 2,270 miles for this game, while Idaho has a minimal 789-mile trip. That's a 1481-mile difference."
+   *Pick: **Houston** (88%) | Key stat: 1481 more travel miles for Houston*
 
 
 ### Swarm vs Vegas
@@ -51,13 +51,13 @@ Combined probability: Houston 0.80 ± 0.25
 **PICK: Houston** (80% — dominant favorite, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Oracle and Tempo Hawk dominated this debate with their efficiency gap analysis. All 8 agents unanimously picked Houston with 88-94% confidence. The 17-point KenPom gap is insurmountable. Idaho traveled 2200 miles to get demolished by elite defense. This isn't David vs Goliath - it's a lamb to slaughter."
+🎼 **THE CONDUCTOR**: "Unanimous 8-0 verdict with Iron Curtain and Glass Cannon winning on elite defense vs weak offense. Even Devil's Advocate couldn't find real dissent, only travel concerns that pale against a 17-point efficiency gap. This is mathematical murder."
 
-   *Key factor: Massive efficiency gap (17.3 points) between elite Houston defense and mediocre Idaho offense*
+   *Key factor: Defensive efficiency gap*
 
-   *Most weighted: Oracle and Tempo Hawk*
+   *Most weighted: Iron Curtain*
 
-   *Dissent report: No dissent - complete unanimous agreement. Even Devil's Advocate Oracle couldn't find a credible upset path, citing historical 2v15 dominance.*
+   *Dissent report: Devil's Advocate raised travel concerns but couldn't overcome the fundamental talent and efficiency chasm - 2270 miles means nothing when you're outclassed by 17 points per 100 possessions*
 
 
 ---
@@ -80,4 +80,5 @@ CONDUCTOR AGREES: Houston (60%)
 - Vegas implied probability: Houston 96%
 - Edge: 15.4% (market favors Idaho)
 - Vegas spread: Houston -23.0
+- Contrarian signal: Streak (-11% vs market)
 - Recommendation: NO BET — edge (15.4%) exists but uncertainty too high (25.0%)

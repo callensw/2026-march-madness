@@ -1,103 +1,103 @@
 # 🏀 #4 Alabama vs #13 Hofstra — Midwest Region, Round of 64
-*2026-03-16T16:41:00.001471+00:00*
+*2026-03-16T17:32:03.157813+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Hofstra's slow pace (64.9 vs 71.5) limits possessions, but Alabama's 9.2-point efficiency edge still dominates in half-court execution."
-   Win probability: Alabama 0.72 ± 0.12
-   *Key stat: 6.6 possession tempo gap favors Hofstra's grind-it-out style*
+🦅 **TEMPO HAWK**: "Alabama's 9.2-point efficiency edge overwhelms Hofstra's pace-control strategy. Even at 65 possessions, that margin creates decisive scoring advantage."
+   Win probability: Alabama 0.78 ± 0.12
+   *Key stat: Alabama 71.5 tempo vs Hofstra 64.9 — 6.6 possession gap favors Pride but efficiency gap too large*
 
-🛡️ **IRON CURTAIN**: "Hofstra's elite perimeter defense (38.7% opp FG%) neutralizes Alabama's three-point attack. Slow pace favors disciplined underdog in tournament grind."
+🛡️ **IRON CURTAIN**: "Alabama's 92.6 adj_d is mediocre for a 4-seed. Hofstra's elite perimeter defense forces ugly half-court grind that favors experienced underdogs."
    Win probability: Alabama 0.68 ± 0.15
-   *Key stat: Hofstra allows 38.7% field goal percentage*
+   *Key stat: Hofstra allows 38.7% opponent FG%, Alabama allows 43.3%*
 
-💥 **GLASS CANNON** `[gemini]`: "Hofstra's 34.6% from three is close enough to Alabama's 36.9% to make this dangerous. Alabama's recent upset loss screams vulnerability. One hot quarter changes everything!"
+💥 **GLASS CANNON** `[gemini]`: "Hofstra's 34.6% from three isn't elite, but Alabama's defense allows 43.3% opp FG! If Hofstra catches fire, one hot quarter changes everything. You can't coach that!"
    Win probability: Alabama 0.55 ± 0.15
-   *Key stat: Hofstra 3PT% = 34.6%*
+   *Key stat: Alabama allows opponents to shoot 43.3% FG.*
 
-🐺 **ROAD DOG** `[gemini]`: "I've seen this movie. Alabama's young roster (4.0 experience) will crack against Hofstra's senior-led squad (6.0 experience) and their veteran coach. That CAA title run means something."
+🐺 **ROAD DOG** `[gemini]`: "I've seen this movie. Alabama's young roster folds under pressure. Hofstra's senior-led squad, fresh off a conference title, won't blink. Experience wins."
    Win probability: Alabama 0.52 ± 0.15
    *Key stat: Hofstra experience: 6.0/10 vs Alabama experience: 4.0/10*
 
-👁️ **WHISPER** `[gemini]`: "Everyone's focused on Alabama's talent, but they're missing Latrell Wrightsell Jr. (Achilles tear). That's a key veteran guard down, changing their rotation and chemistry. Something doesn't add up."
-   Win probability: Alabama 0.61 ± 0.15
-   *Key stat: Latrell Wrightsell Jr. (G, Sr)*
+👁️ **WHISPER** `[gemini]`: "Everyone's focusing on Alabama's talent, but their veteran guard Latrell Wrightsell Jr.'s Achilles issue is being downplayed. He's crucial for their backcourt chemistry."
+   Win probability: Alabama 0.58 ± 0.18
+   *Key stat: Wrightsell Jr. prior Achilles tear*
 
-📜 **ORACLE**: "Classic 4v13 setup since 1985. Alabama's elite offense trumps Hofstra's pace control. SEC tourney loss creates doubt but talent gap decisive."
-   Win probability: Alabama 0.72 ± 0.12
-   *Key stat: 4-seeds beat 13-seeds 79.1% historically — Alabama's 126.8 offensive efficiency matches that dominance*
+📜 **ORACLE**: "Alabama just lost to 15-seed Ole Miss as 2-seed. Hofstra's tempo control and veteran guards mirror 2001 Hampton upset profile."
+   Win probability: Alabama 0.68 ± 0.15
+   *Key stat: 4v13 base rate: 79.1% but Alabama's shocking SEC loss screams vulnerability*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. Hofstra is PEAKING, riding a 7-game winning streak as CAA champs. Alabama is deflated after a shocking one-and-done in their conference tourney. Momentum is real!"
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. Hofstra is PEAKING, winning seven straight and their conference! Alabama lost their last game, one-and-done in their tourney. Momentum is REAL!"
    Win probability: Alabama 0.45 ± 0.15
-   *Key stat: Hofstra's 7-game winning streak*
+   *Key stat: Hofstra W7 streak*
 
 
 ## Round 2 — Cross-Examination
 
-🦅 **TEMPO HAWK** (position: STRENGTHENED):
+🦅 **TEMPO HAWK** (position: WEAKENED):
 
-   *Disagrees with:* Streak thinks momentum matters, but Alabama's efficiency edge means they score regardless of 'vibes' — math beats feelings.
+   *Disagrees with:* Road Dog overvalues experience when the efficiency gap is this massive — Alabama wins ugly games too.
 
-   *Agrees with:* Oracle nailed it — the talent gap is decisive, and Alabama's offensive efficiency historically crushes pace-control teams.
+   *Agrees with:* Iron Curtain correctly identified Alabama's defensive mediocrity, but my pace analysis shows it won't matter enough.
 
-   "Streak's momentum talk is noise. Alabama's 126.8 offensive efficiency destroys slow teams — ask Auburn. Pace control only works if you can score."
-   Updated probability: Alabama 0.75 ± 0.10
+   "Road Dog's wrong — experience doesn't override efficiency. Alabama's 9.2-point edge means they win even in a 60-possession grind."
+   Updated probability: Alabama 0.72 ± 0.14
 
 🛡️ **IRON CURTAIN** (position: WEAKENED):
 
-   *Disagrees with:* Oracle completely ignores Alabama's pathetic 95.2 defensive efficiency — that's bottom-tier defense that gets exposed in March grind games.
+   *Disagrees with:* Glass Cannon dismisses Alabama's defensive weakness when Hofstra shoots 47.1% — that's exactly how upsets happen in March.
 
-   *Agrees with:* Tempo Hawk nailed it — fewer possessions means Alabama's talent edge shrinks and Hofstra's disciplined defense becomes the deciding factor.
+   *Agrees with:* Oracle nailed it — Alabama's SEC tournament loss exposes their mental fragility when defensive stops matter most.
 
-   "Oracle ignores Alabama's defensive liability — 95.2 adj_d is TRASH for March. Hofstra's elite defense (87.1) will grind this into the 50s."
-   Updated probability: Alabama 0.65 ± 0.16
+   "Glass Cannon's wrong — Alabama's 43.3% opp FG% IS the story. Hofstra shoots 47.1% overall. That's a MISMATCH waiting to happen."
+   Updated probability: Alabama 0.62 ± 0.16
 
 💥 **GLASS CANNON** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain's focus on defensive efficiency is meaningless against a high-variance shooting team that can go off.
+   *Disagrees with:* Iron Curtain is so wrong! He focuses on defense, but shooting variance on offense is the real equalizer, especially when the favorite struggles defensively.
 
-   *Agrees with:* Streak gets it! Momentum for Hofstra and Alabama's recent loss means they're vulnerable to a hot shooting night.
+   *Agrees with:* Streak gets it! Hofstra's 7-game win streak means they're scorching hot, and that momentum means their shooting is live to catch fire!
 
-   "Iron Curtain keeps talking defense, but one hot shooter changes everything! Hofstra's elite 3PT shooter, Tyler Thomas (39.2% on 8.5 attempts), can light it up!"
-   Updated probability: Alabama 0.50 ± 0.18
+   "Iron Curtain keeps talking defense! Hofstra's 34.6% from three is enough when Alabama allows 43.3% opponent FG. One hot quarter changes everything!"
+   Updated probability: Alabama 0.52 ± 0.16
 
 🐺 **ROAD DOG** (position: FLIPPED) `[gemini]`:
 
-   *Disagrees with:* Oracle loves the numbers, but those historical trends don't measure the heart of a senior-led team like Hofstra. Experience trumps percentages.
+   *Disagrees with:* Tempo Hawk's efficiency argument ignores how young teams crack under tournament pressure. You can't measure heart or experience with a spreadsheet.
 
-   *Agrees with:* Streak sees the momentum from Hofstra's CAA title run. That's a battle-tested team, not just a hot streak. They've been there, done that.
+   *Agrees with:* Streak gets it. Hofstra's senior leadership and recent conference title mean they're playing with the kind of toughness that wins in March.
 
-   "Alabama's young roster (4.0 experience) will crack. Oracle's historical data doesn't account for Hofstra's senior-led toughness (6.0 experience) and veteran coach. This is an upset."
-   Updated probability: Alabama 0.48 ± 0.16
+   "Tempo Hawk loves the numbers. I love watching the game. And what I've WATCHED is a team that folds under pressure when it matters. No spreadsheet captures that."
+   Updated probability: Alabama 0.45 ± 0.15
 
 👁️ **WHISPER** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Road Dog's focus on experience ignores the immediate, destabilizing effect of a key injury; experience can't cover a missing starter.
+   *Disagrees with:* Tempo Hawk focuses on efficiency, but it ignores the fundamental disruption an injured key player causes to any tempo strategy.
 
-   *Agrees with:* Glass Cannon also noted Alabama's vulnerability, which aligns with the hidden disruption of their rotation and chemistry.
+   *Agrees with:* Road Dog sees the inexperience and pressure, and a compromised Wrightsell Jr. only amplifies those concerns for Alabama.
 
-   "Everyone is still missing the full impact of Wrightsell Jr.'s absence. His replacement isn't ready. This changes their entire defensive scheme."
-   Updated probability: Alabama 0.58 ± 0.16
+   "Everyone's underestimating the chronic nature of Achilles issues. Wrightsell Jr.'s limited practice and game reps are a red flag for Alabama's backcourt cohesion. Nobody's talking about the fatigue."
+   Updated probability: Alabama 0.52 ± 0.18
 
-📜 **ORACLE** (position: WEAKENED):
+📜 **ORACLE** (position: STRENGTHENED):
 
-   *Disagrees with:* Streak's momentum argument ignores that 4-seeds who lost their conference tourney still beat 13-seeds 76% of the time since 1985.
+   *Disagrees with:* Streak's momentum theory is historically worthless — hot teams lose first-round games constantly, like 2019 Auburn's SEC tournament flameout before their Final Four run.
 
-   *Agrees with:* Iron Curtain's defensive analysis aligns with historical upset patterns — elite defense is how 13-seeds actually pull upsets.
+   *Agrees with:* Iron Curtain nailed Alabama's defensive mediocrity — that 92.6 adj_d screams vulnerability against disciplined mid-majors like 2013 Florida Gulf Coast.
 
-   "Streak ignores history: 4-seeds after conference tourney losses still win 76% since 1985. Momentum doesn't override talent gaps in March."
-   Updated probability: Alabama 0.68 ± 0.14
+   "Streak ignores history. Seven-game win streaks mean nothing in March. 2019 Auburn went 0-2 before Elite Eight run."
+   Updated probability: Alabama 0.72 ± 0.14
 
 🔥 **STREAK** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Oracle is wrong; historical base rates are irrelevant when a team like Hofstra is on a 7-game heater and Alabama is stumbling.
+   *Disagrees with:* Tempo Hawk's 'efficiency edge' is stale. Alabama's recent form shows they aren't playing to that efficiency RIGHT NOW, as evidenced by their last loss.
 
-   *Agrees with:* Road Dog reinforced my view; Hofstra's veteran leadership and CAA title run show they are playing their best basketball RIGHT NOW.
+   *Agrees with:* Oracle gets it, citing Alabama's shocking SEC loss. That's recent performance that shows they're vulnerable, not some season-long average.
 
-   "Oracle wants to talk about 1985. I want to talk about LAST TUESDAY. Alabama's recent form is 2-3 in their last 5; Hofstra is 5-0. Momentum is real!"
-   Updated probability: Alabama 0.42 ± 0.15
+   "Alabama's early conference tourney exit screams vulnerability! Hofstra's SEVEN-game win streak means they're playing their best ball RIGHT NOW. Momentum is real!"
+   Updated probability: Alabama 0.42 ± 0.16
 
 
 ### Swarm vs Vegas
@@ -107,24 +107,24 @@
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Alabama 0.57 ± 0.19
+Combined probability: Alabama 0.56 ± 0.20
 
-**PICK: Alabama** (57% — lean, high uncertainty)
+**PICK: Alabama** (56% — lean, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Road Dog's flip to Hofstra based on experience was compelling, but Tempo Hawk dominated with efficiency math. Five agents weakened shows real uncertainty, but Alabama's 9.2-point efficiency edge survives pace control. The talent gap is decisive, even with momentum concerns."
+🎼 **THE CONDUCTOR**: "Road Dog flipped after seeing Alabama's tournament pressure history, but Tempo Hawk's efficiency math still holds despite weakening. Oracle and Iron Curtain won by identifying Alabama's defensive vulnerability as the key upset path. However, 9.2-point efficiency edge survives even ugly games. The Crimson Tide advances, but barely."
 
-   *Key factor: offensive efficiency gap*
+   *Key factor: Efficiency gap vs defensive vulnerability*
 
    *Most weighted: Tempo Hawk*
 
-   *Dissent report: Road Dog flipped on experience argument and Streak strengthened on momentum, but historical data shows talent trumps intangibles in 4v13 matchups*
+   *Dissent report: Streak's momentum theory strengthened but ignores that hot teams cool off quickly in March. Road Dog's flip to Hofstra based on pressure concerns has merit, but efficiency gaps this large historically overcome experience advantages.*
 
 
 ---
-### Specialist Vote: 4-3 Alabama
+### Specialist Vote: 5-2 Alabama
 
-🦅Alabama 🛡️Alabama 💥Hofstra 🐺Hofstra 👁️Alabama 📜Alabama 🔥Hofstra
+🦅Alabama 🛡️Alabama 💥Alabama 🐺Hofstra 👁️Alabama 📜Alabama 🔥Hofstra
 
 CONDUCTOR AGREES: Alabama (50%)
 
@@ -132,15 +132,15 @@ CONDUCTOR AGREES: Alabama (50%)
 ---
 ### Vote Tally
 
-- **Alabama**: Tempo Hawk, Iron Curtain, Whisper, Oracle (4 votes)
-- **Hofstra**: Glass Cannon, Road Dog, Streak (3 votes)
+- **Alabama**: Tempo Hawk, Iron Curtain, Glass Cannon, Whisper, Oracle (5 votes)
+- **Hofstra**: Road Dog, Streak (2 votes)
 
 
 ## Market Analysis
 
-- Swarm probability: Alabama 57% ± 19%
+- Swarm probability: Alabama 56% ± 20%
 - Vegas implied probability: Alabama 88%
-- Edge: 30.2% (market favors Hofstra)
+- Edge: 31.5% (market favors Hofstra)
 - Vegas spread: Alabama -13.0
-- Contrarian signal: Streak (-46% vs market) and Road Dog (-40% vs market) and Glass Cannon (-38% vs market) and Whisper (-30% vs market) and Iron Curtain (-23% vs market) and Oracle (-20% vs market) and Tempo Hawk (-13% vs market)
-- Recommendation: NO BET — edge (30.2%) exists but uncertainty too high (19.0%)
+- Contrarian signal: Streak (-46% vs market) and Road Dog (-43% vs market) and Glass Cannon (-36% vs market) and Whisper (-36% vs market) and Iron Curtain (-26% vs market) and Tempo Hawk (-16% vs market) and Oracle (-16% vs market)
+- Recommendation: NO BET — edge (31.5%) exists but uncertainty too high (19.7%)
