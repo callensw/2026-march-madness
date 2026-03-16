@@ -18,7 +18,7 @@ status.json
 game_results.json
 backtest_report.txt
 audio/
-videos/
+# videos/
 video_assets/fonts/
 
 # OS
