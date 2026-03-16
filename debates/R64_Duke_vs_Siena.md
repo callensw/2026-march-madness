@@ -1,63 +1,63 @@
 # 🏀 #1 Duke vs #16 Siena — East Region, Round of 64
-*2026-03-16T12:52:46.791189+00:00*
+*2026-03-16T16:33:50.461341+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Alright, I've been looking at the tempo data and here's what everyone's missing… This is the classic 1v16 mismatch where Duke's overwhelming talent and efficiency advantages make the outcome nearly certain. Siena's slower tempo (64.1 vs 70.0) won't create enough variance to matter when Duke has a 40+ KenPom gap and superior efficiency on both ends."
-   Win probability: Duke 0.99 ± 0.02
-   *Key stat: Duke's 39.6-point efficiency margin (126.7 - 87.1) vs Siena's 3.1-point margin in 6 fewer possessions per game*
+🦅 **TEMPO HAWK**: "Duke's 70-possession pace versus Siena's 64 creates a 6-possession gap favoring Duke's superior efficiency. More possessions amplifies talent advantage."
+   Win probability: Duke 0.98 ± 0.05
+   *Key stat: Duke plays 6 more possessions per game (70.0 vs 64.1 tempo)*
 
-🛡️ **IRON CURTAIN**: "Look, I don't care how many points they score. You know what I care about? Stops. This is the classic 1v16 mismatch. Duke has elite defense (87.1 adj_d) AND elite offense - they'll suffocate Siena's already-limited offense (104.9 adj_o). Siena's defense is mediocre at 101.8, so Duke will score at will. Defense travels, and Duke's travels to another planet compared to this."
-   Win probability: Duke 0.99 ± 0.02
-   *Key stat: 191-point KenPom gap - Duke #1, Siena #192*
+🛡️ **IRON CURTAIN**: "Duke's 87.1 adj_d is suffocating. Siena shoots .315 from three and .422 opponent FG%. This defense will strangle their offense completely."
+   Win probability: Duke 0.98 ± 0.05
+   *Key stat: Duke holds opponents to 39.2% shooting vs Siena's 42.2% allowed*
 
-💥 **GLASS CANNON** `[gemini]`: "Okay okay okay — have you SEEN this team shoot? Because the numbers are ridiculous. Okay, okay, I hear you, but even I, Glass Cannon, have to admit some matchups are just a bridge too far for a shooting upset! Duke shoots a scorching 37.8% from three, and Siena's 31.5% just doesn't give them the variance needed to overcome this kind of talent gap. Siena's just not going to get hot enough to hang with the #1 overall seed here, you can't coach that level of difference!"
+💥 **GLASS CANNON** `[gemini]`: "Siena's 31.5% from three isn't even close! Duke's 37.8% is just too good. Siena can't get hot enough to overcome that talent gap!"
    Win probability: Duke 0.99 ± 0.01
-   *Key stat: Duke 3PT% = 37.8%, Siena 3PT% = 31.5%*
+   *Key stat: Siena 3PT% = 31.5%*
 
-🐺 **ROAD DOG** `[gemini]`: "You know what? I've seen this movie before. Let me tell you what actually happens when… Now, I love a good upset story, I really do. But you gotta know when you're watching a movie you've seen a hundred times. Duke, a blue blood, playing their best ball, winning the ACC tourney, and a #1 overall seed. Siena, bless their hearts, won their MAAC tourney, but this is a different animal. There's no magic formula for a 191-spot KenPom difference. This ain't the year for a 16-seed to make history against a Duke team firing on all cylinders. Analytics don't play the game, but neither do miracles."
-   Win probability: Duke 0.99 ± 0.01
-   *Key stat: KenPom difference: 191 spots*
+🐺 **ROAD DOG** `[gemini]`: "Duke's coach, Scheyer, has been here before. Siena's senior experience is good for a mid-major, but Duke's culture and talent are too much. This isn't an upset movie I've seen."
+   Win probability: Duke 0.96 ± 0.05
+   *Key stat: Duke experience=3.0/10 vs Siena experience=7.0/10*
 
-👁️ **WHISPER** `[gemini]`: "Here's what nobody's talking about… Nobody's talking about this, but the difference in power conferences and overall season performance is just too vast. Siena had to fight tooth and nail to win the MAAC, while Duke just dominated a stronger ACC and is hitting their stride. There's no hidden injury, no weird travel, just a massive talent gap. Something doesn't add up for Siena to even keep this close."
-   Win probability: Duke 0.99 ± 0.01
-   *Key stat: KenPom difference: 191 spots*
+👁️ **WHISPER** `[gemini]`: "Everyone knows about Caleb Foster's fractured foot. But Ngongba II is also battling foot soreness. Siena's travel is significantly less; that rest difference matters."
+   Win probability: Duke 0.96 ± 0.05
+   *Key stat: Siena travel: 260mi vs. Duke travel: 476mi*
 
-📜 **ORACLE**: "Since the field expanded to 64 teams in 1985, here's what the data tells us… This is the classic 1v16 mismatch - Duke has a 191 KenPom gap over Siena, which is historically insurmountable. Since 1985, only one 16-seed has ever beaten a 1-seed (UMBC over Virginia in 2018), giving us the 99.3% base rate. Siena's upset thesis would require Duke to shoot terribly AND Siena to get nuclear hot from three, but their 31.5% three-point shooting suggests they lack the offensive firepower."
-   Win probability: Duke 0.99 ± 0.02
-   *Key stat: 191 KenPom gap - Duke ranked #1, Siena #192*
+📜 **ORACLE**: "1v16 base rate is 99.3% since 1985. Only UMBC 2018 broke through. Duke's 39.6-point KenPom edge matches historic blowout territory."
+   Win probability: Duke 0.99 ± 0.05
+   *Key stat: Only 1 of 152 16-seeds have beaten a 1-seed since 1985*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been WATCHING. Forget the spreadsheets – let me tell you what I've been watching. Duke is PEAKING, winning the ACC tournament, and riding a seven-game winning streak. Siena might have won their conference, but the gap in recent form and competitive level is simply too massive to overcome. Momentum is real, but some walls are just too high."
-   Win probability: Duke 0.99 ± 0.01
-   *Key stat: Duke streak: W7, Siena streak: W3*
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets – I'm watching Duke on an 11-game win streak, peaking at the perfect time. Siena's MAAC run is great, but Duke just won the ACC. Momentum is REAL."
+   Win probability: Duke 0.96 ± 0.05
+   *Key stat: Duke: W11*
 
 
 ### Devil's Advocate (unanimous vote triggered)
-📜 **ORACLE** *(forced contrarian)*: "Since 1985, 1-seeds are 150-1 against 16-seeds - that's a 99.3% base rate I cannot ignore. Duke has a 191 KenPom gap over Siena, the largest possible in tournament play. Even in devil's advocate mode, Siena's path requires Duke to have their worst shooting night in two years while Siena shoots lights-out - historically, this happens once every 140 games."
-   *Pick: **Duke** (98%) | Key stat: Duke's 39.6 KenPom efficiency margin vs Siena's 3.1 - the largest gap possible in Round of 64*
+🐺 **ROAD DOG** *(forced contrarian)*: "Duke's got a Final Four coach in Scheyer and talent that's been there. Siena's seniors are tough, but they haven't seen this movie before. Experience gap is 3.0 vs 7.0, but Duke's talent is overwhelming."
+   *Pick: **Duke** (96%) | Key stat: Duke's experience=3.0/10*
 
 
 ### Swarm vs Vegas
-   *Swarm: 80% on Duke | Vegas implied: 97% | Delta: 17pp more bearish*
+   *Swarm: 78% on Duke | Vegas implied: 97% | Delta: 19pp more bearish*
 
 
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Duke 0.90 ± 0.25
+Combined probability: Duke 0.89 ± 0.25
 
-**PICK: Duke** (90% — dominant favorite, high uncertainty)
+**PICK: Duke** (89% — dominant favorite, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "I've heard every argument. Here's what actually matters in this game. Here's my ruling: Every single agent reached the same verdict with near-perfect certainty, and frankly, they're all right. Iron Curtain and Oracle delivered the most compelling arguments - Iron Curtain nailed the defensive mismatch while Oracle provided the historical context that seals it. Even Glass Cannon, who lives for upset variance, threw in the towel on this one. The 191 KenPom gap is historically insurmountable, and Duke is peaking at exactly the right time. This isn't March Madness - this is March Inevitability."
+🎼 **THE CONDUCTOR**: "Oracle and Glass Cannon won this debate decisively - 99.3% historical rate plus 39.6 KenPom gap equals mathematical certainty. Even Devil's Advocate couldn't find real dissent. This isn't David vs Goliath - it's a steamroller vs a pebble."
 
-   *Key factor: Massive talent and efficiency gap (191 KenPom difference)*
+   *Key factor: Historical precedent and talent gap*
 
-   *Most weighted: Iron Curtain and Oracle - Iron Curtain perfectly explained how Duke's elite defense will suffocate Siena's limited offense, while Oracle provided the crucial historical context that 1-seeds are 150-1 against 16-seeds since 1985*
+   *Most weighted: Oracle*
 
-   *Dissent report: Technically Oracle (Devil's Advocate) dissented by picking Duke with 0.00 probability, but this was clearly a formatting error in devil's advocate mode since their reasoning actually supported Duke at 99%+ confidence*
+   *Dissent report: No meaningful dissent - even Devil's Advocate picked Duke at 0.00 probability for Siena, acknowledging the overwhelming talent disparity*
 
 
 ---
@@ -65,7 +65,7 @@ Combined probability: Duke 0.90 ± 0.25
 
 🦅Duke 🛡️Duke 💥Duke 🐺Duke 👁️Duke 📜Duke 🔥Duke
 
-CONDUCTOR AGREES: Duke (80%)
+CONDUCTOR AGREES: Duke (78%)
 
 
 ---
@@ -76,8 +76,8 @@ CONDUCTOR AGREES: Duke (80%)
 
 ## Market Analysis
 
-- Swarm probability: Duke 90% ± 25%
+- Swarm probability: Duke 89% ± 25%
 - Vegas implied probability: Duke 98%
-- Edge: 7.5% (market favors Siena)
+- Edge: 8.3% (market favors Siena)
 - Vegas spread: Duke -29.5
-- Recommendation: NO BET — edge (7.5%) exists but uncertainty too high (25.0%)
+- Recommendation: NO BET — edge (8.3%) exists but uncertainty too high (25.0%)

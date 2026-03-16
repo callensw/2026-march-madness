@@ -1,59 +1,59 @@
 # 🏀 #3 Michigan State vs #14 North Dakota State — East Region, Round of 64
-*2026-03-16T12:55:15.777768+00:00*
+*2026-03-16T16:35:52.487331+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Alright, I've been looking at the tempo data and here's what everyone's missing… NDSU's grinding pace at 66.2 possessions versus MSU's similar 68.7 creates a slow-tempo slugfest that neutralizes Michigan State's talent advantage. The Bison's 8-game win streak and Summit League title run shows they're peaking, while MSU's early Big Ten tourney exit suggests vulnerability. In a 65-possession game, NDSU's disciplined half-court offense can keep this close enough for variance to matter."
-   Win probability: Michigan State 0.68 ± 0.15
-   *Key stat: Tempo differential of only 2.5 possessions favors the disciplined underdog in a grind-it-out game*
+🦅 **TEMPO HAWK**: "MSU's talent wins, but NDSU's pace control (66.2 vs 68.7) and perfect Summit run creates upset path through grinding tempo."
+   Win probability: Michigan State 0.72 ± 0.12
+   *Key stat: NDSU plays 2.5 fewer possessions per game than MSU*
 
-🛡️ **IRON CURTAIN**: "Look, I don't care how many points they score. You know what I care about? Stops. Michigan State's elite defense (88.0 adj_d) will dominate NDSU's weak offense. The 9-point defensive efficiency gap is massive - NDSU can't get stops when they need them. Defense wins in March, and MSU has real defense."
+🛡️ **IRON CURTAIN**: "MSU's elite defense (88.0 adj_d) will suffocate NDSU's mediocre offense. Spartans hold opponents to 41% shooting - Bison can't match that intensity."
    Win probability: Michigan State 0.78 ± 0.12
-   *Key stat: MSU's 88.0 adj_d vs NDSU's 97.4 - that's a 9+ point defensive efficiency gap*
+   *Key stat: MSU allows 41% opponent shooting vs NDSU's 43.8%*
 
-💥 **GLASS CANNON** `[gemini]`: "Okay okay okay — have you SEEN this team shoot? Because the numbers are ridiculous. Okay, so Michigan State is a great shooting team, 36.7% from deep, that's solid! But look, North Dakota State is only at 32.9% from three. That's a red flag for an upset, because my whole thing is about that hot shooting. Michigan State is just too good, too efficient, and NDSU doesn't have the three-point firepower to make it a high-variance game. You can't coach that kind of efficiency difference."
-   Win probability: Michigan State 0.82 ± 0.15
-   *Key stat: Michigan State 3PT% (36.7%) > North Dakota State 3PT% (32.9%)*
+💥 **GLASS CANNON** `[gemini]`: "Michigan State's 36.7% from three is strong, but North Dakota State's 32.9% isn't enough to scare them. No upset here!"
+   Win probability: Michigan State 0.88 ± 0.15
+   *Key stat: North Dakota State 3PT% = 32.9%*
 
-🐺 **ROAD DOG** `[gemini]`: "You know what? I've seen this movie before. Let me tell you what actually happens when… Now this is a classic setup. Michigan State, a blue blood, but they lost early in their conference tournament. North Dakota State, a mid-major, 27-7, won their conference tournament, and riding an 8-game win streak. They're playing with house money, and Sparty's got the pressure on 'em. I've seen this movie before, the mid-major comes out swinging, and the power conference team looks deflated."
-   Win probability: Michigan State 0.65 ± 0.15
-   *Key stat: North Dakota State's 8-game win streak and Summit League Championship*
+🐺 **ROAD DOG** `[gemini]`: "Izzo's been here 28 times. Fears Jr. is a junior leader. North Dakota State's young roster will crack under March pressure. Experience gap is 3.0."
+   Win probability: Michigan State 0.68 ± 0.15
+   *Key stat: Michigan State experience: 7.0/10*
 
-👁️ **WHISPER** `[gemini]`: "Here's what nobody's talking about… Nobody's talking about this, but Michigan State's early exit in their conference tournament, combined with North Dakota State's dominant 8-game winning streak and conference championship, signals a major shift in momentum. The Spartans might be looking ahead, while the Bison are playing with house money and belief. This isn't the same Michigan State that earned the 3-seed; the whispers I'm hearing suggest their focus might not be fully here."
-   Win probability: Michigan State 0.65 ± 0.15
-   *Key stat: North Dakota State's 8-game winning streak vs. Michigan State's early Big Ten tourney exit.*
+👁️ **WHISPER** `[gemini]`: "Michigan State's early Big Ten exit and 3 losses in 4 games before tourney point to underlying issues. North Dakota State has 2 fewer rest days and double the travel."
+   Win probability: Michigan State 0.68 ± 0.15
+   *Key stat: NDSU travel: 1181 miles vs MSU: 519 miles*
 
-📜 **ORACLE**: "Since the field expanded to 64 teams in 1985, here's what the data tells us… This is a classic 3v14 matchup where the base rate strongly favors Michigan State at 85.2%. NDSU's upset thesis requires their hot shooting streak to continue while forcing MSU into a grind-it-out game, but the Spartans' elite defense (88.0 adj_d vs 97.4) and superior talent should prevail. North Dakota State reminds me of 2014 Mercer - good mid-major with momentum, but Michigan State has the defensive foundation that historically separates survivors from upset victims."
-   Win probability: Michigan State 0.85 ± 0.10
-   *Key stat: 104-point KenPom gap (9 vs 113) is massive for a 3v14, well above the typical 80-point spread*
+📜 **ORACLE**: "3v14 base rate 85.2%. NDSU fits Cinderella profile but MSU's 36-point KenPom gap echoes 2019 LSU-Yale blowout despite similar narratives."
+   Win probability: Michigan State 0.82 ± 0.12
+   *Key stat: MSU allows 41% shooting vs NDSU's 32.9% from three*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been WATCHING. Forget the spreadsheets — let me tell you what I've been watching! North Dakota State is on an EIGHT-GAME WIN STREAK, culminating in a conference championship where they won three games in three days. They're PEAKING. Michigan State, meanwhile, lost early in their conference tournament, showing they're not playing their best basketball RIGHT NOW. This is a classic upset trigger."
-   Win probability: Michigan State 0.60 ± 0.15
-   *Key stat: North Dakota State: W8 streak, Summit League Champion*
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. Michigan State is fading, losing 3 of their last 4. North Dakota State is peaking, riding a 5-game winning streak as conference champs. Momentum is real!"
+   Win probability: Michigan State 0.58 ± 0.15
+   *Key stat: North Dakota State: W5 streak*
 
 
 ### Devil's Advocate (unanimous vote triggered)
-👁️ **WHISPER** *(forced contrarian)*: "Nobody's talking about this, but North Dakota State is on an 8-game winning streak, just absolutely tearing through their conference tournament, while Michigan State stumbled out of the Big Ten tourney early. Something doesn't add up here; the Spartans aren't playing their best basketball right now, and the Bison are peaking at the right time. They control the tempo, they're disciplined, and they just might expose Michigan State's recent vulnerability."
-   *Pick: **Michigan State** (50%) | Key stat: North Dakota State's 8-game win streak vs. Michigan State's early Big Ten tourney exit.*
+📜 **ORACLE** *(forced contrarian)*: "Since 1985, 3v14 base rate is 85.2%. MSU's 36-point KenPom edge matches 2019 Kansas State over UC Irvine — talent overcomes recent struggles."
+   *Pick: **Michigan State** (83%) | Key stat: 36-point KenPom differential favors MSU*
 
 
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Michigan State 0.65 ± 0.25
+Combined probability: Michigan State 0.66 ± 0.25
 
-**PICK: Michigan State** (65% — lean, high uncertainty)
+**PICK: Michigan State** (66% — clear favorite, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "I've heard every argument. Here's what actually matters in this game. Oracle and Iron Curtain delivered the most convincing arguments - Oracle's historical base rate analysis (85.2% for 3-seeds) combined with Iron Curtain's defensive efficiency gap (9 points) creates an overwhelming foundation. Road Dog and Streak made the weakest cases, overvaluing NDSU's 8-game streak against inferior competition while ignoring MSU's defensive dominance. Here's my ruling: momentum is nice, but elite defense travels, and the Spartans have real defense."
+🎼 **THE CONDUCTOR**: "Iron Curtain and Oracle dominated this debate with MSU's elite defense and historical precedent. Glass Cannon's shooting analysis sealed it. Streak's momentum argument fell flat against talent gap. When Tom Izzo meets March, experience trumps streaks."
 
-   *Key factor: Defensive efficiency gap and historical 3v14 base rates*
+   *Key factor: Talent and experience gap in high-pressure tournament environment*
 
-   *Most weighted: Oracle and Iron Curtain - Oracle provided crucial historical context showing 3-seeds win 85.2% of the time, while Iron Curtain identified the massive 9-point defensive efficiency gap that NDSU simply cannot overcome*
+   *Most weighted: Iron Curtain*
 
-   *Dissent report: Road Dog and Streak overweighted NDSU's conference tournament momentum while ignoring that their 8-game streak came against Summit League competition, not Big Ten-caliber defenses - MSU's 88.0 defensive efficiency will be a rude awakening*
+   *Dissent report: Streak pushed momentum narrative hard but couldn't overcome 36-point KenPom gap and Izzo's tournament pedigree. Recent struggles don't erase talent advantage in 3v14 matchup.*
 
 
 ---

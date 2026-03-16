@@ -1,59 +1,59 @@
 # 🏀 #3 Gonzaga vs #14 Kennesaw State — West Region, Round of 64
-*2026-03-16T12:58:56.796696+00:00*
+*2026-03-16T16:38:55.946145+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Alright, I've been looking at the tempo data and here's what everyone's missing… Here's the thing about this matchup — both teams play at nearly identical tempos around 70 possessions, so there's no pace mismatch for Kennesaw State to exploit. The Owls would need to either speed up Gonzaga significantly or slow them down to create variance, but they can't do either. Gonzaga's 36-point efficiency margin is simply too large to overcome in a neutral-pace game."
+🦅 **TEMPO HAWK**: "Identical tempo neutralizes pace advantage, but Gonzaga's 12.3-point efficiency edge too large for KSU's turnover pressure to overcome."
+   Win probability: Gonzaga 0.78 ± 0.12
+   *Key stat: Both teams play at 70 possessions per game*
+
+🛡️ **IRON CURTAIN**: "Gonzaga's elite defense (87.7 adj_d) will dominate Kennesaw's mediocre offense. Huff injury hurts but defense travels in March."
+   Win probability: Gonzaga 0.78 ± 0.12
+   *Key stat: Kennesaw allows 40.7% shooting vs Gonzaga's 39.5%*
+
+💥 **GLASS CANNON** `[gemini]`: "Gonzaga's 37.4% from three is potent! Kennesaw State's 34.0% isn't enough to cause an upset against that kind of firepower. You can't coach that!"
+   Win probability: Gonzaga 0.85 ± 0.10
+   *Key stat: Gonzaga 3PT%: 37.4%*
+
+🐺 **ROAD DOG** `[gemini]`: "Mark Few has been here 27 straight times. That kind of coaching pedigree and experience for Gonzaga doesn't crack against a team making its second D-I tournament appearance. Kennesaw State's experience is 5.0/10, same as Gonzaga, but Gonzaga's coach has 27 tournament appearances."
    Win probability: Gonzaga 0.82 ± 0.12
-   *Key stat: Both teams play at 70 possessions per game, eliminating Kennesaw State's best path to an upset through pace control*
+   *Key stat: Gonzaga coach Mark Few: 27 NCAA appearances*
 
-🛡️ **IRON CURTAIN**: "Look, I don't care how many points they score. You know what I care about? Stops. Gonzaga's elite offense (124.0) will overwhelm Kennesaw's poor defense (103.5). The Zags' solid defense (87.7) should handle the Owls' limited offensive attack. This is a talent mismatch."
-   Win probability: Gonzaga 0.88 ± 0.08
-   *Key stat: 15.8 point gap in defensive efficiency (87.7 vs 103.5) favors Gonzaga*
+👁️ **WHISPER** `[gemini]`: "Everyone knows about Gonzaga's Braden Huff injury, but they're missing Kennesaw State's Simeon Cottle (20.2 PPG) is also out. That's a huge loss nobody's pricing in."
+   Win probability: Gonzaga 0.68 ± 0.15
+   *Key stat: Cottle (20.2 PPG) OUT*
 
-💥 **GLASS CANNON** `[gemini]`: "Okay okay okay — have you SEEN this team shoot? Because the numbers are ridiculous. Okay, I'm GLASS CANNON, and I'm all about that three-point magic, but even I have to be realistic here! Kennesaw State's 3PT% is 34.0%, and Gonzaga's is a sizzling 37.4%! Gonzaga is the one with the hot hand, and Kennesaw State isn't even close to my 36% 'dangerous' threshold. There's no upset here, not when the favorite is outshooting the underdog from deep! You can't coach that kind of efficiency, and Gonzaga's got it!"
-   Win probability: Gonzaga 0.99 ± 0.05
-   *Key stat: Gonzaga 3PT% (37.4%) > Kennesaw State 3PT% (34.0%)*
+📜 **ORACLE**: "Since 1985, 3-seeds are 85.2% vs 14s. KSU missing Cottle (20.2 PPG) like Harvard without key scorer in 2013."
+   Win probability: Gonzaga 0.83 ± 0.12
+   *Key stat: 12.3 KenPom efficiency gap favors Gonzaga*
 
-🐺 **ROAD DOG** `[gemini]`: "You know what? I've seen this movie before. Let me tell you what actually happens when… Now, Kennesaw State, they've got that conference tournament title, won three in a row, playing with house money. I've seen that story before. But Gonzaga, they're a blue blood in all but name, won their own conference tournament, and that KenPom number ain't lying. This ain't the classic upset setup; Gonzaga's too good, too experienced. Kennesaw State will fight, but Gonzaga's got too much firepower and too much March experience."
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching! Gonzaga just ripped through their conference tournament, winning four straight games. That's real momentum, and they're peaking right now."
    Win probability: Gonzaga 0.90 ± 0.08
-   *Key stat: Gonzaga KenPom=10*
-
-👁️ **WHISPER** `[gemini]`: "Here's what nobody's talking about… Nobody's talking about this, but Gonzaga just steamrolled their conference tournament, showing the kind of dominant form that suggests they're peaking at the right time. Kennesaw State's run was impressive for their league, but the gap in overall talent and late-season trajectory is just too vast, despite their own conference tournament win. Gonzaga isn't looking past anyone; they're looking *through* them."
-   Win probability: Gonzaga 0.88 ± 0.08
-   *Key stat: Gonzaga's adj_o=124.0 vs Kennesaw State's adj_d=103.5. That's a chasm.*
-
-📜 **ORACLE**: "Since the field expanded to 64 teams in 1985, here's what the data tells us… Gonzaga's 124.0 adjusted offensive efficiency against Kennesaw State's 103.5 defensive rating creates a massive mismatch. The 153-spot KenPom gap is among the largest in 3v14 history. While upsets happen at this seed line 15% of the time, this profiles as a blowout."
-   Win probability: Gonzaga 0.87 ± 0.08
-   *Key stat: 153-spot KenPom gap is in the 95th percentile for 3v14 matchups since 2010*
-
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been WATCHING. Forget the spreadsheets — let me tell you what I've been watching! Gonzaga is PEAKING, winning the WCC tournament and riding a three-game streak. Kennesaw State also won their conference, but the gap in competition and recent form against top teams is just too wide RIGHT NOW. Gonzaga's momentum is real and they're playing their best basketball."
-   Win probability: Gonzaga 0.90 ± 0.05
-   *Key stat: Gonzaga's last 10 record: 8-2, WCC Champion*
+   *Key stat: Gonzaga: W4 streak into tournament*
 
 
 ### Devil's Advocate (unanimous vote triggered)
-📜 **ORACLE** *(forced contrarian)*: "The historical base rate for 3v14 upsets is 14.8%, and this Kennesaw State team fits the classic mid-major Cinderella profile perfectly - conference tournament champions with momentum, solid three-point shooting, and the kind of scrappy defensive identity that can frustrate higher seeds in a single game. Gonzaga's 124.0 offensive efficiency is elite, but their 87.7 defensive rating suggests vulnerability, and historically speaking, teams like 2013 Florida Gulf Coast and 2018 Buffalo have exploited similar defensive gaps against higher seeds."
-   *Pick: **Kennesaw State** (70%) | Key stat: Kennesaw State's 153-point KenPom gap with Gonzaga is actually smaller than the 2013 FGCU upset of Georgetown (175-point gap)*
+📜 **ORACLE** *(forced contrarian)*: "3v14 base rate 85.2%. Huff injury creates opportunity but KenPom gap (#10 vs #163) historically insurmountable for 14-seeds."
+   *Pick: **Gonzaga** (87%) | Key stat: Since 1985, only four 14-seeds have beaten 3-seeds*
 
 
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Gonzaga 0.80 ± 0.25
+Combined probability: Gonzaga 0.72 ± 0.25
 
-**PICK: Gonzaga** (80% — dominant favorite, high uncertainty)
+**PICK: Gonzaga** (72% — clear favorite, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "I've heard every argument. Here's what actually matters in this game. Here's my ruling: Iron Curtain and Oracle delivered the most convincing arguments, focusing on the brutal 36-point efficiency gap and massive KenPom differential that makes this one of the widest talent gaps in 3v14 history. The Devil's Advocate tried to play the upset card, but 14.8% historical base rates don't overcome a 153-spot KenPom chasm. This isn't David vs Goliath — this is David vs a freight train."
+🎼 **THE CONDUCTOR**: "Unanimous 8-0 verdict with Oracle and Streak winning on historical precedent and momentum. Whisper's insight about Kennesaw's missing 20 PPG scorer sealed it. The #10 vs #163 KenPom gap is historically insurmountable for 14-seeds. When everyone agrees, listen."
 
-   *Key factor: Massive talent and efficiency gap*
+   *Key factor: Historical precedent and KenPom efficiency gap*
 
-   *Most weighted: Iron Curtain and Oracle — they zeroed in on the fundamental numbers that matter: Gonzaga's elite 124.0 offense against Kennesaw's porous 103.5 defense creates an insurmountable mismatch*
+   *Most weighted: Oracle and Streak*
 
-   *Dissent report: Devil's Advocate leaned too heavily on historical upset rates without acknowledging this specific gap is among the largest ever seen at the 3v14 line — sometimes the numbers are just too overwhelming for Cinderella magic*
+   *Dissent report: No dissent - even Devil's Advocate picked Gonzaga. The only uncertainty was injury impact, but Kennesaw's missing scorer (20.2 PPG) neutralizes Gonzaga's Huff loss.*
 
 
 ---
@@ -61,7 +61,7 @@ Combined probability: Gonzaga 0.80 ± 0.25
 
 🦅Gonzaga 🛡️Gonzaga 💥Gonzaga 🐺Gonzaga 👁️Gonzaga 📜Gonzaga 🔥Gonzaga
 
-CONDUCTOR AGREES: Gonzaga (60%)
+CONDUCTOR AGREES: Gonzaga (50%)
 
 
 ---

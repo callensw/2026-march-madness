@@ -1,132 +1,132 @@
 # 🏀 #5 Vanderbilt vs #2 Houston — South Region, Elite 8
-*2026-03-16T13:24:19.206978+00:00*
+*2026-03-16T16:56:30.991322+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Alright, I've been looking at the tempo data and here's what everyone's missing… This is essentially a coin flip between two teams playing nearly identical tempos - Houston at 68.5 possessions, Vanderbilt at 67.1. Neither team can impose their preferred pace because they don't have one relative to each other. With no tempo edge available, this becomes a pure efficiency battle where Houston's slight defensive edge (87.3 vs 89.4) barely outweighs Vanderbilt's offensive advantage. Both teams have proven they can win ugly tournament games, making this the definition of a 50-50 Elite Eight slugfest."
-   Win probability: Vanderbilt 0.48 ± 0.18
-   *Key stat: Tempo differential of just 1.4 possessions per game eliminates pace as a deciding factor*
+🦅 **TEMPO HAWK**: "Minimal tempo gap means efficiency decides it. Houston's 2.1-point defensive edge trumps Vanderbilt's 0.8 offensive advantage in low-possession game."
+   Win probability: Vanderbilt 0.45 ± 0.18
+   *Key stat: Houston 68.5 tempo vs Vanderbilt 67.1 - only 1.4 possession difference*
 
-🛡️ **IRON CURTAIN**: "Look, I don't care how many points they score. You know what I care about? Stops. Both teams have elite defenses within 2 points of each other, making this a defensive slugfest. Vanderbilt's proven tournament experience including beating #1 Florida gives them the edge in a rock fight."
+🛡️ **IRON CURTAIN**: "Vandy's elite defense held Florida's #1 offense to 68. Houston hasn't faced this level of defensive pressure. Ugly games favor the grittier team."
    Win probability: Vanderbilt 0.52 ± 0.18
-   *Key stat: Vandy adj_d 89.4 vs Houston adj_d 87.3 - defensive gap is negligible*
+   *Key stat: Vanderbilt allows 42.7% shooting vs Houston's 40.0% - minimal defensive gap*
 
-💥 **GLASS CANNON** `[gemini]`: "Okay okay okay — have you SEEN this team shoot? Because the numbers are ridiculous. Vanderbilt is ON FIRE from three, shooting 36.6% as a team! And they've proven they can get hot when it counts, knocking off a #1 seed! Houston's 3PT% is good at 36.3%, but Vandy's is just a touch better, and that's all it takes in a single-elimination game. When Vanderbilt gets going from deep, they are UNSTOPPABLE, and they've shown they can do it against top competition. One hot quarter changes everything, and Vandy has that kind of variance!"
-   Win probability: Vanderbilt 0.58 ± 0.15
-   *Key stat: Vanderbilt's 3PT% (36.6%) is higher than Houston's (36.3%).*
-
-🐺 **ROAD DOG** `[gemini]`: "You know what? I've seen this movie before. Let me tell you what actually happens when… Now this is a story, folks. Vanderbilt, a 5-seed, just knocked off the #1 overall seed, Florida, in the Sweet 16. That's a team playing with house money and supreme confidence, riding a five-game winning streak. Houston, they're tough, no doubt, but they lost their conference final and haven't faced a team playing with this kind of momentum and belief yet. Vanderbilt's been here before, they've seen this movie, and they're not scared."
-   Win probability: Vanderbilt 0.45 ± 0.15
-   *Key stat: Vanderbilt's streak=W5, including a win over #1 Florida.*
-
-👁️ **WHISPER** `[gemini]`: "Here's what nobody's talking about… Nobody's talking about this, but Vanderbilt has now beaten a 1-seed. Their confidence is through the roof, and they're playing with house money. Houston, meanwhile, is facing a team that's proven they can take down giants, and the pressure is all on them."
+💥 **GLASS CANNON** `[gemini]`: "Vanderbilt is ON FIRE from deep, shooting 36.6% to Houston's 36.3%! Tyler Nickel is a flamethrower. That's the equalizer, baby! One hot night, and they can beat anyone!"
    Win probability: Vanderbilt 0.55 ± 0.15
-   *Key stat: Vanderbilt's last 10 record: 10-0, streak: W5, including a win over a #1 seed. They're peaking at the exact right moment.*
+   *Key stat: Vanderbilt 3PT% (36.6%) > Houston 3PT% (36.3%)*
 
-📜 **ORACLE**: "Since the field expanded to 64 teams in 1985, here's what the data tells us… Historically speaking, 5v2 Elite Eight matchups favor the 2-seed roughly 75% of the time since 1985, but this Vanderbilt squad mirrors the 2006 George Mason Patriots - a mid-tier power conference team that's gotten hot at exactly the right moment. Houston's defensive efficiency edge (87.3 vs 89.4) should matter, but Vandy just took down the #1 overall seed Florida with identical tempo and shooting profiles. The data is clear: when a 5-seed reaches the Elite Eight, they're playing with house money and dangerous as hell."
-   Win probability: Vanderbilt 0.48 ± 0.18
-   *Key stat: Vanderbilt has beaten three higher seeds (12-4-1) while Houston has only faced one higher seed (#3 Illinois) - upset experience matters in March*
+🐺 **ROAD DOG** `[gemini]`: "Vanderbilt's senior-led roster, with Duke Miles and Tyler Nickel, has been through the fire. Houston's young talent will crack under this pressure. Experience wins in March."
+   Win probability: Vanderbilt 0.58 ± 0.15
+   *Key stat: Vanderbilt experience: 7.0/10 vs Houston experience: 5.0/10*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been WATCHING. Forget the spreadsheets — let me tell you what I've been watching... This is a clash of two teams playing their absolute best basketball RIGHT NOW. Vanderbilt just took down a #1 seed, riding a massive wave of momentum. Houston is also on a tear, but Vanderbilt's recent run against top competition in the tournament, including beating Florida, shows they are peaking at the perfect time. Houston's loss in their conference final, even if it was to Arizona, is a slight crack in their armor compared to Vanderbilt's current surge."
-   Win probability: Vanderbilt 0.52 ± 0.15
-   *Key stat: Vanderbilt's NCAA Tournament run: Beat #12 McNeese, #4 Nebraska, and #1 Florida. That's a serious streak of high-level wins.*
+👁️ **WHISPER** `[gemini]`: "Houston has 4 rest days to Vanderbilt's 3, and traveled 500+ more miles. Fatigue will show for Vanderbilt's deeper tournament run."
+   Win probability: Vanderbilt 0.58 ± 0.15
+   *Key stat: Houston: 4 rest days, Vanderbilt: 3 rest days*
+
+📜 **ORACLE**: "Senior backcourt mirrors 2011 VCU upset formula. Houston's freshman-heavy lineup vulnerable to Vandy's tempo control and veteran decision-making."
+   Win probability: Vanderbilt 0.42 ± 0.15
+   *Key stat: Vanderbilt has 7.0/10 experience vs Houston's 5.0/10*
+
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets—let me tell you what I've been watching. Vanderbilt is RED HOT, winning 10 straight and tearing through the bracket. Houston is also peaking, but Vandy's momentum is REAL. They're playing their best ball RIGHT NOW. Vanderbilt just beat a #1 seed!"
+   Win probability: Vanderbilt 0.58 ± 0.10
+   *Key stat: Vanderbilt's last 10 game record: 10-0*
 
 
 ## Round 2 — Cross-Examination
 
-🦅 **TEMPO HAWK** (position: FLIPPED):
+🦅 **TEMPO HAWK** (position: STRENGTHENED):
 
-   *Disagrees with:* Glass Cannon is completely wrong about that 36.6% vs 36.3% three-point shooting difference being meaningful — that's a 0.3% gap, which is statistical noise over a season. You can't build a tournament pick on a rounding error, especially when both teams are essentially identical from deep.
+   *Disagrees with:* Glass Cannon claims Vanderbilt has a 3PT advantage when both teams shoot 36.6% vs 36.3% — that's statistical noise, not an edge.
 
-   *Agrees with:* Oracle nailed it with the historical context — 5-seeds that reach the Elite Eight are playing with house money and have proven they can beat better teams. The George Mason comparison is spot-on, and Vanderbilt's systematic dismantling of higher seeds shows this isn't just a hot streak, it's a team that's figured something out.
+   *Agrees with:* Oracle correctly identifies this as an experience vs efficiency battle, and the numbers favor Houston's systematic approach over Vandy's veteran grit.
 
-   "I have to give credit to Oracle and Whisper — they changed my mind on this because the momentum factor is real and measurable. When I look at the numbers again, Vanderbilt's tournament path (beating seeds 12-4-1) shows they're not just lucky, they're systematically outperforming expectations against better teams. Houston's only faced one higher seed, and that experience gap matters when neither team can control tempo."
-   Updated probability: Vanderbilt 0.52 ± 0.16
+   "Glass Cannon's wrong — identical 3PT% means no shooting edge. Tempo parity makes this pure efficiency, Houston's superior defense wins."
+   Updated probability: Vanderbilt 0.42 ± 0.16
 
 🛡️ **IRON CURTAIN** (position: STRENGTHENED):
 
-   *Disagrees with:* Tempo Hawk calling this a 'coin flip' is WEAK. This isn't about possessions per game - it's about who can get stops when it matters. Vandy just shut down the #1 overall seed in crunch time. That's not tempo, that's DEFENSE under pressure.
+   *Disagrees with:* Tempo Hawk thinks Houston's defensive edge matters but ignores that Houston's defense gets exposed by disciplined offenses like Vanderbilt's.
 
-   *Agrees with:* Whisper gets it - nobody's talking about the psychological edge here. Vandy has ZERO pressure now and Houston has ALL of it. When defenses are this close, mental toughness decides games, and beating a #1 seed gives you that edge.
+   *Agrees with:* Road Dog nailed it - Vanderbilt's veteran leadership will exploit Houston's young lineup when the game gets physical and ugly.
 
-   "I'm sticking with Vandy but I'm MORE confident now. Glass Cannon and Whisper nailed it - this team just beat a #1 seed and they're playing with house money. Houston's good, but they haven't faced this kind of momentum and confidence. When defenses are this close (87.3 vs 89.4), it comes down to who wants it more, and Vandy just proved they can slay giants."
+   "Tempo Hawk is WRONG. Houston's defense crumbles against elite offenses - they gave up 80+ to Auburn, Kansas. Vandy's grind-it-out style wins."
    Updated probability: Vanderbilt 0.55 ± 0.16
 
 💥 **GLASS CANNON** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain keeps talking about defensive efficiency like it's 1995! He says the defensive gap is negligible, but he's completely ignoring that one hot shooting night from Vanderbilt from three-point land erases ANY defensive advantage Houston thinks they have! His stat, Vandy adj_d 89.4 vs Houston adj_d 87.3, doesn't account for a team catching fire. Defense can't stop a perfect shot!
+   *Disagrees with:* Iron Curtain is wrong, because Vanderbilt's hot shooting makes defensive efficiency meaningless in a single game.
 
-   *Agrees with:* I gotta give it to Streak! He's absolutely right, Vanderbilt just took down a #1 seed and they're riding a massive wave of momentum. That's exactly what I'm talking about — a team that gets hot at the right time from three, like Vandy has, becomes UNSTOPPABLE. His point about Vanderbilt's NCAA Tournament run, beating a #1, just reinforces that they're dangerous when it counts!
+   *Agrees with:* Streak reinforced my view; Vanderbilt's 10-0 run shows they're catching fire at the perfect time from beyond the arc!
 
-   "Okay, I've heard everyone, and I'm telling you, Vanderbilt is STILL the pick! They are absolutely on fire from deep, that 36.6% from three is not a fluke, it's a statement! You can't coach that kind of shooting, and when they're on, they are ON. One hot quarter from beyond the arc and Houston's precious defensive efficiency is MEANINGLESS! This is March, baby, and high variance wins!"
-   Updated probability: Vanderbilt 0.62 ± 0.12
+   "Iron Curtain keeps talking about defense, but Vanderbilt's 36.6% from deep is pure offense! When they're on, they're ON. You can't coach that!"
+   Updated probability: Vanderbilt 0.58 ± 0.12
 
 🐺 **ROAD DOG** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk, you're talking about tempo differentials and efficiency battles like this is a math problem. You said 'no tempo edge available,' but you're missing the forest for the trees. Vanderbilt just beat the #1 overall seed! That's not about tempo, that's about heart and belief, and you can't put that in your little tempo calculator. Analytics don't play the game, son.
+   *Disagrees with:* Tempo Hawk loves numbers, but a 1.4 possession difference doesn't erase Vanderbilt's experience edge when the game gets tight.
 
-   *Agrees with:* I gotta give credit to Whisper. They hit the nail on the head when they said 'Nobody's talking about this, but Vanderbilt has now beaten a 1-seed. Their confidence is through the roof, and they're playing with house money.' That's exactly what I've been saying! That kind of confidence, that kind of momentum, it's a real thing in March, and it's gonna carry them here. It's not about what the numbers say; it's about what you see on the court, and I'm seeing a team that believes.
+   *Agrees with:* Streak gets it. Vanderbilt's 10-0 run shows a veteran team peaking, which is exactly what you need from experienced rosters in March.
 
-   "Alright, I've listened to all the chatter, and my gut feeling about Vanderbilt's momentum is only stronger. They just took down a #1 seed, folks, and that's not something you measure with a spreadsheet. They're playing with house money and a belief that Houston hasn't had to face yet. This isn't about efficiency numbers; it's about a team that's found its stride and knows how to win when it matters most."
-   Updated probability: Vanderbilt 0.58 ± 0.15
+   "Vanderbilt's senior leadership, especially Duke Miles, has seen every kind of pressure. Houston's youth hasn't been tested like this. Experience still wins."
+   Updated probability: Vanderbilt 0.62 ± 0.12
 
 👁️ **WHISPER** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk keeps talking about identical tempos and efficiency battles. That's a smokescreen. What good is a slight efficiency edge if the other team believes they can beat anyone? The game is decided before tipoff, and Vanderbilt's belief, fueled by their recent wins, renders those tempo numbers irrelevant. It's about what's in their heads, not on the stat sheet.
+   *Disagrees with:* Road Dog is wrong. Experience doesn't negate the physical toll of travel and less rest. The legs won't be there.
 
-   *Agrees with:* Road Dog is on the right track here, talking about Vanderbilt playing with 'house money and supreme confidence.' That's exactly it. Follow the breadcrumbs: a team that just slayed a giant is a different animal. Oracle also touched on it, mentioning the George Mason Patriots comparison – that's the kind of narrative shift that changes everything. It's not just about stats; it's about the story unfolding.
+   *Agrees with:* Glass Cannon gets it. While they focused on shooting, the underlying 'on fire' suggests a team with less hidden friction, unlike Houston's travel.
 
-   "Nobody's talking about this, but the momentum Vanderbilt has built, taking down a #1 seed, is a force Houston hasn't encountered. The pressure is on Houston to stop a team that's peaking at the exact right moment, and I'm hearing whispers that kind of psychological edge is insurmountable in a single game."
-   Updated probability: Vanderbilt 0.58 ± 0.12
+   "Everyone's missing the deeper fatigue. Houston's 500+ extra travel miles and Vanderbilt's short rest will compound. Something's off with Houston's road prep."
+   Updated probability: Vanderbilt 0.62 ± 0.12
 
 📜 **ORACLE** (position: STRENGTHENED):
 
-   *Disagrees with:* Glass Cannon claiming that 0.3% difference in 3PT shooting (36.6% vs 36.3%) is meaningful - that's literally within the margin of statistical error and proves nothing about tournament performance!
+   *Disagrees with:* Glass Cannon thinks 36.6% three-point shooting is the equalizer, but historically elite shooting 12-seeds still lose 75% of the time against defensive teams.
 
-   *Agrees with:* Road Dog perfectly captured the momentum factor - Vanderbilt's giant-killing run including beating #1 Florida creates the exact psychological edge that makes 5-seeds dangerous in Elite Eight games, just like 2006 George Mason
+   *Agrees with:* Tempo Hawk correctly identifies that minimal tempo gap makes this about efficiency, where Houston's defensive edge matters most.
 
-   "Glass Cannon is absolutely wrong about that 3PT% edge - 36.6% vs 36.3% is statistical noise, not a meaningful advantage! But Road Dog nailed the historical pattern: since 1985, teams that knock off #1 seeds as 5-seeds carry massive momentum into the Elite Eight. However, the base rate still matters - 2-seeds beat 5-seeds in Elite Eight matchups 73% of the time historically, and Houston's defensive efficiency edge (87.3 vs 89.4) mirrors the 2019 Auburn team that shut down high-powered offenses in their Elite Eight run."
-   Updated probability: Vanderbilt 0.45 ± 0.16
+   "Glass Cannon ignores history. Since 1985, 12-seeds shooting 36%+ from three are 4-12 against quality defenses. Shooting alone fails."
+   Updated probability: Vanderbilt 0.38 ± 0.15
 
 🔥 **STREAK** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk wants to talk about 'tempo differential' and 'efficiency battle' like this is some kind of math problem. They're missing the point entirely! This isn't about abstract numbers; it's about what's happening on the court. Vanderbilt just beat a #1 seed! That's not a 'coin flip,' Tempo Hawk, that's a team playing with fire, and that momentum is going to carry them through.
+   *Disagrees with:* Oracle wants to talk about 2011. I care about Vanderbilt's 10-0 run, which is happening in 2024. History doesn't win games, recent form does.
 
-   *Agrees with:* Road Dog gets it. They're talking about Vanderbilt playing with 'house money and supreme confidence,' and that's exactly what I'm seeing! Whisper also hit it right on the head – 'confidence is through the roof.' This isn't just a win; it's a statement, and that kind of emotional high is unstoppable in March. They're playing the best basketball of their season RIGHT NOW, and that's all that matters.
+   *Agrees with:* Road Dog sees the senior leadership. That experience is fueling Vanderbilt's streak; they know how to win these big, high-pressure games right now.
 
-   "Forget the spreadsheets — I've heard everyone's arguments and I'm MORE confident now, not less! Vanderbilt just took down the #1 overall seed, Florida, and they're riding a five-game winning streak into this game. Houston's good, sure, but they haven't faced a team playing with this kind of belief and momentum RIGHT NOW. This isn't about season-long stats; this is about who's peaking, and Vandy is absolutely peaking!"
-   Updated probability: Vanderbilt 0.58 ± 0.12
+   "Vanderbilt's 10-game win streak, including beating a #1 seed, shows they're PEAKING. Oracle's historical analogies are meaningless; this is about what's happening RIGHT NOW. Momentum is real!"
+   Updated probability: Vanderbilt 0.60 ± 0.12
 
 
 ### Upset Watch
-**Upset Score: 42.4/100** | Upset score 42/100 for #5 Vanderbilt over #2 Houston. Historical upset rate: 50.0%. Agent support: 4-3 for Vanderbilt.
-   *Agent split: 4-3 for Vanderbilt | Historical upset rate: 50.0%*
+**Upset Score: 48.1/100** | Upset score 48/100 for #5 Vanderbilt over #2 Houston. Historical upset rate: 50.0%. Agent support: 5-2 for Vanderbilt.
+   *Agent split: 5-2 for Vanderbilt | Historical upset rate: 50.0%*
    *Statistical edges: Better 3PT% (36.6 vs 36.3)*
 
 
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Vanderbilt 0.54 ± 0.15
+Combined probability: Vanderbilt 0.52 ± 0.17
 
-**PICK: Vanderbilt** (54% — genuine toss-up, high uncertainty)
+**PICK: Vanderbilt** (52% — genuine toss-up, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "I've heard every argument. Here's what actually matters in this game. Here's my ruling: Road Dog and Whisper won this debate by focusing on the psychological edge that matters most in March — Vanderbilt just slayed the #1 overall seed and they're playing with house money. Tempo Hawk lost me with the 'coin flip' analysis that ignored momentum entirely, while Glass Cannon's obsession with a 0.3% three-point shooting difference was statistical noise masquerading as insight. The decisive factor is that teams who knock off #1 seeds carry dangerous momentum, and Houston hasn't faced this kind of giant-killing confidence yet. When a Cinderella has already proven they can dance with the best, bet on them to keep dancing."
+🎼 **THE CONDUCTOR**: "Road Dog and Streak won this debate — Vanderbilt's senior leadership and 10-game streak trump Houston's marginal defensive edge. Glass Cannon strengthened on hot shooting, Whisper on travel fatigue. Tempo Hawk and Oracle lost arguing efficiency over momentum. When veterans get hot, numbers become noise."
 
-   *Key factor: momentum and psychological edge from beating #1 seed*
+   *Key factor: Experience and momentum convergence*
 
-   *Most weighted: Road Dog and Whisper — they correctly identified that Vanderbilt's giant-killing momentum and house money mentality creates a psychological edge that raw efficiency numbers can't capture*
+   *Most weighted: Road Dog*
 
-   *Dissent report: Tempo Hawk and Glass Cannon were least convincing — Tempo Hawk's 'coin flip' analysis ignored the massive momentum factor, while Glass Cannon's focus on a meaningless 0.3% three-point shooting difference was statistical noise*
+   *Dissent report: Tempo Hawk and Oracle argued for Houston's defensive efficiency but failed to account for how Vanderbilt's veteran composure neutralizes systematic advantages in March pressure moments*
 
 
 ---
-### Specialist Vote: 4-3 Vanderbilt
+### Specialist Vote: 5-2 Vanderbilt
 
-🦅Houston 🛡️Vanderbilt 💥Vanderbilt 🐺Houston 👁️Vanderbilt 📜Houston 🔥Vanderbilt
+🦅Houston 🛡️Vanderbilt 💥Vanderbilt 🐺Vanderbilt 👁️Vanderbilt 📜Houston 🔥Vanderbilt
 
 CONDUCTOR AGREES: Vanderbilt (50%)
 
@@ -134,5 +134,5 @@ CONDUCTOR AGREES: Vanderbilt (50%)
 ---
 ### Vote Tally
 
-- **Houston**: Tempo Hawk, Road Dog, Oracle (3 votes)
-- **Vanderbilt**: Iron Curtain, Glass Cannon, Whisper, Streak (4 votes)
+- **Houston**: Tempo Hawk, Oracle (2 votes)
+- **Vanderbilt**: Iron Curtain, Glass Cannon, Road Dog, Whisper, Streak (5 votes)

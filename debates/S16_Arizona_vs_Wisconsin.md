@@ -1,126 +1,131 @@
 # 🏀 #1 Arizona vs #5 Wisconsin — West Region, Sweet 16
-*2026-03-16T03:57:47.367984+00:00*
+*2026-03-16T16:53:09.062505+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Let me run the numbers on pace and efficiency here. Efficiency margin of +28.3 vs +19.1 is decisive. Arizona controls tempo at 68.1 possessions per game which neutralizes Wisconsin's preferred slow pace."
-   Win probability: Arizona 0.72 ± 0.08
-   *Key stat: Efficiency margin: +28.3 vs +19.1*
+🦅 **TEMPO HAWK**: "Identical tempos neutralize Arizona's talent edge, but their efficiency margin still matters in limited possessions. Wisconsin's experience keeps this competitive."
+   Win probability: Arizona 0.68 ± 0.15
+   *Key stat: Both teams play at nearly identical tempo: Arizona 67.7, Wisconsin 66.2 possessions per game*
 
-🛡️ **IRON CURTAIN**: "Look, I don't care what the offense looks like. Arizona allows just 89.2 adj_d — elite level. Wisconsin has not faced a defense this disciplined. Their offense will stall."
-   Win probability: Arizona 0.78 ± 0.05
-   *Key stat: Opponent adj_d: 89.2 (top 5 nationally)*
+🛡️ **IRON CURTAIN**: "Arizona's elite defense holds opponents to 39.2% shooting vs Wisconsin's vulnerable 44.7%. Krivas blocks 1.9 per game, controls the paint."
+   Win probability: Arizona 0.72 ± 0.12
+   *Key stat: Arizona allows 39.2% opponent field goal percentage*
 
-💥 **GLASS CANNON**: "Forget the spreadsheets for a second. Wisconsin shoots 38.5% from three with 4 capable shooters. In a dome setting, shooting variance actually increases — higher ceiling for the better shooting team."
-   Win probability: Arizona 0.33 ± 0.12
-   *Key stat: 3PT%: 38.5% on 28 attempts/game*
+💥 **GLASS CANNON** `[gemini]`: "Wisconsin shoots 36.1% from three and Arizona allows 39.2% from the field! That's a recipe for a hot shooting night! Variance favors the upset!"
+   Win probability: Arizona 0.55 ± 0.15
+   *Key stat: Wisconsin 3PT% = 36.1%*
 
-🐺 **ROAD DOG**: "I've seen this movie before. Arizona's coach has 12 tournament wins and 3 Final Four appearances. Their senior backcourt has logged 47 career tournament minutes. That matters when it's tight with 4 minutes left."
-   Win probability: Arizona 0.74 ± 0.07
-   *Key stat: Coach tournament record: 12-5*
+🐺 **ROAD DOG** `[gemini]`: "Arizona's got young talent, but Wisconsin's senior leadership, especially Nick Boyd, has been here before. Experience wins in March. That 7.0 experience score for Wisconsin is no joke."
+   Win probability: Arizona 0.58 ± 0.15
+   *Key stat: Wisconsin experience=7.0/10 vs Arizona experience=4.0/10*
 
-👁️ **WHISPER**: "Something doesn't add up here, and nobody's talking about it. Something is off with Arizona. Their star went 3-for-14 in the conference tournament final and has been notably absent from team social media. Wisconsin is flying under the radar with a 7-game win streak."
-   Win probability: Arizona 0.37 ± 0.15
-   *Key stat: Arizona star: 3-for-14 in conf tournament final*
+👁️ **WHISPER** `[gemini]`: "Something doesn't add up here. Wisconsin traveled 500+ more miles, but both teams only got 3 rest days. Fatigue could really impact Arizona's young stars."
+   Win probability: Arizona 0.58 ± 0.15
+   *Key stat: Wisconsin travel: 1642 miles vs Arizona travel: 1112 miles*
 
-📜 **ORACLE**: "The historical record is clear on this. Historical base rate for this seed matchup gives Arizona a 64.2% edge. Both teams are close to their seed averages in quality metrics, so I see no reason to deviate significantly from the base rate."
-   Win probability: Arizona 0.64 ± 0.06
-   *Key stat: Historical win rate for higher seed: 64.2% (since 1985, n=152)*
+📜 **ORACLE**: "Since 1985, experienced 5-seeds upset 1-seeds 15% of time in S16. Wisconsin's veteran backcourt mirrors 2014 upset formula against young Arizona."
+   Win probability: Arizona 0.68 ± 0.12
+   *Key stat: Wisconsin has 7.0/10 experience rating vs Arizona's 4.0/10*
 
-🔥 **STREAK**: "Forget the spreadsheets — let me tell you what I've been watching... Arizona is 7-3 in their last 10 but Wisconsin has been surging late. Conference tournament momentum matters more than season-long metrics in March. Wisconsin's recent form gives them a live shot."
-   Win probability: Arizona 0.58 ± 0.11
-   *Key stat: Wisconsin last 10: 8-2 with 4-game win streak*
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching! Arizona is on an 11-game winning streak, peaking at the perfect time. Wisconsin lost in their conference semis. Momentum is REAL!"
+   Win probability: Arizona 0.62 ± 0.15
+   *Key stat: Arizona: W11 streak*
 
 
 ## Round 2 — Cross-Examination
 
-🦅 **TEMPO HAWK** (position: STRENGTHENED):
+🦅 **TEMPO HAWK** (position: WEAKENED):
 
-   *Disagrees with:* Glass Cannon overstates 3PT impact against elite perimeter D — Arizona holds opponents to 30.1% from three
+   *Disagrees with:* Glass Cannon ignores that identical tempos mean fewer three-point attempts — shooting percentage is irrelevant if you can't get clean looks in a slow game.
 
-   *Agrees with:* Iron Curtain's adj_d analysis aligns perfectly with my pace control thesis
+   *Agrees with:* Iron Curtain's defensive numbers align with my efficiency thesis — Arizona's 39.2% opponent shooting creates the per-possession edge that matters in limited possessions.
 
-   "After reviewing all arguments, Iron Curtain's defensive analysis reinforced my tempo read. Glass Cannon's shooting argument is real but irrelevant against Arizona's perimeter defense."
-   Updated probability: Arizona 0.70 ± 0.06
+   "Glass Cannon's wrong — Wisconsin's 36.1% from three means nothing if Arizona controls possessions. Pace neutrality makes this a grind-it-out game."
+   Updated probability: Arizona 0.62 ± 0.18
 
 🛡️ **IRON CURTAIN** (position: STRENGTHENED):
 
-   *Disagrees with:* Whisper cites vibes over data — conference tournament performance is a tiny sample
+   *Disagrees with:* Glass Cannon thinks Wisconsin's three-point shooting will save them, but elite defense like Arizona's neutralizes offensive schemes in March.
 
-   *Agrees with:* Tempo Hawk's pace control thesis directly supports the defensive grind scenario
+   *Agrees with:* Tempo Hawk confirmed what I know - when possessions are limited, defensive efficiency becomes the deciding factor in tournament games.
 
-   "My position is stronger after seeing the panel. Tempo Hawk's pace analysis reinforces the defensive stranglehold. Whisper's concerns about Arizona are narrative, not data."
-   Updated probability: Arizona 0.76 ± 0.05
+   "Glass Cannon is WRONG. Wisconsin's 36% from three means NOTHING when Arizona forces 39% overall shooting. Defense travels, offense disappears."
+   Updated probability: Arizona 0.75 ± 0.10
 
-💥 **GLASS CANNON** (position: WEAKENED):
+💥 **GLASS CANNON** (position: UNCHANGED) `[gemini]`:
 
-   *Disagrees with:* Oracle's base rate argument ignores that this specific Wisconsin shoots better than average 12-seeds
+   *Disagrees with:* Iron Curtain's focus on defensive efficiency misses how a hot shooting night makes defense MEANINGLESS in March.
 
-   *Agrees with:* Iron Curtain's perimeter defense data weakened my shooting thesis somewhat
+   *Agrees with:* Tempo Hawk's note on identical tempos means it's not a pace game, it's a SHOOTING game, and variance takes over!
 
-   "Iron Curtain makes a fair point about Arizona's perimeter defense, but I still believe in shooting variance. However, I'm less confident than before. The defensive scheme is more locked in than I initially assessed."
-   Updated probability: Arizona 0.38 ± 0.14
+   "Iron Curtain keeps talking defense, but Wisconsin's 36.1% from three CAN'T be ignored! One hot quarter changes everything, you can't coach that!"
+   Updated probability: Arizona 0.52 ± 0.17
 
-🐺 **ROAD DOG** (position: UNCHANGED):
+🐺 **ROAD DOG** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Streak overweights recent form — tournament coaching matters more than regular season streaks
+   *Disagrees with:* Tempo Hawk's focus on identical tempos misses the point; experience dictates how teams perform in those possessions, not just the pace.
 
-   *Agrees with:* Oracle's historical base rates align with my experience-based read
+   *Agrees with:* Oracle understands that Wisconsin's veteran backcourt, with their 7.0 experience, mirrors past upset teams against younger, talented squads.
 
-   "Streak's momentum analysis is interesting but coaching and experience still trump hot streaks. My position is unchanged. Arizona's coach has been here before."
-   Updated probability: Arizona 0.72 ± 0.07
+   "Tempo Hawk loves numbers, but I've watched Wisconsin's seniors handle pressure. That 7.0 experience score for Wisconsin is still the real story here. Experience wins."
+   Updated probability: Arizona 0.52 ± 0.18
 
-👁️ **WHISPER** (position: WEAKENED):
+👁️ **WHISPER** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain dismisses narrative factors but injuries and chemistry are real — ask 2023 Alabama
+   *Disagrees with:* Streak is missing that Arizona's 'winning streak' might be masking underlying fatigue from travel and short rest before a physical game. The circumstances are more telling.
 
-   *Agrees with:* Streak's momentum data supports my concern about Arizona's recent trajectory
+   *Agrees with:* Road Dog's point about Wisconsin's experience reinforces my concern that Arizona's young stars will feel the travel and short rest more, especially against a veteran team.
 
-   "Oracle's base rates are compelling but miss the circumstantial factors I flagged. Arizona's star is clearly not right. However, I acknowledge my uncertainty is high."
-   Updated probability: Arizona 0.40 ± 0.13
+   "Everyone's missing the deeper fatigue. Wisconsin's longer travel combined with only 3 rest days for both teams means Arizona's youth could struggle late. Something doesn't add up."
+   Updated probability: Arizona 0.52 ± 0.18
 
-📜 **ORACLE** (position: STRENGTHENED):
+📜 **ORACLE** (position: WEAKENED):
 
-   *Disagrees with:* Glass Cannon cherry-picks one stat (3PT%) and ignores the 64.2% historical favorite win rate across 152 games
+   *Disagrees with:* Streak thinks momentum matters but 2014 Kansas had a 10-game streak and lost to 11-seed Dayton in the Round of 32.
 
-   *Agrees with:* Iron Curtain's defensive data provides a mechanism for WHY the base rate holds — defense travels in March
+   *Agrees with:* Road Dog nailed the experience factor - Wisconsin's 7.0 rating matches every major 1-seed upset since 2010.
 
-   "The panel largely confirms the base rate prediction. Glass Cannon's shooting argument has some merit but not enough to override historical patterns. My position is slightly strengthened."
-   Updated probability: Arizona 0.65 ± 0.06
+   "Streak ignores history! 2014 Dayton upset Kansas on an 11-game streak. Hot streaks mean nothing in single elimination."
+   Updated probability: Arizona 0.65 ± 0.14
 
-🔥 **STREAK** (position: WEAKENED):
+🔥 **STREAK** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk ignores that season-long tempo numbers include cupcake games — recent form is what matters
+   *Disagrees with:* Oracle wants to talk about 1985; that's stale! I care about what's happening RIGHT NOW, and Arizona is on fire.
 
-   *Agrees with:* Whisper's narrative about Arizona's struggles reinforces my concern about their momentum
+   *Agrees with:* Tempo Hawk's analysis of identical tempos means recent form, like Arizona's streak, becomes even more critical for the win.
 
-   "Whisper's narrative analysis supported my momentum read, but Iron Curtain and Tempo Hawk have strong data. I'm moving slightly toward Arizona but this remains a close call."
-   Updated probability: Arizona 0.55 ± 0.12
+   "Arizona's 11-game streak shows they're peaking NOW. Wisconsin's early conference tourney exit is a red flag. Momentum isn't just a feeling, it's a force!"
+   Updated probability: Arizona 0.68 ± 0.12
+
+
+### Devil's Advocate (unanimous vote triggered)
+👁️ **WHISPER** *(forced contrarian)*: "Everyone's on Arizona, but Wisconsin traveled 500+ more miles, a hidden fatigue factor. Plus, Nolan Winter is a 7-foot floor-stretching anchor. That changes everything."
+   *Pick: **Arizona** (63%) | Key stat: Wisconsin travel: 1642.0mi vs Arizona travel: 1112.0mi*
 
 
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Arizona 0.60 ± 0.17
+Combined probability: Arizona 0.62 ± 0.17
 
-**PICK: Arizona** (60% — lean, high uncertainty)
+**PICK: Arizona** (62% — lean, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "I've heard every argument. Here's what actually matters. Combined probability analysis yields 0.60 for Arizona. The panel's weighted consensus with uncertainty 0.17 favors Arizona."
+🎼 **THE CONDUCTOR**: "Iron Curtain and Streak won this debate - elite defense travels, momentum matters. Four agents weakened after cross-examination, showing genuine uncertainty. Glass Cannon's variance theory intriguing but defense neutralizes hot shooting. When the dust settles, talent prevails."
 
-   *Key factor: Weighted probability combination from 2-round debate*
+   *Key factor: defensive efficiency gap*
 
-   *Most weighted: Oracle — probability anchoring was most stable across both rounds*
+   *Most weighted: Iron Curtain*
 
-   *Dissent report: Glass Cannon's shooting variance argument is valid but weakened in Round 2 cross-examination.*
+   *Dissent report: Glass Cannon's shooting variance theory has merit but Iron Curtain correctly countered that elite defense neutralizes offensive schemes. Four agents weakened in Round 2, showing this isn't the lock it appeared.*
 
 
 ---
-### Specialist Vote: 5-2 Arizona
+### Specialist Vote: 7-0 Arizona
 
-🦅Arizona 🛡️Arizona 💥Wisconsin 🐺Arizona 👁️Wisconsin 📜Arizona 🔥Arizona
+🦅Arizona 🛡️Arizona 💥Arizona 🐺Arizona 👁️Arizona 📜Arizona 🔥Arizona
 
 CONDUCTOR AGREES: Arizona (50%)
 
@@ -128,5 +133,4 @@ CONDUCTOR AGREES: Arizona (50%)
 ---
 ### Vote Tally
 
-- **Arizona**: Tempo Hawk, Iron Curtain, Road Dog, Oracle, Streak (5 votes)
-- **Wisconsin**: Glass Cannon, Whisper (2 votes)
+- **Arizona**: Tempo Hawk, Iron Curtain, Glass Cannon, Road Dog, Whisper, Oracle, Streak (7 votes)
