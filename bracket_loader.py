@@ -140,7 +140,8 @@ BRACKET_2026 = {
       "last_10_record": "6-4",
       "current_streak": "W1",
       "conference_tourney_result": "Lost ACC quarterfinals to Miami 73-78",
-      "recent_form_notes": "Beat SMU then lost to Miami in ACC tourney"
+      "recent_form_notes": "Beat SMU then lost to Miami in ACC tourney",
+      "injury_notes": "Mikel Brown Jr. (PG) — recurring back injury, sat out ACC Tournament. Averaged 18.2 PPG (25.5 over last 10 healthy games). Goal is to be 100% for NCAA first round but status uncertain."
     },
     {
       "name": "USF",
@@ -431,7 +432,8 @@ BRACKET_2026 = {
       "last_10_record": "8-2",
       "current_streak": "W3",
       "conference_tourney_result": "WCC Champion (beat Santa Clara 79-68)",
-      "recent_form_notes": "Won conference tourney, strong form"
+      "recent_form_notes": "Won conference tourney, strong form",
+      "injury_notes": "Braden Huff (F) — dislocated kneecap Jan 14, OUT for first weekend. Was averaging 17.8 PPG, 5.6 RPG. Jogging and shooting but will not play first or second round. Possible return second weekend if team advances."
     },
     {
       "name": "Kennesaw State",
@@ -821,7 +823,8 @@ BRACKET_2026 = {
       "last_10_record": "7-3",
       "current_streak": "L1",
       "conference_tourney_result": "Lost ACC SF to Duke 61-73",
-      "recent_form_notes": "Good run to ACC semis, lost to Duke"
+      "recent_form_notes": "Good run to ACC semis, lost to Duke",
+      "injury_notes": "Carter Welling (C) — torn ACL March 12 in ACC Tournament, OUT for season. Averaged 10.2 PPG, 5.4 RPG. Significant frontcourt depth loss."
     },
     {
       "name": "Iowa",
