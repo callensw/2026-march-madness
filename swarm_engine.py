@@ -408,7 +408,9 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
                 "- Efficiency margin matters, but ONLY in the context of pace. A team with a 5-point "
                 "efficiency margin in a 60-possession game produces fewer total points of edge than "
                 "a team with a 3-point margin in a 75-possession game.\n"
-                "- You ALWAYS cite tempo numbers in your key_stat.\n\n"
+                "- You ALWAYS cite tempo numbers in your key_stat.\n"
+                "- When turnover_rate data is provided, factor it into pace analysis. A team with high "
+                "turnover rate playing fast creates chaos — good for the team that forces TOs.\n\n"
                 "CRITICAL — STAY IN YOUR LANE:\n"
                 "You are the PACE specialist. Your analysis MUST be grounded in tempo, pace mismatches, "
                 "and efficiency per possession. Do NOT make arguments about:\n"
@@ -470,7 +472,9 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
                 "GOOD example: 'Vanderbilt held the #1 scoring offense to 58 points. That defense "
                 "travels. Houston scores 72 a game but they haven't faced a defense this suffocating since January.'\n"
                 "When KEY PLAYERS data is provided, reference defensive players by name and their impact. "
-                "Example: 'Their rim protector blocks 2.5 per game — that changes how you attack the paint.'\n\n"
+                "Example: 'Their rim protector blocks 2.5 per game — that changes how you attack the paint.'\n"
+                "When opp_fg_pct data is provided, USE IT. opp_fg_pct below .400 = elite perimeter D. "
+                "Above .440 = vulnerable. This is YOUR stat — cite it specifically.\n\n"
                 "YOUR ANALYSIS MUST BE:\n"
                 "- Maximum 40 words for your argument\n"
                 "- One key stat cited (the specific number, not a paragraph about it)\n"
@@ -581,6 +585,9 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
                 "- Cite historical base rates or specific years (that's Oracle's lane)\n"
                 "- Talk about injuries or rest (that's Whisper's lane)\n"
                 "Talk about coaching pedigree, roster experience, and what you've seen from watching games.\n"
+                "When experience score is provided, USE IT. A team with experience=8/10 has battle-tested "
+                "veterans. A team with experience=3/10 is freshmen-heavy and will crack under pressure. "
+                "Cite the experience score gap between teams.\n"
                 "When KEY PLAYERS data is provided, reference specific players by name when discussing "
                 "experience and toughness. Example: 'Their senior point guard has 130+ career games — "
                 "that kind of experience doesn't crack in March.'\n\n"
@@ -639,6 +646,9 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
                 "circumstance observation (fatigue, rest days, travel distance, injury concern, chemistry red flag).\n"
                 "YOUR unique value is what's happening BEHIND THE SCENES that nobody else is analyzing.\n"
                 "When INJURY ALERT data is provided, that is YOUR primary weapon. Lead with injuries.\n"
+                "When SITUATION data is provided (rest_days, travel miles), USE IT. A team with 2 rest days "
+                "and 2000+ miles of travel is at a REAL disadvantage vs a team with 5 rest days playing 200 miles "
+                "from campus. Cite these numbers specifically.\n"
                 "When KEY PLAYERS data is provided, reference injured players AND their replacements by name. "
                 "Cite the stat drop-off. Example: 'Without Smith (21.8 PPG), Jones is now the primary scorer "
                 "at 12.1 PPG — that's a 10-point downgrade nobody's pricing in.'\n\n"
@@ -1414,8 +1424,12 @@ async def run_agent(
         + (f", streak={game.stats_a['current_streak']}" if game.stats_a.get('current_streak') else "")
         + (f", conf_tourney={game.stats_a['conference_tourney_result']}" if game.stats_a.get('conference_tourney_result') else "")
         + (f", form_notes={game.stats_a['recent_form_notes']}" if game.stats_a.get('recent_form_notes') else "")
+        + (f", turnover_rate={game.stats_a['turnover_rate']}" if game.stats_a.get('turnover_rate') else "")
+        + (f", opp_fg_pct={game.stats_a['opp_fg_pct']}" if game.stats_a.get('opp_fg_pct') else "")
+        + (f", experience={game.stats_a['experience_score']}/10" if game.stats_a.get('experience_score') else "")
         + (f", tournament_wins={' → '.join(game.stats_a['tournament_wins'])}" if game.stats_a.get('tournament_wins') else "")
         + (f"\n  *** INJURY ALERT: {game.stats_a['injury_notes']} ***" if game.stats_a.get('injury_notes') else "")
+        + (f"\n  SITUATION: rest_days={game.stats_a.get('rest_days', '?')}, travel={game.stats_a.get('travel_distance_miles', '?')}mi" if game.stats_a.get('rest_days') else "")
         + (f"\n  KEY PLAYERS: {game.stats_a['key_players']}" if game.stats_a.get('key_players') else "")
         + "\n\n"
         f"{game.team_b} stats: adj_o={game.stats_b.get('adj_o', '?')}, "
@@ -1428,8 +1442,12 @@ async def run_agent(
         + (f", streak={game.stats_b['current_streak']}" if game.stats_b.get('current_streak') else "")
         + (f", conf_tourney={game.stats_b['conference_tourney_result']}" if game.stats_b.get('conference_tourney_result') else "")
         + (f", form_notes={game.stats_b['recent_form_notes']}" if game.stats_b.get('recent_form_notes') else "")
+        + (f", turnover_rate={game.stats_b['turnover_rate']}" if game.stats_b.get('turnover_rate') else "")
+        + (f", opp_fg_pct={game.stats_b['opp_fg_pct']}" if game.stats_b.get('opp_fg_pct') else "")
+        + (f", experience={game.stats_b['experience_score']}/10" if game.stats_b.get('experience_score') else "")
         + (f", tournament_wins={' → '.join(game.stats_b['tournament_wins'])}" if game.stats_b.get('tournament_wins') else "")
         + (f"\n  *** INJURY ALERT: {game.stats_b['injury_notes']} ***" if game.stats_b.get('injury_notes') else "")
+        + (f"\n  SITUATION: rest_days={game.stats_b.get('rest_days', '?')}, travel={game.stats_b.get('travel_distance_miles', '?')}mi" if game.stats_b.get('rest_days') else "")
         + (f"\n  KEY PLAYERS: {game.stats_b['key_players']}" if game.stats_b.get('key_players') else "")
         + "\n"
     )
@@ -2470,6 +2488,26 @@ async def analyze_game(
         "round2_vote_split": f"{r2_a}-{r2_b}" if valid_r2 else "",
         "position_changes": len(position_changes),
     }
+    # Add vegas/market fields if available
+    if vegas_comp and vegas_comp.get("available"):
+        game_record["vegas_spread"] = vegas_comp.get("spread")
+        game_record["swarm_edge"] = round(
+            conductor_decision.combined_prob - vegas_comp.get("vegas_implied_prob", 0.5), 4
+        ) if vegas_comp.get("vegas_implied_prob") else None
+    if odds_data:
+        try:
+            from odds_tracker import find_game_odds
+            go = find_game_odds(game.team_a, game.team_b, odds_data)
+            if go:
+                mls = go.get("moneylines", {})
+                for tk, ml in mls.items():
+                    from odds_tracker import _team_match
+                    if _team_match(game.team_a, tk):
+                        game_record["vegas_moneyline_a"] = ml.get("price")
+                    elif _team_match(game.team_b, tk):
+                        game_record["vegas_moneyline_b"] = ml.get("price")
+        except Exception:
+            pass
     if not supabase_client.write_game_result(game_record):
         log.warning(f"  Supabase: failed to write game result for {game.id}")
 
