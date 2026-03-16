@@ -61,16 +61,18 @@ class CostTracker:
     gemini_input_tokens: int = 0
     gemini_output_tokens: int = 0
     gemini_calls: int = 0
+    _lock: asyncio.Lock = field(default_factory=asyncio.Lock, init=False, repr=False)
 
-    def add(self, input_tokens: int, output_tokens: int, model: str = "claude"):
-        if model == "gemini":
-            self.gemini_input_tokens += input_tokens
-            self.gemini_output_tokens += output_tokens
-            self.gemini_calls += 1
-        else:
-            self.total_input_tokens += input_tokens
-            self.total_output_tokens += output_tokens
-            self.total_calls += 1
+    async def add(self, input_tokens: int, output_tokens: int, model: str = "claude"):
+        async with self._lock:
+            if model == "gemini":
+                self.gemini_input_tokens += input_tokens
+                self.gemini_output_tokens += output_tokens
+                self.gemini_calls += 1
+            else:
+                self.total_input_tokens += input_tokens
+                self.total_output_tokens += output_tokens
+                self.total_calls += 1
 
     @property
     def total_cost(self) -> float:
@@ -108,6 +110,24 @@ SEED_WIN_RATES = {
     (1, 16): 0.993, (2, 15): 0.938, (3, 14): 0.852, (4, 13): 0.791,
     (5, 12): 0.642, (6, 11): 0.625, (7, 10): 0.608, (8, 9): 0.514,
 }
+
+# ---------------------------------------------------------------------------
+# Conference strength tiers (SOS proxy)
+# ---------------------------------------------------------------------------
+CONFERENCE_TIERS = {
+    # Tier 1: Power conferences (elite SOS)
+    "Big Ten": 1, "SEC": 1, "Big 12": 1, "ACC": 1, "Big East": 1,
+    # Tier 2: Strong mid-majors
+    "Mountain West": 2, "WCC": 2, "AAC": 2, "MVC": 2, "A-10": 2,
+    # Tier 3: Mid-tier conferences
+    "CAA": 3, "Sun Belt": 3, "MAC": 3, "WAC": 3, "Conference USA": 3,
+    "Pac-12": 3, "Horizon": 3, "Southern": 3,
+    # Tier 4: Low-major conferences
+}
+
+def _get_conf_tier_label(conference: str) -> str:
+    tier = CONFERENCE_TIERS.get(conference, 4)
+    return {1: "Power", 2: "Strong Mid", 3: "Mid-Tier", 4: "Low-Major"}.get(tier, "Low-Major")
 
 # ---------------------------------------------------------------------------
 # Agent display metadata
@@ -149,17 +169,20 @@ class AgentConfig:
 
 
 def _game_temperature(base_temp: float, seed_a: int, seed_b: int) -> float:
-    """Scale agent temperature by seed closeness. Close games get more creative responses."""
+    """Scale agent temperature by seed closeness.
+    Close games get LOWER temps for analytical precision.
+    Blowouts get HIGHER temps — outcome is obvious, creativity is harmless.
+    """
     diff = abs(seed_a - seed_b)
-    if diff >= 12:      # 1v16, 2v15
-        scale = 0.4
-    elif diff >= 8:     # 3v14, 4v13
-        scale = 0.6
-    elif diff >= 4:     # 5v12, 6v11
-        scale = 0.85
-    else:               # 7v10, 8v9
+    if diff >= 12:      # 1v16, 2v15 — outcome clear, allow creativity
         scale = 1.0
-    return min(1.0, max(0.1, base_temp * scale + (1.0 - scale) * 0.5))
+    elif diff >= 8:     # 3v14, 4v13
+        scale = 0.9
+    elif diff >= 4:     # 5v12, 6v11
+        scale = 0.8
+    else:               # 7v10, 8v9 — close games need precision
+        scale = 0.7
+    return min(1.0, max(0.1, base_temp * scale))
 
 
 def build_agents(multi_model: bool = False) -> list[AgentConfig]:
@@ -235,7 +258,7 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
             name="Iron Curtain",
             temperature=0.4,
             bias_field="adj_d",
-            bias_boost=10,
+            bias_boost=6,
             model="claude",
             system_prompt=(
                 "You are IRON CURTAIN, the defense-or-die absolutist of the March Madness Agent Swarm.\n\n"
@@ -270,12 +293,14 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
                 "night erases any talent gap. The three-point line is the great equalizer. The team with "
                 "more three-point shooters has more VARIANCE, and variance is the underdog's friend.\n\n"
                 "UPSET TRIGGER — YOU MUST FOLLOW THIS:\n"
-                "If the lower seed's 3PT% is above 34%, they are a LIVE upset candidate regardless of "
-                "overall team quality. Three-point shooting is the highest-variance stat in basketball. "
+                "If the lower seed shoots BETTER from three than the higher seed (higher 3PT%), they are "
+                "a LIVE upset candidate. Three-point shooting is the highest-variance stat in basketball. "
                 "A team that lives by the three can beat anyone on a night they shoot well.\n"
                 "- If lower seed 3PT% > higher seed 3PT%: you MUST pick the upset OR explain in detail "
                 "why this specific team's shooting won't translate.\n"
-                "- If the higher seed allows opponents to shoot above 34% from three (weak perimeter "
+                "- If the lower seed's 3PT% is above 36% (well above average): they are DANGEROUS "
+                "regardless of the matchup. This is an elite shooting team.\n"
+                "- If the higher seed allows opponents to shoot well from three (weak perimeter "
                 "defense): they are VULNERABLE to a hot-shooting upset. Flag this explicitly.\n"
                 "- Single-elimination REWARDS high-variance teams. In ONE game, the team that gets hot wins.\n"
                 "- A team with a higher ceiling beats a team with a higher floor in single-elimination.\n\n"
@@ -288,8 +313,8 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
         AgentConfig(
             name="Road Dog",
             temperature=0.5,
-            bias_field="kenpom_rank",
-            bias_boost=7,
+            bias_field="record",
+            bias_boost=5,
             model="gemini" if multi_model else "claude",
             system_prompt=(
                 "You are ROAD DOG, the anti-analytics narrative guy of the March Madness Agent Swarm.\n\n"
@@ -380,8 +405,8 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
         AgentConfig(
             name="Streak",
             temperature=0.7,
-            bias_field="adj_o",
-            bias_boost=6,
+            bias_field="current_streak",
+            bias_boost=5,
             model="gemini" if multi_model else "claude",
             system_prompt=(
                 "You are STREAK, the momentum and recent form specialist of the March Madness Agent Swarm.\n\n"
@@ -498,7 +523,9 @@ def build_conductor_prompt(
         "  * Game matches a historical upset archetype? Weight Oracle 2x\n"
         "  * Experience/coaching mismatch? Weight Road Dog 2x\n"
         "  * Hot team vs cold team / momentum mismatch? Weight Streak 2x\n"
-        "- If an agent has a better track record (see accuracy stats below), lean toward their picks\n\n"
+        "- If an agent has a better track record (see accuracy stats below), give their picks MORE weight.\n"
+        "  HARD RULE: If an agent has 70%+ accuracy over 5+ games, treat them as 1.5x weight.\n"
+        "  HARD RULE: If an agent has below 40% accuracy over 5+ games, treat them as 0.5x weight.\n\n"
         "CONFIDENCE RULES — THIS IS CRITICAL:\n"
         "- Your confidence should be the WEIGHTED AVERAGE of agent confidences, NOT your own "
         "independent assessment. If agents average 65%, you should be around 65%.\n"
@@ -507,6 +534,15 @@ def build_conductor_prompt(
         "- On 8v9 games: Default to 50-55 confidence. These are COIN FLIPS.\n"
         "- On 5v12, 6v11, 7v10 games: Max confidence of 75 unless there's overwhelming evidence.\n"
         "- ONLY give 85+ confidence on 1v16, 2v15, or 3v14 games with a clear KenPom gap.\n\n"
+        "OVERRIDE RULES — YOU MUST FOLLOW THESE:\n"
+        "- If 6-7 specialists agree (6-1 or 7-0): You MUST pick the majority team. "
+        "No exceptions. Your confidence = average of majority agents' confidence.\n"
+        "- If 5-2: You MUST pick the majority UNLESS both dissenters have confidence "
+        "above 75% AND all majority agents have confidence below 65%.\n"
+        "- If 4-3: You make an independent judgment call, weighting the most relevant "
+        "specialist 2x. This is the ONLY scenario where you should frequently disagree "
+        "with the slim majority.\n"
+        "- NEVER pick the minority side on a 5-2 or wider split.\n\n"
         "- You MUST write a 'dissent_report': acknowledge the STRONGEST counter-argument\n\n"
         f"AGENT TRACK RECORDS THIS SESSION:\n{accuracy_block}\n"
         f"{memory_block}\n"
@@ -686,14 +722,19 @@ def fuzzy_match_team(pick: str, team_a: str, team_b: str) -> str | None:
         return team_a
     if pick_lower == b_lower:
         return team_b
-    if pick_lower in a_lower or a_lower in pick_lower:
+    # Whole-word substring matching: check if pick or team name appears
+    # as a complete word boundary match (not an arbitrary substring)
+    import re as _re
+    if _re.search(r'\b' + _re.escape(pick_lower) + r'\b', a_lower) or \
+       _re.search(r'\b' + _re.escape(a_lower) + r'\b', pick_lower):
         return team_a
-    if pick_lower in b_lower or b_lower in pick_lower:
+    if _re.search(r'\b' + _re.escape(pick_lower) + r'\b', b_lower) or \
+       _re.search(r'\b' + _re.escape(b_lower) + r'\b', pick_lower):
         return team_b
 
     score_a = SequenceMatcher(None, pick_lower, a_lower).ratio()
     score_b = SequenceMatcher(None, pick_lower, b_lower).ratio()
-    if max(score_a, score_b) > 0.5:
+    if max(score_a, score_b) > 0.75:
         return team_a if score_a > score_b else team_b
     return None
 
@@ -726,14 +767,26 @@ def parse_agent_response(raw: str, team_a: str, team_b: str) -> dict | None:
             # Try adding closing brace if truncated
             if not partial.endswith("}"):
                 # Find last complete key-value pair
-                last_quote = partial.rfind('"')
-                if last_quote > 0:
-                    # Truncate to last complete value and close
-                    last_comma = partial.rfind(",", 0, last_quote)
-                    if last_comma > 0:
-                        partial = partial[:last_comma] + "}"
+                last_comma = partial.rfind(",")
+                last_colon = partial.rfind(":")
+                if last_comma > 0 and last_comma > last_colon:
+                    # Truncate at last comma (last complete key-value pair) and close
+                    partial = partial[:last_comma] + "}"
+                elif last_colon > 0:
+                    # We're mid-value after a colon; check if value is a string
+                    after_colon = partial[last_colon + 1:].strip()
+                    if after_colon.startswith('"'):
+                        # String value was truncated — close the string and object
+                        partial = partial.rstrip('"') + '"}'
                     else:
-                        partial = partial + '"}'
+                        # Non-string value (number/bool) was truncated — drop this key-value
+                        last_comma_before = partial.rfind(",", 0, last_colon)
+                        if last_comma_before > 0:
+                            partial = partial[:last_comma_before] + "}"
+                        else:
+                            partial = partial + "}"
+                else:
+                    partial = partial + "}"
             try:
                 data = json.loads(partial)
             except json.JSONDecodeError:
@@ -819,7 +872,7 @@ async def call_claude_api(
             usage = body.get("usage", {})
             input_tokens = usage.get("input_tokens", 0)
             output_tokens = usage.get("output_tokens", 0)
-            cost_tracker.add(input_tokens, output_tokens, "claude")
+            await cost_tracker.add(input_tokens, output_tokens, "claude")
 
             return text, input_tokens, output_tokens
 
@@ -851,7 +904,7 @@ async def call_gemini_api(
         client, system_prompt, user_message,
         temperature=temperature, timeout=timeout, semaphore=API_SEMAPHORE,
     )
-    cost_tracker.add(inp, out, "gemini")
+    await cost_tracker.add(inp, out, "gemini")
     return text, inp, out
 
 
@@ -893,22 +946,26 @@ async def run_agent(
         f"{game.team_a} stats: adj_o={game.stats_a.get('adj_o', '?')}, "
         f"adj_d={game.stats_a.get('adj_d', '?')}, tempo={game.stats_a.get('adj_tempo', '?')}, "
         f"3PT%={game.stats_a.get('three_pt_pct', '?')}, record={game.stats_a.get('record', '?')}, "
-        f"conference={game.stats_a.get('conference', '?')}, "
+        f"conference={game.stats_a.get('conference', '?')} "
+        f"({_get_conf_tier_label(game.stats_a.get('conference', ''))}), "
         f"KenPom={game.stats_a.get('kenpom_rank', '?')}"
         + (f", last_10={game.stats_a['last_10_record']}" if game.stats_a.get('last_10_record') else "")
         + (f", streak={game.stats_a['current_streak']}" if game.stats_a.get('current_streak') else "")
         + (f", conf_tourney={game.stats_a['conference_tourney_result']}" if game.stats_a.get('conference_tourney_result') else "")
         + (f", form_notes={game.stats_a['recent_form_notes']}" if game.stats_a.get('recent_form_notes') else "")
+        + (f", tournament_wins={' → '.join(game.stats_a['tournament_wins'])}" if game.stats_a.get('tournament_wins') else "")
         + "\n\n"
         f"{game.team_b} stats: adj_o={game.stats_b.get('adj_o', '?')}, "
         f"adj_d={game.stats_b.get('adj_d', '?')}, tempo={game.stats_b.get('adj_tempo', '?')}, "
         f"3PT%={game.stats_b.get('three_pt_pct', '?')}, record={game.stats_b.get('record', '?')}, "
-        f"conference={game.stats_b.get('conference', '?')}, "
+        f"conference={game.stats_b.get('conference', '?')} "
+        f"({_get_conf_tier_label(game.stats_b.get('conference', ''))}), "
         f"KenPom={game.stats_b.get('kenpom_rank', '?')}"
         + (f", last_10={game.stats_b['last_10_record']}" if game.stats_b.get('last_10_record') else "")
         + (f", streak={game.stats_b['current_streak']}" if game.stats_b.get('current_streak') else "")
         + (f", conf_tourney={game.stats_b['conference_tourney_result']}" if game.stats_b.get('conference_tourney_result') else "")
         + (f", form_notes={game.stats_b['recent_form_notes']}" if game.stats_b.get('recent_form_notes') else "")
+        + (f", tournament_wins={' → '.join(game.stats_b['tournament_wins'])}" if game.stats_b.get('tournament_wins') else "")
         + "\n"
     )
 
@@ -924,7 +981,7 @@ async def run_agent(
         await asyncio.sleep(random.uniform(0.1, 0.5))
         raw = get_mock_response(agent.name, game.team_a, game.team_b)
         input_tokens, output_tokens = 500, 150
-        cost_tracker.add(input_tokens, output_tokens, agent.model)
+        await cost_tracker.add(input_tokens, output_tokens, agent.model)
     else:
         # Dynamic temperature: close games get more creative/varied responses
         temp = _game_temperature(agent.temperature, game.seed_a, game.seed_b)
@@ -959,15 +1016,40 @@ async def run_agent(
             error=f"Unparseable response: {raw[:200]}",
         )
 
-    # Apply bias boost
+    # Apply bias boost — only in the toss-up zone (55-68) to act as tie-breaker,
+    # not double-counting when the agent is already confident from its prompt bias
     bias_a = game.stats_a.get(agent.bias_field, 0)
     bias_b = game.stats_b.get(agent.bias_field, 0)
+
+    # Handle non-numeric bias fields
+    if agent.bias_field == "record":
+        # Extract wins from "W-L" format; more wins = better
+        def _parse_wins(val):
+            if isinstance(val, str) and "-" in val:
+                try:
+                    return int(val.split("-")[0])
+                except ValueError:
+                    return 0
+            return 0
+        bias_a, bias_b = _parse_wins(bias_a), _parse_wins(bias_b)
+    elif agent.bias_field == "current_streak":
+        # Parse streak: "W7" > "W3" > "L2"; winning streaks positive, losing negative
+        def _parse_streak(val):
+            if isinstance(val, str) and len(val) >= 2:
+                try:
+                    num = int(val[1:])
+                    return num if val[0].upper() == "W" else -num
+                except ValueError:
+                    return 0
+            return 0
+        bias_a, bias_b = _parse_streak(bias_a), _parse_streak(bias_b)
+
     if agent.bias_field == "adj_d":
         bias_team = game.team_a if bias_a < bias_b else game.team_b
     else:
         bias_team = game.team_a if bias_a > bias_b else game.team_b
 
-    if parsed["pick"] == bias_team:
+    if parsed["pick"] == bias_team and 55 <= parsed["confidence"] <= 68:
         parsed["confidence"] = min(99, parsed["confidence"] + agent.bias_boost)
 
     return AgentVote(
@@ -1009,7 +1091,7 @@ async def run_conductor(
             "weighted_agent": "Iron Curtain — defensive matchup is the swing factor",
             "dissent_report": "Glass Cannon's argument about shooting upside is valid but high-variance.",
         })
-        cost_tracker.add(600, 200, "claude")
+        await cost_tracker.add(600, 200, "claude")
     else:
         raw, _, _ = await call_claude_api(
             client, system_prompt, user_message, temperature=0.4
@@ -1127,8 +1209,33 @@ def generate_debate_transcript(debate: GameDebate) -> str:
 
     pick_counts: dict[str, list[str]] = {}
     for v in debate.votes:
-        if v.pick:
+        if v.pick and not v.error:
             pick_counts.setdefault(v.pick, []).append(v.agent_name)
+
+    # Specialist vote split (show emoji-name pairs)
+    if pick_counts:
+        sorted_teams = sorted(pick_counts.items(), key=lambda x: len(x[1]), reverse=True)
+        majority_team = sorted_teams[0][0]
+        majority_count = len(sorted_teams[0][1])
+        minority_count = sum(len(agents) for _, agents in sorted_teams[1:])
+        vote_emojis = []
+        for v in debate.votes:
+            if v.pick and not v.error:
+                emoji = AGENT_EMOJIS.get(v.agent_name, "")
+                vote_emojis.append(f"{emoji}{v.pick}")
+        lines.append(f"\n---\n### Specialist Vote: {majority_count}-{minority_count} {majority_team}\n")
+        lines.append(" ".join(vote_emojis) + "\n")
+
+        # Show if Conductor agreed or disagreed
+        if debate.conductor:
+            if debate.conductor.pick == majority_team:
+                lines.append(f"CONDUCTOR AGREES: {debate.conductor.pick} ({debate.conductor.confidence}%)\n")
+            else:
+                lines.append(
+                    f"CONDUCTOR OVERRIDE: {debate.conductor.pick} ({debate.conductor.confidence}%) "
+                    f"— sided with the minority\n"
+                )
+
     lines.append("\n---\n### Vote Tally\n")
     for team, agents in pick_counts.items():
         lines.append(f"- **{team}**: {', '.join(agents)} ({len(agents)} votes)")
@@ -1150,6 +1257,7 @@ async def analyze_game(
     groupthink_tracker: dict | None = None,
     agent_memory: dict[str, list[str]] | None = None,
     odds_data: list | None = None,
+    verbose: bool = False,
 ) -> GameDebate:
 
     log.info(
@@ -1166,10 +1274,69 @@ async def analyze_game(
             mem_ctx = "\n".join(recent)
         tasks.append(run_agent(client, agent, game, dry_run=dry_run, memory_context=mem_ctx))
 
-    results = await asyncio.gather(*tasks)
+    results = await asyncio.gather(*tasks, return_exceptions=True)
+
+    # Handle any exceptions returned by gather
+    processed_results = []
+    for i, r in enumerate(results):
+        if isinstance(r, BaseException):
+            agent_name = agents[i].name if i < len(agents) else f"agent_{i}"
+            log.error(f"  {agent_name} raised exception: {r}")
+            processed_results.append(AgentVote(
+                agent_name=agent_name, pick="", confidence=0, reasoning="",
+                model=agents[i].model if i < len(agents) else "claude",
+                error=f"Exception: {r}",
+            ))
+        else:
+            processed_results.append(r)
+    results = processed_results
 
     valid_votes = [v for v in results if not v.error and v.pick]
     failed = [v for v in results if v.error]
+
+    # Retry failed agents up to 2 more times
+    for retry_round in range(2):
+        if not failed:
+            break
+        log.info(f"  Retrying {len(failed)} failed agents (attempt {retry_round + 2}/3)")
+        retry_tasks = []
+        retry_agents_map = {}
+        for fv in failed:
+            agent = next((a for a in agents if a.name == fv.agent_name), None)
+            if agent:
+                mem_ctx = ""
+                if agent_memory and agent.name in agent_memory:
+                    recent = agent_memory[agent.name][-5:]
+                    mem_ctx = "\n".join(recent)
+                retry_tasks.append(run_agent(client, agent, game, dry_run=dry_run, memory_context=mem_ctx))
+                retry_agents_map[len(retry_tasks) - 1] = fv.agent_name
+        retry_results = await asyncio.gather(*retry_tasks, return_exceptions=True)
+
+        # Filter out exceptions from retry results
+        processed_retries = []
+        for idx, rr in enumerate(retry_results):
+            if isinstance(rr, BaseException):
+                agent_name = retry_agents_map.get(idx, f"retry_{idx}")
+                log.error(f"  Retry for {agent_name} raised exception: {rr}")
+                processed_retries.append(AgentVote(
+                    agent_name=agent_name, pick="", confidence=0, reasoning="",
+                    error=f"Retry exception: {rr}",
+                ))
+            else:
+                processed_retries.append(rr)
+        retry_results = processed_retries
+
+        # Replace failed results with successful retries
+        new_results = list(results)
+        for rr in retry_results:
+            # Find and replace the failed entry
+            for i, r in enumerate(new_results):
+                if r.agent_name == rr.agent_name and r.error:
+                    new_results[i] = rr
+                    break
+        results = new_results
+        valid_votes = [v for v in results if not v.error and v.pick]
+        failed = [v for v in results if v.error]
 
     for f in failed:
         log.warning(f"  {f.agent_name} failed: {f.error}")
@@ -1178,6 +1345,24 @@ async def analyze_game(
         log.info(
             f"  {v.agent_name}{model_tag}: {v.pick} ({v.confidence}%) [{v.response_time:.1f}s]"
         )
+
+    if verbose:
+        print(f"\n{'─'*60}")
+        print(f"  DETAILED AGENT RESPONSES ({len(valid_votes)} valid, {len(failed)} failed)")
+        print(f"{'─'*60}")
+        for v in valid_votes:
+            emoji = AGENT_EMOJIS.get(v.agent_name, "")
+            model_tag = f" [{v.model}]" if v.model != "claude" else ""
+            print(f"\n  {emoji} {v.agent_name}{model_tag}")
+            print(f"     Pick: {v.pick} ({v.confidence}%)")
+            print(f"     Reasoning: {v.reasoning}")
+            print(f"     Key stat: {v.key_stat}")
+            print(f"     Response time: {v.response_time:.1f}s")
+        for f_vote in failed:
+            emoji = AGENT_EMOJIS.get(f_vote.agent_name, "")
+            print(f"\n  {emoji} {f_vote.agent_name} — FAILED")
+            print(f"     Error: {f_vote.error}")
+        print(f"{'─'*60}")
 
     if len(valid_votes) < 5:
         log.error(f"  Only {len(valid_votes)} valid votes — need at least 5. Skipping game.")
@@ -1221,13 +1406,95 @@ async def analyze_game(
     if upset_score and upset_score.score >= 40:
         log.info(f"  UPSET WATCH: {upset_score.score}/100 — {upset_score.reasoning}")
 
+    # If devil's advocate made a valid case, include it as a half-weighted 8th vote
+    conductor_votes = list(valid_votes)
+    if devils_advocate_vote and not devils_advocate_vote.error and devils_advocate_vote.pick:
+        # Halve the DA's confidence to represent its reduced weight
+        da_for_conductor = AgentVote(
+            agent_name=f"{devils_advocate_vote.agent_name} (Devil's Advocate)",
+            pick=devils_advocate_vote.pick,
+            confidence=max(50, devils_advocate_vote.confidence // 2),
+            reasoning=f"[DEVIL'S ADVOCATE] {devils_advocate_vote.reasoning}",
+            key_stat=devils_advocate_vote.key_stat,
+            model=devils_advocate_vote.model,
+        )
+        conductor_votes.append(da_for_conductor)
+
     # Run The Conductor
     conductor_decision = await run_conductor(
-        client, game, valid_votes, agent_accuracy, agent_memory, dry_run=dry_run
+        client, game, conductor_votes, agent_accuracy, agent_memory, dry_run=dry_run
     )
+
+    # On unanimous original votes, cap conductor confidence (DA exists for a reason)
+    if devils_advocate_vote and not devils_advocate_vote.error and devils_advocate_vote.pick:
+        if conductor_decision.confidence > 82:
+            conductor_decision.confidence = 82
+
+    # Upset score influences conductor confidence: high upset score caps the favorite
+    if upset_score and upset_score.score >= 60:
+        # Determine if conductor picked the favorite
+        fav_seed = min(game.seed_a, game.seed_b)
+        fav_name = game.team_a if game.seed_a == fav_seed else game.team_b
+        if conductor_decision.pick == fav_name and conductor_decision.confidence > 72:
+            log.info(
+                f"  UPSET SCORE CAP: Score {upset_score.score}/100 → "
+                f"capping favorite confidence from {conductor_decision.confidence} to 72"
+            )
+            conductor_decision.confidence = 72
+
+    # Enforce majority override rule: Conductor cannot override 5-2 or wider splits
+    # But first — use agent accuracy to mechanically adjust the override threshold
+    # If high-accuracy agents are in the minority, lower the override bar
+    pick_counts_check: dict[str, int] = {}
+    for v in valid_votes:
+        if v.pick:
+            pick_counts_check[v.pick] = pick_counts_check.get(v.pick, 0) + 1
+    if pick_counts_check:
+        majority_team = max(pick_counts_check, key=pick_counts_check.get)
+        majority_count = pick_counts_check[majority_team]
+        minority_count = len(valid_votes) - majority_count
+        if majority_count >= 5 and conductor_decision.pick != majority_team:
+            log.warning(
+                f"  CONDUCTOR OVERRIDE BLOCKED: Tried to pick {conductor_decision.pick} "
+                f"against {majority_count}-{minority_count} majority for {majority_team}. "
+                f"Forcing majority pick."
+            )
+            # Calculate average confidence of majority agents
+            majority_confs = [v.confidence for v in valid_votes if v.pick == majority_team]
+            avg_conf = int(sum(majority_confs) / len(majority_confs)) if majority_confs else 65
+            conductor_decision.pick = majority_team
+            conductor_decision.confidence = avg_conf
+            conductor_decision.dissent_report = (
+                f"[OVERRIDE: Conductor was overridden — original pick disagreed with "
+                f"{majority_count}-{minority_count} specialist majority] "
+                + conductor_decision.dissent_report
+            )
+
     log.info(
         f"  CONDUCTOR: {conductor_decision.pick} ({conductor_decision.confidence}%)"
     )
+
+    if verbose:
+        # Print vote tally and conductor decision
+        pc = {}
+        for v in valid_votes:
+            if v.pick:
+                pc[v.pick] = pc.get(v.pick, 0) + 1
+        majority_team_v = max(pc, key=pc.get) if pc else "?"
+        majority_n = pc.get(majority_team_v, 0)
+        minority_n = len(valid_votes) - majority_n
+        print(f"\n  VOTE TALLY: {majority_n}-{minority_n} for {majority_team_v}")
+        for v in valid_votes:
+            emoji = AGENT_EMOJIS.get(v.agent_name, "")
+            print(f"    {emoji} {v.agent_name}: {v.pick}")
+        print(f"\n  🎼 CONDUCTOR: {conductor_decision.pick} ({conductor_decision.confidence}%)")
+        if conductor_decision.pick == majority_team_v:
+            print(f"     Status: AGREES with majority")
+        else:
+            print(f"     Status: OVERRIDES majority (picked minority)")
+        print(f"     Key factor: {conductor_decision.key_factor}")
+        print(f"     Dissent report: {conductor_decision.dissent_report}")
+        print()
 
     # Blind spot check
     if conductor_decision.confidence > 85:
@@ -1298,7 +1565,8 @@ async def analyze_game(
         "vote_count_b": sum(1 for v in valid_votes if v.pick == game.team_b),
         "analyzed_at": debate.timestamp,
     }
-    supabase_client.write_game_result(game_record)
+    if not supabase_client.write_game_result(game_record):
+        log.warning(f"  Supabase: failed to write game result for {game.id}")
 
     vote_records = []
     for v in valid_votes:
@@ -1312,16 +1580,20 @@ async def analyze_game(
             "model": v.model,
         })
     if vote_records:
-        supabase_client.write_agent_votes(vote_records)
+        if not supabase_client.write_agent_votes(vote_records):
+            log.warning(f"  Supabase: failed to write agent votes for {game.id}")
 
     # Update status.json
-    supabase_client.write_status({
-        "current_game": game_index,
-        "total_games": total_games,
-        "last_completed": f"#{game.seed_a} {game.team_a} vs #{game.seed_b} {game.team_b}",
-        "last_pick": conductor_decision.pick,
-        "last_confidence": conductor_decision.confidence,
-    })
+    try:
+        supabase_client.write_status({
+            "current_game": game_index,
+            "total_games": total_games,
+            "last_completed": f"#{game.seed_a} {game.team_a} vs #{game.seed_b} {game.team_b}",
+            "last_pick": conductor_decision.pick,
+            "last_confidence": conductor_decision.confidence,
+        })
+    except Exception as e:
+        log.warning(f"  Failed to write status.json: {e}")
 
     # Save debate transcript
     transcript = generate_debate_transcript(debate)
@@ -1456,16 +1728,65 @@ def advance_bracket(
 
 
 def _get_winner_data(debate: GameDebate) -> dict:
-    """Extract winner's data from a completed debate."""
+    """Extract winner's data from a completed debate, updating tournament context."""
     pick = debate.conductor.pick
-    if pick == debate.game.team_a:
-        stats = debate.game.stats_a.copy()
-        stats["name"] = debate.game.team_a
-        stats["seed"] = debate.game.seed_a
+    g = debate.game
+    if pick == g.team_a:
+        stats = g.stats_a.copy()
+        stats["name"] = g.team_a
+        stats["seed"] = g.seed_a
+        opponent_seed = g.seed_b
+        opponent_name = g.team_b
     else:
-        stats = debate.game.stats_b.copy()
-        stats["name"] = debate.game.team_b
-        stats["seed"] = debate.game.seed_b
+        stats = g.stats_b.copy()
+        stats["name"] = g.team_b
+        stats["seed"] = g.seed_b
+        opponent_seed = g.seed_a
+        opponent_name = g.team_a
+
+    # --- Update tournament context for later rounds ---
+    round_display = ROUND_DISPLAY.get(g.round_name, g.round_name)
+
+    # Track tournament wins for momentum agents
+    tourney_wins = stats.get("tournament_wins", [])
+    tourney_wins.append(f"Beat #{opponent_seed} {opponent_name} in {round_display}")
+    stats["tournament_wins"] = tourney_wins
+
+    # Update streak: every win extends it
+    streak = stats.get("current_streak", "W0")
+    if isinstance(streak, str) and streak.startswith("W"):
+        try:
+            n = int(streak[1:])
+            stats["current_streak"] = f"W{n + 1}"
+        except ValueError:
+            stats["current_streak"] = "W1"
+    else:
+        stats["current_streak"] = "W1"
+
+    # Update last_10 to reflect the tournament win
+    last_10 = stats.get("last_10_record", "5-5")
+    if isinstance(last_10, str) and "-" in last_10:
+        try:
+            w, l = last_10.split("-")
+            w, l = int(w), int(l)
+            # Slide the window: add a W, drop oldest assumed split
+            w = min(10, w + 1)
+            total = w + l
+            if total > 10:
+                l = max(0, l - 1)
+            stats["last_10_record"] = f"{w}-{l}"
+        except ValueError:
+            pass
+
+    # Add tournament journey to form notes so narrative agents can use it
+    journey = " → ".join(tourney_wins)
+    stats["recent_form_notes"] = (
+        f"NCAA Tournament run: {journey}. "
+        f"Confidence: {debate.conductor.confidence}% in last win."
+    )
+    stats["conference_tourney_result"] = stats.get("conference_tourney_result", "") + \
+        f" | NCAA: {len(tourney_wins)} win(s)"
+
     return stats
 
 
@@ -1511,6 +1832,13 @@ async def run_bracket(args):
     agent_memory: dict[str, list[str]] = {}
     groupthink_tracker: dict = {"unanimous": 0, "total": 0}
 
+    # Validate Supabase configuration
+    sb_client = supabase_client.get_client()
+    if sb_client is None:
+        log.warning("Supabase is not configured — game results will NOT be persisted to the database.")
+    else:
+        log.info("Supabase client initialized successfully.")
+
     # Load odds data if available
     odds_data = None
     if not args.dry_run:
@@ -1521,7 +1849,26 @@ async def run_bracket(args):
             pass
 
     # Load games
-    if args.single_game:
+    if args.game:
+        # Run a specific game by team name
+        bracket = load_bracket()
+        if bracket:
+            all_games = generate_first_round_games(bracket)
+            game_filter = args.game.lower()
+            matched = [g for g in all_games
+                       if g.team_a.lower() in game_filter or g.team_b.lower() in game_filter
+                       or game_filter in g.team_a.lower() or game_filter in g.team_b.lower()]
+            if not matched:
+                log.error(f"No game found matching '{args.game}'. Available teams:")
+                for g in all_games:
+                    log.error(f"  #{g.seed_a} {g.team_a} vs #{g.seed_b} {g.team_b}")
+                return
+            all_rounds = {"R64": matched[:1]}
+            log.info(f"Running specific game: #{matched[0].seed_a} {matched[0].team_a} vs #{matched[0].seed_b} {matched[0].team_b}")
+        else:
+            log.error("No bracket_loader.py found.")
+            return
+    elif args.single_game:
         bracket = load_bracket()
         if bracket:
             all_rounds = {"R64": generate_first_round_games(bracket)[:1]}
@@ -1573,6 +1920,8 @@ async def run_bracket(args):
     game_counter = 0
     all_debates: list[GameDebate] = []
     upset_watch: list[dict] = []
+    conductor_override_count = 0
+    full_agent_count = 0
 
     async with httpx.AsyncClient() as client:
         current_round = "R64"
@@ -1594,9 +1943,24 @@ async def run_bracket(args):
                     groupthink_tracker=groupthink_tracker,
                     agent_memory=agent_memory,
                     odds_data=odds_data,
+                    verbose=getattr(args, 'verbose', False),
                 )
                 round_debates.append(debate)
                 all_debates.append(debate)
+
+                # Track agent completion and conductor overrides
+                valid = [v for v in debate.votes if not v.error and v.pick]
+                if len(valid) == 7:
+                    full_agent_count += 1
+                if debate.conductor and valid:
+                    pc = {}
+                    for v in valid:
+                        if v.pick:
+                            pc[v.pick] = pc.get(v.pick, 0) + 1
+                    if pc:
+                        majority_t = max(pc, key=pc.get)
+                        if debate.conductor.pick != majority_t:
+                            conductor_override_count += 1
 
                 # Track upsets
                 if debate.upset_score and debate.upset_score.score >= 40:
@@ -1636,6 +2000,8 @@ async def run_bracket(args):
     if gt["total"] > 0:
         rate = gt["unanimous"] / gt["total"]
         print(f"Groupthink rate: {rate:.0%} ({gt['unanimous']}/{gt['total']} unanimous)")
+    print(f"Full agent responses (7/7): {full_agent_count}/{game_counter}")
+    print(f"Conductor overrides of majority: {conductor_override_count}/{game_counter}")
 
     if upset_watch:
         print(f"\nUPSET WATCH ({len(upset_watch)} flagged):")
@@ -1712,6 +2078,9 @@ def main():
     parser.add_argument("--multi-model", action="store_true",
                         help="Split agents across Claude and Gemini for model diversity")
     parser.add_argument("-y", "--yes", action="store_true", help="Skip confirmation prompt")
+    parser.add_argument("--verbose", action="store_true", help="Print detailed agent responses")
+    parser.add_argument("--game", type=str, default=None,
+                        help="Run a specific game by team name (e.g. 'UCLA vs UCF')")
     args = parser.parse_args()
 
     asyncio.run(run_bracket(args))
