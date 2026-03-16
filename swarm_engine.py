@@ -334,6 +334,11 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
         "- 50-54: Coin flip. You could argue either side. Use this MORE than you think you should.\n\n"
         "If you're giving 85+ confidence on anything other than a 1v16 or 2v15, you better have an extraordinary reason. "
         "Most Round of 64 games between seeds 5-12 should have confidence between 55-72.\n\n"
+        "PICK CONSISTENCY — THIS IS MANDATORY:\n"
+        "Your pick MUST be logically consistent with your argument. If your analysis says Team A "
+        "has serious problems, you CANNOT then pick Team A. Pick the team your analysis supports. "
+        "If you argue the underdog has the edge, PICK the underdog. Do NOT argue for one team "
+        "and then pick the other out of caution.\n\n"
         "BANNED PHRASES — never use these cliches:\n"
         "- 'house money' — find an original way to express the concept\n"
         "- 'playing with confidence' — be more specific about WHY\n"
@@ -617,8 +622,11 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
                 "- Repeat other agents' analytical points about efficiency or shooting\n"
                 "- Cite historical base rates (that's Oracle's lane)\n"
                 "- Talk about coaching pedigree (that's Road Dog's lane)\n"
-                "Focus on hidden circumstances: injuries, fatigue, travel, locker room dynamics, schedule disadvantages.\n"
-                "Do NOT mention winning streaks, conference tournament wins, or 'peaking' — those are Streak's words.\n"
+                "Focus EXCLUSIVELY on hidden circumstances: injuries, fatigue, travel, locker room dynamics, schedule disadvantages.\n"
+                "ABSOLUTE BAN: Do NOT mention winning streaks, conference tournament wins, 'peaking', 'momentum', "
+                "'on a roll', or any form of streak/momentum language. Those words belong to Streak ONLY.\n"
+                "If you catch yourself writing about a team's winning streak, DELETE IT and replace with a "
+                "circumstance observation (fatigue, rest days, travel distance, injury concern, chemistry red flag).\n"
                 "YOUR unique value is what's happening BEHIND THE SCENES that nobody else is analyzing.\n\n"
                 "YOUR ANALYSIS MUST BE:\n"
                 "- Maximum 40 words for your argument\n"
@@ -898,6 +906,11 @@ def build_conductor_prompt(
         "influential, what the key uncertainty drivers are, and highlight any Round 2 position changes.\n\n"
         "BLIND SPOT CHECK: If your confidence is above 85 AND any agent dissented with confidence "
         "above 60, you MUST lower your confidence. No game with genuine dissent is a 85%+ lock.\n\n"
+        "ROUND 2 FLIPS — YOU MUST ENGAGE WITH THESE:\n"
+        "When agents change position in Round 2, you MUST address the specific argument that caused "
+        "the flip and explain why it was or wasn't compelling. Do NOT dismiss flippers — engage with "
+        "their reasoning. A flip means an agent saw evidence strong enough to change their mind. "
+        "That evidence deserves a direct response, not a hand-wave.\n\n"
         "YOUR VERDICT MUST BE:\n"
         "- Maximum 50 words total\n"
         "- Name the winner(s) and loser(s) of the debate\n"
@@ -905,10 +918,10 @@ def build_conductor_prompt(
         "- One memorable closing line\n\n"
         "Respond with ONLY a JSON object:\n"
         '{"pick": "<exact team name>", "confidence": <50-99>, '
-        '"reasoning": "<max 50 words — name debate winners/losers, deliver verdict, end with one memorable line>", '
+        '"reasoning": "<max 50 words — name debate winners/losers, engage with any flips, deliver verdict, end with one memorable line>", '
         '"key_factor": "<the single most important factor>", '
         '"weighted_agent": "<the 1-2 agents who won the debate>", '
-        '"dissent_report": "<the 1-2 agents who lost the debate and why>"}\n'
+        '"dissent_report": "<the 1-2 agents who lost the debate and why — if they flipped, address what caused the flip>"}\n'
     )
 
 
