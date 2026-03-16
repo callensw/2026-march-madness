@@ -200,10 +200,14 @@ def get_game_weights(
     game,  # Game dataclass
     agent_accuracy: dict[str, dict] | None = None,
     round_number: int = 1,
+    prev_most_weighted: str | None = None,
 ) -> dict[str, float]:
     """
     Compute per-agent weights based on the dominant matchup characteristics.
     Replaces static AGENT_WEIGHTS with feature-driven selection.
+
+    If prev_most_weighted is set, that agent's weight is reduced by 0.5x
+    to force rotation of the primary analytical lens across consecutive games.
 
     Returns dict mapping agent name to weight multiplier.
     """
@@ -290,6 +294,12 @@ def get_game_weights(
                 elif acc < 0.40:
                     weights[agent_name] *= 0.7
 
+    # RED FLAG 1 FIX: Prevent same agent from dominating consecutive games.
+    # If an agent was most-weighted in the previous game, halve their weight
+    # for this game to force rotation of the primary analytical lens.
+    if prev_most_weighted and prev_most_weighted in weights:
+        weights[prev_most_weighted] *= 0.5
+
     return weights
 
 
@@ -358,6 +368,13 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
         "A 15-point efficiency edge means the favorite wins about 65 out of 100 games, not 90 out of 100. "
         "Treat efficiency as a PROBABILITY, not a guarantee. If your confidence exceeds 70% on any game "
         "between seeds 5-12, you need an extraordinary reason beyond just 'they have better numbers.'\n\n"
+        "CONFERENCE TOURNAMENT REGRESSION WARNING:\n"
+        "A single impressive tournament game does NOT predict future performance. Teams that peak in "
+        "conference tournaments often lose early in the NCAA tournament (fatigue, small sample size, "
+        "regression to mean). Weight SEASON-LONG performance over conference tournament results. "
+        "If a team's most impressive data point is a single blowout win in their conference tournament, "
+        "that is a WEAK signal — one game is noise, not a trend. Their seed and KenPom ranking reflect "
+        "their full body of work and are more predictive than any single game.\n\n"
         "CONFIDENCE CALIBRATION — THIS IS CRITICAL:\n"
         "- 95+: Historic mismatch. Think 1-seed vs 16-seed with a 30+ KenPom gap.\n"
         "- 85-94: Strong favorite but upsets at this level happen ~10% of the time.\n"
@@ -402,7 +419,12 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
     )
 
     json_instructions = (
-        "\nYou MUST respond with ONLY a JSON object, no other text. Format:\n"
+        "\nTEAM NAME ACCURACY — CRITICAL:\n"
+        "You are analyzing ONLY the two teams in this game. Do NOT reference any other teams currently "
+        "in the tournament by name in your analysis — only reference historical teams from PAST "
+        "tournaments (e.g., '2018 UMBC' is fine, but mentioning a current tournament team not in this "
+        "game is FORBIDDEN). Double-check that every team name you write is actually in this matchup.\n\n"
+        "You MUST respond with ONLY a JSON object, no other text. Format:\n"
         '{"team_a_win_prob": <0.0 to 1.0>, "uncertainty": <0.0 to 0.20>, '
         '"reasoning": "<max 40 words>", "key_stat": "<specific number or fact>"}\n'
         "team_a_win_prob: your estimated probability that the FIRST team listed wins (0.0 = no chance, 1.0 = certain).\n"
@@ -740,6 +762,13 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
                 "HISTORICAL BASE RATES (first round, higher seed win %):\n"
                 "1v16: 99.3% | 2v15: 93.8% | 3v14: 85.2% | 4v13: 79.1%\n"
                 "5v12: 64.2% | 6v11: 62.5% | 7v10: 60.8% | 8v9: 51.4%\n\n"
+                "4v13 CALIBRATION CHECK:\n"
+                "13-seeds win ~21% of the time (roughly 1 per tournament across 4 games). "
+                "If you are analyzing a 4v13 game, your STARTING upset probability must be ~21%. "
+                "If the 13-seed has: conference tournament champion + 25+ wins + above-average 3PT% "
+                "(>34%), this is the STRONGEST 13-seed archetype and you should be at 30-40% upset "
+                "probability. You should pick at least one 13-seed upset per tournament if ANY 13-seed "
+                "matches the Cinderella archetype.\n\n"
                 "CRITICAL — UPSET PROBABILITY MATCHING:\n"
                 "You don't just pick winners — you provide calibrated predictions that MATCH base rates "
                 "over many games. This means:\n"
@@ -938,6 +967,9 @@ def build_conductor_prompt(
         "and NOT to make your own independent assessment. Your job is to SYNTHESIZE the agents' "
         "analyses using weighted averaging.\n\n"
         "WEIGHTING RULES:\n"
+        "- You CANNOT weight the same agent as 'most influential' in consecutive games. If an agent "
+        "was most weighted in the last game, a DIFFERENT agent must be most weighted in this game. "
+        "Rotate your primary analytical lens to avoid systematic bias.\n"
         "- Identify the SINGLE most important factor in this game (pace mismatch? defensive gap? "
         "shooting disparity? experience gap? injury concern? historical pattern?)\n"
         "- The agent whose specialty MATCHES that key factor gets 2x weight:\n"
@@ -967,7 +999,12 @@ def build_conductor_prompt(
         "- If 4-3: You make an independent judgment call, weighting the most relevant "
         "specialist 2x. This is the ONLY scenario where you should frequently disagree "
         "with the slim majority.\n"
-        "- NEVER pick the minority side on a 5-2 or wider split.\n\n"
+        "- NEVER pick the minority side on a 5-2 or wider split.\n"
+        "- SYMMETRY RULE: Your override logic must be SEED-BLIND. The probability math "
+        "determines the pick regardless of which team is the higher seed. If the math "
+        "says pick the underdog, pick the underdog — do NOT apply extra scrutiny to "
+        "upsets that you wouldn't apply to chalk picks. Overriding toward chalk and "
+        "overriding toward upsets should happen at equal rates.\n\n"
         "- You MUST write a 'dissent_report': acknowledge the STRONGEST counter-argument\n\n"
         f"AGENT TRACK RECORDS THIS SESSION:\n{accuracy_block}\n"
         f"{memory_block}\n"
@@ -991,6 +1028,13 @@ def build_conductor_prompt(
         "influential, what the key uncertainty drivers are, and highlight any Round 2 position changes.\n\n"
         "BLIND SPOT CHECK: If your confidence is above 85 AND any agent dissented with confidence "
         "above 60, you MUST lower your confidence. No game with genuine dissent is a 85%+ lock.\n\n"
+        "LATE-ROUND CHALK CHECK (Sweet 16 and beyond):\n"
+        "Historical context: The average Final Four has 1-2 one-seeds, not 3-4. Three or four 1-seeds "
+        "reaching the Final Four has only happened 4 times since 1985 (2008, 2007, 1993, and never 4). "
+        "If this bracket is trending toward 3+ one-seeds in the Final Four, scrutinize whether you're "
+        "overweighting efficiency metrics and underweighting upset variance in later rounds. 1-seeds "
+        "lose in the Sweet 16 or Elite 8 roughly 40% of the time combined. Give genuine weight to the "
+        "underdog's path — they earned their way here by winning multiple tournament games.\n\n"
         "ROUND 2 FLIPS — YOU MUST ENGAGE WITH THESE:\n"
         "When agents change position in Round 2, you MUST address the specific argument that caused "
         "the flip and explain why it was or wasn't compelling. Do NOT dismiss flippers — engage with "
@@ -1151,7 +1195,27 @@ def calculate_upset_score(game: Game, votes: list[AgentVote]) -> UpsetScore | No
     else:
         conf_factor = 0
 
-    total_score = min(100, vote_factor + hist_factor + stat_factor + conf_factor)
+    # RED FLAG 5: 4v13 Cinderella boost — 13-seeds with strong profiles
+    # Conference champ + 25+ wins + good shooting = classic upset archetype
+    cinderella_bonus = 0
+    if seeds == (4, 13):
+        dog_record = dog_stats.get("record", "")
+        dog_wins = 0
+        if "-" in str(dog_record):
+            try:
+                dog_wins = int(str(dog_record).split("-")[0])
+            except ValueError:
+                pass
+        dog_three = dog_stats.get("three_pt_pct", 0)
+        dog_conf_champ = dog_stats.get("conf_tourney_champ", False)
+        if dog_wins >= 25 and dog_three > 34:
+            cinderella_bonus += 10
+            stat_edges.append(f"13-seed Cinderella profile: {dog_wins}W, {dog_three}% 3PT")
+        if dog_conf_champ:
+            cinderella_bonus += 5
+            stat_edges.append("Conference tournament champion")
+
+    total_score = min(100, vote_factor + hist_factor + stat_factor + conf_factor + cinderella_bonus)
 
     vote_str = f"{dog_votes}-{total_votes - dog_votes} for {dog}" if dog_votes > 0 else f"0-{total_votes} (no upset support)"
 
@@ -1166,6 +1230,50 @@ def calculate_upset_score(game: Game, votes: list[AgentVote]) -> UpsetScore | No
             f"Agent support: {vote_str}."
         ),
     )
+
+
+# ---------------------------------------------------------------------------
+# RED FLAG 4: Hallucination guard — validate team names in reasoning
+# ---------------------------------------------------------------------------
+# Common NCAA tournament teams that could be confused with each other
+_CONFUSABLE_TEAMS = {
+    "vcu": "vanderbilt", "vanderbilt": "vcu",
+    "uconn": "unc", "unc": "uconn",
+    "michigan": "michigan state", "michigan state": "michigan",
+    "ohio state": "ohio", "ohio": "ohio state",
+}
+
+
+def check_reasoning_hallucination(
+    reasoning: str, team_a: str, team_b: str, agent_name: str
+) -> str | None:
+    """
+    Check if agent reasoning mentions teams not in this game.
+    Returns a warning string if hallucination is detected, None otherwise.
+    """
+    import re as _re
+
+    # Build set of acceptable team name fragments
+    valid_fragments = set()
+    for team in (team_a, team_b):
+        valid_fragments.add(team.lower())
+        # Add common abbreviations/fragments
+        for word in team.lower().split():
+            if len(word) > 3:  # skip "the", "of", etc.
+                valid_fragments.add(word)
+
+    # Look for team-like proper nouns in reasoning that aren't in this game
+    # Match capitalized words that look like team names (2+ consecutive caps words)
+    # Also check for known confusable teams
+    reasoning_lower = reasoning.lower()
+    for confusable, confused_with in _CONFUSABLE_TEAMS.items():
+        if confusable in reasoning_lower and confusable not in " ".join(valid_fragments):
+            return (
+                f"HALLUCINATION WARNING: {agent_name} mentioned '{confusable}' "
+                f"but this game is {team_a} vs {team_b}. "
+                f"Possibly confused with {confused_with}."
+            )
+    return None
 
 
 # ---------------------------------------------------------------------------
@@ -1854,13 +1962,15 @@ async def run_conductor(
     agent_memory: dict[str, list[str]] | None = None,
     dry_run: bool = False,
     round2_votes: list[AgentVote] | None = None,
+    prev_most_weighted: str | None = None,
 ) -> ConductorDecision:
     system_prompt = build_conductor_prompt(game, votes, agent_accuracy, agent_memory, round2_votes)
     user_message = "Make your final decision. Respond with ONLY the JSON object."
 
     # Compute feature-driven weights for this specific matchup
     round_num = {"R64": 1, "R32": 2, "S16": 3, "E8": 4, "F4": 5, "NCG": 6}.get(game.round_name, 1)
-    game_wts = get_game_weights(game, agent_accuracy, round_number=round_num)
+    game_wts = get_game_weights(game, agent_accuracy, round_number=round_num,
+                                prev_most_weighted=prev_most_weighted)
 
     # Compute mathematical probability combination from the FINAL round votes
     final_votes = round2_votes if round2_votes else votes
@@ -2106,6 +2216,7 @@ async def analyze_game(
     verbose: bool = False,
     tournament_memory: TournamentMemoryStore | None = None,
     live_mode: bool = False,
+    prev_most_weighted: str | None = None,
 ) -> GameDebate:
 
     # Pillar 5: Create trace for this game
@@ -2360,12 +2471,28 @@ async def analyze_game(
     conductor_decision = await run_conductor(
         client, game, conductor_votes, agent_accuracy, agent_memory, dry_run=dry_run,
         round2_votes=valid_r2 if valid_r2 else None,
+        prev_most_weighted=prev_most_weighted,
     )
 
     # On unanimous original votes, cap conductor confidence (DA exists for a reason)
     if devils_advocate_vote and not devils_advocate_vote.error and devils_advocate_vote.pick:
         if conductor_decision.confidence > 82:
             conductor_decision.confidence = 82
+
+        # RED FLAG 7: Stronger scrutiny for unanimous UPSET picks.
+        # If all 7 agents unanimously picked the lower seed, apply extra skepticism.
+        # Even Oracle (who should favor the higher seed by base rate) agreed — investigate.
+        fav_seed = min(game.seed_a, game.seed_b)
+        fav_name = game.team_a if game.seed_a == fav_seed else game.team_b
+        if conductor_decision.pick != fav_name:
+            # Unanimous upset — cap confidence further and log for review
+            if conductor_decision.confidence > 72:
+                log.warning(
+                    f"  UNANIMOUS UPSET SCRUTINY: 7-0 for underdog {conductor_decision.pick} "
+                    f"over #{fav_seed} {fav_name}. Capping confidence from "
+                    f"{conductor_decision.confidence} to 72."
+                )
+                conductor_decision.confidence = 72
 
     # Upset score influences conductor confidence: high upset score caps the favorite
     if upset_score and upset_score.score >= 60:
@@ -2406,6 +2533,18 @@ async def analyze_game(
                 f"{majority_count}-{minority_count} specialist majority] "
                 + conductor_decision.dissent_report
             )
+
+    # RED FLAG 4: Check for hallucinated team names in conductor and agent reasoning
+    for v in valid_votes:
+        hall_warn = check_reasoning_hallucination(v.reasoning, game.team_a, game.team_b, v.agent_name)
+        if hall_warn:
+            log.warning(f"  {hall_warn}")
+    if conductor_decision.reasoning:
+        hall_warn = check_reasoning_hallucination(
+            conductor_decision.reasoning, game.team_a, game.team_b, "Conductor"
+        )
+        if hall_warn:
+            log.warning(f"  {hall_warn}")
 
     # Pillar 5: Trace conductor decision
     tracer.log_conductor_decision(
@@ -3000,6 +3139,7 @@ async def run_bracket(args):
     upset_watch: list[dict] = []
     conductor_override_count = 0
     full_agent_count = 0
+    prev_most_weighted: str | None = None  # RED FLAG 1: rotation tracker
 
     async with httpx.AsyncClient() as client:
         current_round = "R64"
@@ -3024,8 +3164,23 @@ async def run_bracket(args):
                     verbose=getattr(args, 'verbose', False),
                     tournament_memory=tournament_memory,
                     live_mode=live_mode,
+                    prev_most_weighted=prev_most_weighted,
                 )
                 round_debates.append(debate)
+
+                # RED FLAG 1: Track most-weighted agent for rotation
+                if debate.conductor and debate.conductor.weighted_agent:
+                    prev_most_weighted = debate.conductor.weighted_agent.split(",")[0].split("—")[0].strip()
+                    # Normalize: just extract the agent name
+                    known_agents = {a.name for a in agents}
+                    if prev_most_weighted not in known_agents:
+                        # Try to fuzzy-match from the weighted_agent string
+                        for name in known_agents:
+                            if name.lower() in debate.conductor.weighted_agent.lower():
+                                prev_most_weighted = name
+                                break
+                        else:
+                            prev_most_weighted = None
                 all_debates.append(debate)
 
                 # Track agent completion and conductor overrides
