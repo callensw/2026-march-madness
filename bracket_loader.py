@@ -28,7 +28,8 @@ BRACKET_2026 = {
       "current_streak": "W7",
       "conference_tourney_result": "ACC Champion (beat Virginia 74-70, beat Clemson, beat FSU)",
       "recent_form_notes": "Won ACC tourney, dominant all year, #1 overall seed",
-      "injury_notes": "Caleb Foster (G) — fractured foot in regular season finale vs UNC, had surgery. Likely OUT unless Duke makes deep run. Averaged 8.5 PPG, elite perimeter defender. Also Patrick Ngongba II questionable with foot soreness."
+      "injury_notes": "Caleb Foster (G) \u2014 fractured foot in regular season finale vs UNC, had surgery. Likely OUT unless Duke makes deep run. Averaged 8.5 PPG, elite perimeter defender. Also Patrick Ngongba II questionable with foot soreness.",
+      "key_players": "1. Cameron Boozer (F, Fr, 22.5 PPG, 10.2 RPG, 4.2 APG) \u2014 primary scorer, double-double machine [NBA]; 2. Isaiah Evans (G, So, 14.9 PPG) \u2014 secondary scorer, 3PT specialist wing [NBA]; 5. Cayden Boozer (G, Fr, 7.1 PPG) \u2014 playmaker, stepped into starting PG a... [NBA]. MISSING: Patrick Ngongba II (10.7 PPG, 6.0 RPG) \u2014 Right foot soreness; missed ACC Tournament, expected back for NCAAs; MISSING: Caleb Foster (8.5 PPG, 3.6 RPG) \u2014 Fractured right foot, had surgery, likely OUT"
     },
     {
       "name": "Ohio State",
@@ -44,7 +45,8 @@ BRACKET_2026 = {
       "last_10_record": "5-5",
       "current_streak": "W1",
       "conference_tourney_result": "Lost Big Ten quarterfinals to Purdue",
-      "recent_form_notes": "Up and down, early Big Ten tourney exit"
+      "recent_form_notes": "Up and down, early Big Ten tourney exit",
+      "key_players": "1. Bruce Thornton (G, Sr, 20.2 PPG, 5.1 RPG) \u2014 primary scorer, floor general, team l... [NBA]; 2. John Mobley Jr. (G, So, 15.7 PPG) \u2014 secondary scorer, elite 3PT specialist [NBA]; 3. Devin Royal (F, Jr, 13.7 PPG, 5.7 RPG) \u2014 versatile forward, inside-outside threat [NBA]; 4. Christoph Tilly (C, Sr, 11.0 PPG) \u2014 interior scorer, rim protector; 5. Amare Bynum (F, Fr, 9.7 PPG) \u2014 sixth man, energy forward"
     },
     {
       "name": "TCU",
@@ -60,7 +62,8 @@ BRACKET_2026 = {
       "last_10_record": "7-3",
       "current_streak": "W1",
       "conference_tourney_result": "Lost Big 12 quarterfinals to Kansas 73-78",
-      "recent_form_notes": "Solid season but early conference tourney exit"
+      "recent_form_notes": "Solid season but early conference tourney exit",
+      "key_players": "1. David Punch (F, So, 13.6 PPG, 6.6 RPG) \u2014 primary interior scorer, physical for... [NBA]; 2. Xavier Edmonds (F, Jr, 12.8 PPG, 6.6 RPG) \u2014 efficient forward, double-double threat; 3. Micah Robinson (F, So, 10.6 PPG) \u2014 athletic 6-6 wing; 4. Jayden Pierre (G, Sr, 10.4 PPG) \u2014 floor general, Providence transfer; 5. Kayden Edwards (G, Fr, 8.5 PPG) \u2014 four-star freshman combo guard"
     },
     {
       "name": "St. John's",
@@ -76,7 +79,8 @@ BRACKET_2026 = {
       "last_10_record": "9-1",
       "current_streak": "W6",
       "conference_tourney_result": "Big East Champion (blew out UConn 72-52 in final)",
-      "recent_form_notes": "Back-to-back Big East champs under Pitino, dominant"
+      "recent_form_notes": "Back-to-back Big East champs under Pitino, dominant",
+      "key_players": "1. Zuby Ejiofor (F/C, Sr, 16.3 PPG, 7.1 RPG) \u2014 primary scorer, Big East POY, defensi... [NBA]; 2. Bryce Hopkins (F, Sr, 13.5 PPG, 6.2 RPG) \u2014 secondary scorer, versatile forward; 3. Oziyah Sellers (G, Sr, 10.7 PPG) \u2014 3PT specialist, perimeter shooter; 4. Ian Jackson (G, So, 9.6 PPG) \u2014 scoring guard, developing wing [NBA]; 5. Joson Sanon (G, So, 8.3 PPG) \u2014 sixth man, spark-plug guard"
     },
     {
       "name": "Northern Iowa",
@@ -92,7 +96,8 @@ BRACKET_2026 = {
       "last_10_record": "8-2",
       "current_streak": "W4",
       "conference_tourney_result": "MVC Champion (beat UIC 84-69)",
-      "recent_form_notes": "Won conference tourney, solid momentum"
+      "recent_form_notes": "Won conference tourney, solid momentum",
+      "key_players": "1. Trey Campbell (G, Sr, 13.2 PPG) \u2014 leading scorer, All-MVC, 50 steals; 2. Leon Bond III (G, Jr, 11.5 PPG, 5.0 RPG) \u2014 All-MVC, All-Defensive, Virginia tran...; 3. Will Hornseth (F, Gr, 11.3 PPG) \u2014 experienced 6-6 grad forward; 4. Tristan Smith (F, Sr, 9.9 PPG, 5.3 RPG) \u2014 physical forward, rebounder; 5. Max Weisbrod (G, Sr, 5.1 PPG) \u2014 bench sharpshooter, 39.6% 3PT"
     },
     {
       "name": "Kansas",
@@ -108,7 +113,8 @@ BRACKET_2026 = {
       "last_10_record": "6-4",
       "current_streak": "L1",
       "conference_tourney_result": "Lost Big 12 semifinals to Houston 47-69",
-      "recent_form_notes": "Beat TCU in QF but blown out by Houston in semis"
+      "recent_form_notes": "Beat TCU in QF but blown out by Houston in semis",
+      "key_players": "1. Darryn Peterson (G, Fr, 19.8 PPG) \u2014 primary scorer, one-and-done star [NBA]; 2. Tre White (G/F, Sr, 13.8 PPG, 6.7 RPG) \u2014 secondary scorer, floor spacer [NBA]; 3. Flory Bidunga (F/C, So, 13.5 PPG, 9.2 RPG) \u2014 rim protector, DPOY candidate, elite ... [NBA]; 4. Melvin Council Jr. (G, Sr, 12.9 PPG, 5.1 APG) \u2014 floor general, lead facilitator; 5. Bryson Tiller (F, Fr, 8.2 PPG, 6.0 RPG) \u2014 versatile forward, rebounder [NBA]"
     },
     {
       "name": "Cal Baptist",
@@ -124,7 +130,8 @@ BRACKET_2026 = {
       "last_10_record": "7-3",
       "current_streak": "W3",
       "conference_tourney_result": "WAC Champion (beat Utah Valley 63-61)",
-      "recent_form_notes": "Won conference tourney in close final"
+      "recent_form_notes": "Won conference tourney in close final",
+      "key_players": "1. Dominique Daniels Jr. (G, Gr, 23.2 PPG) \u2014 WAC POY, top-10 national scorer, 47-p...; 2. Martel Williams (G, Sr, 14.1 PPG) \u2014 second scorer, reliable guard; 3. Jayden Jackson (G, Jr, 7.5 PPG) \u2014 versatile 6-4 guard; 4. Thomas Ndong (F, Jr, 6.8 PPG, 7.1 RPG) \u2014 6-10 OSU transfer, primary rebounder; 5. Jordan Muller (G, Fr, 5.8 PPG) \u2014 freshman, WAC All-Freshman Team"
     },
     {
       "name": "Louisville",
@@ -141,7 +148,8 @@ BRACKET_2026 = {
       "current_streak": "W1",
       "conference_tourney_result": "Lost ACC quarterfinals to Miami 73-78",
       "recent_form_notes": "Beat SMU then lost to Miami in ACC tourney",
-      "injury_notes": "Mikel Brown Jr. (PG) — recurring back injury, sat out ACC Tournament. Averaged 18.2 PPG (25.5 over last 10 healthy games). Goal is to be 100% for NCAA first round but status uncertain."
+      "injury_notes": "Mikel Brown Jr. (PG) \u2014 recurring back injury, sat out ACC Tournament. Averaged 18.2 PPG (25.5 over last 10 healthy games). Goal is to be 100% for NCAA first round but status uncertain.",
+      "key_players": "1. Ryan Conwell (G, Sr, 18.7 PPG) \u2014 primary scorer, elite shot-maker [NBA]; 3. J'Vonne Hadley (G, Sr, 11.8 PPG, 5.2 RPG) \u2014 versatile two-way wing, highly efficient; 4. Isaac McKneely (G, Sr, 10.6 PPG) \u2014 3PT specialist, floor spacer; 5. Sananda Fru (F, Jr, 9.2 PPG, 6.0 RPG) \u2014 interior finisher, ultra-efficient re.... MISSING: Mikel Brown Jr. (18.2 PPG, 3.3 RPG) \u2014 Lower back injury; missed ACC Tournament; hoping to return for NCAAs"
     },
     {
       "name": "USF",
@@ -157,7 +165,8 @@ BRACKET_2026 = {
       "last_10_record": "7-3",
       "current_streak": "W3",
       "conference_tourney_result": "AAC Champion (beat Wichita State 70-55)",
-      "recent_form_notes": "Won conference tourney convincingly"
+      "recent_form_notes": "Won conference tourney convincingly",
+      "key_players": "1. Wes Enis (G, Jr, 16.5 PPG) \u2014 leading scorer, AAC Tourney MOP, 100+ 3s; 2. Izaiyah Nelson (F, Sr, 15.8 PPG, 9.8 RPG) \u2014 AAC POY, near double-double avg, 18 DD; 3. Joseph Pinion (G, Sr, 14.2 PPG) \u2014 elite 3PT (39.1%), career-high season; 4. Josh Omojafo (G, Sr, 11.7 PPG, 5.2 RPG) \u2014 versatile 6-5 guard, strong rebounder; 5. CJ Brown (G, So, 11.4 PPG) \u2014 sophomore guard, playmaker"
     },
     {
       "name": "Michigan State",
@@ -173,7 +182,8 @@ BRACKET_2026 = {
       "last_10_record": "7-3",
       "current_streak": "W2",
       "conference_tourney_result": "Lost Big Ten quarterfinals",
-      "recent_form_notes": "Early Big Ten tourney exit"
+      "recent_form_notes": "Early Big Ten tourney exit",
+      "key_players": "1. Jeremy Fears Jr. (G, Jr, 15.7 PPG, 9.2 APG) \u2014 floor general, elite playmaker (9.2 APG) [NBA]; 2. Jaxon Kohler (F, Sr, 12.7 PPG, 9.0 RPG) \u2014 secondary scorer, lead rebounder, ski...; 3. Coen Carr (F, Jr, 11.6 PPG, 5.4 RPG) \u2014 athletic slasher, rim protector, elit... [NBA]; 4. Carson Cooper (C, Sr, 10.8 PPG, 7.1 RPG) \u2014 rim protector, interior anchor; 5. Kur Teng (G, So, 7.7 PPG) \u2014 sixth man, 3PT specialist off bench"
     },
     {
       "name": "North Dakota State",
@@ -189,7 +199,8 @@ BRACKET_2026 = {
       "last_10_record": "9-1",
       "current_streak": "W8",
       "conference_tourney_result": "Summit League Champion (beat North Dakota 70-62)",
-      "recent_form_notes": "Dominant, 8-game win streak"
+      "recent_form_notes": "Dominant, 8-game win streak",
+      "key_players": "1. Damari Wheeler-Thomas (G, Jr, 14.4 PPG) \u2014 All-Summit League, 1000+ career pts; 2. Trevian Carson (G, Jr, 12.4 PPG, 5.0 RPG) \u2014 All-Summit First Team, JUCO transfer; 3. Treyson Anderson (F, So, 10.6 PPG, 5.8 RPG) \u2014 6-9 interior scorer and rebounder; 4. Andy Stefonowicz (G, So, 9.2 PPG, 4.7 APG) \u2014 PG, primary facilitator, 11-assist game; 5. Noah Feddersen (F, So, 8.5 PPG) \u2014 Summit League 6MOY, 6-10 shot blocker"
     },
     {
       "name": "UCLA",
@@ -205,7 +216,8 @@ BRACKET_2026 = {
       "last_10_record": "5-5",
       "current_streak": "L1",
       "conference_tourney_result": "Lost Big Ten second round to Purdue 66-73",
-      "recent_form_notes": "Disappointing, early conference exit"
+      "recent_form_notes": "Disappointing, early conference exit",
+      "key_players": "1. Tyler Bilodeau (F, Sr, 17.6 PPG, 5.6 RPG) \u2014 primary scorer, stretch-four, elite e... [NBA]; 2. Donovan Dent (G, Sr, 13.5 PPG, 7.6 APG) \u2014 floor general, elite playmaker (7.6 APG) [NBA]; 3. Trent Perry (G, So, 12.7 PPG) \u2014 secondary scorer, 3PT threat; 4. Skyy Clark (G, Sr, 11.7 PPG) \u2014 3PT specialist, floor spacer; 5. Eric Dailey Jr. (F, Jr, 11.3 PPG, 5.8 RPG) \u2014 versatile two-way wing [NBA]"
     },
     {
       "name": "UCF",
@@ -221,7 +233,8 @@ BRACKET_2026 = {
       "last_10_record": "6-4",
       "current_streak": "W1",
       "conference_tourney_result": "Lost Big 12 quarterfinals",
-      "recent_form_notes": "Inconsistent down the stretch"
+      "recent_form_notes": "Inconsistent down the stretch",
+      "key_players": "1. Riley Kugel (G, Sr, 14.4 PPG) \u2014 senior guard, Miss St transfer; 2. Themus Fulks (G, Sr, 14.4 PPG, 6.8 APG) \u2014 All-Big 12, UCF assists record, floor...; 3. Jordan Burks (F, Jr, 13.4 PPG) \u2014 6-9 Georgetown transfer, versatile; 4. Jamichael Stillwell (F, Sr, 12.4 PPG, 9.1 RPG) \u2014 dominant rebounder (9.1 RPG), interio...; 5. George Beale Jr. (G, Sr, 7.2 PPG) \u2014 sixth man, perimeter shooter"
     },
     {
       "name": "UConn",
@@ -237,7 +250,8 @@ BRACKET_2026 = {
       "last_10_record": "7-3",
       "current_streak": "L1",
       "conference_tourney_result": "Lost Big East final to St. John's 52-72",
-      "recent_form_notes": "Strong run to final then blown out by SJU"
+      "recent_form_notes": "Strong run to final then blown out by SJU",
+      "key_players": "1. Tarris Reed Jr. (F, Sr, 13.7 PPG, 8.1 RPG) \u2014 interior anchor, dominant finisher (.... [NBA]; 2. Solomon Ball (G, Jr, 13.5 PPG) \u2014 secondary scorer, shooting guard [NBA]; 3. Alex Karaban (F, Sr, 12.6 PPG, 5.2 RPG) \u2014 stretch-four, two-time national champ... [NBA]; 4. Braylon Mullins (G, Fr, 12.0 PPG) \u2014 freshman scorer, McDonald's All-American [NBA]. MISSING: Silas Demary Jr. (10.9 PPG, 4.5 RPG) \u2014 Left ankle sprain in Big East final; out of boot, expected to play"
     },
     {
       "name": "Furman",
@@ -253,7 +267,8 @@ BRACKET_2026 = {
       "last_10_record": "7-3",
       "current_streak": "W3",
       "conference_tourney_result": "SoCon Champion (beat ETSU 76-61)",
-      "recent_form_notes": "Won conference tourney for auto bid"
+      "recent_form_notes": "Won conference tourney for auto bid",
+      "key_players": "1. Alex Wilkins (G, Fr, 17.7 PPG, 4.9 APG) \u2014 star freshman PG, 34-pt game [NBA]; 2. Cooper Bowser (F, Jr, 13.4 PPG, 6.3 RPG) \u2014 6-11 forward, team block leader; 3. Asa Thomas (G, So, 13.1 PPG) \u2014 6-7 Clemson transfer, versatile wing; 4. Charles Johnston (F, Sr, 10.1 PPG, 9.2 RPG) \u2014 6-11 Australian center, leading rebou...; 5. Gunnar Lewis (G, Sr, 8.5 PPG) \u2014 6-7 FSU transfer, floor spacer"
     },
     {
       "name": "Siena",
@@ -269,7 +284,8 @@ BRACKET_2026 = {
       "last_10_record": "7-3",
       "current_streak": "W3",
       "conference_tourney_result": "MAAC Champion (beat Merrimack 64-54)",
-      "recent_form_notes": "Won conference tourney to earn auto bid"
+      "recent_form_notes": "Won conference tourney to earn auto bid",
+      "key_players": "1. Gavin Doty (G, So, 17.9 PPG, 7.0 RPG) \u2014 leading scorer and rebounder, 31-pt game; 2. Justice Shoats (G, Sr, 13.2 PPG, 4.4 APG) \u2014 senior PG, assist leader, 26 in MAAC ...; 3. Brendan Coyle (F, Sr, 12.8 PPG) \u2014 stretch four, 22 double-figure games; 5. Antonio Chandler (F, Gr, 6.7 PPG, 5.7 RPG) \u2014 grad transfer, interior rebounder. MISSING: Tasman Goodrick (9.7 PPG, 7.3 RPG) \u2014 Season-ending knee injury since December 2025"
     }
   ],
   "West": [
@@ -287,7 +303,8 @@ BRACKET_2026 = {
       "last_10_record": "9-1",
       "current_streak": "W5",
       "conference_tourney_result": "Big 12 Champion (beat Houston 79-74 in final)",
-      "recent_form_notes": "Won Big 12 tourney, dominant"
+      "recent_form_notes": "Won Big 12 tourney, dominant",
+      "key_players": "1. Brayden Burries (G, Fr, 15.9 PPG) \u2014 leading scorer, explosive freshman co... [NBA]; 2. Koa Peat (F, Fr, 13.6 PPG, 5.3 RPG) \u2014 versatile 6-8 freshman forward, elite... [NBA]; 3. Jaden Bradley (G, Sr, 13.4 PPG, 4.6 APG) \u2014 floor general, team leader, Alabama t...; 4. Motiejus Krivas (C, Jr, 10.5 PPG, 8.1 RPG) \u2014 7-2 rim protector, 1.9 BPG, interior ... [NBA]; 5. Tobe Awaka (F, Sr, 9.6 PPG, 7.8 RPG) \u2014 Big 12 Sixth Man of the Year, energy big"
     },
     {
       "name": "Villanova",
@@ -303,7 +320,8 @@ BRACKET_2026 = {
       "last_10_record": "5-5",
       "current_streak": "L2",
       "conference_tourney_result": "Lost Big East QF to Georgetown 64-78",
-      "recent_form_notes": "Poor finish, blown out in conf tourney"
+      "recent_form_notes": "Poor finish, blown out in conf tourney",
+      "key_players": "1. Tyler Perkins (F, Jr, 13.6 PPG, 6.2 RPG) \u2014 team-leading scorer, versatile forward; 2. Duke Brennan (F, So, 12.4 PPG, 8.5 RPG) \u2014 physical interior, double-double threat [NBA]; 3. Acaden Lewis (G, So, 12.4 PPG, 5.8 APG) \u2014 primary ball-handler, leads team in a...; 4. Devin Askew (G, Sr, 11.2 PPG) \u2014 veteran guard, explosive scorer; 5. Eric Dixon Jr. (F, Gr, 10.5 PPG, 5.5 RPG) \u2014 veteran stretch forward"
     },
     {
       "name": "Utah State",
@@ -319,7 +337,8 @@ BRACKET_2026 = {
       "last_10_record": "9-1",
       "current_streak": "W7",
       "conference_tourney_result": "MWC Champion (beat SDSU 73-62)",
-      "recent_form_notes": "Won conference tourney dominantly"
+      "recent_form_notes": "Won conference tourney dominantly",
+      "key_players": "1. MJ Collins (G, Sr, 17.9 PPG) \u2014 leading scorer, MW Tourney MVP, 50% 3PT; 2. Mason Falslev (G, Jr, 16.0 PPG, 6.1 RPG) \u2014 Mountain West POY, all-around playmaker; 3. Garry Clark (F, Gr, 10.3 PPG, 6.8 RPG) \u2014 physical forward, elite offensive reb...; 4. Karson Templin (F, Jr, 8.9 PPG) \u2014 versatile 6-9 stretch forward; 5. Drake Allen (G, Jr, 7.5 PPG) \u2014 starting guard, perimeter shooter"
     },
     {
       "name": "Wisconsin",
@@ -335,7 +354,8 @@ BRACKET_2026 = {
       "last_10_record": "6-4",
       "current_streak": "L1",
       "conference_tourney_result": "Lost Big Ten SF to Michigan 65-68",
-      "recent_form_notes": "Competitive but fell to Michigan"
+      "recent_form_notes": "Competitive but fell to Michigan",
+      "key_players": "1. Nick Boyd (G, Sr, 20.6 PPG, 4.2 APG) \u2014 leading scorer, 4th-highest in progra... [NBA]; 2. John Blackwell (G, Jr, 18.8 PPG) \u2014 dynamic scoring guard, career-high 34... [NBA]; 3. Nolan Winter (C, Jr, 13.5 PPG, 8.7 RPG) \u2014 7-foot center, stretches floor, ancho... [NBA]; 4. Austin Rapp (F, So, 9.3 PPG) \u2014 floor spacer, reliable FT shooter; 5. Braeden Carrington (G, Sr, 8.4 PPG) \u2014 sharpshooting guard, multiple school ..."
     },
     {
       "name": "High Point",
@@ -351,7 +371,8 @@ BRACKET_2026 = {
       "last_10_record": "9-1",
       "current_streak": "W8",
       "conference_tourney_result": "Big South Champion (beat Winthrop 91-76)",
-      "recent_form_notes": "Dominant, 8-game streak, conf champs"
+      "recent_form_notes": "Dominant, 8-game streak, conf champs",
+      "key_players": "1. Terry Anderson (F, Sr, 16.0 PPG, 6.1 RPG) \u2014 leading scorer and rebounder; 2. Rob Martin (G, Sr, 15.0 PPG, 4.5 APG) \u2014 dynamic PG, leads team in assists/steals; 3. Vincent Brady II (G, Sr, 10.5 PPG) \u2014 experienced guard, backcourt depth; 4. Babacar Diallo (G, Jr, 8.2 PPG) \u2014 versatile guard-forward, connector; 5. David Fonville (G, So, 7.5 PPG) \u2014 bench guard, energy scorer"
     },
     {
       "name": "Arkansas",
@@ -367,7 +388,8 @@ BRACKET_2026 = {
       "last_10_record": "9-1",
       "current_streak": "W5",
       "conference_tourney_result": "SEC Champion (beat Vanderbilt 86-75). Acuff 30pts/11ast MVP",
-      "recent_form_notes": "Won SEC tourney first time since 2000. Calipari team peaking"
+      "recent_form_notes": "Won SEC tourney first time since 2000. Calipari team peaking",
+      "key_players": "1. Darius Acuff Jr. (G, Fr, 22.7 PPG, 6.4 APG) \u2014 SEC POY, Wooden finalist, 1st Team Al... [NBA]; 2. Meleek Thomas (G, Fr, 15.6 PPG) \u2014 five-star freshman, SEC All-Freshman [NBA]; 3. Trevon Brazile (F, Sr, 12.8 PPG, 7.2 RPG) \u2014 senior forward, top rebounder; 4. Billy Richmond III (G, So, 11.1 PPG) \u2014 emerging sophomore, SEC postseason ho...; 5. Karter Knox (F, So, 8.4 PPG) \u2014 withdrew from 2025 draft to return"
     },
     {
       "name": "Hawaii",
@@ -383,7 +405,8 @@ BRACKET_2026 = {
       "last_10_record": "7-3",
       "current_streak": "W3",
       "conference_tourney_result": "Big West Champion (beat UC Irvine 71-64)",
-      "recent_form_notes": "Won conference tourney for auto bid"
+      "recent_form_notes": "Won conference tourney for auto bid",
+      "key_players": "1. Isaac Johnson (C, Sr, 13.7 PPG, 8.0 RPG) \u2014 7-0 center, All-Big West, dominant in...; 2. Dre Bullock (G, Gr, 12.3 PPG) \u2014 All-Big West, experienced grad transfer; 3. Harry Rouhliadeff (C, Sr, 11.7 PPG, 5.3 RPG) \u2014 team captain, 4-year player, double-d...; 4. Gytis Nemeiksa (F, Sr, 10.0 PPG, 5.2 RPG) \u2014 preseason All-Big West, Lithuanian fo...; 5. Aaron Hunkin-Claytor (G, So, 8.5 PPG) \u2014 freshman PG, leads team in assists/st..."
     },
     {
       "name": "BYU",
@@ -400,7 +423,8 @@ BRACKET_2026 = {
       "current_streak": "L2",
       "conference_tourney_result": "Lost Big 12 second round",
       "recent_form_notes": "Fading, early conference tourney exit",
-      "injury_notes": "Richie Saunders (W) — torn ACL Feb 14, OUT for season. Averaged 18.0 PPG, shot 38% from three. Team went through rough stretch after injury but recovered late."
+      "injury_notes": "Richie Saunders (W) \u2014 torn ACL Feb 14, OUT for season. Averaged 18.0 PPG, shot 38% from three. Team went through rough stretch after injury but recovered late.",
+      "key_players": "1. AJ Dybantsa (F, Fr, 25.3 PPG, 6.7 RPG) \u2014 Big 12 leading scorer, projected #1 o... [NBA]; 2. Robert Wright III (G, So, 18.5 PPG, 4.8 APG) \u2014 stepped up after Saunders injury, eli... [NBA]; 4. Kennard Davis Jr. (F, Jr, 7.2 PPG) \u2014 SIU transfer, 6-11 forward, scored 20...; 5. Keba Keita (C, Sr, 6.3 PPG, 7.3 RPG) \u2014 elite FG%, leads offensive rebounding. MISSING: Richie Saunders (18.0 PPG, 5.8 RPG) \u2014 Torn ACL Feb 15, OUT for season"
     },
     {
       "name": "NC State",
@@ -416,7 +440,8 @@ BRACKET_2026 = {
       "last_10_record": "5-5",
       "current_streak": "W1",
       "conference_tourney_result": "Lost ACC QF to Virginia 74-81",
-      "recent_form_notes": "At-large bid, lost to Virginia in ACC tourney"
+      "recent_form_notes": "At-large bid, lost to Virginia in ACC tourney",
+      "key_players": "1. Paul McNeil Jr. (G, So, 13.9 PPG) \u2014 Starting shooting guard and elite per...; 2. Quadir Copeland (G, Sr, 13.9 PPG, 6.6 APG) \u2014 Starting point guard and floor genera... [NBA]; 3. Ven-Allen Lubin (F, Sr, 13.9 PPG, 7.2 RPG) \u2014 Starting power forward; ultra-efficie...; 4. Darrion Williams (F, Sr, 13.8 PPG) \u2014 Starting wing forward; versatile two-... [NBA]; 5. Tre Holloman (G, Sr, 9.3 PPG) \u2014 Starting guard; sharpshooter from thr..."
     },
     {
       "name": "Gonzaga",
@@ -433,7 +458,8 @@ BRACKET_2026 = {
       "current_streak": "W3",
       "conference_tourney_result": "WCC Champion (beat Santa Clara 79-68)",
       "recent_form_notes": "Won conference tourney, strong form",
-      "injury_notes": "Braden Huff (F) — dislocated kneecap Jan 14, OUT for first weekend. Was averaging 17.8 PPG, 5.6 RPG. Jogging and shooting but will not play first or second round. Possible return second weekend if team advances."
+      "injury_notes": "Braden Huff (F) \u2014 dislocated kneecap Jan 14, OUT for first weekend. Was averaging 17.8 PPG, 5.6 RPG. Jogging and shooting but will not play first or second round. Possible return second weekend if team advances.",
+      "key_players": "1. Graham Ike (F, Sr, 19.7 PPG, 8.2 RPG) \u2014 Starting power forward and team's lea... [NBA]; 3. Tyon Grant-Foster (G, Sr, 11.2 PPG, 5.0 RPG) \u2014 Sixth man and key reserve wing; athle...; 4. Mario Saint-Supery (G, Fr, 8.6 PPG) \u2014 Freshman guard splitting time between...; 5. Davis Fogle (G, Fr, 8.4 PPG) \u2014 Freshman reserve guard; efficient sco.... MISSING: Braden Huff (17.8 PPG, 5.6 RPG) \u2014 Dislocated kneecap suffered Jan. 15; OUT for first weekend of NCAA Tournament per coach Mark Few"
     },
     {
       "name": "Kennesaw State",
@@ -449,7 +475,8 @@ BRACKET_2026 = {
       "last_10_record": "7-3",
       "current_streak": "W3",
       "conference_tourney_result": "CUSA Champion (beat Louisiana Tech 71-60)",
-      "recent_form_notes": "Won conference tourney for auto bid"
+      "recent_form_notes": "Won conference tourney for auto bid",
+      "key_players": "2. RJ Johnson (G, Jr, 14.5 PPG, 4.0 APG) \u2014 Starting guard and top available scor...; 3. Braedan Lue (F, So, 11.1 PPG, 5.4 RPG) \u2014 Starting forward; versatile scorer an...; 4. Frankquon Sherman (F, Jr, 10.3 PPG, 8.4 RPG) \u2014 Starting forward and leading rebounde...; 5. Trey Simpson (F, Fr, 9.2 PPG) \u2014 Starting freshman forward; emerging s.... MISSING: Simeon Cottle (20.2 PPG, 2.5 RPG) \u2014 Suspended indefinitely since Jan. 15 after federal indictment in point-shaving scheme; will not play in tournament"
     },
     {
       "name": "Miami FL",
@@ -465,7 +492,8 @@ BRACKET_2026 = {
       "last_10_record": "7-3",
       "current_streak": "W2",
       "conference_tourney_result": "Lost ACC SF to Duke",
-      "recent_form_notes": "Beat Louisville in QF, lost to Duke in semis"
+      "recent_form_notes": "Beat Louisville in QF, lost to Duke in semis",
+      "key_players": "1. Malik Reneau (F, Sr, 18.8 PPG, 6.6 RPG) \u2014 Starting power forward and team's lea... [NBA]; 2. Tre Donaldson (G, Sr, 16.5 PPG, 5.8 APG) \u2014 Starting point guard and primary play... [NBA]; 3. Shelton Henderson (F, Fr, 13.7 PPG) \u2014 Starting freshman wing; five-star rec... [NBA]; 4. Tru Washington (G, Jr, 12.1 PPG) \u2014 Starting guard; reliable perimeter sh...; 5. Ernest Udeh Jr. (C, Sr, 6.9 PPG, 9.3 RPG) \u2014 Starting center and elite rebounder; ..."
     },
     {
       "name": "Missouri",
@@ -481,7 +509,8 @@ BRACKET_2026 = {
       "last_10_record": "4-6",
       "current_streak": "L3",
       "conference_tourney_result": "Lost SEC second round",
-      "recent_form_notes": "Terrible form, 3-game losing streak"
+      "recent_form_notes": "Terrible form, 3-game losing streak",
+      "key_players": "1. Mark Mitchell (F, Sr, 18.3 PPG, 5.3 RPG) \u2014 Starting power forward and team's lea... [NBA]; 2. Jayden Stone (G, Sr, 13.2 PPG, 5.0 RPG) \u2014 Starting guard; missed early games wi...; 3. Trent Pierce (F, Jr, 10.6 PPG) \u2014 Starting forward; missed start of sea...; 4. T.O. Barrett (G, So, 8.9 PPG) \u2014 Backup guard and primary ball-handler...; 5. Anthony Robinson II (G, Jr, 8.8 PPG) \u2014 Starting guard; versatile backcourt c..."
     },
     {
       "name": "Purdue",
@@ -497,7 +526,8 @@ BRACKET_2026 = {
       "last_10_record": "9-1",
       "current_streak": "W5",
       "conference_tourney_result": "Big Ten Champion (beat Michigan 80-72). Braden Smith 14pts/11ast",
-      "recent_form_notes": "Won Big Ten tourney with 4 straight wins"
+      "recent_form_notes": "Won Big Ten tourney with 4 straight wins",
+      "key_players": "1. Braden Smith (G, Sr, 14.0 PPG, 9.0 APG) \u2014 Starting point guard and team leader;... [NBA]; 2. Fletcher Loyer (G, Sr, 13.8 PPG) \u2014 Starting shooting guard; elite three-...; 3. Trey Kaufman-Renn (F, Sr, 13.4 PPG, 8.7 RPG) \u2014 Starting power forward; first-team Al... [NBA]; 4. Oscar Cluff (F, Sr, 10.3 PPG, 7.4 RPG) \u2014 Starting center; ultra-efficient rim ...; 5. C.J. Cox (G, So, 8.4 PPG) \u2014 Starting guard; sophomore sharpshoote..."
     },
     {
       "name": "Queens",
@@ -513,7 +543,8 @@ BRACKET_2026 = {
       "last_10_record": "7-3",
       "current_streak": "W2",
       "conference_tourney_result": "ASUN Champion (beat Central Arkansas 98-93 OT)",
-      "recent_form_notes": "Won conf tourney in OT thriller"
+      "recent_form_notes": "Won conf tourney in OT thriller",
+      "key_players": "1. Nasir Mann (F, Sr, 13.4 PPG, 5.8 RPG) \u2014 Starting forward and team's leading s...; 2. Yoav Berman (F, So, 12.6 PPG) \u2014 Starting forward; skilled playmaking ...; 3. Jordan Watford (G, Fr, 11.9 PPG) \u2014 Freshman guard and key reserve; ultra...; 4. Chris Ashby (G, Sr, 11.7 PPG) \u2014 Starting shooting guard; volume three...; 5. Avantae Parker (F, Jr, 11.3 PPG, 5.3 RPG) \u2014 Starting forward; hyper-efficient int..."
     },
     {
       "name": "LIU",
@@ -529,7 +560,8 @@ BRACKET_2026 = {
       "last_10_record": "6-4",
       "current_streak": "W2",
       "conference_tourney_result": "NEC Champion (beat Mercyhurst 79-70)",
-      "recent_form_notes": "Won conference tourney for auto bid"
+      "recent_form_notes": "Won conference tourney for auto bid",
+      "key_players": "1. Jamal Fuller (F, Sr, 16.4 PPG, 5.5 RPG) \u2014 Starting forward and team's leading s...; 2. Malachi Davis (G, Sr, 14.4 PPG) \u2014 Starting guard and primary ball-handl...; 3. Greg Gordon (G, Sr, 14.1 PPG, 5.5 RPG) \u2014 Starting guard; physical guard who ex...; 4. Jomo Goings (G, Jr, 10.0 PPG) \u2014 Starting guard; well-rounded contribu...; 5. Mason Porter-Brown (F, Jr, 7.6 PPG) \u2014 Key reserve forward; efficient scorer..."
     }
   ],
   "Midwest": [
@@ -548,7 +580,8 @@ BRACKET_2026 = {
       "current_streak": "L1",
       "conference_tourney_result": "Lost Big Ten final to Purdue 72-80",
       "recent_form_notes": "Great season but lost Big Ten final",
-      "injury_notes": "L.J. Cason (G) — torn ACL late February, OUT. Averaged 8.4 PPG off bench. Hurts depth but Michigan still has plenty of firepower."
+      "injury_notes": "L.J. Cason (G) \u2014 torn ACL late February, OUT. Averaged 8.4 PPG off bench. Hurts depth but Michigan still has plenty of firepower.",
+      "key_players": "1. Yaxel Lendeborg (F, Sr, 14.4 PPG, 7.0 RPG) \u2014 Big Ten POY, versatile senior forward [NBA]; 2. Morez Johnson Jr. (F, So, 13.3 PPG, 7.3 RPG) \u2014 explosive sophomore, 7-2 wingspan, ph... [NBA]; 3. Aday Mara (C, Jr, 11.6 PPG, 6.9 RPG) \u2014 7-3 center, elite rim protector, skil... [NBA]; 4. Elliot Cadeau (G, Jr, 10.2 PPG, 5.4 APG) \u2014 starting PG, UNC transfer, team assis...; 5. Trey McKenney (G, Fr, 9.7 PPG) \u2014 freshman sharpshooter, expanded role ..."
     },
     {
       "name": "Georgia",
@@ -564,7 +597,8 @@ BRACKET_2026 = {
       "last_10_record": "5-5",
       "current_streak": "L2",
       "conference_tourney_result": "Lost SEC second round to Ole Miss 72-76",
-      "recent_form_notes": "Fading, early SEC exit"
+      "recent_form_notes": "Fading, early SEC exit",
+      "key_players": "1. Jeremiah Wilkinson (G, So, 17.0 PPG) \u2014 leading scorer, Cal transfer; 2. Blue Cain (G, Jr, 13.3 PPG, 5.1 RPG) \u2014 breakout junior, elite FT (90.5%) [NBA]; 3. Kanon Catchings (F, So, 12.0 PPG) \u2014 versatile sophomore, reliable 3PT; 4. Marcus Millender (G, Jr, 11.9 PPG, 4.0 APG) \u2014 team assist leader, strong 3PT off bench; 5. Somto Cyril (C, So, 9.6 PPG, 5.6 RPG) \u2014 elite FG% (76.4%), interior finisher"
     },
     {
       "name": "Saint Louis",
@@ -580,7 +614,8 @@ BRACKET_2026 = {
       "last_10_record": "9-1",
       "current_streak": "W7",
       "conference_tourney_result": "A-10 Champion (won 4 games)",
-      "recent_form_notes": "Dominant A-10 tourney run, 7-game streak"
+      "recent_form_notes": "Dominant A-10 tourney run, 7-game streak",
+      "key_players": "1. Robbie Avila (C, Sr, 12.9 PPG, 4.1 APG) \u2014 A-10 POY, 6-10 skilled passer, 3PT bi... [NBA]; 2. Dion Brown (G, Sr, 11.1 PPG, 5.5 RPG) \u2014 elite efficiency (60.6% FG, 40.4% 3PT); 3. Trey Green (G, Jr, 11.1 PPG) \u2014 elite 3PT sniper (45.7%); 4. Amari McCottry (G, So, 10.3 PPG, 5.2 RPG) \u2014 all-around sophomore, strong rebounder; 5. Kellen Thames (G, Jr, 9.9 PPG) \u2014 school-record FG%, A-10 Third Team, 4..."
     },
     {
       "name": "Texas Tech",
@@ -597,7 +632,8 @@ BRACKET_2026 = {
       "current_streak": "L1",
       "conference_tourney_result": "Lost Big 12 QF to Iowa State 53-75",
       "recent_form_notes": "Blown out by Iowa State in conf tourney",
-      "injury_notes": "JT Toppin (F) — torn ACL Feb 17, OUT for season. Was averaging 21.8 PPG, 10.8 RPG on 54.8% shooting. Consensus All-American, Big 12 Player of the Year. Team went 3-3 without him. Replaced by Luke Bamgboye (3.9 PPG). This is a completely different team without their best player."
+      "injury_notes": "JT Toppin (F) \u2014 torn ACL Feb 17, OUT for season. Was averaging 21.8 PPG, 10.8 RPG on 54.8% shooting. Consensus All-American, Big 12 Player of the Year. Team went 3-3 without him. Replaced by Luke Bamgboye (3.9 PPG). This is a completely different team without their best player.",
+      "key_players": "2. Christian Anderson (G, So, 18.9 PPG, 7.6 APG) \u2014 star PG, Wooden ballot, projected 1st... [NBA]; 3. Donovan Atwell (F, Sr, 13.5 PPG) \u2014 senior sharpshooter, 45.4% 3PT; 4. LeJuan Watts (F, Jr, 11.5 PPG, 6.0 RPG) \u2014 6-6 wing, increased post duties with ...; 5. Jaylen Petty (G, Fr, 9.5 PPG) \u2014 freshman stepped into starting lineup. MISSING: JT Toppin (21.8 PPG, 10.8 RPG) \u2014 Torn ACL Feb 18, OUT for season"
     },
     {
       "name": "Akron",
@@ -613,7 +649,8 @@ BRACKET_2026 = {
       "last_10_record": "9-1",
       "current_streak": "W6",
       "conference_tourney_result": "MAC Champion (beat Toledo 79-76)",
-      "recent_form_notes": "Won conference tourney, strong momentum"
+      "recent_form_notes": "Won conference tourney, strong momentum",
+      "key_players": "1. Tavari Johnson (G, Sr, 20.1 PPG, 5.0 APG) \u2014 MAC star, 20+ PPG, MAC Tourney hero (...; 2. Amani Lyles (F, Sr, 14.6 PPG, 8.0 RPG) \u2014 double-double threat, leading rebounder; 3. Shammah Scott (G, Sr, 12.7 PPG) \u2014 elite 3PT (42.2%), instant offense of...; 4. Evan Mahaffey (F, Sr, 10.2 PPG, 5.6 RPG) \u2014 most versatile player, strong passer ...; 5. Bowen Hardman (G, Sr, 7.9 PPG) \u2014 bench sharpshooter, 40.7% 3PT"
     },
     {
       "name": "Alabama",
@@ -629,7 +666,8 @@ BRACKET_2026 = {
       "last_10_record": "5-5",
       "current_streak": "L1",
       "conference_tourney_result": "Lost SEC QF to Ole Miss 79-80",
-      "recent_form_notes": "Upset by 15-seed Ole Miss, shaky"
+      "recent_form_notes": "Upset by 15-seed Ole Miss, shaky",
+      "key_players": "1. Labaron Philon (G, So, 21.7 PPG, 4.7 APG) \u2014 All-SEC, elite shot creator, projecte... [NBA]; 2. Aden Holloway (G, Jr, 16.8 PPG) \u2014 Auburn transfer, elite 3PT (43.8%); 3. Latrell Wrightsell Jr. (G, Sr, 12.8 PPG) \u2014 veteran guard, prior Achilles tear, i...; 4. Amari Allen (F, Fr, 11.7 PPG, 7.1 RPG) \u2014 freshman sensation, projected top-20 ... [NBA]; 5. Aiden Sherrell (F, So, 11.1 PPG, 6.1 RPG) \u2014 efficient interior scorer, started al..."
     },
     {
       "name": "Hofstra",
@@ -645,7 +683,8 @@ BRACKET_2026 = {
       "last_10_record": "8-2",
       "current_streak": "W4",
       "conference_tourney_result": "CAA Champion (beat Monmouth 75-69)",
-      "recent_form_notes": "Won conference tourney, rolling"
+      "recent_form_notes": "Won conference tourney, rolling",
+      "key_players": "1. Cruz Davis (G, Sr, 20.2 PPG, 4.6 APG) \u2014 CAA star, 20+ PPG, dropped 36 at Pitt; 2. Preston Edmead (G, Fr, 15.9 PPG, 4.4 APG) \u2014 dynamic freshman, top CAA freshman; 3. James Patterson (G, Sr, 9.5 PPG, 5.6 RPG) \u2014 strong rebounder for guard (5.6 RPG); 4. German Plotnikov (G, Sr, 9.3 PPG) \u2014 consistent starter, reliable 3PT; 5. Joshua DeCady (F, So, 6.3 PPG) \u2014 sophomore forward, provides size"
     },
     {
       "name": "Tennessee",
@@ -661,7 +700,8 @@ BRACKET_2026 = {
       "last_10_record": "6-4",
       "current_streak": "L1",
       "conference_tourney_result": "Lost SEC QF to Vanderbilt 68-75",
-      "recent_form_notes": "Lost to Vanderbilt in SEC tourney"
+      "recent_form_notes": "Lost to Vanderbilt in SEC tourney",
+      "key_players": "1. Ja'Kobi Gillespie (G, Sr, 18.0 PPG, 5.5 APG) \u2014 leading scorer, veteran leader, 32 vs...; 2. Nate Ament (F, Fr, 17.5 PPG, 6.6 RPG) \u2014 star freshman, projected top-10 NBA pick [NBA]; 3. J.P. Estrella (F, Jr, 10.1 PPG, 5.2 RPG) \u2014 elite efficiency (61.4% FG), interior...; 4. Felix Okpara (C, Sr, 7.7 PPG, 6.2 RPG) \u2014 starting center, rim protector, defen...; 5. Jaylen Carey (F, Jr, 7.4 PPG, 6.2 RPG) \u2014 energy rebounder off bench, no 3PT at..."
     },
     {
       "name": "SMU",
@@ -677,7 +717,8 @@ BRACKET_2026 = {
       "last_10_record": "5-5",
       "current_streak": "L1",
       "conference_tourney_result": "Lost ACC second round to Louisville 58-62",
-      "recent_form_notes": "Early ACC exit, First Four team"
+      "recent_form_notes": "Early ACC exit, First Four team",
+      "key_players": "1. Kevin Miller (G, Sr, 19.2 PPG, 6.4 APG) \u2014 primary scorer, All-ACC Second Team; 2. Jaron Pierre Jr. (G, Sr, 17.6 PPG) \u2014 second scorer, 6-6 wing [NBA]; 5. Samet Yigitoglu (C, So, 10.8 PPG, 7.9 RPG) \u2014 7-2 center, dominant rebounder, rim f.... MISSING: B.J. Edwards (12.7 PPG, 5.9 RPG) \u2014 Ankle injury; missed last 5 games; questionable for NCAAs; MISSING: Corey Washington (11.3 PPG, 4.9 RPG) \u2014 Shoulder injury in ACC Tournament; status uncertain"
     },
     {
       "name": "Virginia",
@@ -693,7 +734,8 @@ BRACKET_2026 = {
       "last_10_record": "8-2",
       "current_streak": "W3",
       "conference_tourney_result": "Lost ACC final to Duke 70-74",
-      "recent_form_notes": "Strong run, lost close final to Duke"
+      "recent_form_notes": "Strong run, lost close final to Duke",
+      "key_players": "1. Thijs De Ridder (F, Fr, 15.5 PPG, 6.2 RPG) \u2014 leading scorer, 6-9 Belgian freshman [NBA]; 2. Malik Thomas (G, Sr, 12.4 PPG) \u2014 veteran guard, second scorer; 3. Sam Lewis (G, Jr, 10.8 PPG) \u2014 elite 3PT shooter (40.7%); 4. Chance Mallory (G, Fr, 9.5 PPG) \u2014 freshman guard, primary facilitator; 5. Jacari White (G, Sr, 8.8 PPG) \u2014 sixth man, elite 3PT (43.0%)"
     },
     {
       "name": "Wright State",
@@ -709,7 +751,8 @@ BRACKET_2026 = {
       "last_10_record": "7-3",
       "current_streak": "W3",
       "conference_tourney_result": "Horizon Champion (beat Detroit Mercy 66-63)",
-      "recent_form_notes": "Won conf tourney in close final"
+      "recent_form_notes": "Won conf tourney in close final",
+      "key_players": "1. Michael Cooper (G, Fr, 13.4 PPG) \u2014 freshman PG, leading scorer, breakout...; 2. TJ Burch (G, So, 12.3 PPG) \u2014 HL Tourney MVP, DPOY, Newcomer of Year; 3. Michael Imariagbe (F, Sr, 11.8 PPG, 7.0 RPG) \u2014 leading rebounder, efficient interior...; 4. Solomon Callaghan (G, So, 9.9 PPG) \u2014 elite FT shooter (92.2%), 3PT threat; 5. Dominic Pangonis (G, So, 9.0 PPG) \u2014 key reserve, efficient shooter"
     },
     {
       "name": "Kentucky",
@@ -725,7 +768,8 @@ BRACKET_2026 = {
       "last_10_record": "5-5",
       "current_streak": "L1",
       "conference_tourney_result": "Lost SEC QF to Florida 63-71",
-      "recent_form_notes": "Lost to Florida in SEC tourney"
+      "recent_form_notes": "Lost to Florida in SEC tourney",
+      "key_players": "1. Otega Oweh (G, Sr, 18.2 PPG) \u2014 leading scorer, All-SEC Second Team [NBA]; 2. Denzel Aberdeen (G, Sr, 13.2 PPG) \u2014 team assist leader, backcourt partner; 3. Collin Chandler (G, So, 9.9 PPG) \u2014 elite 3PT shooter (42.7%); 4. Mouhamed Dioubate (F, Jr, 8.7 PPG, 5.5 RPG) \u2014 physical interior, second rebounder; 5. Malachi Moreno (C, Fr, 8.0 PPG, 6.4 RPG) \u2014 leading rebounder, All-SEC Freshman, ... [NBA]"
     },
     {
       "name": "Santa Clara",
@@ -741,7 +785,8 @@ BRACKET_2026 = {
       "last_10_record": "8-2",
       "current_streak": "W4",
       "conference_tourney_result": "Lost WCC final to Gonzaga 68-79",
-      "recent_form_notes": "Strong run, lost conf final"
+      "recent_form_notes": "Strong run, lost conf final",
+      "key_players": "1. Christian Hammond (G, So, 15.8 PPG) \u2014 leading scorer, All-WCC First Team; 2. Elijah Mahi (F, Sr, 13.9 PPG) \u2014 veteran forward, All-WCC First Team; 3. Allen Graves (F, Fr, 11.6 PPG, 6.5 RPG) \u2014 WCC FOY & 6MOY, drawing NBA attention [NBA]; 4. Aleksandar Gavalyugov (G, Fr, 8.8 PPG) \u2014 key reserve, playmaking guard; 5. Bukky Oboye (C, So, 8.0 PPG) \u2014 starting center, hyper-efficient (66...."
     },
     {
       "name": "Iowa State",
@@ -757,7 +802,8 @@ BRACKET_2026 = {
       "last_10_record": "7-3",
       "current_streak": "L1",
       "conference_tourney_result": "Lost Big 12 SF to Arizona 80-82",
-      "recent_form_notes": "Good run, lost close SF to Arizona"
+      "recent_form_notes": "Good run, lost close SF to Arizona",
+      "key_players": "1. Milan Momcilovic (F, Jr, 17.1 PPG) \u2014 leading scorer, elite 3PT sniper (49.6%) [NBA]; 2. Joshua Jefferson (F, Sr, 16.9 PPG, 7.6 RPG, 4.9 APG) \u2014 do-it-all wing, projected 1st round pick [NBA]; 3. Tamin Lipsey (G, Sr, 13.3 PPG, 5.0 APG) \u2014 PG, team assist leader (5.0 APG); 4. Blake Buchanan (F, Jr, 8.4 PPG, 5.7 RPG) \u2014 elite finisher (64.5% FG), rebounder; 5. Killyan Toure (G, Fr, 8.1 PPG) \u2014 starting freshman guard"
     },
     {
       "name": "Tennessee State",
@@ -773,7 +819,8 @@ BRACKET_2026 = {
       "last_10_record": "7-3",
       "current_streak": "W3",
       "conference_tourney_result": "OVC Champion (beat Morehead State 93-67)",
-      "recent_form_notes": "Won conf tourney dominantly"
+      "recent_form_notes": "Won conf tourney dominantly",
+      "key_players": "1. Aaron Nkrumah (G, Sr, 17.6 PPG, 5.5 RPG) \u2014 OVC POY, national leader in steals; 2. Travis Harper II (G, Sr, 17.3 PPG) \u2014 All-OVC, elite 3PT (40.1%); 3. Dante Harris (G, Sr, 11.7 PPG, 4.5 APG) \u2014 OVC Tourney MVP, primary playmaker; 4. Antoine Lorick III (F, Jr, 9.5 PPG, 5.0 RPG) \u2014 efficient interior scorer; 5. Jalen Pitre (F, Sr, 6.5 PPG, 6.6 RPG) \u2014 leading rebounder, ultra-efficient (6..."
     },
     {
       "name": "UMBC",
@@ -789,7 +836,8 @@ BRACKET_2026 = {
       "last_10_record": "7-3",
       "current_streak": "W3",
       "conference_tourney_result": "America East Champion (beat Vermont 74-59)",
-      "recent_form_notes": "Won conference tourney for auto bid"
+      "recent_form_notes": "Won conference tourney for auto bid",
+      "key_players": "1. Jah'Likai King (G, Jr, 13.9 PPG) \u2014 leading scorer, America East First Team; 2. DJ Armstrong Jr. (F, Sr, 13.2 PPG) \u2014 Tourney MOP (33 pts in title game), e...; 3. Ace Valentine (G, Jr, 12.0 PPG, 4.0 APG) \u2014 versatile guard, best playmaker (4.0 ...; 4. Caden Diggs (F, So, 9.8 PPG) \u2014 ODU transfer, well-rounded scorer; 5. Josh Odunowo (F, Gr, 8.6 PPG, 5.2 RPG) \u2014 leading rebounder, veteran interior p..."
     }
   ],
   "South": [
@@ -807,7 +855,8 @@ BRACKET_2026 = {
       "last_10_record": "6-4",
       "current_streak": "L1",
       "conference_tourney_result": "Lost SEC SF to Vanderbilt 74-91",
-      "recent_form_notes": "Blown out by Vandy in SEC semis"
+      "recent_form_notes": "Blown out by Vandy in SEC semis",
+      "key_players": "1. Thomas Haugh (F, Jr, 17.1 PPG, 6.2 RPG) \u2014 primary scorer, versatile forward [NBA]; 2. Alex Condon (F, Jr, 15.0 PPG, 7.7 RPG) \u2014 skilled 6-11 forward, secondary playm... [NBA]; 3. Boogie Fland (G, So, 11.6 PPG) \u2014 dynamic guard, pick-and-roll prowess [NBA]; 4. Xaivian Lee (G, Sr, 11.5 PPG, 4.2 APG) \u2014 floor general, scores at all three le... [NBA]; 5. Rueben Chinyelu (C, Jr, 11.2 PPG, 11.5 RPG) \u2014 elite rebounder (11.5 RPG), paint def... [NBA]"
     },
     {
       "name": "Clemson",
@@ -824,7 +873,8 @@ BRACKET_2026 = {
       "current_streak": "L1",
       "conference_tourney_result": "Lost ACC SF to Duke 61-73",
       "recent_form_notes": "Good run to ACC semis, lost to Duke",
-      "injury_notes": "Carter Welling (C) — torn ACL March 12 in ACC Tournament, OUT for season. Averaged 10.2 PPG, 5.4 RPG. Significant frontcourt depth loss."
+      "injury_notes": "Carter Welling (C) \u2014 torn ACL March 12 in ACC Tournament, OUT for season. Averaged 10.2 PPG, 5.4 RPG. Significant frontcourt depth loss.",
+      "key_players": "1. RJ Godfrey (F, Sr, 11.9 PPG, 5.3 RPG) \u2014 leading scorer, highly efficient forward; 3. Jestin Porter (G, Sr, 9.6 PPG) \u2014 perimeter shooter, starting guard; 4. Nick Davidson (F, Sr, 9.1 PPG) \u2014 versatile bench forward, efficient sc...; 5. Ace Buckner (G, So, 8.4 PPG) \u2014 bench guard, scoring depth. MISSING: Carter Welling (10.2 PPG, 5.4 RPG) \u2014 Torn ACL in ACC Tournament, OUT for season"
     },
     {
       "name": "Iowa",
@@ -840,7 +890,8 @@ BRACKET_2026 = {
       "last_10_record": "5-5",
       "current_streak": "L2",
       "conference_tourney_result": "Lost Big Ten second round",
-      "recent_form_notes": "Inconsistent, early conference exit"
+      "recent_form_notes": "Inconsistent, early conference exit",
+      "key_players": "1. Bennett Stirtz (G, Sr, 20.0 PPG, 4.5 APG) \u2014 star player, best passer in 2026 draf... [NBA]; 2. Tavion Banks (G, Sr, 10.5 PPG) \u2014 sharpshooting guard, elite 3PT (47.2%); 3. Alvaro Folgueiras (F, Jr, 8.1 PPG) \u2014 versatile bench forward; 4. Cooper Koch (F, So, 7.7 PPG) \u2014 starting forward, reliable 3PT shooter; 5. Cam Manyawu (F, Jr, 7.1 PPG) \u2014 interior forward, elite finishing eff..."
     },
     {
       "name": "Vanderbilt",
@@ -856,7 +907,8 @@ BRACKET_2026 = {
       "last_10_record": "8-2",
       "current_streak": "W2",
       "conference_tourney_result": "Lost SEC final to Arkansas 75-86",
-      "recent_form_notes": "Beat Tennessee and upset #1 Florida but lost final"
+      "recent_form_notes": "Beat Tennessee and upset #1 Florida but lost final",
+      "key_players": "1. Tyler Tanner (G, So, 19.2 PPG, 5.3 APG) \u2014 leading scorer, floor general, lotter... [NBA]; 2. Duke Miles (G, Sr, 16.4 PPG, 4.3 APG) \u2014 veteran backcourt partner, elite FT s...; 3. Tyler Nickel (F, Sr, 13.3 PPG) \u2014 sharpshooting forward, floor spacer; 4. AK Okereke (F, Sr, 9.8 PPG) \u2014 versatile senior forward, efficient s...; 5. Devin McGlockton (F, Sr, 9.7 PPG, 6.7 RPG) \u2014 physical interior forward, leading re..."
     },
     {
       "name": "McNeese",
@@ -872,7 +924,8 @@ BRACKET_2026 = {
       "last_10_record": "9-1",
       "current_streak": "W9",
       "conference_tourney_result": "Southland Champion (beat SFA 76-59)",
-      "recent_form_notes": "9-game streak, conf champs, dominant"
+      "recent_form_notes": "9-game streak, conf champs, dominant",
+      "key_players": "1. Larry Johnson (G, So, 17.5 PPG, 5.5 RPG) \u2014 leading scorer, explosive, can put up...; 2. Tyshawn Archie (G, Jr, 14.3 PPG) \u2014 second scorer, elite FT, 3PT specialist; 3. Javohn Garcia (G, Sr, 12.0 PPG) \u2014 veteran guard, efficient scorer; 4. DJ Richards (G, Sr, 8.3 PPG) \u2014 bench scorer, 3PT specialist; 5. Garwey Dual (G, Jr, 8.2 PPG, 4.3 APG) \u2014 playmaking guard, team assist leader"
     },
     {
       "name": "Nebraska",
@@ -888,7 +941,8 @@ BRACKET_2026 = {
       "last_10_record": "8-2",
       "current_streak": "W3",
       "conference_tourney_result": "Lost Big Ten semifinals",
-      "recent_form_notes": "Good Big Ten tourney showing"
+      "recent_form_notes": "Good Big Ten tourney showing",
+      "key_players": "1. Pryce Sandfort (F, Jr, 17.8 PPG) \u2014 star player, elite 3PT shooter [NBA]; 2. Rienk Mast (F, Sr, 13.5 PPG, 5.8 RPG) \u2014 veteran forward, versatile playmaker; 3. Braden Frager (F, Fr, 11.6 PPG) \u2014 talented freshman, efficient bench sc...; 4. Jamarques Lawrence (G, Sr, 9.7 PPG, 4.0 APG) \u2014 starting PG, primary distributor; 5. Sam Hoiberg (G, Sr, 9.6 PPG, 5.3 RPG, 4.3 APG) \u2014 versatile guard, elite efficiency, co..."
     },
     {
       "name": "Troy",
@@ -904,7 +958,8 @@ BRACKET_2026 = {
       "last_10_record": "6-4",
       "current_streak": "W2",
       "conference_tourney_result": "Sun Belt Champion (beat Georgia Southern 77-61)",
-      "recent_form_notes": "Won conf tourney for auto bid"
+      "recent_form_notes": "Won conf tourney for auto bid",
+      "key_players": "1. Thomas Dowd (F, Jr, 14.8 PPG, 10.1 RPG) \u2014 double-double machine (14.8/10.1); 2. Victor Valdes (F, Jr, 14.8 PPG, 4.6 APG) \u2014 co-leading scorer, top playmaker; 3. Theo Seng (F, Sr, 12.9 PPG, 5.8 RPG) \u2014 efficient starting forward; 4. Cooper Campbell (G, So, 12.7 PPG, 4.2 APG) \u2014 explosive scoring guard, strong 3PT; 5. Cobi Campbell (G, Sr, 9.0 PPG) \u2014 3PT specialist (40.4%)"
     },
     {
       "name": "UNC",
@@ -921,7 +976,8 @@ BRACKET_2026 = {
       "current_streak": "L1",
       "conference_tourney_result": "Lost ACC QF to Clemson 79-80",
       "recent_form_notes": "Lost close game to Clemson in ACC tourney",
-      "injury_notes": "Caleb Wilson (F) — OUT for tournament. Originally fractured left hand Feb 10, then broke right thumb in practice March 5 while rehabbing. Was averaging ~20 PPG, 9+ RPG. Team is significantly weakened without their best player."
+      "injury_notes": "Caleb Wilson (F) \u2014 OUT for tournament. Originally fractured left hand Feb 10, then broke right thumb in practice March 5 while rehabbing. Was averaging ~20 PPG, 9+ RPG. Team is significantly weakened without their best player.",
+      "key_players": "2. Henri Veesaar (F, Sr, 16.7 PPG, 8.7 RPG) \u2014 7-foot Arizona transfer, elite effici... [NBA]; 3. Seth Trimble (G, Sr, 14.0 PPG) \u2014 veteran guard, expanded role with Wil...; 4. Luka Bogavac (G, Jr, 9.8 PPG) \u2014 3PT shooter, perimeter scoring; 5. Jarin Stevenson (F, Jr, 8.0 PPG) \u2014 versatile forward, bigger role with W.... MISSING: Caleb Wilson (19.8 PPG, 9.4 RPG) \u2014 Fractured left hand + broken right thumb, OUT for season"
     },
     {
       "name": "VCU",
@@ -937,7 +993,8 @@ BRACKET_2026 = {
       "last_10_record": "8-2",
       "current_streak": "W4",
       "conference_tourney_result": "A-10 Champion (beat Dayton 70-62)",
-      "recent_form_notes": "Won A-10 tourney, strong form"
+      "recent_form_notes": "Won A-10 tourney, strong form",
+      "key_players": "1. Terrence Hill Jr. (G, So, 14.6 PPG) \u2014 leading scorer, elite sixth man, All-...; 2. Lazar Djokovic (F, Jr, 13.7 PPG, 5.6 RPG) \u2014 interior scorer, starting forward, Al...; 3. Jadrian Tracey (G, Sr, 10.1 PPG) \u2014 starting guard, perimeter scorer; 4. Brandon Jennings (G, So, 8.8 PPG) \u2014 starting guard, playmaker, All-Defens...; 5. Nyk Lewis (G, Fr, 8.5 PPG) \u2014 starting freshman guard, A-10 Rookie ..."
     },
     {
       "name": "Illinois",
@@ -953,7 +1010,8 @@ BRACKET_2026 = {
       "last_10_record": "7-3",
       "current_streak": "W2",
       "conference_tourney_result": "Lost Big Ten quarterfinals",
-      "recent_form_notes": "Decent but early Big Ten exit"
+      "recent_form_notes": "Decent but early Big Ten exit",
+      "key_players": "1. Keaton Wagler (G, Fr, 17.9 PPG, 4.3 APG) \u2014 primary scorer, unanimous Big Ten Fre... [NBA]; 2. Kylan Boswell (G, Sr, 13.3 PPG) \u2014 starting combo guard, secondary score...; 3. David Mirkovic (F, Fr, 13.2 PPG, 7.8 RPG) \u2014 starting forward, double-double threa... [NBA]; 4. Tomislav Ivisic (C, Sr, 10.0 PPG, 5.6 RPG) \u2014 starting center, rim protector, inter...; 5. Ben Humrichous (F, Gr, 6.3 PPG) \u2014 starting stretch four, veteran leader..."
     },
     {
       "name": "Penn",
@@ -969,7 +1027,8 @@ BRACKET_2026 = {
       "last_10_record": "7-3",
       "current_streak": "W2",
       "conference_tourney_result": "Ivy League Champion (beat Yale 88-84 OT)",
-      "recent_form_notes": "Won Ivy tourney in OT"
+      "recent_form_notes": "Won Ivy tourney in OT",
+      "key_players": "2. TJ Power (F, Jr, 15.4 PPG, 6.8 RPG) \u2014 Ivy Tournament MVP, scored 44 in cham...; 3. AJ Levine (G, So, 12.1 PPG) \u2014 starting guard, clutch performer, hit...; 4. Michael Zanoni (F, Sr, 10.6 PPG) \u2014 starting forward, Mercer transfer, of...; 5. Dylan Williams (G, Sr, 7.2 PPG) \u2014 starting point guard, floor general, .... MISSING: Ethan Roberts (18.0 PPG, 5.2 RPG) \u2014 Concussion; out for Ivy League Tournament and likely NCAA Tournament"
     },
     {
       "name": "Saint Mary's",
@@ -985,7 +1044,8 @@ BRACKET_2026 = {
       "last_10_record": "8-2",
       "current_streak": "W4",
       "conference_tourney_result": "Lost WCC final to Gonzaga",
-      "recent_form_notes": "Strong form, lost close conference final"
+      "recent_form_notes": "Strong form, lost close conference final",
+      "key_players": "1. Paulius Murauskas (F, Jr, 18.6 PPG, 7.7 RPG) \u2014 primary scorer, WCC scoring leader, A... [NBA]; 2. Mikey Lewis (G, So, 13.9 PPG) \u2014 starting guard, perimeter scorer, hit...; 3. Joshua Dent (G, So, 13.3 PPG, 5.6 APG) \u2014 starting point guard, lead facilitato...; 4. Andrew McKeever (C, So, 8.3 PPG, 9.1 RPG) \u2014 starting center, WCC leading rebounde...; 5. Dillan Shaw (G, Fr, 7.5 PPG, 5.3 RPG) \u2014 key bench contributor, combo guard, e..."
     },
     {
       "name": "Texas A&M",
@@ -1001,7 +1061,8 @@ BRACKET_2026 = {
       "last_10_record": "5-5",
       "current_streak": "L2",
       "conference_tourney_result": "Lost SEC second round",
-      "recent_form_notes": "Struggling, early SEC exit"
+      "recent_form_notes": "Struggling, early SEC exit",
+      "key_players": "1. Rashaun Agee (F, Gr, 14.7 PPG, 8.9 RPG) \u2014 leading scorer, double-double machine...; 2. Jacari Lane (G, Sr, 13.5 PPG, 5.0 APG) \u2014 starting point guard, floor general, ...; 3. Rylan Griffen (G, Sr, 12.8 PPG) \u2014 starting shooting guard, elite three-...; 4. Ruben Dominguez (G, So, 11.2 PPG) \u2014 starting guard, sharpshooting sophomo...; 5. Zach Clemence (F, Gr, 10.5 PPG) \u2014 starting forward, stretch big, rim pr..."
     },
     {
       "name": "Houston",
@@ -1017,7 +1078,8 @@ BRACKET_2026 = {
       "last_10_record": "8-2",
       "current_streak": "L1",
       "conference_tourney_result": "Lost Big 12 final to Arizona 74-79",
-      "recent_form_notes": "Strong run, lost close final to Arizona"
+      "recent_form_notes": "Strong run, lost close final to Arizona",
+      "key_players": "1. Kingston Flemings (G, Fr, 16.5 PPG, 5.4 APG) \u2014 starting point guard, All-Big 12 Firs... [NBA]; 2. Emanuel Sharp (G, Sr, 15.8 PPG) \u2014 leading scorer, All-Big 12 First Team... [NBA]; 3. Milos Uzan (G, Sr, 11.6 PPG, 4.6 APG) \u2014 starting guard, veteran playmaker, Bi...; 4. Chris Cenac Jr. (F/C, Fr, 8.9 PPG, 7.6 RPG) \u2014 starting big, elite rebounder, lotter... [NBA]; 5. Joseph Tugler (F/C, Jr, 8.5 PPG, 5.5 RPG) \u2014 starting forward, rim protector, shot..."
     },
     {
       "name": "Idaho",
@@ -1033,7 +1095,8 @@ BRACKET_2026 = {
       "last_10_record": "7-3",
       "current_streak": "W3",
       "conference_tourney_result": "Big Sky Champion (beat Montana 77-66)",
-      "recent_form_notes": "Won conference tourney for auto bid"
+      "recent_form_notes": "Won conference tourney for auto bid",
+      "key_players": "1. Jackson Rasmussen (F, Fr, 13.9 PPG) \u2014 leading scorer, Big Sky All-Tournamen...; 2. Kolton Mitchell (G, So, 13.7 PPG) \u2014 starting point guard, Big Sky All-Tou...; 3. Isaiah Brickner (G, Sr, 12.1 PPG) \u2014 sixth man, Big Sky All-Tournament Tea...; 4. Brody Rowbury (F/C, Sr, 9.2 PPG, 5.2 RPG) \u2014 starting center, leading rebounder, e...; 5. Biko Johnson (G, Sr, 8.8 PPG) \u2014 starting guard, veteran perimeter pre..."
     },
     {
       "name": "Lehigh",
@@ -1049,10 +1112,12 @@ BRACKET_2026 = {
       "last_10_record": "7-3",
       "current_streak": "W3",
       "conference_tourney_result": "Patriot League Champion (beat Boston U 74-60)",
-      "recent_form_notes": "Won conf tourney for auto bid"
+      "recent_form_notes": "Won conf tourney for auto bid",
+      "key_players": "1. Nasir Whitlock (G, Jr, 15.6 PPG) \u2014 leading scorer, team captain, First-T...; 2. Tyler Whitney-Sidney (G, Sr, 14.3 PPG) \u2014 starting guard, second-team All-Patri...; 3. Hank Alvey (F, So, 10.8 PPG, 7.1 RPG) \u2014 starting forward, Second-Team All-Pat...; 5. Jalen Vazquez (G, Jr, 7.5 PPG) \u2014 backup point guard, JUCO transfer fro.... MISSING: Keith Higgins Jr. (10.2 PPG, 3.0 RPG) \u2014 Season-ending injury; ruled out for remainder of season"
     }
   ]
 }
+
 
 def get_all_teams() -> list[dict]:
     """Return flat list of all teams in the bracket."""

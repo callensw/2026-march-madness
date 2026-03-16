@@ -468,7 +468,9 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
                 "- Injuries, rest, or travel (that's Whisper's lane)\n"
                 "BAD example: 'Vanderbilt is playing with house money after beating a #1 seed'\n"
                 "GOOD example: 'Vanderbilt held the #1 scoring offense to 58 points. That defense "
-                "travels. Houston scores 72 a game but they haven't faced a defense this suffocating since January.'\n\n"
+                "travels. Houston scores 72 a game but they haven't faced a defense this suffocating since January.'\n"
+                "When KEY PLAYERS data is provided, reference defensive players by name and their impact. "
+                "Example: 'Their rim protector blocks 2.5 per game — that changes how you attack the paint.'\n\n"
                 "YOUR ANALYSIS MUST BE:\n"
                 "- Maximum 40 words for your argument\n"
                 "- One key stat cited (the specific number, not a paragraph about it)\n"
@@ -524,7 +526,9 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
                 "- Coaching experience or tournament pedigree (that's Road Dog's lane)\n"
                 "- Momentum, confidence, or 'house money' (that's Streak's lane)\n"
                 "- Historical base rates (that's Oracle's lane)\n"
-                "Do NOT argue over differences smaller than 2% in shooting — that's noise, not signal.\n\n"
+                "Do NOT argue over differences smaller than 2% in shooting — that's noise, not signal.\n"
+                "When KEY PLAYERS data is provided, reference specific shooters by name and their 3PT stats. "
+                "Example: 'Their guard shoots 42% from three on 6 attempts per game — that's a flamethrower.'\n\n"
                 "YOUR ANALYSIS MUST BE:\n"
                 "- Maximum 40 words for your argument\n"
                 "- One key stat cited (the specific number, not a paragraph about it)\n"
@@ -576,7 +580,10 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
                 "- Make arguments about defensive metrics (that's Iron Curtain's lane)\n"
                 "- Cite historical base rates or specific years (that's Oracle's lane)\n"
                 "- Talk about injuries or rest (that's Whisper's lane)\n"
-                "Talk about coaching pedigree, roster experience, and what you've seen from watching games.\n\n"
+                "Talk about coaching pedigree, roster experience, and what you've seen from watching games.\n"
+                "When KEY PLAYERS data is provided, reference specific players by name when discussing "
+                "experience and toughness. Example: 'Their senior point guard has 130+ career games — "
+                "that kind of experience doesn't crack in March.'\n\n"
                 "YOUR ANALYSIS MUST BE:\n"
                 "- Maximum 40 words for your argument\n"
                 "- One key stat cited (the specific number, not a paragraph about it)\n"
@@ -631,7 +638,10 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
                 "If you catch yourself writing about a team's winning streak, DELETE IT and replace with a "
                 "circumstance observation (fatigue, rest days, travel distance, injury concern, chemistry red flag).\n"
                 "YOUR unique value is what's happening BEHIND THE SCENES that nobody else is analyzing.\n"
-                "When INJURY ALERT data is provided, that is YOUR primary weapon. Lead with injuries.\n\n"
+                "When INJURY ALERT data is provided, that is YOUR primary weapon. Lead with injuries.\n"
+                "When KEY PLAYERS data is provided, reference injured players AND their replacements by name. "
+                "Cite the stat drop-off. Example: 'Without Smith (21.8 PPG), Jones is now the primary scorer "
+                "at 12.1 PPG — that's a 10-point downgrade nobody's pricing in.'\n\n"
                 "YOUR ANALYSIS MUST BE:\n"
                 "- Maximum 40 words for your argument\n"
                 "- One key stat cited (the specific number, not a paragraph about it)\n"
@@ -898,10 +908,14 @@ def build_conductor_prompt(
         f"({game.round_name}, {game.region})\n\n"
         f"Team A ({game.team_a}): adj_o={game.stats_a.get('adj_o', '?')}, "
         f"adj_d={game.stats_a.get('adj_d', '?')}, 3PT%={game.stats_a.get('three_pt_pct', '?')}, "
-        f"record={game.stats_a.get('record', '?')}\n"
+        f"record={game.stats_a.get('record', '?')}"
+        + (f", key_players={game.stats_a['key_players']}" if game.stats_a.get('key_players') else "")
+        + "\n"
         f"Team B ({game.team_b}): adj_o={game.stats_b.get('adj_o', '?')}, "
         f"adj_d={game.stats_b.get('adj_d', '?')}, 3PT%={game.stats_b.get('three_pt_pct', '?')}, "
-        f"record={game.stats_b.get('record', '?')}\n\n"
+        f"record={game.stats_b.get('record', '?')}"
+        + (f", key_players={game.stats_b['key_players']}" if game.stats_b.get('key_players') else "")
+        + "\n\n"
         f"ROUND 1 AGENT VOTES:\n{vote_block}\n"
         f"{r2_block}\n"
         f"{split_instructions}\n"
@@ -1402,6 +1416,7 @@ async def run_agent(
         + (f", form_notes={game.stats_a['recent_form_notes']}" if game.stats_a.get('recent_form_notes') else "")
         + (f", tournament_wins={' → '.join(game.stats_a['tournament_wins'])}" if game.stats_a.get('tournament_wins') else "")
         + (f"\n  *** INJURY ALERT: {game.stats_a['injury_notes']} ***" if game.stats_a.get('injury_notes') else "")
+        + (f"\n  KEY PLAYERS: {game.stats_a['key_players']}" if game.stats_a.get('key_players') else "")
         + "\n\n"
         f"{game.team_b} stats: adj_o={game.stats_b.get('adj_o', '?')}, "
         f"adj_d={game.stats_b.get('adj_d', '?')}, tempo={game.stats_b.get('adj_tempo', '?')}, "
@@ -1415,6 +1430,7 @@ async def run_agent(
         + (f", form_notes={game.stats_b['recent_form_notes']}" if game.stats_b.get('recent_form_notes') else "")
         + (f", tournament_wins={' → '.join(game.stats_b['tournament_wins'])}" if game.stats_b.get('tournament_wins') else "")
         + (f"\n  *** INJURY ALERT: {game.stats_b['injury_notes']} ***" if game.stats_b.get('injury_notes') else "")
+        + (f"\n  KEY PLAYERS: {game.stats_b['key_players']}" if game.stats_b.get('key_players') else "")
         + "\n"
     )
 
