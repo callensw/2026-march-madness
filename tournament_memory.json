@@ -4,18 +4,28 @@
     "past_picks": [
       {
         "game_label": "#5 Texas Tech vs #12 Akron",
-        "pick": "Akron",
-        "probability": 0.42,
+        "pick": "Texas Tech",
+        "probability": 0.58,
         "round_name": "R64",
         "game_type": "moderate_favorite",
-        "position_change": "strengthened",
+        "position_change": "weakened",
         "actual_result": null
       }
     ],
     "accuracy_by_type": {},
     "biggest_misses": [],
     "confidence_calibration": [],
-    "cross_attention_memory": []
+    "cross_attention_memory": [
+      {
+        "game_label": "#5 Texas Tech vs #12 Akron",
+        "pick": "Texas Tech",
+        "probability": 0.58,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      }
+    ]
   },
   "Iron Curtain": {
     "agent_name": "Iron Curtain",
@@ -23,7 +33,7 @@
       {
         "game_label": "#5 Texas Tech vs #12 Akron",
         "pick": "Akron",
-        "probability": 0.32,
+        "probability": 0.42,
         "round_name": "R64",
         "game_type": "moderate_favorite",
         "position_change": "strengthened",
@@ -44,7 +54,7 @@
         "probability": 0.45,
         "round_name": "R64",
         "game_type": "moderate_favorite",
-        "position_change": "strengthened",
+        "position_change": "unchanged",
         "actual_result": null
       }
     ],
@@ -62,7 +72,7 @@
         "probability": 0.45,
         "round_name": "R64",
         "game_type": "moderate_favorite",
-        "position_change": "unchanged",
+        "position_change": "strengthened",
         "actual_result": null
       }
     ],
@@ -80,7 +90,7 @@
         "probability": 0.48,
         "round_name": "R64",
         "game_type": "moderate_favorite",
-        "position_change": "unchanged",
+        "position_change": "strengthened",
         "actual_result": null
       }
     ],
@@ -98,7 +108,7 @@
         "probability": 0.58,
         "round_name": "R64",
         "game_type": "moderate_favorite",
-        "position_change": "flipped",
+        "position_change": "weakened",
         "actual_result": null
       }
     ],
@@ -112,7 +122,7 @@
         "probability": 0.58,
         "round_name": "R64",
         "game_type": "moderate_favorite",
-        "position_change": "flipped",
+        "position_change": "weakened",
         "actual_result": null
       }
     ]
@@ -123,7 +133,7 @@
       {
         "game_label": "#5 Texas Tech vs #12 Akron",
         "pick": "Akron",
-        "probability": 0.4,
+        "probability": 0.45,
         "round_name": "R64",
         "game_type": "moderate_favorite",
         "position_change": "strengthened",

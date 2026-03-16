@@ -367,10 +367,12 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
     json_instructions = (
         "\nYou MUST respond with ONLY a JSON object, no other text. Format:\n"
         '{"team_a_win_prob": <0.0 to 1.0>, "uncertainty": <0.0 to 0.20>, '
-        '"reasoning": "<2-3 sentences>", "key_stat": "<specific number or fact>"}\n'
+        '"reasoning": "<max 40 words>", "key_stat": "<specific number or fact>"}\n'
         "team_a_win_prob: your estimated probability that the FIRST team listed wins (0.0 = no chance, 1.0 = certain).\n"
         "uncertainty: how uncertain you are in your estimate (0.0 = very sure, 0.20 = highly uncertain).\n"
         "CALIBRATION: A 1v16 should be ~0.99. An 8v9 should be ~0.50. A 5v12 should be ~0.60-0.70.\n"
+        "WORD LIMIT: Your reasoning MUST be under 40 words. Count them. If you're over, cut ruthlessly. "
+        "Sound bites, not essays. One punchy argument, one stat, done.\n"
     )
 
     agents = [
@@ -1224,8 +1226,8 @@ def parse_agent_response(raw: str, team_a: str, team_b: str) -> dict | None:
         else:
             data["pick"] = team_b
 
-        # Derive confidence for backward compatibility
-        data["confidence"] = max(50, min(99, int(abs(prob - 0.5) * 200)))
+        # Derive confidence for backward compatibility (50=coin flip, 99=certain)
+        data["confidence"] = max(50, min(99, int(50 + abs(prob - 0.5) * 100)))
 
     else:
         # Legacy format: pick/confidence
@@ -2183,6 +2185,15 @@ async def analyze_game(
                 round2_votes.append(r)
 
         valid_r2 = [v for v in round2_votes if not v.error and v.pick]
+
+        # Validate position_change: correct agents who claim "flipped" without changing picks
+        for v in valid_r2:
+            r1_pick = next((rv.pick for rv in valid_votes if rv.agent_name == v.agent_name), None)
+            if r1_pick and v.position_change == "flipped" and v.pick == r1_pick:
+                v.position_change = "weakened"  # didn't actually flip
+            elif r1_pick and v.position_change in ("unchanged", "strengthened") and v.pick != r1_pick:
+                v.position_change = "flipped"  # actually did flip
+
         position_changes = [v for v in valid_r2 if v.position_change in ("weakened", "flipped")]
 
         for v in valid_r2:
