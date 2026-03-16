@@ -5,6 +5,7 @@ Agents can run on Claude OR Gemini to get model-level disagreement.
 """
 
 import json
+import logging
 import os
 import random
 from pathlib import Path
@@ -13,6 +14,8 @@ import httpx
 from dotenv import load_dotenv
 
 load_dotenv(Path(__file__).parent / ".env")
+
+log = logging.getLogger("swarm")
 
 GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models"
 DEFAULT_MODEL = "gemini-2.0-flash"
@@ -41,9 +44,14 @@ async def call_gemini_api(
         ],
         "generationConfig": {
             "temperature": temperature,
-            "maxOutputTokens": 512,
+            "maxOutputTokens": 8192,
+            "responseMimeType": "application/json",
         },
     }
+
+    # For thinking models (2.5), disable thinking to avoid token budget issues
+    if "2.5" in model:
+        payload["generationConfig"]["thinkingConfig"] = {"thinkingBudget": 0}
 
     last_error = None
     for attempt in range(3):
@@ -67,9 +75,20 @@ async def call_gemini_api(
             text = ""
             candidates = body.get("candidates", [])
             if candidates:
-                parts = candidates[0].get("content", {}).get("parts", [])
+                candidate = candidates[0]
+                parts = candidate.get("content", {}).get("parts", [])
                 for part in parts:
                     text += part.get("text", "")
+
+                # Log finish reason for debugging
+                finish_reason = candidate.get("finishReason", "UNKNOWN")
+                if finish_reason not in ("STOP", "UNKNOWN"):
+                    log.warning(f"  Gemini finishReason: {finish_reason} (attempt {attempt+1})")
+                    if finish_reason == "MAX_TOKENS" and attempt < 2:
+                        # Retry with more tokens
+                        import asyncio
+                        await asyncio.sleep(0.5)
+                        continue
 
             # Token usage
             usage = body.get("usageMetadata", {})

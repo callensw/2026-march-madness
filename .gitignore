@@ -18,6 +18,8 @@ status.json
 game_results.json
 backtest_report.txt
 audio/
+videos/
+video_assets/fonts/
 
 # OS
 .DS_Store

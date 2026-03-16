@@ -5,6 +5,7 @@ export const AGENTS = {
   "Road Dog": { emoji: "\u{1F43A}", color: "#7B8D6F", role: "Old-School Scout" },
   "Whisper": { emoji: "\u{1F441}\uFE0F", color: "#9B59B6", role: "Intel & Intangibles" },
   "Oracle": { emoji: "\u{1F4DC}", color: "#E8D44D", role: "Historical Base Rates" },
+  "Streak": { emoji: "\u{1F525}", color: "#ff6b35", role: "Momentum & Form" },
   "The Conductor": { emoji: "\u{1F3BC}", color: "#FFFFFF", role: "Final Decision Maker" },
 };
 
