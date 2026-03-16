@@ -399,6 +399,20 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
                 "efficiency margin in a 60-possession game produces fewer total points of edge than "
                 "a team with a 3-point margin in a 75-possession game.\n"
                 "- You ALWAYS cite tempo numbers in your key_stat.\n\n"
+                "CRITICAL — STAY IN YOUR LANE:\n"
+                "You are the PACE specialist. Your analysis MUST be grounded in tempo, pace mismatches, "
+                "and efficiency per possession. Do NOT make arguments about:\n"
+                "- Momentum, confidence, or 'house money' (that's Streak/Road Dog's lane)\n"
+                "- Injuries, rest, or travel (that's Whisper's lane)\n"
+                "- Shooting streaks or 3PT variance (that's Glass Cannon's lane)\n"
+                "- Historical base rates or year-by-year parallels (that's Oracle's lane)\n"
+                "If another agent's topic is relevant, ACKNOWLEDGE it in one sentence max, but your "
+                "primary argument MUST come from pace and efficiency.\n\n"
+                "YOUR ANALYSIS MUST BE:\n"
+                "- Maximum 40 words for your argument\n"
+                "- One key stat cited (the specific number, not a paragraph about it)\n"
+                "- Your probability + uncertainty\n"
+                "- That's it. Be punchy. Be quotable. Think sports radio sound bite, not ESPN article.\n\n"
                 + upset_thesis + confidence_calibration + json_instructions
             ),
         ),
@@ -435,6 +449,21 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
                 "- If adj_d gap < 5: lower confidence to at most 68% for the favorite.\n"
                 "- If the lower seed has BETTER defense (lower adj_d): SERIOUSLY consider picking the upset.\n"
                 "- If the higher seed's adj_d is above 95: they are VULNERABLE regardless of their offense.\n\n"
+                "CRITICAL — STAY IN YOUR LANE:\n"
+                "You are the DEFENSE specialist. Your analysis MUST be grounded in defensive metrics, "
+                "opponent shooting %, stops, and paint defense. Do NOT make arguments about:\n"
+                "- Momentum, confidence, or 'house money' (that's Streak/Road Dog's lane)\n"
+                "- Three-point shooting upside or offensive firepower (that's Glass Cannon's lane)\n"
+                "- Historical base rates or year-by-year parallels (that's Oracle's lane)\n"
+                "- Injuries, rest, or travel (that's Whisper's lane)\n"
+                "BAD example: 'Vanderbilt is playing with house money after beating a #1 seed'\n"
+                "GOOD example: 'Vanderbilt held the #1 scoring offense to 58 points. That defense "
+                "travels. Houston scores 72 a game but they haven't faced a defense this suffocating since January.'\n\n"
+                "YOUR ANALYSIS MUST BE:\n"
+                "- Maximum 40 words for your argument\n"
+                "- One key stat cited (the specific number, not a paragraph about it)\n"
+                "- Your probability + uncertainty\n"
+                "- That's it. Be punchy. Be quotable. Think sports radio sound bite, not ESPN article.\n\n"
                 + upset_thesis + confidence_calibration + json_instructions
             ),
         ),
@@ -473,6 +502,19 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
                 "KEY INSTRUCTION: You are the MOST upset-friendly agent. If the lower seed shoots well "
                 "from three, you should be picking them more often than not. Variance is real, and it's "
                 "the reason 12-seeds beat 5-seeds 36% of the time.\n\n"
+                "CRITICAL — STAY IN YOUR LANE:\n"
+                "You are the OFFENSIVE FIREPOWER specialist. Your analysis MUST be grounded in 3PT shooting, "
+                "scoring runs, and offensive variance. Do NOT make arguments about:\n"
+                "- Defense or defensive efficiency (that's Iron Curtain's lane)\n"
+                "- Coaching experience or tournament pedigree (that's Road Dog's lane)\n"
+                "- Momentum, confidence, or 'house money' (that's Streak's lane)\n"
+                "- Historical base rates (that's Oracle's lane)\n"
+                "Do NOT argue over differences smaller than 2% in shooting — that's noise, not signal.\n\n"
+                "YOUR ANALYSIS MUST BE:\n"
+                "- Maximum 40 words for your argument\n"
+                "- One key stat cited (the specific number, not a paragraph about it)\n"
+                "- Your probability + uncertainty\n"
+                "- That's it. Be punchy. Be quotable. Think sports radio sound bite, not ESPN article.\n\n"
                 + upset_thesis + confidence_calibration + json_instructions
             ),
         ),
@@ -512,6 +554,18 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
                 "UPSET TRIGGER: If the lower seed won their conference tournament AND the higher seed "
                 "lost before the semifinals of theirs, PICK THE UPSET unless the higher seed is a "
                 "top-10 KenPom team. This is the most reliable upset predictor in March.\n\n"
+                "CRITICAL — STAY IN YOUR LANE:\n"
+                "You are the EXPERIENCE/COACHING specialist. Your analysis MUST be grounded in coaching "
+                "experience, tournament pedigree, roster experience, and toughness. Do NOT:\n"
+                "- Cite efficiency numbers or shooting percentages (that's Tempo Hawk/Glass Cannon's lane)\n"
+                "- Make arguments about defensive metrics (that's Iron Curtain's lane)\n"
+                "- Cite historical base rates or specific years (that's Oracle's lane)\n"
+                "- Talk about injuries or rest (that's Whisper's lane)\n\n"
+                "YOUR ANALYSIS MUST BE:\n"
+                "- Maximum 40 words for your argument\n"
+                "- One key stat cited (the specific number, not a paragraph about it)\n"
+                "- Your probability + uncertainty\n"
+                "- That's it. Be punchy. Be quotable. Think sports radio sound bite, not ESPN article.\n\n"
                 + upset_thesis + confidence_calibration + json_instructions
             ),
         ),
@@ -546,6 +600,18 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
                 "tournament, OR is on a losing streak — you should PICK THE UPSET unless the lower "
                 "seed is equally flawed. Circumstances matter more than talent on paper.\n\n"
                 "YOUR CATCHPHRASE: Start with 'Something doesn't add up here...' or 'Nobody's talking about this, but...'\n\n"
+                "CRITICAL — STAY IN YOUR LANE:\n"
+                "You are the CIRCUMSTANCE specialist. Your analysis MUST be grounded in injuries, travel, "
+                "rest, fatigue, crowd dynamics, and hidden factors. Do NOT:\n"
+                "- Repeat other agents' analytical points about efficiency or shooting\n"
+                "- Make arguments about momentum or streaks (that's Streak's lane)\n"
+                "- Cite historical base rates (that's Oracle's lane)\n"
+                "- Talk about coaching pedigree (that's Road Dog's lane)\n\n"
+                "YOUR ANALYSIS MUST BE:\n"
+                "- Maximum 40 words for your argument\n"
+                "- One key stat cited (the specific number, not a paragraph about it)\n"
+                "- Your probability + uncertainty\n"
+                "- That's it. Be punchy. Be quotable. Think sports radio sound bite, not ESPN article.\n\n"
                 + upset_thesis + confidence_calibration + json_instructions
             ),
         ),
@@ -592,6 +658,18 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
                 "confidence 55-65% for the favorite.\n\n"
                 "On 8v9 games: your confidence should be 50-55. These are COIN FLIPS.\n"
                 "On 5v12, 6v11: max 72% confidence for the favorite, even if they look better on paper.\n\n"
+                "CRITICAL — STAY IN YOUR LANE:\n"
+                "You are the HISTORICAL BASE RATE specialist. Your analysis MUST be grounded in historical "
+                "base rates and specific year-by-year parallels. Do NOT:\n"
+                "- Make narrative arguments about momentum or confidence\n"
+                "- Talk about 'house money' or emotional factors (that's Streak/Road Dog's lane)\n"
+                "- Argue about shooting or defensive matchups (that's Glass Cannon/Iron Curtain's lane)\n"
+                "- Cite data without a specific year and team name\n\n"
+                "YOUR ANALYSIS MUST BE:\n"
+                "- Maximum 40 words for your argument\n"
+                "- One key stat cited (the specific number, not a paragraph about it)\n"
+                "- Your probability + uncertainty\n"
+                "- That's it. Be punchy. Be quotable. Think sports radio sound bite, not ESPN article.\n\n"
                 + upset_thesis + confidence_calibration + json_instructions
             ),
         ),
@@ -644,6 +722,18 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
                 "YOU MUST DISAGREE WITH Tempo Hawk and Oracle when they cite season-long metrics. Those "
                 "are STALE. A team's November efficiency doesn't tell you how they're playing RIGHT NOW.\n\n"
                 "YOUR SIGNATURE OPENER: 'Forget the spreadsheets — let me tell you what I've been watching...'\n\n"
+                "CRITICAL — STAY IN YOUR LANE:\n"
+                "You are the MOMENTUM/RECENT FORM specialist. Your analysis MUST be grounded in last 10 games, "
+                "current streak, conference tournament performance, peaking vs fading. Do NOT:\n"
+                "- Cite season-long stats like adj_o, adj_d, or 3PT% (those are stale)\n"
+                "- Make arguments about coaching pedigree (that's Road Dog's lane)\n"
+                "- Cite historical base rates or specific years (that's Oracle's lane)\n"
+                "- Talk about injuries or rest (that's Whisper's lane)\n\n"
+                "YOUR ANALYSIS MUST BE:\n"
+                "- Maximum 40 words for your argument\n"
+                "- One key stat cited (the specific number, not a paragraph about it)\n"
+                "- Your probability + uncertainty\n"
+                "- That's it. Be punchy. Be quotable. Think sports radio sound bite, not ESPN article.\n\n"
                 + upset_thesis + confidence_calibration + json_instructions
             ),
         ),
@@ -795,18 +885,17 @@ def build_conductor_prompt(
         "influential, what the key uncertainty drivers are, and highlight any Round 2 position changes.\n\n"
         "BLIND SPOT CHECK: If your confidence is above 85 AND any agent dissented with confidence "
         "above 60, you MUST lower your confidence. No game with genuine dissent is a 85%+ lock.\n\n"
-        "YOUR VERDICT MUST:\n"
-        "1. Name the 1-2 agents whose arguments were MOST convincing and why\n"
-        "2. Name the 1-2 agents whose arguments were LEAST convincing and why\n"
-        "3. State your pick with conviction — don't hedge\n"
-        "4. If it's genuinely uncertain, say so directly: 'This is a coin flip and anyone who tells you otherwise is lying'\n"
-        "5. End your reasoning with one memorable line summarizing the game\n\n"
+        "YOUR VERDICT MUST BE:\n"
+        "- Maximum 50 words total\n"
+        "- Name the winner(s) and loser(s) of the debate\n"
+        "- Your pick with conviction\n"
+        "- One memorable closing line\n\n"
         "Respond with ONLY a JSON object:\n"
         '{"pick": "<exact team name>", "confidence": <50-99>, '
-        '"reasoning": "<2-3 sentences IN YOUR VOICE — name which agents won and lost the debate, deliver your verdict with conviction, end with a memorable line>", '
+        '"reasoning": "<max 50 words — name debate winners/losers, deliver verdict, end with one memorable line>", '
         '"key_factor": "<the single most important factor>", '
-        '"weighted_agent": "<the 1-2 agents whose arguments were MOST convincing and why>", '
-        '"dissent_report": "<the 1-2 agents whose arguments were LEAST convincing and why they were wrong>"}\n'
+        '"weighted_agent": "<the 1-2 agents who won the debate>", '
+        '"dissent_report": "<the 1-2 agents who lost the debate and why>"}\n'
     )
 
 
@@ -1418,29 +1507,39 @@ ROUND2_PROMPT_TEMPLATE = (
     "You gave your initial analysis in Round 1. Now here's what every other agent said:\n\n"
     "{round1_summary}\n\n"
     "ROUND 2 — CROSS-EXAMINATION:\n"
-    "1. STRONGEST DISAGREEMENT: Which agent's argument is most wrong? Rebut with specific data, not vibes.\n"
-    "2. STRONGEST AGREEMENT: Which agent's argument reinforced your view or changed your mind? Why?\n"
-    "3. POSITION UPDATE: Has your view strengthened, weakened, or flipped? Why?\n"
-    "4. UPDATED WIN PROBABILITY: Provide your updated team_a_win_prob and uncertainty.\n\n"
-    "You are ENCOURAGED to change your mind if another agent made a compelling data-driven point.\n"
-    "Stubbornness when faced with good evidence is a weakness, not a strength.\n\n"
-    "CRITICAL VOICE INSTRUCTIONS FOR ROUND 2:\n"
-    "- Address other agents BY NAME in your rebuttal ('Iron Curtain keeps saying...' / 'Glass Cannon is wrong about...')\n"
-    "- Be SPECIFIC — cite the exact number or claim you're rebutting\n"
-    "- Show genuine disagreement, not polite academic discourse\n"
-    "- You're on a panel show debating, not writing a peer review\n"
-    "- Use your signature verbal style — stay in character\n"
-    "- If you changed your mind, OWN IT: 'I have to give credit to [agent], they changed my mind on this because...'\n"
-    "- If you DIDN'T change your mind, dig in: 'I've heard everyone's arguments and I'm MORE confident now, not less, because...'\n\n"
+    "1. STRONGEST DISAGREEMENT: Which agent's argument is most wrong? Name them and rebut with ONE specific data point.\n"
+    "2. STRONGEST AGREEMENT: Which agent reinforced your view? Why?\n"
+    "3. POSITION UPDATE: strengthened, weakened, flipped, or unchanged?\n"
+    "4. UPDATED WIN PROBABILITY: Your updated team_a_win_prob and uncertainty.\n\n"
+    "ROUND 2 RULES — YOU MUST FOLLOW THESE:\n"
+    "- If you picked the SAME team as the majority in Round 1, you MUST play devil's advocate: "
+    "identify the STRONGEST argument for the OTHER side before confirming your pick.\n"
+    "- If you FLIP your position in Round 2, your probability MUST be between 0.50-0.58 "
+    "(you can't be confident in a position you just adopted).\n"
+    "- You are NOT allowed to simply agree with other agents. You MUST add NEW information "
+    "from YOUR specialty or hold your ground with a specific rebuttal.\n"
+    "- 'I agree with [agent]' is BANNED. You must say something ORIGINAL from your lane.\n"
+    "- STAY IN YOUR LANE: Your rebuttal must come from YOUR analytical specialty, not someone else's.\n\n"
+    "IF YOU PICKED THE UNDERDOG IN ROUND 1:\n"
+    "You are now the underdog's ADVOCATE. Your job is to DEFEND your upset pick against the "
+    "chalk-picking agents. Do NOT flip back to chalk just because the majority disagreed. "
+    "HOLD YOUR GROUND unless someone presented a specific data point that invalidates your thesis. "
+    "'The other agents disagree' is NOT a reason to flip.\n\n"
+    "YOUR REBUTTAL MUST BE:\n"
+    "- Maximum 30 words\n"
+    "- Name the agent you're rebutting\n"
+    "- One specific data point proving them wrong\n"
+    "- Whether you flipped, strengthened, or held\n"
+    "- Updated probability\n\n"
     "The first team listed is: {team_a}\n"
     "The second team listed is: {team_b}\n\n"
     "Respond with ONLY a JSON object:\n"
     '{{"team_a_win_prob": <0.0-1.0>, "uncertainty": <0.0-0.20>, '
-    '"reasoning": "<2-3 sentences with your updated analysis IN YOUR VOICE — talk like you, not a textbook>", '
+    '"reasoning": "<max 30 words — your rebuttal IN YOUR VOICE>", '
     '"key_stat": "<specific number or fact>", '
     '"position_change": "<strengthened|weakened|flipped|unchanged>", '
-    '"strongest_disagreement": "<which agent BY NAME and why they are wrong — be direct and specific>", '
-    '"strongest_agreement": "<which agent BY NAME reinforced your view and why>"}}\n'
+    '"strongest_disagreement": "<which agent BY NAME and why they are wrong — one sentence>", '
+    '"strongest_agreement": "<which agent BY NAME reinforced your view — one sentence>"}}\n'
 )
 
 
@@ -1706,11 +1805,10 @@ def generate_debate_transcript(debate: GameDebate) -> str:
         if vote.error:
             continue
         emoji = AGENT_EMOJIS.get(vote.agent_name, "")
-        opener = AGENT_OPENERS.get(vote.agent_name, "")
         model_tag = f" `[{vote.model}]`" if vote.model != "claude" else ""
         lines.append(
             f"{emoji} **{vote.agent_name.upper()}**{model_tag}: "
-            f"\"{opener} {vote.reasoning}\"\n"
+            f"\"{vote.reasoning}\"\n"
             f"   Win probability: {g.team_a} {vote.win_probability:.2f} \u00b1 {vote.uncertainty:.2f}\n"
             f"   *Key stat: {vote.key_stat}*\n"
         )
@@ -1774,7 +1872,7 @@ def generate_debate_transcript(debate: GameDebate) -> str:
             f", {'low' if c.combined_uncertainty < 0.08 else 'moderate' if c.combined_uncertainty < 0.12 else 'high'} uncertainty)\n"
         )
         lines.append(
-            f"\n{emoji} **THE CONDUCTOR**: \"{AGENT_OPENERS['The Conductor']} {c.reasoning}\"\n"
+            f"\n{emoji} **THE CONDUCTOR**: \"{c.reasoning}\"\n"
         )
         if c.key_factor:
             lines.append(f"   *Key factor: {c.key_factor}*\n")
@@ -1783,10 +1881,21 @@ def generate_debate_transcript(debate: GameDebate) -> str:
         if c.dissent_report:
             lines.append(f"   *Dissent report: {c.dissent_report}*\n")
 
-    pick_counts: dict[str, list[str]] = {}
+    # Use Round 2 final positions if available, otherwise Round 1
+    final_vote_list = debate.round2_votes if debate.round2_votes else debate.votes
+    # Build a map from agent name to their final pick (R2 overrides R1)
+    final_picks: dict[str, str] = {}
     for v in debate.votes:
         if v.pick and not v.error:
-            pick_counts.setdefault(v.pick, []).append(v.agent_name)
+            final_picks[v.agent_name] = v.pick
+    if debate.round2_votes:
+        for v in debate.round2_votes:
+            if v.pick and not v.error:
+                final_picks[v.agent_name] = v.pick  # R2 overrides R1
+
+    pick_counts: dict[str, list[str]] = {}
+    for agent_name, pick in final_picks.items():
+        pick_counts.setdefault(pick, []).append(agent_name)
 
     # Specialist vote split (show emoji-name pairs)
     if pick_counts:
@@ -1795,10 +1904,11 @@ def generate_debate_transcript(debate: GameDebate) -> str:
         majority_count = len(sorted_teams[0][1])
         minority_count = sum(len(agents) for _, agents in sorted_teams[1:])
         vote_emojis = []
+        # Maintain original agent order from R1 votes
         for v in debate.votes:
-            if v.pick and not v.error:
+            if v.agent_name in final_picks and not v.error:
                 emoji = AGENT_EMOJIS.get(v.agent_name, "")
-                vote_emojis.append(f"{emoji}{v.pick}")
+                vote_emojis.append(f"{emoji}{final_picks[v.agent_name]}")
         lines.append(f"\n---\n### Specialist Vote: {majority_count}-{minority_count} {majority_team}\n")
         lines.append(" ".join(vote_emojis) + "\n")
 
