@@ -1,108 +1,109 @@
 # 🏀 #5 Wisconsin vs #12 High Point — West Region, Round of 64
-*2026-03-16T15:54:35.863171+00:00*
+*2026-03-16T16:09:53.681279+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Identical tempos (66.2 vs 66.3) eliminate pace advantage. Wisconsin's massive 15-point efficiency edge per 100 possessions decides this grind-it-out game."
-   Win probability: Wisconsin 0.72 ± 0.12
-   *Key stat: Wisconsin 34.7 efficiency margin vs High Point's 19.4*
+🦅 **TEMPO HAWK**: "Identical tempos neutralize Wisconsin's talent edge. High Point's superior turnover rate and opponent FG% create more chaos in limited possessions."
+   Win probability: Wisconsin 0.42 ± 0.15
+   *Key stat: Both teams play at 66.2-66.3 tempo with High Point forcing more turnovers*
 
-🛡️ **IRON CURTAIN**: "Wisconsin's 91.2 defensive efficiency dominates. High Point shoots .426 against weak competition - Big Ten defense different animal entirely."
-   Win probability: Wisconsin 0.72 ± 0.12
-   *Key stat: Wisconsin allows 44.7% shooting vs High Point's 42.6% against inferior competition*
+🛡️ **IRON CURTAIN**: "Wisconsin's offense edges High Point's defense, but Panthers' superior perimeter D (.426 vs .447 opp_fg_pct) keeps this tight in half-court grind."
+   Win probability: Wisconsin 0.68 ± 0.15
+   *Key stat: High Point allows .426 opponent FG% vs Wisconsin's .447*
 
-💥 **GLASS CANNON** `[gemini]`: "Wisconsin shoots better from three and just showed they can get SCORCHING HOT! Nick Boyd dropping 38? That's pure fire, you can't coach that! High Point's 3PT% isn't enough to scare me."
-   Win probability: Wisconsin 0.60 ± 0.15
-   *Key stat: Wisconsin 3PT% = 36.1%*
+💥 **GLASS CANNON** `[gemini]`: "High Point's 3PT% is close enough to Wisconsin's that one hot night can erase the gap! They're DANGEROUS, winning 30 games! Variance is the key!"
+   Win probability: Wisconsin 0.55 ± 0.15
+   *Key stat: High Point 3PT% = 34.6%*
 
-🐺 **ROAD DOG** `[gemini]`: "High Point's senior leadership, with Terry Anderson and Rob Martin, has been through the fire. That 30-4 record isn't a fluke. Wisconsin's coach has been here, but High Point's veteran roster will make this a dogfight."
+🐺 **ROAD DOG** `[gemini]`: "High Point's senior-led roster, with Terry Anderson and Rob Martin, just won their conference. That kind of battle-tested experience doesn't fold. Wisconsin's coach has been here, but High Point's veterans are dangerous."
+   Win probability: Wisconsin 0.52 ± 0.15
+   *Key stat: High Point experience = 7.0/10*
+
+👁️ **WHISPER** `[gemini]`: "Everyone's focused on Wisconsin's late run, but High Point is traveling 658 more miles with the same rest. That fatigue adds up."
    Win probability: Wisconsin 0.62 ± 0.15
-   *Key stat: High Point's 30-4 record*
+   *Key stat: High Point travel: 2300mi*
 
-👁️ **WHISPER** `[gemini]`: "Nobody's talking about the toll of Wisconsin's deep conference tourney run and their 1642 miles of travel. That's a fatigue factor for the Badgers."
-   Win probability: Wisconsin 0.58 ± 0.15
-   *Key stat: Wisconsin: 3 rest days, 1642 travel miles*
-
-📜 **ORACLE**: "Classic 5v12 upset profile: 30-win mid-major champ vs Power-5 team that lost conference tourney semifinal. Reminds me of Richmond over Syracuse 2011."
+📜 **ORACLE**: "Classic 5v12 setup: mid-major champ with 30 wins vs power conference team. Reminds me of 2018 UMBC - efficiency gap smaller than seeding suggests."
    Win probability: Wisconsin 0.68 ± 0.12
-   *Key stat: High Point's 30-4 record matches the archetype of successful 12-seed upsets since 1985*
+   *Key stat: High Point's 30-4 record matches typical Cinderella profile*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — High Point is peaking, winning their conference and riding a 6-game streak. Wisconsin lost their last game. Momentum is real!"
-   Win probability: Wisconsin 0.58 ± 0.15
-   *Key stat: High Point W6, Wisconsin L1*
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — High Point just won their conference, riding a 6-game streak! Wisconsin lost their last game. Momentum is REAL, and High Point is peaking RIGHT NOW. They're playing their best ball."
+   Win probability: Wisconsin 0.45 ± 0.15
+   *Key stat: High Point W6 streak*
 
 
 ## Round 2 — Cross-Examination
 
 🦅 **TEMPO HAWK** (position: STRENGTHENED):
 
-   *Disagrees with:* Whisper thinks 1642 travel miles matter, but tempo control trumps tired legs in a 66-possession grind.
+   *Disagrees with:* Oracle's UMBC comparison ignores that pace mismatches, not just efficiency gaps, create upsets — High Point's turnover advantage is the chaos factor.
 
-   *Agrees with:* Iron Curtain nailed it — Wisconsin's defensive efficiency will dictate the pace and suffocate High Point's offense.
+   *Agrees with:* Streak correctly identifies High Point's momentum, which amplifies their ability to control tempo and force Wisconsin into uncomfortable possessions.
 
-   "Whisper's travel fatigue theory crumbles when you see Wisconsin's 66.2 tempo — they control pace regardless of miles flown."
-   Updated probability: Wisconsin 0.75 ± 0.10
+   "Oracle misses the point — UMBC won because Virginia couldn't adjust to pace chaos. High Point creates similar disruption with superior turnover differential."
+   Updated probability: Wisconsin 0.38 ± 0.16
 
 🛡️ **IRON CURTAIN** (position: STRENGTHENED):
 
-   *Disagrees with:* Whisper thinks travel miles matter but defense is about WANT, not rest - Wisconsin's suffocating D doesn't need fresh legs.
+   *Disagrees with:* Tempo Hawk claims identical tempo helps High Point, but equal possessions favor the more talented team - that's Wisconsin.
 
-   *Agrees with:* Tempo Hawk nailed it - identical pace means this becomes a pure efficiency battle, and Wisconsin's defense dominates that fight.
+   *Agrees with:* Oracle sees the efficiency gap that matters - High Point's defense isn't elite enough to contain Wisconsin's balanced attack.
 
-   "Whisper's fatigue talk is SOFT. Defense doesn't get tired - it gets MEANER. Wisconsin's 91.2 adj_d crushes mid-major offense."
-   Updated probability: Wisconsin 0.75 ± 0.10
+   "Tempo Hawk is DEAD WRONG. Identical tempo means MORE possessions for Wisconsin's superior talent to dominate. Defense still decides this grind."
+   Updated probability: Wisconsin 0.72 ± 0.12
 
-💥 **GLASS CANNON** (position: WEAKENED) `[gemini]`:
+💥 **GLASS CANNON** (position: FLIPPED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain is wrong; defense doesn't matter when a team gets scorching hot from three. High Point's 38.2% from deep is a major threat.
+   *Disagrees with:* Iron Curtain keeps talking about defense, but High Point's ability to shoot 34.6% from three means their 'precious defensive efficiency' is meaningless when shots fall!
 
-   *Agrees with:* Streak gets it! Momentum is real; High Point's 6-game win streak means they're feeling IT from deep!
+   *Agrees with:* Streak gets it! High Point's 6-game winning streak shows they're catching fire when it matters, and that's exactly when shooters get hot!
 
-   "High Point's 38.2% from deep is DANGEROUS! Iron Curtain keeps ignoring that shooting variance is REAL. One hot night from the Panthers and Wisconsin's defense means nothing!"
-   Updated probability: Wisconsin 0.55 ± 0.18
+   "High Point's 34.6% from deep is close enough! One hot night from their key shooters like Abdur-Rahim (37.7% 3PT) and it's over! They can light it up!"
+   Updated probability: Wisconsin 0.48 ± 0.16
 
 🐺 **ROAD DOG** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Glass Cannon thinks Wisconsin's hot shooting is sustainable. I've seen teams go cold in March; that's not experience, that's luck.
+   *Disagrees with:* Tempo Hawk focuses on tempo, but High Point's veteran roster knows how to dictate pace and handle pressure, making tempo less impactful.
 
-   *Agrees with:* Oracle gets it. That 30-4 record with veteran leadership screams upset profile. They've been here before, just like he said.
+   *Agrees with:* Streak understands momentum; High Point's conference tournament win shows they're battle-tested and peaking, which is crucial for March.
 
-   "High Point's senior core, like Terry Anderson (130+ games), has seen every pressure situation. That experience won't crack against a Power-5 team. You can't measure that heart."
-   Updated probability: Wisconsin 0.58 ± 0.16
+   "Tempo Hawk loves numbers, but High Point's senior leadership, with Terry Anderson and Rob Martin, knows how to control a game, regardless of tempo. Experience wins."
+   Updated probability: Wisconsin 0.48 ± 0.15
 
 👁️ **WHISPER** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Glass Cannon's focus on Wisconsin's 'hot shooting' ignores the physical toll. Fatigue kills hot hands.
+   *Disagrees with:* Glass Cannon is wrong. Variance isn't the only factor; travel and rest are concrete disadvantages, not just random chance.
 
-   *Agrees with:* Road Dog sees the veteran leadership in High Point, but I'm looking at their consistent health and fewer disruptions.
+   *Agrees with:* Streak reinforces my view. While I focus on fatigue, their conference run suggests High Point is playing through something, pushing their limits.
 
-   "Everyone's missing the deeper fatigue. Those 1642 travel miles and short rest days for Wisconsin are a hidden tax. High Point's fresher legs will show."
-   Updated probability: Wisconsin 0.55 ± 0.16
+   "Everyone's missing the deeper story. High Point's travel distance (2300 miles) with less rest than Wisconsin (2 days vs 3) is a hidden factor that compounds fatigue."
+   Updated probability: Wisconsin 0.58 ± 0.17
 
 📜 **ORACLE** (position: STRENGTHENED):
 
-   *Disagrees with:* Tempo Hawk's efficiency margin ignores that Richmond had a 12-point efficiency deficit vs Syracuse in 2011 yet won by 7.
+   *Disagrees with:* Streak is wrong because conference tournament momentum is historically meaningless in March - hot 12-seeds still lose 64% of the time.
 
-   *Agrees with:* Road Dog correctly identified High Point's veteran leadership - historically, experienced mid-major rosters outperform in March.
+   *Agrees with:* Iron Curtain reinforced my efficiency-based view with specific defensive numbers that align with historical upset patterns.
 
-   "Tempo Hawk ignores the upset archetype. Since 1985, 30-win conference champs upset 5-seeds 42% of the time. Wisconsin fits victim profile perfectly."
-   Updated probability: Wisconsin 0.62 ± 0.14
+   "Streak ignores history: momentum teams lose 5v12 upsets 64% of the time since 1985. Conference tournament wins don't predict March success."
+   Updated probability: Wisconsin 0.72 ± 0.12
 
-🔥 **STREAK** (position: WEAKENED) `[gemini]`:
+🔥 **STREAK** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk wants to talk about season-long efficiency, but High Point's recent form is what matters, not stale November numbers.
+   *Disagrees with:* Oracle wants to talk about 'classic 5v12 setup' and '2018 UMBC.' I care about LAST WEEK. High Point's recent form is what matters, not stale history.
 
-   *Agrees with:* Oracle actually gets it, noting the classic 5v12 upset profile of a 30-win mid-major champ. That's recent success, not ancient history!
+   *Agrees with:* Glass Cannon gets it! High Point's 30 wins isn't just a number, it's a sign of a team that's consistently winning RIGHT NOW. That momentum is dangerous!
 
-   "High Point's 6-game winning streak and conference title proves they're peaking! Wisconsin's recent loss shows vulnerability. Momentum is EVERYTHING in March!"
-   Updated probability: Wisconsin 0.52 ± 0.18
+   "High Point's 6-game winning streak and conference title proves they're peaking. Wisconsin lost their last game, they're not playing their best right now."
+   Updated probability: Wisconsin 0.42 ± 0.15
 
 
-### Devil's Advocate (unanimous vote triggered)
-🔥 **STREAK** *(forced contrarian)*: "Forget the spreadsheets — High Point is peaking RIGHT NOW. They just won their conference tournament, riding a 6-game winning streak. Momentum is real and I'm tired of people pretending it isn't!"
-   *Pick: **High Point** (60%) | Key stat: High Point's 6-game winning streak*
+### Upset Watch
+**Upset Score: 28.4/100** | Upset score 28/100 for #12 High Point over #5 Wisconsin. Historical upset rate: 35.8%. Agent support: 2-5 for High Point.
+   *Agent split: 2-5 for High Point | Historical upset rate: 35.8%*
+   *Statistical edges: None*
 
 
 ### Swarm vs Vegas
@@ -112,39 +113,40 @@
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Wisconsin 0.62 ± 0.17
+Combined probability: Wisconsin 0.54 ± 0.19
 
-**PICK: Wisconsin** (62% — lean, high uncertainty)
+**PICK: Wisconsin** (54% — genuine toss-up, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Tempo Hawk and Iron Curtain won this debate with their efficiency dominance argument. Four agents weakened in Round 2, but their concerns about fatigue and momentum couldn't overcome Wisconsin's 15-point efficiency edge. High Point's upset profile is real, but math beats magic."
+🎼 **THE CONDUCTOR**: "Iron Curtain and Oracle won this debate with cold efficiency numbers. Glass Cannon's flip to High Point shows variance matters, but identical tempo favors superior talent. Road Dog's weakening on experience seals it. Wisconsin grinds out the expected result."
 
-   *Key factor: Efficiency gap - Wisconsin's 15-point per-100-possession advantage*
+   *Key factor: Defensive efficiency gap in identical tempo game*
 
-   *Most weighted: Tempo Hawk and Iron Curtain*
+   *Most weighted: Iron Curtain*
 
-   *Dissent report: Glass Cannon, Road Dog, Whisper, and Streak all weakened after Round 2. Glass Cannon got spooked by High Point's 3-point shooting, while the others bought into fatigue/momentum narratives that couldn't overcome the raw efficiency numbers.*
+   *Dissent report: Glass Cannon flipped because they believe High Point's 34.6% three-point shooting creates enough variance for an upset, but their flip actually validates that this is closer than the seeding suggests - not enough to overcome Wisconsin's fundamental advantages*
 
 
 ---
-### Specialist Vote: 7-0 Wisconsin
+### Specialist Vote: 4-3 High Point
 
-🦅Wisconsin 🛡️Wisconsin 💥Wisconsin 🐺Wisconsin 👁️Wisconsin 📜Wisconsin 🔥Wisconsin
+🦅High Point 🛡️Wisconsin 💥High Point 🐺High Point 👁️Wisconsin 📜Wisconsin 🔥High Point
 
-CONDUCTOR AGREES: Wisconsin (50%)
+CONDUCTOR OVERRIDE: Wisconsin (50%) — sided with the minority
 
 
 ---
 ### Vote Tally
 
-- **Wisconsin**: Tempo Hawk, Iron Curtain, Glass Cannon, Road Dog, Whisper, Oracle, Streak (7 votes)
+- **High Point**: Tempo Hawk, Glass Cannon, Road Dog, Streak (4 votes)
+- **Wisconsin**: Iron Curtain, Whisper, Oracle (3 votes)
 
 
 ## Market Analysis
 
-- Swarm probability: Wisconsin 62% ± 17%
+- Swarm probability: Wisconsin 54% ± 19%
 - Vegas implied probability: Wisconsin 78%
-- Edge: 16.4% (market favors High Point)
+- Edge: 23.7% (market favors High Point)
 - Vegas spread: Wisconsin -9.5
-- Contrarian signal: Streak (-26% vs market) and Glass Cannon (-23% vs market) and Whisper (-23% vs market) and Road Dog (-20% vs market) and Oracle (-16% vs market)
-- Recommendation: NO BET — edge (16.4%) exists but uncertainty too high (17.2%)
+- Contrarian signal: Tempo Hawk (-40% vs market) and Streak (-36% vs market) and Glass Cannon (-30% vs market) and Road Dog (-30% vs market) and Whisper (-20% vs market)
+- Recommendation: NO BET — edge (23.7%) exists but uncertainty too high (19.4%)

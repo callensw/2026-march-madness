@@ -8,53 +8,27 @@
         "probability": 0.58,
         "round_name": "R64",
         "game_type": "tossup_lean",
-        "position_change": "strengthened",
+        "position_change": "weakened",
         "actual_result": null
       }
     ],
     "accuracy_by_type": {},
     "biggest_misses": [],
     "confidence_calibration": [],
-    "cross_attention_memory": []
-  },
-  "Iron Curtain": {
-    "agent_name": "Iron Curtain",
-    "past_picks": [
+    "cross_attention_memory": [
       {
         "game_label": "#7 Kentucky vs #10 Santa Clara",
         "pick": "Kentucky",
-        "probability": 0.68,
+        "probability": 0.58,
         "round_name": "R64",
         "game_type": "tossup_lean",
-        "position_change": "strengthened",
+        "position_change": "weakened",
         "actual_result": null
       }
-    ],
-    "accuracy_by_type": {},
-    "biggest_misses": [],
-    "confidence_calibration": [],
-    "cross_attention_memory": []
+    ]
   },
-  "Glass Cannon": {
-    "agent_name": "Glass Cannon",
-    "past_picks": [
-      {
-        "game_label": "#7 Kentucky vs #10 Santa Clara",
-        "pick": "Santa Clara",
-        "probability": 0.45,
-        "round_name": "R64",
-        "game_type": "tossup_lean",
-        "position_change": "strengthened",
-        "actual_result": null
-      }
-    ],
-    "accuracy_by_type": {},
-    "biggest_misses": [],
-    "confidence_calibration": [],
-    "cross_attention_memory": []
-  },
-  "Road Dog": {
-    "agent_name": "Road Dog",
+  "Iron Curtain": {
+    "agent_name": "Iron Curtain",
     "past_picks": [
       {
         "game_label": "#7 Kentucky vs #10 Santa Clara",
@@ -81,13 +55,49 @@
       }
     ]
   },
+  "Glass Cannon": {
+    "agent_name": "Glass Cannon",
+    "past_picks": [
+      {
+        "game_label": "#7 Kentucky vs #10 Santa Clara",
+        "pick": "Santa Clara",
+        "probability": 0.45,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "unchanged",
+        "actual_result": null
+      }
+    ],
+    "accuracy_by_type": {},
+    "biggest_misses": [],
+    "confidence_calibration": [],
+    "cross_attention_memory": []
+  },
+  "Road Dog": {
+    "agent_name": "Road Dog",
+    "past_picks": [
+      {
+        "game_label": "#7 Kentucky vs #10 Santa Clara",
+        "pick": "Kentucky",
+        "probability": 0.62,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      }
+    ],
+    "accuracy_by_type": {},
+    "biggest_misses": [],
+    "confidence_calibration": [],
+    "cross_attention_memory": []
+  },
   "Whisper": {
     "agent_name": "Whisper",
     "past_picks": [
       {
         "game_label": "#7 Kentucky vs #10 Santa Clara",
         "pick": "Kentucky",
-        "probability": 0.58,
+        "probability": 0.62,
         "round_name": "R64",
         "game_type": "tossup_lean",
         "position_change": "weakened",
@@ -101,7 +111,7 @@
       {
         "game_label": "#7 Kentucky vs #10 Santa Clara",
         "pick": "Kentucky",
-        "probability": 0.58,
+        "probability": 0.62,
         "round_name": "R64",
         "game_type": "tossup_lean",
         "position_change": "weakened",
@@ -142,27 +152,17 @@
     "past_picks": [
       {
         "game_label": "#7 Kentucky vs #10 Santa Clara",
-        "pick": "Kentucky",
-        "probability": 0.58,
+        "pick": "Santa Clara",
+        "probability": 0.45,
         "round_name": "R64",
         "game_type": "tossup_lean",
-        "position_change": "weakened",
+        "position_change": "strengthened",
         "actual_result": null
       }
     ],
     "accuracy_by_type": {},
     "biggest_misses": [],
     "confidence_calibration": [],
-    "cross_attention_memory": [
-      {
-        "game_label": "#7 Kentucky vs #10 Santa Clara",
-        "pick": "Kentucky",
-        "probability": 0.58,
-        "round_name": "R64",
-        "game_type": "tossup_lean",
-        "position_change": "weakened",
-        "actual_result": null
-      }
-    ]
+    "cross_attention_memory": []
   }
 }
