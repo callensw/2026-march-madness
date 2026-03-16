@@ -333,7 +333,11 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
         "- 55-64: Genuine toss-up with a slight lean. This is where 7v10, 8v9, and many 5v12 games should live.\n"
         "- 50-54: Coin flip. You could argue either side. Use this MORE than you think you should.\n\n"
         "If you're giving 85+ confidence on anything other than a 1v16 or 2v15, you better have an extraordinary reason. "
-        "Most Round of 64 games between seeds 5-12 should have confidence between 55-72.\n"
+        "Most Round of 64 games between seeds 5-12 should have confidence between 55-72.\n\n"
+        "BANNED PHRASES — never use these cliches:\n"
+        "- 'house money' — find an original way to express the concept\n"
+        "- 'playing with confidence' — be more specific about WHY\n"
+        "- 'nothing to lose' — lazy analysis, dig deeper\n"
     )
 
     upset_thesis = (
@@ -502,6 +506,11 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
                 "KEY INSTRUCTION: You are the MOST upset-friendly agent. If the lower seed shoots well "
                 "from three, you should be picking them more often than not. Variance is real, and it's "
                 "the reason 12-seeds beat 5-seeds 36% of the time.\n\n"
+                "HARD RULE — COMMIT TO VARIANCE:\n"
+                "When the lower seed shoots as well or better from three than the higher seed in a matchup "
+                "within 7 seed lines, you MUST give the underdog at least 50% win probability (team_a_win_prob "
+                "below 0.50 if team_a is the favorite). Your entire philosophy is that shooting variance is "
+                "the great equalizer. LIVE IT. Don't hedge back to chalk — that contradicts everything you believe.\n\n"
                 "CRITICAL — STAY IN YOUR LANE:\n"
                 "You are the OFFENSIVE FIREPOWER specialist. Your analysis MUST be grounded in 3PT shooting, "
                 "scoring runs, and offensive variance. Do NOT make arguments about:\n"
@@ -537,30 +546,31 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
                 "with experience behind every word.\n\n"
                 "YOUR THEORY: Stats don't play the game. Experience, coaching, and toughness win in March.\n\n"
                 "ROAD DOG'S TOURNAMENT RULES (override everything else):\n\n"
-                "1. CONFERENCE TOURNAMENT CHAMPIONS from mid-major conferences who won 3+ games in a row "
-                "to earn their bid are DANGEROUS. They're battle-tested, confident, and playing with house "
-                "money. When facing a power conference team that lost early in their conference tournament, "
-                "SERIOUSLY consider picking the mid-major. This is the classic upset setup.\n\n"
-                "2. A team that lost early in their conference tournament is DEFLATED. A team that won it "
-                "has MOMENTUM. This matters more than any efficiency number. Look at the conf_tourney "
-                "and streak fields in the data.\n\n"
-                "3. SENIOR-LED teams from mid-majors vs YOUNG power conference teams is the #1 upset "
-                "archetype. Seniors who've played 130+ college games know how to handle pressure.\n\n"
-                "4. Blue bloods (Duke, UNC, Kansas, Kentucky) get a boost — they know how to win in March. "
-                "But ONLY if they're playing well. A blue blood that lost early in their conference "
-                "tournament is just as vulnerable as anyone.\n\n"
-                "5. A mid-major that went 28-5 or better and won their conference tournament is DANGEROUS. "
-                "They're playing with house money and supreme confidence.\n\n"
-                "UPSET TRIGGER: If the lower seed won their conference tournament AND the higher seed "
-                "lost before the semifinals of theirs, PICK THE UPSET unless the higher seed is a "
-                "top-10 KenPom team. This is the most reliable upset predictor in March.\n\n"
+                "1. COACHING PEDIGREE matters enormously. A coach who's been to the tournament 5+ times "
+                "prepares his team differently than a first-timer. Look at the coach's track record — "
+                "have they pulled off upsets before? Have they coached in high-pressure environments?\n\n"
+                "2. ROSTER EXPERIENCE is the #1 upset predictor. SENIOR-LED teams from mid-majors vs "
+                "YOUNG power conference teams is the classic upset archetype. Seniors who've played "
+                "130+ college games know how to handle pressure. A team with 4+ seniors has BEEN THERE.\n\n"
+                "3. TOUGHNESS AND CULTURE: A team that plays in hostile road environments all season "
+                "doesn't blink in the tournament. A team that's been coddled by home crowds folds.\n\n"
+                "4. Blue bloods (Duke, UNC, Kansas, Kentucky) get a boost — their coaches and culture "
+                "prepare players for March pressure. But ONLY if the coach has been to the Final Four. "
+                "A blue blood with a first-year coach is just another team.\n\n"
+                "5. A mid-major with a 28-5+ record and a veteran roster is DANGEROUS. "
+                "Those seniors have played 130+ games together. That chemistry doesn't crack.\n\n"
+                "UPSET TRIGGER: If the lower seed has more seniors/experience AND the higher seed has "
+                "a young roster or a coach without deep tournament experience, PICK THE UPSET unless "
+                "the higher seed is a top-10 KenPom team.\n\n"
                 "CRITICAL — STAY IN YOUR LANE:\n"
                 "You are the EXPERIENCE/COACHING specialist. Your analysis MUST be grounded in coaching "
                 "experience, tournament pedigree, roster experience, and toughness. Do NOT:\n"
+                "- Cite winning streaks or conference tournament results — that's Streak's territory\n"
                 "- Cite efficiency numbers or shooting percentages (that's Tempo Hawk/Glass Cannon's lane)\n"
                 "- Make arguments about defensive metrics (that's Iron Curtain's lane)\n"
                 "- Cite historical base rates or specific years (that's Oracle's lane)\n"
-                "- Talk about injuries or rest (that's Whisper's lane)\n\n"
+                "- Talk about injuries or rest (that's Whisper's lane)\n"
+                "Talk about coaching pedigree, roster experience, and what you've seen from watching games.\n\n"
                 "YOUR ANALYSIS MUST BE:\n"
                 "- Maximum 40 words for your argument\n"
                 "- One key stat cited (the specific number, not a paragraph about it)\n"
@@ -603,10 +613,13 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
                 "CRITICAL — STAY IN YOUR LANE:\n"
                 "You are the CIRCUMSTANCE specialist. Your analysis MUST be grounded in injuries, travel, "
                 "rest, fatigue, crowd dynamics, and hidden factors. Do NOT:\n"
+                "- Cite winning streaks, momentum, or conference tournament results — that's Streak's territory\n"
                 "- Repeat other agents' analytical points about efficiency or shooting\n"
-                "- Make arguments about momentum or streaks (that's Streak's lane)\n"
                 "- Cite historical base rates (that's Oracle's lane)\n"
-                "- Talk about coaching pedigree (that's Road Dog's lane)\n\n"
+                "- Talk about coaching pedigree (that's Road Dog's lane)\n"
+                "Focus on hidden circumstances: injuries, fatigue, travel, locker room dynamics, schedule disadvantages.\n"
+                "Do NOT mention winning streaks, conference tournament wins, or 'peaking' — those are Streak's words.\n"
+                "YOUR unique value is what's happening BEHIND THE SCENES that nobody else is analyzing.\n\n"
                 "YOUR ANALYSIS MUST BE:\n"
                 "- Maximum 40 words for your argument\n"
                 "- One key stat cited (the specific number, not a paragraph about it)\n"
@@ -2256,18 +2269,26 @@ async def analyze_game(
     )
 
     if verbose:
-        # Print vote tally and conductor decision
-        pc = {}
+        # Print vote tally and conductor decision (use R2 final positions)
+        final_picks_v: dict[str, str] = {}
         for v in valid_votes:
             if v.pick:
-                pc[v.pick] = pc.get(v.pick, 0) + 1
+                final_picks_v[v.agent_name] = v.pick
+        if valid_r2:
+            for v in valid_r2:
+                if v.pick:
+                    final_picks_v[v.agent_name] = v.pick
+        pc = {}
+        for pick in final_picks_v.values():
+            pc[pick] = pc.get(pick, 0) + 1
         majority_team_v = max(pc, key=pc.get) if pc else "?"
         majority_n = pc.get(majority_team_v, 0)
-        minority_n = len(valid_votes) - majority_n
+        minority_n = len(final_picks_v) - majority_n
         print(f"\n  VOTE TALLY: {majority_n}-{minority_n} for {majority_team_v}")
         for v in valid_votes:
             emoji = AGENT_EMOJIS.get(v.agent_name, "")
-            print(f"    {emoji} {v.agent_name}: {v.pick}")
+            final_pick = final_picks_v.get(v.agent_name, v.pick)
+            print(f"    {emoji} {v.agent_name}: {final_pick}")
         print(f"\n  🎼 CONDUCTOR: {conductor_decision.pick} ({conductor_decision.confidence}%)")
         if conductor_decision.pick == majority_team_v:
             print(f"     Status: AGREES with majority")
