@@ -44,7 +44,13 @@
 ├── live_tracker.py          # Polls ESPN for live scores, updates accuracy
 ├── backtest.py              # Runs swarm against historical brackets for calibration
 ├── audio_gen.py             # Converts debate transcripts to podcast audio (ElevenLabs)
-├── test_orchestration.py    # 22-test validation suite (all passing)
+├── agent_memory.py          # Pillar 1: Tournament memory (prediction/live-update modes)
+├── cost_guard.py            # Pillar 3: Budget enforcement + prompt injection protection
+├── observability.py         # Pillar 5: Trace IDs, calibration curves, agent perf metrics
+├── market_analyzer.py       # Pillar 4: Market inefficiency detection (post-processing)
+├── monte_carlo.py           # Probabilistic bracket simulation
+├── test_orchestration.py    # 25-test validation suite (all passing)
+├── test_pillars.py          # 19-test pillar + regression suite (all passing)
 ├── scrape_teams.py          # Barttorvik scraper + ESPN injury reports
 ├── fill_bracket.py          # Interactive CLI to build bracket, writes to Supabase
 ├── start.sh                 # Launches tmux "madness" session with 3 panes
@@ -129,6 +135,39 @@ GEMINI_MODEL=gemini-2.0-flash
 **Multi-model:** `--multi-model` flag puts 3 agents on Claude, 3 on Gemini. Model-level diversity is stronger than prompt-level diversity for breaking convergence.
 
 **Backtest finding:** Dry-run mode has 100% chalk bias (0/3 upsets detected). This is expected with deterministic mocks. With real API calls, the opinionated prompts will produce genuine disagreement. The calibration report recommends specific agent tuning.
+
+## Six-Pillar Agent Framework in Action
+
+| Pillar | Implementation | Evidence |
+|--------|---------------|----------|
+| Context Management | Agent tournament memory with prediction/live-update separation; tiered context windows per agent | `agent_memory.py:AgentMemory`, `swarm_engine.py:build_agent_context` |
+| Tool Orchestration | Adaptive debate rounds (skip R2 for blowouts, full debate for toss-ups); dynamic model routing | `swarm_engine.py:analyze_game` (adaptive debate logic) |
+| Security | Cost guardrails with async budget enforcement; prompt injection protection via team name sanitization | `cost_guard.py:CostGuard`, `cost_guard.py:sanitize_team_name` |
+| Efficiency & Routing | Adaptive debate saves ~30% API cost on blowouts; feature-driven agent weighting; parallel async pipeline | `swarm_engine.py` (skip_round2), `get_game_weights()` |
+| Observability | Per-game trace IDs; structured event logging; calibration curves (Brier score, ECE, log loss); agent performance dashboard data | `observability.py:GameTracer`, `CalibrationTracker`, `AgentPerformanceTracker` |
+| Testing & Evaluation | 19 pillar tests + 25 original tests = 44 total; regression suite ensures no chalk bias, no agent dropouts, no conductor overrides of 6+ majority | `test_pillars.py`, `test_orchestration.py` |
+
+### CLI Modes
+
+```bash
+# Prediction mode (before tournament): pure prediction, no memory feedback
+python swarm_engine.py --full-bracket --dry-run -y
+
+# Live-update mode (during tournament): agents learn from real results
+python swarm_engine.py --live-update R32 --full-bracket
+
+# Budget override
+python swarm_engine.py --full-bracket --budget 50.0
+```
+
+### New Files
+
+| File | Pillar | Purpose |
+|------|--------|---------|
+| `agent_memory.py` | 1 (Context) | Tournament memory with prediction/live-update separation |
+| `cost_guard.py` | 3 (Security) | Async budget enforcement + prompt injection protection |
+| `observability.py` | 5 (Observability) | Trace IDs, calibration curves, agent performance metrics |
+| `test_pillars.py` | 6 (Testing) | 19 tests covering all six pillars + regression suite |
 
 ## What's Left Before Tonight (Selection Sunday 6 PM ET)
 

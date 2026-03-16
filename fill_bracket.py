@@ -27,8 +27,15 @@ def load_team_data() -> dict:
         print("  Run scrape_teams.py first for auto-fill, or enter data manually.")
         return {}
 
-    with open(TEAM_DATA_FILE) as f:
-        data = json.load(f)
+    try:
+        with open(TEAM_DATA_FILE) as f:
+            data = json.load(f)
+    except json.JSONDecodeError as e:
+        print(f"  Error: {TEAM_DATA_FILE} contains invalid JSON: {e}")
+        return {}
+    except OSError as e:
+        print(f"  Error reading {TEAM_DATA_FILE}: {e}")
+        return {}
 
     # Index by lowercase name
     index = {}
@@ -42,13 +49,32 @@ def load_team_data() -> dict:
 
 def find_team(name: str, team_index: dict) -> dict | None:
     """Look up a team in the index, with fuzzy matching."""
+    from difflib import SequenceMatcher
+
     key = name.lower().strip()
+    # Exact match first
     if key in team_index:
         return team_index[key]
-    # Partial match
+
+    # Substring match: require the substring to be at least 4 characters
+    # and match as a whole word boundary within the other string
     for k, v in team_index.items():
-        if key in k or k in key:
+        if len(key) >= 4 and key in k.split():
             return v
+        if len(k) >= 4 and k in key.split():
+            return v
+
+    # Fuzzy match with a high threshold
+    best_match = None
+    best_ratio = 0.0
+    for k, v in team_index.items():
+        ratio = SequenceMatcher(None, key, k).ratio()
+        if ratio > best_ratio:
+            best_ratio = ratio
+            best_match = v
+    if best_ratio >= 0.75:
+        return best_match
+
     return None
 
 
@@ -128,8 +154,12 @@ if __name__ == "__main__":
     print(f"\\nTotal teams: {{len(get_all_teams())}}")
 '''.format(bracket_json=json.dumps(bracket, indent=2))
 
-    with open(OUTPUT_FILE, "w") as f:
-        f.write(code)
+    try:
+        with open(OUTPUT_FILE, "w") as f:
+            f.write(code)
+    except OSError as e:
+        print(f"\n✗ Failed to write bracket_loader.py: {e}")
+        return
 
     print(f"\n✓ Wrote bracket_loader.py to {OUTPUT_FILE}")
 

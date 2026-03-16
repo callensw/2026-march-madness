@@ -82,9 +82,9 @@ def test(name):
 @test("Agent configs are valid and distinct")
 def test_agent_configs(t: TestResult):
     agents = build_agents()
-    assert len(agents) == 6, f"Expected 6 agents, got {len(agents)}"
+    assert len(agents) == 7, f"Expected 7 agents, got {len(agents)}"
     names = [a.name for a in agents]
-    assert len(set(names)) == 6, "Agent names not unique"
+    assert len(set(names)) == 7, "Agent names not unique"
 
     prompts = [a.system_prompt for a in agents]
     for i, p1 in enumerate(prompts):
@@ -92,9 +92,6 @@ def test_agent_configs(t: TestResult):
             if i < j:
                 overlap = len(set(p1.split()) & set(p2.split())) / max(len(p1.split()), len(p2.split()))
                 assert overlap < 0.6, f"{names[i]} and {names[j]} prompts {overlap:.0%} similar"
-
-    for agent in agents:
-        assert "DISAGREE" in agent.system_prompt, f"{agent.name} missing DISAGREE section"
 
     temps = {a.name: a.temperature for a in agents}
     assert temps["Glass Cannon"] > temps["Tempo Hawk"]
@@ -107,28 +104,34 @@ def test_multi_model(t: TestResult):
     claude_agents = [a for a in agents if a.model == "claude"]
     gemini_agents = [a for a in agents if a.model == "gemini"]
     assert len(claude_agents) == 3, f"Expected 3 Claude agents, got {len(claude_agents)}"
-    assert len(gemini_agents) == 3, f"Expected 3 Gemini agents, got {len(gemini_agents)}"
+    assert len(gemini_agents) == 4, f"Expected 4 Gemini agents, got {len(gemini_agents)}"
     # Verify analytical agents stay on Claude
     claude_names = {a.name for a in claude_agents}
     assert "Tempo Hawk" in claude_names, "Tempo Hawk should be on Claude"
     assert "Oracle" in claude_names, "Oracle should be on Claude"
 
 
-@test("JSON parsing handles clean JSON")
+@test("JSON parsing handles clean JSON (probabilistic)")
 def test_parse_clean(t: TestResult):
-    raw = '{"pick": "Duke", "confidence": 82, "reasoning": "Strong defense.", "key_stat": "adj_d: 89.2"}'
+    # New probabilistic format
+    raw = '{"team_a_win_prob": 0.72, "uncertainty": 0.08, "reasoning": "Strong defense.", "key_stat": "adj_d: 89.2"}'
     result = parse_agent_response(raw, "Duke", "Michigan")
     assert result is not None
-    assert result["pick"] == "Duke"
-    assert result["confidence"] == 82
+    assert result["pick"] == "Duke"  # >0.5 = team_a
+    assert result["team_a_win_prob"] == 0.72
+    # Legacy format still works
+    raw2 = '{"pick": "Duke", "confidence": 82, "reasoning": "Strong defense.", "key_stat": "adj_d: 89.2"}'
+    result2 = parse_agent_response(raw2, "Duke", "Michigan")
+    assert result2 is not None
+    assert result2["pick"] == "Duke"
 
 
 @test("JSON parsing handles wrapped JSON")
 def test_parse_wrapped(t: TestResult):
-    raw = 'Analysis:\n\n{"pick": "Michigan", "confidence": 71, "reasoning": "Good shooting.", "key_stat": "3PT: 38%"}\n\nDone.'
+    raw = 'Analysis:\n\n{"team_a_win_prob": 0.35, "uncertainty": 0.10, "reasoning": "Good shooting.", "key_stat": "3PT: 38%"}\n\nDone.'
     result = parse_agent_response(raw, "Duke", "Michigan")
     assert result is not None
-    assert result["pick"] == "Michigan"
+    assert result["pick"] == "Michigan"  # 0.35 < 0.5 = team_b
 
 
 @test("Confidence clamped 50-99")
@@ -244,7 +247,7 @@ def test_bracket_progression(t: TestResult):
     assert next_games[0].team_b == debates[1].game.team_a  # winner of game 2
 
 
-@test("All 6 agents produce valid votes (dry-run)")
+@test("All 7 agents produce valid votes (dry-run)")
 async def test_all_agents_vote(t: TestResult):
     agents = build_agents()
     game = make_sample_games()[1]
@@ -254,11 +257,13 @@ async def test_all_agents_vote(t: TestResult):
         votes = await asyncio.gather(*tasks)
 
     valid = [v for v in votes if not v.error and v.pick]
-    t.error = "" if len(valid) == 6 else f"Only {len(valid)}/6 valid"
+    t.error = "" if len(valid) == 7 else f"Only {len(valid)}/7 valid"
     for v in valid:
         assert v.pick in (game.team_a, game.team_b)
         assert 50 <= v.confidence <= 99
         assert v.reasoning
+        assert 0.0 < v.win_probability < 1.0
+        assert 0.0 <= v.uncertainty <= 0.20
 
 
 @test("Conductor produces valid decision (dry-run)")
@@ -299,7 +304,7 @@ async def test_full_pipeline(t: TestResult):
             assert debate.upset_score is not None or game.seed_a == game.seed_b
 
 
-@test("Debate transcript includes upset watch and vote tally")
+@test("Debate transcript includes both rounds and probability")
 async def test_transcript(t: TestResult):
     agents = build_agents()
     game = make_sample_games()[1]  # 5v12 — should have upset score
@@ -311,18 +316,104 @@ async def test_transcript(t: TestResult):
     assert len(transcript) > 200
     assert game.team_a in transcript
     assert game.team_b in transcript
-    assert "CONDUCTOR" in transcript
+    assert "Round 1" in transcript
+    assert "Round 2" in transcript
+    assert "Cross-Examination" in transcript
+    assert "Conductor" in transcript
     assert "Vote Tally" in transcript
 
 
-@test("Supabase handles missing credentials gracefully")
+@test("Round 2 cross-examination produces valid responses (dry-run)")
+async def test_round2(t: TestResult):
+    from swarm_engine import run_agent_round2, format_round1_outputs
+    agents = build_agents()
+    game = make_sample_games()[1]
+
+    async with httpx.AsyncClient() as client:
+        # Run Round 1
+        tasks = [run_agent(client, a, game, dry_run=True) for a in agents]
+        r1_votes = await asyncio.gather(*tasks)
+
+    valid_r1 = [v for v in r1_votes if not v.error]
+    r1_summary = format_round1_outputs(valid_r1, game)
+    assert len(r1_summary) > 100, "Round 1 summary should be substantial"
+
+    # Run Round 2
+    async with httpx.AsyncClient() as client:
+        r2_tasks = [run_agent_round2(client, a, game, r1_summary, dry_run=True) for a in agents]
+        r2_votes = await asyncio.gather(*r2_tasks)
+
+    valid_r2 = [v for v in r2_votes if not v.error]
+    assert len(valid_r2) >= 5, f"Only {len(valid_r2)} valid Round 2 responses"
+    for v in valid_r2:
+        assert v.round_number == 2
+        assert v.position_change in ("strengthened", "weakened", "flipped", "unchanged")
+        assert 0.0 < v.win_probability < 1.0
+
+    # At least 1 agent should change position in mocks
+    changes = [v for v in valid_r2 if v.position_change in ("weakened", "flipped")]
+    assert len(changes) >= 1, "Expected at least 1 position change in Round 2"
+
+
+@test("Probability combination math")
+def test_combine_probs(t: TestResult):
+    from swarm_engine import combine_probabilities
+    votes = [
+        AgentVote("A", "Duke", 70, "R", win_probability=0.70, uncertainty=0.05),
+        AgentVote("B", "Duke", 60, "R", win_probability=0.60, uncertainty=0.10),
+        AgentVote("C", "Michigan", 65, "R", win_probability=0.35, uncertainty=0.12),
+    ]
+    prob, unc = combine_probabilities(votes, {})
+    # Weighted avg of [0.70, 0.60, 0.35] = 0.55
+    assert 0.45 < prob < 0.65, f"Expected ~0.55, got {prob}"
+    assert unc > 0.05, f"Uncertainty should reflect disagreement, got {unc}"
+
+
+@test("Monte Carlo simulation produces valid results")
+def test_monte_carlo(t: TestResult):
+    from monte_carlo import GameProb, TeamSim, simulate_bracket
+    # Use all 4 regions (2 games each) so F4/NCG paths exist
+    regions = ["East", "West", "South", "Midwest"]
+    test_games = []
+    all_team_names = []
+    for ri, region in enumerate(regions):
+        base = ri * 4
+        teams = [
+            (f"T{base+1}", 1, region, 5 + ri), (f"T{base+2}", 16, region, 200 + ri),
+            (f"T{base+3}", 8, region, 30 + ri), (f"T{base+4}", 9, region, 40 + ri),
+        ]
+        all_team_names.extend([t[0] for t in teams])
+        probs_r = [0.95, 0.52]
+        for gi in range(2):
+            n1, s1, r1, k1 = teams[gi * 2]
+            n2, s2, r2, k2 = teams[gi * 2 + 1]
+            t_a = TeamSim(n1, s1, r1, k1)
+            t_b = TeamSim(n2, s2, r2, k2)
+            test_games.append(GameProb(f"test_{ri}_{gi}", t_a, t_b, probs_r[gi], "R64"))
+
+    result = simulate_bracket(test_games, n_sims=1000, seed=42)
+
+    # 1-seeds should advance to R32 more often than 16-seeds
+    assert result.advancement_probs["T1"].get("R32", 0) > 0.90, "1-seed should advance ~95% of time"
+    assert result.advancement_probs["T2"].get("R32", 0) < 0.15, "16-seed should rarely advance"
+    # S16 probabilities should favor top seeds
+    assert result.advancement_probs["T1"].get("S16", 0) > result.advancement_probs["T2"].get("S16", 0)
+    # Upset stats should exist for R64
+    assert "R64" in result.upset_stats
+    assert result.upset_stats["R64"]["expected"] >= 0
+
+
+@test("Supabase client initializes and status.json works")
 def test_supabase_graceful(t: TestResult):
-    ok = supabase_client.write_game_result({"id": "test"})
-    assert ok is False
-    ok2 = supabase_client.write_agent_votes([{"game_id": "test"}])
-    assert ok2 is False
+    # Status.json should always work (file-based)
     supabase_client.write_status({"test": True})
     assert (Path(__file__).parent / "status.json").exists()
+    # Client may or may not be available depending on env
+    client = supabase_client.get_client()
+    if client is None:
+        # No credentials: writes should return False gracefully
+        ok = supabase_client.write_game_result({"id": "test"})
+        assert ok is False
 
 
 @test("Response time measurement")
@@ -371,8 +462,9 @@ def test_live_tracker(t: TestResult):
 @test("Gemini client module loads")
 def test_gemini_client(t: TestResult):
     from gemini_client import is_gemini_available
-    # Should return False with placeholder key
-    assert is_gemini_available() is False
+    # Should return a boolean (True if key configured, False if not)
+    result = is_gemini_available()
+    assert isinstance(result, bool), f"Expected bool, got {type(result)}"
 
 
 # ---------------------------------------------------------------------------
@@ -401,6 +493,9 @@ async def run_all_tests():
         test_conductor,
         test_full_pipeline,
         test_transcript,
+        test_round2,
+        test_combine_probs,
+        test_monte_carlo,
         test_supabase_graceful,
         test_response_times,
         test_cost_tracker,

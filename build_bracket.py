@@ -4,6 +4,7 @@ One-time script to generate bracket_loader.py and team_data_2026.json
 from verified 2026 NCAA Tournament bracket data + KenPom rankings.
 """
 import json
+import sys
 from pathlib import Path
 
 # KenPom data: (overall_rank, off_rank, def_rank)
@@ -310,9 +311,13 @@ if __name__ == "__main__":
     print(f"\\nTotal teams: {len(get_all_teams())}")
 '''.replace("BRACKET_JSON", json.dumps(BRACKET, indent=2))
 
-with open(OUTPUT_FILE, "w") as f:
-    f.write(code)
-print(f"✓ Wrote bracket_loader.py ({len(BRACKET['East']) + len(BRACKET['West']) + len(BRACKET['Midwest']) + len(BRACKET['South'])} teams)")
+try:
+    with open(OUTPUT_FILE, "w") as f:
+        f.write(code)
+    print(f"✓ Wrote bracket_loader.py ({len(BRACKET['East']) + len(BRACKET['West']) + len(BRACKET['Midwest']) + len(BRACKET['South'])} teams)")
+except OSError as e:
+    print(f"✗ Failed to write bracket_loader.py: {e}")
+    sys.exit(1)
 
 # Also update team_data_2026.json
 all_teams = []
@@ -327,9 +332,12 @@ team_data = {
 }
 
 TEAM_DATA_FILE = Path(__file__).parent / "team_data_2026.json"
-with open(TEAM_DATA_FILE, "w") as f:
-    json.dump(team_data, f, indent=2)
-print(f"✓ Wrote team_data_2026.json ({len(all_teams)} teams)")
+try:
+    with open(TEAM_DATA_FILE, "w") as f:
+        json.dump(team_data, f, indent=2)
+    print(f"✓ Wrote team_data_2026.json ({len(all_teams)} teams)")
+except OSError as e:
+    print(f"✗ Failed to write team_data_2026.json: {e}")
 
 # Print bracket summary
 for region, teams in BRACKET.items():

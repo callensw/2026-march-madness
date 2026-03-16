@@ -1,12 +1,33 @@
 #!/bin/bash
+set -e
+
 # March Madness Agent Swarm - tmux session launcher
 # Creates a "madness" session with 3 panes
 
 SESSION="madness"
 PROJECT_DIR="$HOME/march-madness-swarm"
 
+# Check that required tools are available
+if ! command -v tmux &>/dev/null; then
+    echo "Error: tmux is not installed or not in PATH." >&2
+    exit 1
+fi
+
+if ! command -v python &>/dev/null && ! command -v python3 &>/dev/null; then
+    echo "Error: python is not installed or not in PATH." >&2
+    exit 1
+fi
+
+# Trap SIGINT/SIGTERM to kill the tmux session cleanly
+cleanup() {
+    echo "Caught signal, killing tmux session '$SESSION'..."
+    tmux kill-session -t "$SESSION" 2>/dev/null || true
+    exit 0
+}
+trap cleanup SIGINT SIGTERM
+
 # Kill existing session if it exists
-tmux kill-session -t "$SESSION" 2>/dev/null
+tmux kill-session -t "$SESSION" 2>/dev/null || true
 
 # Create new session with first pane (swarm engine)
 tmux new-session -d -s "$SESSION" -c "$PROJECT_DIR"

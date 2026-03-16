@@ -1,55 +1,83 @@
-# R64 — West Region
-## #2 Purdue vs #15 Queens
-*2026-03-16T02:10:54.471727+00:00*
+# 🏀 #2 Purdue vs #15 Queens — West Region, Round of 64
+*2026-03-16T13:00:04.298200+00:00*
 
 ---
 
-🦅 **TEMPO HAWK**: "Let me run the numbers on pace and efficiency here. This is a massive tempo mismatch where both teams play at nearly identical pace (69.7 vs 69.4), which eliminates Queens' best upset path of controlling tempo. Purdue's 173-point KenPom gap is historic, and their elite offense (126.9) against Queens' poor defense (114.3) creates a 36-point efficiency advantage that will compound over 70 possessions."
-   *Pick: **Purdue** (96%) | Key stat: Both teams play at 69+ tempo, but Purdue's 36-point efficiency margin (126.9 offense vs 114.3 defense) is devastating when neither team can control pace*
+## Round 1 — Independent Analysis
 
-🛡️ **IRON CURTAIN**: "Look, I don't care what the offense looks like. Purdue's elite defense (90.0 adj_d, top 25 nationally) should completely suffocate Queens' mediocre offense. Queens' porous defense (114.3 adj_d, bottom 50) will get torched by Purdue's balanced attack led by Braden Smith. This is a classic March grind-it-out game where defensive stops determine everything."
-   *Pick: **Purdue** (98%) | Key stat: 24.3 point gap in defensive efficiency (90.0 vs 114.3) - that's the difference between elite defense and liability*
+🦅 **TEMPO HAWK**: "Alright, I've been looking at the tempo data and here's what everyone's missing… Identical tempos (69.7 vs 69.4) eliminate Queens' only path to an upset - they can't impose a pace that makes Purdue uncomfortable. With no stylistic mismatch to exploit, the 36-point KenPom gap becomes decisive."
+   Win probability: Purdue 0.92 ± 0.08
+   *Key stat: Both teams average 69+ possessions per game, creating no pace advantage for either side*
 
-💥 **GLASS CANNON** `[gemini]`: "Forget the spreadsheets for a second. While Queens' 3PT% of 35.0% makes them a live upset candidate, Purdue's own elite 3PT% (39.2%) and strong perimeter defense (opponents shoot 30.1% from three) mitigate the variance. Queens' overall defensive efficiency is too low to sustain an upset against Purdue's potent offense, even if they get hot from deep."
-   *Pick: **Purdue** (80%) | Key stat: Purdue's 3PT% (39.2%) vs Queens' 3PT% (35.0%)*
+🛡️ **IRON CURTAIN**: "Look, I don't care how many points they score. You know what I care about? Stops. Purdue's elite 90.0 defensive efficiency will suffocate Queens' mediocre offense, while Queens' awful 114.3 defensive rating can't stop Edey and Purdue's balanced attack. This is a classic 2v15 mismatch where defense dominates."
+   Win probability: Purdue 0.92 ± 0.08
+   *Key stat: 24-point gap in KenPom ranking (8 vs 181)*
 
-🐺 **ROAD DOG** `[gemini]`: "I've seen this movie before. Purdue is a blue blood playing exceptionally well, winning their conference tournament with a five-game streak. Queens, despite winning their conference tournament, has a massive KenPom gap and their win streak is only two games, not the battle-tested run Road Dog looks for in an upset."
-   *Pick: **Purdue** (95%) | Key stat: Purdue KenPom=8 vs Queens KenPom=181*
+💥 **GLASS CANNON** `[gemini]`: "Okay okay okay — have you SEEN this team shoot? Because the numbers are ridiculous. Purdue is an elite shooting team, their 39.2% from three is absolutely lights out! Queens is decent but not good enough to overcome that kind of gap. When Purdue is on, they're ON, and a 15-seed just can't match that firepower."
+   Win probability: Purdue 0.95 ± 0.05
+   *Key stat: Purdue 3PT% = 39.2%*
 
-👁️ **WHISPER** `[gemini]`: "Something doesn't add up here, and nobody's talking about it. Something doesn't add up here... Queens needed overtime to win their conference tournament against a low-tier opponent, and their defensive metrics are alarming. Purdue, on the other hand, is peaking at the right time, having just dominated the Big Ten tournament with a strong winning streak. The talent and form disparity are too significant to ignore."
-   *Pick: **Purdue** (99%) | Key stat: Queens adj_d=114.3 (KenPom 181)*
+🐺 **ROAD DOG** `[gemini]`: "You know what? I've seen this movie before. Let me tell you what actually happens when… Now, I've seen a lot of these 2-15 matchups, and usually, I'm sniffing around for an upset. But this Queens team, they got that ASUN title in an OT thriller, which tells me they got heart. Problem is, Purdue, they just ran through the Big Ten tournament, winning four straight, including a title game where their guard went off. That's a team with momentum, and they're a blue blood in everything but name. The numbers guys will tell you the KenPom gap is too big, and for once, I'm with 'em. Purdue's playing like a team that's learned its lessons from last year. Queens is a good story, but this is where the road ends for 'em."
+   Win probability: Purdue 0.90 ± 0.08
+   *Key stat: Purdue's Big Ten Championship streak (W5)*
 
-📜 **ORACLE**: "The historical record is clear on this. This is a classic 2v15 matchup with a 173-point KenPom gap - the largest I've seen today. Queens' 114.3 adjusted defense ranks among the worst in D1, while Purdue just won the Big Ten tournament with dominant performances. The base rate for 2-seeds is 93.8% for good reason."
-   *Pick: **Purdue** (92%) | Key stat: 173-point KenPom gap (8 vs 181) is historically insurmountable*
+👁️ **WHISPER** `[gemini]`: "Here's what nobody's talking about… Nobody's talking about this, but Queens played an overtime thriller to win their conference tournament. That's a lot of physical and emotional energy expended just days before facing a red-hot Purdue team that just dominated the Big Ten. The circumstances here favor the well-rested, high-momentum favorite."
+   Win probability: Purdue 0.96 ± 0.03
+   *Key stat: Purdue's 'last_10' record is 9-1 with a W5 streak, and they just won their conference tournament. Queens, while winning, had an OT game to claim their title.*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching... Forget the spreadsheets — let me tell you what I've been watching... Purdue is red-hot, winning the Big Ten tournament with four straight victories, showing they're peaking at the perfect time. While Queens won their conference tournament, the gap in recent form and competitive level is too significant, and Purdue's five-game winning streak against tougher competition is a strong indicator of their momentum."
-   *Pick: **Purdue** (98%) | Key stat: Purdue's streak=W5, conf_tourney=Big Ten Champion*
+📜 **ORACLE**: "Since the field expanded to 64 teams in 1985, here's what the data tells us… The 173-spot KenPom gap is historically decisive in 2v15 matchups. Purdue's elite defense (90.0 adj_d) versus Queens' porous defense (114.3 adj_d) creates an unbridgeable talent chasm. Since 1985, only Norfolk State (2012) and Middle Tennessee (2016) have pulled off 2v15 upsets, and both had significantly better defensive profiles than Queens."
+   Win probability: Purdue 0.94 ± 0.05
+   *Key stat: 173-spot Ken*
+
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been WATCHING. Forget the spreadsheets – let me tell you what I've been watching... Purdue is PEAKING, winning the Big Ten tournament with four straight dominant performances. They're on a five-game winning streak and playing their best basketball right now. Queens won their conference, which I usually love, but beating Central Arkansas in overtime doesn't prepare you for a Purdue team that just tore through the Big Ten. Purdue's momentum is REAL and they are riding it."
+   Win probability: Purdue 0.95 ± 0.05
+   *Key stat: Purdue streak: W5, Big Ten Champion*
 
 
 ### Devil's Advocate (unanimous vote triggered)
-🐺 **ROAD DOG** *(forced contrarian)*: "While Queens comes in with momentum from winning their conference tournament, Purdue is a top-10 KenPom team that also won their conference tournament, demonstrating strong play and confidence. The experience and coaching edge for Purdue, combined with Queens' significantly lower KenPom ranking, makes this a clear mismatch. Queens' path to victory is too narrow against a dominant Purdue squad."
-   *Pick: **Purdue** (95%) | Key stat: Purdue KenPom: 8 vs Queens KenPom: 181*
+🦅 **TEMPO HAWK** *(forced contrarian)*: "Look, I tried to find Queens' path — they play at nearly identical tempo (69.4 vs 69.7) so there's no pace mismatch to exploit, and their efficiency gap is catastrophic at 22.7 points per 100 possessions. Even in a slow, grind-it-out game that favors underdogs through variance, Queens would need to shoot lights out while Purdue goes ice cold. That's not a strategy, that's prayer."
+   *Pick: **Purdue** (84%) | Key stat: Both teams play at 69 possessions per game — no tempo advantage for Queens to neutralize Purdue's massive talent edge*
 
 
 ### Swarm vs Vegas
-   *Swarm: 94% on Purdue | Vegas implied: 97% | Delta: 3pp more bearish*
+   *Swarm: 67% on Purdue | Vegas implied: 97% | Delta: 30pp more bearish*
 
 
 ---
-### Final Verdict
+## 🎼 The Conductor — Final Analysis
 
-🎼 **THE CONDUCTOR**: "I've heard every argument. Here's what actually matters. This is a historic 173-point KenPom gap where Purdue's elite offense (126.9) faces Queens' bottom-50 defense (114.3), creating a massive efficiency mismatch that will compound over 70 possessions. All seven agents agree on Purdue with extremely high confidence, reflecting the overwhelming talent and form disparity."
+Combined probability: Purdue 0.84 ± 0.25
 
-   **PICK: Purdue (94%)**
+**PICK: Purdue** (84% — dominant favorite, high uncertainty)
 
-   *Key factor: Historic KenPom gap and defensive efficiency mismatch*
 
-   *Most weighted: Oracle 2x - this matches the classic 2v15 historical upset pattern with massive talent gap*
+🎼 **THE CONDUCTOR**: "I've heard every argument. Here's what actually matters in this game. Here's my ruling: This is as close to a mathematical certainty as March Madness gets. Glass Cannon and Streak were most convincing — Purdue's elite shooting (39.2% from three) combined with their red-hot momentum from dominating the Big Ten tournament creates an unstoppable force. Even the Devil's Advocate couldn't find Queens' path to victory, admitting their strategy would be 'prayer, not basketball.' When a 173-spot KenPom gap meets identical tempos that eliminate upset variance, the math becomes inevitable."
 
-   *Dissent report: Glass Cannon's concern about 3-point variance creating upset potential is valid, but Purdue's own elite 3PT% (39.2%) and strong perimeter defense neutralizes Queens' shooting advantage*
+   *Key factor: Massive talent gap with no stylistic mismatch to exploit*
+
+   *Most weighted: Glass Cannon and Streak — Glass Cannon nailed the shooting disparity that makes Purdue elite, while Streak identified the momentum factor that separates good teams from great ones in March*
+
+   *Dissent report: No meaningful dissent existed — even the Devil's Advocate admitted Queens would need divine intervention rather than basketball strategy to win*
+
+
+---
+### Specialist Vote: 7-0 Purdue
+
+🦅Purdue 🛡️Purdue 💥Purdue 🐺Purdue 👁️Purdue 📜Purdue 🔥Purdue
+
+CONDUCTOR AGREES: Purdue (67%)
 
 
 ---
 ### Vote Tally
 
 - **Purdue**: Tempo Hawk, Iron Curtain, Glass Cannon, Road Dog, Whisper, Oracle, Streak (7 votes)
+
+
+## Market Analysis
+
+- Swarm probability: Purdue 84% ± 25%
+- Vegas implied probability: Purdue 97%
+- Edge: 13.0% (market favors Queens)
+- Vegas spread: Purdue -24.5
+- Recommendation: NO BET — edge (13.0%) exists but uncertainty too high (25.0%)

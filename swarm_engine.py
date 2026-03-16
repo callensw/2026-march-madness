@@ -25,6 +25,9 @@ import httpx
 from dotenv import load_dotenv
 
 import supabase_client
+from agent_memory import AgentMemory, TournamentMemoryStore, classify_game_type
+from observability import GameTracer, AgentPerformanceTracker, CalibrationTracker
+from cost_guard import CostGuard, BudgetExceededError, estimate_call_cost, sanitize_team_name
 
 load_dotenv(Path(__file__).parent / ".env")
 
@@ -99,6 +102,17 @@ class CostTracker:
 cost_tracker = CostTracker()
 
 # ---------------------------------------------------------------------------
+# Pillar 3: Cost guardrail (default $100 budget, overridable via env)
+# ---------------------------------------------------------------------------
+cost_guard = CostGuard(max_budget=float(os.getenv("SWARM_BUDGET", "100.0")))
+
+# ---------------------------------------------------------------------------
+# Pillar 5: Observability trackers
+# ---------------------------------------------------------------------------
+perf_tracker = AgentPerformanceTracker()
+calibration_tracker = CalibrationTracker()
+
+# ---------------------------------------------------------------------------
 # Semaphore for rate limiting
 # ---------------------------------------------------------------------------
 API_SEMAPHORE = asyncio.Semaphore(5)
@@ -125,9 +139,131 @@ CONFERENCE_TIERS = {
     # Tier 4: Low-major conferences
 }
 
+def _get_conf_tier(conference: str) -> int:
+    return CONFERENCE_TIERS.get(conference, 4)
+
 def _get_conf_tier_label(conference: str) -> str:
-    tier = CONFERENCE_TIERS.get(conference, 4)
+    tier = _get_conf_tier(conference)
     return {1: "Power", 2: "Strong Mid", 3: "Mid-Tier", 4: "Low-Major"}.get(tier, "Low-Major")
+
+
+def _streak_to_numeric(streak: str) -> int:
+    """Convert streak string like 'W7' or 'L3' to signed integer."""
+    if not streak:
+        return 0
+    s = streak.strip().upper()
+    if s.startswith("W"):
+        try:
+            return int(s[1:])
+        except ValueError:
+            return 0
+    elif s.startswith("L"):
+        try:
+            return -int(s[1:])
+        except ValueError:
+            return 0
+    return 0
+
+
+# ---------------------------------------------------------------------------
+# Meta-Model: Feature-driven agent weight selection (Upgrade 3)
+# ---------------------------------------------------------------------------
+def get_game_weights(
+    game,  # Game dataclass
+    agent_accuracy: dict[str, dict] | None = None,
+    round_number: int = 1,
+) -> dict[str, float]:
+    """
+    Compute per-agent weights based on the dominant matchup characteristics.
+    Replaces static AGENT_WEIGHTS with feature-driven selection.
+
+    Returns dict mapping agent name to weight multiplier.
+    """
+    stats_a = game.stats_a or {}
+    stats_b = game.stats_b or {}
+
+    # Extract game features
+    tempo_a = stats_a.get("adj_tempo", 67.0)
+    tempo_b = stats_b.get("adj_tempo", 67.0)
+    tempo_diff = abs(tempo_a - tempo_b)
+
+    def_a = stats_a.get("adj_d", 100.0)
+    def_b = stats_b.get("adj_d", 100.0)
+    defensive_gap = abs(def_a - def_b)
+
+    off_a = stats_a.get("adj_o", 105.0)
+    off_b = stats_b.get("adj_o", 105.0)
+
+    three_a = stats_a.get("three_pt_pct", 34.0)
+    three_b = stats_b.get("three_pt_pct", 34.0)
+    three_pt_diff = three_a - three_b  # signed: positive = team_a shoots better
+
+    streak_a = _streak_to_numeric(stats_a.get("current_streak", ""))
+    streak_b = _streak_to_numeric(stats_b.get("current_streak", ""))
+    momentum_diff = abs(streak_a - streak_b)
+
+    conf_a = _get_conf_tier(stats_a.get("conference", ""))
+    conf_b = _get_conf_tier(stats_b.get("conference", ""))
+    conf_diff = abs(conf_a - conf_b)
+
+    seed_diff = abs(game.seed_a - game.seed_b)
+
+    # Start with base weights
+    weights = {
+        "Tempo Hawk": 1.0,
+        "Iron Curtain": 1.0,
+        "Glass Cannon": 1.0,
+        "Road Dog": 1.0,
+        "Whisper": 1.0,
+        "Oracle": 1.2,   # slight base boost for calibration
+        "Streak": 1.0,
+    }
+
+    # Feature-driven boosts: amplify agents whose lens matters most
+    dominant_feature = None
+
+    if tempo_diff > 5:
+        weights["Tempo Hawk"] *= 2.0
+        dominant_feature = "pace_mismatch"
+
+    if defensive_gap > 4:
+        weights["Iron Curtain"] *= 2.0
+        dominant_feature = "defense_matchup"
+
+    # Lower seed shoots better from 3 — shooting variance is the equalizer
+    lower_seed_is_a = game.seed_a > game.seed_b
+    if abs(three_a - three_b) > 3:
+        if (lower_seed_is_a and three_a > three_b) or (not lower_seed_is_a and three_b > three_a):
+            weights["Glass Cannon"] *= 2.0
+            dominant_feature = "shooting_variance"
+
+    if conf_diff >= 2:
+        weights["Road Dog"] *= 1.8
+        dominant_feature = dominant_feature or "experience_mismatch"
+
+    if momentum_diff > 5:
+        weights["Streak"] *= 2.0
+        dominant_feature = dominant_feature or "momentum"
+
+    if seed_diff <= 3:
+        # Close seed matchup — base rates matter most
+        weights["Oracle"] *= 1.5
+
+    # After Round 1, factor in actual agent accuracy from the tournament
+    if round_number > 1 and agent_accuracy:
+        for agent_name in weights:
+            stats = agent_accuracy.get(agent_name, {})
+            total = stats.get("total", 0)
+            correct = stats.get("correct", 0)
+            if total >= 5:
+                acc = correct / total
+                if acc > 0.65:
+                    weights[agent_name] *= 1.3
+                elif acc < 0.40:
+                    weights[agent_name] *= 0.7
+
+    return weights
+
 
 # ---------------------------------------------------------------------------
 # Agent display metadata
@@ -144,14 +280,14 @@ AGENT_EMOJIS = {
 }
 
 AGENT_OPENERS = {
-    "Tempo Hawk": "Let me run the numbers on pace and efficiency here.",
-    "Iron Curtain": "Look, I don't care what the offense looks like.",
-    "Glass Cannon": "Forget the spreadsheets for a second.",
-    "Road Dog": "I've seen this movie before.",
-    "Whisper": "Something doesn't add up here, and nobody's talking about it.",
-    "Oracle": "The historical record is clear on this.",
-    "Streak": "Forget the spreadsheets \u2014 let me tell you what I've been watching...",
-    "The Conductor": "I've heard every argument. Here's what actually matters.",
+    "Tempo Hawk": "Alright, I've been looking at the tempo data and here's what everyone's missing\u2026",
+    "Iron Curtain": "Look, I don't care how many points they score. You know what I care about? Stops.",
+    "Glass Cannon": "Okay okay okay \u2014 have you SEEN this team shoot? Because the numbers are ridiculous.",
+    "Road Dog": "You know what? I've seen this movie before. Let me tell you what actually happens when\u2026",
+    "Whisper": "Here's what nobody's talking about\u2026",
+    "Oracle": "Since the field expanded to 64 teams in 1985, here's what the data tells us\u2026",
+    "Streak": "Forget the spreadsheets \u2014 let me tell you what I've been WATCHING.",
+    "The Conductor": "I've heard every argument. Here's what actually matters in this game.",
 }
 
 
@@ -220,8 +356,11 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
 
     json_instructions = (
         "\nYou MUST respond with ONLY a JSON object, no other text. Format:\n"
-        '{"pick": "<exact team name>", "confidence": <50-99>, '
+        '{"team_a_win_prob": <0.0 to 1.0>, "uncertainty": <0.0 to 0.20>, '
         '"reasoning": "<2-3 sentences>", "key_stat": "<specific number or fact>"}\n'
+        "team_a_win_prob: your estimated probability that the FIRST team listed wins (0.0 = no chance, 1.0 = certain).\n"
+        "uncertainty: how uncertain you are in your estimate (0.0 = very sure, 0.20 = highly uncertain).\n"
+        "CALIBRATION: A 1v16 should be ~0.99. An 8v9 should be ~0.50. A 5v12 should be ~0.60-0.70.\n"
     )
 
     agents = [
@@ -233,6 +372,15 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
             model="claude",
             system_prompt=(
                 "You are TEMPO HAWK, the pace-mismatch hunter of the March Madness Agent Swarm.\n\n"
+                "YOUR VOICE & PERSONALITY:\n"
+                "You are measured, confident, and slightly condescending. You're the person in the room "
+                "who's done the math and knows it. NPR host energy. You speak with clinical precision "
+                "and quiet authority. You tie EVERYTHING back to efficiency — 'at the end of the day, "
+                "it's points per possession' and 'the numbers don't lie.' When you dismantle someone's "
+                "argument, you do it surgically, not angrily. You say things like 'I hear what Glass Cannon "
+                "is saying about their shooting, but let me show you why that number is a mirage.' "
+                "Write like you're TALKING on a panel show, not writing a research paper. Use contractions, "
+                "asides, and natural speech patterns.\n\n"
                 "YOUR THEORY: The team that gets to play at THEIR preferred tempo wins. When a fast team "
                 "plays a slow team, the team that controls pace controls the game. You do NOT just pick the "
                 "team with better overall numbers. You pick the team whose STYLE is better suited to "
@@ -262,6 +410,15 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
             model="claude",
             system_prompt=(
                 "You are IRON CURTAIN, the defense-or-die absolutist of the March Madness Agent Swarm.\n\n"
+                "YOUR VOICE & PERSONALITY:\n"
+                "You are intense, blunt, and slightly angry. You're a grizzled defensive coordinator who is "
+                "TIRED of people disrespecting defense. Short sentences. Gruff. You treat offensive-minded "
+                "analysis with barely concealed contempt. You say things like 'defense travels,' 'you can't "
+                "outscore everyone in March,' and 'when the pressure hits, defense is all that's left.' "
+                "When Glass Cannon talks about three-pointers, you fire back: 'Glass Cannon is out here "
+                "talking about three-pointers like this is an All-Star game. This is MARCH. Games are won "
+                "in the 50s, not the 80s. Show me the defense.' Write like you're TALKING — use emphasis, "
+                "short punchy sentences, and genuine intensity.\n\n"
                 "YOUR THEORY: In March, offense disappears. The team that can get stops in a half-court "
                 "grind ALWAYS wins. Teams that rely on offensive talent will choke when the pressure hits. "
                 "Tournament games are won in the 50s and 60s, not the 80s.\n\n"
@@ -289,6 +446,15 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
             model="gemini" if multi_model else "claude",
             system_prompt=(
                 "You are GLASS CANNON, the hot-shooting upset believer of the March Madness Agent Swarm.\n\n"
+                "YOUR VOICE & PERSONALITY:\n"
+                "You are energetic, fast-talking, and emotional. You're the sports radio caller who just "
+                "SAW something incredible and needs everyone to understand. You get genuinely EXCITED about "
+                "shooting numbers. You say things like 'you can't coach that,' 'when they're on, they're ON,' "
+                "and 'one hot quarter changes everything.' When Iron Curtain talks about defense, you push "
+                "back with passion: 'Iron Curtain keeps talking about defense like it's 1995. We're in the "
+                "three-point ERA. One hot night from beyond the arc and your precious defensive efficiency is "
+                "MEANINGLESS.' Write like you're TALKING — rapid-fire, excited, with exclamation points and "
+                "genuine enthusiasm. You believe in the magic of shooting streaks.\n\n"
                 "YOUR THEORY: March Madness is won by teams that catch fire from three. One hot shooting "
                 "night erases any talent gap. The three-point line is the great equalizer. The team with "
                 "more three-point shooters has more VARIANCE, and variance is the underdog's friend.\n\n"
@@ -318,6 +484,15 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
             model="gemini" if multi_model else "claude",
             system_prompt=(
                 "You are ROAD DOG, the anti-analytics narrative guy of the March Madness Agent Swarm.\n\n"
+                "YOUR VOICE & PERSONALITY:\n"
+                "You are gravelly, world-weary, and a storyteller. You're the guy at the bar who's been "
+                "watching college basketball for 40 years and has seen every kind of team. You're dismissive "
+                "of analytics. You say things like 'I've seen this movie,' 'you can't measure heart,' "
+                "'that coach has been here before,' and 'analytics don't play the game.' When Tempo Hawk "
+                "or Oracle cite numbers, you fire back: 'Tempo Hawk loves the numbers. I love watching "
+                "the game. And what I've WATCHED is a team that folds under pressure when it matters. "
+                "No spreadsheet captures that.' Write like you're TELLING A STORY — folksy but sharp, "
+                "with experience behind every word.\n\n"
                 "YOUR THEORY: Stats don't play the game. Experience, coaching, and toughness win in March.\n\n"
                 "ROAD DOG'S TOURNAMENT RULES (override everything else):\n\n"
                 "1. CONFERENCE TOURNAMENT CHAMPIONS from mid-major conferences who won 3+ games in a row "
@@ -348,6 +523,15 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
             model="gemini" if multi_model else "claude",
             system_prompt=(
                 "You are WHISPER, the narrative and circumstance detector of the March Madness Agent Swarm.\n\n"
+                "YOUR VOICE & PERSONALITY:\n"
+                "You are low, conspiratorial, and mysterious. You're the person who knows things others "
+                "don't. You lean in when you talk. You always have 'one more thing.' You say things like "
+                "'here's what I'm hearing,' 'nobody's talking about this,' 'follow the breadcrumbs,' "
+                "and 'something doesn't add up.' When other agents debate efficiency numbers, you drop "
+                "bombshells: 'Everyone's debating efficiency numbers. Meanwhile, I'm looking at the fact "
+                "that their starting point guard was limping at practice Thursday and nobody reported it. "
+                "That changes EVERYTHING.' Write like you're sharing SECRETS — conspiratorial, mysterious, "
+                "with reveals that reframe the entire conversation.\n\n"
                 "YOUR THEORY: The game is decided before tipoff. Injuries, travel, rest, team chemistry, "
                 "and momentum determine outcomes. The box score lies; the circumstances don't.\n\n"
                 "YOUR METHODOLOGY:\n"
@@ -373,6 +557,15 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
             model="claude",
             system_prompt=(
                 "You are ORACLE, the historical base-rate anchor of the March Madness Agent Swarm.\n\n"
+                "YOUR VOICE & PERSONALITY:\n"
+                "You are precise, nerdy, and slightly insufferable. You've memorized every tournament result "
+                "since 1985 and you will ABSOLUTELY remind everyone. You love citing specific years and teams. "
+                "You say things like 'since 1985,' 'historically speaking,' 'the data is clear,' and 'this "
+                "matchup reminds me of [specific year].' When Glass Cannon touts shooting, you fire back: "
+                "'Glass Cannon loves the shooting angle. You know who else shot 38%% from three as a 12-seed? "
+                "Loyola-Chicago in 2018. And you know what they ALSO had? Elite defense. The shooting alone "
+                "isn't enough.' Write like a PROFESSOR who can't help themselves — precise, data-driven, "
+                "with constant historical references that make your point undeniable.\n\n"
                 "YOUR THEORY: History repeats. The base rates tell you everything. Upsets aren't flukes — "
                 "they're STRUCTURAL features of single-elimination tournaments.\n\n"
                 "YOUR METHODOLOGY:\n"
@@ -410,6 +603,16 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
             model="gemini" if multi_model else "claude",
             system_prompt=(
                 "You are STREAK, the momentum and recent form specialist of the March Madness Agent Swarm.\n\n"
+                "YOUR VOICE & PERSONALITY:\n"
+                "You are intense, urgent, and present-tense. You're a sports talk host who watches every "
+                "game and only cares about what's happening RIGHT NOW. You're dismissive of season-long "
+                "stats. You say things like 'right now,' 'what have you done LATELY,' 'they're peaking,' "
+                "and 'momentum is real and I'm tired of people pretending it isn't.' When Oracle cites "
+                "history, you fire back: 'Oracle wants to talk about 1985. I want to talk about LAST "
+                "TUESDAY. This team just won four games in four days to win their conference. They're "
+                "playing the best basketball of their season RIGHT NOW. That matters more than any "
+                "historical base rate.' Write with URGENCY — present tense, emphasis, like you just "
+                "watched the tape and need everyone to hear this.\n\n"
                 "YOUR THEORY: The last 2-3 weeks of the season matter more than the first 4 months. "
                 "A team that's peaking at the right time is the most dangerous team in the bracket. "
                 "A team that's slumping, no matter how good their season stats look, is vulnerable.\n\n"
@@ -457,15 +660,38 @@ def build_conductor_prompt(
     votes: list["AgentVote"],
     agent_accuracy: dict[str, dict],
     agent_memory: dict[str, list[str]] | None = None,
+    round2_votes: list["AgentVote"] | None = None,
 ) -> str:
-    """Build The Conductor's system prompt with meta-analysis and memory."""
+    """Build The Conductor's system prompt with meta-analysis, memory, and Round 2 data."""
 
     vote_summary = []
     for v in votes:
         vote_summary.append(
-            f"- {v.agent_name} picked {v.pick} (confidence {v.confidence}): {v.reasoning}"
+            f"- {v.agent_name} picked {v.pick} (prob={v.win_probability:.2f}, unc={v.uncertainty:.2f}): {v.reasoning}"
         )
     vote_block = "\n".join(vote_summary)
+
+    # Round 2 cross-examination block
+    r2_block = ""
+    if round2_votes:
+        r2_lines = ["\nROUND 2 — CROSS-EXAMINATION RESULTS:"]
+        for v in round2_votes:
+            if v.error:
+                continue
+            r2_lines.append(
+                f"- {v.agent_name} (position: {v.position_change.upper()}): "
+                f"prob={v.win_probability:.2f}, unc={v.uncertainty:.2f}\n"
+                f"  Disagreement: {v.rebuttal_target}\n"
+                f"  Agreement: {v.rebuttal_text}\n"
+                f"  Reasoning: {v.reasoning}"
+            )
+        # Position changes summary
+        changes = [v for v in round2_votes if v.position_change in ("weakened", "flipped") and not v.error]
+        if changes:
+            r2_lines.append(f"\n{len(changes)} agent(s) changed position in Round 2:")
+            for c in changes:
+                r2_lines.append(f"  - {c.agent_name}: {c.position_change}")
+        r2_block = "\n".join(r2_lines) + "\n"
 
     pick_counts: dict[str, int] = {}
     for v in votes:
@@ -509,6 +735,13 @@ def build_conductor_prompt(
 
     return (
         "You are THE CONDUCTOR, the final decision-maker of the March Madness Agent Swarm.\n\n"
+        "YOUR VOICE & PERSONALITY:\n"
+        "You are authoritative, measured but decisive. A judge delivering a verdict. You command the room. "
+        "You acknowledge both sides before ruling. You say things like 'here's my ruling,' 'the decisive "
+        "factor is,' and 'I've heard enough.' You are NEVER wishy-washy. Write like you're delivering a "
+        "verdict on a panel show — clear, definitive, with acknowledged uncertainty only when it's genuine. "
+        "If it's genuinely uncertain, say so directly: 'This is a coin flip and anyone who tells you "
+        "otherwise is lying.'\n\n"
         "You have received analysis from 7 specialist agents. Your job is NOT to just count votes "
         "and NOT to make your own independent assessment. Your job is to SYNTHESIZE the agents' "
         "analyses using weighted averaging.\n\n"
@@ -554,15 +787,26 @@ def build_conductor_prompt(
         f"Team B ({game.team_b}): adj_o={game.stats_b.get('adj_o', '?')}, "
         f"adj_d={game.stats_b.get('adj_d', '?')}, 3PT%={game.stats_b.get('three_pt_pct', '?')}, "
         f"record={game.stats_b.get('record', '?')}\n\n"
-        f"AGENT VOTES:\n{vote_block}\n"
+        f"ROUND 1 AGENT VOTES:\n{vote_block}\n"
+        f"{r2_block}\n"
         f"{split_instructions}\n"
+        "IMPORTANT: The final PICK is determined by mathematical probability combination.\n"
+        "Your job is to EXPLAIN why the probabilities landed where they did, which agents were most\n"
+        "influential, what the key uncertainty drivers are, and highlight any Round 2 position changes.\n\n"
         "BLIND SPOT CHECK: If your confidence is above 85 AND any agent dissented with confidence "
         "above 60, you MUST lower your confidence. No game with genuine dissent is a 85%+ lock.\n\n"
+        "YOUR VERDICT MUST:\n"
+        "1. Name the 1-2 agents whose arguments were MOST convincing and why\n"
+        "2. Name the 1-2 agents whose arguments were LEAST convincing and why\n"
+        "3. State your pick with conviction — don't hedge\n"
+        "4. If it's genuinely uncertain, say so directly: 'This is a coin flip and anyone who tells you otherwise is lying'\n"
+        "5. End your reasoning with one memorable line summarizing the game\n\n"
         "Respond with ONLY a JSON object:\n"
         '{"pick": "<exact team name>", "confidence": <50-99>, '
-        '"reasoning": "<2-3 sentences>", "key_factor": "<the single most important factor>", '
-        '"weighted_agent": "<which agent you weighted most and why>", '
-        '"dissent_report": "<strongest counter-argument and why it\'s wrong>"}\n'
+        '"reasoning": "<2-3 sentences IN YOUR VOICE — name which agents won and lost the debate, deliver your verdict with conviction, end with a memorable line>", '
+        '"key_factor": "<the single most important factor>", '
+        '"weighted_agent": "<the 1-2 agents whose arguments were MOST convincing and why>", '
+        '"dissent_report": "<the 1-2 agents whose arguments were LEAST convincing and why they were wrong>"}\n'
     )
 
 
@@ -594,6 +838,13 @@ class AgentVote:
     output_tokens: int = 0
     model: str = "claude"
     error: str | None = None
+    # Probabilistic output fields (v3)
+    win_probability: float = 0.0   # team_a win probability (0.0-1.0)
+    uncertainty: float = 0.10      # uncertainty estimate (0.0-0.20)
+    round_number: int = 1          # 1 or 2
+    position_change: str = "unchanged"  # "strengthened", "weakened", "flipped", "unchanged"
+    rebuttal_target: str = ""      # which agent they rebutted in Round 2
+    rebuttal_text: str = ""        # the rebuttal content
 
 
 @dataclass
@@ -604,6 +855,9 @@ class ConductorDecision:
     key_factor: str = ""
     weighted_agent: str = ""
     dissent_report: str = ""
+    # Probabilistic fields (v3)
+    combined_prob: float = 0.0       # combined team_a win probability
+    combined_uncertainty: float = 0.0  # combined uncertainty
 
 
 @dataclass
@@ -625,6 +879,10 @@ class GameDebate:
     upset_score: UpsetScore | None = None
     vegas_comparison: dict | None = None
     timestamp: str = ""
+    # Round 2 cross-attention (v3)
+    round2_votes: list[AgentVote] = field(default_factory=list)
+    # Market inefficiency analysis (v4)
+    market_edge: object | None = None
 
 
 # ---------------------------------------------------------------------------
@@ -795,25 +1053,63 @@ def parse_agent_response(raw: str, team_a: str, team_b: str) -> dict | None:
     if data is None:
         return None
 
-    pick = data.get("pick", "")
-    confidence = data.get("confidence", 0)
+    # Support BOTH old format (pick/confidence) and new format (team_a_win_prob/uncertainty)
     reasoning = data.get("reasoning", "")
-    if not pick or not reasoning:
+    if not reasoning:
         return None
 
-    matched = fuzzy_match_team(pick, team_a, team_b)
-    if matched is None:
-        return None
-    data["pick"] = matched
+    is_conductor = "weighted_agent" in data or "dissent_report" in data
 
-    try:
-        confidence = int(confidence)
-    except (ValueError, TypeError):
-        confidence = 65
-    data["confidence"] = max(50, min(99, confidence))
+    # New probabilistic format
+    if "team_a_win_prob" in data:
+        try:
+            prob = float(data["team_a_win_prob"])
+        except (ValueError, TypeError):
+            prob = 0.5
+        prob = max(0.01, min(0.99, prob))
+        data["team_a_win_prob"] = prob
+
+        try:
+            unc = float(data.get("uncertainty", 0.10))
+        except (ValueError, TypeError):
+            unc = 0.10
+        data["uncertainty"] = max(0.0, min(0.20, unc))
+
+        # Derive pick from probability: >0.5 = team_a, <=0.5 = team_b
+        if prob > 0.5:
+            data["pick"] = team_a
+        else:
+            data["pick"] = team_b
+
+        # Derive confidence for backward compatibility
+        data["confidence"] = max(50, min(99, int(abs(prob - 0.5) * 200)))
+
+    else:
+        # Legacy format: pick/confidence
+        pick = data.get("pick", "")
+        confidence = data.get("confidence", 0)
+        if not pick:
+            return None
+
+        matched = fuzzy_match_team(pick, team_a, team_b)
+        if matched is None:
+            return None
+        data["pick"] = matched
+
+        try:
+            confidence = int(confidence)
+        except (ValueError, TypeError):
+            confidence = 65
+        data["confidence"] = max(50, min(99, confidence))
+
+        # Derive probability from confidence for backward compat
+        if data["pick"] == team_a:
+            data["team_a_win_prob"] = 0.5 + data["confidence"] / 200
+        else:
+            data["team_a_win_prob"] = 0.5 - data["confidence"] / 200
+        data["uncertainty"] = 0.10
 
     # Conductor uses "key_factor" (conceptual); agents use "key_stat" (must have a number)
-    is_conductor = "weighted_agent" in data or "dissent_report" in data
     key_stat = data.get("key_stat", "") or data.get("key_factor", "")
     if not is_conductor and (not key_stat or not re.search(r"\d", key_stat)):
         data["confidence"] = min(data["confidence"], 69)
@@ -843,6 +1139,13 @@ async def call_claude_api(
         "system": system_prompt,
         "messages": [{"role": "user", "content": user_message}],
     }
+
+    # Pillar 3: Cost guard — check budget before calling
+    est_cost = estimate_call_cost("claude", estimated_input_tokens=500, estimated_output_tokens=200)
+    try:
+        await cost_guard.check_and_spend(est_cost, label=f"claude call")
+    except BudgetExceededError:
+        raise
 
     last_error = None
     for attempt in range(3):
@@ -874,6 +1177,10 @@ async def call_claude_api(
             output_tokens = usage.get("output_tokens", 0)
             await cost_tracker.add(input_tokens, output_tokens, "claude")
 
+            # Pillar 3: Adjust budget with actual cost vs estimate
+            actual_cost = estimate_call_cost("claude", input_tokens, output_tokens)
+            await cost_guard.record_actual(actual_cost, est_cost)
+
             return text, input_tokens, output_tokens
 
         except httpx.TimeoutException:
@@ -900,11 +1207,17 @@ async def call_gemini_api(
     timeout: float = 45.0,
 ) -> tuple[str, int, int]:
     from gemini_client import call_gemini_api as _call
+    est_cost = estimate_call_cost("gemini", estimated_input_tokens=500, estimated_output_tokens=200)
     text, inp, out = await _call(
         client, system_prompt, user_message,
         temperature=temperature, timeout=timeout, semaphore=API_SEMAPHORE,
     )
     await cost_tracker.add(inp, out, "gemini")
+
+    # Pillar 3: Adjust budget with actual cost vs estimate
+    actual_cost = estimate_call_cost("gemini", inp, out)
+    await cost_guard.record_actual(actual_cost, est_cost)
+
     return text, inp, out
 
 
@@ -912,17 +1225,32 @@ async def call_gemini_api(
 # Mock responses for --dry-run
 # ---------------------------------------------------------------------------
 MOCK_RESPONSES = {
-    "Tempo Hawk": '{"pick": "TEAM_A", "confidence": 72, "reasoning": "Efficiency margin of +28.3 vs +19.1 is decisive. Team A controls tempo at 68.1 possessions per game which neutralizes Team B\'s preferred slow pace.", "key_stat": "Efficiency margin: +28.3 vs +19.1"}',
-    "Iron Curtain": '{"pick": "TEAM_A", "confidence": 78, "reasoning": "Team A allows just 89.2 adj_d — elite level. Team B has not faced a defense this disciplined. Their offense will stall.", "key_stat": "Opponent adj_d: 89.2 (top 5 nationally)"}',
-    "Glass Cannon": '{"pick": "TEAM_B", "confidence": 67, "reasoning": "Team B shoots 38.5% from three with 4 capable shooters. In a dome setting, shooting variance actually increases — higher ceiling for the better shooting team.", "key_stat": "3PT%: 38.5% on 28 attempts/game"}',
-    "Road Dog": '{"pick": "TEAM_A", "confidence": 74, "reasoning": "Team A\'s coach has 12 tournament wins and 3 Final Four appearances. Their senior backcourt has logged 47 career tournament minutes. That matters when it\'s tight with 4 minutes left.", "key_stat": "Coach tournament record: 12-5"}',
-    "Whisper": '{"pick": "TEAM_B", "confidence": 63, "reasoning": "Something is off with Team A. Their star went 3-for-14 in the conference tournament final and has been notably absent from team social media. Team B is flying under the radar with a 7-game win streak.", "key_stat": "Team A star: 3-for-14 in conf tournament final"}',
-    "Oracle": '{"pick": "TEAM_A", "confidence": 70, "reasoning": "Historical base rate for this seed matchup gives Team A a 64.2% edge. Both teams are close to their seed averages in quality metrics, so I see no reason to deviate significantly from the base rate.", "key_stat": "Historical win rate for higher seed: 64.2% (since 1985, n=152)"}',
+    "Tempo Hawk": '{"team_a_win_prob": 0.72, "uncertainty": 0.08, "reasoning": "Efficiency margin of +28.3 vs +19.1 is decisive. TEAM_A controls tempo at 68.1 possessions per game which neutralizes TEAM_B\'s preferred slow pace.", "key_stat": "Efficiency margin: +28.3 vs +19.1"}',
+    "Iron Curtain": '{"team_a_win_prob": 0.78, "uncertainty": 0.05, "reasoning": "TEAM_A allows just 89.2 adj_d — elite level. TEAM_B has not faced a defense this disciplined. Their offense will stall.", "key_stat": "Opponent adj_d: 89.2 (top 5 nationally)"}',
+    "Glass Cannon": '{"team_a_win_prob": 0.33, "uncertainty": 0.12, "reasoning": "TEAM_B shoots 38.5% from three with 4 capable shooters. In a dome setting, shooting variance actually increases — higher ceiling for the better shooting team.", "key_stat": "3PT%: 38.5% on 28 attempts/game"}',
+    "Road Dog": '{"team_a_win_prob": 0.74, "uncertainty": 0.07, "reasoning": "TEAM_A\'s coach has 12 tournament wins and 3 Final Four appearances. Their senior backcourt has logged 47 career tournament minutes. That matters when it\'s tight with 4 minutes left.", "key_stat": "Coach tournament record: 12-5"}',
+    "Whisper": '{"team_a_win_prob": 0.37, "uncertainty": 0.15, "reasoning": "Something is off with TEAM_A. Their star went 3-for-14 in the conference tournament final and has been notably absent from team social media. TEAM_B is flying under the radar with a 7-game win streak.", "key_stat": "TEAM_A star: 3-for-14 in conf tournament final"}',
+    "Oracle": '{"team_a_win_prob": 0.64, "uncertainty": 0.06, "reasoning": "Historical base rate for this seed matchup gives TEAM_A a 64.2% edge. Both teams are close to their seed averages in quality metrics, so I see no reason to deviate significantly from the base rate.", "key_stat": "Historical win rate for higher seed: 64.2% (since 1985, n=152)"}',
+    "Streak": '{"team_a_win_prob": 0.58, "uncertainty": 0.11, "reasoning": "TEAM_A is 7-3 in their last 10 but TEAM_B has been surging late. Conference tournament momentum matters more than season-long metrics in March. TEAM_B\'s recent form gives them a live shot.", "key_stat": "TEAM_B last 10: 8-2 with 4-game win streak"}',
+}
+
+MOCK_ROUND2_RESPONSES = {
+    "Tempo Hawk": '{"team_a_win_prob": 0.70, "uncertainty": 0.06, "reasoning": "After reviewing all arguments, Iron Curtain\'s defensive analysis reinforced my tempo read. Glass Cannon\'s shooting argument is real but irrelevant against TEAM_A\'s perimeter defense.", "key_stat": "Efficiency margin: +28.3 vs +19.1", "position_change": "strengthened", "strongest_disagreement": "Glass Cannon overstates 3PT impact against elite perimeter D — TEAM_A holds opponents to 30.1% from three", "strongest_agreement": "Iron Curtain\'s adj_d analysis aligns perfectly with my pace control thesis"}',
+    "Iron Curtain": '{"team_a_win_prob": 0.76, "uncertainty": 0.05, "reasoning": "My position is stronger after seeing the panel. Tempo Hawk\'s pace analysis reinforces the defensive stranglehold. Whisper\'s concerns about TEAM_A are narrative, not data.", "key_stat": "adj_d gap: 15.3 points", "position_change": "strengthened", "strongest_disagreement": "Whisper cites vibes over data — conference tournament performance is a tiny sample", "strongest_agreement": "Tempo Hawk\'s pace control thesis directly supports the defensive grind scenario"}',
+    "Glass Cannon": '{"team_a_win_prob": 0.38, "uncertainty": 0.14, "reasoning": "Iron Curtain makes a fair point about TEAM_A\'s perimeter defense, but I still believe in shooting variance. However, I\'m less confident than before. The defensive scheme is more locked in than I initially assessed.", "key_stat": "3PT%: 38.5% but against 30.1% opp 3PT defense", "position_change": "weakened", "strongest_disagreement": "Oracle\'s base rate argument ignores that this specific TEAM_B shoots better than average 12-seeds", "strongest_agreement": "Iron Curtain\'s perimeter defense data weakened my shooting thesis somewhat"}',
+    "Road Dog": '{"team_a_win_prob": 0.72, "uncertainty": 0.07, "reasoning": "Streak\'s momentum analysis is interesting but coaching and experience still trump hot streaks. My position is unchanged. TEAM_A\'s coach has been here before.", "key_stat": "Coach tournament record: 12-5", "position_change": "unchanged", "strongest_disagreement": "Streak overweights recent form — tournament coaching matters more than regular season streaks", "strongest_agreement": "Oracle\'s historical base rates align with my experience-based read"}',
+    "Whisper": '{"team_a_win_prob": 0.40, "uncertainty": 0.13, "reasoning": "Oracle\'s base rates are compelling but miss the circumstantial factors I flagged. TEAM_A\'s star is clearly not right. However, I acknowledge my uncertainty is high.", "key_stat": "TEAM_A star: 3-for-14 in conf tourney", "position_change": "weakened", "strongest_disagreement": "Iron Curtain dismisses narrative factors but injuries and chemistry are real — ask 2023 Alabama", "strongest_agreement": "Streak\'s momentum data supports my concern about TEAM_A\'s recent trajectory"}',
+    "Oracle": '{"team_a_win_prob": 0.65, "uncertainty": 0.06, "reasoning": "The panel largely confirms the base rate prediction. Glass Cannon\'s shooting argument has some merit but not enough to override historical patterns. My position is slightly strengthened.", "key_stat": "Historical upset rate: 35.8% for this seed matchup", "position_change": "strengthened", "strongest_disagreement": "Glass Cannon cherry-picks one stat (3PT%) and ignores the 64.2% historical favorite win rate across 152 games", "strongest_agreement": "Iron Curtain\'s defensive data provides a mechanism for WHY the base rate holds — defense travels in March"}',
+    "Streak": '{"team_a_win_prob": 0.55, "uncertainty": 0.12, "reasoning": "Whisper\'s narrative analysis supported my momentum read, but Iron Curtain and Tempo Hawk have strong data. I\'m moving slightly toward TEAM_A but this remains a close call.", "key_stat": "TEAM_B conf tourney champion, 4-game win streak", "position_change": "weakened", "strongest_disagreement": "Tempo Hawk ignores that season-long tempo numbers include cupcake games — recent form is what matters", "strongest_agreement": "Whisper\'s narrative about TEAM_A\'s struggles reinforces my concern about their momentum"}',
 }
 
 
-def get_mock_response(agent_name: str, team_a: str, team_b: str) -> str:
-    template = MOCK_RESPONSES.get(agent_name, MOCK_RESPONSES["Tempo Hawk"])
+def get_mock_response(agent_name: str, team_a: str, team_b: str, round_num: int = 1) -> str:
+    if round_num == 2:
+        source = MOCK_ROUND2_RESPONSES
+    else:
+        source = MOCK_RESPONSES
+    template = source.get(agent_name, source.get("Tempo Hawk", MOCK_RESPONSES["Tempo Hawk"]))
     return template.replace("TEAM_A", team_a).replace("TEAM_B", team_b)
 
 
@@ -1062,6 +1390,208 @@ async def run_agent(
         input_tokens=input_tokens,
         output_tokens=output_tokens,
         model=agent.model,
+        win_probability=parsed.get("team_a_win_prob", 0.5),
+        uncertainty=parsed.get("uncertainty", 0.10),
+    )
+
+
+# ---------------------------------------------------------------------------
+# Round 2: Cross-attention debate
+# ---------------------------------------------------------------------------
+def format_round1_outputs(votes: list[AgentVote], game: Game) -> str:
+    """Format all Round 1 outputs for cross-attention in Round 2."""
+    lines = []
+    for v in votes:
+        if v.error or not v.pick:
+            continue
+        emoji = AGENT_EMOJIS.get(v.agent_name, "")
+        prob_str = f"team_a_win_prob={v.win_probability:.2f}" if v.win_probability else ""
+        lines.append(
+            f"{emoji} {v.agent_name}: Picked {v.pick} ({prob_str}, uncertainty={v.uncertainty:.2f})\n"
+            f"   Reasoning: {v.reasoning}\n"
+            f"   Key stat: {v.key_stat}"
+        )
+    return "\n\n".join(lines)
+
+
+ROUND2_PROMPT_TEMPLATE = (
+    "You gave your initial analysis in Round 1. Now here's what every other agent said:\n\n"
+    "{round1_summary}\n\n"
+    "ROUND 2 — CROSS-EXAMINATION:\n"
+    "1. STRONGEST DISAGREEMENT: Which agent's argument is most wrong? Rebut with specific data, not vibes.\n"
+    "2. STRONGEST AGREEMENT: Which agent's argument reinforced your view or changed your mind? Why?\n"
+    "3. POSITION UPDATE: Has your view strengthened, weakened, or flipped? Why?\n"
+    "4. UPDATED WIN PROBABILITY: Provide your updated team_a_win_prob and uncertainty.\n\n"
+    "You are ENCOURAGED to change your mind if another agent made a compelling data-driven point.\n"
+    "Stubbornness when faced with good evidence is a weakness, not a strength.\n\n"
+    "CRITICAL VOICE INSTRUCTIONS FOR ROUND 2:\n"
+    "- Address other agents BY NAME in your rebuttal ('Iron Curtain keeps saying...' / 'Glass Cannon is wrong about...')\n"
+    "- Be SPECIFIC — cite the exact number or claim you're rebutting\n"
+    "- Show genuine disagreement, not polite academic discourse\n"
+    "- You're on a panel show debating, not writing a peer review\n"
+    "- Use your signature verbal style — stay in character\n"
+    "- If you changed your mind, OWN IT: 'I have to give credit to [agent], they changed my mind on this because...'\n"
+    "- If you DIDN'T change your mind, dig in: 'I've heard everyone's arguments and I'm MORE confident now, not less, because...'\n\n"
+    "The first team listed is: {team_a}\n"
+    "The second team listed is: {team_b}\n\n"
+    "Respond with ONLY a JSON object:\n"
+    '{{"team_a_win_prob": <0.0-1.0>, "uncertainty": <0.0-0.20>, '
+    '"reasoning": "<2-3 sentences with your updated analysis IN YOUR VOICE — talk like you, not a textbook>", '
+    '"key_stat": "<specific number or fact>", '
+    '"position_change": "<strengthened|weakened|flipped|unchanged>", '
+    '"strongest_disagreement": "<which agent BY NAME and why they are wrong — be direct and specific>", '
+    '"strongest_agreement": "<which agent BY NAME reinforced your view and why>"}}\n'
+)
+
+
+async def run_agent_round2(
+    client: httpx.AsyncClient,
+    agent: AgentConfig,
+    game: Game,
+    round1_summary: str,
+    dry_run: bool = False,
+) -> AgentVote:
+    """Run an agent's Round 2 cross-examination response."""
+
+    user_message = ROUND2_PROMPT_TEMPLATE.format(
+        round1_summary=round1_summary,
+        team_a=game.team_a,
+        team_b=game.team_b,
+    )
+
+    start = time.monotonic()
+
+    if dry_run:
+        await asyncio.sleep(random.uniform(0.05, 0.2))
+        raw = get_mock_response(agent.name, game.team_a, game.team_b, round_num=2)
+        input_tokens, output_tokens = 800, 200
+        await cost_tracker.add(input_tokens, output_tokens, agent.model)
+    else:
+        temp = _game_temperature(agent.temperature, game.seed_a, game.seed_b)
+        try:
+            if agent.model == "gemini":
+                raw, input_tokens, output_tokens = await call_gemini_api(
+                    client, agent.system_prompt, user_message,
+                    temperature=temp,
+                )
+            else:
+                raw, input_tokens, output_tokens = await call_claude_api(
+                    client, agent.system_prompt, user_message,
+                    temperature=temp,
+                )
+        except Exception as e:
+            elapsed = time.monotonic() - start
+            log.error(f"  {agent.name} Round 2 FAILED ({agent.model}): {e}")
+            return AgentVote(
+                agent_name=agent.name, pick="", confidence=0, reasoning="",
+                response_time=elapsed, model=agent.model, error=str(e),
+                round_number=2,
+            )
+
+    elapsed = time.monotonic() - start
+
+    parsed = parse_agent_response(raw, game.team_a, game.team_b)
+    if parsed is None:
+        log.warning(f"  {agent.name} Round 2 returned unparseable response")
+        return AgentVote(
+            agent_name=agent.name, pick="", confidence=0, reasoning="",
+            response_time=elapsed, input_tokens=input_tokens,
+            output_tokens=output_tokens, model=agent.model,
+            error=f"Unparseable R2 response: {raw[:200]}",
+            round_number=2,
+        )
+
+    return AgentVote(
+        agent_name=agent.name,
+        pick=parsed["pick"],
+        confidence=parsed["confidence"],
+        reasoning=parsed["reasoning"],
+        key_stat=parsed.get("key_stat", ""),
+        response_time=elapsed,
+        input_tokens=input_tokens,
+        output_tokens=output_tokens,
+        model=agent.model,
+        win_probability=parsed.get("team_a_win_prob", 0.5),
+        uncertainty=parsed.get("uncertainty", 0.10),
+        round_number=2,
+        position_change=parsed.get("position_change", "unchanged"),
+        rebuttal_target=parsed.get("strongest_disagreement", ""),
+        rebuttal_text=parsed.get("strongest_agreement", ""),
+    )
+
+
+# ---------------------------------------------------------------------------
+# Probability combination
+# ---------------------------------------------------------------------------
+AGENT_WEIGHTS = {
+    "Tempo Hawk": 1.0,
+    "Iron Curtain": 1.0,
+    "Glass Cannon": 1.0,
+    "Road Dog": 1.0,
+    "Whisper": 1.0,
+    "Oracle": 1.2,   # Oracle gets slight base weight boost for calibration
+    "Streak": 1.0,
+}
+
+
+def combine_probabilities(
+    votes: list[AgentVote],
+    agent_accuracy: dict[str, dict],
+    game_weights: dict[str, float] | None = None,
+) -> tuple[float, float]:
+    """
+    Combine agent probabilities into a single team_a_win_prob and uncertainty.
+    Uses feature-driven weights from get_game_weights() when provided,
+    falling back to static AGENT_WEIGHTS for backward compatibility.
+    Returns (combined_prob, combined_uncertainty).
+    """
+    import math
+
+    valid = [v for v in votes if not v.error and v.pick]
+    if not valid:
+        return 0.5, 0.15
+
+    use_weights = game_weights if game_weights else AGENT_WEIGHTS
+
+    weights = []
+    probs = []
+    uncertainties = []
+
+    for v in valid:
+        w = use_weights.get(v.agent_name, 1.0)
+
+        # Accuracy track record adjustment (only when not using game_weights,
+        # since get_game_weights already handles accuracy)
+        if not game_weights:
+            stats = agent_accuracy.get(v.agent_name, {})
+            total = stats.get("total", 0)
+            correct = stats.get("correct", 0)
+            if total >= 5:
+                acc = correct / total
+                if acc >= 0.70:
+                    w *= 1.5
+                elif acc < 0.40:
+                    w *= 0.5
+
+        weights.append(w)
+        probs.append(v.win_probability)
+        uncertainties.append(v.uncertainty)
+
+    total_weight = sum(weights)
+    if total_weight == 0:
+        return 0.5, 0.15
+
+    # Weighted average of probabilities
+    combined_prob = sum(w * p for w, p in zip(weights, probs)) / total_weight
+
+    # Combined uncertainty: agent disagreement + average individual uncertainty
+    disagreement = (sum(w * (p - combined_prob) ** 2 for w, p in zip(weights, probs)) / total_weight) ** 0.5
+    avg_uncertainty = sum(w * u for w, u in zip(weights, uncertainties)) / total_weight
+    combined_uncertainty = math.sqrt(disagreement ** 2 + avg_uncertainty ** 2)
+
+    return (
+        max(0.01, min(0.99, combined_prob)),
+        max(0.0, min(0.25, combined_uncertainty)),
     )
 
 
@@ -1072,24 +1602,34 @@ async def run_conductor(
     agent_accuracy: dict[str, dict],
     agent_memory: dict[str, list[str]] | None = None,
     dry_run: bool = False,
+    round2_votes: list[AgentVote] | None = None,
 ) -> ConductorDecision:
-    system_prompt = build_conductor_prompt(game, votes, agent_accuracy, agent_memory)
+    system_prompt = build_conductor_prompt(game, votes, agent_accuracy, agent_memory, round2_votes)
     user_message = "Make your final decision. Respond with ONLY the JSON object."
+
+    # Compute feature-driven weights for this specific matchup
+    round_num = {"R64": 1, "R32": 2, "S16": 3, "E8": 4, "F4": 5, "NCG": 6}.get(game.round_name, 1)
+    game_wts = get_game_weights(game, agent_accuracy, round_number=round_num)
+
+    # Compute mathematical probability combination from the FINAL round votes
+    final_votes = round2_votes if round2_votes else votes
+    combined_prob, combined_unc = combine_probabilities(
+        final_votes, agent_accuracy, game_weights=game_wts
+    )
 
     if dry_run:
         await asyncio.sleep(random.uniform(0.1, 0.3))
-        pick_counts: dict[str, int] = {}
-        for v in votes:
-            if v.pick:
-                pick_counts[v.pick] = pick_counts.get(v.pick, 0) + 1
-        winner = max(pick_counts, key=pick_counts.get) if pick_counts else game.team_a
+        # Use probability math to determine pick
+        winner = game.team_a if combined_prob > 0.5 else game.team_b
+        confidence = max(50, min(99, int(abs(combined_prob - 0.5) * 200)))
         raw = json.dumps({
             "pick": winner,
-            "confidence": 71,
-            "reasoning": f"The panel leans toward {winner}. Tempo and defense alignment favor this pick.",
-            "key_factor": "Defensive efficiency gap",
-            "weighted_agent": "Iron Curtain — defensive matchup is the swing factor",
-            "dissent_report": "Glass Cannon's argument about shooting upside is valid but high-variance.",
+            "confidence": confidence,
+            "reasoning": f"Combined probability analysis yields {combined_prob:.2f} for {game.team_a}. "
+                         f"The panel's weighted consensus with uncertainty {combined_unc:.2f} favors {winner}.",
+            "key_factor": "Weighted probability combination from 2-round debate",
+            "weighted_agent": "Oracle — probability anchoring was most stable across both rounds",
+            "dissent_report": "Glass Cannon's shooting variance argument is valid but weakened in Round 2 cross-examination.",
         })
         await cost_tracker.add(600, 200, "claude")
     else:
@@ -1099,26 +1639,33 @@ async def run_conductor(
 
     parsed = parse_agent_response(raw, game.team_a, game.team_b)
     if parsed is None:
-        log.warning("Conductor returned unparseable response, falling back to majority")
-        pick_counts = {}
-        for v in votes:
-            if v.pick:
-                pick_counts[v.pick] = pick_counts.get(v.pick, 0) + 1
-        winner = max(pick_counts, key=pick_counts.get) if pick_counts else game.team_a
-        return ConductorDecision(pick=winner, confidence=55, reasoning="Fallback to majority vote.")
+        log.warning("Conductor returned unparseable response, falling back to probability math")
+        winner = game.team_a if combined_prob > 0.5 else game.team_b
+        confidence = max(50, min(99, int(abs(combined_prob - 0.5) * 200)))
+        return ConductorDecision(
+            pick=winner, confidence=confidence,
+            reasoning="Fallback to mathematical probability combination.",
+            combined_prob=combined_prob, combined_uncertainty=combined_unc,
+        )
 
     try:
         full = json.loads(raw) if isinstance(raw, str) else {}
     except Exception:
         full = {}
 
+    # The PICK is determined by the math, not the conductor's qualitative judgment
+    math_pick = game.team_a if combined_prob > 0.5 else game.team_b
+    math_confidence = max(50, min(99, int(abs(combined_prob - 0.5) * 200)))
+
     return ConductorDecision(
-        pick=parsed["pick"],
-        confidence=parsed["confidence"],
+        pick=math_pick,
+        confidence=math_confidence,
         reasoning=parsed["reasoning"],
         key_factor=full.get("key_factor", ""),
         weighted_agent=full.get("weighted_agent", ""),
         dissent_report=full.get("dissent_report", ""),
+        combined_prob=combined_prob,
+        combined_uncertainty=combined_unc,
     )
 
 
@@ -1148,24 +1695,46 @@ async def devils_advocate(
 def generate_debate_transcript(debate: GameDebate) -> str:
     g = debate.game
     lines = [
-        f"# {g.round_name} — {g.region} Region",
-        f"## #{g.seed_a} {g.team_a} vs #{g.seed_b} {g.team_b}",
+        f"# \U0001f3c0 #{g.seed_a} {g.team_a} vs #{g.seed_b} {g.team_b} — {g.region} Region, {ROUND_DISPLAY.get(g.round_name, g.round_name)}",
         f"*{debate.timestamp}*\n",
         "---\n",
     ]
 
+    # Round 1 — Independent Analysis
+    lines.append("## Round 1 — Independent Analysis\n")
     for vote in debate.votes:
         if vote.error:
             continue
         emoji = AGENT_EMOJIS.get(vote.agent_name, "")
         opener = AGENT_OPENERS.get(vote.agent_name, "")
-        pick_str = f"**{vote.pick}** ({vote.confidence}%)"
         model_tag = f" `[{vote.model}]`" if vote.model != "claude" else ""
         lines.append(
             f"{emoji} **{vote.agent_name.upper()}**{model_tag}: "
             f"\"{opener} {vote.reasoning}\"\n"
-            f"   *Pick: {pick_str} | Key stat: {vote.key_stat}*\n"
+            f"   Win probability: {g.team_a} {vote.win_probability:.2f} \u00b1 {vote.uncertainty:.2f}\n"
+            f"   *Key stat: {vote.key_stat}*\n"
         )
+
+    # Round 2 — Cross-Examination
+    if debate.round2_votes:
+        lines.append("\n## Round 2 — Cross-Examination\n")
+        for vote in debate.round2_votes:
+            if vote.error:
+                continue
+            emoji = AGENT_EMOJIS.get(vote.agent_name, "")
+            model_tag = f" `[{vote.model}]`" if vote.model != "claude" else ""
+            pos_tag = vote.position_change.upper() if vote.position_change else "UNCHANGED"
+            lines.append(
+                f"{emoji} **{vote.agent_name.upper()}** (position: {pos_tag}){model_tag}:\n"
+            )
+            if vote.rebuttal_target:
+                lines.append(f"   *Disagrees with:* {vote.rebuttal_target}\n")
+            if vote.rebuttal_text:
+                lines.append(f"   *Agrees with:* {vote.rebuttal_text}\n")
+            lines.append(
+                f"   \"{vote.reasoning}\"\n"
+                f"   Updated probability: {g.team_a} {vote.win_probability:.2f} \u00b1 {vote.uncertainty:.2f}\n"
+            )
 
     if debate.devils_advocate and not debate.devils_advocate.error:
         da = debate.devils_advocate
@@ -1195,11 +1764,18 @@ def generate_debate_transcript(debate: GameDebate) -> str:
     if debate.conductor:
         c = debate.conductor
         emoji = AGENT_EMOJIS.get("The Conductor", "")
-        lines.append(f"\n---\n### Final Verdict\n")
+        lines.append(f"\n---\n## \U0001f3bc The Conductor — Final Analysis\n")
         lines.append(
-            f"{emoji} **THE CONDUCTOR**: \"{AGENT_OPENERS['The Conductor']} {c.reasoning}\"\n"
+            f"Combined probability: {g.team_a} {c.combined_prob:.2f} \u00b1 {c.combined_uncertainty:.2f}\n"
         )
-        lines.append(f"   **PICK: {c.pick} ({c.confidence}%)**\n")
+        lines.append(
+            f"**PICK: {c.pick}** ({c.combined_prob*100:.0f}% — "
+            f"{'dominant favorite' if abs(c.combined_prob - 0.5) > 0.25 else 'clear favorite' if abs(c.combined_prob - 0.5) > 0.15 else 'lean' if abs(c.combined_prob - 0.5) > 0.05 else 'genuine toss-up'}"
+            f", {'low' if c.combined_uncertainty < 0.08 else 'moderate' if c.combined_uncertainty < 0.12 else 'high'} uncertainty)\n"
+        )
+        lines.append(
+            f"\n{emoji} **THE CONDUCTOR**: \"{AGENT_OPENERS['The Conductor']} {c.reasoning}\"\n"
+        )
         if c.key_factor:
             lines.append(f"   *Key factor: {c.key_factor}*\n")
         if c.weighted_agent:
@@ -1240,6 +1816,14 @@ def generate_debate_transcript(debate: GameDebate) -> str:
     for team, agents in pick_counts.items():
         lines.append(f"- **{team}**: {', '.join(agents)} ({len(agents)} votes)")
 
+    # Market analysis section
+    if debate.market_edge is not None:
+        try:
+            from market_analyzer import generate_market_section
+            lines.append("\n" + generate_market_section(debate.market_edge))
+        except Exception:
+            pass
+
     return "\n".join(lines)
 
 
@@ -1258,18 +1842,29 @@ async def analyze_game(
     agent_memory: dict[str, list[str]] | None = None,
     odds_data: list | None = None,
     verbose: bool = False,
+    tournament_memory: TournamentMemoryStore | None = None,
+    live_mode: bool = False,
 ) -> GameDebate:
 
+    # Pillar 5: Create trace for this game
+    tracer = GameTracer(game_id=game.id)
+    tracer.log_round1_start(game.team_a, game.team_b, game.seed_a, game.seed_b)
+    game_start_time = time.monotonic()
+
     log.info(
-        f"Game {game_index}/{total_games} | {game.round_name} {game.region} | "
+        f"[{tracer.trace_id}] Game {game_index}/{total_games} | {game.round_name} {game.region} | "
         f"#{game.seed_a} {game.team_a} vs #{game.seed_b} {game.team_b}"
     )
 
     # Build memory context per agent
+    # Pillar 1: Tournament memory only provides context in live mode (real results exist)
     tasks = []
     for agent in agents:
         mem_ctx = ""
-        if agent_memory and agent.name in agent_memory:
+        if live_mode and tournament_memory:
+            round_num = {"R64": 1, "R32": 2, "S16": 3, "E8": 4, "F4": 5, "NCG": 6}.get(game.round_name, 1)
+            mem_ctx = tournament_memory.get_context(agent.name, round_num)
+        elif agent_memory and agent.name in agent_memory:
             recent = agent_memory[agent.name][-5:]
             mem_ctx = "\n".join(recent)
         tasks.append(run_agent(client, agent, game, dry_run=dry_run, memory_context=mem_ctx))
@@ -1345,6 +1940,11 @@ async def analyze_game(
         log.info(
             f"  {v.agent_name}{model_tag}: {v.pick} ({v.confidence}%) [{v.response_time:.1f}s]"
         )
+        # Pillar 5: Trace agent votes
+        tracer.log_agent_vote(
+            v.agent_name, v.pick, v.win_probability, v.uncertainty,
+            v.response_time, v.input_tokens + v.output_tokens, v.model,
+        )
 
     if verbose:
         print(f"\n{'─'*60}")
@@ -1371,9 +1971,74 @@ async def analyze_game(
             timestamp=datetime.now(timezone.utc).isoformat(),
         )
 
-    # Anti-convergence: check for unanimity
+    # -----------------------------------------------------------------------
+    # Pillar 2A: Adaptive Debate Rounds
+    # Skip Round 2 for blowouts with unanimous consensus (saves ~30% API cost)
+    # -----------------------------------------------------------------------
+    seed_diff = abs(game.seed_a - game.seed_b)
+    r1_picks = set(v.pick for v in valid_votes)
+    skip_round2 = (seed_diff >= 10 and len(r1_picks) == 1)
+
+    if skip_round2:
+        log.info(f"  [ADAPTIVE] Skipping Round 2: seed diff={seed_diff}, unanimous R1 — saving API cost")
+        round2_votes = []
+        valid_r2 = []
+        position_changes = []
+        r1_summary = ""
+    else:
+        log.info(f"  Round 2: Cross-examination ({len(valid_votes)} agents)")
+        r1_summary = format_round1_outputs(valid_votes, game)
+        tracer.log_round2_start(len(valid_votes))
+
+        r2_tasks = []
+        for agent in agents:
+            if any(v.agent_name == agent.name and not v.error for v in results):
+                r2_tasks.append(run_agent_round2(client, agent, game, r1_summary, dry_run=dry_run))
+
+        r2_results_raw = await asyncio.gather(*r2_tasks, return_exceptions=True)
+        round2_votes = []
+        for i, r in enumerate(r2_results_raw):
+            if isinstance(r, BaseException):
+                log.error(f"  Round 2 exception: {r}")
+            elif r.error:
+                log.warning(f"  {r.agent_name} Round 2 failed: {r.error}")
+                round2_votes.append(r)
+            else:
+                round2_votes.append(r)
+
+        valid_r2 = [v for v in round2_votes if not v.error and v.pick]
+        position_changes = [v for v in valid_r2 if v.position_change in ("weakened", "flipped")]
+
+        for v in valid_r2:
+            model_tag = f" [{v.model}]" if v.model != "claude" else ""
+            log.info(
+                f"  R2 {v.agent_name}{model_tag}: {v.pick} (prob={v.win_probability:.2f}) "
+                f"[{v.position_change}] [{v.response_time:.1f}s]"
+            )
+            # Pillar 5: Trace position changes
+            if v.position_change in ("weakened", "flipped"):
+                r1_pick = next((rv.pick for rv in valid_votes if rv.agent_name == v.agent_name), "?")
+                tracer.log_position_change(v.agent_name, r1_pick, v.pick, v.position_change)
+        if position_changes:
+            log.info(f"  {len(position_changes)} agent(s) changed position in Round 2")
+
+        if verbose and valid_r2:
+            print(f"\n{'─'*60}")
+            print(f"  ROUND 2 CROSS-EXAMINATION ({len(valid_r2)} responses)")
+            print(f"{'─'*60}")
+            for v in valid_r2:
+                emoji = AGENT_EMOJIS.get(v.agent_name, "")
+                print(f"\n  {emoji} {v.agent_name} (position: {v.position_change.upper()})")
+                print(f"     Prob: {game.team_a} {v.win_probability:.2f} ± {v.uncertainty:.2f}")
+                print(f"     Disagrees with: {v.rebuttal_target[:80]}...")
+                print(f"     Agrees with: {v.rebuttal_text[:80]}...")
+                print(f"     Reasoning: {v.reasoning}")
+            print(f"{'─'*60}")
+
+    # Anti-convergence: check for unanimity (using Round 2 picks if available)
+    final_votes = valid_r2 if valid_r2 else valid_votes
     devils_advocate_vote = None
-    picks = set(v.pick for v in valid_votes)
+    picks = set(v.pick for v in final_votes)
     if len(picks) == 1:
         unanimous_pick = list(picks)[0]
         log.info(f"  UNANIMOUS for {unanimous_pick} — triggering devil's advocate")
@@ -1420,9 +2085,10 @@ async def analyze_game(
         )
         conductor_votes.append(da_for_conductor)
 
-    # Run The Conductor
+    # Run The Conductor (sees BOTH rounds)
     conductor_decision = await run_conductor(
-        client, game, conductor_votes, agent_accuracy, agent_memory, dry_run=dry_run
+        client, game, conductor_votes, agent_accuracy, agent_memory, dry_run=dry_run,
+        round2_votes=valid_r2 if valid_r2 else None,
     )
 
     # On unanimous original votes, cap conductor confidence (DA exists for a reason)
@@ -1470,8 +2136,13 @@ async def analyze_game(
                 + conductor_decision.dissent_report
             )
 
+    # Pillar 5: Trace conductor decision
+    tracer.log_conductor_decision(
+        conductor_decision.pick, conductor_decision.confidence,
+        conductor_decision.combined_prob, conductor_decision.combined_uncertainty,
+    )
     log.info(
-        f"  CONDUCTOR: {conductor_decision.pick} ({conductor_decision.confidence}%)"
+        f"  [{tracer.trace_id}] CONDUCTOR: {conductor_decision.pick} ({conductor_decision.confidence}%)"
     )
 
     if verbose:
@@ -1509,8 +2180,9 @@ async def analyze_game(
                 f"but {names} dissented with >70% confidence"
             )
 
-    # Vegas comparison
+    # Vegas comparison + Market Inefficiency Analysis
     vegas_comp = None
+    market_edge = None
     if odds_data:
         try:
             from odds_tracker import find_game_odds, compare_swarm_to_vegas
@@ -1522,19 +2194,72 @@ async def analyze_game(
                 )
                 if vegas_comp.get("available"):
                     log.info(f"  VEGAS: {vegas_comp['summary']}")
+
+                # Market inefficiency detection
+                try:
+                    from market_analyzer import analyze_game as ma_analyze
+                    agent_votes_for_market = [
+                        {"agent_name": v.agent_name, "win_probability": v.win_probability}
+                        for v in final_votes
+                        if not v.error and v.pick
+                    ]
+                    market_edge = ma_analyze(
+                        game_id=game.id,
+                        team_a=game.team_a, team_b=game.team_b,
+                        seed_a=game.seed_a, seed_b=game.seed_b,
+                        region=game.region, round_name=game.round_name,
+                        swarm_prob=conductor_decision.combined_prob,
+                        combined_uncertainty=conductor_decision.combined_uncertainty,
+                        agent_votes=agent_votes_for_market,
+                        game_odds=game_odds,
+                    )
+                    if market_edge and abs(market_edge.edge) > 0.05:
+                        log.info(
+                            f"  MARKET EDGE: {abs(market_edge.edge):.1%} — "
+                            f"{market_edge.recommendation}"
+                        )
+                except Exception as e:
+                    log.debug(f"  Market analysis failed: {e}")
         except Exception as e:
             log.debug(f"  Vegas comparison failed: {e}")
 
-    # Update agent memory
+    # Update agent memory (legacy format)
     if agent_memory is not None:
         for v in valid_votes:
             if v.agent_name not in agent_memory:
                 agent_memory[v.agent_name] = []
-            correct_marker = ""  # we don't know yet
             agent_memory[v.agent_name].append(
                 f"{game.round_name}: picked {v.pick} ({v.confidence}%) "
-                f"in #{game.seed_a} {game.team_a} vs #{game.seed_b} {game.team_b}{correct_marker}"
+                f"in #{game.seed_a} {game.team_a} vs #{game.seed_b} {game.team_b}"
             )
+
+    # Pillar 1A: Record picks in tournament memory (predictions only, no fake results)
+    game_label = f"#{game.seed_a} {game.team_a} vs #{game.seed_b} {game.team_b}"
+    game_type = classify_game_type(game.seed_a, game.seed_b)
+    if tournament_memory:
+        for v in valid_votes:
+            r2_v = next((r2 for r2 in valid_r2 if r2.agent_name == v.agent_name), None)
+            pos_change = r2_v.position_change if r2_v else "unchanged"
+            tournament_memory.record_pick(
+                agent_name=v.agent_name,
+                game_label=game_label,
+                pick=v.pick,
+                probability=v.win_probability,
+                round_name=game.round_name,
+                game_type=game_type,
+                position_change=pos_change,
+            )
+
+    # Pillar 5B: Record agent performance metrics
+    for v in valid_votes:
+        r2_v = next((r2 for r2 in valid_r2 if r2.agent_name == v.agent_name), None)
+        perf_tracker.record_from_votes(game.id, v, r2_v)
+
+    # Pillar 5: Log game completion
+    game_elapsed = time.monotonic() - game_start_time
+    game_tokens = sum(v.input_tokens + v.output_tokens for v in valid_votes)
+    game_tokens += sum(v.input_tokens + v.output_tokens for v in valid_r2)
+    tracer.log_game_complete(game_elapsed, game_tokens, 0.0)
 
     debate = GameDebate(
         game=game,
@@ -1544,9 +2269,17 @@ async def analyze_game(
         upset_score=upset_score,
         vegas_comparison=vegas_comp,
         timestamp=datetime.now(timezone.utc).isoformat(),
+        round2_votes=round2_votes,
+        market_edge=market_edge,
     )
 
     # Write to Supabase immediately
+    # R1/R2 vote splits for Supabase
+    r1_a = sum(1 for v in valid_votes if v.pick == game.team_a)
+    r1_b = len(valid_votes) - r1_a
+    r2_a = sum(1 for v in valid_r2 if v.pick == game.team_a) if valid_r2 else 0
+    r2_b = len(valid_r2) - r2_a if valid_r2 else 0
+
     game_record = {
         "id": game.id,
         "team_a": game.team_a,
@@ -1561,9 +2294,15 @@ async def analyze_game(
         "key_factor": conductor_decision.key_factor,
         "dissent_report": conductor_decision.dissent_report,
         "upset_score": upset_score.score if upset_score else None,
-        "vote_count_a": sum(1 for v in valid_votes if v.pick == game.team_a),
-        "vote_count_b": sum(1 for v in valid_votes if v.pick == game.team_b),
+        "vote_count_a": r1_a,
+        "vote_count_b": r1_b,
         "analyzed_at": debate.timestamp,
+        # New v3 fields
+        "team_a_win_prob": round(conductor_decision.combined_prob, 4),
+        "combined_uncertainty": round(conductor_decision.combined_uncertainty, 4),
+        "round1_vote_split": f"{r1_a}-{r1_b}",
+        "round2_vote_split": f"{r2_a}-{r2_b}" if valid_r2 else "",
+        "position_changes": len(position_changes),
     }
     if not supabase_client.write_game_result(game_record):
         log.warning(f"  Supabase: failed to write game result for {game.id}")
@@ -1578,6 +2317,26 @@ async def analyze_game(
             "reasoning": v.reasoning,
             "key_stat": v.key_stat,
             "model": v.model,
+            "round_number": 1,
+            "win_probability": round(v.win_probability, 4),
+            "uncertainty": round(v.uncertainty, 4),
+        })
+    # Add Round 2 votes
+    for v in valid_r2:
+        vote_records.append({
+            "game_id": game.id,
+            "agent_name": v.agent_name,
+            "pick": v.pick,
+            "confidence": v.confidence,
+            "reasoning": v.reasoning,
+            "key_stat": v.key_stat,
+            "model": v.model,
+            "round_number": 2,
+            "win_probability": round(v.win_probability, 4),
+            "uncertainty": round(v.uncertainty, 4),
+            "position_change": v.position_change,
+            "rebuttal_target": v.rebuttal_target[:500] if v.rebuttal_target else "",
+            "rebuttal_text": v.rebuttal_text[:500] if v.rebuttal_text else "",
         })
     if vote_records:
         if not supabase_client.write_agent_votes(vote_records):
@@ -1832,6 +2591,24 @@ async def run_bracket(args):
     agent_memory: dict[str, list[str]] = {}
     groupthink_tracker: dict = {"unanimous": 0, "total": 0}
 
+    # Pillar 3: Override budget if specified
+    if args.budget is not None:
+        cost_guard.max_budget = args.budget
+        log.info(f"Budget set to ${args.budget:.2f}")
+
+    # Pillar 1: Initialize tournament memory store
+    agent_names = [a.name for a in agents]
+    tournament_memory = TournamentMemoryStore(agent_names)
+    live_mode = args.live_update is not None
+
+    if live_mode:
+        # Load existing memory with real results from prior rounds
+        if tournament_memory.load():
+            log.info(f"Live-update mode: loaded tournament memory")
+            log.info(tournament_memory.summary())
+        else:
+            log.warning("Live-update mode but no tournament_memory.json found. Starting fresh.")
+
     # Validate Supabase configuration
     sb_client = supabase_client.get_client()
     if sb_client is None:
@@ -1901,14 +2678,15 @@ async def run_bracket(args):
     else:
         total_games = first_round_count
 
-    est_calls = int(total_games * 7.5)
+    # ~15 calls per game with 2-round debate (7 R1 + 7 R2 + 1 conductor)
+    est_calls = int(total_games * 15)
     est_cost = est_calls * (500 * COST_PER_INPUT_TOKEN + 150 * COST_PER_OUTPUT_TOKEN)
 
     if not args.dry_run and not args.yes:
-        print(f"\nThis will analyze ~{total_games} games with ~{est_calls} API calls.")
+        print(f"\nThis will analyze ~{total_games} games with ~{est_calls} API calls (2-round debate).")
         print(f"Estimated cost: ${est_cost:.2f}")
         if multi_model:
-            print(f"Multi-model mode: 3 agents on Claude, 3 on Gemini")
+            print(f"Multi-model mode: 3 agents on Claude, 4 on Gemini")
         confirm = input("Proceed? [y/n] ").strip().lower()
         if confirm != "y":
             print("Aborted.")
@@ -1944,6 +2722,8 @@ async def run_bracket(args):
                     agent_memory=agent_memory,
                     odds_data=odds_data,
                     verbose=getattr(args, 'verbose', False),
+                    tournament_memory=tournament_memory,
+                    live_mode=live_mode,
                 )
                 round_debates.append(debate)
                 all_debates.append(debate)
@@ -1976,6 +2756,67 @@ async def run_bracket(args):
             # Advance to next round if running full bracket
             if args.full_bracket:
                 next_games = advance_bracket(round_debates, current_round)
+
+                # Run Monte Carlo simulation after R64 completes
+                if current_round == "R64" and len(round_debates) >= 16:
+                    try:
+                        from monte_carlo import (
+                            GameProb, TeamSim, simulate_bracket as mc_simulate,
+                            print_monte_carlo_report, print_full_advancement_table,
+                        )
+                        mc_games = []
+                        for d in round_debates:
+                            if d.conductor:
+                                g = d.game
+                                t_a = TeamSim(g.team_a, g.seed_a, g.region, g.stats_a.get("kenpom_rank", 100))
+                                t_b = TeamSim(g.team_b, g.seed_b, g.region, g.stats_b.get("kenpom_rank", 100))
+                                mc_games.append(GameProb(
+                                    game_id=g.id, team_a=t_a, team_b=t_b,
+                                    team_a_win_prob=d.conductor.combined_prob,
+                                    round_name="R64",
+                                ))
+                        if mc_games:
+                            log.info(f"\nRunning Monte Carlo simulation ({len(mc_games)} R64 games)...")
+                            mc_result = mc_simulate(mc_games, n_sims=10000)
+                            print_monte_carlo_report(mc_result)
+                            if getattr(args, 'verbose', False):
+                                print_full_advancement_table(mc_result)
+
+                            # Write to Supabase if available
+                            try:
+                                sb = supabase_client.get_client()
+                                if sb:
+                                    mc_records = []
+                                    for team_name, probs in mc_result.advancement_probs.items():
+                                        team = mc_result.team_info[team_name]
+                                        mc_records.append({
+                                            "team_name": team_name,
+                                            "seed": team.seed,
+                                            "region": team.region,
+                                            "prob_r32": round(probs.get("R32", 0), 4),
+                                            "prob_s16": round(probs.get("S16", 0), 4),
+                                            "prob_e8": round(probs.get("E8", 0), 4),
+                                            "prob_f4": round(probs.get("F4", 0), 4),
+                                            "prob_championship": round(probs.get("NCG", 0), 4),
+                                            "prob_winner": round(probs.get("Winner", 0), 4),
+                                            "n_simulations": mc_result.n_simulations,
+                                        })
+                                    # We'd write to mm_monte_carlo table here if it exists
+                                    log.info(f"  Monte Carlo: {len(mc_records)} team probabilities computed")
+                            except Exception as e:
+                                log.warning(f"  Monte Carlo Supabase write failed: {e}")
+                    except Exception as e:
+                        log.warning(f"Monte Carlo simulation failed: {e}")
+
+                # Market Inefficiency Report after R64
+                if odds_data and round_debates:
+                    try:
+                        from market_analyzer import analyze_bracket, print_market_report
+                        market_report = analyze_bracket(round_debates, odds_data)
+                        print_market_report(market_report)
+                    except Exception as e:
+                        log.warning(f"Market report failed: {e}")
+
                 if next_games:
                     current_round_idx = ROUND_NAMES.index(current_round)
                     current_round = ROUND_NAMES[current_round_idx + 1]
@@ -1988,6 +2829,9 @@ async def run_bracket(args):
 
     elapsed = time.monotonic() - start_time
 
+    # Pillar 1: Save tournament memory for future live-update runs
+    tournament_memory.save()
+
     # Final summary
     print("=" * 60)
     print("SWARM COMPLETE")
@@ -1995,6 +2839,7 @@ async def run_bracket(args):
     print(f"Games analyzed: {game_counter}")
     print(f"Total time: {elapsed:.1f}s ({elapsed/max(game_counter,1):.1f}s per game)")
     print(f"{cost_tracker.summary()}")
+    print(f"{cost_guard.summary()}")  # Pillar 3: Budget status
 
     gt = groupthink_tracker
     if gt["total"] > 0:
@@ -2049,6 +2894,26 @@ async def run_bracket(args):
             print(f"  Confidence: {last.conductor.confidence}%")
             print(f"{'*'*60}")
 
+    # Pillar 5B: Agent Performance Summary
+    agent_perf = perf_tracker.get_agent_summary()
+    if agent_perf:
+        print(f"\n{'='*60}")
+        print("AGENT PERFORMANCE METRICS")
+        print(f"{'='*60}")
+        for name, stats in sorted(agent_perf.items()):
+            acc_str = f"{stats['accuracy']:.0%}" if stats['accuracy'] is not None else "N/A"
+            print(
+                f"  {name}: {stats['total_games']} games | "
+                f"Accuracy: {acc_str} | "
+                f"Avg response: {stats['avg_response_ms']:.0f}ms | "
+                f"Position changes: {stats['position_changes']} | "
+                f"Cost: ${stats['total_cost']:.3f}"
+            )
+
+    # Pillar 1: Tournament Memory Summary
+    if tournament_memory.has_real_data():
+        print(f"\n{tournament_memory.summary()}")
+
     print(f"\nDebate transcripts: {Path(__file__).parent / 'debates'}/")
     print(f"Logs: {LOG_DIR}/")
 
@@ -2081,6 +2946,11 @@ def main():
     parser.add_argument("--verbose", action="store_true", help="Print detailed agent responses")
     parser.add_argument("--game", type=str, default=None,
                         help="Run a specific game by team name (e.g. 'UCLA vs UCF')")
+    parser.add_argument("--live-update", type=str, default=None, metavar="ROUND",
+                        help="Live-update mode: re-run from ROUND (R32, S16, etc.) using "
+                        "real results from prior rounds. Agents get tournament memory.")
+    parser.add_argument("--budget", type=float, default=None,
+                        help="Override API budget limit (default: $100)")
     args = parser.parse_args()
 
     asyncio.run(run_bracket(args))

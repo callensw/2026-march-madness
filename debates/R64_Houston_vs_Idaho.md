@@ -1,55 +1,84 @@
-# R64 — South Region
-## #2 Houston vs #15 Idaho
-*2026-03-16T02:15:15.000101+00:00*
+# 🏀 #2 Houston vs #15 Idaho — South Region, Round of 64
+*2026-03-16T13:08:30.270334+00:00*
 
 ---
 
-🦅 **TEMPO HAWK**: "Let me run the numbers on pace and efficiency here. Idaho's glacial pace (64.4 possessions) could theoretically neutralize Houston's talent edge by limiting possessions, but Houston's elite defense (87.3 adj_d) is built for grinding games and their tempo (68.5) shows they can adapt. The 17.3-point efficiency gap is simply too massive to overcome even in a slow game."
-   *Pick: **Houston** (86%) | Key stat: Houston plays at 68.5 tempo vs Idaho's 64.4 - only a 4.1 possession gap, not enough pace differential for Idaho to control the game*
+## Round 1 — Independent Analysis
 
-🛡️ **IRON CURTAIN**: "Look, I don't care what the offense looks like. Houston's elite defense (87.3 adj_d) creates a massive defensive gap against Idaho's mediocre offense (108.3 adj_o). While Idaho has decent defense at 98.5, they lack the offensive firepower to keep pace in a grind-it-out game that Houston will dictate."
-   *Pick: **Houston** (92%) | Key stat: Houston's 87.3 defensive efficiency ranks elite while Idaho's 108.3 offensive efficiency is 140+ spots lower in KenPom*
+🦅 **TEMPO HAWK**: "Alright, I've been looking at the tempo data and here's what everyone's missing… This is exactly the kind of historic mismatch that warrants extreme confidence. Houston's 38-point KenPom gap over Idaho represents one of the largest talent disparities in the tournament, and the tempo difference actually favors Houston - they can grind this down to their preferred pace while maintaining overwhelming efficiency advantages on both ends. Idaho's path requires Houston to have a catastrophic shooting night while simultaneously playing perfect basketball themselves."
+   Win probability: Houston 0.97 ± 0.05
+   *Key stat: Houston plays at 68.5 possessions per game vs Idaho's 64.4 - Houston can control pace while maintaining a massive 21.1-point efficiency margin (38.3 offensive rating advantage, 11.2 defensive rating advantage)*
 
-💥 **GLASS CANNON** `[gemini]`: "Forget the spreadsheets for a second. While I live for the upset, Idaho's 3PT% is below 34% and significantly lower than Houston's, negating my primary upset trigger. Houston's elite perimeter defense (allowing only 28.7% 3PT to opponents) will stifle any hopes Idaho has of getting hot from deep, making an upset highly improbable."
-   *Pick: **Houston** (93%) | Key stat: Idaho 3PT% (32.4%) < 34%*
+🛡️ **IRON CURTAIN**: "Look, I don't care how many points they score. You know what I care about? Stops. Houston's elite defense (87.3 adj_d) will suffocate Idaho's mediocre offense. The 140-spot KenPom gap is too massive to overcome, even in a slow game. Defense travels, and Houston has it."
+   Win probability: Houston 0.92 ± 0.08
+   *Key stat: Houston's 87.3 adj_d ranks in top 15 nationally*
 
-🐺 **ROAD DOG** `[gemini]`: "I've seen this movie before. While Idaho has momentum as a conference tournament champion, Houston is a top-5 KenPom team, a blue blood in all but name, and lost a close conference final. The Upset Trigger does not apply here due to Houston's elite KenPom ranking, and the experience and defensive prowess of Houston will be too much for Idaho."
-   *Pick: **Houston** (95%) | Key stat: Houston KenPom=5*
+💥 **GLASS CANNON** `[gemini]`: "Okay okay okay — have you SEEN this team shoot? Because the numbers are ridiculous. Okay, okay, I get it, a 15-seed against Houston, it's a huge mountain to climb! But I'm always looking for that spark, that three-point magic! Houston's 3PT% is strong at 36.3%, and that's great, you love to see it. But Idaho, they're only at 32.4% from deep, and that's just not going to cut it against a team like Houston. My upset trigger isn't hitting here, not even close, and Houston's defense is absolutely suffocating. Idaho's just not bringing the shooting fire needed to make this interesting; they can't coach that! You need to be hitting from deep to even think about it."
+   Win probability: Houston 0.90 ± 0.05
+   *Key stat: Idaho's 3PT% of 32.4% is significantly lower than Houston's 36.3%.*
 
-👁️ **WHISPER** `[gemini]`: "Something doesn't add up here, and nobody's talking about it. Something doesn't add up here... Houston's loss in the Big 12 final was a hard-fought game against a top team, not a sign of weakness. Idaho's conference tournament win is commendable, but the talent and defensive gap against Houston is simply too vast, regardless of recent form."
-   *Pick: **Houston** (97%) | Key stat: Houston adj_d=87.3 (1st nationally)*
+🐺 **ROAD DOG** `[gemini]`: "You know what? I've seen this movie before. Let me tell you what actually happens when… Now, listen, I'm the first one to tell ya that numbers don't play the game, and I love a good mid-major story. But this Houston team, they're a different breed. They lost a tough one in their conference final, sure, but that's a Big 12 final against a good Arizona team, not some early exit. Idaho's got some momentum, winning their conference, but Houston's defense is just too suffocating. They'll wear 'em down. Sometimes, the favorite is just too good, no matter how much heart the other team has."
+   Win probability: Houston 0.95 ± 0.05
+   *Key stat: Houston KenPom=5 vs Idaho KenPom=145*
 
-📜 **ORACLE**: "The historical record is clear on this. This is a classic 2v15 matchup with a 140-point KenPom gap. Houston's elite defense (87.3 adj_d) should completely stifle Idaho's below-average offense, while the Cougars' balanced attack will exploit Idaho's poor defense. The base rate for 2-seeds is 93.8%, and this profiles as one of the safer games in that range."
-   *Pick: **Houston** (92%) | Key stat: 140-point KenPom gap between Houston (#5) and Idaho (#145)*
+👁️ **WHISPER** `[gemini]`: "Here's what nobody's talking about… Nobody's talking about this, but Houston's loss in the Big 12 final, even a close one, might suggest a slight dip in their impenetrable armor, especially against a team that just ran through their own conference tournament. However, the sheer defensive gap and Houston's overall consistency suggest Idaho's Cinderella run likely ends here. The whispers I'm hearing about Houston's focus after the conference final loss are concerning, but the talent disparity is too vast."
+   Win probability: Houston 0.96 ± 0.04
+   *Key stat: Houston's adj_d=87.3 vs Idaho's adj_o=108.3*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching... Forget the spreadsheets — let me tell you what I've been watching... While Idaho is riding a high from winning their conference tournament, Houston's recent form is still incredibly strong despite a close loss in their conference final. They've won 8 of their last 10, and their only recent loss was a tight one to a top team, not a collapse. Idaho's streak is good, but the quality of competition is vastly different, and Houston is still peaking."
-   *Pick: **Houston** (94%) | Key stat: Houston's last 10 game record: 8-2*
+📜 **ORACLE**: "Since the field expanded to 64 teams in 1985, here's what the data tells us… This is a classic 2v15 matchup that screams historical base rate of 93.8%. Houston's elite defense (87.3 adj_d, 5th in KenPom) against Idaho's pedestrian offense (108.3 adj_o, 145th overall) creates a massive talent gap. The Cougars' 38-point KenPom advantage is exactly what you'd expect in a blowout 2-seed victory - this reminds me of 2019 when Michigan State demolished Bradley by 20."
+   Win probability: Houston 0.94 ± 0.05
+   *Key stat: 140-point KenPom gap (5 vs 145) - largest you'll see in Round of 64*
+
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been WATCHING. Forget the spreadsheets – let me tell you what I've been watching! Houston just lost their conference final, but it was a tight game against a strong Arizona team. They're still playing at an elite level, and while Idaho won their conference tournament, the gap in talent and recent competition is just too wide. Houston is still peaking, playing at an elite level, and that one loss doesn't derail their momentum."
+   Win probability: Houston 0.85 ± 0.10
+   *Key stat: Houston's last 10 game record is 8-2, showing consistent high-level play.*
 
 
 ### Devil's Advocate (unanimous vote triggered)
-🦅 **TEMPO HAWK** *(forced contrarian)*: "Idaho's glacial 64.4 tempo perfectly neutralizes Houston's talent advantage by creating a rock fight. The Vandals can grind this into a 55-possession slugfest where Houston's superior depth and athleticism matter less, and their recent conference tournament loss suggests vulnerability. Idaho's hot streak and conference championship momentum in a pace-controlled game creates genuine upset potential."
-   *Pick: **Idaho** (62%) | Key stat: Idaho plays 4.1 possessions per game slower than Houston (64.4 vs 68.5), creating the pace mismatch that allows underdogs to steal games*
+🛡️ **IRON CURTAIN** *(forced contrarian)*: "Houston's elite defense (87.3 adj_d) will suffocate Idaho's mediocre offense. Even in a slow, ugly game that Idaho prefers, the 11-point defensive efficiency gap is insurmountable."
+   *Pick: **Houston** (84%) | Key stat: Houston's 87.3 adjusted defensive efficiency vs Idaho's 98.5 - that's elite vs below-average*
 
 
 ### Swarm vs Vegas
-   *Swarm: 93% on Houston | Vegas implied: 97% | Delta: 4pp more bearish*
+   *Swarm: 67% on Houston | Vegas implied: 97% | Delta: 30pp more bearish*
 
 
 ---
-### Final Verdict
+## 🎼 The Conductor — Final Analysis
 
-🎼 **THE CONDUCTOR**: "I've heard every argument. Here's what actually matters. This is a classic 2v15 matchup with a massive 140-point KenPom gap where Houston's elite defense (87.3 adj_d) should completely neutralize Idaho's below-average offense. All seven agents unanimously picked Houston with very high confidence (86-97%), creating a weighted average of 93% with no meaningful dissent."
+Combined probability: Houston 0.84 ± 0.25
 
-   **PICK: Houston (93%)**
+**PICK: Houston** (84% — dominant favorite, high uncertainty)
 
-   *Key factor: Massive talent and defensive gap typical of 2v15 matchups*
 
-   *Most weighted: Iron Curtain - the defensive gap is the most critical factor in this blowout-profile game*
+🎼 **THE CONDUCTOR**: "I've heard every argument. Here's what actually matters in this game. Here's my ruling: Tempo Hawk and Oracle delivered the most convincing arguments, emphasizing the historic 38-point KenPom gap and the 93.8% base rate for 2-seeds. Streak was least convincing, overcomplicating momentum narratives when the talent disparity is this massive. This isn't about trends or feelings - it's about elite defense meeting mediocre offense in March. When the KenPom gap is 38 points, the upset conversation is academic."
 
-   *Dissent report: The only potential counter-argument is that Idaho's slow pace could theoretically limit possessions and keep the game close, but Houston's elite defense is built for grinding games and the efficiency gap is simply too vast to overcome regardless of tempo.*
+   *Key factor: Massive talent and efficiency gap (38-point KenPom difference)*
+
+   *Most weighted: Tempo Hawk and Oracle - they focused on the overwhelming statistical evidence and historical precedent that makes this outcome nearly inevitable*
+
+   *Dissent report: Streak overthought the momentum angle when Houston's one conference final loss doesn't erase a season of dominance against vastly superior competition than Idaho has faced*
+
+
+---
+### Specialist Vote: 7-0 Houston
+
+🦅Houston 🛡️Houston 💥Houston 🐺Houston 👁️Houston 📜Houston 🔥Houston
+
+CONDUCTOR AGREES: Houston (67%)
 
 
 ---
 ### Vote Tally
 
 - **Houston**: Tempo Hawk, Iron Curtain, Glass Cannon, Road Dog, Whisper, Oracle, Streak (7 votes)
+
+
+## Market Analysis
+
+- Swarm probability: Houston 84% ± 25%
+- Vegas implied probability: Houston 96%
+- Edge: 12.1% (market favors Idaho)
+- Vegas spread: Houston -23.0
+- Contrarian signal: Streak (-11% vs market)
+- Recommendation: NO BET — edge (12.1%) exists but uncertainty too high (25.0%)

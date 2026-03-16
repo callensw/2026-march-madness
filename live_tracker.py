@@ -12,15 +12,23 @@ Usage:
 """
 
 import argparse
+import difflib
+import fcntl
 import json
 import os
 import sys
+import tempfile
 import time
 from datetime import datetime, timezone
 from pathlib import Path
 
 import httpx
 from dotenv import load_dotenv
+
+try:
+    import supabase_client
+except ImportError:
+    supabase_client = None
 
 load_dotenv(Path(__file__).parent / ".env")
 
@@ -125,16 +133,20 @@ def _make_key(team_a: str, team_b: str) -> str:
 
 
 def _fuzzy_key(name_a: str, name_b: str, picks: dict) -> str | None:
-    """Try to find a matching key in picks using fuzzy matching."""
+    """Try to find a matching key in picks using SequenceMatcher-based fuzzy matching."""
+    threshold = 0.8
+    na = name_a.lower().strip()
+    nb = name_b.lower().strip()
     for key in picks:
         parts = key.split("|")
         if len(parts) != 2:
             continue
-        a_match = name_a.lower() in parts[0] or parts[0] in name_a.lower()
-        b_match = name_b.lower() in parts[1] or parts[1] in name_b.lower()
-        a_match_rev = name_a.lower() in parts[1] or parts[1] in name_a.lower()
-        b_match_rev = name_b.lower() in parts[0] or parts[0] in name_b.lower()
-        if (a_match and b_match) or (a_match_rev and b_match_rev):
+        sim_a0 = difflib.SequenceMatcher(None, na, parts[0]).ratio()
+        sim_b1 = difflib.SequenceMatcher(None, nb, parts[1]).ratio()
+        sim_a1 = difflib.SequenceMatcher(None, na, parts[1]).ratio()
+        sim_b0 = difflib.SequenceMatcher(None, nb, parts[0]).ratio()
+        if (sim_a0 >= threshold and sim_b1 >= threshold) or \
+           (sim_a1 >= threshold and sim_b0 >= threshold):
             return key
     return None
 
@@ -182,7 +194,9 @@ def check_results(scores: list[dict], picks: dict) -> list[dict]:
 
 def update_accuracy(results: list[dict]):
     """Update agent accuracy tracking based on game results."""
-    import supabase_client
+    if supabase_client is None:
+        print("  Warning: supabase_client not available, skipping accuracy update.")
+        return
 
     # For now just write overall accuracy
     correct = sum(1 for r in results if r["correct"])
@@ -199,20 +213,36 @@ def update_accuracy(results: list[dict]):
 
 
 def save_results(all_results: list[dict]):
-    """Persist results to JSON."""
-    existing = []
-    if RESULTS_FILE.exists():
-        with open(RESULTS_FILE) as f:
-            existing = json.load(f)
+    """Persist results to JSON with atomic write and file locking."""
+    lock_path = RESULTS_FILE.with_suffix(".lock")
+    with open(lock_path, "w") as lock_f:
+        fcntl.flock(lock_f, fcntl.LOCK_EX)
+        try:
+            existing = []
+            if RESULTS_FILE.exists():
+                with open(RESULTS_FILE) as f:
+                    existing = json.load(f)
 
-    seen = {r["matchup"] for r in existing}
-    for r in all_results:
-        if r["matchup"] not in seen:
-            existing.append(r)
-            seen.add(r["matchup"])
+            seen = {r["matchup"] for r in existing}
+            for r in all_results:
+                if r["matchup"] not in seen:
+                    existing.append(r)
+                    seen.add(r["matchup"])
 
-    with open(RESULTS_FILE, "w") as f:
-        json.dump(existing, f, indent=2)
+            # Atomic write: write to temp file then rename
+            dir_path = RESULTS_FILE.parent
+            fd, tmp_path = tempfile.mkstemp(dir=str(dir_path), suffix=".tmp")
+            try:
+                with os.fdopen(fd, "w") as tmp_f:
+                    json.dump(existing, tmp_f, indent=2)
+                os.rename(tmp_path, str(RESULTS_FILE))
+            except BaseException:
+                # Clean up temp file on failure
+                if os.path.exists(tmp_path):
+                    os.unlink(tmp_path)
+                raise
+        finally:
+            fcntl.flock(lock_f, fcntl.LOCK_UN)
 
 
 def run_check():

@@ -6,6 +6,8 @@ Scrapes from Barttorvik (barttorvik.com) or falls back to manual entry.
 
 import json
 import sys
+from difflib import SequenceMatcher
+
 import httpx
 from pathlib import Path
 
@@ -101,12 +103,27 @@ def lookup_teams(team_names: list[str], all_teams: list[dict]) -> dict:
         if key in name_index:
             result[name] = name_index[key]
         else:
-            # Fuzzy: check if any scraped name contains the search term
-            matches = [t for k, t in name_index.items() if key in k or k in key]
-            if matches:
-                result[name] = matches[0]
+            # Use similarity matching: require >= 80% or exact word boundary match
+            best_match = None
+            best_ratio = 0.0
+            word_boundary_match = None
+            key_words = set(key.split())
+            for k, t in name_index.items():
+                k_words = set(k.split())
+                # Word boundary match: all words in one name appear in the other
+                if key_words and k_words and (key_words <= k_words or k_words <= key_words):
+                    word_boundary_match = t
+                    break
+                ratio = SequenceMatcher(None, key, k).ratio()
+                if ratio > best_ratio:
+                    best_ratio = ratio
+                    best_match = t
+            if word_boundary_match:
+                result[name] = word_boundary_match
+            elif best_match and best_ratio >= 0.80:
+                result[name] = best_match
             else:
-                print(f"  Warning: '{name}' not found in scraped data")
+                print(f"  Warning: '{name}' not found in scraped data (best similarity: {best_ratio:.0%})")
                 result[name] = build_team_entry(name)
     return result
 

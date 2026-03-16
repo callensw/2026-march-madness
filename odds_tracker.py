@@ -6,7 +6,9 @@ Uses The Odds API (free tier: 500 requests/month).
 """
 
 import json
+import logging
 import os
+from difflib import SequenceMatcher
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -15,9 +17,19 @@ from dotenv import load_dotenv
 
 load_dotenv(Path(__file__).parent / ".env")
 
+log = logging.getLogger("swarm")
+
 ODDS_API_URL = "https://api.the-odds-api.com/v4/sports"
 SPORT = "basketball_ncaab"
 ODDS_FILE = Path(__file__).parent / "odds_data.json"
+
+# Track remaining API quota so callers can check before making requests
+_requests_remaining: int | None = None
+
+
+def get_requests_remaining() -> int | None:
+    """Return the last known remaining API request quota, or None if unknown."""
+    return _requests_remaining
 
 
 def get_api_key() -> str | None:
@@ -31,8 +43,8 @@ def fetch_current_odds() -> list[dict]:
     """Fetch current NCAA basketball odds from The Odds API."""
     api_key = get_api_key()
     if not api_key:
-        print("No ODDS_API_KEY configured. Add it to .env for Vegas line comparison.")
-        print("Get a free key at: https://the-odds-api.com/ (500 requests/month free)")
+        log.warning("No ODDS_API_KEY configured. Add it to .env for Vegas line comparison.")
+        log.warning("Get a free key at: https://the-odds-api.com/ (500 requests/month free)")
         return _load_cached()
 
     try:
@@ -56,12 +68,26 @@ def fetch_current_odds() -> list[dict]:
                     "games": data,
                 }, f, indent=2)
 
-            remaining = resp.headers.get("x-requests-remaining", "?")
-            print(f"Fetched odds for {len(data)} games ({remaining} API requests remaining)")
+            global _requests_remaining
+            remaining_raw = resp.headers.get("x-requests-remaining")
+            if remaining_raw is not None:
+                try:
+                    _requests_remaining = int(remaining_raw)
+                except ValueError:
+                    _requests_remaining = None
+
+            remaining_display = remaining_raw if remaining_raw is not None else "?"
+            log.info(f"Fetched odds for {len(data)} games ({remaining_display} API requests remaining)")
+
+            if _requests_remaining is not None and _requests_remaining < 10:
+                log.warning(
+                    f"Odds API quota low: only {_requests_remaining} requests remaining!"
+                )
+
             return data
 
     except Exception as e:
-        print(f"Odds fetch failed: {e}")
+        log.error(f"Odds fetch failed: {e}")
         return _load_cached()
 
 
@@ -70,24 +96,41 @@ def _load_cached() -> list[dict]:
     if ODDS_FILE.exists():
         with open(ODDS_FILE) as f:
             data = json.load(f)
-        print(f"Using cached odds from {data.get('fetched_at', 'unknown')}")
+        log.info(f"Using cached odds from {data.get('fetched_at', 'unknown')}")
         return data.get("games", [])
     return []
 
 
+def _team_match(name_a: str, name_b: str, threshold: float = 0.80) -> bool:
+    """
+    Check if two team names match using either:
+    - Exact word boundary matching (one name is a full word in the other), or
+    - SequenceMatcher similarity >= threshold (default 80%).
+    """
+    a = name_a.lower().strip()
+    b = name_b.lower().strip()
+    if a == b:
+        return True
+    # Word boundary match: check if one name appears as a complete word in the other
+    a_words = set(a.split())
+    b_words = set(b.split())
+    if a_words and b_words and (a_words <= b_words or b_words <= a_words):
+        return True
+    # Fuzzy similarity
+    ratio = SequenceMatcher(None, a, b).ratio()
+    return ratio >= threshold
+
+
 def find_game_odds(team_a: str, team_b: str, odds_data: list[dict]) -> dict | None:
     """Find odds for a specific matchup."""
-    a_lower = team_a.lower()
-    b_lower = team_b.lower()
-
     for game in odds_data:
-        home = game.get("home_team", "").lower()
-        away = game.get("away_team", "").lower()
+        home = game.get("home_team", "")
+        away = game.get("away_team", "")
 
-        if (a_lower in home or home in a_lower or
-            a_lower in away or away in a_lower) and \
-           (b_lower in home or home in b_lower or
-            b_lower in away or away in b_lower):
+        a_matches = _team_match(team_a, home) or _team_match(team_a, away)
+        b_matches = _team_match(team_b, home) or _team_match(team_b, away)
+
+        if a_matches and b_matches:
             return _parse_odds(game)
 
     return None
@@ -159,12 +202,12 @@ def compare_swarm_to_vegas(
     vegas_spread = None
 
     for team_key, spread_data in game_odds.get("spreads", {}).items():
-        if team_a.lower() in team_key.lower() or team_key.lower() in team_a.lower():
+        if _team_match(team_a, team_key):
             if swarm_pick == team_a:
                 vegas_spread = spread_data["point"]
                 vegas_prob = spread_to_implied_prob(spread_data["point"])
             break
-        if team_b.lower() in team_key.lower() or team_key.lower() in team_b.lower():
+        if _team_match(team_b, team_key):
             if swarm_pick == team_b:
                 vegas_spread = spread_data["point"]
                 vegas_prob = spread_to_implied_prob(spread_data["point"])
@@ -173,8 +216,7 @@ def compare_swarm_to_vegas(
     # Fallback to moneyline
     if vegas_prob is None:
         for team_key, ml_data in game_odds.get("moneylines", {}).items():
-            pick_lower = swarm_pick.lower()
-            if pick_lower in team_key.lower() or team_key.lower() in pick_lower:
+            if _team_match(swarm_pick, team_key):
                 vegas_prob = american_to_implied_prob(ml_data["price"])
                 break
 
@@ -202,26 +244,26 @@ def compare_swarm_to_vegas(
 
 def print_odds_comparison(comparisons: list[dict]):
     """Print a formatted odds comparison table."""
-    print("\n" + "=" * 70)
-    print("SWARM vs VEGAS COMPARISON")
-    print("=" * 70)
+    log.info("\n" + "=" * 70)
+    log.info("SWARM vs VEGAS COMPARISON")
+    log.info("=" * 70)
 
     for c in comparisons:
         if not c.get("available"):
             continue
         delta_str = f"+{c['delta']}" if c['delta'] > 0 else str(c['delta'])
         flag = " <<<" if abs(c['delta']) > 10 else ""
-        print(f"  {c['summary']}{flag}")
+        log.info(f"  {c['summary']}{flag}")
 
     big_deltas = [c for c in comparisons if c.get("available") and abs(c.get("delta", 0)) > 10]
     if big_deltas:
-        print(f"\n  {len(big_deltas)} games where swarm disagrees with Vegas by >10 points")
+        log.info(f"\n  {len(big_deltas)} games where swarm disagrees with Vegas by >10 points")
 
 
 if __name__ == "__main__":
-    print("Fetching current odds...")
+    log.info("Fetching current odds...")
     odds = fetch_current_odds()
     if odds:
-        print(f"Got odds for {len(odds)} games")
+        log.info(f"Got odds for {len(odds)} games")
     else:
-        print("No odds data available. Configure ODDS_API_KEY in .env")
+        log.warning("No odds data available. Configure ODDS_API_KEY in .env")

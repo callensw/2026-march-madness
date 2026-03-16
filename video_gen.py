@@ -14,7 +14,9 @@ Usage:
 """
 
 import argparse
+import fcntl
 import json
+import logging
 import math
 import os
 import re
@@ -24,6 +26,8 @@ import time
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Optional
+
+logger = logging.getLogger(__name__)
 
 import httpx
 import numpy as np
@@ -107,8 +111,8 @@ GREEN_CHECK = (34, 197, 94)
 # ---------------------------------------------------------------------------
 AGENT_VOICES = {
     "Tempo Hawk": {
-        "voice_id": "onwK4e9ZLuTAKqWW03F9",  # Daniel
-        "voice_name": "Daniel",
+        "voice_id": "pNInz6obpgDQGcFmaJgB",  # Adam — deep, analytical
+        "voice_name": "Adam",
         "emoji": "\U0001f985",
         "color": (59, 130, 246),
         "role": "Pace & Efficiency",
@@ -116,16 +120,16 @@ AGENT_VOICES = {
         "similarity_boost": 0.8,
     },
     "Iron Curtain": {
-        "voice_id": "2EiwWnXFnvU5JabPnv8n",  # Clyde
-        "voice_name": "Clyde",
+        "voice_id": "ErXwobaYiN019PkySvjV",  # Antoni — gruff, intense
+        "voice_name": "Antoni",
         "emoji": "\U0001f6e1\ufe0f",
         "color": (107, 114, 128),
         "role": "Defensive Specialist",
-        "stability": 0.7,
+        "stability": 0.6,
         "similarity_boost": 0.75,
     },
     "Glass Cannon": {
-        "voice_id": "TxGEqnHWrfWFTfGW9XjX",  # Josh
+        "voice_id": "TxGEqnHWrfWFTfGW9XjX",  # Josh — energetic, excited
         "voice_name": "Josh",
         "emoji": "\U0001f4a5",
         "color": (239, 68, 68),
@@ -134,8 +138,8 @@ AGENT_VOICES = {
         "similarity_boost": 0.85,
     },
     "Road Dog": {
-        "voice_id": "pqHfZKP75CvOlQylNhV4",  # Bill
-        "voice_name": "Bill",
+        "voice_id": "VR6AewLTigWG4xSOukaG",  # Arnold — slow, gravelly, wise
+        "voice_name": "Arnold",
         "emoji": "\U0001f43a",
         "color": (161, 98, 7),
         "role": "Experience & Intangibles",
@@ -143,17 +147,17 @@ AGENT_VOICES = {
         "similarity_boost": 0.7,
     },
     "Whisper": {
-        "voice_id": "pNInz6obpgDQGcFmaJgB",  # Adam
-        "voice_name": "Adam",
+        "voice_id": "AZnzlk1XvdvUeBnXmlld",  # Domi — quiet, conspiratorial
+        "voice_name": "Domi",
         "emoji": "\U0001f441\ufe0f",
         "color": (139, 92, 246),
         "role": "Sentiment & Injury Intel",
-        "stability": 0.3,
+        "stability": 0.5,
         "similarity_boost": 0.9,
     },
     "Oracle": {
-        "voice_id": "JBFqnCBsd6RMkjVDRZzb",  # George
-        "voice_name": "George",
+        "voice_id": "onwK4e9ZLuTAKqWW03F9",  # Daniel — measured, professorial
+        "voice_name": "Daniel",
         "emoji": "\U0001f4dc",
         "color": (5, 150, 105),
         "role": "Historical Patterns",
@@ -170,8 +174,8 @@ AGENT_VOICES = {
         "similarity_boost": 0.85,
     },
     "The Conductor": {
-        "voice_id": "ErXwobaYiN019PkySvjV",  # Antoni
-        "voice_name": "Antoni",
+        "voice_id": "2EiwWnXFnvU5JabPnv8n",  # Clyde — authoritative, commanding
+        "voice_name": "Clyde",
         "emoji": "\U0001f3bc",
         "color": (245, 158, 11),
         "role": "Final Decision",
@@ -253,7 +257,7 @@ def parse_debate_markdown(filepath: Path) -> ParsedDebate:
         timestamp=timestamp,
     )
 
-    agent_pattern = re.compile(r'^\S+\s+\*\*([A-Z ]+)\*\*:\s+"(.+)"$')
+    agent_pattern = re.compile(r'^\S+\s+\*\*([A-Z ]+)\*\*(?:\s*`\[.*?\]`)?\s*:\s+"(.+)"$')
     pick_pattern = re.compile(
         r'^\s+\*Pick:\s+\*\*(.+?)\*\*\s+\((\d+)%\)\s+\|\s+Key stat:\s+(.+)\*$'
     )
@@ -326,6 +330,27 @@ def parse_debate_markdown(filepath: Path) -> ParsedDebate:
         i += 1
 
     return debate
+
+
+def validate_parsed_debate(debate: ParsedDebate) -> list[str]:
+    """Validate that a parsed debate has the required fields.
+
+    Returns a list of error strings. An empty list means valid.
+    """
+    errors = []
+    if not debate.team_a or not debate.team_b:
+        errors.append("Missing team names (team_a or team_b is empty)")
+    if not debate.round_label:
+        errors.append("Missing round label")
+    if not debate.region:
+        errors.append("Missing region")
+    if not debate.seed_a or not debate.seed_b:
+        errors.append("Missing seed numbers")
+    if not debate.agents:
+        errors.append("No agent segments found in debate")
+    if not debate.conductor:
+        errors.append("No conductor segment found in debate")
+    return errors
 
 
 # ---------------------------------------------------------------------------
@@ -885,22 +910,41 @@ class AudioGenerator:
                 "similarity_boost": similarity_boost,
             },
         }
+        last_error = None
         for attempt in range(3):
-            resp = self.client.post(url, json=payload)
-            if resp.status_code == 200:
-                self.chars_used += len(text)
-                return resp.content
-            elif resp.status_code == 429:
+            try:
+                resp = self.client.post(url, json=payload)
+                if resp.status_code == 200:
+                    self.chars_used += len(text)
+                    return resp.content
+                elif resp.status_code == 429:
+                    wait = 2 ** attempt * 5
+                    logger.warning("Rate limited, retrying in %ds... (attempt %d/3)", wait, attempt + 1)
+                    print(f"    Rate limited, retrying in {wait}s...")
+                    time.sleep(wait)
+                    last_error = RuntimeError(f"Rate limited (HTTP 429)")
+                else:
+                    logger.error("ElevenLabs API error %d: %s", resp.status_code, resp.text[:200])
+                    print(f"    ElevenLabs error {resp.status_code}: {resp.text[:200]}")
+                    last_error = RuntimeError(f"ElevenLabs API error {resp.status_code}: {resp.text[:200]}")
+                    resp.raise_for_status()
+            except httpx.TimeoutException as e:
                 wait = 2 ** attempt * 5
-                print(f"    Rate limited, retrying in {wait}s...")
+                logger.warning("Request timed out, retrying in %ds... (attempt %d/3)", wait, attempt + 1)
+                print(f"    Request timed out, retrying in {wait}s...")
                 time.sleep(wait)
-            else:
-                print(f"    ElevenLabs error {resp.status_code}: {resp.text[:200]}")
-                resp.raise_for_status()
-        raise RuntimeError("Failed after 3 retries")
+                last_error = e
+            except httpx.HTTPStatusError as e:
+                last_error = e
+                break
+            except Exception as e:
+                logger.error("Unexpected error during TTS synthesis: %s", e)
+                last_error = e
+                break
+        raise RuntimeError(f"Failed after 3 retries: {last_error}")
 
-    def generate_agent_audio(self, agent_name: str, text: str, output_path: Path) -> Path:
-        """Generate audio for a single agent's line."""
+    def generate_agent_audio(self, agent_name: str, text: str, output_path: Path) -> Optional[Path]:
+        """Generate audio for a single agent's line. Returns None on failure."""
         voice_cfg = None
         for name, cfg in AGENT_VOICES.items():
             if name.lower() == agent_name.lower():
@@ -910,25 +954,35 @@ class AudioGenerator:
             voice_cfg = NARRATOR_VOICE
 
         print(f"    TTS: {agent_name} ({len(text)} chars)")
-        audio_bytes = self.synthesize(
-            text=text,
-            voice_id=voice_cfg["voice_id"],
-            stability=voice_cfg.get("stability", 0.5),
-            similarity_boost=voice_cfg.get("similarity_boost", 0.75),
-        )
+        try:
+            audio_bytes = self.synthesize(
+                text=text,
+                voice_id=voice_cfg["voice_id"],
+                stability=voice_cfg.get("stability", 0.5),
+                similarity_boost=voice_cfg.get("similarity_boost", 0.75),
+            )
+        except Exception as e:
+            logger.error("Failed to generate audio for agent '%s': %s", agent_name, e)
+            print(f"    Warning: TTS failed for {agent_name}: {e} — skipping audio")
+            return None
         output_path.parent.mkdir(parents=True, exist_ok=True)
         output_path.write_bytes(audio_bytes)
         return output_path
 
-    def generate_narrator_audio(self, text: str, output_path: Path) -> Path:
-        """Generate narrator audio."""
+    def generate_narrator_audio(self, text: str, output_path: Path) -> Optional[Path]:
+        """Generate narrator audio. Returns None on failure."""
         print(f"    TTS: Narrator ({len(text)} chars)")
-        audio_bytes = self.synthesize(
-            text=text,
-            voice_id=NARRATOR_VOICE["voice_id"],
-            stability=NARRATOR_VOICE.get("stability", 0.7),
-            similarity_boost=NARRATOR_VOICE.get("similarity_boost", 0.75),
-        )
+        try:
+            audio_bytes = self.synthesize(
+                text=text,
+                voice_id=NARRATOR_VOICE["voice_id"],
+                stability=NARRATOR_VOICE.get("stability", 0.7),
+                similarity_boost=NARRATOR_VOICE.get("similarity_boost", 0.75),
+            )
+        except Exception as e:
+            logger.error("Failed to generate narrator audio: %s", e)
+            print(f"    Warning: TTS failed for narrator: {e} — skipping audio")
+            return None
         output_path.parent.mkdir(parents=True, exist_ok=True)
         output_path.write_bytes(audio_bytes)
         return output_path
@@ -967,8 +1021,9 @@ def build_video(debate: ParsedDebate, audio_dir: Optional[Path],
     current_time = 0.0
 
     def make_still_clip(img: Image.Image, duration: float) -> ImageClip:
-        """Convert a PIL Image to a moviepy ImageClip."""
+        """Convert a PIL Image to a moviepy ImageClip. Closes the PIL image after conversion."""
         arr = np.array(img)
+        img.close()
         return ImageClip(arr).with_duration(duration)
 
     def try_load_audio(path: Path) -> Optional[AudioFileClip]:
@@ -1118,26 +1173,53 @@ def build_video(debate: ParsedDebate, audio_dir: Optional[Path],
     audio_codec = "aac" if audio_clips else None
     bitrate = "2000k" if preview else "5000k"
 
-    print(f"  Writing {output_path}...")
-    final_video.write_videofile(
-        str(output_path),
-        fps=fps,
-        codec=codec,
-        audio_codec=audio_codec,
-        bitrate=bitrate,
-        logger=None,  # Suppress moviepy progress bar
-        threads=2,
-    )
+    lock_path = output_path.with_suffix(".lock")
+    lock_fd = None
+    try:
+        print(f"  Writing {output_path}...")
+        # Acquire file lock to prevent concurrent writes to same output
+        lock_fd = open(lock_path, "w")
+        fcntl.flock(lock_fd, fcntl.LOCK_EX)
 
-    # Cleanup
-    final_video.close()
-    for c in clips:
-        c.close()
-    for a in audio_clips:
-        a.close()
+        final_video.write_videofile(
+            str(output_path),
+            fps=fps,
+            codec=codec,
+            audio_codec=audio_codec,
+            bitrate=bitrate,
+            logger=None,  # Suppress moviepy progress bar
+            threads=2,
+        )
 
-    file_size = output_path.stat().st_size / (1024 * 1024)
-    print(f"  Done: {output_path} ({file_size:.1f} MB, {current_time:.1f}s)")
+        file_size = output_path.stat().st_size / (1024 * 1024)
+        print(f"  Done: {output_path} ({file_size:.1f} MB, {current_time:.1f}s)")
+    except Exception as e:
+        logger.error("Failed to write video %s: %s", output_path, e)
+        print(f"  Error writing video: {e}")
+        raise
+    finally:
+        # Always clean up clips and lock
+        final_video.close()
+        for c in clips:
+            try:
+                c.close()
+            except Exception:
+                pass
+        for a in audio_clips:
+            try:
+                a.close()
+            except Exception:
+                pass
+        if lock_fd is not None:
+            try:
+                fcntl.flock(lock_fd, fcntl.LOCK_UN)
+                lock_fd.close()
+            except Exception:
+                pass
+            try:
+                lock_path.unlink(missing_ok=True)
+            except Exception:
+                pass
 
 
 # ---------------------------------------------------------------------------
@@ -1293,6 +1375,14 @@ def main():
     for f in debate_files:
         try:
             debate = parse_debate_markdown(f)
+            # Validate parse results
+            errors = validate_parsed_debate(debate)
+            if errors:
+                print(f"Warning: parse issues in {f}:")
+                for err in errors:
+                    print(f"  - {err}")
+                print(f"  Skipping {f}")
+                continue
             debates.append((f, debate))
         except Exception as e:
             print(f"Error parsing {f}: {e}")

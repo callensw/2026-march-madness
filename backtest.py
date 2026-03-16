@@ -241,11 +241,11 @@ def historical_to_game(hg: HistoricalGame, round_name: str = "R64") -> Game:
     )
 
 
-def is_upset(seed_a: int, seed_b: int, winner: str, team_a: str) -> bool:
+def is_upset(seed_a: int, seed_b: int, winner: str, team_a: str, team_b: str) -> bool:
     """Check if a result is an upset (lower seed = higher number won)."""
     if seed_a == seed_b:
         return False
-    higher_seed_team = team_a if seed_a < seed_b else team_a if seed_a < seed_b else None
+    higher_seed_team = team_a if seed_a < seed_b else team_b
     # team_a is always the higher seed (lower number) in our data
     if seed_a < seed_b:
         return winner != team_a
@@ -270,24 +270,34 @@ async def run_backtest(bracket: HistoricalBracket) -> dict:
     agents = build_agents()
     agent_accuracy: dict[str, dict] = {}
     groupthink_tracker: dict = {"unanimous": 0, "total": 0}
+    agent_memory: dict[str, list[str]] = {}
 
     results = []
     total = len(bracket.games)
 
-    async with httpx.AsyncClient() as client:
+    async with httpx.AsyncClient(timeout=httpx.Timeout(60.0, connect=10.0)) as client:
         for i, hg in enumerate(bracket.games, 1):
             game = historical_to_game(hg, bracket.round_name)
 
-            debate = await analyze_game(
-                client=client,
-                game=game,
-                agents=agents,
-                agent_accuracy=agent_accuracy,
-                game_index=i,
-                total_games=total,
-                dry_run=True,
-                groupthink_tracker=groupthink_tracker,
-            )
+            try:
+                debate = await analyze_game(
+                    client=client,
+                    game=game,
+                    agents=agents,
+                    agent_accuracy=agent_accuracy,
+                    game_index=i,
+                    total_games=total,
+                    dry_run=True,
+                    groupthink_tracker=groupthink_tracker,
+                    agent_memory=agent_memory,
+                )
+            except Exception as exc:
+                print(
+                    f"  [ERROR] Game {i}: #{hg.seed_a} {hg.team_a} vs "
+                    f"#{hg.seed_b} {hg.team_b} failed: {exc}"
+                )
+                print()
+                continue
 
             results.append({
                 "game": hg,

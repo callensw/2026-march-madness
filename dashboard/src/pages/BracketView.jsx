@@ -113,7 +113,7 @@ export default function BracketView() {
           <svg width={svgW} height={svgH} style={{ display: 'block' }}>
             {roundNumbers.map((roundNum, ri) => {
               const roundGames = rounds[roundNum] || [];
-              const gamesInRound = roundGames.length || Math.max(1, firstRoundCount / Math.pow(2, ri));
+              const gamesInRound = Math.max(1, roundGames.length || Math.max(1, firstRoundCount / Math.pow(2, ri)));
               const spacing = svgH / gamesInRound;
               const x = 20 + ri * (GAME_W + ROUND_GAP);
 

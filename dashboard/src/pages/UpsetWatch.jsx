@@ -133,10 +133,16 @@ export default function UpsetWatch() {
           }
         }
 
-        // Low confidence game
-        if (game.conductor_confidence && game.conductor_confidence < 60) {
-          isUpset = true;
-          upsetProb = Math.max(upsetProb, 100 - (game.conductor_confidence || 50));
+        // Low confidence game — only flag as potential upset if the
+        // conductor actually picked the underdog (higher seed number).
+        // A low-confidence chalk pick (favorite) is NOT an upset.
+        if (game.conductor_pick && game.conductor_confidence && game.conductor_confidence < 60) {
+          const pickedTeam = game.conductor_pick === teamA.name ? teamA : teamB;
+          const otherTeam = game.conductor_pick === teamA.name ? teamB : teamA;
+          if (pickedTeam.seed > otherTeam.seed) {
+            isUpset = true;
+            upsetProb = Math.max(upsetProb, 100 - (game.conductor_confidence || 50));
+          }
         }
 
         if (isUpset) {

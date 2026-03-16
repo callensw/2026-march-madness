@@ -4,10 +4,12 @@ Gemini API client for multi-model agent diversity.
 Agents can run on Claude OR Gemini to get model-level disagreement.
 """
 
+import asyncio
 import json
 import logging
 import os
 import random
+import re
 from pathlib import Path
 
 import httpx
@@ -19,6 +21,11 @@ log = logging.getLogger("swarm")
 
 GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models"
 DEFAULT_MODEL = "gemini-2.0-flash"
+
+
+def _sanitize_url(url: str) -> str:
+    """Remove API key from URL for safe logging."""
+    return re.sub(r'key=[^&]+', 'key=***REDACTED***', url)
 
 
 async def call_gemini_api(
@@ -36,6 +43,9 @@ async def call_gemini_api(
     api_key = os.getenv("GEMINI_API_KEY", "")
     model = os.getenv("GEMINI_MODEL", DEFAULT_MODEL)
 
+    # NOTE: Google's Gemini API requires the key as a query parameter;
+    # header-based auth is not supported on the free tier.
+    # Use _sanitize_url() when logging to avoid exposing the key.
     url = f"{GEMINI_API_URL}/{model}:generateContent?key={api_key}"
 
     payload = {
@@ -64,7 +74,6 @@ async def call_gemini_api(
 
             if resp.status_code == 429:
                 wait = (2 ** attempt) + random.random()
-                import asyncio
                 await asyncio.sleep(wait)
                 continue
 
@@ -82,11 +91,18 @@ async def call_gemini_api(
 
                 # Log finish reason for debugging
                 finish_reason = candidate.get("finishReason", "UNKNOWN")
+                if finish_reason in ("SAFETY", "BLOCKED"):
+                    log.error(
+                        f"  Gemini response blocked (finishReason={finish_reason}) "
+                        f"for URL {_sanitize_url(url)} (attempt {attempt+1})"
+                    )
+                    raise RuntimeError(
+                        f"Gemini content blocked: finishReason={finish_reason}"
+                    )
                 if finish_reason not in ("STOP", "UNKNOWN"):
                     log.warning(f"  Gemini finishReason: {finish_reason} (attempt {attempt+1})")
                     if finish_reason == "MAX_TOKENS" and attempt < 2:
                         # Retry with more tokens
-                        import asyncio
                         await asyncio.sleep(0.5)
                         continue
 
@@ -102,14 +118,12 @@ async def call_gemini_api(
         except httpx.HTTPStatusError as e:
             last_error = f"HTTP {e.response.status_code}"
             if e.response.status_code >= 500:
-                import asyncio
                 wait = (2 ** attempt) + random.random()
                 await asyncio.sleep(wait)
                 continue
             raise
         except Exception as e:
             last_error = str(e)
-            import asyncio
             await asyncio.sleep((2 ** attempt) + random.random())
 
     raise RuntimeError(f"Gemini API call failed after 3 attempts: {last_error}")

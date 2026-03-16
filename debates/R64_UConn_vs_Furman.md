@@ -1,55 +1,84 @@
-# R64 — East Region
-## #2 UConn vs #15 Furman
-*2026-03-16T02:08:36.526524+00:00*
+# 🏀 #2 UConn vs #15 Furman — East Region, Round of 64
+*2026-03-16T12:56:04.743590+00:00*
 
 ---
 
-🦅 **TEMPO HAWK**: "Let me run the numbers on pace and efficiency here. Despite Furman's ability to slow the pace (64.9 vs 70.4 tempo), UConn's 36.1-point efficiency margin is too massive to overcome even in a shortened game. UConn's elite defense should neutralize Furman's grinding style."
-   *Pick: **UConn** (96%) | Key stat: UConn's 36.1 efficiency margin vs Furman's 3.3 means even at Furman's preferred 62-possession pace, UConn projects to win by 20+*
+## Round 1 — Independent Analysis
 
-🛡️ **IRON CURTAIN**: "Look, I don't care what the offense looks like. UConn's elite defense (87.8 adj_d) creates a massive 14.6-point defensive gap that will suffocate Furman's mediocre offense. While UConn's recent blowout loss is concerning, their defensive foundation remains rock-solid and Furman lacks the offensive firepower to exploit any mental fragility."
-   *Pick: **UConn** (92%) | Key stat: UConn's 87.8 adj_d ranks elite while Furman's 102.4 adj_d is bottom-tier - a 14.6-point defensive efficiency gap*
+🦅 **TEMPO HAWK**: "Alright, I've been looking at the tempo data and here's what everyone's missing… UConn's tempo advantage is modest at 5.5 possessions per game, but their efficiency gap is massive — 36 points per 100 possessions. Furman's slow-it-down strategy could keep this closer than the seed suggests, but they'd need to shoot lights out while UConn goes cold. The Huskies' defensive rating of 87.8 makes that unlikely."
+   Win probability: UConn 0.88 ± 0.08
+   *Key stat: UConn plays at 70.4 possessions per game vs Furman's 64.9 — a 5.5 possession gap that slightly favors the Paladins' upset path*
 
-💥 **GLASS CANNON** `[gemini]`: "Forget the spreadsheets for a second. While Furman's 3PT% of 34.4% is a live upset trigger, and UConn's perimeter defense isn't explicitly flagged as weak, the sheer talent gap and UConn's own strong 3PT% (35.9%) make it hard to pick the upset here. Furman's path relies on an extraordinary shooting night to overcome UConn's significant overall advantage, which is possible but not probable enough to justify the pick against a top-tier team. UConn also shoots the three well, negating some of Furman's variance advantage."
-   *Pick: **UConn** (78%) | Key stat: Furman 3PT% = 34.4%*
+🛡️ **IRON CURTAIN**: "Look, I don't care how many points they score. You know what I care about? Stops. UConn's elite defense (87.8 adj_d) will suffocate Furman's mediocre offense in a tournament grind. Furman's 102.4 defensive efficiency is TERRIBLE - they can't get stops when UConn slows it down. Defense travels, and UConn's got real defense."
+   Win probability: UConn 0.75 ± 0.12
+   *Key stat: 14.6-point defensive efficiency gap (87.8 vs 102.4) - that's massive in March*
 
-🐺 **ROAD DOG** `[gemini]`: "I've seen this movie before. While Furman won their conference tournament, UConn is a blue blood playing well all season, despite a poor showing in their conference final. Their experience and overall talent should overcome Furman's momentum."
-   *Pick: **UConn** (80%) | Key stat: UConn KenPom=12*
+💥 **GLASS CANNON** `[gemini]`: "Okay okay okay — have you SEEN this team shoot? Because the numbers are ridiculous. Alright, so UConn is a great team, I get it, but let's talk about the numbers! Furman shoots 34.4% from three, which isn't lighting the world on fire, but it's not bad! UConn shoots a respectable 35.9%, which is good. But here's the kicker: UConn just got absolutely TORCHED from three in their conference final, losing by 20 points! That's a red flag! One hot quarter changes everything, and if Furman can get a few early threes, you can't coach that! The upset thesis isn't as strong with the 3PT% difference being so small, but Furman is coming in hot, winning their conference tourney, and UConn just got blasted. That kind of momentum shift, combined with a potential for a shooting outburst, could make things VERY interesting. I'm not picking the upset here because Furman's 3PT% isn't higher, but I'm NOT giving UConn a 90% chance after seeing them get embarrassed."
+   Win probability: UConn 0.82 ± 0.08
+   *Key stat: UConn lost their conference final by 20 points after St. John's shot well, showing their vulnerability.*
 
-👁️ **WHISPER** `[gemini]`: "Something doesn't add up here, and nobody's talking about it. Something doesn't add up here... Furman's conference tournament win is impressive, but UConn's blowout loss in their Big East final might be a wake-up call, not a sign of weakness. While UConn's L1 streak and conference tournament final loss is a red flag, Furman's overall profile doesn't suggest they have the firepower to exploit it. The KenPom gap is simply too vast to ignore, even with UConn's recent stumble."
-   *Pick: **UConn** (93%) | Key stat: KenPom gap: UConn 12 vs Furman 190*
+🐺 **ROAD DOG** `[gemini]`: "You know what? I've seen this movie before. Let me tell you what actually happens when… Now, I've seen this movie before, a mid-major coming in hot from their conference tournament. Furman's got that W3 streak and the SoCon title, which usually gets my ears perked up. But UConn, they're a different beast. They got blown out in their conference final, sure, but that's a blue blood that knows March. They'll be looking to prove something, and their talent level is just too much for Furman to overcome, even with all that mid-major momentum. Analytics don't play the game, but neither does a 190 KenPom team against a 12."
+   Win probability: UConn 0.88 ± 0.08
+   *Key stat: UConn KenPom: 12 vs Furman KenPom: 190*
 
-📜 **ORACLE**: "The historical record is clear on this. Historical base rate for 2v15 is 93.8% and this matchup fits perfectly. UConn has elite defense (87.8 adj_d) and a 178-point KenPom gap over Furman. Despite the Big East final loss, UConn's talent and defensive prowess should overwhelm a mid-major that relies on slow pace."
-   *Pick: **UConn** (93%) | Key stat: 178-point KenPom gap (12 vs 190) is massive for any seed matchup*
+👁️ **WHISPER** `[gemini]`: "Here's what nobody's talking about… Something doesn't add up here... Everyone's talking about UConn's overall strength, but nobody's mentioning that devastating 20-point blowout loss in their conference final. That kind of psychological blow, right before the tournament, can linger. Meanwhile, Furman is coming in as a conference champion, riding a W3 streak. They're feeling good, and UConn just took a gut punch. That's a dangerous combination."
+   Win probability: UConn 0.85 ± 0.10
+   *Key stat: UConn's L1 in the Big East final by 20 points*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching... Forget the spreadsheets — let me tell you what I've been watching... While Furman is on a 3-game winning streak and won their conference tournament, UConn's recent form of 7-3 in their last 10, despite losing their conference final, indicates they were playing at a high level. Furman's strength of schedule and overall record don't suggest they are peaking enough to overcome a team of UConn's caliber, even with their recent conference tournament win."
-   *Pick: **UConn** (84%) | Key stat: UConn's last 10 record: 7-3*
+📜 **ORACLE**: "Since the field expanded to 64 teams in 1985, here's what the data tells us… This is a classic 2v15 matchup where the base rate (93.8%) aligns perfectly with the talent gap. UConn has elite defense (87.8 adj_d) and a 178-point KenPom advantage - that's historically insurmountable for a 15-seed. Yes, they lost badly to St. John's, but that reminds me of 2014 when UConn lost their conference tournament then won the national title."
+   Win probability: UConn 0.94 ± 0.05
+   *Key stat: 178-point KenPom gap is the largest differential in tournament history for teams that actually made it*
+
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been WATCHING. Forget the spreadsheets — let me tell you what I've been watching... UConn just got BLOWN OUT in their conference final. They were riding high, then they hit a wall, they're deflated. Furman, on the other hand, just won their conference tournament, three straight wins! They're peaking RIGHT NOW, full of confidence and playing their best basketball. Momentum is real and I'm tired of people pretending it isn't. UConn is vulnerable, their last game was a disaster."
+   Win probability: UConn 0.82 ± 0.15
+   *Key stat: UConn lost Big East final by 20 points, Furman won SoCon tourney.*
 
 
 ### Devil's Advocate (unanimous vote triggered)
-📜 **ORACLE** *(forced contrarian)*: "The 178-point KenPom gap is massive even for a 2v15. While Furman won their conference tournament, they're a mid-major facing a elite program that just reached the Big East final. UConn's defensive efficiency (87.8) will neutralize Furman's modest offense."
-   *Pick: **UConn** (92%) | Key stat: UConn allows just 87.8 points per 100 possessions vs Furman's 105.7 offensive efficiency - a 18-point gap that's nearly insurmountable*
+🐺 **ROAD DOG** *(forced contrarian)*: "Alright, let's talk about this. UConn, a blue blood, sure, but they got absolutely throttled in their conference final. That's not momentum, that's a gut punch. Furman, on the other hand, just ran through their conference tournament, winning three straight. They're playing with house money and a ton of confidence, and I've seen that movie before where a mid-major like Furman, battle-tested and playing with nothing to lose, can absolutely take down a deflated power conference team. Analytics won't tell you about the feeling in the locker room after a blowout loss or the fire in a team that just earned their bid."
+   *Pick: **UConn** (50%) | Key stat: Furman's W3 streak vs. UConn's L1 after a 20-point loss in their conference final.*
 
 
 ### Swarm vs Vegas
-   *Swarm: 88% on UConn | Vegas implied: 98% | Delta: 10pp more bearish*
+   *Swarm: 53% on UConn | Vegas implied: 99% | Delta: 46pp more bearish*
 
 
 ---
-### Final Verdict
+## 🎼 The Conductor — Final Analysis
 
-🎼 **THE CONDUCTOR**: "I've heard every argument. Here's what actually matters. The massive 36.1-point KenPom efficiency margin and UConn's elite defense (87.8 adj_d) create an insurmountable gap that even Furman's pace control cannot bridge. While UConn's Big East final blowout loss raises concerns, the talent differential is simply too vast for a 15-seed upset."
+Combined probability: UConn 0.77 ± 0.25
 
-   **PICK: UConn (88%)**
+**PICK: UConn** (77% — dominant favorite, high uncertainty)
 
-   *Key factor: Massive talent/efficiency gap (36.1 points) that overwhelms pace considerations*
 
-   *Most weighted: Tempo Hawk weighted 2x because pace mismatch is the primary upset mechanism Furman could exploit, but even he sees UConn's efficiency margin as too large*
+🎼 **THE CONDUCTOR**: "I've heard every argument. Here's what actually matters in this game. Oracle and Tempo Hawk delivered the most convincing arguments - Oracle's historical data showing 2v15 base rates align with the massive talent gap, and Tempo Hawk's efficiency analysis proving UConn's 36-point per 100 possession advantage is insurmountable. Streak and Road Dog (Devil's Advocate) were least convincing, overweighting one bad game against a season of dominance. Here's my ruling: one conference tournament loss doesn't erase a 178 KenPom gap. Sometimes the chalk is chalk for a reason."
 
-   *Dissent report: UConn's recent blowout loss in the Big East final could indicate mental fragility or peaking too early, but their season-long defensive excellence and talent advantage make this more likely a wake-up call than a collapse*
+   *Key factor: Massive talent and efficiency gap (178 KenPom points, 36 points per 100 possessions)*
+
+   *Most weighted: Oracle and Tempo Hawk - Oracle provided definitive historical context showing 2v15 upsets are extremely rare, while Tempo Hawk's efficiency breakdown proved the mathematical impossibility of Furman competing*
+
+   *Dissent report: Streak and Road Dog (Devil's Advocate) overvalued momentum from one game while ignoring the season-long talent disparity - conference tournament results are noise compared to 34 games of data*
+
+
+---
+### Specialist Vote: 7-0 UConn
+
+🦅UConn 🛡️UConn 💥UConn 🐺UConn 👁️UConn 📜UConn 🔥UConn
+
+CONDUCTOR AGREES: UConn (53%)
 
 
 ---
 ### Vote Tally
 
 - **UConn**: Tempo Hawk, Iron Curtain, Glass Cannon, Road Dog, Whisper, Oracle, Streak (7 votes)
+
+
+## Market Analysis
+
+- Swarm probability: UConn 77% ± 25%
+- Vegas implied probability: UConn 96%
+- Edge: 18.7% (market favors Furman)
+- Vegas spread: UConn -21.0
+- Contrarian signal: Iron Curtain (-21% vs market) and Glass Cannon (-14% vs market) and Streak (-14% vs market) and Whisper (-11% vs market)
+- Recommendation: NO BET — edge (18.7%) exists but uncertainty too high (25.0%)

@@ -368,7 +368,7 @@ class ElevenLabsTTS:
     def __init__(self, api_key: str):
         self.api_key = api_key
         self.client = httpx.Client(
-            timeout=60.0,
+            timeout=120.0,
             headers={
                 "xi-api-key": api_key,
                 "Content-Type": "application/json",
@@ -386,11 +386,11 @@ class ElevenLabsTTS:
         url = f"{ELEVENLABS_TTS_URL}/{voice_id}"
         payload = {
             "text": text,
-            "model_id": "eleven_monolingual_v1",
+            "model_id": "eleven_multilingual_v2",
             "voice_settings": {
                 "stability": stability,
                 "similarity_boost": similarity_boost,
-                "style": style_exaggeration,
+                "style_exaggeration": style_exaggeration,
             },
         }
 
@@ -432,13 +432,17 @@ def generate_audio_for_debate(debate: ParsedDebate, output_path: Path,
             voice_cfg = NARRATOR_VOICE
 
         print(f"  [{idx}/{total}] Generating: {speaker} ({len(text)} chars)")
-        audio = tts.synthesize(
-            text=text,
-            voice_id=voice_cfg["voice_id"],
-            stability=voice_cfg.get("stability", 0.5),
-            similarity_boost=voice_cfg.get("similarity_boost", 0.75),
-            style_exaggeration=voice_cfg.get("style_exaggeration", 0.0),
-        )
+        try:
+            audio = tts.synthesize(
+                text=text,
+                voice_id=voice_cfg["voice_id"],
+                stability=voice_cfg.get("stability", 0.5),
+                similarity_boost=voice_cfg.get("similarity_boost", 0.75),
+                style_exaggeration=voice_cfg.get("style_exaggeration", 0.0),
+            )
+        except Exception as e:
+            print(f"  Warning: TTS synthesis failed for '{speaker}': {e}. Inserting silence placeholder.")
+            audio = generate_silence_mp3(2.0)
         audio_chunks.append(audio)
 
         # Add silence between speakers (not after the last one)
@@ -446,10 +450,13 @@ def generate_audio_for_debate(debate: ParsedDebate, output_path: Path,
             audio_chunks.append(silence)
 
     # Concatenate all MP3 chunks
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    with open(output_path, "wb") as f:
-        for chunk in audio_chunks:
-            f.write(chunk)
+    try:
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(output_path, "wb") as f:
+            for chunk in audio_chunks:
+                f.write(chunk)
+    except OSError as e:
+        raise RuntimeError(f"Failed to write audio file {output_path}: {e}") from e
 
     total_bytes = sum(len(c) for c in audio_chunks)
     print(f"  Saved: {output_path} ({total_bytes / 1024:.1f} KB)")
@@ -539,10 +546,13 @@ def main():
     for f in debate_files:
         try:
             debate = parse_debate_markdown(f)
-            debates.append((f, debate))
         except Exception as e:
             print(f"Error parsing {f}: {e}")
             continue
+        if not debate.agents:
+            print(f"Warning: {f} has no agent segments — skipping (empty or malformed debate)")
+            continue
+        debates.append((f, debate))
 
     # Dry run mode
     if args.dry_run:

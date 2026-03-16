@@ -104,43 +104,92 @@ export default function Dashboard() {
   const [accuracy, setAccuracy] = useState([]);
   const [status, setStatus] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     async function fetchData() {
-      const [gamesRes, teamsRes, votesRes, accRes] = await Promise.all([
-        supabase.from(tables.games).select('*').order('created_at', { ascending: false }).limit(20),
-        supabase.from(tables.teams).select('*'),
-        supabase.from(tables.agentVotes).select('*'),
-        supabase.from(tables.agentAccuracy).select('*'),
-      ]);
-      if (gamesRes.data) setGames(gamesRes.data);
-      if (teamsRes.data) {
-        const map = {};
-        teamsRes.data.forEach((t) => { map[t.id] = t; });
-        setTeams(map);
+      try {
+        const [gamesRes, teamsRes, votesRes, accRes] = await Promise.all([
+          supabase.from(tables.games).select('*').order('created_at', { ascending: false }).limit(20),
+          supabase.from(tables.teams).select('*'),
+          supabase.from(tables.agentVotes).select('*'),
+          supabase.from(tables.agentAccuracy).select('*'),
+        ]);
+
+        const errors = [gamesRes, teamsRes, votesRes, accRes]
+          .filter((r) => r.error)
+          .map((r) => r.error.message);
+        if (errors.length > 0) {
+          setError(`Failed to load data: ${errors.join('; ')}`);
+        } else {
+          setError(null);
+        }
+
+        if (gamesRes.data) setGames(gamesRes.data);
+        if (teamsRes.data) {
+          const map = {};
+          teamsRes.data.forEach((t) => { map[t.id] = t; });
+          setTeams(map);
+        }
+        if (votesRes.data) setVotes(votesRes.data);
+        if (accRes.data) setAccuracy(accRes.data);
+      } catch (err) {
+        setError(`Unexpected error: ${err.message}`);
+      } finally {
+        setLoading(false);
       }
-      if (votesRes.data) setVotes(votesRes.data);
-      if (accRes.data) setAccuracy(accRes.data);
-      setLoading(false);
     }
     fetchData();
   }, []);
 
-  // Poll status.json
+  // Poll status.json with exponential backoff on failures
   useEffect(() => {
+    let timeoutId = null;
+    let consecutiveFailures = 0;
+    const MAX_RETRIES = 5;
+    const BASE_INTERVAL = 10000;
+
     async function poll() {
       try {
         const res = await fetch('/status.json');
-        if (res.ok) setStatus(await res.json());
-      } catch { setStatus(null); }
+        if (res.ok) {
+          setStatus(await res.json());
+          consecutiveFailures = 0;
+        } else {
+          consecutiveFailures++;
+          setStatus(null);
+        }
+      } catch {
+        consecutiveFailures++;
+        setStatus(null);
+      }
+
+      if (consecutiveFailures >= MAX_RETRIES) {
+        // Stop polling after too many consecutive failures
+        return;
+      }
+
+      const delay = consecutiveFailures > 0
+        ? Math.min(BASE_INTERVAL * Math.pow(2, consecutiveFailures), 300000)
+        : BASE_INTERVAL;
+      timeoutId = setTimeout(poll, delay);
     }
+
     poll();
-    const id = setInterval(poll, 10000);
-    return () => clearInterval(id);
+    return () => { if (timeoutId) clearTimeout(timeoutId); };
   }, []);
 
   if (loading) {
     return <div style={s.loading}>Loading swarm data...</div>;
+  }
+
+  if (error) {
+    return (
+      <div style={{ ...s.loading, color: '#ef4444' }}>
+        <div style={{ marginBottom: 8, fontWeight: 600 }}>Error</div>
+        <div>{error}</div>
+      </div>
+    );
   }
 
   const analyzedGames = games.filter((g) => g.conductor_pick);

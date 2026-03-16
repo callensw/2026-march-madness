@@ -1,52 +1,67 @@
-# R64 — South Region
-## #3 Illinois vs #14 Penn
-*2026-03-16T02:14:41.964433+00:00*
+# 🏀 #3 Illinois vs #14 Penn — South Region, Round of 64
+*2026-03-16T13:07:20.374262+00:00*
 
 ---
 
-🦅 **TEMPO HAWK**: "Let me run the numbers on pace and efficiency here. Penn's slow tempo (67.1 vs 68.8) creates minimal pace differential, negating their best upset path. Illinois has a massive 22.9 adjusted efficiency margin advantage and superior shooting. Penn's Ivy League title shows they can execute, but the talent gap is too large without a clear stylistic edge."
-   *Pick: **Illinois** (86%) | Key stat: Tempo differential of only 1.7 possessions favors neither team's preferred style*
+## Round 1 — Independent Analysis
 
-🛡️ **IRON CURTAIN**: "Look, I don't care what the offense looks like. Illinois has elite defense (89.3 adj_d) that should completely stifle Penn's mediocre offense (104.1 adj_o). Penn's defense is poor at 96.4, making them vulnerable to Illinois's potent offense even in a grind-it-out game."
-   *Pick: **Illinois** (92%) | Key stat: Illinois allows 22.9 fewer points per 100 possessions than Penn scores (89.3 vs 104.1)*
+🦅 **TEMPO HAWK**: "Alright, I've been looking at the tempo data and here's what everyone's missing… Nearly identical tempos (68.8 vs 67.1) eliminate Penn's best upset mechanism — forcing Illinois into an uncomfortable pace. The 23-point KenPom gap reflects a massive efficiency disparity that Penn can't overcome without multiple breaks."
+   Win probability: Illinois 0.82 ± 0.12
+   *Key stat: Both teams play at 68 possessions per game, giving Penn no pace-control advantage to neutralize Illinois's superior talent*
 
-💥 **GLASS CANNON** `[gemini]`: "Forget the spreadsheets for a second. While I am the upset believer, Penn's 3PT% is too low (32.3%) to trigger my primary upset condition. Illinois also shoots the three well (36.8%), negating the variance advantage. Penn's weak perimeter defense (not specified, but implied by low KenPom against high-shooting Illinois) could be a factor."
-   *Pick: **Illinois** (86%) | Key stat: Penn 3PT% = 32.3%*
+🛡️ **IRON CURTAIN**: "Look, I don't care how many points they score. You know what I care about? Stops. Illinois has solid defense (89.3) AND elite offense. Penn can slow the pace but their offense (104.1) is too limited to exploit Illinois's defensive gaps. The 7-point defensive efficiency gap is decisive."
+   Win probability: Illinois 0.78 ± 0.12
+   *Key stat: Illinois adj_d of 89.3 vs Penn's adj_o of 104.1 - that's a 15-point gap favoring the defense*
 
-🐺 **ROAD DOG** `[gemini]`: "I've seen this movie before. Penn, as an Ivy League champion who won their tournament, has momentum and toughness. However, Illinois is a top-10 KenPom team, which overrides the upset trigger, and their early Big Ten exit doesn't deflate them enough against this large of a talent gap. Illinois's offensive firepower should be too much."
-   *Pick: **Illinois** (70%) | Key stat: Illinois KenPom=7*
+💥 **GLASS CANNON** `[gemini]`: "Okay okay okay — have you SEEN this team shoot? Because the numbers are ridiculous. Okay, so Penn's 3PT% is 32.3%, and that's just... that's not it, man! Illinois is at 36.8%, and when they're on, they're ON. Penn's not bringing that hot hand to make me believe in an upset here, especially against a Big Ten powerhouse. Illinois is just too good from deep to get caught cold."
+   Win probability: Illinois 0.85 ± 0.15
+   *Key stat: Penn 3PT% (32.3%) < Illinois 3PT% (36.8%)*
 
-👁️ **WHISPER** `[gemini]`: "Something doesn't add up here, and nobody's talking about it. Something doesn't add up here... Illinois has an early Big Ten exit and Penn is coming in hot as Ivy League champions, winning an overtime thriller. While Penn's momentum and experience could keep it close, Illinois's overall talent and offensive efficiency are still too significant to ignore, especially with their last 10 record being solid."
-   *Pick: **Illinois** (73%) | Key stat: Illinois lost in the Big Ten quarterfinals, not the semifinals or finals.*
+🐺 **ROAD DOG** `[gemini]`: "You know what? I've seen this movie before. Let me tell you what actually happens when… Now, this is a classic setup, ain't it? You got Illinois, a Big Ten team, lost early in their conference tournament. And then you got Penn, an Ivy League champ, battled their way through, won in overtime. That's momentum, son. That's a team playing with house money, and they know how to finish. Analytics don't measure the fire in a team that just won a championship."
+   Win probability: Illinois 0.70 ± 0.15
+   *Key stat: Penn: Ivy League Champion (beat Yale 88-84 OT)*
 
-📜 **ORACLE**: "The historical record is clear on this. The 23-point KenPom gap is too large for Penn to overcome despite their Ivy championship. Illinois's elite offense should break through Penn's disciplined but limited defense."
-   *Pick: **Illinois** (82%) | Key stat: Illinois 127.0 offensive efficiency vs Penn's 96.4 defensive efficiency creates a 30+ point gap*
+👁️ **WHISPER** `[gemini]`: "Here's what nobody's talking about… Nobody's talking about this, but Illinois, a #3 seed, got bounced early in their conference tournament. That's a red flag. Meanwhile, Penn just won their Ivy League tournament in an overtime thriller against a solid Yale team, showing real grit and momentum. The box score might scream Illinois, but the circumstances whisper Penn has a chance to keep this closer than people think."
+   Win probability: Illinois 0.82 ± 0.10
+   *Key stat: Illinois's early Big Ten tournament exit*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching... Forget the spreadsheets — let me tell you what I've been watching... Penn is hot, winning their conference tournament in overtime, which shows incredible resilience and momentum. However, Illinois's early Big Ten exit is concerning, but their 7-3 record in the last 10 games indicates they're still playing well, and the talent gap is significant enough that I don't see Penn's momentum being enough for a full upset, though it will be closer than some think."
-   *Pick: **Illinois** (74%) | Key stat: Penn won the Ivy League Tournament, including an OT championship game, indicating peak performance.*
+📜 **ORACLE**: "Since the field expanded to 64 teams in 1985, here's what the data tells us… The 23-point KenPom gap is too large for Penn to overcome despite their Ivy League title. Illinois's elite defense (89.3 adj_d) should contain Penn's modest offense, and the Illini have significantly more talent across the board."
+   Win probability: Illinois 0.83 ± 0.12
+   *Key stat: Illinois ranks 7th in KenPom while Penn sits at 159th - a 152-spot gap that historically dooms 14-seeds*
+
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been WATCHING. Forget the spreadsheets — let me tell you what I've been watching! Penn just won the Ivy League tournament, beating Yale in a hard-fought overtime game. That's a team peaking at the right time, riding a wave of emotion and competitive fire. Illinois, meanwhile, lost early in their Big Ten tournament. They're not playing with the same urgency RIGHT NOW. Penn's momentum is real, and it makes them dangerous."
+   Win probability: Illinois 0.62 ± 0.15
+   *Key stat: Penn: Ivy League Champion (beat Yale 88-84 OT)*
 
 
 ### Devil's Advocate (unanimous vote triggered)
-👁️ **WHISPER** *(forced contrarian)*: "Nobody's talking about this, but Illinois' early exit from the Big Ten tournament, despite a strong season, raises a red flag about their current form. Penn, on the other hand, just battled through and won the Ivy League tournament in overtime, showing real grit and peak performance at the right time. The Quakers' experience and momentum, combined with Illinois' potential complacency, could lead to a monumental upset."
-   *Pick: **Penn** (62%) | Key stat: Penn: Ivy League Champion (beat Yale 88-84 OT)*
-
-
-### Swarm vs Vegas
-   *Swarm: 80% on Illinois | Vegas implied: 97% | Delta: 17pp more bearish*
+📜 **ORACLE** *(forced contrarian)*: "Since 1985, 3-seeds beat 14-seeds 85.2% of the time - this is the base rate. Penn's upset thesis requires Illinois to shoot poorly while Penn gets hot from three, but the 152-point KenPom gap is massive. This reminds me of 2019 when Yale nearly shocked LSU - Ivy champs can play spoiler, but Illinois's elite offense (127 AdjO) should overwhelm Penn's mediocre defense."
+   *Pick: **Illinois** (76%) | Key stat: 152-point KenPom gap is in the 90th percentile for 3v14 matchups historically*
 
 
 ---
-### Final Verdict
+## 🎼 The Conductor — Final Analysis
 
-🎼 **THE CONDUCTOR**: "I've heard every argument. Here's what actually matters. Illinois has a massive 22.9 KenPom efficiency margin advantage and elite defense that should neutralize Penn's limited offensive capabilities. While Penn brings Ivy League championship momentum, the talent gap is simply too large for a 14-seed to overcome against a top-10 KenPom team."
+Combined probability: Illinois 0.69 ± 0.25
 
-   **PICK: Illinois (80%)**
+**PICK: Illinois** (69% — clear favorite, high uncertainty)
 
-   *Key factor: KenPom efficiency gap of 22.9 points*
 
-   *Most weighted: Iron Curtain - defensive matchup analysis is most relevant given Illinois's elite defense vs Penn's weak offense*
+🎼 **THE CONDUCTOR**: "I've heard every argument. Here's what actually matters in this game. Here's my ruling: Iron Curtain and Oracle delivered the most convincing arguments, focusing on the brutal reality of a 23-point KenPom gap that Penn simply cannot bridge. Road Dog and Streak made passionate cases about Penn's momentum, but championship runs aren't built on Ivy League tournament wins against modest competition. The decisive factor is Illinois's elite offense meeting Penn's pedestrian defense — that's a mismatch Penn can't survive for 40 minutes. When the talent gap is this wide, momentum becomes a footnote."
 
-   *Dissent report: Penn's conference tournament momentum and Illinois's early Big Ten exit could create upset conditions, but the 23-point KenPom gap historically requires extraordinary shooting variance that Penn's 32.3% three-point percentage is unlikely to provide*
+   *Key factor: Massive efficiency gap (23-point KenPom difference)*
+
+   *Most weighted: Iron Curtain and Oracle were most convincing because they focused on the fundamental efficiency gap that Penn cannot overcome, regardless of recent momentum*
+
+   *Dissent report: Road Dog and Streak overvalued Penn's Ivy League tournament momentum against the harsh reality of a 152-point offensive efficiency gap — conference tournament wins don't erase talent deficits this large*
+
+
+---
+### Specialist Vote: 7-0 Illinois
+
+🦅Illinois 🛡️Illinois 💥Illinois 🐺Illinois 👁️Illinois 📜Illinois 🔥Illinois
+
+CONDUCTOR AGREES: Illinois (50%)
 
 
 ---
