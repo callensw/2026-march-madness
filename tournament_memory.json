@@ -3,39 +3,29 @@
     "agent_name": "Tempo Hawk",
     "past_picks": [
       {
-        "game_label": "#5 Texas Tech vs #12 Akron",
-        "pick": "Texas Tech",
+        "game_label": "#7 Kentucky vs #10 Santa Clara",
+        "pick": "Kentucky",
         "probability": 0.58,
         "round_name": "R64",
-        "game_type": "moderate_favorite",
-        "position_change": "weakened",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
         "actual_result": null
       }
     ],
     "accuracy_by_type": {},
     "biggest_misses": [],
     "confidence_calibration": [],
-    "cross_attention_memory": [
-      {
-        "game_label": "#5 Texas Tech vs #12 Akron",
-        "pick": "Texas Tech",
-        "probability": 0.58,
-        "round_name": "R64",
-        "game_type": "moderate_favorite",
-        "position_change": "weakened",
-        "actual_result": null
-      }
-    ]
+    "cross_attention_memory": []
   },
   "Iron Curtain": {
     "agent_name": "Iron Curtain",
     "past_picks": [
       {
-        "game_label": "#5 Texas Tech vs #12 Akron",
-        "pick": "Akron",
-        "probability": 0.45,
+        "game_label": "#7 Kentucky vs #10 Santa Clara",
+        "pick": "Kentucky",
+        "probability": 0.68,
         "round_name": "R64",
-        "game_type": "moderate_favorite",
+        "game_type": "tossup_lean",
         "position_change": "strengthened",
         "actual_result": null
       }
@@ -49,11 +39,11 @@
     "agent_name": "Glass Cannon",
     "past_picks": [
       {
-        "game_label": "#5 Texas Tech vs #12 Akron",
-        "pick": "Akron",
-        "probability": 0.48,
+        "game_label": "#7 Kentucky vs #10 Santa Clara",
+        "pick": "Santa Clara",
+        "probability": 0.45,
         "round_name": "R64",
-        "game_type": "moderate_favorite",
+        "game_type": "tossup_lean",
         "position_change": "strengthened",
         "actual_result": null
       }
@@ -67,72 +57,112 @@
     "agent_name": "Road Dog",
     "past_picks": [
       {
-        "game_label": "#5 Texas Tech vs #12 Akron",
-        "pick": "Akron",
-        "probability": 0.45,
+        "game_label": "#7 Kentucky vs #10 Santa Clara",
+        "pick": "Kentucky",
+        "probability": 0.68,
         "round_name": "R64",
-        "game_type": "moderate_favorite",
-        "position_change": "strengthened",
+        "game_type": "tossup_lean",
+        "position_change": "weakened",
         "actual_result": null
       }
     ],
     "accuracy_by_type": {},
     "biggest_misses": [],
     "confidence_calibration": [],
-    "cross_attention_memory": []
+    "cross_attention_memory": [
+      {
+        "game_label": "#7 Kentucky vs #10 Santa Clara",
+        "pick": "Kentucky",
+        "probability": 0.68,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "weakened",
+        "actual_result": null
+      }
+    ]
   },
   "Whisper": {
     "agent_name": "Whisper",
     "past_picks": [
       {
-        "game_label": "#5 Texas Tech vs #12 Akron",
-        "pick": "Akron",
-        "probability": 0.48,
+        "game_label": "#7 Kentucky vs #10 Santa Clara",
+        "pick": "Kentucky",
+        "probability": 0.58,
         "round_name": "R64",
-        "game_type": "moderate_favorite",
-        "position_change": "strengthened",
+        "game_type": "tossup_lean",
+        "position_change": "weakened",
         "actual_result": null
       }
     ],
     "accuracy_by_type": {},
     "biggest_misses": [],
     "confidence_calibration": [],
-    "cross_attention_memory": []
+    "cross_attention_memory": [
+      {
+        "game_label": "#7 Kentucky vs #10 Santa Clara",
+        "pick": "Kentucky",
+        "probability": 0.58,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "weakened",
+        "actual_result": null
+      }
+    ]
   },
   "Oracle": {
     "agent_name": "Oracle",
     "past_picks": [
       {
-        "game_label": "#5 Texas Tech vs #12 Akron",
-        "pick": "Texas Tech",
-        "probability": 0.58,
+        "game_label": "#7 Kentucky vs #10 Santa Clara",
+        "pick": "Kentucky",
+        "probability": 0.62,
         "round_name": "R64",
-        "game_type": "moderate_favorite",
-        "position_change": "strengthened",
+        "game_type": "tossup_lean",
+        "position_change": "weakened",
         "actual_result": null
       }
     ],
     "accuracy_by_type": {},
     "biggest_misses": [],
     "confidence_calibration": [],
-    "cross_attention_memory": []
+    "cross_attention_memory": [
+      {
+        "game_label": "#7 Kentucky vs #10 Santa Clara",
+        "pick": "Kentucky",
+        "probability": 0.62,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "weakened",
+        "actual_result": null
+      }
+    ]
   },
   "Streak": {
     "agent_name": "Streak",
     "past_picks": [
       {
-        "game_label": "#5 Texas Tech vs #12 Akron",
-        "pick": "Akron",
-        "probability": 0.45,
+        "game_label": "#7 Kentucky vs #10 Santa Clara",
+        "pick": "Kentucky",
+        "probability": 0.58,
         "round_name": "R64",
-        "game_type": "moderate_favorite",
-        "position_change": "strengthened",
+        "game_type": "tossup_lean",
+        "position_change": "weakened",
         "actual_result": null
       }
     ],
     "accuracy_by_type": {},
     "biggest_misses": [],
     "confidence_calibration": [],
-    "cross_attention_memory": []
+    "cross_attention_memory": [
+      {
+        "game_label": "#7 Kentucky vs #10 Santa Clara",
+        "pick": "Kentucky",
+        "probability": 0.58,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "weakened",
+        "actual_result": null
+      }
+    ]
   }
 }
