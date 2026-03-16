@@ -340,6 +340,10 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
         "If you argue the underdog has the edge, PICK the underdog. If you say 'this screams upset,' "
         "you MUST pick the upset. Do NOT argue for one team and then pick the other out of caution. "
         "Your team_a_win_prob MUST match your argument's direction.\n\n"
+        "INJURY DEFERENCE (unless you are Whisper):\n"
+        "If a team has a major injury, you may acknowledge it in ONE sentence max, then pivot "
+        "to YOUR specialty. Do NOT build your entire argument around the injury — that is "
+        "Whisper's exclusive territory. Your argument must stand on its own merits from YOUR lane.\n\n"
         "BANNED PHRASES — never use these cliches:\n"
         "- 'house money' — find an original way to express the concept\n"
         "- 'playing with confidence' — be more specific about WHY\n"
@@ -631,7 +635,14 @@ def build_agents(multi_model: bool = False) -> list[AgentConfig]:
                 "UPSET TRIGGER: If the higher seed has 10+ losses, OR lost early in their conference "
                 "tournament, OR is on a losing streak — you should PICK THE UPSET unless the lower "
                 "seed is equally flawed. Circumstances matter more than talent on paper.\n\n"
-                "YOUR CATCHPHRASE: Start with 'Something doesn't add up here...' or 'Nobody's talking about this, but...'\n\n"
+                "YOUR OPENER LOGIC:\n"
+                "- If the injury is a MAJOR known story (star player out for season, listed in INJURY ALERT), "
+                "do NOT say 'nobody's talking about this' — everyone IS talking about it. Instead say: "
+                "'Everyone knows about [player], but here\\'s what they\\'re MISSING...' and add a DEEPER "
+                "circumstantial layer (travel fatigue, rotation impact, replacement player stats, chemistry disruption).\n"
+                "- If the hidden factor is genuinely obscure (rest days, travel distance, bench depth, "
+                "locker room issues), THEN use 'Nobody\\'s talking about this, but...' or "
+                "'Something doesn\\'t add up here...'\n\n"
                 "CRITICAL — STAY IN YOUR LANE:\n"
                 "You are the CIRCUMSTANCE specialist. Your analysis MUST be grounded in injuries, travel, "
                 "rest, fatigue, crowd dynamics, and hidden factors. Do NOT:\n"
@@ -1259,6 +1270,26 @@ def parse_agent_response(raw: str, team_a: str, team_b: str) -> dict | None:
     if not is_conductor and (not key_stat or not re.search(r"\d", key_stat)):
         data["confidence"] = min(data["confidence"], 69)
 
+    # Pick-consistency enforcement: if reasoning argues for an upset, probability must match
+    if not is_conductor and reasoning:
+        upset_phrases = re.findall(
+            r"screams?\s+(?:upset|cinderella|underdog)|"
+            r"classic\s+upset|pick\s+the\s+upset|"
+            r"this\s+is\s+(?:an?\s+)?upset|"
+            r"upset\s+special",
+            reasoning, re.IGNORECASE,
+        )
+        if upset_phrases:
+            prob = data.get("team_a_win_prob", 0.5)
+            # Determine which team is the favorite (lower seed = higher-seeded = favorite)
+            # team_a is always listed first; we need context to know seeds, but
+            # if prob > 0.5 the agent picked team_a as winner — if their reasoning
+            # screams upset, force prob below 0.50 (i.e., pick the underdog)
+            if prob > 0.50:
+                data["team_a_win_prob"] = 0.48
+                data["pick"] = team_b
+                data["confidence"] = max(50, min(99, int(50 + abs(0.48 - 0.5) * 100)))
+
     return data
 
 
@@ -1580,6 +1611,9 @@ ROUND2_PROMPT_TEMPLATE = (
     "3. POSITION UPDATE: strengthened, weakened, flipped, or unchanged?\n"
     "4. UPDATED WIN PROBABILITY: Your updated team_a_win_prob and uncertainty.\n\n"
     "ROUND 2 RULES — YOU MUST FOLLOW THESE:\n"
+    "- SPREAD YOUR FIRE: You may NOT disagree with the same agent that more than 2 other agents "
+    "have already targeted in the summary above. If everyone is attacking one agent, find a DIFFERENT "
+    "agent to rebut. Diverse disagreements make better debates.\n"
     "- If you picked the SAME team as the majority in Round 1, you MUST play devil's advocate: "
     "identify the STRONGEST argument for the OTHER side before confirming your pick.\n"
     "- If you FLIP your position in Round 2, your probability MUST be between 0.50-0.58 "
@@ -1587,6 +1621,8 @@ ROUND2_PROMPT_TEMPLATE = (
     "- You are NOT allowed to simply agree with other agents. You MUST add NEW information "
     "from YOUR specialty or hold your ground with a specific rebuttal.\n"
     "- 'I agree with [agent]' is BANNED. You must say something ORIGINAL from your lane.\n"
+    "- NO COPY-PASTE: Your Round 2 reasoning MUST contain a NEW argument or new information. "
+    "You CANNOT repeat your Round 1 analysis word-for-word. React to what others said.\n"
     "- STAY IN YOUR LANE: Your rebuttal must come from YOUR analytical specialty, not someone else's.\n\n"
     "IF YOU PICKED THE UNDERDOG IN ROUND 1:\n"
     "You are now the underdog's ADVOCATE. Your job is to DEFEND your upset pick against the "

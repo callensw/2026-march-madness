@@ -33,7 +33,7 @@
       {
         "game_label": "#5 Texas Tech vs #12 Akron",
         "pick": "Akron",
-        "probability": 0.42,
+        "probability": 0.45,
         "round_name": "R64",
         "game_type": "moderate_favorite",
         "position_change": "strengthened",
@@ -51,10 +51,10 @@
       {
         "game_label": "#5 Texas Tech vs #12 Akron",
         "pick": "Akron",
-        "probability": 0.45,
+        "probability": 0.48,
         "round_name": "R64",
         "game_type": "moderate_favorite",
-        "position_change": "unchanged",
+        "position_change": "strengthened",
         "actual_result": null
       }
     ],
@@ -108,24 +108,14 @@
         "probability": 0.58,
         "round_name": "R64",
         "game_type": "moderate_favorite",
-        "position_change": "weakened",
+        "position_change": "strengthened",
         "actual_result": null
       }
     ],
     "accuracy_by_type": {},
     "biggest_misses": [],
     "confidence_calibration": [],
-    "cross_attention_memory": [
-      {
-        "game_label": "#5 Texas Tech vs #12 Akron",
-        "pick": "Texas Tech",
-        "probability": 0.58,
-        "round_name": "R64",
-        "game_type": "moderate_favorite",
-        "position_change": "weakened",
-        "actual_result": null
-      }
-    ]
+    "cross_attention_memory": []
   },
   "Streak": {
     "agent_name": "Streak",
