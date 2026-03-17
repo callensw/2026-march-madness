@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect, useMemo } from 'react'
+import { useState, useEffect, useMemo, useRef } from 'react'
 import './App.css'
 import gamesData from './data/games.json'
 import debatesData from './data/debates.json'
@@ -10,8 +10,24 @@ const ROUND_LABELS = {
   R64: 'Round of 64', R32: 'Round of 32', S16: 'Sweet 16',
   E8: 'Elite 8', F4: 'Final Four', NCG: 'Championship'
 }
-const ROUND_SHORT = {
-  R64: 'R64', R32: 'R32', S16: 'S16', E8: 'E8', F4: 'F4', NCG: 'NCG'
+const ROUND_SHORT = { R64: 'R64', R32: 'R32', S16: 'S16', E8: 'E8', F4: 'F4', NCG: 'NCG' }
+
+// Agent personality one-liners (editorial, no tech)
+const AGENT_TAGLINES = {
+  'Tempo Hawk': 'The clinical analyst who lives by pace and efficiency.',
+  'Iron Curtain': 'The gruff defensive coordinator. If you can\'t stop them, you can\'t beat them.',
+  'Glass Cannon': 'The hot take artist. One hot shooting night changes everything.',
+  'Road Dog': 'The old-school scout. Experience and coaching pedigree win in March.',
+  'Whisper': 'The insider. Injuries, travel fatigue, and the things nobody else sees.',
+  'Oracle': 'The historian. Every upset has happened before.',
+  'Streak': 'The momentum believer. What have you done LATELY?',
+  'The Conductor': 'The final word. Math beats vibes.',
+}
+
+const AGENT_COLORS = {
+  'Tempo Hawk': '#4FC3F7', 'Iron Curtain': '#EF5350', 'Glass Cannon': '#FFB74D',
+  'Road Dog': '#81C784', 'Whisper': '#CE93D8', 'Oracle': '#FFF176',
+  'Streak': '#FF8A65', 'The Conductor': '#FFFFFF',
 }
 
 // ─── Utility Functions ─────────────────────────────────────────────────────────
@@ -32,27 +48,19 @@ function isUpset(game) {
 function getWinnerInfo(game) {
   const p = parseMatchup(game.matchup)
   if (!p) return { seed: 0, team: game.winner }
-  return game.winner === p.teamA
-    ? { seed: p.seedA, team: p.teamA }
-    : { seed: p.seedB, team: p.teamB }
+  return game.winner === p.teamA ? { seed: p.seedA, team: p.teamA } : { seed: p.seedB, team: p.teamB }
 }
 
 function getLoserInfo(game) {
   const p = parseMatchup(game.matchup)
   if (!p) return { seed: 0, team: '' }
-  return game.winner === p.teamA
-    ? { seed: p.seedB, team: p.teamB }
-    : { seed: p.seedA, team: p.teamA }
+  return game.winner === p.teamA ? { seed: p.seedB, team: p.teamB } : { seed: p.seedA, team: p.teamA }
 }
 
 // ─── Precomputed Data ──────────────────────────────────────────────────────────
 const games = gamesData.games
-const metadata = gamesData.metadata
-
-// R64 upsets (higher seed number wins)
 const r64Upsets = games.filter(g => g.round === 'R64' && isUpset(g))
 
-// Team paths through bracket
 const teamPaths = {}
 games.forEach(g => {
   const p = parseMatchup(g.matchup)
@@ -65,12 +73,10 @@ games.forEach(g => {
   teamPaths[lInfo.team].eliminated = g
 })
 
-// Cinderella runs: teams seeded 5+ with 2+ wins, sorted by deepest run
 const cinderellas = Object.entries(teamPaths)
   .filter(([, data]) => data.seed >= 5 && data.wins.length >= 2)
   .sort((a, b) => b[1].wins.length - a[1].wins.length)
 
-// Agent stats from debates
 const agentStats = {}
 Object.values(debatesData).forEach(d => {
   ;(d.round2 || []).forEach(entry => {
@@ -85,7 +91,6 @@ Object.values(debatesData).forEach(d => {
 })
 const totalFlips = Object.values(agentStats).reduce((sum, s) => sum + s.flips, 0)
 
-// Bracket organized by region and round
 const bracketByRegion = {}
 games.forEach(g => {
   const region = (g.round === 'F4' || g.round === 'NCG') ? 'Final Four' : g.region
@@ -94,13 +99,11 @@ games.forEach(g => {
   bracketByRegion[region][g.round].push(g)
 })
 
-// Debate lookup: match game to debate by team names
 function findDebate(game) {
   const p = parseMatchup(game.matchup)
   if (!p) return null
   const gA = p.teamA.toLowerCase().replace(/[^a-z]/g, '')
   const gB = p.teamB.toLowerCase().replace(/[^a-z]/g, '')
-
   for (const [, debate] of Object.entries(debatesData)) {
     if (!debate.teamA || !debate.teamB) continue
     const dA = debate.teamA.toLowerCase().replace(/[^a-z]/g, '')
@@ -108,7 +111,6 @@ function findDebate(game) {
     if ((dA.includes(gA) || gA.includes(dA)) && (dB.includes(gB) || gB.includes(dB))) return debate
     if ((dA.includes(gB) || gB.includes(dA)) && (dB.includes(gA) || gA.includes(dB))) return debate
   }
-  // Fallback: match on winner name + round
   const roundMap = { R64: 'Round of 64', R32: 'Round of 32', S16: 'Sweet 16', E8: 'Elite 8', F4: 'Final Four', NCG: 'National Championship' }
   for (const [, debate] of Object.entries(debatesData)) {
     if (!debate.teamA) continue
@@ -123,51 +125,117 @@ function findDebate(game) {
   return null
 }
 
-// Signature descriptions for agents (no model names)
-const SIGNATURE_STATS = {
-  'Tempo Hawk': 'Possessions & pace mismatches',
-  'Iron Curtain': 'Opponent FG% & defensive efficiency',
-  'Glass Cannon': 'Three-point variance & hot shooting',
-  'Road Dog': 'Senior leadership & coaching pedigree',
-  'Whisper': 'Injuries, travel fatigue & hidden edges',
-  'Oracle': 'Historical upset patterns since 1985',
-  'Streak': 'Win streaks & conference tournament momentum',
-  'The Conductor': 'Weighted probability synthesis',
-}
-
-// ─── Sub-Components ────────────────────────────────────────────────────────────
-
-function HeroStat({ number, label }) {
+// ─── Section: Hero ─────────────────────────────────────────────────────────────
+function Hero({ champion, runnerUp, scrollTo }) {
   return (
-    <div className="glass-card p-4 md:p-5 text-center">
-      <div className="font-display text-4xl md:text-5xl text-cyan-400 stat-glow">{number}</div>
-      <div className="text-gray-400 text-xs md:text-sm mt-1 leading-tight">{label}</div>
-    </div>
+    <section className="hero-bg min-h-[100dvh] flex flex-col items-center justify-center px-4 pt-16 pb-12 relative">
+      <div className="relative z-10 flex flex-col items-center text-center w-full max-w-4xl mx-auto">
+        {/* Main title */}
+        <div className="animate-fade-up mb-4">
+          <h1 className="font-display text-[clamp(3.5rem,12vw,10rem)] leading-[0.85] tracking-[0.04em] text-white uppercase">
+            March Madness
+          </h1>
+          <h2 className="font-display text-[clamp(2.2rem,8vw,6.5rem)] leading-[0.85] tracking-[0.06em] gradient-text uppercase">
+            AI War Room
+          </h2>
+        </div>
+
+        <p className="animate-fade-up text-[#8899aa] text-base md:text-lg mb-10 font-body" style={{ animationDelay: '150ms' }}>
+          8 AI Analysts Debated Every Game.<br className="md:hidden" />
+          {' '}Here's Who They Think Wins.
+        </p>
+
+        {/* Championship VS graphic */}
+        <div className="animate-fade-up w-full max-w-xl mb-12" style={{ animationDelay: '300ms' }}>
+          <div className="relative bg-navy-800/60 border border-navy-600/40 rounded-2xl px-6 py-8 md:px-10 md:py-10">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+              <span className="animate-crown inline-block text-4xl">🏆</span>
+            </div>
+            <div className="text-[10px] text-amber-400/80 font-headline font-semibold tracking-[0.3em] mb-5 uppercase">
+              Champion Pick
+            </div>
+
+            <div className="flex items-center justify-center gap-3 md:gap-6">
+              {/* Team A */}
+              <div className="text-right flex-1">
+                <div className="font-mono text-xs text-[#556677] mb-1">({champion.seed})</div>
+                <div className="font-display text-3xl md:text-5xl text-white tracking-wider leading-none">
+                  {champion.team.toUpperCase()}
+                </div>
+              </div>
+
+              {/* VS */}
+              <div className="flex flex-col items-center shrink-0">
+                <div className="w-px h-6 bg-navy-600/60" />
+                <div className="font-headline text-sm text-[#445566] font-bold my-1">VS</div>
+                <div className="w-px h-6 bg-navy-600/60" />
+              </div>
+
+              {/* Team B */}
+              <div className="text-left flex-1">
+                <div className="font-mono text-xs text-[#556677] mb-1">({runnerUp.seed})</div>
+                <div className="font-display text-3xl md:text-5xl text-[#556677] tracking-wider leading-none">
+                  {runnerUp.team.toUpperCase()}
+                </div>
+              </div>
+            </div>
+
+            <div className="text-[#556677] text-xs font-mono mt-5">50% confidence</div>
+          </div>
+        </div>
+
+        {/* Hero stat pills */}
+        <div className="animate-fade-up grid grid-cols-2 md:grid-cols-4 gap-3 w-full max-w-lg md:max-w-2xl" style={{ animationDelay: '450ms' }}>
+          {[
+            { n: r64Upsets.length, l: 'Upsets Predicted', color: '#FF8A65' },
+            { n: 63, l: 'Games Analyzed', color: '#4FC3F7' },
+            { n: cinderellas.length, l: 'Cinderella Runs', color: '#CE93D8' },
+            { n: totalFlips, l: 'Minds Changed', color: '#81C784' },
+          ].map(s => (
+            <div key={s.l} className="bg-navy-800/50 border border-navy-600/30 rounded-xl px-4 py-3 text-center">
+              <div className="font-display text-3xl md:text-4xl" style={{ color: s.color }}>{s.n}</div>
+              <div className="text-[#556677] text-[11px] font-medium mt-0.5">{s.l}</div>
+            </div>
+          ))}
+        </div>
+
+        {/* Scroll indicator */}
+        <button
+          onClick={() => scrollTo('bracket')}
+          className="animate-fade-up mt-16 text-[#334455] hover:text-[#556677] transition-colors group"
+          style={{ animationDelay: '700ms' }}
+        >
+          <span className="text-xs tracking-widest font-medium">EXPLORE THE BRACKET</span>
+          <div className="mt-2 text-lg group-hover:translate-y-1 transition-transform">↓</div>
+        </button>
+      </div>
+    </section>
   )
 }
 
-function BracketGameCard({ game, onClick, highlight = false }) {
+// ─── Section: Bracket ──────────────────────────────────────────────────────────
+function BracketGameCard({ game, onClick }) {
   const p = parseMatchup(game.matchup)
   if (!p) return null
   const upset = isUpset(game)
   const isWinnerA = game.winner === p.teamA
 
   return (
-    <button
-      onClick={() => onClick(game)}
-      className={`bracket-game-card group relative text-left transition-all hover:scale-[1.02] ${highlight ? 'ring-2 ring-cyan-400/50' : ''}`}
-    >
+    <button onClick={() => onClick(game)} className="bracket-game group relative text-left w-full">
       <div className={`team-row ${isWinnerA ? 'winner' : 'loser'}`}>
         <span className="seed">({p.seedA})</span>
         <span className="name">{p.teamA}</span>
-        {isWinnerA && <span className="ml-auto text-emerald-400 text-xs font-bold">W</span>}
+        {isWinnerA && <span className="ml-auto text-emerald-400 text-[10px] font-bold">W</span>}
       </div>
+      <div className="divider" />
       <div className={`team-row ${!isWinnerA ? 'winner' : 'loser'}`}>
         <span className="seed">({p.seedB})</span>
         <span className="name">{p.teamB}</span>
-        {!isWinnerA && <span className="ml-auto text-emerald-400 text-xs font-bold">W</span>}
+        {!isWinnerA && <span className="ml-auto text-emerald-400 text-[10px] font-bold">W</span>}
       </div>
-      {upset && <span className="absolute -top-1.5 -right-1.5 text-sm" title="Upset!">🔥</span>}
+      {upset && (
+        <span className="absolute -top-2 -right-2 text-sm drop-shadow-lg" title="Upset!">🔥</span>
+      )}
     </button>
   )
 }
@@ -175,15 +243,17 @@ function BracketGameCard({ game, onClick, highlight = false }) {
 function RegionBracket({ region, onGameClick }) {
   const rounds = bracketByRegion[region]
   if (!rounds) return null
-
   const roundKeys = ['R64', 'R32', 'S16', 'E8']
+
   return (
     <div className="bracket-grid">
       {roundKeys.map(rk => {
         const roundGames = rounds[rk] || []
         return (
           <div key={rk} className="bracket-round-col">
-            <div className="text-[10px] text-gray-500 font-semibold tracking-widest text-center mb-2 uppercase">{ROUND_SHORT[rk]}</div>
+            <div className="text-[10px] text-[#445566] font-headline font-semibold tracking-[0.15em] text-center mb-2 uppercase">
+              {ROUND_SHORT[rk]}
+            </div>
             <div className="bracket-round-games">
               {roundGames.map(g => (
                 <BracketGameCard key={g.game_number} game={g} onClick={onGameClick} />
@@ -196,116 +266,204 @@ function RegionBracket({ region, onGameClick }) {
   )
 }
 
-function FinalFourShowcase({ onGameClick }) {
-  const f4Games = bracketByRegion['Final Four']?.F4 || []
-  const ncgGame = (bracketByRegion['Final Four']?.NCG || [])[0]
-  if (!ncgGame) return null
-
-  const ncgParsed = parseMatchup(ncgGame.matchup)
-  const champion = ncgGame.winner
-  const championSeed = getWinnerInfo(ncgGame).seed
+function FinalFourCard({ game, onGameClick, label }) {
+  const p = parseMatchup(game.matchup)
+  if (!p) return null
+  const upset = isUpset(game)
+  const isWinnerA = game.winner === p.teamA
 
   return (
-    <div className="mb-12">
-      <div className="text-center mb-6">
-        <div className="inline-block glass-card px-6 py-4 border-2 border-amber-400/30">
-          <div className="text-xs text-amber-400 font-semibold tracking-widest mb-1">CHAMPIONSHIP</div>
-          <div className="font-display text-2xl md:text-3xl text-white tracking-wider">{ncgGame.matchup}</div>
-          <div className="text-gray-400 text-sm mt-1">Vote: {ncgGame.vote_split}</div>
-          <button onClick={() => onGameClick(ncgGame)} className="mt-3 text-cyan-400 text-sm hover:underline">
-            Read the debate →
-          </button>
+    <button
+      onClick={() => onGameClick(game)}
+      className="bg-navy-800/70 border border-navy-600/50 rounded-xl p-4 md:p-5 text-left hover:border-cyan-400/30 transition-all group w-full"
+    >
+      <div className="text-[10px] text-cyan-400/60 font-headline font-semibold tracking-[0.2em] mb-3 uppercase">{label}</div>
+      <div className="space-y-1.5">
+        <div className={`flex items-center gap-2 ${isWinnerA ? 'text-white' : 'text-[#445566]'}`}>
+          <span className="font-mono text-[11px] w-6 text-right text-[#556677]">({p.seedA})</span>
+          <span className="font-headline text-sm font-semibold tracking-wide">{p.teamA}</span>
+          {isWinnerA && <span className="text-emerald-400 text-xs ml-auto">W</span>}
+        </div>
+        <div className={`flex items-center gap-2 ${!isWinnerA ? 'text-white' : 'text-[#445566]'}`}>
+          <span className="font-mono text-[11px] w-6 text-right text-[#556677]">({p.seedB})</span>
+          <span className="font-headline text-sm font-semibold tracking-wide">{p.teamB}</span>
+          {!isWinnerA && <span className="text-emerald-400 text-xs ml-auto">W</span>}
         </div>
       </div>
-
-      <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
-        {f4Games.map(g => (
-          <div key={g.game_number} className="glass-card p-4">
-            <div className="text-xs text-cyan-400 font-semibold tracking-widest mb-2 text-center">FINAL FOUR</div>
-            <BracketGameCard game={g} onClick={onGameClick} />
-          </div>
-        ))}
-      </div>
-    </div>
+      {upset && <div className="text-xs text-upset mt-2">🔥 Upset</div>}
+      <div className="text-[10px] text-[#334455] font-mono mt-2">{game.vote_split}</div>
+    </button>
   )
 }
 
+function BracketSection({ onGameClick }) {
+  const [activeRegion, setActiveRegion] = useState('East')
+  const [mobileRound, setMobileRound] = useState('R64')
+
+  const f4Games = bracketByRegion['Final Four']?.F4 || []
+  const ncgGame = (bracketByRegion['Final Four']?.NCG || [])[0]
+
+  return (
+    <section id="bracket" className="py-16 md:py-24 px-4">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="font-display text-[clamp(2rem,6vw,4.5rem)] text-white tracking-[0.04em] leading-none">
+            THE BRACKET
+          </h2>
+          <p className="text-[#556677] text-sm mt-2 font-body">Click any game to see the full AI debate</p>
+        </div>
+
+        {/* Final Four + Championship — prominent center */}
+        {ncgGame && (
+          <div className="mb-14">
+            {/* Championship */}
+            <div className="max-w-md mx-auto mb-6">
+              <FinalFourCard game={ncgGame} onGameClick={onGameClick} label="Championship" />
+            </div>
+            {/* F4 games */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-xl mx-auto">
+              {f4Games.map(g => (
+                <FinalFourCard key={g.game_number} game={g} onGameClick={onGameClick} label="Final Four" />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Divider */}
+        <div className="flex items-center gap-4 mb-8 max-w-2xl mx-auto">
+          <div className="flex-1 h-px bg-navy-600/40" />
+          <span className="text-[10px] text-[#445566] tracking-[0.2em] font-headline font-semibold">REGIONAL BRACKETS</span>
+          <div className="flex-1 h-px bg-navy-600/40" />
+        </div>
+
+        {/* Region Tabs */}
+        <div className="flex justify-center gap-1 mb-8">
+          {REGIONS.map(r => (
+            <button
+              key={r}
+              onClick={() => setActiveRegion(r)}
+              className={`px-5 py-2 rounded-lg text-sm font-headline font-semibold tracking-wide transition-all ${
+                activeRegion === r
+                  ? 'bg-cyan-400/10 text-cyan-400 border border-cyan-400/30'
+                  : 'text-[#556677] hover:text-[#8899aa] border border-transparent'
+              }`}
+            >
+              {r}
+            </button>
+          ))}
+        </div>
+
+        {/* Desktop Bracket */}
+        <div className="hidden md:block">
+          <RegionBracket region={activeRegion} onGameClick={onGameClick} />
+        </div>
+
+        {/* Mobile: round tabs + vertical list */}
+        <div className="md:hidden">
+          <div className="flex gap-1 mb-4 overflow-x-auto scrollbar-none">
+            {['R64', 'R32', 'S16', 'E8'].map(rk => (
+              <button
+                key={rk}
+                onClick={() => setMobileRound(rk)}
+                className={`px-3 py-1.5 rounded text-xs font-headline font-semibold whitespace-nowrap transition-all ${
+                  mobileRound === rk
+                    ? 'bg-cyan-400/15 text-cyan-400'
+                    : 'text-[#556677]'
+                }`}
+              >
+                {ROUND_SHORT[rk]}
+              </button>
+            ))}
+          </div>
+          <div className="grid grid-cols-1 gap-2">
+            {(bracketByRegion[activeRegion]?.[mobileRound] || []).map(g => (
+              <BracketGameCard key={g.game_number} game={g} onClick={onGameClick} />
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+// ─── Debate Viewer (Slide Panel) ───────────────────────────────────────────────
 function PositionBadge({ change }) {
   const label = (change || '').toUpperCase()
   const config = {
-    STRENGTHENED: { bg: 'bg-emerald-400/15', text: 'text-emerald-400', border: 'border-emerald-400/30', icon: '↑' },
-    WEAKENED: { bg: 'bg-amber-400/15', text: 'text-amber-400', border: 'border-amber-400/30', icon: '↓' },
-    FLIPPED: { bg: 'bg-red-400/15', text: 'text-red-400', border: 'border-red-400/30', icon: '↻' },
+    STRENGTHENED: { bg: 'rgba(129,199,132,0.12)', text: '#81C784', icon: '↑' },
+    WEAKENED: { bg: 'rgba(255,183,77,0.12)', text: '#FFB74D', icon: '↓' },
+    FLIPPED: { bg: 'rgba(239,83,80,0.12)', text: '#EF5350', icon: '↻' },
   }
-  const c = config[label] || { bg: 'bg-gray-400/15', text: 'text-gray-400', border: 'border-gray-400/30', icon: '—' }
+  const c = config[label] || { bg: 'rgba(85,102,119,0.12)', text: '#556677', icon: '—' }
 
   return (
-    <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold border ${c.bg} ${c.text} ${c.border}`}>
-      {c.icon} {label || 'UNCHANGED'}
+    <span
+      className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-semibold"
+      style={{ background: c.bg, color: c.text }}
+    >
+      {c.icon} {label || 'HELD'}
     </span>
   )
 }
 
-function ConfidenceBar({ probability, color }) {
-  const pct = Math.round((probability || 0) * 100)
-  return (
-    <div className="mt-2">
-      <div className="h-1.5 bg-navy-700 rounded-full overflow-hidden">
-        <div
-          className="h-full rounded-full transition-all duration-500"
-          style={{ width: `${pct}%`, backgroundColor: color || '#4FC3F7' }}
-        />
-      </div>
-      <div className="text-right text-[10px] text-gray-500 mt-0.5">{pct}%</div>
-    </div>
-  )
-}
-
-function AgentAnalysisCard({ entry, isRound2 = false }) {
+function AgentBubble({ entry, isRound2 = false }) {
   const agent = getAgent(entry.name)
+  const color = AGENT_COLORS[agent.name] || agent.color || '#888'
 
   return (
-    <div className="glass-card p-4 flex flex-col">
-      <div className="flex items-center gap-2 mb-2">
-        <span className="text-2xl">{agent.emoji}</span>
-        <div>
-          <div className="font-semibold text-white text-sm">{agent.name}</div>
-          <div className="text-[10px] text-gray-500">{agent.role}</div>
+    <div className="agent-bubble">
+      <div className="flex items-start gap-3 mb-3">
+        <div className="text-[28px] leading-none shrink-0 mt-0.5">{agent.emoji}</div>
+        <div className="flex-1 min-w-0">
+          <div className="flex items-center gap-2 flex-wrap">
+            <span className="font-headline text-sm font-semibold tracking-wide" style={{ color }}>{agent.name}</span>
+            {isRound2 && entry.positionChange && <PositionBadge change={entry.positionChange} />}
+          </div>
+          <div className="text-[10px] text-[#556677] mt-0.5">{agent.role}</div>
         </div>
-        {isRound2 && entry.positionChange && (
-          <div className="ml-auto">
-            <PositionBadge change={entry.positionChange} />
+      </div>
+
+      {entry.quote && (
+        <p className="font-serif text-[13px] text-[#aabbcc] italic leading-relaxed mb-3">
+          "{entry.quote}"
+        </p>
+      )}
+
+      <div className="flex items-center justify-between gap-3">
+        {entry.favoredTeam && (
+          <div className="flex items-center gap-2">
+            <span className="text-xs font-semibold text-white">{entry.favoredTeam}</span>
+            {entry.probability && (
+              <div className="flex items-center gap-1">
+                <div className="w-16 h-1.5 bg-navy-700/80 rounded-full overflow-hidden">
+                  <div
+                    className="h-full rounded-full"
+                    style={{ width: `${Math.round(entry.probability * 100)}%`, backgroundColor: color }}
+                  />
+                </div>
+                <span className="text-[10px] font-mono text-[#556677]">{Math.round(entry.probability * 100)}%</span>
+              </div>
+            )}
           </div>
         )}
       </div>
 
-      {entry.quote && (
-        <p className="text-gray-300 text-sm italic mb-2 flex-1">"{entry.quote}"</p>
-      )}
-
-      {entry.favoredTeam && entry.probability && (
-        <div className="text-xs text-gray-400">
-          <span className="font-semibold text-white">{entry.favoredTeam}</span>
-          <ConfidenceBar probability={entry.probability} color={agent.color} />
-        </div>
-      )}
-
       {entry.keyStat && (
-        <div className="text-[10px] text-gray-500 mt-2 border-t border-navy-600/50 pt-2">
-          📊 {entry.keyStat}
+        <div className="text-[10px] text-[#445566] mt-2 pt-2 border-t border-navy-600/30 font-mono">
+          {entry.keyStat}
         </div>
       )}
 
       {isRound2 && entry.disagreesWith && (
-        <div className="text-[10px] text-red-300/70 mt-2 border-t border-navy-600/50 pt-2">
-          ⚔️ {entry.disagreesWith}
+        <div className="text-[10px] text-red-400/60 mt-1 font-body">
+          Challenges: {entry.disagreesWith}
         </div>
       )}
     </div>
   )
 }
 
-function DebateModal({ game, onClose }) {
+function DebatePanel({ game, onClose }) {
   const debate = useMemo(() => game ? findDebate(game) : null, [game])
 
   useEffect(() => {
@@ -319,61 +477,77 @@ function DebateModal({ game, onClose }) {
   const upset = isUpset(game)
 
   return (
-    <div className="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm overflow-y-auto" onClick={onClose}>
-      <div className="max-w-5xl mx-auto px-4 py-6 md:py-10" onClick={e => e.stopPropagation()}>
-        <div className="glass-card p-5 md:p-8 border border-navy-600/80">
+    <div className="debate-overlay fixed inset-0 z-50 bg-black/80 backdrop-blur-sm" onClick={onClose}>
+      <div
+        className="debate-panel absolute right-0 top-0 bottom-0 w-full max-w-3xl bg-[#080d18] border-l border-navy-600/40 overflow-y-auto"
+        onClick={e => e.stopPropagation()}
+      >
+        <div className="p-5 md:p-8">
           {/* Header */}
-          <div className="flex justify-between items-start mb-6">
+          <div className="flex justify-between items-start mb-8">
             <div>
-              <div className="flex items-center gap-2 text-sm mb-1">
-                <span className="text-cyan-400 font-semibold">{ROUND_LABELS[game.round]}</span>
-                {game.region && <span className="text-gray-500">• {game.region}</span>}
-                {upset && <span className="text-sm" title="Upset!">🔥 Upset</span>}
+              <div className="flex items-center gap-2 text-xs mb-2">
+                <span className="text-cyan-400 font-headline font-semibold tracking-wide">{ROUND_LABELS[game.round]}</span>
+                {game.region && <span className="text-[#445566]">·</span>}
+                {game.region && <span className="text-[#445566]">{game.region}</span>}
+                {upset && <span className="ml-1">🔥</span>}
               </div>
-              <h3 className="font-display text-2xl md:text-4xl text-white tracking-wider">{game.matchup}</h3>
-              <p className="text-gray-400 text-sm mt-1">Vote: {game.vote_split}</p>
+              <h3 className="font-display text-[clamp(1.5rem,4vw,2.5rem)] text-white tracking-wider leading-none">
+                {game.matchup}
+              </h3>
+              <div className="flex items-center gap-3 mt-2">
+                <span className="text-[#556677] font-mono text-xs">{game.vote_split}</span>
+              </div>
             </div>
-            <button onClick={onClose} className="text-gray-400 hover:text-white text-3xl leading-none ml-4">×</button>
+            <button onClick={onClose} className="text-[#445566] hover:text-white text-2xl leading-none p-2 -mr-2 -mt-2 transition-colors">
+              ✕
+            </button>
           </div>
 
           {debate ? (
             <>
-              {/* Round 1 — Independent Analysis */}
+              {/* Round 1 */}
               {debate.round1?.length > 0 && (
-                <div className="mb-8">
-                  <h4 className="font-display text-xl text-white tracking-wider mb-4 flex items-center gap-2">
-                    <span className="text-cyan-400">01</span> Independent Analysis
-                  </h4>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                <div className="mb-10">
+                  <div className="flex items-center gap-3 mb-5">
+                    <span className="font-display text-xl text-cyan-400">01</span>
+                    <h4 className="font-headline text-sm font-semibold text-[#8899aa] tracking-[0.1em] uppercase">Independent Analysis</h4>
+                    <div className="flex-1 h-px bg-navy-600/30" />
+                  </div>
+                  <div className="space-y-3 stagger-children">
                     {debate.round1.map((entry, i) => (
-                      <AgentAnalysisCard key={i} entry={entry} />
+                      <div key={i} className="animate-fade-up"><AgentBubble entry={entry} /></div>
                     ))}
                   </div>
                 </div>
               )}
 
-              {/* Round 2 — Cross Examination */}
+              {/* Round 2 */}
               {debate.round2?.length > 0 && (
-                <div className="mb-8">
-                  <h4 className="font-display text-xl text-white tracking-wider mb-4 flex items-center gap-2">
-                    <span className="text-cyan-400">02</span> Cross-Examination
-                  </h4>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                <div className="mb-10">
+                  <div className="flex items-center gap-3 mb-5">
+                    <span className="font-display text-xl text-cyan-400">02</span>
+                    <h4 className="font-headline text-sm font-semibold text-[#8899aa] tracking-[0.1em] uppercase">Cross-Examination</h4>
+                    <div className="flex-1 h-px bg-navy-600/30" />
+                  </div>
+                  <div className="space-y-3 stagger-children">
                     {debate.round2.map((entry, i) => (
-                      <AgentAnalysisCard key={i} entry={entry} isRound2 />
+                      <div key={i} className="animate-fade-up"><AgentBubble entry={entry} isRound2 /></div>
                     ))}
                   </div>
                 </div>
               )}
 
-              {/* The Verdict */}
-              <div className="border-t-2 border-cyan-400/30 pt-6">
-                <h4 className="font-display text-xl text-white tracking-wider mb-4 flex items-center gap-2">
-                  <span className="text-3xl">🎼</span> The Verdict
-                </h4>
+              {/* Verdict */}
+              <div className="mb-6">
+                <div className="flex items-center gap-3 mb-6">
+                  <span className="text-3xl">🎼</span>
+                  <h4 className="font-headline text-sm font-semibold text-[#8899aa] tracking-[0.1em] uppercase">The Verdict</h4>
+                  <div className="flex-1 h-px bg-navy-600/30" />
+                </div>
 
                 {debate.conductor?.quote && (
-                  <blockquote className="text-lg md:text-xl text-gray-200 italic mb-6 pl-4 border-l-4 border-cyan-400/50 leading-relaxed">
+                  <blockquote className="font-serif text-lg md:text-xl text-[#ccddee] italic leading-relaxed mb-6 pl-5 border-l-2 border-cyan-400/40">
                     "{debate.conductor.quote}"
                   </blockquote>
                 )}
@@ -383,15 +557,13 @@ function DebateModal({ game, onClose }) {
                   <div className="flex flex-wrap gap-6 mb-6">
                     {Object.entries(debate.voteTally).map(([team, data]) => (
                       <div key={team} className="flex-1 min-w-[140px]">
-                        <div className={`font-semibold text-sm mb-2 ${team === game.winner ? 'text-emerald-400' : 'text-gray-400'}`}>
-                          {team === game.winner ? '✓ ' : ''}{team} ({data.count})
+                        <div className={`text-xs font-headline font-semibold tracking-wide mb-2 ${team === game.winner ? 'text-emerald-400' : 'text-[#445566]'}`}>
+                          {team === game.winner && '✓ '}{team} ({data.count})
                         </div>
-                        <div className="flex flex-wrap gap-2">
+                        <div className="flex gap-2">
                           {data.agents.map(agentName => {
                             const a = getAgent(agentName)
-                            return (
-                              <span key={agentName} className="text-xl" title={agentName}>{a.emoji}</span>
-                            )
+                            return <span key={agentName} className="text-xl" title={agentName}>{a.emoji}</span>
                           })}
                         </div>
                       </div>
@@ -399,33 +571,25 @@ function DebateModal({ game, onClose }) {
                   </div>
                 )}
 
-                {/* Conductor decision */}
-                <div className={`glass-card p-4 text-center ${game.conductor_status?.includes('OVERRIDES') ? 'border border-amber-400/40' : 'border border-emerald-400/30'}`}>
-                  {game.conductor_status?.includes('OVERRIDES') && (
-                    <div className="text-amber-400 text-xs font-semibold tracking-widest mb-1">CONDUCTOR OVERRIDE</div>
-                  )}
-                  <div className="font-display text-2xl md:text-3xl text-white tracking-wider">
-                    {game.winner}
-                  </div>
-                  <div className="text-gray-400 text-sm mt-1">
-                    {debate.conductor?.confidence || game.combined_probability}
-                  </div>
+                {/* Winner card */}
+                <div className="bg-navy-800/60 border border-navy-600/40 rounded-xl p-5 text-center">
+                  <div className="font-display text-3xl md:text-4xl text-white tracking-wider">{game.winner}</div>
+                  <div className="text-[#556677] text-sm font-mono mt-1">{game.combined_probability}</div>
                   {game.conductor_key_factor && (
-                    <div className="text-cyan-400/70 text-xs mt-2">Key factor: {game.conductor_key_factor}</div>
+                    <div className="text-cyan-400/50 text-xs mt-2 font-body">{game.conductor_key_factor}</div>
                   )}
                 </div>
               </div>
             </>
           ) : (
-            /* No debate found */
-            <div className="text-center py-10">
-              <div className="text-4xl mb-4">🏀</div>
-              <p className="text-gray-400 text-lg mb-2">Quick consensus — no extended debate</p>
-              <div className="glass-card inline-block px-6 py-4 mt-4">
-                <div className="font-display text-2xl text-white tracking-wider">{game.winner}</div>
-                <div className="text-gray-400 text-sm mt-1">{game.vote_split} • {game.confidence}</div>
+            <div className="text-center py-16">
+              <div className="text-5xl mb-6">🏀</div>
+              <p className="text-[#556677] text-base mb-2 font-body">Quick consensus — no extended debate</p>
+              <div className="bg-navy-800/60 border border-navy-600/40 rounded-xl inline-block px-8 py-5 mt-4">
+                <div className="font-display text-3xl text-white tracking-wider">{game.winner}</div>
+                <div className="text-[#556677] text-sm font-mono mt-1">{game.vote_split} · {game.confidence}</div>
                 {game.conductor_key_factor && (
-                  <div className="text-cyan-400/70 text-xs mt-2">{game.conductor_key_factor}</div>
+                  <div className="text-cyan-400/50 text-xs mt-2 font-body">{game.conductor_key_factor}</div>
                 )}
               </div>
             </div>
@@ -436,36 +600,38 @@ function DebateModal({ game, onClose }) {
   )
 }
 
-function AgentProfileCard({ agent, stats }) {
-  const sig = SIGNATURE_STATS[agent.name]
-  const totalChanges = stats ? stats.flips + stats.weakened : 0
+// ─── Section: Meet the Analysts ────────────────────────────────────────────────
+function AgentCard({ agent, stats }) {
+  const tagline = AGENT_TAGLINES[agent.name] || agent.personality
+  const color = AGENT_COLORS[agent.name] || agent.color
 
   return (
-    <div className="glass-card p-5 flex flex-col items-center text-center group hover:border-cyan-400/30 transition-all">
-      <div className="text-5xl mb-3 group-hover:scale-110 transition-transform">{agent.emoji}</div>
-      <h3 className="font-display text-lg tracking-wider text-white">{agent.name}</h3>
-      <p className="text-cyan-400 text-xs font-semibold tracking-wider mb-2">{agent.role}</p>
-      <p className="text-gray-400 text-xs leading-relaxed mb-4 line-clamp-3">{agent.personality}</p>
-
-      {sig && (
-        <div className="text-[10px] text-gray-500 mb-3">
-          <span className="text-gray-400">Signature:</span> {sig}
-        </div>
-      )}
+    <div className="bg-navy-800/50 border border-navy-600/30 rounded-xl p-5 md:p-6 flex flex-col items-center text-center group hover:border-opacity-60 transition-all"
+      style={{ '--agent-color': color }}
+    >
+      <div className="text-[56px] md:text-[64px] leading-none mb-3 group-hover:scale-110 transition-transform duration-300">
+        {agent.emoji}
+      </div>
+      <h3 className="font-headline text-base md:text-lg font-semibold tracking-wide mb-1" style={{ color }}>
+        {agent.name}
+      </h3>
+      <p className="font-serif text-[12px] md:text-[13px] text-[#778899] italic leading-relaxed mb-4 line-clamp-2">
+        {tagline}
+      </p>
 
       {stats && (
-        <div className="flex gap-4 text-center mt-auto pt-3 border-t border-navy-600/50 w-full">
+        <div className="flex gap-4 text-center mt-auto pt-3 border-t border-navy-600/30 w-full">
           <div className="flex-1">
-            <div className="text-red-400 font-bold text-sm">{stats.flips}</div>
-            <div className="text-gray-500 text-[10px]">flipped</div>
+            <div className="font-display text-lg text-[#EF5350]">{stats.flips}</div>
+            <div className="text-[#445566] text-[10px]">flipped</div>
           </div>
           <div className="flex-1">
-            <div className="text-emerald-400 font-bold text-sm">{stats.strengthened}</div>
-            <div className="text-gray-500 text-[10px]">held firm</div>
+            <div className="font-display text-lg text-[#81C784]">{stats.strengthened}</div>
+            <div className="text-[#445566] text-[10px]">held</div>
           </div>
           <div className="flex-1">
-            <div className="text-amber-400 font-bold text-sm">{stats.weakened}</div>
-            <div className="text-gray-500 text-[10px]">wavered</div>
+            <div className="font-display text-lg text-[#FFB74D]">{stats.weakened}</div>
+            <div className="text-[#445566] text-[10px]">wavered</div>
           </div>
         </div>
       )}
@@ -473,104 +639,201 @@ function AgentProfileCard({ agent, stats }) {
   )
 }
 
-function CinderellaCard({ team, data, onGameClick }) {
-  const roundLabels = { R64: 'Rd 64', R32: 'Rd 32', S16: 'Sweet 16', E8: 'Elite 8', F4: 'Final 4', NCG: 'Title' }
-  const farthestRound = data.eliminated
-    ? ROUND_LABELS[data.eliminated.round]
-    : 'Champion'
+function AnalystsSection() {
+  return (
+    <section id="analysts" className="py-16 md:py-24 px-4">
+      <div className="max-w-5xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="font-display text-[clamp(2rem,6vw,4.5rem)] text-white tracking-[0.04em] leading-none">
+            MEET THE ANALYSTS
+          </h2>
+          <p className="text-[#556677] text-sm mt-2 font-body">8 AI personalities with unique perspectives on every game</p>
+        </div>
 
-  // Find a quote about this team from a conductor analysis
+        {/* Desktop: 4x2 grid. Mobile: horizontal scroll carousel */}
+        <div className="hidden md:grid md:grid-cols-4 gap-4">
+          {AGENTS.map(agent => (
+            <AgentCard key={agent.name} agent={agent} stats={agentStats[agent.name.toUpperCase()]} />
+          ))}
+        </div>
+        <div className="md:hidden flex gap-3 overflow-x-auto scrollbar-none pb-4 -mx-4 px-4 snap-x snap-mandatory">
+          {AGENTS.map(agent => (
+            <div key={agent.name} className="min-w-[240px] snap-start">
+              <AgentCard agent={agent} stats={agentStats[agent.name.toUpperCase()]} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+// ─── Section: Cinderella Watch ─────────────────────────────────────────────────
+function CinderellaJourney({ team, data, onGameClick }) {
+  const roundLabels = { R64: 'R64', R32: 'R32', S16: 'Sweet 16', E8: 'Elite 8', F4: 'Final Four', NCG: 'Title' }
+  const farthestRound = data.eliminated ? ROUND_LABELS[data.eliminated.round] : 'Champion'
+
   let pullQuote = null
   for (const g of data.wins) {
     const d = findDebate(g)
-    if (d?.conductor?.quote) {
-      pullQuote = d.conductor.quote
-      break
-    }
+    if (d?.conductor?.quote) { pullQuote = d.conductor.quote; break }
   }
 
   return (
-    <div className="glass-card p-5 md:p-6 mb-4">
-      <div className="flex items-start gap-4 mb-4">
-        <div className="text-4xl">🔮</div>
-        <div className="flex-1">
-          <h3 className="font-display text-xl md:text-2xl text-white tracking-wider">
+    <div className="bg-navy-800/40 border border-navy-600/25 rounded-xl p-5 md:p-6 mb-4">
+      <div className="flex items-start gap-3 mb-4">
+        <div className="text-3xl shrink-0">🔮</div>
+        <div>
+          <h3 className="font-headline text-lg md:text-xl text-white font-semibold tracking-wide">
             ({data.seed}) {team}
           </h3>
-          <p className="text-cyan-400 text-sm">
+          <p className="text-cyan-400/70 text-xs font-body">
             {data.wins.length} win{data.wins.length !== 1 ? 's' : ''} — Reached the {farthestRound}
           </p>
         </div>
       </div>
 
-      {/* Journey path */}
-      <div className="flex flex-wrap gap-2 mb-4">
-        {data.wins.map(g => {
+      {/* Journey path: horizontal timeline */}
+      <div className="flex items-center gap-0 overflow-x-auto scrollbar-none pb-2 mb-4">
+        {data.wins.map((g, i) => {
           const loser = getLoserInfo(g)
           return (
-            <button
-              key={g.game_number}
-              onClick={() => onGameClick(g)}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-400/10 border border-emerald-400/30 text-emerald-400 text-xs hover:bg-emerald-400/20 transition-colors"
-            >
-              <span className="text-gray-500 font-semibold">{roundLabels[g.round]}</span>
-              <span>beat ({loser.seed}) {loser.team}</span>
-              <span className="text-gray-600">{g.vote_split}</span>
-            </button>
+            <div key={g.game_number} className="flex items-center shrink-0">
+              {i > 0 && <div className="journey-connector" />}
+              <button onClick={() => onGameClick(g)} className="journey-node win">
+                <span className="text-[#556677] font-mono text-[10px]">{roundLabels[g.round]}</span>
+                <span className="font-body">({loser.seed}) {loser.team}</span>
+              </button>
+            </div>
           )
         })}
         {data.eliminated && (
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-red-400/10 border border-red-400/30 text-red-400 text-xs">
-            <span className="text-gray-500 font-semibold">{roundLabels[data.eliminated.round]}</span>
-            <span>lost to {data.eliminated.winner}</span>
-          </div>
+          <>
+            <div className="journey-connector" />
+            <div className="journey-node loss shrink-0">
+              <span className="text-[#556677] font-mono text-[10px]">{roundLabels[data.eliminated.round]}</span>
+              <span className="font-body">{data.eliminated.winner}</span>
+              <span className="text-[10px]">✗</span>
+            </div>
+          </>
         )}
       </div>
 
-      {/* Pull quote */}
       {pullQuote && (
-        <p className="text-gray-400 text-sm italic border-l-2 border-gray-600 pl-3">
-          "{pullQuote.slice(0, 200)}{pullQuote.length > 200 ? '...' : ''}"
-          <span className="text-gray-600 not-italic"> — The Conductor</span>
+        <p className="font-serif text-xs text-[#667788] italic pl-4 border-l-2 border-navy-600/50 leading-relaxed">
+          "{pullQuote.slice(0, 180)}{pullQuote.length > 180 ? '…' : ''}"
+          <span className="not-italic text-[#445566]"> — The Conductor</span>
         </p>
       )}
     </div>
   )
 }
 
+function CinderellaSection({ onGameClick }) {
+  return (
+    <section id="cinderella" className="py-16 md:py-24 px-4 bg-navy-900/50">
+      <div className="max-w-3xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="font-display text-[clamp(2rem,6vw,4.5rem)] text-white tracking-[0.04em] leading-none">
+            CINDERELLA WATCH
+          </h2>
+          <p className="text-[#556677] text-sm mt-2 font-body">The underdogs who defied expectations</p>
+        </div>
+
+        {cinderellas.map(([team, data]) => (
+          <CinderellaJourney key={team} team={team} data={data} onGameClick={onGameClick} />
+        ))}
+      </div>
+    </section>
+  )
+}
+
+// ─── Section: How It Works ─────────────────────────────────────────────────────
+function HowItWorks() {
+  const steps = [
+    {
+      icon: '🎯',
+      title: 'Analyze',
+      desc: '8 AI analysts independently study each matchup using different strategic lenses',
+      detail: AGENTS.slice(0, 7).map(a => a.emoji).join('  '),
+    },
+    {
+      icon: '🔥',
+      title: 'Debate',
+      desc: 'They challenge each other\'s arguments and can change their minds',
+      detail: '↑ Held  ·  ↓ Wavered  ·  ↻ Flipped',
+    },
+    {
+      icon: '📊',
+      title: 'Decide',
+      desc: 'A conductor synthesizes all arguments with weighted probability math',
+      detail: 'P(win) = Σ wᵢ × pᵢ',
+    },
+  ]
+
+  return (
+    <section id="howItWorks" className="py-16 md:py-24 px-4">
+      <div className="max-w-4xl mx-auto">
+        <div className="text-center mb-14">
+          <h2 className="font-display text-[clamp(2rem,6vw,4.5rem)] text-white tracking-[0.04em] leading-none">
+            HOW IT WORKS
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-14">
+          {steps.map((step, i) => (
+            <div key={i} className="text-center">
+              <div className="text-5xl mb-4">{step.icon}</div>
+              <div className="font-display text-2xl text-white tracking-wider mb-2">{step.title.toUpperCase()}</div>
+              <p className="text-[#778899] text-sm font-body leading-relaxed mb-4">{step.desc}</p>
+              <div className="text-[#445566] text-xs font-mono">{step.detail}</div>
+            </div>
+          ))}
+        </div>
+
+        {/* Credibility */}
+        <div className="bg-navy-800/50 border border-cyan-400/15 rounded-xl px-6 py-5 text-center">
+          <p className="text-[#aabbcc] text-base md:text-lg font-body leading-relaxed">
+            The AI predicted{' '}
+            <span className="text-cyan-400 font-semibold">{r64Upsets.length} first-round upsets</span>
+            {' '}— matching the exact historical average since 1985.
+          </p>
+        </div>
+      </div>
+    </section>
+  )
+}
+
 // ─── Main App ──────────────────────────────────────────────────────────────────
 export default function App() {
   const [selectedGame, setSelectedGame] = useState(null)
-  const [activeRegion, setActiveRegion] = useState('East')
-  const [mobileRound, setMobileRound] = useState('R64')
 
   const scrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
   }
 
-  // Champion info
   const ncgGame = games.find(g => g.round === 'NCG')
   const champion = ncgGame ? getWinnerInfo(ncgGame) : { seed: 1, team: 'Arizona' }
   const runnerUp = ncgGame ? getLoserInfo(ncgGame) : { seed: 5, team: 'Vanderbilt' }
 
   return (
-    <div className="min-h-screen bg-navy-900 text-gray-200">
-      {/* ── Sticky Navigation ──────────────────────────────────────────── */}
-      <nav className="fixed top-0 left-0 right-0 z-40 bg-navy-900/95 backdrop-blur-md border-b border-navy-700/50">
-        <div className="max-w-7xl mx-auto px-4 flex items-center gap-1 md:gap-4 h-12 overflow-x-auto scrollbar-none">
-          <button onClick={() => scrollTo('hero')} className="text-lg font-display tracking-wider text-cyan-400 whitespace-nowrap mr-2">
-            🏀 AI WAR ROOM
+    <div className="min-h-screen bg-[#060b14] text-gray-200 font-body">
+      {/* ── Sticky Nav ───────────────────────────────────────────────── */}
+      <nav className="fixed top-0 left-0 right-0 z-40 bg-[#060b14]/90 backdrop-blur-md border-b border-navy-700/30">
+        <div className="max-w-7xl mx-auto px-4 flex items-center gap-1 md:gap-3 h-11 overflow-x-auto scrollbar-none">
+          <button onClick={() => scrollTo('hero')} className="font-display text-base tracking-[0.06em] text-cyan-400 whitespace-nowrap mr-3">
+            🏀 WAR ROOM
           </button>
           {[
             { id: 'bracket', label: 'Bracket' },
-            { id: 'agents', label: 'Analysts' },
+            { id: 'analysts', label: 'Analysts' },
             { id: 'cinderella', label: 'Cinderellas' },
             { id: 'howItWorks', label: 'How It Works' },
           ].map(item => (
             <button
               key={item.id}
               onClick={() => scrollTo(item.id)}
-              className="text-xs md:text-sm text-gray-400 hover:text-white whitespace-nowrap transition-colors px-2 py-1"
+              className="text-[11px] md:text-xs text-[#556677] hover:text-[#aabbcc] whitespace-nowrap transition-colors px-2 py-1 font-headline tracking-wide"
             >
               {item.label}
             </button>
@@ -578,190 +841,25 @@ export default function App() {
         </div>
       </nav>
 
-      {/* ── Hero Section ───────────────────────────────────────────────── */}
-      <section id="hero" className="min-h-[100dvh] flex flex-col items-center justify-center px-4 pt-16 pb-12 text-center">
-        <div className="mb-6 animate-fade-in">
-          <h1 className="font-display text-5xl sm:text-6xl md:text-8xl lg:text-9xl tracking-wider text-white uppercase leading-none">
-            March Madness
-          </h1>
-          <h2 className="font-display text-3xl sm:text-4xl md:text-6xl lg:text-7xl tracking-wider gradient-text uppercase leading-none mt-1">
-            AI War Room
-          </h2>
-        </div>
+      {/* ── Sections ─────────────────────────────────────────────────── */}
+      <Hero champion={champion} runnerUp={runnerUp} scrollTo={scrollTo} />
+      <BracketSection onGameClick={setSelectedGame} />
+      <AnalystsSection />
+      <CinderellaSection onGameClick={setSelectedGame} />
+      <HowItWorks />
 
-        <p className="text-gray-400 text-base md:text-xl mb-8 max-w-xl animate-fade-in" style={{ animationDelay: '0.1s' }}>
-          8 AI Analysts. 63 Games. Every Debate Recorded.
+      {/* ── Footer ───────────────────────────────────────────────────── */}
+      <footer className="py-10 px-4 border-t border-navy-700/20 text-center">
+        <p className="text-[#334455] text-xs font-body">
+          Built by Chase Allensworth · Six-Pillar Agent Framework
         </p>
-
-        {/* Champion Banner */}
-        <div className="glass-card px-6 md:px-10 py-5 md:py-6 mb-10 text-center border border-amber-400/20 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-          <div className="text-xs text-amber-400 font-semibold tracking-[0.2em] mb-2">🏆 CHAMPION PICK</div>
-          <div className="font-display text-3xl sm:text-4xl md:text-6xl text-white tracking-wider">
-            ({champion.seed}) {champion.team}
-          </div>
-          <div className="text-gray-400 mt-1">over ({runnerUp.seed}) {runnerUp.team}</div>
-        </div>
-
-        {/* Hero Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-5 max-w-2xl w-full animate-fade-in" style={{ animationDelay: '0.3s' }}>
-          <HeroStat number={r64Upsets.length} label="upset picks in Round 1" />
-          <HeroStat number={63} label="games analyzed" />
-          <HeroStat number={cinderellas.length} label="Cinderella runs" />
-          <HeroStat number={totalFlips} label="positions flipped" />
-        </div>
-
-        <div className="mt-14 text-gray-600 text-sm animate-bounce" style={{ animationDelay: '1s' }}>
-          <button onClick={() => scrollTo('bracket')} className="hover:text-gray-400 transition-colors">
-            ↓ Explore the bracket
-          </button>
-        </div>
-      </section>
-
-      {/* ── Bracket Section ────────────────────────────────────────────── */}
-      <section id="bracket" className="py-12 md:py-20 px-4">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="font-display text-3xl md:text-5xl text-white tracking-wider text-center mb-1">THE BRACKET</h2>
-          <p className="text-gray-500 text-center mb-8 text-sm">Click any game to see the AI debate</p>
-
-          {/* Final Four + Championship */}
-          <FinalFourShowcase onGameClick={setSelectedGame} />
-
-          {/* Region Tabs */}
-          <div className="flex justify-center gap-1 md:gap-2 mb-6 flex-wrap">
-            {REGIONS.map(r => (
-              <button
-                key={r}
-                onClick={() => setActiveRegion(r)}
-                className={`px-4 py-2 rounded-lg text-xs md:text-sm font-semibold transition-all ${
-                  activeRegion === r
-                    ? 'bg-cyan-400/20 text-cyan-400 border border-cyan-400/50'
-                    : 'text-gray-500 hover:text-white border border-transparent'
-                }`}
-              >
-                {r}
-              </button>
-            ))}
-          </div>
-
-          {/* Desktop Bracket */}
-          <div className="hidden md:block">
-            <RegionBracket region={activeRegion} onGameClick={setSelectedGame} />
-          </div>
-
-          {/* Mobile Bracket - round-by-round */}
-          <div className="md:hidden">
-            <div className="flex gap-1 mb-4 overflow-x-auto scrollbar-none">
-              {['R64', 'R32', 'S16', 'E8'].map(rk => (
-                <button
-                  key={rk}
-                  onClick={() => setMobileRound(rk)}
-                  className={`px-3 py-1.5 rounded text-xs font-semibold whitespace-nowrap transition-all ${
-                    mobileRound === rk
-                      ? 'bg-cyan-400/20 text-cyan-400'
-                      : 'text-gray-500'
-                  }`}
-                >
-                  {ROUND_SHORT[rk]}
-                </button>
-              ))}
-            </div>
-            <div className="grid grid-cols-1 gap-2">
-              {(bracketByRegion[activeRegion]?.[mobileRound] || []).map(g => (
-                <BracketGameCard key={g.game_number} game={g} onClick={setSelectedGame} />
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── Meet the Analysts ──────────────────────────────────────────── */}
-      <section id="agents" className="py-12 md:py-20 px-4 bg-navy-800/30">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="font-display text-3xl md:text-5xl text-white tracking-wider text-center mb-1">MEET THE ANALYSTS</h2>
-          <p className="text-gray-500 text-center mb-10 text-sm">8 AI personalities with unique perspectives on every game</p>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-            {AGENTS.map(agent => (
-              <AgentProfileCard
-                key={agent.name}
-                agent={agent}
-                stats={agentStats[agent.name.toUpperCase()]}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Cinderella Watch ───────────────────────────────────────────── */}
-      <section id="cinderella" className="py-12 md:py-20 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="font-display text-3xl md:text-5xl text-white tracking-wider text-center mb-1">CINDERELLA WATCH</h2>
-          <p className="text-gray-500 text-center mb-10 text-sm">The underdogs who defied expectations</p>
-
-          {cinderellas.map(([team, data]) => (
-            <CinderellaCard key={team} team={team} data={data} onGameClick={setSelectedGame} />
-          ))}
-        </div>
-      </section>
-
-      {/* ── How It Works ───────────────────────────────────────────────── */}
-      <section id="howItWorks" className="py-12 md:py-20 px-4 bg-navy-800/30">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-display text-3xl md:text-5xl text-white tracking-wider mb-10">HOW IT WORKS</h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <div className="glass-card p-6">
-              <div className="text-4xl mb-4">🧠</div>
-              <h3 className="font-display text-lg text-white tracking-wider mb-2">STEP 1</h3>
-              <p className="text-gray-400 text-sm mb-4">8 AI analysts independently analyze each game using different strategic lenses</p>
-              <div className="flex justify-center gap-1 text-2xl flex-wrap">
-                {AGENTS.slice(0, 7).map(a => (
-                  <span key={a.name} title={a.name}>{a.emoji}</span>
-                ))}
-              </div>
-            </div>
-
-            <div className="glass-card p-6">
-              <div className="text-4xl mb-4">⚔️</div>
-              <h3 className="font-display text-lg text-white tracking-wider mb-2">STEP 2</h3>
-              <p className="text-gray-400 text-sm mb-4">They debate each other and can change their minds — strengthening, weakening, or flipping positions</p>
-              <div className="flex justify-center gap-3">
-                <span className="text-emerald-400 text-xs font-semibold">↑ HELD</span>
-                <span className="text-amber-400 text-xs font-semibold">↓ WAVERED</span>
-                <span className="text-red-400 text-xs font-semibold">↻ FLIPPED</span>
-              </div>
-            </div>
-
-            <div className="glass-card p-6">
-              <div className="text-4xl mb-4">📊</div>
-              <h3 className="font-display text-lg text-white tracking-wider mb-2">STEP 3</h3>
-              <p className="text-gray-400 text-sm mb-4">A conductor synthesizes all arguments with weighted probability math — not simple vote counting</p>
-              <div className="text-cyan-400 text-xs font-mono">P(win) = Σ wᵢ × pᵢ</div>
-            </div>
-          </div>
-
-          {/* Credibility statement */}
-          <div className="glass-card p-5 md:p-6 border border-cyan-400/20">
-            <p className="text-base md:text-lg text-gray-200 leading-relaxed">
-              The AI correctly predicted the historical upset rate —{' '}
-              <span className="text-cyan-400 font-semibold">
-                {r64Upsets.length} upsets out of 32 first-round games
-              </span>
-              , matching the 7–10 expected range since 1985.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ── Footer ─────────────────────────────────────────────────────── */}
-      <footer className="py-8 px-4 border-t border-navy-700/50 text-center">
-        <p className="text-gray-600 text-xs">
-          Built with Claude & Gemini • 63 games debated • All picks are AI-generated predictions
+        <p className="text-[#223344] text-[10px] mt-1">
+          63 games debated · All picks are AI-generated predictions
         </p>
       </footer>
 
-      {/* ── Debate Modal ───────────────────────────────────────────────── */}
-      <DebateModal game={selectedGame} onClose={() => setSelectedGame(null)} />
+      {/* ── Debate Slide Panel ────────────────────────────────────────── */}
+      <DebatePanel game={selectedGame} onClose={() => setSelectedGame(null)} />
     </div>
   )
 }

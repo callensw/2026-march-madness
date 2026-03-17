@@ -1,46 +1,74 @@
 /* ─── Bracket Game Cards ───────────────────────────────────────────────────── */
-.bracket-game-card {
-  @apply bg-navy-800/90 border border-navy-600/40 rounded-lg overflow-hidden cursor-pointer;
-  min-width: 140px;
+.bracket-game {
+  @apply rounded-lg overflow-hidden cursor-pointer transition-all;
+  background: rgba(15, 22, 40, 0.9);
+  border: 1px solid rgba(26, 40, 72, 0.6);
+  min-width: 155px;
   width: 100%;
 }
 
-.bracket-game-card:hover {
-  @apply border-cyan-400/40;
+.bracket-game:hover {
+  border-color: rgba(79, 195, 247, 0.4);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
-.bracket-game-card .team-row {
-  @apply flex items-center gap-1.5 px-2.5 py-1.5 text-xs;
+.bracket-game .team-row {
+  @apply flex items-center gap-1 px-2.5 py-1.5;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
 }
 
-.bracket-game-card .team-row.winner {
-  @apply bg-navy-700/60 text-white font-semibold;
+.bracket-game .team-row.winner {
+  @apply text-white font-semibold;
+  background: rgba(20, 30, 56, 0.8);
 }
 
-.bracket-game-card .team-row.loser {
-  @apply text-gray-500;
+.bracket-game .team-row.loser {
+  color: #556677;
 }
 
-.bracket-game-card .team-row .seed {
-  @apply text-gray-500 font-mono text-[10px] w-5 text-right shrink-0;
+.bracket-game .team-row .seed {
+  @apply font-mono shrink-0;
+  font-size: 10px;
+  width: 22px;
+  text-align: right;
+  color: #556677;
 }
 
-.bracket-game-card .team-row .name {
+.bracket-game .team-row.winner .seed {
+  color: #8899aa;
+}
+
+.bracket-game .team-row .name {
   @apply truncate;
+  flex: 1;
 }
 
-/* ─── Bracket Grid (Desktop) ──────────────────────────────────────────────── */
+.bracket-game .team-row .vote {
+  @apply font-mono shrink-0;
+  font-size: 10px;
+  color: #445566;
+}
+
+.bracket-game .divider {
+  height: 1px;
+  background: rgba(26, 40, 72, 0.4);
+}
+
+/* ─── Bracket Grid ────────────────────────────────────────────────────────── */
 .bracket-grid {
   display: flex;
   align-items: stretch;
-  gap: 6px;
+  gap: 8px;
   min-height: 520px;
   overflow-x: auto;
 }
 
 .bracket-round-col {
   flex: 1;
-  min-width: 150px;
+  min-width: 155px;
   display: flex;
   flex-direction: column;
 }
@@ -53,26 +81,52 @@
   gap: 4px;
 }
 
-/* ─── Line Clamping ───────────────────────────────────────────────────────── */
-.line-clamp-1 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
+/* ─── Debate Panel Slide ──────────────────────────────────────────────────── */
+.debate-overlay {
+  animation: fade-in 0.2s ease-out;
 }
 
-.line-clamp-3 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+.debate-panel {
+  animation: slide-in-right 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* ─── Hide scrollbar ──────────────────────────────────────────────────────── */
-.scrollbar-none {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+/* ─── Agent Chat Bubble ──────────────────────────────────────────────────── */
+.agent-bubble {
+  @apply rounded-xl p-4;
+  background: rgba(15, 22, 40, 0.95);
+  border: 1px solid rgba(26, 40, 72, 0.6);
+  transition: border-color 0.2s;
 }
-.scrollbar-none::-webkit-scrollbar {
-  display: none;
+
+.agent-bubble:hover {
+  border-color: rgba(79, 195, 247, 0.25);
+}
+
+/* ─── Cinderella Journey Node ─────────────────────────────────────────────── */
+.journey-node {
+  @apply relative flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-medium transition-all cursor-pointer;
+}
+
+.journey-node.win {
+  background: rgba(129, 199, 132, 0.08);
+  border: 1px solid rgba(129, 199, 132, 0.25);
+  color: #81C784;
+}
+
+.journey-node.win:hover {
+  background: rgba(129, 199, 132, 0.15);
+}
+
+.journey-node.loss {
+  background: rgba(239, 83, 80, 0.08);
+  border: 1px solid rgba(239, 83, 80, 0.25);
+  color: #EF5350;
+}
+
+/* Journey connector line */
+.journey-connector {
+  width: 20px;
+  height: 2px;
+  background: rgba(26, 40, 72, 0.8);
+  flex-shrink: 0;
 }

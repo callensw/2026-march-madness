@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         navy: {
+          950: '#060b14',
           900: '#0a0e1a',
           800: '#0f1628',
           700: '#141e38',
@@ -23,8 +24,11 @@ export default {
       },
       fontFamily: {
         display: ['"Bebas Neue"', '"Oswald"', 'system-ui', 'sans-serif'],
+        headline: ['"Oswald"', 'system-ui', 'sans-serif'],
+        body: ['"Space Grotesk"', '"Inter"', 'system-ui', 'sans-serif'],
+        serif: ['"Libre Baskerville"', 'Georgia', 'serif'],
         mono: ['"JetBrains Mono"', '"Fira Code"', 'monospace'],
-        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        sans: ['"Space Grotesk"', '"Inter"', 'system-ui', '-apple-system', 'sans-serif'],
       },
     },
   },
