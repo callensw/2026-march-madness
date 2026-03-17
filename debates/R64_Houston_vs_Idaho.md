@@ -1,63 +1,63 @@
 # 🏀 #2 Houston vs #15 Idaho — South Region, Round of 64
-*2026-03-16T17:36:32.954391+00:00*
+*2026-03-16T18:29:13.456698+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Houston's elite defense neutralizes Idaho's pace-control strategy. 17-point efficiency margin holds even in slower games."
+🦅 **TEMPO HAWK**: "Houston's 17-point efficiency edge overwhelms Idaho's pace-slowing ability. Four-possession tempo gap isn't enough to neutralize talent disparity."
    Win probability: Houston 0.88 ± 0.08
-   *Key stat: Houston 68.5 tempo vs Idaho 64.4 — manageable gap for elite defense*
+   *Key stat: Houston 68.5 tempo vs Idaho 64.4 — insufficient pace mismatch for upset*
 
-🛡️ **IRON CURTAIN**: "Houston holds opponents to 40% shooting and Idaho's offense ranks 145th nationally. This isn't close - Houston's elite defense travels perfectly to March."
-   Win probability: Houston 0.92 ± 0.08
+🛡️ **IRON CURTAIN**: "Houston's suffocating defense holds opponents to 40% shooting. Idaho's weak offense can't generate quality looks against elite rim protection."
+   Win probability: Houston 0.88 ± 0.08
    *Key stat: Houston allows 40.0% opponent field goal percentage*
 
-💥 **GLASS CANNON** `[gemini]`: "Houston shoots it way better from deep, 36.3% to Idaho's 32.4%! When they're on, they're ON, and that's a huge gap to overcome. Idaho can't match that firepower!"
-   Win probability: Houston 0.90 ± 0.10
-   *Key stat: Houston 3PT%: 36.3%*
+💥 **GLASS CANNON** `[gemini]`: "Houston's 36.3% from deep is solid, but Idaho shoots only 32.4%. No hot shooting here for the upset. You can't coach that difference! Houston rolls."
+   Win probability: Houston 0.95 ± 0.05
+   *Key stat: Idaho 3PT% = 32.4%*
 
-🐺 **ROAD DOG** `[gemini]`: "Houston's coach has been to 6 straight Sweet 16s. That experience, even with a younger roster, doesn't crack against a low-major. Idaho's seniors haven't seen this stage."
-   Win probability: Houston 0.90 ± 0.08
-   *Key stat: Houston coach: 6 Sweet 16s*
+🐺 **ROAD DOG** `[gemini]`: "Houston's coach, Kelvin Sampson, has been to 6 straight Sweet 16s. He's been here before. Idaho's coach is a first-timer. Experience wins."
+   Win probability: Houston 0.90 ± 0.05
+   *Key stat: Houston coach Kelvin Sampson: 6 straight Sweet 16s*
 
-👁️ **WHISPER** `[gemini]`: "Nobody's talking about Idaho's brutal travel. That 2270-mile journey for a low-major facing a top-5 team will compound fatigue issues. Houston has a real advantage here."
-   Win probability: Houston 0.88 ± 0.12
-   *Key stat: Idaho travel: 2270.0mi*
+👁️ **WHISPER** `[gemini]`: "Idaho's grueling 2270-mile travel for 4 rest days versus Houston's 789 miles and similar rest is a real factor. That distance will compound fatigue. Nobody's talking about how that travel impacts perimeter shooting."
+   Win probability: Houston 0.94 ± 0.08
+   *Key stat: Idaho travel: 2270 miles*
 
-📜 **ORACLE**: "Since 1985, elite defensive 2-seeds like Houston rarely fall. Norfolk State 2012 beat Missouri because Mizzou couldn't defend. Houston allows 40% shooting."
+📜 **ORACLE**: "2v15 base rate is 94%. Idaho's weak offense meets Houston's elite defense - classic mismatch like 2019 Michigan State-Bradley."
+   Win probability: Houston 0.94 ± 0.05
+   *Key stat: Houston allows 40% opponent FG%, Idaho shoots 43.1% against weaker competition*
+
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — Idaho won their conference tournament, but Houston's recent run through the Big 12 was dominant. They're peaking, even with the L1. Idaho's W3 isn't enough."
    Win probability: Houston 0.88 ± 0.08
-   *Key stat: Houston's 87.3 defensive efficiency ranks 5th nationally*
-
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. Houston just dominated the Big 12 tourney, smashing Kansas by 22! Idaho's W3 streak is nice, but Houston's momentum is REAL. Last 10: Houston 8-2."
-   Win probability: Houston 0.85 ± 0.10
-   *Key stat: Houston beat Kansas 69-47 in Big 12 SF*
+   *Key stat: Houston beat Kansas by 22 points in their SF.*
 
 
 ### Devil's Advocate (unanimous vote triggered)
-👁️ **WHISPER** *(forced contrarian)*: "Everyone's overlooking Houston's significant travel. They're flying 2,270 miles for this game, while Idaho has a minimal 789-mile trip. That's a 1481-mile difference."
-   *Pick: **Houston** (88%) | Key stat: 1481 more travel miles for Houston*
+🔥 **STREAK** *(forced contrarian)*: "Forget the spreadsheets — Idaho just won three straight to take their conference title! They're peaking, riding a W3 streak. Houston lost their last game. Momentum is real!"
+   *Pick: **Houston** (70%) | Key stat: Idaho: W3 streak, Big Sky Champion*
 
 
 ### Swarm vs Vegas
-   *Swarm: 60% on Houston | Vegas implied: 97% | Delta: 37pp more bearish*
+   *Swarm: 61% on Houston | Vegas implied: 97% | Delta: 36pp more bearish*
 
 
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Houston 0.80 ± 0.25
+Combined probability: Houston 0.81 ± 0.25
 
-**PICK: Houston** (80% — dominant favorite, high uncertainty)
+**PICK: Houston** (81% — dominant favorite, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Unanimous 8-0 verdict with Iron Curtain and Glass Cannon winning on elite defense vs weak offense. Even Devil's Advocate couldn't find real dissent, only travel concerns that pale against a 17-point efficiency gap. This is mathematical murder."
+🎼 **THE CONDUCTOR**: "Unanimous verdict with Oracle and Whisper winning on historical precedent and travel fatigue analysis. Even Devil's Advocate couldn't muster genuine dissent. 17-point efficiency gap plus elite defense creates insurmountable mismatch. When seven specialists agree this strongly, the math is clear."
 
-   *Key factor: Defensive efficiency gap*
+   *Key factor: Massive talent and efficiency disparity in classic 2v15 mismatch*
 
-   *Most weighted: Iron Curtain*
+   *Most weighted: Oracle*
 
-   *Dissent report: Devil's Advocate raised travel concerns but couldn't overcome the fundamental talent and efficiency chasm - 2270 miles means nothing when you're outclassed by 17 points per 100 possessions*
+   *Dissent report: Devil's Advocate attempted momentum argument but offered 0% confidence, revealing even contrarian analysis found no genuine upset path*
 
 
 ---
@@ -65,7 +65,7 @@ Combined probability: Houston 0.80 ± 0.25
 
 🦅Houston 🛡️Houston 💥Houston 🐺Houston 👁️Houston 📜Houston 🔥Houston
 
-CONDUCTOR AGREES: Houston (60%)
+CONDUCTOR AGREES: Houston (61%)
 
 
 ---
@@ -76,9 +76,8 @@ CONDUCTOR AGREES: Houston (60%)
 
 ## Market Analysis
 
-- Swarm probability: Houston 80% ± 25%
+- Swarm probability: Houston 81% ± 25%
 - Vegas implied probability: Houston 96%
-- Edge: 15.4% (market favors Idaho)
+- Edge: 14.8% (market favors Idaho)
 - Vegas spread: Houston -23.0
-- Contrarian signal: Streak (-11% vs market)
-- Recommendation: NO BET — edge (15.4%) exists but uncertainty too high (25.0%)
+- Recommendation: NO BET — edge (14.8%) exists but uncertainty too high (25.0%)

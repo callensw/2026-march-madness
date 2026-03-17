@@ -1,108 +1,108 @@
 # 🏀 #7 Kentucky vs #10 Santa Clara — Midwest Region, Round of 64
-*2026-03-16T17:33:08.845046+00:00*
+*2026-03-16T18:25:36.409979+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Identical slow tempos favor Santa Clara's superior offensive efficiency and three-point shooting in half-court execution."
+🦅 **TEMPO HAWK**: "Identical tempos neutralize Kentucky's talent. Santa Clara's superior efficiency (124.6 vs 122.9) and three-point shooting (38% vs 34.6%) wins possession battles."
    Win probability: Kentucky 0.42 ± 0.15
-   *Key stat: Santa Clara 124.6 offensive efficiency vs Kentucky 122.9 at matching 67-possession pace*
+   *Key stat: Both teams play at ~67 possessions per game*
 
-🛡️ **IRON CURTAIN**: "Kentucky allows .425 opponent FG% - exploitable against Santa Clara's 38% three-point shooting. Broncos' superior offensive efficiency wins slow grind."
-   Win probability: Kentucky 0.42 ± 0.15
-   *Key stat: Santa Clara shoots 38.0% from three vs Kentucky's .425 opponent FG%*
+🛡️ **IRON CURTAIN**: "Kentucky's 42.5% opponent shooting is vulnerable. Santa Clara shoots 38% from three and plays disciplined half-court offense. Defense isn't elite enough to stop execution."
+   Win probability: Kentucky 0.62 ± 0.16
+   *Key stat: Santa Clara shoots 38.0% from three vs Kentucky's 42.5% opponent FG%*
 
-💥 **GLASS CANNON** `[gemini]`: "Santa Clara shoots lights out from three, 38.0%! They are dangerous, and Kentucky's 34.6% just won't cut it when the Broncos get hot. One hot night changes everything!"
-   Win probability: Kentucky 0.48 ± 0.15
+💥 **GLASS CANNON** `[gemini]`: "Santa Clara shoots FIRE from three at 38.0%! They're live for an upset against Kentucky's weaker perimeter defense. One hot night changes everything!"
+   Win probability: Kentucky 0.45 ± 0.15
    *Key stat: Santa Clara 3PT% = 38.0%*
 
-🐺 **ROAD DOG** `[gemini]`: "Kentucky's coach, Mark Pope, has been here before. Santa Clara's young roster, experience 4.0/10, will crack under March pressure. I've seen this movie."
+🐺 **ROAD DOG** `[gemini]`: "Kentucky's senior guards Otega Oweh and Denzel Aberdeen have seen it all. Santa Clara's young roster, with experience 4.0/10, will crack under March pressure. Coach Pope has been here before."
    Win probability: Kentucky 0.62 ± 0.15
-   *Key stat: Kentucky experience 6.0/10 vs Santa Clara experience 4.0/10*
+   *Key stat: Kentucky experience: 6.0/10 vs Santa Clara experience: 4.0/10*
 
-👁️ **WHISPER** `[gemini]`: "Kentucky's season has been a rollercoaster. Santa Clara, despite the longer travel (1722 miles vs 312 miles), showed real grit in their conference tournament, pushing Gonzaga in the final. Something doesn't add up."
-   Win probability: Kentucky 0.61 ± 0.15
-   *Key stat: Santa Clara's 1722 travel miles.*
+👁️ **WHISPER** `[gemini]`: "Kentucky's travel is significantly lighter, 312 miles vs Santa Clara's 1722 miles. That fatigue differential is rarely priced in. Something doesn't add up."
+   Win probability: Kentucky 0.58 ± 0.15
+   *Key stat: 1722.0 travel miles*
 
-📜 **ORACLE**: "Santa Clara mirrors 2014 Mercer — superior efficiency, elite shooting, veteran coach. Kentucky's 5-5 finish screams upset victim like 2014 Duke."
+📜 **ORACLE**: "Kentucky's inconsistency mirrors 2013 Georgetown upset victim profile. Santa Clara's 38% 3PT shooting and 26-8 record fits dangerous 10-seed archetype."
+   Win probability: Kentucky 0.42 ± 0.15
+   *Key stat: 7v10 upsets happen 39.2% historically — Santa Clara checks every box*
+
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — Santa Clara is peaking, winning 7 of their last 10 and making the WCC final. Kentucky is inconsistent, losing their last game and 5 of their last 10. Momentum is real!"
    Win probability: Kentucky 0.45 ± 0.15
-   *Key stat: Santa Clara's 124.6 offensive efficiency vs Kentucky's 89.2 defensive rating*
-
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — Santa Clara just upset Saint Mary's and pushed Gonzaga! They're peaking right now, Kentucky is inconsistent. Momentum is real!"
-   Win probability: Kentucky 0.45 ± 0.15
-   *Key stat: Santa Clara won 7 of their last 10.*
+   *Key stat: Santa Clara: 7-3 in last 10 games*
 
 
 ## Round 2 — Cross-Examination
 
 🦅 **TEMPO HAWK** (position: STRENGTHENED):
 
-   *Disagrees with:* Road Dog ignores that Kentucky can't impose their preferred pace, making experience irrelevant in a grind-it-out game.
+   *Disagrees with:* Road Dog completely misses that experience is meaningless when you're getting outplayed possession by possession — efficiency trumps intangibles.
 
-   *Agrees with:* Iron Curtain nailed it — Kentucky's defensive efficiency crumbles against disciplined half-court offenses like Santa Clara's.
+   *Agrees with:* Glass Cannon nailed it on Santa Clara's three-point shooting being the key weapon against Kentucky's vulnerable perimeter defense.
 
-   "Road Dog's wrong — experience means nothing when Kentucky's tempo control is nonexistent. Santa Clara dictates pace perfectly at 67 possessions."
-   Updated probability: Kentucky 0.38 ± 0.15
+   "Road Dog ignores the math — experience doesn't overcome efficiency gaps. Santa Clara's 1.8-point edge per possession compounds over 67 possessions."
+   Updated probability: Kentucky 0.38 ± 0.14
 
-🛡️ **IRON CURTAIN** (position: STRENGTHENED):
+🛡️ **IRON CURTAIN** (position: WEAKENED):
 
-   *Disagrees with:* Road Dog thinks experience matters but Kentucky's porous defense (.425 opp FG%) will get picked apart regardless of who's been to March before.
+   *Disagrees with:* Glass Cannon ignores that three-point percentages are meaningless without considering defensive pressure and shot quality.
 
-   *Agrees with:* Tempo Hawk nailed it - identical slow pace means this comes down to execution, and Santa Clara's offensive efficiency edge is real.
+   *Agrees with:* Road Dog correctly identifies Kentucky's experience edge - veteran guards don't panic under tournament pressure like young teams do.
 
-   "Road Dog is WRONG. Experience means NOTHING when you can't get stops. Kentucky's .425 opponent FG% gets torched by Santa Clara's shooters."
-   Updated probability: Kentucky 0.38 ± 0.15
+   "Glass Cannon is WRONG. Santa Clara's 38% three-point shooting means NOTHING if Kentucky forces contested shots. Defense dictates shot quality, not percentages."
+   Updated probability: Kentucky 0.58 ± 0.18
 
 💥 **GLASS CANNON** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Road Dog is so wrong, experience doesn't matter when Santa Clara hits 40% from deep! Shooting variance is everything!
+   *Disagrees with:* Iron Curtain is wrong, focusing on Kentucky's opponent FG% ignores Santa Clara's elite 3PT shooting, which is the great equalizer.
 
-   *Agrees with:* Tempo Hawk gets it! Santa Clara's superior offensive efficiency, driven by their shooting, wins in a half-court game!
+   *Agrees with:* Oracle gets it! Santa Clara's 38% from three makes them a dangerous 10-seed, just like historical upset teams!
 
-   "Road Dog keeps talking experience, but one hot shooter erases all that! Santa Clara's 38.0% from three is the ultimate equalizer, you can't coach that!"
-   Updated probability: Kentucky 0.45 ± 0.15
+   "Iron Curtain keeps talking defense! Santa Clara's 38.0% from three is too hot! You can't coach that kind of shooting; it erases any defensive plan!"
+   Updated probability: Kentucky 0.42 ± 0.15
 
 🐺 **ROAD DOG** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk's focus on efficiency ignores the pressure cooker of March. You can't measure heart on a spreadsheet.
+   *Disagrees with:* Tempo Hawk's efficiency numbers don't account for Kentucky's senior leadership, which is invaluable in March.
 
-   *Agrees with:* Whisper sees grit in Santa Clara, but even they acknowledge something 'doesn't add up.' That's the inexperience showing.
+   *Agrees with:* Whisper's point on travel fatigue for Santa Clara reinforces my view that their young roster will struggle under pressure.
 
-   "Tempo Hawk loves numbers, but experience wins. Kentucky's coach, Pope, has been to the tournament 8 times. Santa Clara's youth will crack."
+   "Tempo Hawk loves numbers, I love watching. Kentucky's senior guards have played 130+ games; that experience won't crack. Santa Clara's young roster hasn't seen this pressure."
    Updated probability: Kentucky 0.65 ± 0.12
 
-👁️ **WHISPER** (position: WEAKENED) `[gemini]`:
+👁️ **WHISPER** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Road Dog's focus on coaching experience misses the physical toll on players; fatigue negates any perceived experience advantage on the court.
+   *Disagrees with:* Glass Cannon is focused on Santa Clara's 3-point shooting, but fatigue from extensive travel impacts shooting percentages more than talent.
 
-   *Agrees with:* My initial read on Santa Clara's travel was incomplete. Oracle’s mention of Kentucky's 5-5 finish aligns with my sense of deeper issues, not just a 'bad stretch'.
+   *Agrees with:* Oracle's historical upset data is compelling, but the travel differential is a hidden factor that makes Kentucky's path harder than it appears.
 
-   "Everyone's missing the deeper fatigue from Santa Clara's 1722 travel miles and fewer rest days. That conference tournament grind takes a toll, creating hidden vulnerabilities."
-   Updated probability: Kentucky 0.58 ± 0.17
+   "Everyone's debating efficiency, but Santa Clara's 1722 travel miles and fewer rest days compared to Kentucky's 312 miles screams fatigue. That's the real story."
+   Updated probability: Kentucky 0.61 ± 0.14
 
 📜 **ORACLE** (position: STRENGTHENED):
 
-   *Disagrees with:* Road Dog completely ignores that experience has never been predictive in 5v12 matchups — the base rate is 36% upsets regardless of veteran rosters.
+   *Disagrees with:* Road Dog completely misses that Kentucky's 'experienced' seniors have never won an NCAA tournament game - experience means nothing without results.
 
-   *Agrees with:* Iron Curtain nailed the defensive vulnerability — Kentucky's .425 opponent FG% is exactly what doomed 2014 Duke against Mercer.
+   *Agrees with:* Glass Cannon nailed it - Santa Clara's 38% three-point shooting is the exact weapon that historically kills higher seeds in single elimination.
 
-   "Road Dog ignores history — experience means nothing in 5v12 upsets. 2013 Florida Gulf Coast had zero experience, beat Georgetown."
+   "Road Dog ignores that Kentucky's 'experienced' seniors are 0-1 in March. Santa Clara's 26-8 record mirrors 2013 Florida Gulf Coast upset profile perfectly."
    Updated probability: Kentucky 0.38 ± 0.15
 
 🔥 **STREAK** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Road Dog wants to talk about 'experience,' but Santa Clara's recent form (7-3 in last 10) shows they're playing better RIGHT NOW than any season-long metric.
+   *Disagrees with:* Road Dog wants to talk about 'experience.' What have they done LATELY? Kentucky's 'experience' just led them to 5 losses in their last 10!
 
-   *Agrees with:* Oracle gets it! Kentucky's 5-5 finish is a huge red flag. Santa Clara's recent run screams upset, just like Oracle said.
+   *Agrees with:* Oracle gets it. Santa Clara's 26-8 record and WCC final appearance shows they're peaking right now, just like I said!
 
-   "Santa Clara just won 7 of their last 10, peaking at the right time. Kentucky lost 3 of their last 5. Momentum is real and I'm tired of people pretending it isn't!"
-   Updated probability: Kentucky 0.40 ± 0.15
+   "Kentucky lost their last game and 5 of their last 10! Santa Clara is riding a wave, winning 7 of 10. Momentum is real and I'm tired of people pretending it isn't!"
+   Updated probability: Kentucky 0.42 ± 0.17
 
 
 ### Upset Watch
-**Upset Score: 45.4/100** | Upset score 45/100 for #10 Santa Clara over #7 Kentucky. Historical upset rate: 39.2%. Agent support: 5-2 for Santa Clara.
-   *Agent split: 5-2 for Santa Clara | Historical upset rate: 39.2%*
+**Upset Score: 39.7/100** | Upset score 40/100 for #10 Santa Clara over #7 Kentucky. Historical upset rate: 39.2%. Agent support: 4-3 for Santa Clara.
+   *Agent split: 4-3 for Santa Clara | Historical upset rate: 39.2%*
    *Statistical edges: Better 3PT% (38.0 vs 34.6)*
 
 
@@ -113,24 +113,24 @@
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Kentucky 0.44 ± 0.17
+Combined probability: Kentucky 0.47 ± 0.18
 
-**PICK: Santa Clara** (44% — lean, high uncertainty)
+**PICK: Santa Clara** (47% — genuine toss-up, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Iron Curtain and Tempo Hawk won this debate - Kentucky's porous .425 opponent FG% gets torched by Santa Clara's elite shooting. Whisper's flip on travel fatigue was compelling but overruled by efficiency metrics. Road Dog's experience argument crumbles against historical upset patterns. When shooters get hot, experience becomes irrelevant."
+🎼 **THE CONDUCTOR**: "Road Dog and Whisper won this debate with experience and travel fatigue trumping efficiency metrics. Iron Curtain weakened but stayed Kentucky, showing defensive concerns about Santa Clara's shooting. Glass Cannon's three-point fire meets Kentucky's veteran ice."
 
-   *Key factor: Defensive vulnerability vs elite shooting*
+   *Key factor: Experience gap in tournament pressure situations*
 
-   *Most weighted: Iron Curtain*
+   *Most weighted: Road Dog*
 
-   *Dissent report: Road Dog and Whisper lost - Road Dog's experience argument ignores that 7v10 games are historically coin flips regardless of veteran rosters. Whisper flipped due to travel concerns but that's secondary to on-court execution.*
+   *Dissent report: Tempo Hawk, Glass Cannon, Oracle, and Streak lost betting on Santa Clara's efficiency and shooting. Iron Curtain's flip showed even defensive specialists worry about Kentucky's perimeter vulnerability, but experience ultimately matters more in March.*
 
 
 ---
-### Specialist Vote: 5-2 Santa Clara
+### Specialist Vote: 4-3 Santa Clara
 
-🦅Santa Clara 🛡️Santa Clara 💥Santa Clara 🐺Kentucky 👁️Kentucky 📜Santa Clara 🔥Santa Clara
+🦅Santa Clara 🛡️Kentucky 💥Santa Clara 🐺Kentucky 👁️Kentucky 📜Santa Clara 🔥Santa Clara
 
 CONDUCTOR AGREES: Santa Clara (50%)
 
@@ -138,15 +138,15 @@ CONDUCTOR AGREES: Santa Clara (50%)
 ---
 ### Vote Tally
 
-- **Santa Clara**: Tempo Hawk, Iron Curtain, Glass Cannon, Oracle, Streak (5 votes)
-- **Kentucky**: Road Dog, Whisper (2 votes)
+- **Santa Clara**: Tempo Hawk, Glass Cannon, Oracle, Streak (4 votes)
+- **Kentucky**: Iron Curtain, Road Dog, Whisper (3 votes)
 
 
 ## Market Analysis
 
-- Swarm probability: Kentucky 44% ± 17%
+- Swarm probability: Kentucky 47% ± 18%
 - Vegas implied probability: Kentucky 60%
-- Edge: 16.0% (market favors Santa Clara)
+- Edge: 13.1% (market favors Santa Clara)
 - Vegas spread: Kentucky -3.5
-- Contrarian signal: Tempo Hawk (-22% vs market) and Iron Curtain (-22% vs market) and Oracle (-22% vs market) and Streak (-20% vs market) and Glass Cannon (-15% vs market)
-- Recommendation: NO BET — edge (16.0%) exists but uncertainty too high (17.5%)
+- Contrarian signal: Tempo Hawk (-22% vs market) and Oracle (-22% vs market) and Glass Cannon (-18% vs market) and Streak (-18% vs market)
+- Recommendation: NO BET — edge (13.1%) exists but uncertainty too high (18.2%)

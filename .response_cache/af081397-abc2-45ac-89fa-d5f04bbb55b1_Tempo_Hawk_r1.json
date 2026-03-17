@@ -1,0 +1,7 @@
+STEP 1 — UPSET THESIS: USF controls pace at 67.6 possessions vs MSU's 68.7, creating a grind-it-out game where their elite defense (91.0 adj_d vs MSU's 88.0) and AAC tournament momentum neutralizes MSU's talent edge in fewer possessions.
+
+STEP 2 — RATE THE UPSET THESIS: 6/10. USF's defensive efficiency is actually better than MSU's, and they just beat a higher seed. In a slow game, defensive teams with confidence can absolutely steal wins.
+
+STEP 3 — PICK: The pace difference is minimal (1.1 possessions), but USF's superior defensive efficiency in a slower game gives them the edge. MSU's offense is better, but not by enough to overcome USF's defensive advantage in a possession-limited environment.
+
+{"team_a_win_prob": 0.45, "uncertainty": 0.15, "reasoning": "Minimal tempo gap but USF's superior defense (91.0 vs 88.0 adj_d) controls slower-paced game. Fewer possessions favor defensive team with momentum.", "key_stat": "USF allows 3 fewer points per 100 possessions than MSU"}

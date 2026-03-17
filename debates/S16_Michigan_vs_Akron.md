@@ -1,138 +1,132 @@
 # 🏀 #1 Michigan vs #12 Akron — Midwest Region, Sweet 16
-*2026-03-16T17:44:31.281423+00:00*
+*2026-03-16T18:38:18.573533+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Identical tempos at 70.7 possessions eliminate Michigan's pace advantage. Akron's veteran experience dominates in grind-it-out games."
-   Win probability: Michigan 0.32 ± 0.18
-   *Key stat: Tempo differential: 0.7 possessions (essentially identical)*
+🦅 **TEMPO HAWK**: "Identical tempos at 71 possessions favor neither team. Michigan's 15-point efficiency edge per 100 possessions decides this grind-it-out game."
+   Win probability: Michigan 0.78 ± 0.12
+   *Key stat: Michigan 71.4 tempo vs Akron 70.7 — pace neutrality exposes talent gap*
 
-🛡️ **IRON CURTAIN**: "Defense gap narrows to 9.5 points. Tournament grind favors Akron's battle-tested seniors over Michigan's young core in half-court slugfest."
-   Win probability: Michigan 0.68 ± 0.16
-   *Key stat: Akron held Alabama to 67 points, 8 below season average*
+🛡️ **IRON CURTAIN**: "Michigan's 87.0 adj_d vs Akron's 96.5 — that's a 9.5-point gap. In March grinders, the team that gets stops wins. Defense travels."
+   Win probability: Michigan 0.72 ± 0.12
+   *Key stat: Michigan holds opponents to 38.4% shooting vs Akron's 42.1%*
 
-💥 **GLASS CANNON** `[gemini]`: "Akron shoots 36.6% from three and has MULTIPLE flamethrowers! One hot night from Shammah Scott (42.2% 3PT) and it's OVER for Michigan! You can't coach that!"
-   Win probability: Michigan 0.48 ± 0.18
-   *Key stat: Akron 3PT% = 36.6%*
-
-🐺 **ROAD DOG** `[gemini]`: "Akron's senior-led roster with 8.0 experience has already knocked off two powerhouses. Michigan's young talent will crack under that pressure."
+💥 **GLASS CANNON** `[gemini]`: "Akron's shooting is ON FIRE, you can't coach that! They're hitting 36.6% from deep and Shammah Scott is a FLAMETHROWER at 42.2%. One hot quarter changes everything!"
    Win probability: Michigan 0.48 ± 0.15
+   *Key stat: Akron 3PT%: 36.6%*
+
+🐺 **ROAD DOG** `[gemini]`: "Akron's senior-led roster and MAC championship pedigree will test Michigan. That 8.0 experience score for Akron is no joke; they've been here before."
+   Win probability: Michigan 0.52 ± 0.15
    *Key stat: Akron experience: 8.0/10*
 
-👁️ **WHISPER** `[gemini]`: "Everyone's focused on Michigan's talent, but L.J. Cason's ACL tear has quietly thinned their bench. Without his 8.4 PPG, their depth is compromised against a veteran Akron squad. Fatigue could become a factor later."
+👁️ **WHISPER** `[gemini]`: "Everyone knows about Cason's injury, but the deeper issue is Michigan's travel disparity. Akron traveled more, but Michigan has just 3 rest days after two tough NCAA games. Fatigue accumulates."
    Win probability: Michigan 0.65 ± 0.15
-   *Key stat: Michigan's bench depth is down 8.4 PPG without Cason.*
+   *Key stat: 3 rest days*
 
-📜 **ORACLE**: "Base rate says 87.5% but this mirrors 2013 FGCU. Akron beat Texas Tech and Alabama — proven giant-killers with veteran guards."
-   Win probability: Michigan 0.72 ± 0.12
-   *Key stat: Akron: 8.0/10 experience vs Michigan: 5.0/10 experience*
+📜 **ORACLE**: "Since 1985, experienced 12-seed champions upset 1-seeds 8.7% of time. Akron's five seniors mirror 2018 UMBC's veteran core."
+   Win probability: Michigan 0.75 ± 0.15
+   *Key stat: Akron has 5 seniors vs Michigan's 5.0/10 experience rating*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — Akron is on a 7-game win streak, including a MAC title and two huge upset wins! They are absolutely peaking, Michigan's momentum is not nearly as strong."
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching! Akron is on a SEVEN-game winning streak, peaking at the right time. They've already taken down two giants. Momentum is real!"
    Win probability: Michigan 0.55 ± 0.15
    *Key stat: Akron's 7-game winning streak*
 
 
 ## Round 2 — Cross-Examination
 
-🦅 **TEMPO HAWK** (position: STRENGTHENED):
+🦅 **TEMPO HAWK** (position: UNCHANGED):
 
-   *Disagrees with:* Oracle claims Michigan controls pace, but 70.7 vs 70.7 possessions means neither team can impose their will — it's a half-court grind.
+   *Disagrees with:* Glass Cannon is wrong because shooting percentages regress to mean, and Michigan's perimeter defense will force Akron below their season average.
 
-   *Agrees with:* Road Dog nailed it — Akron's 8.0 experience rating in identical-tempo games historically outperforms talent gaps under 10 points.
+   *Agrees with:* Iron Curtain reinforced my view because defensive efficiency correlates strongly with pace control — teams that get stops dictate tempo.
 
-   "Oracle's wrong — identical tempos mean no pace advantage exists. This becomes pure efficiency battle where Akron's tournament-tested execution matters more."
-   Updated probability: Michigan 0.28 ± 0.16
+   "Glass Cannon's hot shooting narrative ignores regression. Akron's 36.6% from three is unsustainable against Michigan's elite perimeter defense."
+   Updated probability: Michigan 0.75 ± 0.12
 
 🛡️ **IRON CURTAIN** (position: WEAKENED):
 
-   *Disagrees with:* Glass Cannon ignores that Michigan's perimeter defense (29.8% opponent 3PT%) will neutralize Akron's shooters completely.
+   *Disagrees with:* Glass Cannon thinks shooting percentages matter more than defensive fundamentals — Akron's 96.5 adj_d proves they can't get stops when it counts.
 
-   *Agrees with:* Whisper's depth concern is real — losing Cason's 8.4 PPG hurts Michigan's ability to weather Akron's physical style.
+   *Agrees with:* Tempo Hawk nailed it with the efficiency gap — when pace is equal, talent and defensive execution decide everything.
 
-   "Glass Cannon's wrong — Akron's 36.6% from three means NOTHING when Michigan holds teams to 29.8% from deep. Defense TRAVELS."
-   Updated probability: Michigan 0.62 ± 0.17
+   "Glass Cannon is DREAMING. Akron's 96.5 adj_d gets EXPOSED against real offense. Michigan will score 75+ and cruise."
+   Updated probability: Michigan 0.68 ± 0.14
 
 💥 **GLASS CANNON** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain is just WRONG; defensive efficiency means nothing against a team that can light it up from beyond the arc on any given night.
+   *Disagrees with:* Iron Curtain's focus on defensive efficiency ignores the equalizer: a hot shooting night makes defense irrelevant. Akron's 36.6% 3PT negates it!
 
-   *Agrees with:* Road Dog gets it! Akron's senior experience means they won't crumble under pressure, giving their shooters the calm they need to catch fire!
+   *Agrees with:* Road Dog highlights Akron's experience! Those seniors know how to get hot and stay hot under pressure. Experience fuels shooting streaks!
 
-   "Iron Curtain keeps talking about defense, but Michigan's perimeter D is AVERAGE! Akron's 36.6% from deep is a GAME-CHANGER! Three-point variance is everything, you can't coach that!"
-   Updated probability: Michigan 0.45 ± 0.17
+   "Iron Curtain keeps talking defense! But when Akron shoots 36.6% from three, defensive efficiency is MEANINGLESS. One hot night from beyond the arc changes EVERYTHING! Akron averages 9.1 threes a game!"
+   Updated probability: Michigan 0.45 ± 0.16
 
-🐺 **ROAD DOG** (position: STRENGTHENED) `[gemini]`:
+🐺 **ROAD DOG** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Oracle loves the base rates, but Akron's 8.0 experience against Michigan's 5.0 is a specific, game-changing factor, not just a historical trend.
+   *Disagrees with:* Oracle's historical data doesn't account for the specific experience gap here. Akron's senior core is a real threat, not just a statistic.
 
-   *Agrees with:* Tempo Hawk gets it; Akron's veteran experience dominates in grind-it-out games, they've been there and know how to win ugly.
+   *Agrees with:* Glass Cannon sees Akron's hot shooting, and that comes from veteran players not cracking under pressure.
 
-   "Akron's seniors, with 8.0 experience, have seen every kind of pressure. Michigan's young core hasn't faced that kind of battle-tested grit."
-   Updated probability: Michigan 0.45 ± 0.15
+   "Oracle loves the numbers, but those seniors from Akron, especially Shammah Scott, have played 130+ games. That experience trumps historical averages in a one-off game."
+   Updated probability: Michigan 0.48 ± 0.17
 
 👁️ **WHISPER** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Road Dog claims Akron's experience matters, but Michigan's reduced bench depth from Cason's injury makes their 'young talent' argument less relevant than the sheer minutes load.
+   *Disagrees with:* Glass Cannon's 'on fire' shooting ignores the accumulating fatigue that will slow down Akron's deep threats.
 
-   *Agrees with:* Glass Cannon highlights Akron's three-point shooting. This is critical because Michigan's compromised depth means less fresh legs to close out on shooters late in a tight game.
+   *Agrees with:* Road Dog sees the value in Akron's experience; that veteran leadership helps navigate the fatigue Michigan will face.
 
-   "Everyone is still missing Michigan's hidden fatigue. L.J. Cason's absence shrinks the rotation, forcing starters to play more minutes, compounding travel weariness. That's a ticking clock."
-   Updated probability: Michigan 0.58 ± 0.17
+   "Everyone's missing Michigan's travel fatigue after two NCAA games with only 3 rest days. Akron's rest advantage after their last game is a hidden factor."
+   Updated probability: Michigan 0.62 ± 0.16
 
-📜 **ORACLE** (position: STRENGTHENED):
+📜 **ORACLE** (position: WEAKENED):
 
-   *Disagrees with:* Glass Cannon thinks shooting percentage guarantees upset success, but historically 11-seeds with elite shooting still lose 75% of the time to higher seeds.
+   *Disagrees with:* Glass Cannon thinks shooting trumps everything, but 2016 Little Rock shot 39% from three and still lost to Purdue — one hot quarter isn't enough against superior talent.
 
-   *Agrees with:* Whisper's injury analysis adds crucial context I missed - Michigan's depth issues make them more vulnerable than the raw talent suggests.
+   *Agrees with:* Iron Curtain's defense-first approach mirrors 2018 Virginia's blueprint — the team that gets stops in March survives, and Michigan's 9.5-point defensive edge is historically decisive.
 
-   "Glass Cannon ignores history. Since 1985, teams shooting 36%+ from three as 11-seeds are 4-12. Shooting alone doesn't overcome talent gaps."
-   Updated probability: Michigan 0.68 ± 0.14
+   "Glass Cannon ignores history: hot-shooting 12-seeds like 2016 Little Rock (39% 3PT) still lose 79% of time. Defense matters more."
+   Updated probability: Michigan 0.68 ± 0.15
 
 🔥 **STREAK** (position: FLIPPED) `[gemini]`:
 
-   *Disagrees with:* Oracle wants to talk about base rates, but Akron's current form, winning 7 straight, completely overrides any historical trend for a team playing this well.
+   *Disagrees with:* Tempo Hawk is wrong; overall efficiency ignores the recent surge. Akron's current form is crushing past metrics.
 
-   *Agrees with:* Road Dog gets it! Akron's senior leadership and momentum from recent wins against powerhouses means they're ready for this moment. Experience matters when you're peaking.
+   *Agrees with:* Glass Cannon gets it! Akron's hot shooting is part of their recent surge. They're playing their best ball now.
 
-   "Akron's 7-game win streak, including a conference title and two huge upset wins, means they're peaking RIGHT NOW. Michigan's late season struggles are a major red flag."
-   Updated probability: Michigan 0.48 ± 0.17
-
-
-### Upset Watch
-**Upset Score: 37.6/100** | Upset score 38/100 for #12 Akron over #1 Michigan. Historical upset rate: 50.0%. Agent support: 3-4 for Akron.
-   *Agent split: 3-4 for Akron | Historical upset rate: 50.0%*
-   *Statistical edges: None*
+   "Tempo Hawk wants to talk about overall efficiency, but Akron's 7-game winning streak entering the tournament and conference championship says they're peaking RIGHT NOW. Momentum is real!"
+   Updated probability: Michigan 0.45 ± 0.18
 
 
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Michigan 0.52 ± 0.20
+Combined probability: Michigan 0.58 ± 0.19
 
-**PICK: Michigan** (52% — genuine toss-up, high uncertainty)
+**PICK: Michigan** (58% — lean, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Streak's flip to Akron based on momentum was compelling, but Oracle and Iron Curtain won this debate. Michigan's talent gap overcomes Akron's experience edge despite identical tempos. Whisper's depth concerns add uncertainty but don't flip the fundamental math. When giants fall, it's usually louder than this."
+🎼 **THE CONDUCTOR**: "Tempo Hawk and Iron Curtain won with Michigan's 15-point efficiency edge and 9.5-point defensive advantage. Glass Cannon and Streak flipped to Akron on hot shooting/momentum but couldn't overcome the talent gap. Defense travels, shooting streaks don't."
 
-   *Key factor: talent gap vs experience in identical-tempo game*
+   *Key factor: Defensive efficiency gap (9.5 points)*
 
-   *Most weighted: Oracle*
+   *Most weighted: Iron Curtain*
 
-   *Dissent report: Tempo Hawk and Road Dog lost by overweighting experience in a pure efficiency battle. Streak's flip to momentum was understandable given Akron's 7-game streak, but historical precedent favors talent gaps this large.*
+   *Dissent report: Glass Cannon and Streak flipped to Akron believing hot shooting (36.6% 3PT) and 7-game streak could overcome talent gap, but regression to mean favors Michigan's superior defense*
 
 
 ---
-### Specialist Vote: 4-3 Akron
+### Specialist Vote: 4-3 Michigan
 
-🦅Akron 🛡️Michigan 💥Akron 🐺Akron 👁️Michigan 📜Michigan 🔥Akron
+🦅Michigan 🛡️Michigan 💥Akron 🐺Akron 👁️Michigan 📜Michigan 🔥Akron
 
-CONDUCTOR OVERRIDE: Michigan (50%) — sided with the minority
+CONDUCTOR AGREES: Michigan (50%)
 
 
 ---
 ### Vote Tally
 
-- **Akron**: Tempo Hawk, Glass Cannon, Road Dog, Streak (4 votes)
-- **Michigan**: Iron Curtain, Whisper, Oracle (3 votes)
+- **Michigan**: Tempo Hawk, Iron Curtain, Whisper, Oracle (4 votes)
+- **Akron**: Glass Cannon, Road Dog, Streak (3 votes)

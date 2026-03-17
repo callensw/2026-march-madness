@@ -1,35 +1,35 @@
 # 🏀 #1 Duke vs #1 Arizona — Final Four Region, Final Four
-*2026-03-16T17:47:21.662511+00:00*
+*2026-03-16T18:41:14.948706+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Arizona controls pace at 67.7 vs Duke's 70.0. In slow Final Four grind, Arizona's depth and health advantage matters more than Duke's marginal efficiency edge."
+🦅 **TEMPO HAWK**: "Mirror teams, identical pace preferences. Arizona's depth and rebounding edge wins possession battle in expected 65-possession grinder."
+   Win probability: Duke 0.45 ± 0.15
+   *Key stat: Duke 70.0 tempo vs Arizona 67.7 - both want slow, Arizona controls margins*
+
+🛡️ **IRON CURTAIN**: "Dead even defenses (87.1 vs 87.2) but Arizona's 7-2 Krivas controls paint. Duke missing elite perimeter defender Foster. Defensive grind favors size."
    Win probability: Duke 0.48 ± 0.18
-   *Key stat: Arizona tempo 67.7 vs Duke 70.0 possessions per game*
+   *Key stat: Both teams allow 39.2% opponent FG% - identical perimeter defense*
 
-🛡️ **IRON CURTAIN**: "Identical defenses but Arizona's 7-2 rim protector and senior leadership edge out Duke's injured, freshman-heavy rotation."
-   Win probability: Duke 0.48 ± 0.18
-   *Key stat: Both teams allow 39.2% opponent FG% - dead even defensively*
+💥 **GLASS CANNON** `[gemini]`: "This is a SHOOTOUT! Both teams are flamethrowers from deep. Duke's 37.8% vs Arizona's 37.3% is too close to call. It's a coin flip, one hot hand wins!"
+   Win probability: Duke 0.50 ± 0.15
+   *Key stat: Duke 3PT% 37.8% vs Arizona 3PT% 37.3%*
 
-💥 **GLASS CANNON** `[gemini]`: "This is a SHOOTOUT! Duke's 37.8% from three is slightly better. When they're on, they are ON! One hot quarter changes everything. This is a coin flip!"
-   Win probability: Duke 0.52 ± 0.15
-   *Key stat: Duke 3PT%: 37.8% vs Arizona 3PT%: 37.3%*
-
-🐺 **ROAD DOG** `[gemini]`: "Arizona's senior leadership, especially Jaden Bradley, will outplay Duke's young guards. Experience wins in the Final Four. Duke's 3.0 experience score is too low."
+🐺 **ROAD DOG** `[gemini]`: "Duke's young roster, experience score 3.0/10, will crack against Arizona's senior leadership. I've seen this movie before."
    Win probability: Duke 0.48 ± 0.15
-   *Key stat: Arizona's experience=4.0/10 vs Duke's experience=3.0/10*
+   *Key stat: Duke experience=3.0/10 vs Arizona experience=4.0/10*
 
-👁️ **WHISPER** `[gemini]`: "Everyone knows about Foster, but Ngongba II’s missing presence and Foster’s absence leaves Duke thin. Arizona has a deeper rotation."
-   Win probability: Duke 0.58 ± 0.15
-   *Key stat: Duke missing 19.2 PPG from Foster/Ngongba II*
+👁️ **WHISPER** `[gemini]`: "Everyone knows about Foster, but the travel disparity and Ngongba's absence compound Duke's fatigue. Arizona has a clearer path."
+   Win probability: Duke 0.55 ± 0.15
+   *Key stat: Arizona traveled 1112 miles, Duke 476.*
 
-📜 **ORACLE**: "This screams 1979 Magic vs Bird. Two #1s, identical efficiency, coin flip. Duke's injuries create vulnerability Arizona can exploit."
+📜 **ORACLE**: "1v1 Final Four matchups since 1985: 52% for higher KenPom. Duke #1 vs Arizona #3 mirrors 2001 Duke-Maryland."
    Win probability: Duke 0.52 ± 0.18
-   *Key stat: Both teams 126+ AdjO, 87+ AdjD - historically produces 50-52% outcomes in Final Four*
+   *Key stat: In 1v1 Final Four games, the KenPom favorite wins 52% of the time*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. Both teams are peaking, but Arizona just beat Purdue. They're on a 13-game winning streak. Momentum is real!"
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching! Both teams are peaking, but Arizona just beat Houston and Gonzaga. Their 13-game winning streak is undeniable momentum. Duke's W15 is great, but Arizona's recent wins are more impressive."
    Win probability: Duke 0.52 ± 0.15
    *Key stat: Arizona: W13 streak*
 
@@ -38,89 +38,89 @@
 
 🦅 **TEMPO HAWK** (position: STRENGTHENED):
 
-   *Disagrees with:* Glass Cannon is wrong because shootouts require pace, and Arizona will grind this into their preferred tempo range.
+   *Disagrees with:* Oracle relies on historical KenPom data that ignores pace mismatches - Arizona's tempo control trumps Duke's marginal efficiency edge.
 
-   *Agrees with:* Iron Curtain reinforced my view by highlighting Arizona's depth advantage, which matters more in slower games.
+   *Agrees with:* Iron Curtain sees the defensive grind correctly - when offenses stall, Arizona's size advantage with Krivas becomes decisive.
 
-   "Glass Cannon ignores pace reality. Duke's shootout style plays into Arizona's hands - fewer possessions favor the healthier, deeper team."
-   Updated probability: Duke 0.45 ± 0.16
+   "Oracle's wrong - KenPom favorites in Final Four games means nothing when pace control matters more than rankings."
+   Updated probability: Duke 0.42 ± 0.16
 
 🛡️ **IRON CURTAIN** (position: STRENGTHENED):
 
-   *Disagrees with:* Whisper claims Duke has depth advantage but Arizona's bench actually outproduces Duke's by 9 points per game.
+   *Disagrees with:* Oracle is living in the past with 2001 comparisons when Arizona's rim protection advantage is happening RIGHT NOW in 2024.
 
-   *Agrees with:* Tempo Hawk nailed it - Arizona's pace control and health advantage matter more in a grind-it-out Final Four.
+   *Agrees with:* Tempo Hawk nailed it - Arizona's rebounding and size advantage controls the margins in a grind-it-out game.
 
-   "Whisper's wrong about depth. Arizona's bench outscored Duke's 28-19 per game. When starters tire, Arizona's rotation wins."
+   "Oracle's wrong - this isn't about historical parallels. Arizona's paint defense is REAL. Krivas changes shots, Duke has no answer inside."
    Updated probability: Duke 0.45 ± 0.16
 
-💥 **GLASS CANNON** (position: STRENGTHENED) `[gemini]`:
+💥 **GLASS CANNON** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain keeps talking defense, but in a shootout, it's meaningless. Duke's offense can overwhelm any D, especially from deep!
+   *Disagrees with:* Tempo Hawk's focus on pace is irrelevant; when teams shoot this well, it's about who gets hot, not how many possessions.
 
-   *Agrees with:* Oracle gets it! This is a coin flip because both teams are offensive powerhouses. It will come down to who gets hot from three!
+   *Agrees with:* Iron Curtain's defensive stats reinforce my initial thought; if defenses are identical, offense becomes the tie-breaker.
 
-   "Duke's slight 3PT% edge is HUGE! One player getting hot changes everything. You can't coach that! This is still a shooting contest!"
-   Updated probability: Duke 0.55 ± 0.15
-
-🐺 **ROAD DOG** (position: WEAKENED) `[gemini]`:
-
-   *Disagrees with:* Streak loves momentum, but it doesn't measure the grit needed when the lights are brightest. Arizona's 13-game streak means nothing if their coach hasn't been here.
-
-   *Agrees with:* Iron Curtain gets it. Senior leadership and a big man like Arizona's 7-2 rim protector are what you need when the game gets tight.
-
-   "Duke's young guards haven't seen this kind of Final Four pressure. Arizona's senior leadership and coach's experience will win out. I've seen this movie before."
+   "Tempo Hawk, you're missing the point! Pace doesn't matter when both teams are launching from deep. It's a three-point contest, not a grind!"
    Updated probability: Duke 0.52 ± 0.15
 
-👁️ **WHISPER** (position: UNCHANGED) `[gemini]`:
+🐺 **ROAD DOG** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Streak is missing the point. Momentum doesn't matter when key players are out; that 13-game run won't mask fatigue.
+   *Disagrees with:* Oracle's reliance on historical KenPom percentages ignores the specific roster dynamics. You can't measure heart with a spreadsheet.
 
-   *Agrees with:* Tempo Hawk understands the hidden impact of depth; Arizona's deeper rotation directly benefits from Duke's injury woes.
+   *Agrees with:* Whisper correctly identified Duke's fatigue, which compounds their inexperience against a battle-tested Arizona squad.
 
-   "Everyone's talking about scoring, but the real secret is Duke's depth. Foster and Ngongba II’s missing presence leaves them thin, affecting rotations and fatigue late. That changes everything."
-   Updated probability: Duke 0.58 ± 0.15
+   "Oracle's historical data doesn't capture Duke's young roster. Experience wins, not just KenPom. Arizona's veterans will handle the pressure."
+   Updated probability: Duke 0.45 ± 0.15
 
-📜 **ORACLE** (position: WEAKENED):
+👁️ **WHISPER** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Whisper overweights injuries - historically, Final Four teams overcome key absences like 2014 UConn did.
+   *Disagrees with:* Glass Cannon's shootout theory ignores the physical toll of travel and a short rotation; fatigue will impact shooting accuracy.
 
-   *Agrees with:* Iron Curtain nailed it - when defenses are identical (39.2% opponent FG%), other factors become decisive.
+   *Agrees with:* Road Dog sees the inexperience, which aligns with my concern about Duke's depth handling fatigue and pressure.
 
-   "Whisper's injury focus misses history: 2014 UConn won it all with key injuries. Duke's depth concerns are overblown."
-   Updated probability: Duke 0.50 ± 0.20
+   "Everyone's missing the deeper fatigue from Ngongba's absence on an already short bench. It compounds the travel disparity. Duke's path is harder."
+   Updated probability: Duke 0.52 ± 0.16
+
+📜 **ORACLE** (position: FLIPPED):
+
+   *Disagrees with:* Streak's momentum argument is historically worthless - long winning streaks in Final Four games are actually slightly predictive of LOSING.
+
+   *Agrees with:* Iron Curtain nailed the defensive parity - when defenses are identical, size advantage becomes the tiebreaker like 2015 Wisconsin over Kentucky.
+
+   "Streak ignores history! Arizona's 13-game streak means nothing. 2018 Villanova had a 14-game streak entering Final Four, lost to Michigan."
+   Updated probability: Duke 0.48 ± 0.16
 
 🔥 **STREAK** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Oracle wants to talk about 1979. I want to talk about LAST WEEK. Historical base rates are stale; recent form is all that matters.
+   *Disagrees with:* Oracle wants to talk about 1985. I want to talk about LAST TUESDAY. This team just won four games in four days to win their conference. They're playing the best basketball of their season RIGHT NOW. That matters more than any historical base rate.
 
-   *Agrees with:* Road Dog gets it: experience matters when the pressure is on, and Arizona's senior leadership is playing their best basketball RIGHT NOW.
+   *Agrees with:* Road Dog sees the experience gap, and that's often tied to teams playing better late in the season. Arizona's veteran leadership is driving their current run.
 
-   "Oracle wants to talk about 1979. I want to talk about RIGHT NOW. Arizona's 13-game winning streak means they're peaking. Momentum is real!"
-   Updated probability: Duke 0.45 ± 0.18
+   "I picked Duke, but Arizona's 13-game win streak and recent wins against top teams like Houston and Gonzaga show undeniable momentum. Their current form is peaking."
+   Updated probability: Duke 0.48 ± 0.18
 
 
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Duke 0.50 ± 0.17
+Combined probability: Duke 0.48 ± 0.16
 
-**PICK: Arizona** (50% — genuine toss-up, high uncertainty)
+**PICK: Arizona** (48% — genuine toss-up, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Iron Curtain and Tempo Hawk won this debate - Arizona's depth and pace control trump Duke's shooting edge. Road Dog, Oracle, and Streak all weakened their Duke positions after cross-examination, recognizing Arizona's health advantage matters more. This is a coin flip decided by availability."
+🎼 **THE CONDUCTOR**: "Oracle flipped after Iron Curtain's size argument proved decisive - Krivas's rim protection trumps historical parallels. Tempo Hawk and Iron Curtain won by emphasizing Arizona's rebounding edge in identical efficiency matchup. Glass Cannon's shootout theory crumbled under fatigue concerns. When mirror teams collide, size wins."
 
-   *Key factor: injury/depth concerns*
+   *Key factor: Interior size advantage with Krivas controlling the paint*
 
    *Most weighted: Iron Curtain*
 
-   *Dissent report: Glass Cannon and Whisper stuck with Duke based on shooting and injury impact, but failed to counter Arizona's superior bench production (28-19 PPG) that Iron Curtain highlighted*
+   *Dissent report: Oracle flipped from Duke after realizing defensive parity makes Arizona's size the tiebreaker. Whisper weakened on Duke due to compounding fatigue factors from injuries and travel.*
 
 
 ---
-### Specialist Vote: 4-3 Arizona
+### Specialist Vote: 5-2 Arizona
 
-🦅Arizona 🛡️Arizona 💥Duke 🐺Duke 👁️Duke 📜Arizona 🔥Arizona
+🦅Arizona 🛡️Arizona 💥Duke 🐺Arizona 👁️Duke 📜Arizona 🔥Arizona
 
 CONDUCTOR AGREES: Arizona (50%)
 
@@ -128,5 +128,5 @@ CONDUCTOR AGREES: Arizona (50%)
 ---
 ### Vote Tally
 
-- **Arizona**: Tempo Hawk, Iron Curtain, Oracle, Streak (4 votes)
-- **Duke**: Glass Cannon, Road Dog, Whisper (3 votes)
+- **Arizona**: Tempo Hawk, Iron Curtain, Road Dog, Oracle, Streak (5 votes)
+- **Duke**: Glass Cannon, Whisper (2 votes)

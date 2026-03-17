@@ -1,63 +1,63 @@
 # 🏀 #2 Purdue vs #15 Queens — West Region, Round of 64
-*2026-03-16T17:30:30.456203+00:00*
+*2026-03-16T18:22:55.992658+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Identical tempos neutralize pace advantage. Purdue's 16.9-point efficiency edge should hold in slow-possession game, but variance exists."
-   Win probability: Purdue 0.82 ± 0.12
-   *Key stat: Both teams play 69.5 possessions per game*
+🦅 **TEMPO HAWK**: "Identical tempos neutralize Queens' upset path. Purdue's 8-point efficiency edge decisive in controlled 69-possession game. Big Ten tournament experience shows clutch execution."
+   Win probability: Purdue 0.78 ± 0.12
+   *Key stat: Both teams play at 69.4-69.7 tempo - no pace mismatch to exploit*
 
-🛡️ **IRON CURTAIN**: "Purdue's 90.0 defensive efficiency dominates Queens' 114.3. Big Ten champion defense travels. Queens can't get stops when possessions matter."
+🛡️ **IRON CURTAIN**: "Queens' 114.3 adj_d can't slow Purdue's elite offense. Purdue's 90.0 defensive efficiency will dominate low-major scoring. Defense travels, offense doesn't against real competition."
    Win probability: Purdue 0.88 ± 0.08
-   *Key stat: Queens allows 46.6% shooting - exploitable in March*
+   *Key stat: 24-point defensive efficiency gap (90.0 vs 114.3)*
 
-💥 **GLASS CANNON** `[gemini]`: "Purdue shoots 39.2% from three; they are ON FIRE! Queens can't match that firepower. When Purdue's shooters are hot, they are UNBEATABLE. You can't coach that!"
-   Win probability: Purdue 0.90 ± 0.10
+💥 **GLASS CANNON** `[gemini]`: "Purdue is a flamethrower from deep, shooting 39.2% from three! Queens' 3PT% is just not enough to challenge that kind of firepower. You can't coach that kind of shooting!"
+   Win probability: Purdue 0.85 ± 0.10
    *Key stat: Purdue 3PT% = 39.2%*
 
-🐺 **ROAD DOG** `[gemini]`: "Purdue's senior leadership, with Braden Smith and Trey Kaufman-Renn, just won the Big Ten. Queens has no tournament experience; they'll fold. Experience score: Purdue 8.0 vs Queens 5.0."
+🐺 **ROAD DOG** `[gemini]`: "Purdue's senior leadership, especially Braden Smith and Trey Kaufman-Renn, and coaching pedigree under a Final Four coach, will dominate. Queens' lack of tournament experience will show."
    Win probability: Purdue 0.88 ± 0.08
-   *Key stat: Purdue experience 8.0/10*
+   *Key stat: Purdue experience=8.0/10 vs Queens experience=5.0/10*
 
-👁️ **WHISPER** `[gemini]`: "Queens has a significant travel disadvantage, 326 more miles than Purdue. That extra fatigue, coupled with a quick turnaround after an OT championship, is a silent killer."
-   Win probability: Purdue 0.95 ± 0.05
-   *Key stat: Queens travel: 2077.0mi*
+👁️ **WHISPER** `[gemini]`: "Purdue's deep conference tournament run, five games in five days, raises fatigue concerns. Queens' long travel adds to their disadvantage. It's a grueling start."
+   Win probability: Purdue 0.82 ± 0.15
+   *Key stat: Purdue played 5 games in 5 days*
 
-📜 **ORACLE**: "2v15 base rate is 93.8%. Queens first-ever D-I tourney appearance screams 2018 UMBC upset victim profile, but Purdue's Big Ten title run shows resilience."
+📜 **ORACLE**: "Since 1985, 2-seeds are 93.8% vs 15s. Queens' 114.3 AdjD too poor for upset. Reminds me of 2018 Purdue-Fullerton mismatch."
    Win probability: Purdue 0.94 ± 0.08
-   *Key stat: 173-point KenPom gap (8 vs 181) — largest in tournament history*
+   *Key stat: 173-point KenPom gap (8 vs 181)*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — Purdue just won FIVE straight to win the Big Ten! They're peaking HARD right now. Queens has two wins, that's it. Momentum is all with Purdue."
-   Win probability: Purdue 0.88 ± 0.08
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. Purdue just ripped off 5 straight, winning the Big Ten. They are peaking RIGHT NOW. Queens has a W2 streak, but Purdue is on another level."
+   Win probability: Purdue 0.92 ± 0.05
    *Key stat: Purdue streak: W5*
 
 
 ### Devil's Advocate (unanimous vote triggered)
-👁️ **WHISPER** *(forced contrarian)*: "Queens just traveled 2077 miles after an OT championship game. Purdue's 1751 miles and 5-day Big Ten tourney grind is less severe, but still a factor. Queens is too worn down."
-   *Pick: **Purdue** (93%) | Key stat: Queens travel: 2077 miles*
+🛡️ **IRON CURTAIN** *(forced contrarian)*: "Defense wins in March. Queens gives up 114 points per 100 possessions. Purdue's 90.0 defensive efficiency will suffocate them."
+   *Pick: **Purdue** (88%) | Key stat: Queens 114.3 adj_d vs Purdue 90.0 adj_d*
 
 
 ### Swarm vs Vegas
-   *Swarm: 60% on Purdue | Vegas implied: 97% | Delta: 37pp more bearish*
+   *Swarm: 54% on Purdue | Vegas implied: 97% | Delta: 43pp more bearish*
 
 
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Purdue 0.80 ± 0.25
+Combined probability: Purdue 0.77 ± 0.25
 
-**PICK: Purdue** (80% — dominant favorite, high uncertainty)
+**PICK: Purdue** (77% — dominant favorite, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Iron Curtain and Glass Cannon won this debate with overwhelming defensive and offensive efficiency gaps. All 8 agents picked Purdue with 82-95% confidence - this is mathematical dominance. Queens' first-ever tournament appearance meets buzzsaw defense. When the house always wins, bet the house."
+🎼 **THE CONDUCTOR**: "Unanimous verdict with Oracle and Streak winning on historical dominance and current form. Iron Curtain's defensive efficiency gap analysis proved decisive. Queens' 114.3 defensive rating can't contain Purdue's elite offense. This isn't David vs Goliath - it's a mismatch masquerading as March magic."
 
-   *Key factor: Massive efficiency gap (16.9 points) in 2v15 matchup*
+   *Key factor: Defensive efficiency gap*
 
-   *Most weighted: Iron Curtain, Glass Cannon*
+   *Most weighted: Iron Curtain*
 
-   *Dissent report: No meaningful dissent - even Devil's Advocate picked Purdue. Whisper's travel fatigue angle actually supported the consensus rather than opposing it.*
+   *Dissent report: No meaningful dissent - even Devil's Advocate agreed with the consensus, citing Queens' porous defense as insurmountable*
 
 
 ---
@@ -65,7 +65,7 @@ Combined probability: Purdue 0.80 ± 0.25
 
 🦅Purdue 🛡️Purdue 💥Purdue 🐺Purdue 👁️Purdue 📜Purdue 🔥Purdue
 
-CONDUCTOR AGREES: Purdue (60%)
+CONDUCTOR AGREES: Purdue (54%)
 
 
 ---
@@ -76,9 +76,9 @@ CONDUCTOR AGREES: Purdue (60%)
 
 ## Market Analysis
 
-- Swarm probability: Purdue 80% ± 25%
+- Swarm probability: Purdue 77% ± 25%
 - Vegas implied probability: Purdue 97%
-- Edge: 16.6% (market favors Queens)
+- Edge: 19.5% (market favors Queens)
 - Vegas spread: Purdue -25.5
-- Contrarian signal: Tempo Hawk (-15% vs market)
-- Recommendation: NO BET — edge (16.6%) exists but uncertainty too high (25.0%)
+- Contrarian signal: Tempo Hawk (-19% vs market) and Whisper (-15% vs market) and Glass Cannon (-12% vs market)
+- Recommendation: NO BET — edge (19.5%) exists but uncertainty too high (25.0%)

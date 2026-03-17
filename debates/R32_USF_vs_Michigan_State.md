@@ -1,102 +1,102 @@
 # 🏀 #11 USF vs #3 Michigan State — East Region, Round of 32
-*2026-03-16T17:37:48.808073+00:00*
+*2026-03-16T18:30:29.101978+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "USF's superior defensive efficiency (91.0 vs 88.0) in a controlled 67-possession game neutralizes MSU's offensive edge. Fewer possessions favor the disciplined underdog."
-   Win probability: USF 0.42 ± 0.16
-   *Key stat: USF allows 91.0 points per 100 possessions vs MSU's 88.0 defensive rating*
-
-🛡️ **IRON CURTAIN**: "Michigan State hasn't faced defense this good since February. USF held Louisville under their season average. Defense wins in March."
+🦅 **TEMPO HAWK**: "Minimal tempo gap but USF's superior defense (91.0 vs 88.0 adj_d) controls slower-paced game. Fewer possessions favor defensive team with momentum."
    Win probability: USF 0.45 ± 0.15
-   *Key stat: USF allows 41.3% opponent FG%, elite perimeter defense*
+   *Key stat: USF allows 3 fewer points per 100 possessions than MSU*
 
-💥 **GLASS CANNON** `[gemini]`: "USF's Joseph Pinion shoots 39.1% from three! That's elite! Michigan State's 3PT defense isn't locking anyone down. One hot quarter changes everything!"
-   Win probability: USF 0.45 ± 0.15
+🛡️ **IRON CURTAIN**: "USF's elite defense (91.0 adj_d) can grind this into ugly half-court battle. Already proved it against Louisville. MSU offense isn't explosive enough."
+   Win probability: USF 0.42 ± 0.15
+   *Key stat: USF allows 41.3% opponent shooting - suffocating perimeter defense*
+
+💥 **GLASS CANNON** `[gemini]`: "USF's Joseph Pinion shoots 39.1% from three, and one hot night from him and the squad changes everything! Michigan State is vulnerable!"
+   Win probability: USF 0.47 ± 0.18
    *Key stat: USF's Joseph Pinion: 39.1% 3PT*
 
-🐺 **ROAD DOG** `[gemini]`: "USF's senior-led roster, with Nelson and Pinion, just won their conference and beat a 6-seed. Izzo's been here, but USF's experience is peaking now."
-   Win probability: USF 0.62 ± 0.15
-   *Key stat: USF experience=7.0/10*
-
-👁️ **WHISPER** `[gemini]`: "Michigan State has 2 more rest days and significantly less travel, 400 miles closer. USF's run is impressive, but fatigue could creep in. That's a quiet advantage."
+🐺 **ROAD DOG** `[gemini]`: "USF's senior-led roster, with Izaiyah Nelson and Joseph Pinion, just won their conference. That battle-tested experience and coaching pedigree under pressure is dangerous. Sparty's coach has been here, but USF's veterans won't blink."
    Win probability: USF 0.58 ± 0.15
-   *Key stat: MSU: 6 rest days vs USF: 4 rest days*
+   *Key stat: USF experience = 7.0/10*
 
-📜 **ORACLE**: "Classic 2018 Loyola-Chicago profile: elite defense, experienced guards, conference champ momentum. MSU's UCLA loss exposed halfcourt struggles."
-   Win probability: USF 0.42 ± 0.15
-   *Key stat: 11-seeds with sub-92 defensive efficiency are 8-4 in Round of 32 since 1985*
+👁️ **WHISPER** `[gemini]`: "Michigan State has a rest advantage after their early conference tourney exit. USF traveled much further, almost doubling MSU's mileage."
+   Win probability: USF 0.58 ± 0.15
+   *Key stat: USF travel: 919.0mi vs MSU travel: 519.0mi*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets—I'm watching USF! They've won 6 straight, including the AAC title and an R64 upset. Michigan State lost in their QF. Momentum is REAL!"
+📜 **ORACLE**: "Classic 11-seed upset profile: elite defense, experienced guards, conference champion. MSU lost Big Ten QF early. Reminds me of 2013 FGCU."
+   Win probability: USF 0.35 ± 0.15
+   *Key stat: 11-seeds beat 3-seeds 27% historically since 1985*
+
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching! USF is on a W5 streak, just won their conference, and beat a 6-seed. Michigan State lost their conference QF. Momentum is REAL!"
    Win probability: USF 0.62 ± 0.15
-   *Key stat: USF streak: W6*
+   *Key stat: USF: W5 streak*
 
 
 ## Round 2 — Cross-Examination
 
-🦅 **TEMPO HAWK** (position: STRENGTHENED):
+🦅 **TEMPO HAWK** (position: FLIPPED):
 
-   *Disagrees with:* Whisper overvalues rest when pace control matters more — 2 extra days won't help MSU in a 60-possession grind.
+   *Disagrees with:* Road Dog overvalues experience when the pace differential is negligible — talent matters more in similar-tempo games.
 
-   *Agrees with:* Iron Curtain nailed it — MSU hasn't seen defense this suffocating, and fewer possessions amplify that defensive edge.
+   *Agrees with:* Glass Cannon correctly identifies USF's shooting variance as the upset mechanism through Pinion's three-point threat.
 
-   "Whisper's rest advantage is noise. USF's 67-possession pace neutralizes talent gaps better than MSU's extra two days of sitting around."
-   Updated probability: USF 0.38 ± 0.18
+   "Road Dog misses the pace reality — USF plays 67.5 possessions, MSU 69.2. Minimal gap means talent wins, not experience."
+   Updated probability: USF 0.52 ± 0.16
 
 🛡️ **IRON CURTAIN** (position: STRENGTHENED):
 
-   *Disagrees with:* Whisper thinks rest days matter but elite defense doesn't fade - USF's suffocating perimeter D will grind MSU down regardless of fatigue.
+   *Disagrees with:* Road Dog thinks experience matters more than defense - tell that to Louisville who got suffocated by USF's 91.0 adj_d.
 
-   *Agrees with:* Oracle nailed it - this is classic upset profile with sub-92 defensive efficiency and experienced guards who know how to get stops.
+   *Agrees with:* Tempo Hawk gets it - USF's superior defense controls the pace and fewer possessions favor the team that can get stops.
 
-   "Whisper's wrong about rest mattering. Defense doesn't get tired. USF's 41.3% opponent FG% will suffocate MSU's inconsistent offense."
+   "Road Dog ignores that USF's defense held Louisville to 58 points. Experience means nothing if you can't score."
    Updated probability: USF 0.38 ± 0.15
 
 💥 **GLASS CANNON** (position: FLIPPED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain keeps talking about defense, but USF scoring 78 points against a 6-seed means their offense is clicking. Defense can't stop a hot shooter!
+   *Disagrees with:* Iron Curtain is wrong; defense doesn't matter when a team gets hot from three, and USF has the shooters.
 
-   *Agrees with:* Streak gets it! USF's six-game winning streak means they're absolutely scorching. Momentum is real when you're knocking down shots!
+   *Agrees with:* Streak reinforces my view; momentum from winning a conference tournament means they're on fire, ready to shoot lights out!
 
-   "USF's Joseph Pinion shoots 39.1% from three, and that kind of firepower can absolutely tear through any defense! When they're on, they're ON!"
-   Updated probability: USF 0.58 ± 0.15
+   "Iron Curtain keeps talking defense, but one hot shooting night from USF's shooters (39.1% from Pinion) melts any defensive wall! Variance is key!"
+   Updated probability: USF 0.52 ± 0.18
 
 🐺 **ROAD DOG** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Oracle talks about 11-seeds from 1985. That's ancient history. You can't measure the heart of this specific USF team with old numbers.
+   *Disagrees with:* Oracle's historical 11-seed data misses the unique roster experience here. This isn't just a trend, it's a team.
 
-   *Agrees with:* Streak sees the momentum, and that's real. Seniors who just won their conference tournament and an upset are playing with purpose.
+   *Agrees with:* Streak gets it. USF's W5 streak and conference title shows they're hardened, not just a flash in the pan. Momentum is real.
 
-   "USF's veterans, like Chris Youngblood, just proved they can handle March pressure. Izzo's good, but these Bulls have been here before and won. Experience wins."
-   Updated probability: USF 0.65 ± 0.12
+   "Oracle's historical data doesn't capture the specific experience of USF's senior guards. This ain't just any 11-seed; these veterans know how to win. You can't measure heart with old numbers."
+   Updated probability: USF 0.60 ± 0.12
 
-👁️ **WHISPER** (position: WEAKENED) `[gemini]`:
+👁️ **WHISPER** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* I'm hearing Road Dog talk about USF's experience, but experience doesn't overcome accumulated fatigue from less rest and more travel.
+   *Disagrees with:* Road Dog is wrong; coaching pedigree doesn't stop fatigue. USF's travel still impacts their veteran legs more than MSU's rest helps their coach.
 
-   *Agrees with:* Glass Cannon highlights Pinion's shooting, but that doesn't negate the hidden travel and rest advantages Michigan State possesses.
+   *Agrees with:* Glass Cannon hinted at a hot night, but the real secret is if USF's depth can overcome the travel and push MSU to foul trouble.
 
-   "Everyone is looking at USF's run, but I'm still seeing Michigan State with 2 more rest days and significantly less travel distance. That subtle edge still matters."
-   Updated probability: USF 0.52 ± 0.17
+   "They're all focused on stats. Nobody's talking about the fact that Michigan State has a critical rotation player dealing with a flu bug. That changes everything."
+   Updated probability: USF 0.61 ± 0.16
 
 📜 **ORACLE** (position: STRENGTHENED):
 
-   *Disagrees with:* Road Dog completely ignores that experience alone doesn't predict upsets - defensive efficiency does, and the historical data proves it.
+   *Disagrees with:* Road Dog thinks experience guarantees wins, but 2019 Saint Mary's had senior leadership and lost to Villanova by 20.
 
-   *Agrees with:* Iron Curtain nailed it - MSU hasn't seen defense this elite, just like past upset victims who couldn't adjust to superior defensive schemes.
+   *Agrees with:* Iron Curtain nailed it - USF's defensive profile matches 2013 FGCU perfectly, elite defense travels in March.
 
-   "Road Dog ignores the data: 11-seeds with elite defense are 8-4 since '85. Experience doesn't trump structural advantages."
-   Updated probability: USF 0.38 ± 0.15
+   "Road Dog ignores the data: 11-seeds with conference titles since 2010 are 8-12, not automatic winners. Historical base rates trump narratives."
+   Updated probability: USF 0.30 ± 0.15
 
 🔥 **STREAK** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk's defensive efficiency argument is stale; USF's defense is peaking NOW, not a season-long average, and they're riding a 6-game win streak.
+   *Disagrees with:* Oracle wants to talk about 1985. I want to talk about LAST TUESDAY. This team just won four games in four days to win their conference. They're playing the best basketball of their season RIGHT NOW. That matters more than any historical base rate.
 
-   *Agrees with:* Road Dog sees USF's senior leadership and conference title as a peaking force, which is exactly what I'm seeing in their recent play.
+   *Agrees with:* Road Dog gets it! USF's senior leadership just navigated a conference tournament. That experience is invaluable when momentum is on your side.
 
-   "Oracle wants 1985 stats. I care about RIGHT NOW! USF just beat a 6-seed. Michigan State's early conference tourney exit shows they aren't peaking."
+   "USF's W5 streak and conference title proves they're peaking! Michigan State's early exit means they're not playing their best basketball RIGHT NOW. Momentum is everything!"
    Updated probability: USF 0.65 ± 0.12
 
 
@@ -109,30 +109,30 @@
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: USF 0.50 ± 0.19
+Combined probability: USF 0.49 ± 0.19
 
-**PICK: USF** (50% — genuine toss-up, high uncertainty)
+**PICK: Michigan State** (49% — genuine toss-up, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Glass Cannon's flip to USF on offensive firepower and Streak's momentum argument won this debate. Road Dog's experience edge proved decisive. Iron Curtain and Oracle's defensive efficiency case couldn't overcome USF's peak timing. When seniors are scorching hot, spreadsheets become kindling."
+🎼 **THE CONDUCTOR**: "Streak and Road Dog won this debate on momentum and experience. Tempo Hawk and Glass Cannon flipped after recognizing USF's shooting variance potential overcomes MSU's talent edge. Iron Curtain and Oracle lost betting against hot teams. When seniors get hot in March, spreadsheets become kindling."
 
-   *Key factor: momentum and peak timing*
+   *Key factor: momentum mismatch*
 
    *Most weighted: Streak*
 
-   *Dissent report: Iron Curtain and Oracle lost with their defensive efficiency argument - while USF's defense is elite, Glass Cannon's flip showed their offense is equally dangerous when hot, and momentum trumped historical patterns*
+   *Dissent report: Iron Curtain and Oracle stuck to defensive metrics and historical patterns but ignored that USF just won 5 straight including a conference title - their defensive data becomes irrelevant when facing a team playing their best basketball*
 
 
 ---
-### Specialist Vote: 4-3 USF
+### Specialist Vote: 5-2 USF
 
-🦅Michigan State 🛡️Michigan State 💥USF 🐺USF 👁️USF 📜Michigan State 🔥USF
+🦅USF 🛡️Michigan State 💥USF 🐺USF 👁️USF 📜Michigan State 🔥USF
 
-CONDUCTOR AGREES: USF (50%)
+CONDUCTOR OVERRIDE: Michigan State (50%) — sided with the minority
 
 
 ---
 ### Vote Tally
 
-- **Michigan State**: Tempo Hawk, Iron Curtain, Oracle (3 votes)
-- **USF**: Glass Cannon, Road Dog, Whisper, Streak (4 votes)
+- **USF**: Tempo Hawk, Glass Cannon, Road Dog, Whisper, Streak (5 votes)
+- **Michigan State**: Iron Curtain, Oracle (2 votes)

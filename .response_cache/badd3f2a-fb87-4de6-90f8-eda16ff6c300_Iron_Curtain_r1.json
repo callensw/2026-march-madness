@@ -1,0 +1,7 @@
+STEP 1 — UPSET THESIS: UCF forces UCLA into a half-court grind where their defensive weaknesses get exposed. UCLA allows 43.3% shooting and UCF has experienced guards who can attack that perimeter defense. Without Bilodeau's scoring, UCLA's offense becomes predictable.
+
+STEP 2 — RATE THE UPSET THESIS: 6/10. UCF's defense isn't elite (95.5 adj_d) but UCLA's perimeter defense is genuinely vulnerable at 43.3% opponent shooting. The injury to their primary scorer creates real offensive concerns.
+
+STEP 3 — PICK: UCLA's defense (91.5 adj_d) is solid but not dominant. UCF shoots 43.3% against them all day. This screams grind-it-out game where UCLA's offensive limitations without Bilodeau get exposed. Defense travels, but UCLA's doesn't travel far enough.
+
+{"team_a_win_prob": 0.42, "uncertainty": 0.15, "reasoning": "UCLA allows 43.3% shooting - that's vulnerable perimeter defense. Without Bilodeau, their offense becomes predictable. UCF grinds this out in half-court.", "key_stat": "UCLA opponent FG% of 43.3% vs UCF's experienced guards"}

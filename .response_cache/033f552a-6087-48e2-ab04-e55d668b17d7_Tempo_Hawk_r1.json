@@ -1,0 +1,7 @@
+STEP 1 — UPSET THESIS: McNeese controls pace at 67.6 possessions vs Vanderbilt's 67.1, creating a grinding, possession-by-possession game where the Cowboys' superior defensive efficiency (90.9 vs 89.4) and hot streak (W6) can neutralize Vandy's talent edge in a low-variance environment.
+
+STEP 2 — RATE THE UPSET THESIS: 4/10. The tempo difference is negligible (0.5 possessions), so there's no real pace mismatch to exploit. Both teams play at nearly identical tempos, meaning this becomes a straight efficiency battle where Vanderbilt's 9-point offensive advantage should dominate.
+
+STEP 3 — PICK: Vanderbilt wins. When tempo is matched, the team with superior offensive efficiency controls the game. Vandy's 126.4 adjusted offense vs McNeese's 117.4 creates a significant gap that the Cowboys can't overcome in a possession-for-possession battle.
+
+{"team_a_win_prob": 0.72, "uncertainty": 0.12, "reasoning": "Identical tempos eliminate pace advantage. Vanderbilt's 9-point offensive efficiency edge dominates in possession-for-possession battle. No tempo mismatch for Cowboys to exploit.", "key_stat": "Tempo difference: 0.5 possessions per game"}

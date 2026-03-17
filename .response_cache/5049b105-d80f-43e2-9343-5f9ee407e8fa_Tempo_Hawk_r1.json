@@ -1,0 +1,7 @@
+STEP 1 — UPSET THESIS: Wright State controls pace at 65.9 possessions vs Virginia's glacial 63.9, forcing the Cavaliers into more possessions than they prefer. The Raiders' balanced scoring (five players 9+ PPG) thrives in uptempo games, while Virginia's methodical half-court offense struggles when rushed.
+
+STEP 2 — RATE THE UPSET THESIS: 4/10. The tempo gap is minimal (2 possessions), and Virginia's elite defense (88.3 adj_d) can slow any team down. Wright State would need to force turnovers to create meaningful pace advantage, but Virginia protects the ball well (10.8% turnover rate).
+
+STEP 3 — PICK: Virginia's defensive efficiency is devastating - they hold opponents to 39.5% shooting while Wright State allows 45.7%. Even if Wright State pushes pace slightly, Virginia's 11-point efficiency margin per possession compounds over 64+ possessions into a comfortable win.
+
+{"team_a_win_prob": 0.78, "uncertainty": 0.12, "reasoning": "Virginia's elite defense neutralizes Wright State's pace push. 11-point efficiency margin compounds over 64 possessions into comfortable margin.", "key_stat": "Virginia 63.9 tempo vs Wright State 65.9 - minimal 2-possession gap"}

@@ -1,130 +1,130 @@
 # 🏀 #5 St. John's vs #12 Northern Iowa — East Region, Round of 64
-*2026-03-16T17:25:41.049905+00:00*
+*2026-03-16T18:17:54.799681+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Tempo nearly identical at 66-68 possessions. St. John's 11.7-point efficiency edge per 100 possessions trumps UNI's slight pace control and experience advantage."
+🦅 **TEMPO HAWK**: "Minimal tempo gap negates UNI's upset path. St. John's 12-point efficiency edge at similar pace creates decisive advantage despite Panthers' experience."
    Win probability: St. John's 0.68 ± 0.12
-   *Key stat: St. John's 122.4 offensive efficiency vs UNI's 110.7 - 11.7 point gap*
+   *Key stat: St. John's 122.4 offensive efficiency vs UNI's 110.7 at nearly identical 66-68 possession pace*
 
-🛡️ **IRON CURTAIN**: "UNI's 40.7% opponent shooting matches St. John's defensive intensity. Four straight tournament wins in pressure situations. Defense travels in March grinders."
-   Win probability: St. John's 0.32 ± 0.18
-   *Key stat: UNI allows 40.7% shooting vs St. John's 42.1%*
+🛡️ **IRON CURTAIN**: "Defensive efficiency gap is minimal (87.9 vs 89.0). UNI holds opponents to 40.7% shooting and just survived four elimination games. Defense travels in March."
+   Win probability: St. John's 0.68 ± 0.15
+   *Key stat: UNI allows 40.7% opponent field goal percentage*
 
-💥 **GLASS CANNON** `[gemini]`: "Northern Iowa's 3PT% is too low. St. John's has a dangerous shooter in Oziyah Sellers; they're on fire! You can't coach that!"
-   Win probability: St. John's 0.82 ± 0.12
+💥 **GLASS CANNON** `[gemini]`: "Northern Iowa's 3PT% is too low! You can't catch fire from deep if you don't shoot it well all year. St. John's has the shooters!"
+   Win probability: St. John's 0.70 ± 0.15
    *Key stat: Northern Iowa 3PT% = 32.0%*
 
-🐺 **ROAD DOG** `[gemini]`: "Northern Iowa's senior-led roster, with an experience score of 8.0, has been there before. St. John's coach has tournament pedigree, but those UNI veterans won't blink."
-   Win probability: St. John's 0.58 ± 0.15
+🐺 **ROAD DOG** `[gemini]`: "Northern Iowa's senior-led roster, with an 8.0 experience score, just won their conference tournament. That kind of battle-tested toughness and chemistry doesn't crack easily. St. John's 6.0 experience won't be enough."
+   Win probability: St. John's 0.55 ± 0.15
    *Key stat: Northern Iowa experience: 8.0/10*
 
-👁️ **WHISPER** `[gemini]`: "Everyone’s talking about St. John’s. Meanwhile, Northern Iowa traveled 387 more miles with the same rest. Fatigue after a four-games-in-four-days tournament run is REAL. Something doesn’t add up."
+👁️ **WHISPER** `[gemini]`: "Something doesn't add up. Northern Iowa played four games in four days, then traveled 689 miles. St. John's played three, traveled 302. That extra game and travel matters."
    Win probability: St. John's 0.62 ± 0.15
-   *Key stat: 387 more travel miles*
+   *Key stat: 4 games in 4 days*
 
-📜 **ORACLE**: "Classic 5v12 setup: experienced mid-major champs vs younger power conference team. Reminds me of 2013 FGCU shocking Georgetown. UNI's veteran core dangerous."
+📜 **ORACLE**: "Base rate says 36% upset chance. UNI matches classic Cinderella profile: mid-major champs, experienced roster, defensive identity. Reminds me of 2010 Northern Iowa's run."
    Win probability: St. John's 0.68 ± 0.15
-   *Key stat: Northern Iowa has 8.0/10 experience vs St. John's 6.0/10*
+   *Key stat: UNI has 8.0 experience rating vs St. John's 6.0*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. Northern Iowa just won FOUR straight to take their conference. They're peaking, riding a W4 streak, and that momentum is REAL. St. John's is hot, but UNI is playing with fire."
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. Northern Iowa just won FOUR games in FOUR days! That's peaking. St. John's is hot, but UNI's momentum is REAL. Northern Iowa's 4-game winning streak means they're playing their best ball RIGHT NOW."
    Win probability: St. John's 0.62 ± 0.15
-   *Key stat: Northern Iowa won 4 straight games to win their conference tournament.*
+   *Key stat: Northern Iowa: W4 streak*
 
 
 ## Round 2 — Cross-Examination
 
 🦅 **TEMPO HAWK** (position: STRENGTHENED):
 
-   *Disagrees with:* Iron Curtain focuses on UNI's defense but ignores that their offense is 12 points per 100 possessions worse — you can't win scoring 60 points.
+   *Disagrees with:* Road Dog ignores that UNI's experience means nothing when they're 12 points less efficient offensively — you can't grind out wins against superior talent when the pace is even.
 
-   *Agrees with:* Glass Cannon reinforces my efficiency thesis — UNI's offensive limitations will be exposed against St. John's pace and talent.
+   *Agrees with:* Glass Cannon correctly identifies UNI's shooting limitations — at 32% from three, they lack the variance weapon needed for upsets.
 
-   "Iron Curtain misses the point — defense doesn't matter if you can't score. UNI's 110.7 offensive efficiency is anemic against quality competition."
+   "Road Dog misses the point — experience doesn't matter if you can't score efficiently. UNI's 110.7 offensive rating gets exposed at pace."
    Updated probability: St. John's 0.72 ± 0.10
 
-🛡️ **IRON CURTAIN** (position: STRENGTHENED):
+🛡️ **IRON CURTAIN** (position: WEAKENED):
 
-   *Disagrees with:* Glass Cannon ignores that UNI's defense specifically shuts down three-point shooting - they allow 32% from deep, which neutralizes St. John's offensive advantage.
+   *Disagrees with:* Glass Cannon dismisses UNI's 3PT shooting but ignores that UNI's elite defense (40.7% opp FG%) can neutralize St. John's offensive advantage.
 
-   *Agrees with:* Road Dog correctly identifies UNI's experience edge - those veterans have been in pressure situations and won't fold when the game gets ugly.
+   *Agrees with:* Whisper reinforced my view by highlighting UNI's fatigue factor — four games in four days plus extra travel creates defensive breakdowns.
 
-   "Glass Cannon is WRONG. UNI held opponents to 32% from three ALL SEASON. St. John's shooters will go cold when defense clamps down."
-   Updated probability: St. John's 0.28 ± 0.16
+   "Glass Cannon is WRONG. UNI's defense held opponents to 40.7% shooting ALL YEAR. That's not luck — that's suffocating defense that travels."
+   Updated probability: St. John's 0.62 ± 0.18
 
-💥 **GLASS CANNON** (position: STRENGTHENED) `[gemini]`:
+💥 **GLASS CANNON** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain keeps talking about defense like it matters! St. John's 3PT shooting can erase any defensive advantage, you can't coach that!
+   *Disagrees with:* I gotta push back on Streak! Four games in four days and then travel? That's not 'momentum,' that's EXHAUSTION for shooters!
 
-   *Agrees with:* Tempo Hawk gets it! St. John's offensive efficiency is off the charts, that's what wins games in this era!
+   *Agrees with:* Tempo Hawk gets it. Efficiency matters, and St. John's has a huge offensive efficiency edge. You can't coach that kind of scoring talent!
 
-   "UNI's shooting isn't enough to overcome St. John's offensive firepower. They don't have the three-point variance to win!"
-   Updated probability: St. John's 0.78 ± 0.15
+   "Okay, I hear everyone, but UNI's low 3PT% still screams trouble. You can't just 'catch fire' when you shoot 32% all season! St. John's has the firepower."
+   Updated probability: St. John's 0.65 ± 0.17
 
-🐺 **ROAD DOG** (position: WEAKENED) `[gemini]`:
+🐺 **ROAD DOG** (position: FLIPPED) `[gemini]`:
 
-   *Disagrees with:* Glass Cannon's focus on 3PT% ignores that toughness and defense win when shots aren't falling. Analytics don't play the game.
+   *Disagrees with:* Tempo Hawk focuses on efficiency, but you can't measure heart and toughness with a spreadsheet. Northern Iowa's veterans have been here before.
 
-   *Agrees with:* Oracle reinforced my view; this is a classic upset setup with a veteran mid-major against a younger power conference team.
+   *Agrees with:* Oracle understands the Cinderella profile; a senior-led mid-major champion is a dangerous team in March, just like 2010 Northern Iowa.
 
-   "Tempo Hawk loves the numbers. I love watching the game. UNI's senior core, 8.0 experience, won't blink. St. John's coach has pedigree, but those veterans are dangerous."
-   Updated probability: St. John's 0.52 ± 0.18
+   "Tempo Hawk loves numbers, but I love watching the game. Northern Iowa's senior leadership and 8.0 experience score, especially after a conference title, means they won't fold. St. John's 6.0 experience won't cut it."
+   Updated probability: St. John's 0.48 ± 0.18
 
 👁️ **WHISPER** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Glass Cannon is wrong. Three-point percentages don't account for tired legs; fatigue impacts shooting form more than talent, especially after a grueling week.
+   *Disagrees with:* Streak is wrong; winning four straight means deeper fatigue, not just momentum. Their legs will be gone.
 
-   *Agrees with:* Oracle reinforced my view. The 'classic upset' scenario often involves hidden factors like the travel and rest disparity I highlighted.
+   *Agrees with:* Road Dog sees the experience, but ignores the physical cost. My travel and rest data still points to St. John's having an edge.
 
-   "Everyone is still missing the fatigue factor. Northern Iowa's players endured four high-stress games in four days, then traveled further. That wears on the body."
+   "Everyone's missing the compounding fatigue. Northern Iowa played 4 games in 4 days, then traveled more. That's a deep toll on their rotation. St. John's is fresher."
    Updated probability: St. John's 0.58 ± 0.17
 
 📜 **ORACLE** (position: STRENGTHENED):
 
-   *Disagrees with:* Glass Cannon dismisses UNI's 32% three-point shooting, but historically 12-seeds with poor shooting still pull upsets through defense and experience.
+   *Disagrees with:* Glass Cannon dismisses UNI's 32% 3PT shooting, but historically speaking, 2010 Northern Iowa shot 31.8% from three and made the Elite Eight — shooting percentages don't predict March magic.
 
-   *Agrees with:* Iron Curtain nailed it - UNI's defensive profile matches classic 12-seed upset architects who suffocate higher seeds in grind-it-out games.
+   *Agrees with:* Road Dog correctly identifies UNI's 8.0 experience edge, which historically correlates with upset potential in single-elimination tournaments.
 
-   "Glass Cannon ignores history. Since 1985, 12-seeds shooting under 33% from three still upset 5-seeds 36% of the time. Defense travels."
-   Updated probability: St. John's 0.65 ± 0.16
+   "Glass Cannon ignores history! 2010 Northern Iowa shot 31.8% from three and reached Elite Eight. Defense travels, shooting doesn't always."
+   Updated probability: St. John's 0.64 ± 0.15
 
 🔥 **STREAK** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk's efficiency margins are season-long and irrelevant. UNI's recent form (4 straight wins) trumps stale numbers.
+   *Disagrees with:* Glass Cannon is wrong. You don't need high season-long 3PT% to get hot in March. Northern Iowa's recent form shows they're clicking, not just their average from November.
 
-   *Agrees with:* Iron Curtain gets it! UNI's defense and tournament wins show they're ready for March grinders, reinforcing their peaking form.
+   *Agrees with:* Road Dog gets it! Northern Iowa's senior-led roster just battled through four elimination games. That experience and recent success is a massive momentum boost.
 
-   "UNI's W4 streak and conference title proves they're peaking. Tempo Hawk's 'efficiency edge' is stale; what have they done LATELY? Momentum is undeniable."
-   Updated probability: St. John's 0.58 ± 0.17
+   "Northern Iowa's 4-game streak to win their conference is PEAKING. Oracle wants 2010; I want LAST WEEK. St. John's is good, but UNI's momentum is undeniable, they're playing their best ball RIGHT NOW. This is a battle-tested team on a roll."
+   Updated probability: St. John's 0.58 ± 0.18
 
 
 ### Swarm vs Vegas
-   *Swarm: 50% on St. John's | Vegas implied: 85% | Delta: 35pp more bearish*
+   *Swarm: 50% on St. John's | Vegas implied: 86% | Delta: 36pp more bearish*
 
 
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: St. John's 0.59 ± 0.22
+Combined probability: St. John's 0.62 ± 0.17
 
-**PICK: St. John's** (59% — lean, high uncertainty)
+**PICK: St. John's** (62% — lean, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Tempo Hawk and Glass Cannon won this debate with offensive efficiency trumping experience. Road Dog, Whisper, and Streak all weakened their UNI positions when confronted with St. John's 11.7-point efficiency edge. Iron Curtain's defense-first argument couldn't overcome the math. March rewards talent over heart."
+🎼 **THE CONDUCTOR**: "Tempo Hawk and Oracle won by emphasizing efficiency gaps and historical patterns. Road Dog's flip to UNI showed experience matters, but couldn't overcome the 12-point offensive efficiency chasm. Northern Iowa's four-day gauntlet creates fatigue, not just momentum. The Red Storm's talent advantage proves decisive."
 
-   *Key factor: Offensive efficiency gap*
+   *Key factor: Offensive efficiency gap (12 points)*
 
    *Most weighted: Tempo Hawk*
 
-   *Dissent report: Iron Curtain stood firm on UNI's defensive profile matching classic 12-seed upsets, but couldn't explain how UNI scores enough points. Road Dog, Whisper, and Streak all retreated when pressed on their experience/momentum arguments against raw efficiency numbers.*
+   *Dissent report: Road Dog flipped to UNI citing experience and toughness, but 8.0 vs 6.0 experience can't bridge a 12-point efficiency gap in modern basketball*
 
 
 ---
 ### Specialist Vote: 6-1 St. John's
 
-🦅St. John's 🛡️Northern Iowa 💥St. John's 🐺St. John's 👁️St. John's 📜St. John's 🔥St. John's
+🦅St. John's 🛡️St. John's 💥St. John's 🐺Northern Iowa 👁️St. John's 📜St. John's 🔥St. John's
 
 CONDUCTOR AGREES: St. John's (50%)
 
@@ -132,15 +132,15 @@ CONDUCTOR AGREES: St. John's (50%)
 ---
 ### Vote Tally
 
-- **St. John's**: Tempo Hawk, Glass Cannon, Road Dog, Whisper, Oracle, Streak (6 votes)
-- **Northern Iowa**: Iron Curtain (1 votes)
+- **St. John's**: Tempo Hawk, Iron Curtain, Glass Cannon, Whisper, Oracle, Streak (6 votes)
+- **Northern Iowa**: Road Dog (1 votes)
 
 
 ## Market Analysis
 
-- Swarm probability: St. John's 59% ± 22%
-- Vegas implied probability: St. John's 81%
-- Edge: 22.3% (market favors Northern Iowa)
+- Swarm probability: St. John's 62% ± 17%
+- Vegas implied probability: St. John's 82%
+- Edge: 19.9% (market favors Northern Iowa)
 - Vegas spread: St. John's -10.5
-- Contrarian signal: Iron Curtain (-53% vs market) and Road Dog (-29% vs market) and Whisper (-23% vs market) and Streak (-23% vs market) and Oracle (-16% vs market)
-- Recommendation: NO BET — edge (22.3%) exists but uncertainty too high (21.5%)
+- Contrarian signal: Road Dog (-34% vs market) and Whisper (-24% vs market) and Streak (-24% vs market) and Iron Curtain (-20% vs market) and Oracle (-18% vs market) and Glass Cannon (-17% vs market)
+- Recommendation: NO BET — edge (19.9%) exists but uncertainty too high (17.1%)

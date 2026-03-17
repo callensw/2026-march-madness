@@ -1,103 +1,103 @@
 # 🏀 #5 Vanderbilt vs #12 McNeese — South Region, Round of 64
-*2026-03-16T17:34:42.777263+00:00*
+*2026-03-16T18:27:08.831597+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Identical tempos neutralize Vanderbilt's talent edge. McNeese's championship experience in slow games creates genuine upset potential."
+🦅 **TEMPO HAWK**: "Identical tempos eliminate pace advantage. Vanderbilt's 9-point offensive efficiency edge dominates in possession-for-possession battle. No tempo mismatch for Cowboys to exploit."
+   Win probability: Vanderbilt 0.72 ± 0.12
+   *Key stat: Tempo difference: 0.5 possessions per game*
+
+🛡️ **IRON CURTAIN**: "Defensive numbers nearly identical - McNeese 90.9 vs Vandy 89.4 adj_d. Low-possession grind favors upset. Cowboys hold opponents to 40.7% shooting."
    Win probability: Vanderbilt 0.68 ± 0.15
-   *Key stat: Both teams play at 67 possessions per game*
+   *Key stat: McNeese opponent FG%: 40.7% vs Vanderbilt's 42.7%*
 
-🛡️ **IRON CURTAIN**: "McNeese defends better than Vanderbilt. Cowboys hold teams to 40.7% shooting vs Vandy's 42.7%. Defense travels in March."
-   Win probability: Vanderbilt 0.42 ± 0.15
-   *Key stat: McNeese adj_d 90.9 vs Vanderbilt 89.4*
-
-💥 **GLASS CANNON** `[gemini]`: "Vandy shoots 36.6% from three, with Nickel as a sharpshooter! McNeese's 33.1% just isn't enough firepower. You can't coach that kind of shooting!"
-   Win probability: Vanderbilt 0.65 ± 0.15
-   *Key stat: Vanderbilt 3PT%: 36.6%*
-
-🐺 **ROAD DOG** `[gemini]`: "McNeese's seniors, like Javohn Garcia, just won their third straight conference title. That kind of experience and winning culture doesn't crack. Vanderbilt's coach hasn't been here before."
+💥 **GLASS CANNON** `[gemini]`: "Vandy's perimeter shooting is ELITE at 36.6%! McNeese's 33.1% just doesn't cut it. Vanderbilt has the flamethrowers to go on a run!"
    Win probability: Vanderbilt 0.58 ± 0.15
-   *Key stat: McNeese's 3-peat*
+   *Key stat: Vanderbilt 3PT% = 36.6%*
 
-👁️ **WHISPER** `[gemini]`: "McNeese traveled significantly further and has similar rest. Vanderbilt's short travel gives them a distinct physical edge. That adds up."
+🐺 **ROAD DOG** `[gemini]`: "McNeese's 28-5 record and senior leadership, including Javohn Garcia, makes them dangerous. Vanderbilt's coach has been here, but McNeese's toughness is undeniable."
+   Win probability: Vanderbilt 0.52 ± 0.15
+   *Key stat: McNeese record: 28-5*
+
+👁️ **WHISPER** `[gemini]`: "Vanderbilt's SEC tourney run was exhausting. McNeese has a significant travel disadvantage, but Vanderbilt's fatigue from 3 games in 3 days could level the playing field. Something doesn't add up."
    Win probability: Vanderbilt 0.62 ± 0.15
-   *Key stat: Vanderbilt travel: 263mi vs McNeese travel: 707mi*
+   *Key stat: McNeese travel 707.0mi vs Vanderbilt 263.0mi*
 
-📜 **ORACLE**: "Classic 5v12 setup. McNeese's elite defense and three-peat experience versus Vandy coming off emotional loss. Reminds me of 2013 Oregon over Oklahoma State."
-   Win probability: Vanderbilt 0.62 ± 0.15
-   *Key stat: 12-seeds win 35.8% since 1985*
+📜 **ORACLE**: "5v12 base rate is 64% since 1985. McNeese has classic Cinderella profile: 28 wins, three-peat champs, elite defense. Reminds me of 2013 FGCU."
+   Win probability: Vanderbilt 0.68 ± 0.15
+   *Key stat: 12-seeds upset 5-seeds 36% of the time historically*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — McNeese is RED HOT, winning six straight and their conference tournament. Vanderbilt lost their last game. Momentum is real!"
-   Win probability: Vanderbilt 0.58 ± 0.15
-   *Key stat: McNeese W6 streak*
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching! McNeese is RED HOT, winning their conference tournament and riding a 6-game streak. Vanderbilt just lost. Momentum is real!"
+   Win probability: Vanderbilt 0.45 ± 0.15
+   *Key stat: McNeese: W6 streak*
 
 
 ## Round 2 — Cross-Examination
 
-🦅 **TEMPO HAWK** (position: FLIPPED):
+🦅 **TEMPO HAWK** (position: STRENGTHENED):
 
-   *Disagrees with:* Glass Cannon overvalues shooting percentage without considering that fewer possessions limit Vanderbilt's three-point volume advantage.
+   *Disagrees with:* Streak thinks winning streaks trump efficiency, but hot teams cool off — Vanderbilt's per-possession dominance is sustainable.
 
-   *Agrees with:* Iron Curtain correctly identifies that McNeese's superior defensive efficiency (90.9 vs 89.4) matters more in low-possession games.
+   *Agrees with:* Iron Curtain correctly notes this becomes a possession-by-possession grind where Vanderbilt's offensive edge matters most.
 
-   "Glass Cannon ignores pace reality. Vandy's 36.6% three-point shooting means nothing in a 67-possession grind where McNeese controls tempo."
-   Updated probability: Vanderbilt 0.45 ± 0.18
+   "Streak ignores the math — momentum doesn't overcome 9-point efficiency gaps. McNeese's hot streak meets cold reality against superior talent."
+   Updated probability: Vanderbilt 0.75 ± 0.10
 
-🛡️ **IRON CURTAIN** (position: STRENGTHENED):
+🛡️ **IRON CURTAIN** (position: WEAKENED):
 
-   *Disagrees with:* Glass Cannon ignores that McNeese allows just 29.8% from three — Vanderbilt's shooters will face their toughest perimeter defense all season.
+   *Disagrees with:* Streak thinks momentum beats defensive reality - McNeese's streak came against teams with losing records.
 
-   *Agrees with:* Tempo Hawk reinforced that identical pace means this becomes a defensive slugfest where McNeese's superior stops matter most.
+   *Agrees with:* Tempo Hawk nailed it - identical pace means this comes down to pure execution, where Vandy's efficiency edge matters.
 
-   "Glass Cannon is WRONG. McNeese allows 29.8% from three — elite perimeter defense. Vanderbilt's shooters will go cold against that suffocating coverage."
-   Updated probability: Vanderbilt 0.38 ± 0.15
+   "Streak ignores the FACTS. McNeese's 6-game win streak? Against Southland scrubs. Show me defense that travels against SEC competition."
+   Updated probability: Vanderbilt 0.65 ± 0.16
 
-💥 **GLASS CANNON** (position: STRENGTHENED) `[gemini]`:
+💥 **GLASS CANNON** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain keeps talking about defense like it's 1995! McNeese's defensive efficiency means nothing against a team that can light it up from three, like Vandy's 36.6%!
+   *Disagrees with:* Iron Curtain's focus on defense misses the point; offense wins in March. McNeese's low 3PT% means they can't match Vandy's potential explosion.
 
-   *Agrees with:* Oracle gets it! This is a classic 5v12 where shooting variance is HUGE. Vandy's firepower makes them the favorite here.
+   *Agrees with:* Tempo Hawk gets it! Vanderbilt's offensive efficiency gap is huge, and it's their scoring that will break this game open, not defensive stops.
 
-   "Vanderbilt's 36.6% from deep is a game-changer! When they're on, they're ON. McNeese's defense can't stop a hot shooting night."
-   Updated probability: Vanderbilt 0.68 ± 0.12
+   "Iron Curtain keeps talking defense! McNeese's 33.1% from deep means they just don't have the offensive firepower to keep up if Vandy catches fire. My pick holds!"
+   Updated probability: Vanderbilt 0.52 ± 0.17
 
 🐺 **ROAD DOG** (position: FLIPPED) `[gemini]`:
 
-   *Disagrees with:* Glass Cannon loves the numbers, but shooting percentages don't account for the pressure of March. McNeese's senior leadership will force bad shots.
+   *Disagrees with:* Glass Cannon loves perimeter shooting, but I've seen plenty of 'elite' shooters go cold in March. Experience wins, not just hot hands.
 
-   *Agrees with:* Streak understands momentum. McNeese's W6 streak shows a team that knows how to win when it matters, just like I said about their culture.
+   *Agrees with:* Streak gets it. McNeese's W6 streak and conference title shows they're battle-hardened, not just a spreadsheet anomaly.
 
-   "I've seen this movie. McNeese's seniors, like Shahada Wells, have 130+ games; that experience won't crack. Vanderbilt's coach hasn't been here."
-   Updated probability: Vanderbilt 0.48 ± 0.18
+   "McNeese's senior leadership, like Javohn Garcia, has played 130+ games. That experience doesn't crack under pressure. Analytics don't measure that kind of toughness."
+   Updated probability: Vanderbilt 0.48 ± 0.15
 
-👁️ **WHISPER** (position: STRENGTHENED) `[gemini]`:
+👁️ **WHISPER** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Road Dog focuses on 'winning culture,' but that doesn't mitigate the physical toll of 707 miles of travel compared to Vanderbilt's 263 miles.
+   *Disagrees with:* Glass Cannon is wrong. Perimeter shooting is noise if players are exhausted; Vanderbilt's 36.6% 3PT won't matter with tired legs.
 
-   *Agrees with:* Oracle understands the subtle factors; the travel disparity is a hidden advantage for Vanderbilt that others are missing.
+   *Agrees with:* Streak reinforces my view. While I don't look at streaks, their observation about Vanderbilt's loss hints at the fatigue I'm seeing.
 
-   "Everyone's missing the compounding fatigue from McNeese's travel. Two rest days isn't enough to recover from 707 miles, especially when Vanderbilt only traveled 263 miles. Something doesn't add up."
-   Updated probability: Vanderbilt 0.68 ± 0.12
+   "Everyone's missing Vanderbilt's fatigue. Three games in three days takes a toll. McNeese's travel is bad, but Vandy's legs are gone. Something doesn't add up."
+   Updated probability: Vanderbilt 0.58 ± 0.17
 
 📜 **ORACLE** (position: STRENGTHENED):
 
-   *Disagrees with:* Glass Cannon thinks shooting percentage guarantees wins, but 2013 Oregon shot 37.8% from three and still upset Oklahoma State as a 12-seed.
+   *Disagrees with:* Streak is dead wrong - momentum is a myth and 2019 Auburn proves hot streaks don't translate to March success.
 
-   *Agrees with:* Iron Curtain nailed it — defense travels in March, and McNeese's superior defensive efficiency gives them the structural edge I expect from Cinderellas.
+   *Agrees with:* Iron Curtain nailed it - defensive parity creates upset conditions, just like 2016 Little Rock over Purdue with similar defensive metrics.
 
-   "Glass Cannon ignores history. Since 1985, teams shooting 36%+ from three as 5-seeds still lose to 12s 40% of the time."
-   Updated probability: Vanderbilt 0.58 ± 0.15
+   "Streak ignores the data! Since 1985, hot streaks mean nothing - 2019 Auburn won 6 straight, lost as 5-seed to 12-seed New Mexico State."
+   Updated probability: Vanderbilt 0.62 ± 0.18
 
-🔥 **STREAK** (position: FLIPPED) `[gemini]`:
+🔥 **STREAK** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Oracle wants to talk about 1985. I want to talk about LAST TUESDAY. Recent form matters more than historical base rates.
+   *Disagrees with:* Oracle wants to talk about historical base rates. That's stale! What have teams done LATELY? McNeese's recent form is undeniable.
 
-   *Agrees with:* Glass Cannon's focus on shooting is stale. McNeese's recent defensive intensity, holding teams under 60 points in their tournament, is what matters NOW.
+   *Agrees with:* Road Dog sees McNeese's 28-5 record and toughness. That's a team that's been winning consistently, peaking at the right time. I'm with him on their undeniable momentum.
 
-   "McNeese just WON their conference tournament, four straight wins! Vanderbilt lost their last game. Momentum is real and I'm tired of people pretending it isn't!"
-   Updated probability: Vanderbilt 0.45 ± 0.18
+   "Oracle wants to talk about 1985. I want LAST TUESDAY! McNeese just won 4 straight to claim their conference. Vanderbilt LOST their last game. Momentum is real!"
+   Updated probability: Vanderbilt 0.42 ± 0.15
 
 
 ### Swarm vs Vegas
@@ -107,40 +107,40 @@
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Vanderbilt 0.52 ± 0.19
+Combined probability: Vanderbilt 0.54 ± 0.19
 
-**PICK: Vanderbilt** (52% — genuine toss-up, high uncertainty)
+**PICK: Vanderbilt** (54% — genuine toss-up, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Glass Cannon and Whisper won this debate - Vanderbilt's shooting edge and travel advantage outweigh McNeese's defense. Three agents flipped to McNeese citing momentum and experience, but couldn't overcome the talent gap. When the dust settles, talent usually wins."
+🎼 **THE CONDUCTOR**: "Tempo Hawk and Oracle won this debate with efficiency math trumping momentum myths. Road Dog's flip to McNeese based on experience was compelling but couldn't overcome the 9-point offensive gap. Streak's hot streak narrative crumbled against SEC-tested talent. The Commodores sail past the Cowboys."
 
-   *Key factor: shooting disparity*
+   *Key factor: Offensive efficiency gap in identical-pace matchup*
 
-   *Most weighted: Glass Cannon*
+   *Most weighted: Tempo Hawk*
 
-   *Dissent report: Iron Curtain led the McNeese case on defensive efficiency, joined by flippers Tempo Hawk, Road Dog, and Streak who cited momentum and experience - but defensive margins are too thin to overcome Vanderbilt's offensive firepower*
+   *Dissent report: Streak pushed momentum over math but McNeese's win streak came against weak Southland competition. Road Dog's flip to experience was intriguing but senior leadership can't close a 9-point per-possession talent gap.*
 
 
 ---
-### Specialist Vote: 4-3 McNeese
+### Specialist Vote: 5-2 Vanderbilt
 
-🦅McNeese 🛡️McNeese 💥Vanderbilt 🐺McNeese 👁️Vanderbilt 📜Vanderbilt 🔥McNeese
+🦅Vanderbilt 🛡️Vanderbilt 💥Vanderbilt 🐺McNeese 👁️Vanderbilt 📜Vanderbilt 🔥McNeese
 
-CONDUCTOR OVERRIDE: Vanderbilt (50%) — sided with the minority
+CONDUCTOR AGREES: Vanderbilt (50%)
 
 
 ---
 ### Vote Tally
 
-- **McNeese**: Tempo Hawk, Iron Curtain, Road Dog, Streak (4 votes)
-- **Vanderbilt**: Glass Cannon, Whisper, Oracle (3 votes)
+- **Vanderbilt**: Tempo Hawk, Iron Curtain, Glass Cannon, Whisper, Oracle (5 votes)
+- **McNeese**: Road Dog, Streak (2 votes)
 
 
 ## Market Analysis
 
-- Swarm probability: Vanderbilt 52% ± 19%
+- Swarm probability: Vanderbilt 54% ± 19%
 - Vegas implied probability: Vanderbilt 83%
-- Edge: 31.5% (market favors McNeese)
+- Edge: 28.7% (market favors McNeese)
 - Vegas spread: Vanderbilt -11.0
-- Contrarian signal: Iron Curtain (-45% vs market) and Tempo Hawk (-38% vs market) and Streak (-38% vs market) and Road Dog (-35% vs market) and Oracle (-25% vs market) and Glass Cannon (-15% vs market) and Whisper (-15% vs market)
-- Recommendation: NO BET — edge (31.5%) exists but uncertainty too high (18.9%)
+- Contrarian signal: Streak (-41% vs market) and Road Dog (-35% vs market) and Glass Cannon (-31% vs market) and Whisper (-25% vs market) and Oracle (-21% vs market) and Iron Curtain (-18% vs market)
+- Recommendation: NO BET — edge (28.7%) exists but uncertainty too high (18.6%)

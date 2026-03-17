@@ -1,0 +1,7 @@
+STEP 1 — UPSET THESIS: Utah State controls pace at 65.7 possessions, forcing Arizona (67.7 tempo) into a grinding half-court game where their 2.5-point efficiency edge gets compressed into fewer possessions, neutralizing talent gap.
+
+STEP 2 — RATE THE UPSET THESIS: 4/10. Arizona's tempo isn't dramatically faster, and their efficiency margin is substantial enough to survive pace compression.
+
+STEP 3 — PICK: Arizona wins. The tempo differential is minimal (2 possessions), so pace control won't be decisive. Arizona's superior efficiency per possession will accumulate over 65-68 possessions.
+
+{"team_a_win_prob": 0.72, "uncertainty": 0.12, "reasoning": "Minimal tempo gap means Arizona's 8.8-point efficiency edge accumulates normally. Utah State can't slow game enough to neutralize talent disparity.", "key_stat": "Arizona 67.7 tempo vs Utah State 65.7 - only 2-possession difference"}

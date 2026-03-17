@@ -1,36 +1,36 @@
 # 🏀 #1 Duke vs #8 Ohio State — East Region, Round of 32
-*2026-03-16T17:36:55.920200+00:00*
+*2026-03-16T18:29:39.779809+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Identical tempos neutralize pace factor. Duke's 6-point efficiency edge per possession overcomes injury concerns in this matchup."
-   Win probability: Duke 0.72 ± 0.12
-   *Key stat: Duke 70.0 tempo vs Ohio State 70.6 — no pace mismatch*
+🦅 **TEMPO HAWK**: "Identical tempos neutralize pace advantage. Duke's massive efficiency edge (39.6 vs 33.9 net rating) dominates in equal-possession game."
+   Win probability: Duke 0.78 ± 0.12
+   *Key stat: Both teams play at 70 possessions per game*
 
-🛡️ **IRON CURTAIN**: "Duke's elite defense travels but missing Foster hurts perimeter coverage. Ohio State's veteran guards exploit defensive gaps in tournament pressure."
+🛡️ **IRON CURTAIN**: "Duke's 87.1 adj_d is elite. Ohio State allows .439 opponent shooting - vulnerable against suffocating Duke defense that travels in March."
+   Win probability: Duke 0.72 ± 0.12
+   *Key stat: Duke allows .392 opponent FG% vs Ohio State's .439*
+
+💥 **GLASS CANNON** `[gemini]`: "Ohio State's 36.3% from three, and John Mobley Jr.'s elite shooting, means they can absolutely catch fire and erase Duke's advantage. Variance is real!"
+   Win probability: Duke 0.53 ± 0.15
+   *Key stat: Ohio State 3PT%: 36.3%*
+
+🐺 **ROAD DOG** `[gemini]`: "Duke's young roster (experience 3.0) will face a battle-tested Ohio State led by senior Bruce Thornton (experience 5.0). That experience gap matters in March."
+   Win probability: Duke 0.62 ± 0.15
+   *Key stat: Duke's experience score: 3.0/10*
+
+👁️ **WHISPER** `[gemini]`: "Everyone knows about Foster, but Ngongba II is also questionable. Duke's frontcourt depth is compromised, a hidden vulnerability Ohio State can exploit inside."
+   Win probability: Duke 0.61 ± 0.15
+   *Key stat: Ngongba II (10.7 PPG, 6.0 RPG) is questionable*
+
+📜 **ORACLE**: "1v8 base rate is 77.3% for top seed. Duke's injuries mirror vulnerable 1-seeds like 2012 Syracuse. Ohio State has experienced backcourt."
    Win probability: Duke 0.68 ± 0.15
-   *Key stat: Duke allows .392 FG% vs Ohio State's .439 - defensive edge matters in March*
+   *Key stat: 1-seeds lose to 8-seeds 22.7% of time since 1985*
 
-💥 **GLASS CANNON** `[gemini]`: "Ohio State shoots 36.3% from three, Duke isn't far ahead! One hot night from Mobley Jr. and the Buckeyes can absolutely torch the Blue Devils. This is where variance takes over!"
-   Win probability: Duke 0.55 ± 0.15
-   *Key stat: Ohio State 3PT% = 36.3%*
-
-🐺 **ROAD DOG** `[gemini]`: "Duke's young talent is real, but Ohio State's senior guard Bruce Thornton has seen it all. Experience wins in March, and Duke's 3.0 experience score is a red flag."
-   Win probability: Duke 0.62 ± 0.15
-   *Key stat: Duke experience: 3.0/10*
-
-👁️ **WHISPER** `[gemini]`: "Everyone knows about Foster, but Ngongba II’s foot soreness is a red flag. Duke’s bench depth is compromised, and Ohio State has a travel advantage. Something doesn't add up."
-   Win probability: Duke 0.58 ± 0.15
-   *Key stat: Duke's Caleb Foster (8.5 PPG) and Patrick Ngongba II (10.7 PPG) are both compromised.*
-
-📜 **ORACLE**: "1v8 base rate is 79.1% since 1985. Duke's efficiency edge reminds me of 2015 Kentucky before upset. Foster injury creates vulnerability."
-   Win probability: Duke 0.72 ± 0.12
-   *Key stat: 1-seeds are 79.1% vs 8-seeds historically, but 8-seeds with 20+ wins upset at 25% rate*
-
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — Duke just won 12 straight, including their conference tournament, and they're peaking RIGHT NOW. Ohio State lost early in theirs. Momentum is real!"
-   Win probability: Duke 0.62 ± 0.15
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — Duke is PEAKING, winning the ACC Tournament and riding a 12-game streak. Ohio State stumbled in their conference tourney. Momentum is REAL!"
+   Win probability: Duke 0.70 ± 0.15
    *Key stat: Duke: W12 streak*
 
 
@@ -38,83 +38,83 @@
 
 🦅 **TEMPO HAWK** (position: WEAKENED):
 
-   *Disagrees with:* Oracle relies on raw historical percentages without accounting for pace neutralization — when tempo is identical, talent gaps compress significantly.
+   *Disagrees with:* Road Dog overvalues experience when tempo neutrality means Duke's talent advantage gets maximum exposure over equal possessions.
 
-   *Agrees with:* Iron Curtain correctly identifies that Duke's defensive advantage travels, which matters more than offensive efficiency in neutral-site games.
+   *Agrees with:* Iron Curtain correctly identifies Duke's defensive suffocation as the key — their .392 opponent FG% will dominate equal-possession warfare.
 
-   "Oracle's historical base rates ignore tempo context. When identical-pace teams meet, efficiency gaps shrink — Duke's edge becomes marginal, not decisive."
-   Updated probability: Duke 0.65 ± 0.14
+   "Road Dog misses the point — experience doesn't matter when pace is identical. Duke's efficiency edge gets full 70 possessions to compound."
+   Updated probability: Duke 0.75 ± 0.13
 
 🛡️ **IRON CURTAIN** (position: WEAKENED):
 
-   *Disagrees with:* Glass Cannon ignores that Duke's three-point defense is elite at 29.8% allowed - Ohio State's 36.3% shooting means nothing against that suffocating perimeter coverage.
+   *Disagrees with:* Glass Cannon ignores that Duke shoots threes BETTER than Ohio State - variance favors the superior shooting team.
 
-   *Agrees with:* Whisper's injury concerns are valid - losing Foster hurts Duke's perimeter defense depth when they need every stop in March.
+   *Agrees with:* Oracle's historical data confirms what I see - injured 1-seeds are vulnerable, just like Duke's compromised frontcourt.
 
-   "Glass Cannon is WRONG. Ohio State shoots 36.3% from three but Duke allows just 29.8% from deep. Defense travels, offense disappears."
-   Updated probability: Duke 0.62 ± 0.16
+   "Glass Cannon's wrong - three-point variance cuts BOTH ways. Duke shoots 38.1% from deep, better than Ohio State's 36.3%. Defense still travels."
+   Updated probability: Duke 0.68 ± 0.14
 
 💥 **GLASS CANNON** (position: FLIPPED) `[gemini]`:
 
-   *Disagrees with:* Oracle keeps talking base rates, but this isn't average! Ohio State's shooting variance makes this a totally different game, not just another 1v8.
+   *Disagrees with:* Iron Curtain's focus on Duke's defense ignores that a hot-shooting team like Ohio State, hitting 36.3% from three, can make any defense look porous.
 
-   *Agrees with:* Iron Curtain gets it! He flags Foster's injury hurting perimeter defense, which totally opens the door for Ohio State's shooters to get hot!
+   *Agrees with:* My view is reinforced by my own initial analysis! Ohio State's shooting variance is too high for Duke to feel safe. This screams upset!
 
-   "Everyone's missing the point! Duke's 3PT defense is allowing 34.6%, so Ohio State's 36.3% from deep is a HUGE advantage. This screams upset!"
+   "Iron Curtain keeps talking defense! Ohio State's 36.3% from three is the equalizer. When they're on, Duke's defense is meaningless. One hot night changes everything!"
    Updated probability: Duke 0.48 ± 0.16
 
 🐺 **ROAD DOG** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk's focus on tempo and efficiency misses the point. You can't measure heart or the weight of March with a spreadsheet.
+   *Disagrees with:* Streak loves momentum, but Duke's W12 streak means nothing if their young roster hasn't faced real March adversity.
 
-   *Agrees with:* Whisper's point about Ngongba II's foot soreness and compromised depth reinforces my view that Duke's youth will struggle.
+   *Agrees with:* Whisper gets it. Duke's frontcourt depth issues, combined with their youth, is a recipe for an early exit.
 
-   "Tempo Hawk loves numbers, but experience trumps stats. Ohio State's Bruce Thornton has played 100+ games. Duke's young talent will crack under tournament pressure."
+   "I've seen this movie before. Ohio State's seniors, like Bruce Thornton with 130+ games, won't fold. Duke's youth (experience 3.0) will crack under March pressure."
    Updated probability: Duke 0.58 ± 0.17
 
 👁️ **WHISPER** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk talks about identical tempos, but travel fatigue impacts pace more than any stat sheet. They're missing the physical toll.
+   *Disagrees with:* Glass Cannon misses the point; Ohio State's potential for a hot shooting night is irrelevant if Duke's compromised frontcourt can't defend inside for 40 minutes.
 
-   *Agrees with:* Glass Cannon gets it. Variance is real, and compromised depth makes Duke more vulnerable to an off night or foul trouble nobody's talking about.
+   *Agrees with:* Road Dog sees the experience gap, but it's compounded by Duke's hidden injury woes, making their youth even more vulnerable.
 
-   "Everyone's missing the deeper fatigue. Duke had 2 rest days, traveling 1500 miles. Ohio State had 4 rest days and only 300 miles. That's a huge hidden disadvantage."
-   Updated probability: Duke 0.52 ± 0.17
+   "Everyone's missing the deeper issue: Duke's still without Ngongba II, a key piece of their frontcourt rotation. Their depth is thin, and that's a problem Ohio State can exploit."
+   Updated probability: Duke 0.58 ± 0.17
 
-📜 **ORACLE** (position: WEAKENED):
+📜 **ORACLE** (position: STRENGTHENED):
 
-   *Disagrees with:* Streak thinks momentum matters but 2018 Virginia's 31-game streak didn't prevent the biggest upset in tournament history.
+   *Disagrees with:* Road Dog overvalues experience when Duke's roster construction mirrors 2012 Syracuse and 2018 Virginia - talented but thin 1-seeds that fell early.
 
-   *Agrees with:* Whisper's injury intel on Ngongba II adds another vulnerability I hadn't considered beyond Foster.
+   *Agrees with:* Whisper correctly identified the Ngongba injury as a hidden vulnerability that compounds Duke's frontcourt depth issues beyond just Foster.
 
-   "Streak ignores that 12-game win streaks mean nothing historically. 2018 Virginia won 31 straight, lost to 16-seed UMBC. Momentum is a myth."
-   Updated probability: Duke 0.65 ± 0.15
+   "Road Dog's experience argument ignores that 1-seeds with injury concerns lose 35% more often. Duke's frontcourt depth issues are structural, not fluky."
+   Updated probability: Duke 0.75 ± 0.12
 
-🔥 **STREAK** (position: STRENGTHENED) `[gemini]`:
+🔥 **STREAK** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Oracle wants to talk about historical base rates. That's stale! What have you done LATELY? Duke just won 12 straight, that's what matters.
+   *Disagrees with:* Tempo Hawk's focus on identical tempo misses the point; momentum is about recent performance, not just pace.
 
-   *Agrees with:* Glass Cannon highlights Ohio State's 36.3% from three. That's good, but Duke's defense has been stifling teams on this run. Momentum trumps variance.
+   *Agrees with:* Glass Cannon's point about Ohio State's 3-point shooting variance is a real concern for Duke, even with their streak.
 
-   "Oracle wants to talk about 1985. I want to talk about LAST TUESDAY. Duke's 12-game win streak and conference title proves they're peaking, Ohio State is not."
-   Updated probability: Duke 0.65 ± 0.12
+   "Tempo Hawk wants to talk about pace. I care about who's winning! Duke's W12 streak means they're playing their best RIGHT NOW, regardless of tempo. Ohio State is fading."
+   Updated probability: Duke 0.65 ± 0.17
 
 
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Duke 0.60 ± 0.16
+Combined probability: Duke 0.64 ± 0.17
 
-**PICK: Duke** (60% — lean, high uncertainty)
+**PICK: Duke** (64% — lean, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Glass Cannon flipped to Ohio State after realizing Duke allows 34.6% from three, not the elite 29.8% Iron Curtain claimed. But six agents still favor Duke despite injury concerns. The Blue Devils' talent edge overcomes Foster's absence. March rewards depth, not desperation."
+🎼 **THE CONDUCTOR**: "Glass Cannon flipped to Ohio State on shooting variance fears, but Oracle and Streak won by identifying Duke's structural advantages despite injury concerns. Six agents weakened but still favor Duke's efficiency edge. Glass Cannon's flip shows real upset potential exists."
 
-   *Key factor: Injury impact on Duke's depth*
+   *Key factor: Duke's massive efficiency advantage vs frontcourt depth concerns*
 
-   *Most weighted: Whisper*
+   *Most weighted: Oracle*
 
-   *Dissent report: Glass Cannon flipped after discovering Duke's actual 3PT defense numbers, seeing Ohio State's shooting as an upset catalyst. However, talent gaps still matter more than variance in 1v8 matchups.*
+   *Dissent report: Glass Cannon flipped entirely on three-point variance, arguing Ohio State's 36.3% shooting can neutralize Duke's defense on a hot night - a legitimate upset path that creates genuine uncertainty*
 
 
 ---

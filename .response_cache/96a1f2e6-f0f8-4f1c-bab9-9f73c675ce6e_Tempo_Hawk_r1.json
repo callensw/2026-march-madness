@@ -1,0 +1,7 @@
+STEP 1 — UPSET THESIS: Vanderbilt controls pace at 67.1 possessions vs Iowa State's 70.3, forcing a grind-it-out game that neutralizes ISU's talent edge. Fewer possessions = more variance = underdog's friend.
+
+STEP 2 — RATE THE UPSET THESIS: 7/10. Vandy has successfully slowed down every opponent in their run, and their elite defense (89.4 adj_d vs ISU's 87.3) gives them the tools to dictate tempo in a Final Four setting.
+
+STEP 3 — PICK: This is exactly the pace mismatch scenario where the slower team can control the game. Vanderbilt's 3.2 possession advantage per game is significant - that's 6-9 fewer scoring opportunities for Iowa State's superior offense. In a Final Four, every possession matters exponentially more.
+
+{"team_a_win_prob": 0.52, "uncertainty": 0.18, "reasoning": "Vanderbilt's pace control neutralizes Iowa State's talent edge. Fewer possessions favor disciplined underdog in Final Four pressure.", "key_stat": "Vanderbilt forces 67.1 tempo vs Iowa State's preferred 70.3"}

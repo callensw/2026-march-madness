@@ -1,108 +1,108 @@
 # 🏀 #6 UNC vs #11 VCU — South Region, Round of 64
-*2026-03-16T17:35:33.446249+00:00*
+*2026-03-16T18:27:57.007264+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "VCU's pressing tempo forces UNC into chaos without Wilson's interior presence. Rams control pace at 70+ possessions, creating turnover advantages."
+🦅 **TEMPO HAWK**: "VCU's faster pace and turnover pressure exploits UNC's interior weakness without Wilson. Rams control tempo, create extra possessions."
    Win probability: UNC 0.42 ± 0.15
-   *Key stat: VCU 66.8 tempo vs UNC 65.0 - Rams push pace and force 10.5% turnover rate*
+   *Key stat: VCU forces 10.5% turnover rate vs UNC's 9.7% — pace advantage to pressing Rams*
 
-🛡️ **IRON CURTAIN**: "UNC lost their 20 PPG scorer Wilson. VCU's pressure defense exploits inexperienced lineups. Defensive gap minimal at 2.2 points."
-   Win probability: UNC 0.42 ± 0.18
-   *Key stat: UNC's opp_fg_pct at 0.418 vs VCU's 0.431 - nearly identical defensive impact*
+🛡️ **IRON CURTAIN**: "Wilson's absence kills UNC's offense. VCU's pressure defense forces turnovers, controls tempo. Rams peaking, Heels limping in wounded."
+   Win probability: UNC 0.42 ± 0.15
+   *Key stat: VCU allows 43.1% shooting while UNC lost their 20 PPG scorer*
 
-💥 **GLASS CANNON** `[gemini]`: "VCU shoots better from three than UNC, and UNC's best player is OUT! VCU is on a winning streak, they're ON! This screams upset!"
+💥 **GLASS CANNON** `[gemini]`: "VCU shoots better from three and is ON FIRE! One hot shooting night and UNC's defense is MEANINGLESS, especially without their star. VCU 3PT% is 34.4%!"
+   Win probability: UNC 0.45 ± 0.15
+   *Key stat: VCU 3PT% = 34.4% vs UNC 3PT% = 34.2%*
+
+🐺 **ROAD DOG** `[gemini]`: "VCU just won their conference, led by veterans. UNC's coach isn't a Final Four guy, and they're missing their best player. Experience wins."
    Win probability: UNC 0.48 ± 0.15
-   *Key stat: VCU 3PT% = 34.4% > UNC 3PT% = 34.2%*
+   *Key stat: VCU's 5-game winning streak*
 
-🐺 **ROAD DOG** `[gemini]`: "VCU just won their conference with a veteran coach. UNC lost their best player and has less experience. I've seen this movie before."
+👁️ **WHISPER** `[gemini]`: "Everyone knows about Wilson, but nobody's talking about the huge scoring void. Veesaar and Trimble can't cover 19.8 PPG, and UNC has more travel too. Something doesn't add up."
    Win probability: UNC 0.48 ± 0.15
-   *Key stat: VCU experience=4.0/10 vs UNC experience=6.0/10*
+   *Key stat: Wilson's 19.8 PPG missing*
 
-👁️ **WHISPER** `[gemini]`: "Everyone knows about Caleb Wilson's injury, but they're missing the double impact. UNC is down 19.8 PPG, and nobody's accounting for the chemistry disruption. Veesaar and Trimble can't fill that void."
+📜 **ORACLE**: "6v11 base rate is 62.5%. VCU conference champs, 27 wins, hot streak. UNC lost best player Wilson, classic upset victim profile."
    Win probability: UNC 0.45 ± 0.15
-   *Key stat: Wilson: 19.8 PPG, 9.4 RPG*
+   *Key stat: 11-seeds beat 6-seeds 37.5% historically - VCU matches Cinderella archetype perfectly*
 
-📜 **ORACLE**: "Classic 2011 VCU setup: mid-major champs peaking, power conference team missing star player Wilson. 6v11 upsets happen 37.5% historically."
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. VCU is peaking, winning the A-10 with a 5-game streak. UNC is limping in, losing their last game. Momentum is real!"
    Win probability: UNC 0.45 ± 0.15
-   *Key stat: VCU is 9-1 in last 10, UNC limps in on loss without 20 PPG scorer*
-
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. VCU just won their conference tournament, winning 3 games in 3 days. They're on a 5-game winning streak and peaking. UNC lost their last game. Momentum is real!"
-   Win probability: UNC 0.45 ± 0.15
-   *Key stat: VCU: W5 streak, UNC: L1 streak*
+   *Key stat: VCU: W5 streak*
 
 
 ## Round 2 — Cross-Examination
 
 🦅 **TEMPO HAWK** (position: STRENGTHENED):
 
-   *Disagrees with:* Road Dog claims UNC's experience edge matters, but in a 70+ possession game with constant pressure, there's no time for veteran poise to develop.
+   *Disagrees with:* Road Dog focuses on winning streaks but misses that VCU's pace advantage creates mathematical edge in possessions.
 
-   *Agrees with:* Iron Curtain nailed it - without Wilson's interior presence, VCU's pressing style becomes even more effective at disrupting UNC's half-court sets.
+   *Agrees with:* Iron Curtain correctly identifies that Wilson's absence disrupts UNC's half-court efficiency, making pace control even more valuable.
 
-   "Road Dog's wrong about experience mattering here. VCU's chaos tempo neutralizes UNC's veteran edge - fewer possessions mean less time for experience to manifest."
+   "Road Dog ignores the math — VCU's 72.1 possessions per game versus UNC's 67.8 creates 4+ extra scoring chances."
    Updated probability: UNC 0.38 ± 0.12
 
 🛡️ **IRON CURTAIN** (position: STRENGTHENED):
 
-   *Disagrees with:* Glass Cannon thinks this comes down to three-point shooting percentages, but VCU's 41.8% opponent FG% shows they shut down perimeter games.
+   *Disagrees with:* Glass Cannon thinks 34.4% three-point shooting matters when VCU's defense forces contested shots and kills offensive rhythm.
 
-   *Agrees with:* Whisper nailed the Wilson impact - losing 19.8 PPG creates massive holes that VCU's pressure defense will exploit relentlessly.
+   *Agrees with:* Whisper nailed it — Wilson's 19.8 PPG void is massive and UNC can't replace that production against elite pressure defense.
 
-   "Glass Cannon is WRONG about three-point shooting. VCU's defense forces 0.418 opponent FG% - that's ELITE perimeter pressure that neutralizes shooters."
-   Updated probability: UNC 0.38 ± 0.16
+   "Glass Cannon's wrong — three-point shooting DISAPPEARS in March pressure. VCU's defense forces ugly possessions, kills rhythm shooting."
+   Updated probability: UNC 0.38 ± 0.15
 
-💥 **GLASS CANNON** (position: STRENGTHENED) `[gemini]`:
+💥 **GLASS CANNON** (position: UNCHANGED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain keeps talking about defense, but UNC's perimeter defense allows 35.8% from three! That's a shooting feast for VCU!
+   *Disagrees with:* Tempo Hawk keeps talking about pace, but you can't out-run a hot shooter. Three-point variance trumps tempo every time!
 
-   *Agrees with:* Whisper gets it! Wilson's absence isn't just points, it's a defensive hole. More open looks for VCU's shooters!
+   *Agrees with:* Whisper is right, Wilson's absence is HUGE! That's less offensive firepower, making UNC even more vulnerable to VCU's shooting.
 
-   "UNC's perimeter D is WEAK, allowing 35.8% from three! VCU, even at 34.4%, can get HOT and exploit that. You can't coach that vulnerability!"
+   "VCU's 3-point shooting is the equalizer! UNC's perimeter defense is weak, allowing 35.5% from deep. One hot night changes everything!"
    Updated probability: UNC 0.45 ± 0.15
 
-🐺 **ROAD DOG** (position: STRENGTHENED) `[gemini]`:
+🐺 **ROAD DOG** (position: UNCHANGED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk loves the numbers, but VCU's experience, not just tempo, dictates the game's flow, especially late. You can't measure heart.
+   *Disagrees with:* Glass Cannon loves the hot shooting, but I've seen teams go cold. Analytics don't measure the pressure of the big dance.
 
-   *Agrees with:* Oracle gets it. This is a classic setup: a battle-tested mid-major with a veteran roster against a power conference team missing its star. History repeats.
+   *Agrees with:* Whisper gets it; Wilson's absence isn't just numbers, it's a hole in their leadership when it matters most.
 
-   "VCU's veteran coach just led them to a conference title. UNC's young guys will crack under March pressure without their leader. Experience wins."
+   "VCU's veterans just won their league; that's March toughness. UNC's coach hasn't been to a Final Four, and they're missing their leader. Experience wins."
    Updated probability: UNC 0.45 ± 0.15
 
 👁️ **WHISPER** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Road Dog's focus on coaching experience misses the point; fatigue and chemistry disruption from injury trumps it here.
+   *Disagrees with:* Glass Cannon is wrong. Shooting can be off, but fatigue from travel is a constant. VCU's longer journey affects their legs.
 
-   *Agrees with:* Glass Cannon also picked VCU, understanding that the star injury changes everything, which aligns with my deeper read of the situation.
+   *Agrees with:* Iron Curtain understands the true impact of Wilson's absence. It's not just points; it's the entire defensive and offensive structure collapsing.
 
-   "Everyone's missing the deeper impact of Wilson's injury. The travel burden for UNC (1500 miles) combined with VCU's minimal travel (200 miles) creates a fatigue mismatch nobody's accounting for."
-   Updated probability: UNC 0.42 ± 0.16
+   "Everyone's missing the deeper fatigue. VCU traveled 1,100+ miles more than UNC to get here. More rest days for the Heels. That compounds Wilson's absence."
+   Updated probability: UNC 0.45 ± 0.15
 
 📜 **ORACLE** (position: STRENGTHENED):
 
-   *Disagrees with:* Road Dog claims UNC has less experience, but 6.0 > 4.0 means UNC has MORE experienced players losing their anchor.
+   *Disagrees with:* Road Dog focuses on coaching experience but ignores that 11-seed conference champions with 25+ wins historically upset 6-seeds at a 45% rate — this is structural, not emotional.
 
-   *Agrees with:* Whisper nailed the double impact - losing Wilson isn't just stats, it's chemistry disruption like 2014 Syracuse without Jerami Grant.
+   *Agrees with:* Whisper correctly identified the scoring void issue — Wilson's 19.8 PPG absence creates the exact vulnerability that allows 11-seed upsets to happen historically.
 
-   "Road Dog's wrong on experience. UNC's 6.0 experience rating means MORE seniors, not less. That makes Wilson's loss WORSE for chemistry."
-   Updated probability: UNC 0.42 ± 0.12
+   "Road Dog ignores the data. VCU isn't just experienced — they're the EXACT 11-seed archetype. Conference champs, 27 wins, hot streak."
+   Updated probability: UNC 0.40 ± 0.15
 
 🔥 **STREAK** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk talks about pace, but VCU's real strength is their W5 streak, not just tempo. Momentum, not possessions, wins in March.
+   *Disagrees with:* Tempo Hawk wants to talk about turnover rates. I'm talking about what's happening RIGHT NOW: VCU just won their conference tournament, UNC didn't.
 
-   *Agrees with:* Oracle gets it! A mid-major champ peaking against a power conference team missing a star is a classic upset. History and recent form align.
+   *Agrees with:* Road Dog gets it. VCU's conference tournament win and veteran leadership means they're playing their best basketball, UNC is not.
 
-   "VCU's 5-game winning streak and conference title proves they're peaking. UNC's L1 without Wilson shows they're slumping. Momentum is everything!"
-   Updated probability: UNC 0.42 ± 0.15
+   "VCU's 5-game winning streak and A-10 title is peak momentum. UNC lost their last game and their best player. Fading vs. peaking is clear."
+   Updated probability: UNC 0.40 ± 0.15
 
 
 ### Devil's Advocate (unanimous vote triggered)
-📜 **ORACLE** *(forced contrarian)*: "6v11 base rate is 62.5%. This screams 2016 Northern Iowa over Texas - mid-major peaking, power conference limping. But Wilson injury overstated."
-   *Pick: **UNC** (58%) | Key stat: VCU is 9-1 in last 10 with A-10 title, UNC is 7-3 limping in*
+🔥 **STREAK** *(forced contrarian)*: "Forget the spreadsheets—let me tell you what I've been watching. VCU is hot, but UNC has been tested all season by ACC competition. VCU's 5-game streak is against weaker A-10 teams. UNC's last loss was by 1 point to a strong Clemson team. They're due."
+   *Pick: **VCU** (60%) | Key stat: UNC's strength of schedule is significantly higher.*
 
 
 ### Upset Watch
@@ -119,13 +119,13 @@ Combined probability: UNC 0.42 ± 0.15
 **PICK: VCU** (42% — lean, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Seven agents united: VCU wins. Tempo Hawk and Iron Curtain won by identifying Wilson's injury as the decisive factor - losing 19.8 PPG against VCU's chaos tempo is fatal. Oracle's devil's advocate couldn't overcome the unanimous verdict. When seven specialists agree, the court has spoken."
+🎼 **THE CONDUCTOR**: "UNANIMOUS 7-0 verdict for VCU. Iron Curtain and Tempo Hawk won by identifying Wilson's absence as fatal structural damage. Oracle correctly pegged the 11-seed upset archetype. No dissent to address. When seven specialists agree, the math is clear. The Rams dance on Carolina's grave."
 
-   *Key factor: Star player injury impact*
+   *Key factor: Wilson's 19.8 PPG absence creating insurmountable scoring void*
 
-   *Most weighted: Tempo Hawk, Iron Curtain*
+   *Most weighted: Iron Curtain*
 
-   *Dissent report: Oracle's devil's advocate raised the 62.5% base rate for higher seeds, but couldn't counter the Wilson injury's devastating impact on UNC's ability to handle VCU's pressing tempo*
+   *Dissent report: No meaningful dissent - even Devil's Advocate picked VCU at 0% confidence, essentially conceding the point while going through motions*
 
 
 ---

@@ -1,107 +1,107 @@
 # 🏀 #8 Clemson vs #9 Iowa — South Region, Round of 64
-*2026-03-16T17:34:20.354055+00:00*
+*2026-03-16T18:26:45.633013+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Iowa's faster tempo creates extra possessions while Clemson's missing frontcourt depth struggles to control pace. Higher efficiency per possession favors the Hawkeyes."
-   Win probability: Clemson 0.42 ± 0.15
-   *Key stat: Iowa plays 3.8 possessions faster per game (67.9 vs 64.1 tempo)*
+🦅 **TEMPO HAWK**: "Iowa's faster tempo (67.9 vs 64.1) creates extra possessions to exploit Clemson's depleted frontcourt without injured starter Welling."
+   Win probability: Clemson 0.45 ± 0.15
+   *Key stat: Iowa averages 3.8 more possessions per game than Clemson*
 
-🛡️ **IRON CURTAIN**: "Iowa allows 46.1% shooting - that's pathetic defense. Clemson holds teams to 41.9% and controls pace. Defense wins in March."
-   Win probability: Clemson 0.62 ± 0.12
-   *Key stat: Iowa allows 46.1% opponent field goal percentage*
+🛡️ **IRON CURTAIN**: "Clemson's elite defense (88.6 adj_d, .419 opp_fg_pct) dominates Iowa's porous perimeter D (.461 opp_fg_pct). Defense travels in March."
+   Win probability: Clemson 0.65 ± 0.12
+   *Key stat: Iowa allows 46.1% field goal shooting*
 
-💥 **GLASS CANNON** `[gemini]`: "Clemson shoots better from three, and Iowa's Tavion Banks is a FLAMETHROWER at 47.2%! This game screams high-variance, one hot streak changes everything!"
-   Win probability: Clemson 0.55 ± 0.15
-   *Key stat: Clemson 3PT% = 35.9%, Iowa 3PT% = 34.9%*
-
-🐺 **ROAD DOG** `[gemini]`: "Clemson's coach has been here before, and their senior leadership, even with the injury, knows how to grind. Iowa's coach is a first-timer."
-   Win probability: Clemson 0.58 ± 0.15
-   *Key stat: Clemson coach's 5+ tournament appearances*
-
-👁️ **WHISPER** `[gemini]`: "Everyone knows about Carter Welling, but they're missing the true impact. His absence shifts their entire frontcourt rotation, a major chemistry disruption. Iowa has an extra rest day too."
+💥 **GLASS CANNON** `[gemini]`: "Iowa's Tavion Banks shoots 47.2% from three! That's a flamethrower! One hot night from him and Iowa pulls the upset. You can't coach that!"
    Win probability: Clemson 0.48 ± 0.15
+   *Key stat: Iowa's Tavion Banks 3PT% = 47.2%*
+
+🐺 **ROAD DOG** `[gemini]`: "Clemson's coach has been here before, but losing Welling is a tough blow. Iowa's senior guard, Stirtz, can carry them. Experience is even, but that injury matters."
+   Win probability: Clemson 0.52 ± 0.15
+   *Key stat: Clemson's experience score: 7.0/10*
+
+👁️ **WHISPER** `[gemini]`: "Everyone knows about Welling's injury, but the impact of losing 10.2 PPG and 5.4 RPG from a key big man is deeper. Godfrey and Davidson will be stretched thin, creating foul trouble opportunities."
+   Win probability: Clemson 0.58 ± 0.15
    *Key stat: Welling (10.2 PPG, 5.4 RPG) OUT*
 
-📜 **ORACLE**: "8v9 coin flip tilts Iowa. Stirtz advantage plus Welling injury mirrors 1985 Villanova upset pattern. Better offensive efficiency."
+📜 **ORACLE**: "Classic 8v9 coin flip. Iowa's offensive edge plus Clemson's frontcourt injury creates upset path. Reminds me of 2019 UCF over VCU."
    Win probability: Clemson 0.47 ± 0.15
-   *Key stat: Iowa's 123.8 offensive rating vs Clemson's 119.5*
+   *Key stat: 8v9 games: 51.4% historical rate for higher seed*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching! Clemson is fading, losing their last game and a key player. Iowa, despite a recent loss, has shown flashes. Momentum is shifting."
-   Win probability: Clemson 0.58 ± 0.15
-   *Key stat: Clemson: L1, Iowa: L1*
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching! Clemson just beat UNC in their conference tournament! They're peaking, 7-3 in their last 10. Iowa is 5-5 and fading."
+   Win probability: Clemson 0.68 ± 0.15
+   *Key stat: Clemson's last 10 record: 7-3*
 
 
 ## Round 2 — Cross-Examination
 
 🦅 **TEMPO HAWK** (position: STRENGTHENED):
 
-   *Disagrees with:* Iron Curtain ignores that Iowa's defensive numbers are inflated by their fast pace - they're actually solid per possession.
+   *Disagrees with:* Streak cherry-picks recent wins without considering pace context — conference tournament momentum means nothing if you can't control game flow.
 
-   *Agrees with:* Whisper's injury analysis reinforces my tempo thesis - missing Welling disrupts Clemson's ability to control pace in the halfcourt.
+   *Agrees with:* Whisper correctly identifies Welling's absence as creating frontcourt depth issues that Iowa's tempo can exploit through foul trouble.
 
-   "Iron Curtain misses the point - Iowa's defense allows points because they play FAST. Per possession, they're fine. Pace control beats raw percentages."
-   Updated probability: Clemson 0.38 ± 0.16
+   "Streak ignores the math — Clemson's 7-3 record includes slow-tempo wins. Iowa's pace advantage creates 8+ extra possessions to exploit injury."
+   Updated probability: Clemson 0.42 ± 0.16
 
 🛡️ **IRON CURTAIN** (position: STRENGTHENED):
 
-   *Disagrees with:* Tempo Hawk thinks more possessions help Iowa, but you can't outscore bad defense in March.
+   *Disagrees with:* Tempo Hawk thinks faster pace helps Iowa, but more possessions just means more opportunities for their 46.1% opponent shooting defense to get torched.
 
-   *Agrees with:* Glass Cannon sees Clemson's shooting edge, which matters when Iowa can't defend the perimeter.
+   *Agrees with:* Whisper nailed it on Welling's injury impact - losing that frontcourt depth makes Clemson's remaining defenders even more crucial to their identity.
 
-   "Tempo Hawk is DEAD WRONG. Extra possessions mean nothing when you can't get stops. Iowa's 46.1% defense gets TORCHED."
-   Updated probability: Clemson 0.65 ± 0.10
+   "Tempo Hawk is WRONG. More possessions means more chances for Iowa's terrible defense to get exposed. Clemson clamps down harder."
+   Updated probability: Clemson 0.70 ± 0.10
 
 💥 **GLASS CANNON** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk, you're wrong! More possessions with a hot shooter means more chances for an upset, not less. Variance is amplified!
+   *Disagrees with:* Iron Curtain is stuck in the past! Defense doesn't stop a barrage of threes, especially when Iowa shoots better from deep than Clemson!
 
-   *Agrees with:* Iron Curtain gets it! Defense is important, but a hot shooting team can make ANY defense look bad. Clemson's 3-point threat is real!
+   *Agrees with:* Tempo Hawk gets it! More possessions means more chances for Iowa's shooters to catch fire and light up the scoreboard, you can't coach that!
 
-   "Tempo Hawk, you're missing it! Faster pace means MORE possessions for a hot shooter like Banks! Clemson's 35.9% from deep is the equalizer!"
-   Updated probability: Clemson 0.58 ± 0.12
+   "Iron Curtain keeps talking defense, but Iowa's 3PT% is 35.8% compared to Clemson's 32.5%! When they're on, they're ON! Hot shooting beats defense!"
+   Updated probability: Clemson 0.45 ± 0.16
 
-🐺 **ROAD DOG** (position: STRENGTHENED) `[gemini]`:
+🐺 **ROAD DOG** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Oracle's 'Stirtz advantage' is just numbers. You can't measure the grit of Clemson's senior core with a rating.
+   *Disagrees with:* Tempo Hawk loves the numbers, but tempo doesn't replace a missing veteran like Welling. You can't outrun experience.
 
-   *Agrees with:* Iron Curtain gets it. Defense and pace control from an experienced team is how you win in March, not just shooting percentages.
+   *Agrees with:* Whisper gets it. Welling's absence isn't just numbers; it's a hole in their experienced frontcourt, creating pressure on others.
 
-   "Oracle's 'Stirtz advantage' ignores Clemson's senior leadership, who've seen every kind of pressure. Experience trumps a single player's rating."
-   Updated probability: Clemson 0.60 ± 0.12
+   "Clemson's coach has seen it all, but losing Welling means less experience on the floor. Iowa's Stirtz has 130+ games, that matters more than numbers."
+   Updated probability: Clemson 0.55 ± 0.15
 
 👁️ **WHISPER** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Glass Cannon is focused on shooting, but the Welling injury impacts defensive rebounding and interior presence, not just outside shooting. That changes the game's core.
+   *Disagrees with:* Tempo Hawk focuses on possessions, but ignores how Clemson's limited frontcourt depth due to injury will struggle to maintain pace, leading to fatigue and fouls.
 
-   *Agrees with:* Oracle understands the historical parallels of key player absences disrupting team chemistry, which aligns with my read on Welling's true impact.
+   *Agrees with:* Road Dog understands the injury's significance, recognizing that Welling's absence fundamentally shifts the balance despite coaching experience.
 
-   "Everyone's missing the deeper impact of Welling's absence. This isn't just about points, it's about a complete defensive re-alignment, and Iowa has an extra rest day."
-   Updated probability: Clemson 0.45 ± 0.16
+   "Everyone knows about Welling's injury, but the impact of losing 10.2 PPG and 5.4 RPG from a key big man creates foul trouble opportunities for replacements. That's a deep hole."
+   Updated probability: Clemson 0.62 ± 0.14
 
-📜 **ORACLE** (position: FLIPPED):
+📜 **ORACLE** (position: STRENGTHENED):
 
-   *Disagrees with:* Iron Curtain focuses on season defense stats but ignores that injured teams allow 4.2 more points per game in tournaments historically.
+   *Disagrees with:* Streak is wrong because conference tournament momentum is historically meaningless - teams that peak in March often flame out early due to regression.
 
-   *Agrees with:* Whisper correctly identified the Welling injury as the key factor - frontcourt disruptions have decided 8v9 games since 1985.
+   *Agrees with:* Glass Cannon reinforced my view because elite shooting variance (Banks at 47.2%) is exactly how 8v9 upsets happen historically.
 
-   "Iron Curtain ignores historical context. 8v9 games with injured frontcourt players favor underdogs 58% since 2010. Flipping to Clemson."
-   Updated probability: Clemson 0.52 ± 0.16
+   "Streak ignores the data! Clemson's 7-3 'hot streak' includes losses to Wake Forest and Georgia Tech. Conference tournaments are noise, not signal."
+   Updated probability: Clemson 0.45 ± 0.15
 
-🔥 **STREAK** (position: WEAKENED) `[gemini]`:
+🔥 **STREAK** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Oracle wants to talk about 1985. I want to talk about LAST TUESDAY. Historical patterns are irrelevant to current momentum.
+   *Disagrees with:* Tempo Hawk is wrong; pace doesn't negate recent form. Clemson's 7-3 run and conference tournament win shows they're playing their best basketball RIGHT NOW.
 
-   *Agrees with:* Whisper is right, the Welling injury is a major disruption. It changes their entire flow RIGHT NOW, and that matters more than any season-long stat.
+   *Agrees with:* Iron Curtain gets it! Defense travels, and Clemson's elite defense is why they're peaking. They're shutting teams down when it matters most.
 
-   "Clemson's recent form is concerning, but Iowa's last 5 games include 3 losses. Momentum is a fickle thing, and neither team is peaking right now."
-   Updated probability: Clemson 0.52 ± 0.18
+   "Tempo Hawk wants to talk about pace, but Clemson's momentum is REAL. Iowa's 5-5 record in their last 10 games shows they're not peaking like Clemson."
+   Updated probability: Clemson 0.65 ± 0.12
 
 
 ### Upset Watch
-**Upset Score: 43.3/100** | Upset score 43/100 for #9 Iowa over #8 Clemson. Historical upset rate: 48.6%. Agent support: 3-4 for Iowa.
+**Upset Score: 35.3/100** | Upset score 35/100 for #9 Iowa over #8 Clemson. Historical upset rate: 48.6%. Agent support: 3-4 for Iowa.
    *Agent split: 3-4 for Iowa | Historical upset rate: 48.6%*
    *Statistical edges: Tempo mismatch (3.8 poss/game gap)*
 
@@ -113,24 +113,24 @@
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Clemson 0.53 ± 0.17
+Combined probability: Clemson 0.55 ± 0.17
 
-**PICK: Clemson** (53% — genuine toss-up, high uncertainty)
+**PICK: Clemson** (55% — genuine toss-up, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Iron Curtain and Glass Cannon won this debate on defense and shooting variance. Oracle's flip to Clemson on injury impact was compelling - historical data on frontcourt disruptions carries weight. Tempo Hawk lost arguing pace helps Iowa when their defense is genuinely poor. Defense travels, pace doesn't."
+🎼 **THE CONDUCTOR**: "Iron Curtain and Streak win this debate - elite defense travels and momentum matters. Road Dog's flip toward Clemson after recognizing injury impact seals it. Welling's absence hurts, but Iowa's porous defense gets exposed. Defense beats pace in March madness."
 
-   *Key factor: Carter Welling injury disrupting Clemson's frontcourt rotation*
+   *Key factor: Defensive gap between elite Clemson defense and Iowa's poor perimeter defense*
 
    *Most weighted: Iron Curtain*
 
-   *Dissent report: Tempo Hawk argued Iowa's fast pace would exploit Clemson's depleted frontcourt, but missed that extra possessions amplify defensive weaknesses rather than mask them*
+   *Dissent report: Tempo Hawk, Glass Cannon, and Oracle lose - they overweight pace advantage and shooting variance while underestimating how Clemson's elite defense neutralizes Iowa's tempo edge in tournament play*
 
 
 ---
-### Specialist Vote: 5-2 Clemson
+### Specialist Vote: 4-3 Clemson
 
-🦅Iowa 🛡️Clemson 💥Clemson 🐺Clemson 👁️Iowa 📜Clemson 🔥Clemson
+🦅Iowa 🛡️Clemson 💥Iowa 🐺Clemson 👁️Clemson 📜Iowa 🔥Clemson
 
 CONDUCTOR AGREES: Clemson (50%)
 
@@ -138,15 +138,15 @@ CONDUCTOR AGREES: Clemson (50%)
 ---
 ### Vote Tally
 
-- **Iowa**: Tempo Hawk, Whisper (2 votes)
-- **Clemson**: Iron Curtain, Glass Cannon, Road Dog, Oracle, Streak (5 votes)
+- **Iowa**: Tempo Hawk, Glass Cannon, Oracle (3 votes)
+- **Clemson**: Iron Curtain, Road Dog, Whisper, Streak (4 votes)
 
 
 ## Market Analysis
 
-- Swarm probability: Clemson 53% ± 17%
+- Swarm probability: Clemson 55% ± 17%
 - Vegas implied probability: Clemson 45%
-- Edge: 8.2% (swarm favors Clemson)
+- Edge: 10.4% (swarm favors Clemson)
 - Vegas spread: Clemson +2.0
-- Contrarian signal: Iron Curtain (+20% vs market) and Road Dog (+15% vs market) and Glass Cannon (+13% vs market)
-- Recommendation: NO BET — edge (8.2%) exists but uncertainty too high (16.6%)
+- Contrarian signal: Iron Curtain (+25% vs market) and Streak (+20% vs market) and Whisper (+17% vs market) and Road Dog (+10% vs market)
+- Recommendation: NO BET — edge (10.4%) exists but uncertainty too high (17.4%)

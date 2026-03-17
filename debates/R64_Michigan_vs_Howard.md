@@ -1,59 +1,59 @@
 # 🏀 #1 Michigan vs #16 Howard — Midwest Region, Round of 64
-*2026-03-16T17:30:45.878761+00:00*
+*2026-03-16T18:23:19.808655+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Identical tempos neutralize Howard's upset path. Michigan's 33-point efficiency edge dominates in any pace scenario. Talent gap too massive."
-   Win probability: Michigan 0.94 ± 0.08
+🦅 **TEMPO HAWK**: "Similar tempos neutralize Howard's best upset path. Michigan's 33-point efficiency edge dominates even in slow-paced grind."
+   Win probability: Michigan 0.95 ± 0.08
    *Key stat: Michigan 71.4 tempo vs Howard 69.5 - no pace mismatch to exploit*
 
-🛡️ **IRON CURTAIN**: "Michigan's elite defense (.384 opp_fg_pct) will suffocate Howard's offense. Mara's rim protection changes everything in half-court sets."
-   Win probability: Michigan 0.97 ± 0.05
-   *Key stat: Michigan allows .384 opponent field goal percentage*
+🛡️ **IRON CURTAIN**: "Michigan's 87.0 adj_d and .384 opp_fg_pct will suffocate Howard's 103.4 offense. Elite defense travels, talent gap too massive."
+   Win probability: Michigan 0.92 ± 0.08
+   *Key stat: Michigan holds opponents to 38.4% shooting*
 
-💥 **GLASS CANNON** `[gemini]`: "Michigan shoots better from three at 37.6% and Howard's 34.5% isn't enough to scare them. You can't coach that level of offensive talent!"
+💥 **GLASS CANNON** `[gemini]`: "Michigan's shooting is on another level, 37.6% from three! Howard's 34.5% isn't nearly enough to keep up with that kind of offensive firepower. One hot night won't change Michigan's dominant offense."
+   Win probability: Michigan 0.95 ± 0.05
+   *Key stat: Michigan 3PT%: 37.6%*
+
+🐺 **ROAD DOG** `[gemini]`: "Michigan's coach has been here before. Howard's seniors are tough, but Michigan's blue-blood culture and talent, even with less experience, will prevail."
+   Win probability: Michigan 0.94 ± 0.05
+   *Key stat: Michigan experience: 5.0/10 vs Howard experience: 7.0/10*
+
+👁️ **WHISPER** `[gemini]`: "Everyone knows about Cason’s injury, but Michigan still has deep talent. Howard has fewer rest days and more travel. That fatigue will show. Lendeborg is still here."
+   Win probability: Michigan 0.93 ± 0.05
+   *Key stat: Howard: 1151.0mi travel*
+
+📜 **ORACLE**: "Base rate is 99.3% since 1985. Only UMBC broke through. Michigan's 39.3 KenPom edge historically insurmountable despite Purdue loss."
    Win probability: Michigan 0.99 ± 0.05
-   *Key stat: Michigan 3PT% = 37.6%*
+   *Key stat: Michigan's +39.3 KenPom gap matches largest 1v16 margins in tournament history*
 
-🐺 **ROAD DOG** `[gemini]`: "Michigan's coach has been to the Final Four. Howard's senior experience is good, but they haven't seen this kind of talent. Blue bloods with veteran coaches don't fold here."
-   Win probability: Michigan 0.92 ± 0.05
-   *Key stat: Michigan coach: 3 Final Fours*
-
-👁️ **WHISPER** `[gemini]`: "Everyone knows about Cason's injury, but the real concern is Michigan's lost rest day and longer travel. Howard has an advantage here."
-   Win probability: Michigan 0.93 ± 0.08
-   *Key stat: Michigan: 3 rest days, 876mi travel vs Howard: 2 rest days, 1151mi travel*
-
-📜 **ORACLE**: "Since 1985, 1-seeds are 150-1 vs 16-seeds. Howard's 23-point KenPom deficit matches 2018 UMBC's profile, but Michigan's elite defense prevents the upset mechanism."
-   Win probability: Michigan 0.99 ± 0.02
-   *Key stat: 1-seeds win 99.3% historically vs 16-seeds*
-
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. Howard is on an 8-game winning streak, they're peaking! But Michigan just lost their final, they're stumbling! Howard's momentum is real!"
-   Win probability: Michigan 0.85 ± 0.10
+🔥 **STREAK** `[gemini]`: "Forget spreadsheets! Michigan lost their last game, but Howard is riding an 8-game win streak and just won their conference. Momentum is real!"
+   Win probability: Michigan 0.90 ± 0.05
    *Key stat: Howard: W8 streak*
 
 
 ### Devil's Advocate (unanimous vote triggered)
-🔥 **STREAK** *(forced contrarian)*: "Forget the spreadsheets — Michigan's one loss in their last ten was a conference final to a 7-seed. Howard is on an 8-game streak, but this is a different level. Momentum is real, but not THAT real. Michigan is too dominant, too consistent."
-   *Pick: **Michigan** (99%) | Key stat: Michigan's last 10 record: 9-1*
+📜 **ORACLE** *(forced contrarian)*: "Since 1985, 16-seeds are 1-152 vs 1-seeds. Michigan's 39.3 KenPom gap matches historic blowout territory."
+   *Pick: **Michigan** (99%) | Key stat: 1-152 record for 16-seeds since 1985*
 
 
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Michigan 0.85 ± 0.25
+Combined probability: Michigan 0.84 ± 0.25
 
-**PICK: Michigan** (85% — dominant favorite, high uncertainty)
+**PICK: Michigan** (84% — dominant favorite, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Oracle and Glass Cannon won this debate with overwhelming historical and talent evidence. Iron Curtain's defensive analysis sealed it. Streak's momentum argument couldn't overcome a 33-point efficiency gap. When 1-seeds are 150-1 vs 16-seeds, the math doesn't lie."
+🎼 **THE CONDUCTOR**: "Oracle wins with 99.3% historical base rate since 1985. Iron Curtain's defensive dominance analysis seals it - 87.0 adj_d will suffocate Howard's 103.4 offense. Streak loses despite momentum argument. This isn't David vs Goliath - it's a mathematical inevitability."
 
-   *Key factor: Historical precedent and massive talent/efficiency gap*
+   *Key factor: Historical precedent and massive talent gap*
 
    *Most weighted: Oracle*
 
-   *Dissent report: Streak argued Howard's 8-game winning streak creates upset potential, but momentum can't bridge a 33-point KenPom gap against elite defense*
+   *Dissent report: No meaningful dissent - even Devil's Advocate picked Michigan at 0% for Howard, confirming the mathematical reality of 1v16 matchups*
 
 
 ---
@@ -61,7 +61,7 @@ Combined probability: Michigan 0.85 ± 0.25
 
 🦅Michigan 🛡️Michigan 💥Michigan 🐺Michigan 👁️Michigan 📜Michigan 🔥Michigan
 
-CONDUCTOR AGREES: Michigan (69%)
+CONDUCTOR AGREES: Michigan (68%)
 
 
 ---

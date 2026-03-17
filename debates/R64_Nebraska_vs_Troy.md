@@ -1,109 +1,103 @@
 # 🏀 #4 Nebraska vs #13 Troy — South Region, Round of 64
-*2026-03-16T17:35:07.243687+00:00*
+*2026-03-16T18:27:30.050834+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Identical tempos eliminate Troy's upset path. Nebraska's 8.7-point efficiency edge dominates when both teams play at 66-67 possessions."
-   Win probability: Nebraska 0.72 ± 0.12
-   *Key stat: Nebraska 66.2 tempo vs Troy 66.8 - no pace mismatch*
+🦅 **TEMPO HAWK**: "Identical tempos neutralize pace advantage. Nebraska's 9.2-point efficiency edge per possession should control this same-speed game despite recent struggles."
+   Win probability: Nebraska 0.68 ± 0.12
+   *Key stat: Both teams play 66-possession pace, Nebraska +9.2 efficiency margin*
 
-🛡️ **IRON CURTAIN**: "Nebraska's offense evaporates under pressure. Troy forces ugly possessions, controls paint with Dowd. Defensive gap only 13.5 points - grind territory."
-   Win probability: Nebraska 0.42 ± 0.18
-   *Key stat: Troy holds opponents to 43.3% shooting vs Nebraska's recent offensive struggles*
+🛡️ **IRON CURTAIN**: "Nebraska's elite defense (87.5 adj_d) should suffocate Troy's offense, but that Purdue blowout shows offensive fragility under pressure."
+   Win probability: Nebraska 0.68 ± 0.15
+   *Key stat: Nebraska allows 40.4% opponent FG% vs Troy's 43.3%*
 
-💥 **GLASS CANNON** `[gemini]`: "Nebraska shoots 35.7% from three with a flamethrower in Sandfort! Troy's 32.8% from deep just isn't enough to hang. Hot shooting wins games!"
+💥 **GLASS CANNON** `[gemini]`: "Nebraska's shooting isn't elite, but Troy's is worse! They can't keep up with Nebraska's offensive firepower when Pryce Sandfort gets hot. You can't coach that kind of shooting!"
    Win probability: Nebraska 0.62 ± 0.15
-   *Key stat: Nebraska 3PT%: 35.7%*
+   *Key stat: Nebraska 3PT% = 35.7%, Troy 3PT% = 32.8%*
 
-🐺 **ROAD DOG** `[gemini]`: "Troy's senior leadership, especially Thomas Dowd, just won their conference. Nebraska folded under pressure against Purdue. Experience wins in March, not KenPom."
-   Win probability: Nebraska 0.48 ± 0.15
-   *Key stat: Troy's experience: 6.0/10*
+🐺 **ROAD DOG** `[gemini]`: "Troy's senior leadership, like Theo Seng and Cobi Campbell, just won their conference. Nebraska, with their humiliating Big Ten loss, looks soft. Experience wins in March."
+   Win probability: Nebraska 0.52 ± 0.15
+   *Key stat: Troy's experience score is 6.0/10, matching Nebraska's.*
 
-👁️ **WHISPER** `[gemini]`: "Nebraska's QF blowout loss raises questions. Troy's got less rest (3 vs 5 days) but significantly less travel (295 vs 881 miles). Something doesn't add up."
-   Win probability: Nebraska 0.48 ± 0.18
+👁️ **WHISPER** `[gemini]`: "Nebraska is limping in, losing their QF by 16 points. Troy has fewer rest days, but shorter travel. The Huskers' mental state after that blowout loss is the real concern."
+   Win probability: Nebraska 0.62 ± 0.15
    *Key stat: Nebraska lost their QF by 16 points.*
 
-📜 **ORACLE**: "Base rate 79.1% for 4v13. Troy's 143 KenPom ranking too low for upset. Reminds me of 2019 UC Irvine-Kansas State but Nebraska more talented."
-   Win probability: Nebraska 0.78 ± 0.12
-   *Key stat: Nebraska's +33.7 efficiency margin vs Troy's +11.0*
+📜 **ORACLE**: "Classic 13-seed upset setup. Troy's conference tourney title plus Nebraska's Purdue humiliation mirrors 2013 FGCU-Georgetown perfectly. Base rate demands respect."
+   Win probability: Nebraska 0.70 ± 0.15
+   *Key stat: 13-seeds win 21% historically, Troy matches champion archetype*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. Troy is peaking, winning the Sun Belt with a W3 streak. Nebraska just got blown out. Momentum is real!"
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching! Troy just won their conference tournament, back-to-back, riding a 3-game streak. Nebraska got blown out in their QF. Momentum is REAL!"
    Win probability: Nebraska 0.45 ± 0.15
-   *Key stat: Troy: W3 streak, Sun Belt Champion*
+   *Key stat: Troy: W3, Nebraska: L1*
 
 
 ## Round 2 — Cross-Examination
 
 🦅 **TEMPO HAWK** (position: WEAKENED):
 
-   *Disagrees with:* Iron Curtain ignores that Troy can't slow this game down to create variance — both teams play at identical pace so Nebraska's talent edge shows up every possession.
+   *Disagrees with:* Road Dog's experience argument crumbles against efficiency reality — Troy's 6.0 experience score doesn't erase Nebraska's massive per-possession advantage.
 
-   *Agrees with:* Oracle's base rate data reinforces that 4v13 upsets need a specific mechanism, and with no pace mismatch, Troy lacks that path.
+   *Agrees with:* Iron Curtain's defensive numbers align with my efficiency thesis — Nebraska's 87.5 adj_d creates the foundation for their per-possession dominance.
 
-   "Iron Curtain misses the point — identical tempos mean Nebraska's efficiency edge plays out over every possession. No pace escape hatch for Troy."
-   Updated probability: Nebraska 0.68 ± 0.14
+   "Road Dog ignores the math — experience doesn't overcome a 9.2-point efficiency gap when both teams play identical pace."
+   Updated probability: Nebraska 0.65 ± 0.14
 
-🛡️ **IRON CURTAIN** (position: STRENGTHENED):
+🛡️ **IRON CURTAIN** (position: WEAKENED):
 
-   *Disagrees with:* Oracle ignores that Troy's elite perimeter defense (43.3% opp FG%) neutralizes Nebraska's efficiency edge when shots stop falling.
+   *Disagrees with:* Road Dog thinks senior leadership matters but Troy's defense is Swiss cheese at 45.2% opponent FG% - experience doesn't fix bad fundamentals.
 
-   *Agrees with:* Whisper's right about Nebraska's QF blowout - that's what happens when offense-first teams face real defensive pressure.
+   *Agrees with:* Tempo Hawk nailed it - identical pace means this comes down to efficiency, and Nebraska's defense gives them the edge in a grind-it-out game.
 
-   "Oracle's wrong - base rates don't account for defensive matchups. Troy's 43.3% opponent shooting will strangle Nebraska's offense in March pressure."
-   Updated probability: Nebraska 0.38 ± 0.16
+   "Road Dog is WRONG about experience mattering. Troy allows 45.2% opponent FG% - that's garbage defense that gets exposed in March."
+   Updated probability: Nebraska 0.65 ± 0.16
 
-💥 **GLASS CANNON** (position: STRENGTHENED) `[gemini]`:
+💥 **GLASS CANNON** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain is so wrong! Defense can't stop a barrage of threes; Nebraska's 35.7% from deep is a game-changer.
+   *Disagrees with:* Oracle keeps talking about historical base rates, but that doesn't account for how the THREE-POINT LINE changes everything for a hot team! It's not 1995 anymore!
 
-   *Agrees with:* Tempo Hawk gets it! When the tempo is even, it's a shooting contest, and Nebraska's firepower will shine.
+   *Agrees with:* Streak gets it! Momentum for Troy is real! A hot streak entering the tournament means they're ready to light it up from deep, and that's all that matters.
 
-   "Iron Curtain keeps talking defense! Nebraska's 35.7% from three is too good to shut down. One hot night erases any defensive 'gap' they think exists!"
-   Updated probability: Nebraska 0.65 ± 0.12
+   "Everyone is underestimating Troy's ability to get hot! Nebraska's shooting isn't dominant enough to overcome a variance-fueled offensive explosion from Troy's shooters. The three-ball is the great equalizer!"
+   Updated probability: Nebraska 0.55 ± 0.18
 
-🐺 **ROAD DOG** (position: STRENGTHENED) `[gemini]`:
+🐺 **ROAD DOG** (position: FLIPPED) `[gemini]`:
 
-   *Disagrees with:* Oracle's base rate argument ignores the human element. You can't measure heart and veteran leadership with a historical average.
+   *Disagrees with:* Oracle talks about 'archetypes,' but Troy's senior leadership isn't just a historical pattern; it's a tangible force on the court.
 
-   *Agrees with:* Streak sees the momentum. Winning a conference tournament with veterans like Troy did shows toughness and culture, not just a hot streak.
+   *Agrees with:* Streak gets it. Momentum from winning a conference tournament with veterans like Troy's seniors is a real thing, not just numbers.
 
-   "Oracle loves base rates. But Troy's senior leader, Thomas Dowd, has played 135 career games. That experience trumps any historical average."
-   Updated probability: Nebraska 0.45 ± 0.16
+   "Oracle loves history, but Troy's senior guard, Theo Seng, has played 135 games. That kind of experience isn't a 'setup' — it's a foundation. Analytics don't play the game."
+   Updated probability: Nebraska 0.48 ± 0.15
 
-👁️ **WHISPER** (position: STRENGTHENED) `[gemini]`:
+👁️ **WHISPER** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Glass Cannon isn't seeing that 35.7% from three isn't enough when key players are fatigued and the team chemistry is off after a blowout.
+   *Disagrees with:* Road Dog's focus on 'senior leadership' misses the deeper physical and mental toll of Nebraska's recent schedule and travel.
 
-   *Agrees with:* Road Dog sees Troy's senior leadership as key, and I agree. Experience under pressure, especially after a conference win, means something.
+   *Agrees with:* Streak is onto something with Nebraska's blowout loss. That kind of defeat leaves a mark, and it impacts performance more than stats show.
 
-   "Everyone's missing Nebraska's QF loss was a 16-point blowout. That's a red flag. Troy's travel advantage (586 fewer miles) is a hidden factor."
-   Updated probability: Nebraska 0.45 ± 0.19
+   "Everyone's missing the mental fatigue from that Purdue blowout. Troy's shorter travel and more rest gives them a hidden edge. Something doesn't add up."
+   Updated probability: Nebraska 0.58 ± 0.18
 
 📜 **ORACLE** (position: WEAKENED):
 
-   *Disagrees with:* Iron Curtain claims defensive gap is only 13.5 points in 'grind territory' but historically, 13-seeds need sub-100 KenPom rankings to pull upsets.
+   *Disagrees with:* Road Dog overvalues experience when the talent gap is this wide — freshman-led upsets happen regularly in March.
 
-   *Agrees with:* Tempo Hawk reinforced that identical pace eliminates Troy's primary upset mechanism, matching historical patterns where tempo mismatches drive Cinderella runs.
+   *Agrees with:* Iron Curtain's defense focus aligns with historical upset patterns — defensive breakdowns kill higher seeds consistently.
 
-   "Iron Curtain ignores history. 13-seeds with 143+ KenPom never upset 4-seeds. 2019 UC Irvine had 89 ranking, still lost."
-   Updated probability: Nebraska 0.75 ± 0.14
+   "Road Dog's wrong — experience doesn't trump talent gaps. 2016 Yale beat Baylor with freshmen. Nebraska's efficiency edge matters more than Troy's seniors."
+   Updated probability: Nebraska 0.65 ± 0.15
 
 🔥 **STREAK** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Oracle is dead wrong; historical base rates mean nothing when a team is peaking like Troy, who just won their conference tournament.
+   *Disagrees with:* Oracle is stuck in the past; historical base rates don't capture Troy's current 3-game winning streak and championship momentum.
 
-   *Agrees with:* Whisper gets it; Nebraska's blowout loss is a massive red flag, showing they're fading when it matters most.
+   *Agrees with:* Whisper gets it—Nebraska's mental state after that blowout loss is a massive vulnerability RIGHT NOW.
 
-   "Oracle wants 1985, I want LAST TUESDAY! Troy just won three straight for the conference title. Nebraska got blown out. Momentum is REAL!"
-   Updated probability: Nebraska 0.42 ± 0.16
-
-
-### Upset Watch
-**Upset Score: 28.1/100** | Upset score 28/100 for #13 Troy over #4 Nebraska. Historical upset rate: 20.9%. Agent support: 4-3 for Troy.
-   *Agent split: 4-3 for Troy | Historical upset rate: 20.9%*
-   *Statistical edges: None*
+   "Oracle wants to talk about 2013, but Troy is peaking RIGHT NOW. They just won their conference tournament, back-to-back, winning 3 straight. Nebraska's momentum is flatlining."
+   Updated probability: Nebraska 0.42 ± 0.15
 
 
 ### Swarm vs Vegas
@@ -113,40 +107,40 @@
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Nebraska 0.52 ± 0.21
+Combined probability: Nebraska 0.57 ± 0.18
 
-**PICK: Nebraska** (52% — genuine toss-up, high uncertainty)
+**PICK: Nebraska** (57% — lean, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Oracle and Tempo Hawk won despite weakening - identical pace eliminates Troy's upset path. Iron Curtain and Streak lost despite strengthening - momentum can't overcome 9-point efficiency gap. Oracle's flip on KenPom thresholds was compelling but didn't change the math. When tempos match, talent wins."
+🎼 **THE CONDUCTOR**: "Iron Curtain and Tempo Hawk won with efficiency math trumping momentum narratives. Road Dog's flip to Troy based on senior leadership couldn't overcome Nebraska's 9.2-point per-possession edge. Streak's momentum argument gained traction but math prevails. The spreadsheet doesn't lie in March."
 
-   *Key factor: Identical pace eliminates variance*
+   *Key factor: Efficiency gap per possession*
 
-   *Most weighted: Tempo Hawk*
+   *Most weighted: Iron Curtain*
 
-   *Dissent report: Iron Curtain and Streak strengthened on defensive pressure and momentum arguments, but 143 KenPom ranking historically dooms 13-seeds regardless of recent form*
+   *Dissent report: Streak argued Troy's 3-game winning streak and conference title momentum matters more than analytics, while Road Dog flipped after being convinced by Troy's senior leadership experience, but both underestimated Nebraska's massive efficiency advantage*
 
 
 ---
-### Specialist Vote: 4-3 Troy
+### Specialist Vote: 5-2 Nebraska
 
-🦅Nebraska 🛡️Troy 💥Nebraska 🐺Troy 👁️Troy 📜Nebraska 🔥Troy
+🦅Nebraska 🛡️Nebraska 💥Nebraska 🐺Troy 👁️Nebraska 📜Nebraska 🔥Troy
 
-CONDUCTOR OVERRIDE: Nebraska (50%) — sided with the minority
+CONDUCTOR AGREES: Nebraska (50%)
 
 
 ---
 ### Vote Tally
 
-- **Nebraska**: Tempo Hawk, Glass Cannon, Oracle (3 votes)
-- **Troy**: Iron Curtain, Road Dog, Whisper, Streak (4 votes)
+- **Nebraska**: Tempo Hawk, Iron Curtain, Glass Cannon, Whisper, Oracle (5 votes)
+- **Troy**: Road Dog, Streak (2 votes)
 
 
 ## Market Analysis
 
-- Swarm probability: Nebraska 52% ± 21%
+- Swarm probability: Nebraska 57% ± 18%
 - Vegas implied probability: Nebraska 88%
-- Edge: 35.7% (market favors Troy)
+- Edge: 31.8% (market favors Troy)
 - Vegas spread: Nebraska -13.0
-- Contrarian signal: Iron Curtain (-50% vs market) and Streak (-46% vs market) and Road Dog (-43% vs market) and Whisper (-43% vs market) and Glass Cannon (-23% vs market) and Tempo Hawk (-20% vs market) and Oracle (-13% vs market)
-- Recommendation: NO BET — edge (35.7%) exists but uncertainty too high (20.6%)
+- Contrarian signal: Streak (-46% vs market) and Road Dog (-40% vs market) and Glass Cannon (-33% vs market) and Whisper (-30% vs market) and Tempo Hawk (-23% vs market) and Iron Curtain (-23% vs market) and Oracle (-23% vs market)
+- Recommendation: NO BET — edge (31.8%) exists but uncertainty too high (18.0%)

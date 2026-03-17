@@ -1,137 +1,132 @@
 # 🏀 #6 Louisville vs #11 USF — East Region, Round of 64
-*2026-03-16T17:26:30.773795+00:00*
+*2026-03-16T18:18:36.254826+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Identical tempo at 67.5 possessions favors USF's balanced scoring over Louisville's depleted offense without Brown Jr. Halfcourt execution decides this grind."
+🦅 **TEMPO HAWK**: "Identical tempos neutralize pace advantage. USF's health and championship momentum beats Louisville's injury uncertainty in grinding half-court game."
    Win probability: Louisville 0.42 ± 0.15
-   *Key stat: Louisville loses 18.2 PPG creator while USF brings four 11+ PPG scorers*
+   *Key stat: Both teams play at 67.5-67.6 possessions per game*
 
-🛡️ **IRON CURTAIN**: "Louisville's elite defense travels but missing Brown Jr. kills their offense. USF holds teams to 41.3% shooting and has four reliable scorers."
-   Win probability: Louisville 0.42 ± 0.16
-   *Key stat: USF opponent FG% of 41.3% matches Louisville's defensive intensity*
+🛡️ **IRON CURTAIN**: "Louisville missing 18.2 PPG floor general against USF's suffocating defense. Defensive battle favors the healthier, more experienced backcourt."
+   Win probability: Louisville 0.42 ± 0.18
+   *Key stat: USF allows 41.3% shooting vs Louisville's 42.4%*
 
-💥 **GLASS CANNON** `[gemini]`: "USF's Joseph Pinion shoots 39.1% from three, and they're red-hot! Louisville’s 35.0% just isn't enough when USF is playing their best basketball and can get on fire from deep. One hot quarter changes everything!"
-   Win probability: Louisville 0.45 ± 0.15
-   *Key stat: USF's Joseph Pinion (G, Sr, 14.2 PPG) — elite 3PT (39.1%)*
+💥 **GLASS CANNON** `[gemini]`: "Louisville's 3PT% is barely better, but USF has the hot hand, winning their conference! One hot night from Wes Enis or Pinion and it's OVER!"
+   Win probability: Louisville 0.55 ± 0.15
+   *Key stat: USF on a 4-game win streak!*
 
-🐺 **ROAD DOG** `[gemini]`: "USF's senior-led roster, with Izaiyah Nelson and Joseph Pinion, just won their conference. Louisville's coach hasn't been here before with this kind of pressure. Experience wins in March."
+🐺 **ROAD DOG** `[gemini]`: "USF's senior-led roster, with Izaiyah Nelson and Joseph Pinion, just won their conference. Louisville's coach hasn't been here before, and their experience is lower. I've seen this movie."
    Win probability: Louisville 0.48 ± 0.15
    *Key stat: USF experience = 7.0/10 vs Louisville experience = 6.0/10*
 
-👁️ **WHISPER** `[gemini]`: "Everyone knows about Brown's back, but his absence shifts 18.2 PPG and disrupts chemistry. USF's key players are healthy and peaking."
+👁️ **WHISPER** `[gemini]`: "Everyone knows about Brown's back, but his absence isn't just points; it's a huge chemistry disruption. USF's travel is longer, but Louisville's missing 18.2 PPG."
    Win probability: Louisville 0.48 ± 0.15
-   *Key stat: Brown's 18.2 PPG*
+   *Key stat: 18.2 PPG*
 
-📜 **ORACLE**: "Classic 6v11 upset setup. Conference tourney champs with healthy star versus power team missing 18 PPG scorer. Reminds me of 2006 George Mason."
-   Win probability: Louisville 0.45 ± 0.15
-   *Key stat: USF's Nelson (AAC POY) healthy while Louisville's Brown Jr. (18.2 PPG) questionable with back injury*
+📜 **ORACLE**: "Classic 6v11 upset setup. USF conference champs peaking, Louisville missing 18.2 PPG scorer Brown Jr. Reminds me of 2018 Miami-Loyola upset dynamics."
+   Win probability: Louisville 0.58 ± 0.15
+   *Key stat: 11-seeds win 37.5% historically; USF has all Cinderella markers*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. USF just won their conference tournament, riding a 4-game streak! Louisville stumbled. Momentum is REAL!"
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. USF just won their conference tournament, riding a W4 streak and playing their best ball. Louisville is fading, losing their last game. Momentum is real!"
    Win probability: Louisville 0.45 ± 0.15
-   *Key stat: USF: W4 streak*
+   *Key stat: USF: W4 streak, AAC Champs*
 
 
 ## Round 2 — Cross-Examination
 
 🦅 **TEMPO HAWK** (position: STRENGTHENED):
 
-   *Disagrees with:* Iron Curtain thinks Louisville's defense travels, but defense doesn't solve their offensive creation problem without Brown Jr.
+   *Disagrees with:* Oracle misses the point — historical upset rates don't explain WHY upsets happen, pace control does.
 
-   *Agrees with:* Whisper nailed it — Brown's absence disrupts the entire offensive ecosystem, not just raw scoring numbers.
+   *Agrees with:* Iron Curtain gets it — defensive battles favor the team that can execute in the half-court, and that's USF.
 
-   "Iron Curtain misses the point — defense doesn't create offense. Louisville's tempo control means nothing without Brown's shot creation in halfcourt sets."
-   Updated probability: Louisville 0.38 ± 0.14
+   "Oracle's wrong — 11-seeds don't win because they're 'peaking.' They win by controlling tempo. USF's grinding pace neutralizes Louisville's talent edge."
+   Updated probability: Louisville 0.38 ± 0.16
 
 🛡️ **IRON CURTAIN** (position: STRENGTHENED):
 
-   *Disagrees with:* Glass Cannon claims USF is 'red-hot' but they're 2-3 in their last 5 games — that's not hot, that's inconsistent.
+   *Disagrees with:* Glass Cannon thinks hot shooting matters in March - offense disappears under pressure, defense travels.
 
-   *Agrees with:* Tempo Hawk nailed it — identical tempo means this becomes a halfcourt execution battle where USF's balanced scoring beats Louisville's depleted offense.
+   *Agrees with:* Whisper nailed it - Brown's absence isn't just points, it's chemistry disruption against elite defense.
 
-   "Glass Cannon's wrong about USF being 'red-hot' — they're 2-3 in last 5. Louisville's defense will grind this ugly. USF wins the mud fight."
-   Updated probability: Louisville 0.38 ± 0.14
+   "Glass Cannon ignores the REALITY. Hot shooting dies in March. USF's defense will grind Louisville into dust without Brown."
+   Updated probability: Louisville 0.38 ± 0.16
 
-💥 **GLASS CANNON** (position: UNCHANGED) `[gemini]`:
+💥 **GLASS CANNON** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain keeps talking about defense, but in the three-point era, one hot night from beyond the arc makes defensive efficiency MEANINGLESS! USF's shooting variance is key.
+   *Disagrees with:* Iron Curtain, your defensive stats are meaningless when a team gets hot from three. It's the three-point era!
 
-   *Agrees with:* Oracle gets it! This is a classic upset setup where a hot-shooting team can absolutely take down a favorite. Variance is the underdog's friend!
+   *Agrees with:* Oracle gets it! 11-seeds like USF, peaking at the right time, are built for these upsets. It's all about variance!
 
-   "USF can get RED HOT! Pinion's 39.1% from three is a game-changer. Louisville's 35.0% just won't cut it when USF catches fire. One hot quarter changes everything!"
-   Updated probability: Louisville 0.45 ± 0.15
+   "Iron Curtain keeps talking defense, but one hot shooter changes everything! USF's 3PT% is 35.5% vs Louisville's 35.8% — that's too close. One hot quarter and it's OVER!"
+   Updated probability: Louisville 0.52 ± 0.18
 
 🐺 **ROAD DOG** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Glass Cannon's focus on one player's shooting percentage misses the bigger picture; one hot hand doesn't win a tournament game, experience does.
+   *Disagrees with:* Oracle cites historical upset rates, but doesn't account for Louisville's coach lacking Final Four experience, which is critical for blue bloods.
 
-   *Agrees with:* Oracle understands this is a classic upset setup, where veteran mid-majors with healthy stars take down power teams missing key players.
+   *Agrees with:* Iron Curtain gets it; Louisville missing their floor general against USF's tough, experienced backcourt is a recipe for trouble.
 
-   "Louisville's coach hasn't faced this pressure before. USF's veterans, like Izaiyah Nelson, just won their conference. That's March toughness."
-   Updated probability: Louisville 0.45 ± 0.15
+   "Oracle loves the numbers, but a coach's first tournament with a blue blood is different. USF's senior leadership and recent conference title is a proven upset recipe."
+   Updated probability: Louisville 0.45 ± 0.12
 
 👁️ **WHISPER** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* I'm hearing Tempo Hawk's 'identical tempo' is a misdirection; Louisville's depleted depth means their pace will suffer more without Brown's quickness.
+   *Disagrees with:* Glass Cannon's focus on a 'hot hand' ignores the fundamental instability Louisville faces from Brown's absence, a disruption far outweighing any shooting variance.
 
-   *Agrees with:* Oracle understands the full picture: a star's injury creates a 'trap' for the higher seed, just like they know it does.
+   *Agrees with:* Iron Curtain understands that Louisville's missing 18.2 PPG floor general creates a profound defensive challenge, not just an offensive one.
 
-   "Everyone's missing the deeper story. Brown's back injury isn't just about points; it's about the rotation strain and travel fatigue now hitting the bench. Something is off."
+   "Everyone's missing the deeper layer: Brown's injury doesn't just cut points; it forces a scheme change, a complete disruption. Chemistry suffers when rotations shift this late."
    Updated probability: Louisville 0.45 ± 0.16
 
-📜 **ORACLE** (position: STRENGTHENED):
+📜 **ORACLE** (position: WEAKENED):
 
-   *Disagrees with:* Glass Cannon overrates USF's shooting - they're 32.8% from three as a team, not elite despite Pinion's individual mark.
+   *Disagrees with:* Glass Cannon thinks hot shooting predicts March success, but historically conference tournament momentum is fool's gold.
 
-   *Agrees with:* Tempo Hawk correctly identified that identical tempo (67.5) eliminates Louisville's defensive edge in transition.
+   *Agrees with:* Whisper nailed the injury impact - Brown's absence disrupts Louisville's entire offensive structure, not just scoring.
 
-   "Tempo Hawk nailed it - identical pace neutralizes Louisville's defensive advantage. This screams 2013 Florida Gulf Coast over Georgetown."
-   Updated probability: Louisville 0.42 ± 0.14
+   "Glass Cannon ignores history. Hot streaks don't predict March success - 2019 Auburn shot 42% from three in SEC tourney, lost first round."
+   Updated probability: Louisville 0.52 ± 0.16
 
 🔥 **STREAK** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk wants to talk about 'balanced scoring' and 'half-court execution,' but he's ignoring that USF just proved they can win four straight pressure games, which is the only 'execution' that matters right now.
+   *Disagrees with:* Oracle wants to talk about 1985. I want to talk about LAST TUESDAY. This team just won four games in four days to win their conference. They're playing the best basketball of their season RIGHT NOW. That matters more than any historical base rate.
 
-   *Agrees with:* Glass Cannon gets it! USF isn't just winning, they're playing their best basketball, and that's what matters in March. They're peaking!
+   *Agrees with:* Glass Cannon gets it! USF has the hot hand, winning their conference! That's the kind of peaking I'm talking about. They just won their conference tournament, riding a W4 streak and playing their best ball. Momentum is real!
 
-   "USF's 4-game streak to win their conference is undeniable! Louisville's early exit means they're not playing their best basketball RIGHT NOW. Momentum is real!"
+   "Oracle wants to talk about history. I care about RIGHT NOW! USF just won four straight to win their conference. Louisville is slumping, losing their last game. Momentum is real!"
    Updated probability: Louisville 0.42 ± 0.15
 
 
-### Devil's Advocate (unanimous vote triggered)
-🦅 **TEMPO HAWK** *(forced contrarian)*: "Identical tempos neutralize pace advantage. Louisville's efficiency edge meaningless without Brown Jr.'s 25.5 PPG over last 10 healthy games."
-   *Pick: **USF** (66%) | Key stat: Both teams play 67.5 possessions per game*
-
-
 ### Upset Watch
-**Upset Score: 57.4/100** | Upset score 57/100 for #11 USF over #6 Louisville. Historical upset rate: 37.5%. Agent support: 7-0 for USF.
-   *Agent split: 7-0 for USF | Historical upset rate: 37.5%*
+**Upset Score: 45.9/100** | Upset score 46/100 for #11 USF over #6 Louisville. Historical upset rate: 37.5%. Agent support: 5-2 for USF.
+   *Agent split: 5-2 for USF | Historical upset rate: 37.5%*
    *Statistical edges: None*
 
 
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Louisville 0.42 ± 0.15
+Combined probability: Louisville 0.44 ± 0.16
 
-**PICK: USF** (42% — lean, high uncertainty)
+**PICK: USF** (44% — lean, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Tempo Hawk and Iron Curtain won this debate - identical pace neutralizes Louisville's defensive edge while Brown Jr's absence kills offensive creation. Oracle's upset archetype holds. Glass Cannon's shooting variance theory lost to execution reality. When the engine breaks, even the best car won't run."
+🎼 **THE CONDUCTOR**: "Iron Curtain and Tempo Hawk won this debate - defense travels, pace neutralizes talent gaps. Glass Cannon and Oracle flipped after realizing hot shooting doesn't predict March success. Missing Brown's 18.2 PPG against elite defense is decisive. Sometimes the upset is just math."
 
-   *Key factor: Missing star player disrupting offensive system*
+   *Key factor: Louisville missing 18.2 PPG floor general against USF's suffocating defense*
 
-   *Most weighted: Whisper*
+   *Most weighted: Iron Curtain*
 
-   *Dissent report: No meaningful dissent - all 8 agents picked USF with tight confidence range (38-48%). Cross-examination strengthened most positions rather than creating flips.*
+   *Dissent report: Glass Cannon flipped from hot shooting theory after realizing conference tournament momentum is fool's gold. Oracle weakened when confronted that historical base rates don't explain individual game dynamics.*
 
 
 ---
-### Specialist Vote: 7-0 USF
+### Specialist Vote: 5-2 USF
 
-🦅USF 🛡️USF 💥USF 🐺USF 👁️USF 📜USF 🔥USF
+🦅USF 🛡️USF 💥Louisville 🐺USF 👁️USF 📜Louisville 🔥USF
 
 CONDUCTOR AGREES: USF (50%)
 
@@ -139,4 +134,5 @@ CONDUCTOR AGREES: USF (50%)
 ---
 ### Vote Tally
 
-- **USF**: Tempo Hawk, Iron Curtain, Glass Cannon, Road Dog, Whisper, Oracle, Streak (7 votes)
+- **USF**: Tempo Hawk, Iron Curtain, Road Dog, Whisper, Streak (5 votes)
+- **Louisville**: Glass Cannon, Oracle (2 votes)

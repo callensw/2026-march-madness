@@ -1,103 +1,103 @@
 # 🏀 #7 Saint Mary's vs #10 Texas A&M — South Region, Round of 64
-*2026-03-16T17:36:16.346893+00:00*
+*2026-03-16T18:28:53.172273+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Identical tempos (65.9 vs 65.0) make this a grind. A&M's SEC experience in physical games trumps Saint Mary's WCC background in possession-by-possession battles."
-   Win probability: Saint Mary's 0.45 ± 0.15
-   *Key stat: Both teams average 65 possessions per game*
+🦅 **TEMPO HAWK**: "Identical tempo neutralizes pace advantage. A&M's SEC-tested defense and experience edge in grind-it-out games trumps Saint Mary's marginal offensive efficiency."
+   Win probability: Saint Mary's 0.42 ± 0.16
+   *Key stat: Both teams play 65 possessions per game - no pace mismatch*
 
-🛡️ **IRON CURTAIN**: "A&M's veteran guards survived SEC grind. Saint Mary's allows .405 FG% but A&M's experience shows in low-possession defensive battle."
+🛡️ **IRON CURTAIN**: "Saint Mary's allows 44.2% shooting - worst perimeter defense in field. A&M's experienced guards will torch that vulnerable defense in half-court sets."
    Win probability: Saint Mary's 0.42 ± 0.15
-   *Key stat: A&M has 8.0 experience rating vs Saint Mary's 4.0*
+   *Key stat: Saint Mary's opp_fg_pct: 44.2% (extremely vulnerable)*
 
-💥 **GLASS CANNON** `[gemini]`: "Saint Mary's shoots a scorching 36.9% from three! You can't coach that! Texas A&M's 35.2% just doesn't compare. One hot night and they're ON!"
-   Win probability: Saint Mary's 0.62 ± 0.15
-   *Key stat: Saint Mary's 3PT%: 36.9%*
+💥 **GLASS CANNON** `[gemini]`: "Saint Mary's shoots lights out at 36.9% from three! Texas A&M's 35.2% isn't enough to contain that firepower. When they're on, they're ON!"
+   Win probability: Saint Mary's 0.55 ± 0.15
+   *Key stat: Saint Mary's 3PT% = 36.9%*
 
-🐺 **ROAD DOG** `[gemini]`: "I've seen this movie. A&M's senior-led roster, with guys like Rashaun Agee and Jacari Lane, has the toughness for March. Saint Mary's is too young."
+🐺 **ROAD DOG** `[gemini]`: "Texas A&M's senior-laden roster, with an experience score of 8.0, will handle the pressure. Saint Mary's young squad (4.0 experience) hasn't been there."
    Win probability: Saint Mary's 0.45 ± 0.15
-   *Key stat: Texas A&M experience=8.0/10*
+   *Key stat: Texas A&M experience: 8.0/10*
 
-👁️ **WHISPER** `[gemini]`: "Saint Mary's is traveling 2380 miles with one less rest day, while A&M has 5 rest days and a short trip. Fatigue will factor in. Something doesn't add up."
-   Win probability: Saint Mary's 0.45 ± 0.15
-   *Key stat: Saint Mary's travel: 2380 miles*
+👁️ **WHISPER** `[gemini]`: "Saint Mary's is traveling 2380 miles with one less rest day. Texas A&M has the rest and shorter travel. Fatigue is a silent killer."
+   Win probability: Saint Mary's 0.48 ± 0.15
+   *Key stat: 2380.0mi travel for Saint Mary's*
 
-📜 **ORACLE**: "Saint Mary's lost as heavy favorite to Santa Clara days ago. A&M veteran guards (8.0 experience) exploit young WCC team in poor form."
-   Win probability: Saint Mary's 0.45 ± 0.15
-   *Key stat: Saint Mary's on L2 streak, lost conference tourney as favorite*
+📜 **ORACLE**: "7v10 base rate is 61%. Saint Mary's conference tourney loss plus youth vs A&M's veteran guards screams classic upset setup."
+   Win probability: Saint Mary's 0.48 ± 0.15
+   *Key stat: 10-seeds beat 7-seeds 39% historically since 1985*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — Saint Mary's lost their last two, including an early conference tourney exit. Texas A&M is inconsistent, but Saint Mary's is fading RIGHT NOW. Momentum is real!"
-   Win probability: Saint Mary's 0.58 ± 0.15
-   *Key stat: Saint Mary's is on a L2 streak.*
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — Saint Mary's stumbled in their conference tournament, but Texas A&M got blown out! The Aggies are fading, losing their last game by 20. Saint Mary's is still the better team."
+   Win probability: Saint Mary's 0.65 ± 0.15
+   *Key stat: Texas A&M's last loss: 83-63*
 
 
 ## Round 2 — Cross-Examination
 
-🦅 **TEMPO HAWK** (position: FLIPPED):
+🦅 **TEMPO HAWK** (position: STRENGTHENED):
 
-   *Disagrees with:* Iron Curtain overrates A&M's experience when Saint Mary's superior shooting efficiency (36.9% vs A&M's 35.2%) matters more in identical-tempo games.
+   *Disagrees with:* Glass Cannon's three-point percentage argument crumbles when you realize shooting percentages don't matter if you can't get good looks in a slow, physical game.
 
-   *Agrees with:* Glass Cannon correctly identified Saint Mary's 36.9% three-point shooting as the decisive factor in a possession-by-possession battle.
+   *Agrees with:* Iron Curtain's defensive vulnerability point reinforces my tempo thesis - A&M will exploit Saint Mary's poor defense in half-court sets.
 
-   "Glass Cannon's right about Saint Mary's shooting, but I missed something: A&M allows 36.1% from three. That pace neutralizes A&M's experience edge."
-   Updated probability: Saint Mary's 0.52 ± 0.18
+   "Glass Cannon ignores pace reality. Saint Mary's 36.9% three-point shooting means nothing if A&M controls possessions and grinds tempo."
+   Updated probability: Saint Mary's 0.38 ± 0.18
 
 🛡️ **IRON CURTAIN** (position: STRENGTHENED):
 
-   *Disagrees with:* Glass Cannon ignores that Saint Mary's allows 35.8% from three - you can't win shootouts without defense in March
+   *Disagrees with:* Streak completely ignores that Saint Mary's has the worst perimeter defense in the field - you can't win in March allowing 44.2% shooting.
 
-   *Agrees with:* Oracle correctly identified Saint Mary's poor recent form - losing as favorites shows mental fragility when pressure hits
+   *Agrees with:* Tempo Hawk nailed it - A&M's SEC-tested defense will dominate when pace is neutralized and this becomes a half-court grind.
 
-   "Glass Cannon is WRONG. Saint Mary's shoots 36.9% from three but allows 35.8% to opponents. That's not elite perimeter defense!"
+   "Streak ignores defense completely. A&M lost by 20 but Saint Mary's allows 44.2% shooting - that's TERRIBLE defense that gets exposed in March."
    Updated probability: Saint Mary's 0.38 ± 0.15
 
 💥 **GLASS CANNON** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Oracle is wrong! You can't ignore season-long elite shooting because of two games. Talent is talent!
+   *Disagrees with:* Iron Curtain is so wrong! Saint Mary's 36.9% from three means any 'vulnerable' defense he mentions can be torched by pure shooting talent.
 
-   *Agrees with:* Streak reinforced my view! While he focuses on momentum, he sees Saint Mary's has a path to winning, and that path is shooting!
+   *Agrees with:* Streak gets it! Texas A&M got blown out by 20 points in their last game, showing they're not invincible against a hot-shooting team!
 
-   "Oracle's 'form' argument is weak! Saint Mary's 36.9% from three isn't a slump, it's consistent firepower! One hot night changes everything!"
-   Updated probability: Saint Mary's 0.65 ± 0.12
+   "Iron Curtain keeps talking about defense, but Saint Mary's shoots 36.9% from three! You can't coach that! One hot night erases any defensive 'vulnerability!'"
+   Updated probability: Saint Mary's 0.58 ± 0.16
 
 🐺 **ROAD DOG** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Glass Cannon's focus on 3PT% ignores that March is about toughness, not just hot shooting. A&M's defense will make them earn every bucket.
+   *Disagrees with:* Glass Cannon talks about Saint Mary's shooting, but analytics don't measure the pressure of March. Those shots won't fall when it matters.
 
-   *Agrees with:* Iron Curtain understands A&M's veteran guards survived the SEC grind. That kind of battle-tested roster doesn't flinch.
+   *Agrees with:* Oracle gets it. The 7v10 base rate and A&M's veteran guards against Saint Mary's youth is a classic upset setup, just like I said.
 
-   "Saint Mary's young roster will crack. A&M's senior guards, like Wade Taylor IV, have seen every March scenario. Experience wins when the lights are brightest."
+   "Texas A&M's senior leadership and coach's tournament experience will prevail. Saint Mary's youth and lack of big-game reps will show."
    Updated probability: Saint Mary's 0.48 ± 0.15
 
-👁️ **WHISPER** (position: FLIPPED) `[gemini]`:
+👁️ **WHISPER** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Glass Cannon is wrong; 3-point percentage won't matter if Saint Mary's legs are gone from cross-country travel.
+   *Disagrees with:* Glass Cannon is wrong. Saint Mary's shooting numbers won't hold up when their legs are heavy from travel and lack of rest.
 
-   *Agrees with:* Oracle understands that Saint Mary's recent form and travel suggest they are not the team their seed indicates.
+   *Agrees with:* Oracle understands the historical context of a 7v10, and how circumstances can swing games. My initial read on travel fatigue is key.
 
-   "Everyone is missing the toll of Saint Mary's travel and short rest. That 2380 miles and fewer rest days compounds fatigue. It changes everything."
-   Updated probability: Saint Mary's 0.52 ± 0.18
+   "Everyone's missing the mental toll of Saint Mary's travel. That 2380 miles and less rest compounds fatigue, impacting focus and decision-making late. Something doesn't add up."
+   Updated probability: Saint Mary's 0.52 ± 0.17
 
 📜 **ORACLE** (position: STRENGTHENED):
 
-   *Disagrees with:* Glass Cannon is wrong because shooting percentage without elite defense historically fails in March - 2019 Saint Mary's proves this exact point.
+   *Disagrees with:* Streak completely ignores opponent quality - losing to #1 Tennessee isn't the same as losing to Gonzaga.
 
-   *Agrees with:* Road Dog reinforced my experience thesis - A&M's 8.0 experience rating versus Saint Mary's 4.0 matches historical upset victim profiles.
+   *Agrees with:* Road Dog nailed the experience factor - 8.0 vs 4.0 experience gap mirrors classic 10-over-7 upsets like 2012 Norfolk State.
 
-   "Glass Cannon ignores history. 2019 Saint Mary's shot 38% from three as 11-seed, lost first round. Shooting alone fails in March."
-   Updated probability: Saint Mary's 0.38 ± 0.15
+   "Streak ignores the data! A&M's 'blowout loss' was to #1 seed Tennessee. Saint Mary's lost to GONZAGA by 12. Context matters since 1985."
+   Updated probability: Saint Mary's 0.45 ± 0.15
 
-🔥 **STREAK** (position: WEAKENED) `[gemini]`:
+🔥 **STREAK** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Glass Cannon wants to talk about season-long 3PT%, but A&M's 4-game win streak shows they're peaking NOW, not earlier in the season.
+   *Disagrees with:* Oracle is wrong; historical base rates don't matter when a team is clearly fading, like A&M losing by 20 points in their last game.
 
-   *Agrees with:* Oracle correctly points out Saint Mary's is on a L2 streak and lost their conference tourney as a favorite. That's a fading team!
+   *Agrees with:* Glass Cannon reinforces my view; Saint Mary's offensive firepower is real, and they can get hot and stay hot for 40 minutes.
 
-   "Saint Mary's has lost two straight, including their conference tourney. A&M just won four straight to win the SEC! That's peak momentum, not stale stats."
-   Updated probability: Saint Mary's 0.52 ± 0.18
+   "Oracle wants to talk about 1985. I want to talk about LAST TUESDAY. A&M's 20-point loss shows they're slumping, Saint Mary's is still the better team RIGHT NOW."
+   Updated probability: Saint Mary's 0.68 ± 0.12
 
 
 ### Upset Watch
@@ -113,40 +113,40 @@
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Saint Mary's 0.48 ± 0.18
+Combined probability: Saint Mary's 0.50 ± 0.18
 
-**PICK: Texas A&M** (48% — genuine toss-up, high uncertainty)
+**PICK: Texas A&M** (50% — genuine toss-up, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Glass Cannon won this debate - elite shooting trumps experience in March. Tempo Hawk and Whisper flipped after recognizing Saint Mary's 36.9% three-point shooting edge in identical-tempo games. Oracle's form concerns couldn't overcome firepower. When the lights shine brightest, shooters shoot."
+🎼 **THE CONDUCTOR**: "Iron Curtain and Tempo Hawk win this debate - Saint Mary's 44.2% shooting defense is tournament poison. Whisper's flip toward Saint Mary's shows uncertainty, but travel fatigue plus defensive vulnerability creates the classic 7v10 upset. The Aggies grind it out."
 
-   *Key factor: Three-point shooting disparity*
+   *Key factor: Saint Mary's vulnerable perimeter defense (44.2% allowed)*
 
-   *Most weighted: Glass Cannon*
+   *Most weighted: Iron Curtain*
 
-   *Dissent report: Iron Curtain and Oracle lost by overvaluing recent form and experience while underestimating Saint Mary's consistent shooting advantage. Oracle's historical parallels couldn't overcome Glass Cannon's season-long efficiency data.*
+   *Dissent report: Glass Cannon and Streak lost by overvaluing shooting percentages without considering defensive matchups. Whisper flipped due to travel concerns but underestimated how A&M's experience exploits defensive weaknesses in grind-it-out games.*
 
 
 ---
-### Specialist Vote: 4-3 Saint Mary's
+### Specialist Vote: 4-3 Texas A&M
 
-🦅Saint Mary's 🛡️Texas A&M 💥Saint Mary's 🐺Texas A&M 👁️Saint Mary's 📜Texas A&M 🔥Saint Mary's
+🦅Texas A&M 🛡️Texas A&M 💥Saint Mary's 🐺Texas A&M 👁️Saint Mary's 📜Texas A&M 🔥Saint Mary's
 
-CONDUCTOR OVERRIDE: Texas A&M (50%) — sided with the minority
+CONDUCTOR AGREES: Texas A&M (50%)
 
 
 ---
 ### Vote Tally
 
-- **Saint Mary's**: Tempo Hawk, Glass Cannon, Whisper, Streak (4 votes)
-- **Texas A&M**: Iron Curtain, Road Dog, Oracle (3 votes)
+- **Texas A&M**: Tempo Hawk, Iron Curtain, Road Dog, Oracle (4 votes)
+- **Saint Mary's**: Glass Cannon, Whisper, Streak (3 votes)
 
 
 ## Market Analysis
 
-- Swarm probability: Saint Mary's 48% ± 18%
+- Swarm probability: Saint Mary's 50% ± 18%
 - Vegas implied probability: Saint Mary's 60%
-- Edge: 12.1% (market favors Texas A&M)
+- Edge: 10.3% (market favors Texas A&M)
 - Vegas spread: Saint Mary's -3.5
-- Contrarian signal: Iron Curtain (-22% vs market) and Oracle (-22% vs market) and Road Dog (-12% vs market)
-- Recommendation: NO BET — edge (12.1%) exists but uncertainty too high (18.1%)
+- Contrarian signal: Tempo Hawk (-22% vs market) and Iron Curtain (-22% vs market) and Oracle (-15% vs market) and Road Dog (-12% vs market)
+- Recommendation: NO BET — edge (10.3%) exists but uncertainty too high (17.9%)

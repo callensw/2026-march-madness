@@ -1,42 +1,42 @@
 # 🏀 #2 Iowa State vs #15 Tennessee State — Midwest Region, Round of 64
-*2026-03-16T17:33:35.331135+00:00*
+*2026-03-16T18:26:02.263727+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "TSU can slow the pace slightly but can't overcome 16-point efficiency gap. Iowa State's offense too potent even in grind-it-out game."
-   Win probability: Iowa State 0.85 ± 0.08
-   *Key stat: Iowa State 70.3 tempo vs Tennessee State 66.1 - only 4.2 possession gap*
-
-🛡️ **IRON CURTAIN**: "Iowa State's elite defense (87.3 adj_d) vs TSU's mediocre offense (108.6 adj_o). Defense travels, and Iowa State has it."
+🦅 **TEMPO HAWK**: "Tennessee State slows pace to 66 possessions, but Iowa State's 16-point efficiency edge translates to dominance even in grind-it-out games."
    Win probability: Iowa State 0.82 ± 0.12
-   *Key stat: Iowa State holds opponents to 42.6% shooting vs TSU's 44.4%*
+   *Key stat: Iowa State 70.3 tempo vs Tennessee State 66.1 - only 4.2 possession difference*
 
-💥 **GLASS CANNON** `[gemini]`: "Iowa State shoots lights out from three at 37.9%! With Momcilovic hitting 49.6%, they're too much offensive firepower. Tennessee State's 32.4% can't keep up."
-   Win probability: Iowa State 0.90 ± 0.10
-   *Key stat: Iowa State 3PT% = 37.9%*
+🛡️ **IRON CURTAIN**: "Iowa State's elite defense (87.3 adj_d) will suffocate Tennessee State's mediocre offense. Defense travels in March. Cyclones control this game."
+   Win probability: Iowa State 0.82 ± 0.12
+   *Key stat: Opponents shoot .426 against Iowa State vs .444 against Tennessee State*
 
-🐺 **ROAD DOG** `[gemini]`: "Tennessee State's senior-led roster, OVC champs, has been there before. Iowa State's young guys, even with talent, crack under March pressure. Experience wins."
-   Win probability: Iowa State 0.60 ± 0.15
-   *Key stat: Tennessee State experience=8.0/10*
+💥 **GLASS CANNON** `[gemini]`: "Iowa State shoots 37.9% from three, with Momcilovic at 49.6%! Tennessee State's 32.4% can't keep up. You can't coach that level of pure shooting talent!"
+   Win probability: Iowa State 0.90 ± 0.05
+   *Key stat: Iowa State 3PT%: 37.9%*
 
-👁️ **WHISPER** `[gemini]`: "Everyone's focused on Iowa State's season. Meanwhile, Tennessee State has fewer rest days and just won their conference tournament, exhausting their core rotation. That takes a toll."
-   Win probability: Iowa State 0.68 ± 0.15
-   *Key stat: Tennessee State: 4 rest days*
+🐺 **ROAD DOG** `[gemini]`: "Tennessee State's senior-led roster and OVC tourney win makes them dangerous. Iowa State's experience (6.0) is lower, but their coach has been here before. This isn't a typical 2-15."
+   Win probability: Iowa State 0.62 ± 0.15
+   *Key stat: Tennessee State experience: 8.0/10*
 
-📜 **ORACLE**: "Since 1985, 2v15 base rate is 93.8%. TSU lacks size/rebounding of historic 15-seed upsets like 2016 MTSU."
-   Win probability: Iowa State 0.91 ± 0.08
-   *Key stat: 16.3-point KenPom gap favors Iowa State*
+👁️ **WHISPER** `[gemini]`: "Iowa State is coming off a crushing buzzer-beater loss. The emotional toll of that, plus only 5 rest days, sets them up for a potential trap. Their turnover rate is 10.3."
+   Win probability: Iowa State 0.88 ± 0.08
+   *Key stat: 10.3 turnover rate*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. Tennessee State just won their conference, 5 straight wins, peaking RIGHT NOW. Iowa State lost a heartbreaker. Momentum is REAL. Tennessee State won their final by 26!"
+📜 **ORACLE**: "2v15 base rate is 93.8% since 1985. 181 KenPom gap too massive despite TSU's OVC title run."
+   Win probability: Iowa State 0.94 ± 0.08
+   *Key stat: Iowa State's 37.6-point efficiency margin vs Tennessee State's 3.7-point margin*
+
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. Tennessee State is RED HOT, winning 5 straight to claim their conference. Iowa State just lost a heartbreaker. Momentum is REAL!"
    Win probability: Iowa State 0.62 ± 0.15
    *Key stat: Tennessee State: W5 streak*
 
 
 ### Devil's Advocate (unanimous vote triggered)
-🦅 **TEMPO HAWK** *(forced contrarian)*: "Iowa State's tempo edge negates TSU's grind-it-out strategy. 37-point efficiency gap too massive for pace control to overcome."
-   *Pick: **Iowa State** (88%) | Key stat: Iowa State 70.3 tempo vs Tennessee State 66.1 — Cyclones get enough possessions to impose efficiency advantage*
+📜 **ORACLE** *(forced contrarian)*: "Since 1985, only three 15-seeds beat 2-seeds. All had KenPom under 150. Tennessee State at 187 faces historic gap despite OVC title momentum."
+   *Pick: **Iowa State** (94%) | Key stat: 181-spot KenPom gap is largest in any 2v15 upset since 1985*
 
 
 ### Swarm vs Vegas
@@ -46,18 +46,18 @@
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Iowa State 0.68 ± 0.25
+Combined probability: Iowa State 0.71 ± 0.25
 
-**PICK: Iowa State** (68% — clear favorite, high uncertainty)
+**PICK: Iowa State** (71% — clear favorite, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Oracle and Glass Cannon won this debate decisively - 93.8% historical 2v15 rate plus massive offensive firepower gap. Road Dog's experience argument couldn't overcome 16-point efficiency chasm. Even Streak's momentum play fell short against mathematical reality. The Cyclones roll."
+🎼 **THE CONDUCTOR**: "Glass Cannon and Oracle won this debate with overwhelming efficiency and historical evidence. 16-point KenPom gap plus elite shooting creates insurmountable advantage. Road Dog and Streak's momentum concerns can't overcome mathematical reality. When talent meets opportunity, talent wins."
 
-   *Key factor: Massive talent and efficiency gap*
+   *Key factor: Massive efficiency gap (16 points) combined with elite three-point shooting*
 
-   *Most weighted: Oracle*
+   *Most weighted: Glass Cannon*
 
-   *Dissent report: Road Dog pushed experience angle but TSU's senior leadership can't bridge a 37-point KenPom gap against elite Big 12 competition*
+   *Dissent report: Road Dog and Streak emphasized Tennessee State's momentum and Iowa State's emotional letdown, but couldn't provide concrete evidence that hot streaks overcome 16-point efficiency gaps in 2v15 matchups*
 
 
 ---
@@ -76,9 +76,9 @@ CONDUCTOR AGREES: Iowa State (50%)
 
 ## Market Analysis
 
-- Swarm probability: Iowa State 68% ± 25%
+- Swarm probability: Iowa State 71% ± 25%
 - Vegas implied probability: Iowa State 96%
-- Edge: 27.7% (market favors Tennessee State)
+- Edge: 24.7% (market favors Tennessee State)
 - Vegas spread: Iowa State -24.5
-- Contrarian signal: Road Dog (-36% vs market) and Streak (-34% vs market) and Whisper (-28% vs market) and Iron Curtain (-14% vs market) and Tempo Hawk (-11% vs market)
-- Recommendation: NO BET — edge (27.7%) exists but uncertainty too high (25.0%)
+- Contrarian signal: Road Dog (-34% vs market) and Streak (-34% vs market) and Tempo Hawk (-14% vs market) and Iron Curtain (-14% vs market)
+- Recommendation: NO BET — edge (24.7%) exists but uncertainty too high (25.0%)

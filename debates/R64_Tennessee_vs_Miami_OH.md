@@ -1,103 +1,103 @@
 # 🏀 #6 Tennessee vs #11 Miami OH — Midwest Region, Round of 64
-*2026-03-16T17:32:24.652301+00:00*
+*2026-03-16T18:24:59.574628+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Miami's 71.5 tempo forces Tennessee into uncomfortable pace. Extra possessions favor elite shooters. RedHawks control game flow, neutralize talent gap."
-   Win probability: Tennessee 0.42 ± 0.16
-   *Key stat: 4.8 possession differential per game (71.5 vs 66.7)*
+🦅 **TEMPO HAWK**: "Miami controls pace at 71.5 vs Tennessee's 66.7. Extra possessions favor their elite shooting over Tennessee's grinding style."
+   Win probability: Tennessee 0.35 ± 0.15
+   *Key stat: Miami OH tempo 71.5 vs Tennessee 66.7 (4.8 possession edge)*
 
-🛡️ **IRON CURTAIN**: "Tennessee's elite defense (88.2) vs Miami's soft defense (102.8). Vols grind this into ugly half-court game where Miami's offense disappears."
+🛡️ **IRON CURTAIN**: "Tennessee's elite defense (88.2 adj_d) will suffocate Miami's soft perimeter D (102.8). Defense travels, offense disappears under tournament pressure."
    Win probability: Tennessee 0.72 ± 0.12
-   *Key stat: Miami allows 43.6% opponent shooting — vulnerable to lockdown defense*
+   *Key stat: Tennessee holds opponents to 40.9% shooting vs Miami's 43.6%*
 
-💥 **GLASS CANNON** `[gemini]`: "Miami OH shoots better from three (39.2%!) than Tennessee. You can't coach that! One hot night from beyond the arc, and this is an upset, baby!"
+💥 **GLASS CANNON** `[gemini]`: "Miami OH shoots better from three (39.2%!). One hot night erases any gap. They're DANGEROUS, you can't coach that!"
    Win probability: Tennessee 0.45 ± 0.15
    *Key stat: Miami OH 3PT% = 39.2%*
 
-🐺 **ROAD DOG** `[gemini]`: "Miami OH's senior leadership, like Peter Suder, has seen everything. Tennessee's freshman star Nate Ament will crack under March pressure. Experience wins."
-   Win probability: Tennessee 0.48 ± 0.15
-   *Key stat: Miami OH's 31-1 record*
-
-👁️ **WHISPER** `[gemini]`: "Nobody's talking about Miami's 31-0 regular season, but they only have 3 rest days before facing a fresh Tennessee. That fatigue, plus the QF loss, changes everything. Their only loss was 83-87."
+🐺 **ROAD DOG** `[gemini]`: "Miami OH's senior leadership, especially Peter Suder, won't crack. Tennessee's freshman star Nate Ament hasn't seen this pressure before. Experience wins."
    Win probability: Tennessee 0.58 ± 0.15
-   *Key stat: Miami: 3 rest days*
+   *Key stat: Miami OH's Peter Suder (Sr) has 130+ career games.*
 
-📜 **ORACLE**: "6v11 base rate is 62.5%. Miami OH went 31-0 regular season with elite shooting - classic Cinderella archetype like 2018 Loyola-Chicago."
+👁️ **WHISPER** `[gemini]`: "Everyone's focused on Tennessee's talent, but Miami OH has fewer rest days and just one loss all season. That single loss in the MAC QF? A red herring. Something is off here."
    Win probability: Tennessee 0.58 ± 0.15
-   *Key stat: Miami OH shot 39.2% from three with 31-0 regular season record*
+   *Key stat: Miami OH: 31-1 record*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — Miami OH just went 31-1! They lost their last game, but they're still red-hot. Tennessee is fading, losing 3 of their last 5. Momentum is real!"
+📜 **ORACLE**: "Miami OH's 31-0 regular season mirrors 2013 FGCU upset profile. Elite shooting beats inconsistent power conference teams in March. Tennessee's 6-4 finish shows vulnerability."
    Win probability: Tennessee 0.58 ± 0.15
-   *Key stat: Miami OH last 10: 9-1*
+   *Key stat: 39.2% three-point shooting for Miami OH*
+
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — Miami OH just went 31-0 in the regular season! They're peaking, 9-1 in their last 10. Tennessee lost their last game. Momentum is real!"
+   Win probability: Tennessee 0.45 ± 0.15
+   *Key stat: Miami OH: 9-1 last 10 games*
 
 
 ## Round 2 — Cross-Examination
 
 🦅 **TEMPO HAWK** (position: STRENGTHENED):
 
-   *Disagrees with:* Iron Curtain is wrong because defensive efficiency doesn't matter if you can't control the number of possessions in the game.
+   *Disagrees with:* Iron Curtain focuses on defensive efficiency but ignores that Miami's pace advantage creates more scoring opportunities than Tennessee's defense can neutralize.
 
-   *Agrees with:* Glass Cannon reinforced my view because Miami's elite shooting becomes even more dangerous with extra possessions from pace control.
+   *Agrees with:* Glass Cannon correctly identifies Miami's elite shooting as the weapon that exploits extra possessions from pace control.
 
-   "Iron Curtain ignores pace reality. Tennessee's defense means nothing if Miami controls possessions. Fast teams dictate tempo, not slow ones."
-   Updated probability: Tennessee 0.38 ± 0.14
+   "Iron Curtain ignores pace reality. Tennessee's defense means nothing if Miami controls possessions and tempo. Efficiency per possession, not total defense."
+   Updated probability: Tennessee 0.32 ± 0.14
 
 🛡️ **IRON CURTAIN** (position: STRENGTHENED):
 
-   *Disagrees with:* Glass Cannon thinks 39.2% three-point shooting matters when Miami gives up 102.8 points per possession - you can't outscore everyone in March.
+   *Disagrees with:* Tempo Hawk thinks extra possessions help Miami, but more possessions just means more opportunities for Tennessee's suffocating defense to create turnovers and easy buckets.
 
-   *Agrees with:* Whisper's fatigue angle reinforces that Miami's legs will be gone when Tennessee's defense clamps down in the final 10 minutes.
+   *Agrees with:* Road Dog nailed it about Tennessee's experience edge - when the pressure hits in March, seasoned players who've been through battles matter more than regular season records.
 
-   "Glass Cannon ignores Miami's 102.8 defensive efficiency. You can't shoot your way out of giving up 80 points. Defense wins."
+   "Tempo Hawk is WRONG. More possessions means more chances for Miami's trash defense to get exposed. Tennessee clamps down."
    Updated probability: Tennessee 0.75 ± 0.10
 
-💥 **GLASS CANNON** (position: UNCHANGED) `[gemini]`:
+💥 **GLASS CANNON** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain is wrong! Miami's elite shooting can overcome any defensive efficiency; 3-pointers are the great equalizer.
+   *Disagrees with:* Iron Curtain is wrong. Their defensive efficiency is irrelevant against a team that can shoot 39.2% from three. We're in the three-point ERA!
 
-   *Agrees with:* Tempo Hawk gets it! More possessions for Miami OH means more chances for those 3-pointers to fall, increasing variance and upset potential!
+   *Agrees with:* Streak gets it! Miami OH's 31-0 regular season and 9-1 run means they're on, and when they're on, they're ON!
 
-   "Iron Curtain keeps talking defense, but Miami OH's 39.2% from three means one hot quarter blows that up! You can't coach that kind of shooting!"
-   Updated probability: Tennessee 0.45 ± 0.15
+   "Iron Curtain keeps talking defense, but Miami's 39.2% from deep means defense is MEANINGLESS if they catch fire! One hot quarter changes everything!"
+   Updated probability: Tennessee 0.40 ± 0.15
 
-🐺 **ROAD DOG** (position: UNCHANGED) `[gemini]`:
+🐺 **ROAD DOG** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Whisper's talk about rest days ignores Miami's veteran roster. These seniors aren't fragile; they're conditioned for this grind.
+   *Disagrees with:* Glass Cannon's focus on 3-point percentage misses the point; toughness and coaching pedigree win, not just one hot night from deep.
 
-   *Agrees with:* Glass Cannon gets it. Miami's 39.2% from three isn't a fluke; it's a veteran team executing their game plan under pressure. Experience and shooting win.
+   *Agrees with:* Whisper's insight about Miami's single loss and rest days makes me wonder if there's an unseen factor favoring the underdog's grit.
 
-   "Miami's senior guard Peter Suder has played 135 career games. That kind of battle-tested experience doesn't just 'disappear' because of a few rest days, Whisper. They've seen it all."
-   Updated probability: Tennessee 0.45 ± 0.16
+   "Miami's senior core, led by Peter Suder, has seen every defense. Tennessee's young talent, like Nate Ament, hasn't faced this kind of March pressure yet. Experience wins."
+   Updated probability: Tennessee 0.52 ± 0.18
 
-👁️ **WHISPER** (position: STRENGTHENED) `[gemini]`:
+👁️ **WHISPER** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Road Dog's focus on Miami's 31-1 record ignores the physical toll of that many games without proper rest before a QF loss.
+   *Disagrees with:* Oracle is wrong. Miami OH's 31-0 regular season isn't a strength, it's a hidden fatigue burden. More games, less recovery for the MAC schedule.
 
-   *Agrees with:* Iron Curtain's defense focus aligns; Miami's fatigue will expose their softer defense (102.8 DRtg) against Tennessee's pressure.
+   *Agrees with:* Road Dog sees the pressure on young players, but the real pressure is the physical toll of a long season on Miami OH's starters.
 
-   "Everyone's missing the fatigue from Miami's 31-0 season, compounded by only 3 rest days. That's a hidden cost. Tennessee's fresh."
-   Updated probability: Tennessee 0.62 ± 0.12
+   "Everyone's missing the hidden fatigue. Miami OH's 31-1 record means more games played, less rest. Tennessee had 4 rest days vs Miami's 2."
+   Updated probability: Tennessee 0.52 ± 0.18
 
-📜 **ORACLE** (position: STRENGTHENED):
+📜 **ORACLE** (position: FLIPPED):
 
-   *Disagrees with:* Glass Cannon thinks shooting alone creates upsets, but every successful 11-seed Cinderella since 1985 had elite defense - Miami's 102.8 rating is historically awful for upset teams.
+   *Disagrees with:* Iron Curtain overrates defense - historically, elite shooting mid-majors like 2013 FGCU (41% 3PT) upset power conference teams despite defensive gaps.
 
-   *Agrees with:* Iron Curtain nailed the defensive mismatch - Tennessee's 88.2 rating vs Miami's 102.8 mirrors every failed upset attempt by high-scoring mid-majors.
+   *Agrees with:* Glass Cannon correctly identifies Miami's elite shooting as the upset mechanism - 39.2% from three is historically dangerous for higher seeds.
 
-   "Glass Cannon ignores history. 2018 Loyola shot 39% from three too, but their DEFENSE was elite. Miami's 102.8 defensive rating kills upset dreams."
-   Updated probability: Tennessee 0.62 ± 0.14
+   "Iron Curtain ignores history: 2013 FGCU shot 41% from three, upset Georgetown. Elite shooting beats elite defense in single elimination."
+   Updated probability: Tennessee 0.42 ± 0.15
 
-🔥 **STREAK** (position: WEAKENED) `[gemini]`:
+🔥 **STREAK** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk wants to talk about pace. I only care that Miami OH just won 9 of their last 10 games; that's the real tempo.
+   *Disagrees with:* Iron Curtain is wrong. Defense travels, but momentum crushes stale stats. Miami's recent form will break down any 'elite' D.
 
-   *Agrees with:* Oracle understands that Miami OH's 31-0 regular season and elite shooting points to a true Cinderella, not just a historical base rate.
+   *Agrees with:* Oracle gets it, recognizing Miami's elite shooting and Tennessee's late-season vulnerability. Their 6-4 finish is a red flag.
 
-   "Miami OH just went 31-1! They lost their last game, but they're still red-hot. Tennessee is fading, losing 3 of their last 5. Momentum is real!"
-   Updated probability: Tennessee 0.52 ± 0.17
+   "Miami OH's 31-1 record and 9-1 last 10 is undeniable momentum. Tennessee's late season slump and last game loss shows they're fading, not peaking."
+   Updated probability: Tennessee 0.40 ± 0.15
 
 
 ### Upset Watch
@@ -109,30 +109,30 @@
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Tennessee 0.56 ± 0.19
+Combined probability: Tennessee 0.52 ± 0.20
 
-**PICK: Tennessee** (56% — lean, high uncertainty)
+**PICK: Tennessee** (52% — genuine toss-up, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Iron Curtain and Oracle won this debate - Tennessee's elite defense (88.2) vs Miami's porous defense (102.8) is decisive. Streak weakened after realizing momentum can't overcome fundamental defensive gaps. Miami's shooting won't save them from giving up 80+ points. Defense wins championships."
+🎼 **THE CONDUCTOR**: "Oracle's flip sealed it - elite shooting beats elite defense in March madness. Iron Curtain's defensive focus couldn't overcome the pace/shooting coalition. Glass Cannon and Tempo Hawk won on fundamentals. When mid-majors shoot 39% from three, upsets happen."
 
-   *Key factor: Defensive efficiency gap*
+   *Key factor: Elite three-point shooting advantage*
 
-   *Most weighted: Iron Curtain*
+   *Most weighted: Glass Cannon*
 
-   *Dissent report: Tempo Hawk and Glass Cannon lost by overvaluing pace and shooting while ignoring Miami's 102.8 defensive rating. Streak flipped after recognizing that momentum means nothing if you can't stop anyone.*
+   *Dissent report: Iron Curtain lost despite strong defensive metrics - overvalued efficiency while undervaluing Miami's shooting variance and pace control in single elimination*
 
 
 ---
-### Specialist Vote: 4-3 Tennessee
+### Specialist Vote: 4-3 Miami OH
 
-🦅Miami OH 🛡️Tennessee 💥Miami OH 🐺Miami OH 👁️Tennessee 📜Tennessee 🔥Tennessee
+🦅Miami OH 🛡️Tennessee 💥Miami OH 🐺Tennessee 👁️Tennessee 📜Miami OH 🔥Miami OH
 
-CONDUCTOR AGREES: Tennessee (50%)
+CONDUCTOR OVERRIDE: Tennessee (50%) — sided with the minority
 
 
 ---
 ### Vote Tally
 
-- **Miami OH**: Tempo Hawk, Glass Cannon, Road Dog (3 votes)
-- **Tennessee**: Iron Curtain, Whisper, Oracle, Streak (4 votes)
+- **Miami OH**: Tempo Hawk, Glass Cannon, Oracle, Streak (4 votes)
+- **Tennessee**: Iron Curtain, Road Dog, Whisper (3 votes)

@@ -1,103 +1,103 @@
 # 🏀 #4 Kansas vs #13 Cal Baptist — East Region, Round of 64
-*2026-03-16T17:26:02.023505+00:00*
+*2026-03-16T18:18:14.908815+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Identical tempos neutralize Kansas's talent edge. CBU's experience and Daniels's clutch gene shine in 67-possession grinder. Kansas limping in inconsistent."
-   Win probability: Kansas 0.32 ± 0.18
-   *Key stat: Both teams play at 67 possessions per game*
-
-🛡️ **IRON CURTAIN**: "Kansas defense elite at 87.8 adj_d, CBU allows .417 opponent FG%. Bidunga rim protection dominates inexperienced CBU offense in half-court grind."
+🦅 **TEMPO HAWK**: "Identical tempos at 67 possessions neutralize pace advantage, but Kansas's 14.3-point efficiency edge per possession overwhelms CBU's veteran execution."
    Win probability: Kansas 0.72 ± 0.12
-   *Key stat: Kansas allows .388 opponent FG% vs CBU's .417*
+   *Key stat: Kansas 121.0 offensive efficiency vs CBU 106.7 — 14.3-point gap per 100 possessions*
 
-💥 **GLASS CANNON** `[gemini]`: "Kansas's 3-point shooting is just okay at 34.3%. Cal Baptist, though, isn't much better at 32.0%. There's no major shooting variance here for an upset, but Kansas is limping!"
+🛡️ **IRON CURTAIN**: "Kansas defense travels but CBU forces ugly grind. KU scored 47 vs Houston's D — CBU can replicate that suffocation."
+   Win probability: Kansas 0.68 ± 0.15
+   *Key stat: CBU allows 41.7% shooting, only 3.3 points worse defensively than Kansas*
+
+💥 **GLASS CANNON** `[gemini]`: "Kansas shoots better from deep, and their talent ceiling is THROUGH THE ROOF. Cal Baptist's 3PT% is just too low to overcome that. You can't coach that firepower!"
    Win probability: Kansas 0.70 ± 0.15
-   *Key stat: Kansas 3PT%: 34.3%*
+   *Key stat: Kansas 3PT% 34.3% vs CBU 32.0%*
 
-🐺 **ROAD DOG** `[gemini]`: "Kansas is young, limping in. Cal Baptist, with their 8.0 experience, just won their conference. That veteran leadership and toughness is a dangerous combination."
-   Win probability: Kansas 0.52 ± 0.15
+🐺 **ROAD DOG** `[gemini]`: "Kansas is young (experience 4.0), Cal Baptist is senior-led (experience 8.0) and just won their conference. I've seen this movie before. Dominique Daniels Jr. won't crack."
+   Win probability: Kansas 0.55 ± 0.15
    *Key stat: Cal Baptist experience: 8.0/10*
 
-👁️ **WHISPER** `[gemini]`: "Kansas is stumbling, with their star point guard Melvin Council Jr. battling a knee issue. Cal Baptist, meanwhile, has Dominique Daniels Jr., a WAC POY who just dropped 47 points in a game. Something doesn't add up for Kansas."
-   Win probability: Kansas 0.58 ± 0.18
-   *Key stat: Kansas (L1) vs Cal Baptist (W3)*
+👁️ **WHISPER** `[gemini]`: "Kansas is stumbling, with only 4 rest days and a blown-out conference semi-final. Cal Baptist has significant travel fatigue with 2156 miles. Something doesn't add up."
+   Win probability: Kansas 0.61 ± 0.15
+   *Key stat: Cal Baptist travel: 2156.0mi*
 
-📜 **ORACLE**: "4v13 base rate is 79.1%. Kansas limping in reminds me of 2018 Virginia - talented but vulnerable. Cal Baptist has the Cinderella profile."
-   Win probability: Kansas 0.68 ± 0.12
-   *Key stat: Cal Baptist's first-ever D1 tournament appearance with experienced roster (8.0/10 vs Kansas 4.0/10)*
+📜 **ORACLE**: "13-seeds win 21% historically. Cal Baptist fits Cinderella profile: conference champ, 25 wins, experienced roster. But Kansas talent gap too wide."
+   Win probability: Kansas 0.75 ± 0.12
+   *Key stat: 14.3-point KenPom efficiency gap (Kansas 33.2 vs Cal Baptist 15.5)*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — Cal Baptist just won their conference, riding a three-game streak! Kansas got blown out by 22 in their last game. Momentum is real, and it's with the Lancers."
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — Kansas is limping, losing 4 of their last 6 and getting blown out. Cal Baptist just won the WAC, riding a 3-game streak. Momentum is real!"
    Win probability: Kansas 0.45 ± 0.15
-   *Key stat: Cal Baptist: W3, Kansas: L1 (by 22 points)*
+   *Key stat: Cal Baptist: W3 streak, Kansas: L1 streak*
 
 
 ## Round 2 — Cross-Examination
 
-🦅 **TEMPO HAWK** (position: STRENGTHENED):
+🦅 **TEMPO HAWK** (position: WEAKENED):
 
-   *Disagrees with:* Iron Curtain overvalues Kansas defense without considering their offensive struggles in low-possession games where every bucket matters more.
+   *Disagrees with:* Streak thinks recent wins matter more than season-long efficiency — but 3-game streaks don't erase 14-point per-possession talent gaps.
 
-   *Agrees with:* Streak correctly identifies momentum shift - Kansas's 22-point loss shows they're mentally fragile entering tournament play.
+   *Agrees with:* Oracle correctly identifies the 14.3-point efficiency gap as the core mathematical reality that trumps experience advantages.
 
-   "Iron Curtain ignores pace reality. Elite defense means nothing if you can't score in a 67-possession slog. CBU controls tempo."
-   Updated probability: Kansas 0.28 ± 0.16
+   "Streak ignores efficiency reality — momentum doesn't overcome 14-point per-possession gaps. Kansas controls pace at identical tempo, CBU can't grind away that math."
+   Updated probability: Kansas 0.68 ± 0.14
 
-🛡️ **IRON CURTAIN** (position: STRENGTHENED):
+🛡️ **IRON CURTAIN** (position: WEAKENED):
 
-   *Disagrees with:* Whisper is wrong - Council played 35 minutes in Kansas's last game despite the supposed knee issue.
+   *Disagrees with:* Oracle claims the talent gap is too wide but ignores that Kansas's defense is barely above average at 98.2 — CBU can exploit that softness in a grind.
 
-   *Agrees with:* Oracle reinforced my view by noting Kansas's defensive talent advantage despite their recent struggles.
+   *Agrees with:* Tempo Hawk correctly identified that identical pace neutralizes advantages — when possessions are equal, defensive stops become the deciding factor.
 
-   "Whisper's wrong about Council's knee - he played 35 minutes last game. Kansas defense will SUFFOCATE CBU's 32% three-point shooting."
-   Updated probability: Kansas 0.75 ± 0.10
+   "Oracle ignores defensive reality. Kansas allows 68.8 points — that's SOFT. CBU's grind-it-out style neutralizes talent gaps when possessions shrink."
+   Updated probability: Kansas 0.62 ± 0.16
 
 💥 **GLASS CANNON** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain keeps talking defense, but Kansas's 34.3% from deep gives them NO offensive cushion if CBU gets hot for one night, making defense meaningless!
+   *Disagrees with:* Tempo Hawk is wrong because an efficiency gap of 14.3 points is massive, and Cal Baptist's shooting isn't enough to overcome it.
 
-   *Agrees with:* Tempo Hawk gets it! Both teams playing at 67 possessions means fewer opportunities, so one hot streak from outside could decide EVERYTHING!
+   *Agrees with:* Iron Curtain gets it, Kansas's defense is tough, but it's that offensive firepower that truly separates them, like I said originally!
 
-   "Kansas's 3-point shooting is just *not* elite enough to overcome their recent struggles! CBU's 32.0% isn't great, but Kansas isn't scaring anyone either at 34.3%!"
-   Updated probability: Kansas 0.55 ± 0.17
+   "Tempo Hawk's efficiency gap is too big. Cal Baptist's 32.0% from three just isn't enough to catch fire and close that talent difference! You can't coach that shooting!"
+   Updated probability: Kansas 0.65 ± 0.17
 
-🐺 **ROAD DOG** (position: FLIPPED) `[gemini]`:
+🐺 **ROAD DOG** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Glass Cannon talks about shooting percentages, but that doesn't account for the mental toughness of a veteran team like Cal Baptist under pressure.
+   *Disagrees with:* Oracle's reliance on KenPom ignores the human element. Experience and coaching win in March, not just efficiency margins.
 
-   *Agrees with:* Streak understands momentum; Cal Baptist's three-game win streak, including a conference title, shows they're battle-tested and ready.
+   *Agrees with:* Streak understands momentum. Cal Baptist's WAC championship run shows they're peaking, a testament to their veteran toughness.
 
-   "Kansas is young and limping, while Cal Baptist's 8.0 experience just won a conference title. That's a team that knows how to win when it matters."
-   Updated probability: Kansas 0.48 ± 0.16
+   "Oracle's KenPom gap is just numbers. Cal Baptist's senior leadership, with Dominique Daniels Jr. at the helm, has been here before. You can't measure that heart."
+   Updated probability: Kansas 0.52 ± 0.16
 
 👁️ **WHISPER** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain isn't seeing that Kansas's defensive numbers will dip with tired legs and a hobbled star. Defensive efficiency drops when players are gassed.
+   *Disagrees with:* Road Dog's focus on experience misses the travel fatigue. CBU's experience won't overcome that many miles.
 
-   *Agrees with:* Road Dog sees the veteran leadership of Cal Baptist, which is crucial when Kansas's young core is struggling with health and short rest.
+   *Agrees with:* Streak saw the stumbling Kansas team. While he focused on momentum, their recent struggles hint at deeper, unseen issues.
 
-   "Everyone's missing the fact that Kansas had only 2 rest days to Cal Baptist's 5. Fatigue is real, and it compounds with their star's knee issue."
-   Updated probability: Kansas 0.52 ± 0.19
+   "Everyone is overlooking Cal Baptist's brutal 2156 travel miles with only 4 rest days. That fatigue changes everything; Kansas only traveled 400 miles. Something doesn't add up."
+   Updated probability: Kansas 0.58 ± 0.17
 
-📜 **ORACLE** (position: WEAKENED):
+📜 **ORACLE** (position: STRENGTHENED):
 
-   *Disagrees with:* Iron Curtain cites season-long defensive numbers but Kansas allowed 81 PPG in their final 5 games, completely contradicting the 'elite defense' narrative.
+   *Disagrees with:* Streak cherry-picks recent games while ignoring Kansas went 25-8 overall — recency bias doesn't override full-season performance.
 
-   *Agrees with:* Streak correctly identifies the momentum factor - since 1985, teams losing their final game by 15+ points are just 62% in Round 1.
+   *Agrees with:* Tempo Hawk's efficiency gap analysis aligns with historical data showing talent differentials predict outcomes in single elimination.
 
-   "Iron Curtain ignores Kansas's defensive collapse - they allowed 81 PPG in last 5 games. Historical precedent: 2018 Virginia."
-   Updated probability: Kansas 0.62 ± 0.15
+   "Streak ignores the data: Kansas went 25-8 overall. Four recent losses include quality opponents. Historical 4v13 base rate still favors Kansas."
+   Updated probability: Kansas 0.78 ± 0.10
 
 🔥 **STREAK** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain wants to talk about season-long defensive efficiency, but Kansas just got shredded for 85 points in their last game. What have they done LATELY?
+   *Disagrees with:* Oracle is wrong; season-long KenPom doesn't reflect Kansas's current L4 of 6 slump. What have they done LATELY?
 
-   *Agrees with:* Whisper gets it! Kansas is limping, and Cal Baptist's star is on fire. That's the recent form that matters.
+   *Agrees with:* Road Dog sees CBU's conference tournament win and veteran leadership. That's the kind of momentum that matters RIGHT NOW.
 
-   "Kansas is fading fast, losing 3 of their last 5! Cal Baptist's 3-game winning streak means they're peaking RIGHT NOW. Momentum is real!"
-   Updated probability: Kansas 0.40 ± 0.15
+   "Oracle wants to talk about KenPom gaps. Kansas is fading, losing 4 of 6, while CBU is peaking, winning their conference. Recent form is everything, and Kansas has none!"
+   Updated probability: Kansas 0.42 ± 0.16
 
 
 ### Swarm vs Vegas
@@ -107,24 +107,24 @@
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Kansas 0.51 ± 0.20
+Combined probability: Kansas 0.60 ± 0.19
 
-**PICK: Kansas** (51% — genuine toss-up, high uncertainty)
+**PICK: Kansas** (60% — lean, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Iron Curtain won this debate - Kansas's defensive talent trumps momentum concerns. Road Dog's flip to Cal Baptist based on experience was compelling but overweighted. Glass Cannon and Oracle weakened appropriately recognizing Kansas's recent struggles. Defense travels, momentum doesn't."
+🎼 **THE CONDUCTOR**: "Oracle and Tempo Hawk won this debate with their efficiency gap analysis, while four agents weakened after cross-examination. Streak's momentum argument couldn't overcome the 14.3-point per-possession reality. When math meets March magic, math usually wins."
 
-   *Key factor: Defensive talent gap*
+   *Key factor: 14.3-point efficiency gap per possession*
 
-   *Most weighted: Iron Curtain*
+   *Most weighted: Oracle*
 
-   *Dissent report: Road Dog flipped based on Cal Baptist's veteran leadership vs Kansas's youth, but underestimated talent differential. Tempo Hawk and Streak overvalued recent form over season-long capability.*
+   *Dissent report: Streak pushed Cal Baptist based on recent momentum but couldn't answer the efficiency gap challenge. Road Dog's experience argument weakened when confronted with travel fatigue realities.*
 
 
 ---
-### Specialist Vote: 4-3 Kansas
+### Specialist Vote: 6-1 Kansas
 
-🦅Cal Baptist 🛡️Kansas 💥Kansas 🐺Cal Baptist 👁️Kansas 📜Kansas 🔥Cal Baptist
+🦅Kansas 🛡️Kansas 💥Kansas 🐺Kansas 👁️Kansas 📜Kansas 🔥Cal Baptist
 
 CONDUCTOR AGREES: Kansas (50%)
 
@@ -132,15 +132,15 @@ CONDUCTOR AGREES: Kansas (50%)
 ---
 ### Vote Tally
 
-- **Cal Baptist**: Tempo Hawk, Road Dog, Streak (3 votes)
-- **Kansas**: Iron Curtain, Glass Cannon, Whisper, Oracle (4 votes)
+- **Kansas**: Tempo Hawk, Iron Curtain, Glass Cannon, Road Dog, Whisper, Oracle (6 votes)
+- **Cal Baptist**: Streak (1 votes)
 
 
 ## Market Analysis
 
-- Swarm probability: Kansas 51% ± 20%
+- Swarm probability: Kansas 60% ± 19%
 - Vegas implied probability: Kansas 91%
-- Edge: 40.0% (market favors Cal Baptist)
+- Edge: 31.6% (market favors Cal Baptist)
 - Vegas spread: Kansas -14.5
-- Contrarian signal: Tempo Hawk (-63% vs market) and Streak (-51% vs market) and Road Dog (-43% vs market) and Whisper (-39% vs market) and Glass Cannon (-36% vs market) and Oracle (-29% vs market) and Iron Curtain (-16% vs market)
-- Recommendation: NO BET — edge (40.0%) exists but uncertainty too high (20.4%)
+- Contrarian signal: Streak (-49% vs market) and Road Dog (-39% vs market) and Whisper (-33% vs market) and Iron Curtain (-29% vs market) and Glass Cannon (-26% vs market) and Tempo Hawk (-23% vs market) and Oracle (-13% vs market)
+- Recommendation: NO BET — edge (31.6%) exists but uncertainty too high (18.7%)

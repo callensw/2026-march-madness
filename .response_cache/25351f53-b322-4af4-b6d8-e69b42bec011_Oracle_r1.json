@@ -1,0 +1,11 @@
+Looking at this 1v9 matchup, I need to check the historical base rate: 1-seeds win about 88% of Round of 32 games against 9-seeds since 1985.
+
+STEP 1 — UPSET THESIS: Saint Louis wins through pace control and elite shooting efficiency. They slow Michigan down (65.6 tempo vs 71.4), force half-court execution, and exploit Michigan's depth concerns with Cason out. Avila's playmaking creates open threes for Brown (40.4%) and Green (45.7%).
+
+STEP 2 — RATE THE UPSET THESIS: 4/10. Saint Louis has the tools but Michigan's talent gap is massive. The Billikens beat Georgia, but Michigan is a different class entirely.
+
+STEP 3 — PICK: This reminds me of 2018 when 1-seed Virginia lost to 16-seed UMBC. But that was historic. Saint Louis lacks the defensive intensity of that UMBC team. Michigan's frontcourt with Lendeborg, Johnson, and Mara is too much.
+
+The data is clear: since 1985, only 12% of 9-seeds beat 1-seeds in Round of 32. Saint Louis shot well against Georgia, but Michigan's defense (87.0 adj_d) is elite.
+
+{"team_a_win_prob": 0.85, "uncertainty": 0.08, "reasoning": "Since 1985, 1-seeds beat 9-seeds 88% in Round of 32. Michigan's frontcourt depth overwhelms Saint Louis despite their shooting.", "key_stat": "Michigan allows just 38.4% opponent FG%, elite defensive anchor"}

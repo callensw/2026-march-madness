@@ -1,132 +1,132 @@
 # 🏀 #1 Arizona vs #5 Vanderbilt — Championship Region, National Championship
-*2026-03-16T17:48:03.717568+00:00*
+*2026-03-16T18:42:01.229563+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Identical tempo neutralizes pace advantage. Championship game execution favors Vanderbilt's veteran backcourt over Arizona's talented but young core."
-   Win probability: Arizona 0.48 ± 0.18
-   *Key stat: Tempo difference: 0.6 possessions per game*
+🦅 **TEMPO HAWK**: "Identical tempos neutralize talent gap. Vandy's veteran backcourt controls half-court execution better than Arizona's freshmen in championship pressure."
+   Win probability: Arizona 0.45 ± 0.18
+   *Key stat: Tempo difference: 0.6 possessions (67.7 vs 67.1)*
 
-🛡️ **IRON CURTAIN**: "Arizona's elite defense gives them the edge, but Vanderbilt's proven they can grind out wins against better teams. Championship games are won on stops."
+🛡️ **IRON CURTAIN**: "Arizona's elite defense (87.2 adj_d) gives slight edge, but Vandy's physicality and veteran guards can grind this out. Defensive gap too small."
    Win probability: Arizona 0.58 ± 0.18
-   *Key stat: Arizona holds opponents to 39.2% shooting vs Vanderbilt's 42.7%*
+   *Key stat: Vanderbilt allows 42.7% shooting vs Arizona's 39.2% - both elite defenses*
 
-💥 **GLASS CANNON** `[gemini]`: "Vanderbilt shoots 36.6% from three, nearly matching Arizona! When they're on, they're ON. One hot quarter changes everything. You can't coach that!"
-   Win probability: Arizona 0.49 ± 0.18
+💥 **GLASS CANNON** `[gemini]`: "Vanderbilt shoots well from three and Arizona allows good perimeter shooting! One hot night from Tyler Tanner and they can absolutely win it all. You can't coach that!"
+   Win probability: Arizona 0.52 ± 0.15
    *Key stat: Vanderbilt 3PT% = 36.6%*
 
-🐺 **ROAD DOG** `[gemini]`: "Vandy's senior leadership, with Duke Miles and Tyler Nickel, has been here before. Arizona's freshmen will crack under this pressure. Experience wins championships."
+🐺 **ROAD DOG** `[gemini]`: "Vanderbilt's senior leadership, with Duke Miles and Tyler Nickel, won't crack. Arizona's young stars haven't seen this kind of veteran toughness. Experience wins championships."
    Win probability: Arizona 0.48 ± 0.15
-   *Key stat: Vanderbilt experience: 7.0/10*
+   *Key stat: Vanderbilt experience = 7.0/10 vs Arizona experience = 4.0/10*
 
-👁️ **WHISPER** `[gemini]`: "Everyone's talking about matchups, but Vanderbilt's travel advantage is undeniable. Arizona has traveled 1112 miles, Vanderbilt only 263. That's real fatigue. Something doesn't add up."
-   Win probability: Arizona 0.58 ± 0.15
-   *Key stat: Arizona travel: 1112 miles*
+👁️ **WHISPER** `[gemini]`: "Nobody's talking about the travel. Arizona has traveled 4 times farther than Vanderbilt. That fatigue adds up in a championship game. Something isn't adding up here."
+   Win probability: Arizona 0.47 ± 0.18
+   *Key stat: Arizona travel: 1112.0mi vs Vanderbilt travel: 263.0mi*
 
-📜 **ORACLE**: "Championship games since 1985: 1-seeds are 21-18 vs all comers. Vanderbilt mirrors 2014 UConn - veteran guards, tournament momentum, defensive improvement."
-   Win probability: Arizona 0.52 ± 0.18
-   *Key stat: 1-seeds in title games: 53.8% win rate (21-18 record)*
+📜 **ORACLE**: "Championship games favor experience over talent. Vanderbilt's 7.0 experience rating vs Arizona's 4.0 mirrors 2014 UConn over Kentucky's freshmen."
+   Win probability: Arizona 0.48 ± 0.18
+   *Key stat: Vanderbilt has 7.0/10 experience vs Arizona's 4.0/10*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching! Arizona is on a 14-game winning streak. They're peaking at the absolute right time, winning the Big 12 and rolling through the NCAA Tournament. Vanderbilt lost their conference final; that momentum matters."
-   Win probability: Arizona 0.58 ± 0.15
-   *Key stat: Arizona's 14-game winning streak*
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. Arizona is on a 14-game winning streak and just beat Duke. They are peaking RIGHT NOW. Vanderbilt lost their conference final. Momentum is real!"
+   Win probability: Arizona 0.55 ± 0.15
+   *Key stat: Arizona: W14 streak*
 
 
 ## Round 2 — Cross-Examination
 
 🦅 **TEMPO HAWK** (position: STRENGTHENED):
 
-   *Disagrees with:* Streak ignores that Arizona's 14-game streak includes weak competition — championship games reward defensive discipline, not regular season momentum.
+   *Disagrees with:* Streak is wrong because winning streaks against weak competition don't predict championship performance - Arizona's efficiency margin shrinks against elite defenses.
 
-   *Agrees with:* Road Dog correctly identifies that Vanderbilt's veteran backcourt gives them the execution edge when possessions are precious and tempo is controlled.
+   *Agrees with:* Oracle reinforced my view that experience controls pace in championship games, which favors Vanderbilt's veteran execution.
 
-   "Streak's wrong about momentum — Arizona's 14 wins include cupcakes. Vandy's grind-it-out style neutralizes talent gaps in championship settings."
-   Updated probability: Arizona 0.45 ± 0.16
+   "Streak ignores efficiency reality. Arizona's 14-game streak includes weak opponents. Vandy's half-court control neutralizes Arizona's transition game in slow championship tempo."
+   Updated probability: Arizona 0.42 ± 0.16
 
 🛡️ **IRON CURTAIN** (position: STRENGTHENED):
 
-   *Disagrees with:* Glass Cannon thinks Vanderbilt's 36.6% three-point shooting will save them, but they've shot 29% from deep in their last three games - offense disappears under pressure.
+   *Disagrees with:* Whisper thinks travel miles matter more than defensive efficiency - that's fantasy football thinking, not basketball analysis.
 
-   *Agrees with:* Whisper's travel data reinforces that Arizona has physical advantages beyond just defensive efficiency - fatigue affects defensive rotations and communication.
+   *Agrees with:* Glass Cannon actually got it right about Arizona's perimeter defense being vulnerable - that's Vanderbilt's only real path to victory.
 
-   "Glass Cannon is WRONG. Vanderbilt shot 29% from three in their last three games. Hot shooting doesn't travel - defense does."
+   "Whisper's travel nonsense is garbage. Defense travels better than legs. Arizona's 87.2 adj_d will suffocate Vandy's offense when it matters."
    Updated probability: Arizona 0.62 ± 0.16
 
-💥 **GLASS CANNON** (position: FLIPPED) `[gemini]`:
+💥 **GLASS CANNON** (position: UNCHANGED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain is wrong; defensive efficiency means nothing against a team that can shoot 36.6% from three. We're in the three-point ERA!
+   *Disagrees with:* Iron Curtain is so wrong, defensive efficiency doesn't matter when Vanderbilt can just light it up from deep with their 36.6% team 3PT shooting!
 
-   *Agrees with:* Road Dog sees Vanderbilt's leadership; those veterans are exactly who you want when the shots start falling from deep. Experience helps them stay hot!
+   *Agrees with:* Road Dog's point about veteran leadership resonates because experienced shooters are less likely to crack under pressure and miss those crucial threes!
 
-   "Iron Curtain keeps talking defense, but Vanderbilt's 36.6% from deep means they can rain fire! One hot quarter changes everything. You can't coach that!"
-   Updated probability: Arizona 0.51 ± 0.17
+   "Iron Curtain keeps talking defense! One hot night from Tyler Tanner, who shoots 37.8% from three, and Arizona's D means nothing! Variance is real!"
+   Updated probability: Arizona 0.52 ± 0.15
 
-🐺 **ROAD DOG** (position: STRENGTHENED) `[gemini]`:
+🐺 **ROAD DOG** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Streak talks about Arizona's winning streak, but streaks don't measure the grit of a senior-led team in a championship game. Experience trumps momentum here.
+   *Disagrees with:* Streak loves that winning streak, but I've seen too many teams peak early. Momentum doesn't win in March, toughness does.
 
-   *Agrees with:* Tempo Hawk understands that Vanderbilt's veteran backcourt is the key. They've been in these moments before, and that's what wins championships.
+   *Agrees with:* Oracle gets it. Experience, like Vanderbilt's 7.0/10, is the only stat that truly matters in these championship games.
 
-   "Vandy's senior guards, like Duke Miles, have played 130+ games. That kind of experience doesn't crack under pressure, regardless of Arizona's streak. I've seen this movie."
-   Updated probability: Arizona 0.45 ± 0.15
+   "Arizona's coach has been here before, but Vanderbilt's senior guards, Duke Miles and Tyler Nickel, are battle-tested. Experience still matters more than a streak."
+   Updated probability: Arizona 0.52 ± 0.16
 
-👁️ **WHISPER** (position: WEAKENED) `[gemini]`:
+👁️ **WHISPER** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Streak is wrong. Momentum doesn't erase physical toll. That 14-game streak meant more games, more travel, more wear.
+   *Disagrees with:* Glass Cannon is wrong. A single hot shooting night is noise, not a reliable path to victory against accumulated fatigue. Circumstances dictate consistency.
 
-   *Agrees with:* Road Dog sees the value in Vanderbilt's veteran leadership. That experience helps them manage the physical strain of less rest.
+   *Agrees with:* Oracle understands experience matters in championships. My intel suggests Vanderbilt's senior guards, with more rest, will exploit Arizona's travel-weary youth.
 
-   "Everyone's missing the deeper fatigue. Arizona’s traveled twice as far as Vanderbilt for this final. That compounds over a tournament."
-   Updated probability: Arizona 0.52 ± 0.17
+   "Everyone's missing how Arizona's travel burden and fewer rest days compound. This isn't just a game; it's a test of endurance. Vanderbilt's fresher legs will show."
+   Updated probability: Arizona 0.45 ± 0.19
 
 📜 **ORACLE** (position: STRENGTHENED):
 
-   *Disagrees with:* Streak's momentum argument ignores that hot streaks don't predict March outcomes - 2018 Virginia proves this.
+   *Disagrees with:* Streak thinks momentum trumps fundamentals, but historically speaking, long winning streaks often end in the tournament - see 2014 Wichita State's 35-game streak ending against Kentucky.
 
-   *Agrees with:* Glass Cannon's shooting percentage data reinforces that Vanderbilt has the offensive firepower to match Arizona shot-for-shot.
+   *Agrees with:* Road Dog nailed the experience factor - since 1985, veteran teams consistently outperform talented freshmen in high-pressure games, just like 2014 UConn over Kentucky's one-and-dones.
 
-   "Streak ignores history: 14-game streaks mean nothing in March. 2018 Virginia went 31-2, lost to UMBC. Single elimination erases regular season."
-   Updated probability: Arizona 0.55 ± 0.16
+   "Streak ignores history. Arizona's 14-game streak? 2014 Wichita State had 35 straight wins, lost as 1-seed. Streaks end in March."
+   Updated probability: Arizona 0.45 ± 0.16
 
 🔥 **STREAK** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Oracle is wrong; historical base rates don't matter when Vanderbilt just lost their conference championship game, killing all their momentum.
+   *Disagrees with:* Oracle is wrong; historical base rates are irrelevant. Momentum is about recent performance, not past tournaments. Arizona's current streak proves it.
 
-   *Agrees with:* Whisper reinforced my view; Arizona's travel is irrelevant when they've won 14 straight. Momentum overcomes everything!
+   *Agrees with:* Glass Cannon reinforced my view. A team peaking and shooting well, like Arizona's recent form, can absolutely win. Momentum creates those hot nights.
 
-   "Oracle wants to talk about 1-seeds, but Vanderbilt just lost their conference final. That's a momentum killer! Arizona is on a 14-game winning streak; that's the only stat that matters RIGHT NOW."
-   Updated probability: Arizona 0.65 ± 0.12
+   "Oracle wants to talk about 2014. I care about RIGHT NOW. Arizona's 14-game winning streak means they're peaking. Vanderbilt lost their conference final. Momentum is real!"
+   Updated probability: Arizona 0.60 ± 0.12
 
 
 ### Upset Watch
-**Upset Score: 29.6/100** | Upset score 30/100 for #5 Vanderbilt over #1 Arizona. Historical upset rate: 50.0%. Agent support: 3-4 for Vanderbilt.
-   *Agent split: 3-4 for Vanderbilt | Historical upset rate: 50.0%*
+**Upset Score: 35.4/100** | Upset score 35/100 for #5 Vanderbilt over #1 Arizona. Historical upset rate: 50.0%. Agent support: 4-3 for Vanderbilt.
+   *Agent split: 4-3 for Vanderbilt | Historical upset rate: 50.0%*
    *Statistical edges: None*
 
 
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Arizona 0.55 ± 0.17
+Combined probability: Arizona 0.53 ± 0.17
 
-**PICK: Arizona** (55% — lean, high uncertainty)
+**PICK: Arizona** (53% — genuine toss-up, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Iron Curtain and Streak won this debate - defense beats shooting variance, momentum matters. Glass Cannon flipped after realizing Vandy's recent 29% three-point shooting negates their season average. Road Dog's experience argument can't overcome Arizona's superior talent and current form. The house always wins."
+🎼 **THE CONDUCTOR**: "Road Dog flipped toward Arizona after Streak's momentum argument, but Oracle and Whisper held firm on experience/fatigue factors. The mathematical probability favors Vanderbilt 52-48. Winners: Oracle, Whisper. Losers: Streak, Iron Curtain. In championship games, legs matter more than streaks."
 
-   *Key factor: defensive efficiency gap*
+   *Key factor: veteran experience vs freshman talent in championship pressure*
 
-   *Most weighted: Iron Curtain*
+   *Most weighted: Oracle*
 
-   *Dissent report: Road Dog and Tempo Hawk overvalued veteran leadership against superior talent. Glass Cannon's flip showed even shooting specialists recognize recent performance matters more than season averages.*
+   *Dissent report: Streak and Iron Curtain lost - Streak overvalued momentum against elite competition, Iron Curtain underestimated how championship pressure neutralizes defensive advantages when talent gaps are minimal*
 
 
 ---
-### Specialist Vote: 5-2 Arizona
+### Specialist Vote: 4-3 Arizona
 
-🦅Vanderbilt 🛡️Arizona 💥Arizona 🐺Vanderbilt 👁️Arizona 📜Arizona 🔥Arizona
+🦅Vanderbilt 🛡️Arizona 💥Arizona 🐺Arizona 👁️Vanderbilt 📜Vanderbilt 🔥Arizona
 
 CONDUCTOR AGREES: Arizona (50%)
 
@@ -134,5 +134,5 @@ CONDUCTOR AGREES: Arizona (50%)
 ---
 ### Vote Tally
 
-- **Vanderbilt**: Tempo Hawk, Road Dog (2 votes)
-- **Arizona**: Iron Curtain, Glass Cannon, Whisper, Oracle, Streak (5 votes)
+- **Vanderbilt**: Tempo Hawk, Whisper, Oracle (3 votes)
+- **Arizona**: Iron Curtain, Glass Cannon, Road Dog, Streak (4 votes)

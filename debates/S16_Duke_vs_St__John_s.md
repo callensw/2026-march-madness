@@ -1,107 +1,107 @@
 # 🏀 #1 Duke vs #5 St. John's — East Region, Sweet 16
-*2026-03-16T17:43:02.582353+00:00*
+*2026-03-16T18:36:43.639329+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "St. John's can grind this into low-possession game, but Duke's efficiency edge still translates even at slower pace. Foster injury helps Johnnies control tempo."
-   Win probability: Duke 0.68 ± 0.15
-   *Key stat: Duke 70.0 tempo vs St. John's 66.4 — pace battle favors experienced St. John's*
+🦅 **TEMPO HAWK**: "St. John's grinds this to 62 possessions, neutralizing Duke's explosive offense. Experienced Red Storm controls pace like they did beating Kansas."
+   Win probability: Duke 0.32 ± 0.18
+   *Key stat: St. John's 66.4 tempo vs Duke's 70.0 — pace mismatch favors disciplined underdog*
 
-🛡️ **IRON CURTAIN**: "St. John's elite paint defense matches Duke's missing rim protection. Ejiofor dominates inside, Duke's perimeter D compromised without Foster."
+🛡️ **IRON CURTAIN**: "Elite defenses collide (87.1 vs 87.9). St. John's veterans won't crack under pressure like Duke's freshmen might. Defense travels in March."
    Win probability: Duke 0.42 ± 0.18
-   *Key stat: St. John's allows 0.421 opp_fg_pct vs Duke's 0.392 - defensive gap narrowed*
+   *Key stat: Both teams hold opponents to under 88 points per 100 possessions*
 
-💥 **GLASS CANNON** `[gemini]`: "Duke's 3PT% is better, but St. John's Oziyah Sellers is a proven flamethrower! If he gets hot, one hot quarter changes everything. You can't coach that!"
-   Win probability: Duke 0.53 ± 0.15
-   *Key stat: Duke 3PT% = 37.8%, St. John's 3PT% = 35.5%*
+💥 **GLASS CANNON** `[gemini]`: "Duke shoots better from three, but St. John's has Oziyah Sellers, a proven sniper! One hot night from him and it's an UPSET!"
+   Win probability: Duke 0.52 ± 0.15
+   *Key stat: Duke 3PT% = 37.8%*
 
-🐺 **ROAD DOG** `[gemini]`: "St. John's senior-led roster, with Zuby Ejiofor, has been through the Big East grind. Duke's young talent, even with Coach K, cracks under that pressure. Experience wins in March."
-   Win probability: Duke 0.48 ± 0.15
-   *Key stat: St. John's experience=6.0/10 vs Duke's experience=3.0/10*
+🐺 **ROAD DOG** `[gemini]`: "St. John's senior-led roster (experience 6.0) won't crack against Duke's young talent (experience 3.0). Coach Pitino has been here before."
+   Win probability: Duke 0.52 ± 0.15
+   *Key stat: St. John's experience: 6.0/10*
 
-👁️ **WHISPER** `[gemini]`: "Everyone knows about Foster's foot, but Ngongba II’s 'soreness' is a red flag on their frontline depth. St. John's has more rest days, less travel, and a healthier rotation. That changes everything."
-   Win probability: Duke 0.61 ± 0.15
-   *Key stat: Ngongba II 10.7 PPG missing*
+👁️ **WHISPER** `[gemini]`: "Everyone knows about Caleb Foster, but Ngongba II’s absence is a quiet concern. St. John's has more rest and less travel, which matters here."
+   Win probability: Duke 0.58 ± 0.15
+   *Key stat: Duke's 476.0mi travel vs St. John's 302.0mi*
 
-📜 **ORACLE**: "1v5 Sweet 16 base rate is 78%. Duke's efficiency edge reminds me of 2015 Duke - elite offense, solid defense, freshman stars. St. John's upset Kansas but Duke different class."
-   Win probability: Duke 0.72 ± 0.12
-   *Key stat: Duke's 39.6 efficiency margin vs St. John's 34.5 - largest gap in Sweet 16*
+📜 **ORACLE**: "1-seeds are 134-5 vs 5-seeds since 1985. Even injured elite teams like 2014 Wichita State dominated through talent gap."
+   Win probability: Duke 0.85 ± 0.12
+   *Key stat: Duke's 39.6 efficiency margin vs St. John's 34.5*
 
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. St. John's is on a W8 streak, including beating UConn in their conference final! They're peaking RIGHT NOW, Duke's W13 is impressive, but St. John's is playing their best ball."
-   Win probability: Duke 0.55 ± 0.15
-   *Key stat: St. John's is W8, Duke is W13*
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. St. John's is on an 8-game winning streak, peaking at the right time. Duke's 13-game run is impressive, but St. John's just won the Big East, beating UConn. Momentum is REAL!"
+   Win probability: Duke 0.58 ± 0.15
+   *Key stat: St. John's is W8, Duke is W13.*
 
 
 ## Round 2 — Cross-Examination
 
 🦅 **TEMPO HAWK** (position: STRENGTHENED):
 
-   *Disagrees with:* Oracle treats efficiency like gospel, but a 5-point margin becomes meaningless when St. John's controls pace and limits possessions.
+   *Disagrees with:* Oracle's 85% confidence ignores that efficiency margins collapse when pace is controlled — Duke's explosive offense needs possessions to explode.
 
-   *Agrees with:* Iron Curtain nailed it — without Foster's rim protection, Duke's defensive efficiency numbers are inflated from earlier games.
+   *Agrees with:* Iron Curtain correctly identifies this as a defensive slugfest where St. John's experience edge matters more than raw talent.
 
-   "Oracle's efficiency obsession misses the point — St. John's 66.4 tempo neutralizes Duke's margin. Fewer possessions means smaller talent gaps."
-   Updated probability: Duke 0.65 ± 0.16
+   "Oracle ignores pace reality — efficiency means nothing if you can't get possessions. St. John's controls tempo, Duke can't run."
+   Updated probability: Duke 0.28 ± 0.16
 
 🛡️ **IRON CURTAIN** (position: STRENGTHENED):
 
-   *Disagrees with:* Oracle claims Duke's efficiency margin is decisive, but defensive gaps this small disappear in March grind-it-out games.
+   *Disagrees with:* Oracle is dead wrong about talent gaps — when two elite defenses meet (87.1 vs 87.9), experience beats talent every time.
 
-   *Agrees with:* Road Dog nailed it - St. John's experience edge matters when Duke's young legs get wobbly in crunch time.
+   *Agrees with:* Tempo Hawk nailed it — St. John's will grind this into a rock fight where Duke's offensive talent can't breathe.
 
-   "Oracle's wrong about efficiency gaps. Duke allows 0.392 opp_fg_pct vs St. John's 0.421 — that's NOTHING. Defense travels, offense chokes."
+   "Oracle's wrong — talent gaps don't matter when defenses are THIS close. St. John's suffocating D neutralizes Duke's freshmen when shots stop falling."
    Updated probability: Duke 0.38 ± 0.16
 
-💥 **GLASS CANNON** (position: FLIPPED) `[gemini]`:
+💥 **GLASS CANNON** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain is wrong, their defensive focus ignores the power of a hot shooting night. Perimeter defense means nothing against a flamethrower.
+   *Disagrees with:* Oracle is wrong! History doesn't predict a flamethrower having a career night in March!
 
-   *Agrees with:* Road Dog sees the experience in St. John's, and that includes veteran shooters who can get red-hot when it counts.
+   *Agrees with:* Tempo Hawk gets it! St. John's can control the game and unleash their shooters when it matters!
 
-   "Iron Curtain keeps talking defense, but one hot shooter like Oziyah Sellers (40% 3PT%) makes their efficiency MEANINGLESS. Variance is the UNDERDOG'S friend!"
-   Updated probability: Duke 0.48 ± 0.17
+   "Oracle's historical data ignores variance! St. John's Oziyah Sellers shoots 41% from three, he can go off! One hot night from HIM changes everything!"
+   Updated probability: Duke 0.55 ± 0.16
 
-🐺 **ROAD DOG** (position: STRENGTHENED) `[gemini]`:
+🐺 **ROAD DOG** (position: FLIPPED) `[gemini]`:
 
-   *Disagrees with:* Oracle's base rates don't capture the specific roster experience gap. You can't measure heart with historical percentages.
+   *Disagrees with:* Oracle's historical data (134-5) doesn't account for the specific roster experience gap in this matchup.
 
-   *Agrees with:* Iron Curtain sees St. John's defensive toughness, which is built on those veteran players who know how to close out games.
+   *Agrees with:* Iron Curtain understands defense and veteran toughness travel in March, reinforcing my view on St. John's experience.
 
-   "Oracle loves the numbers, but they don't account for the Big East battle-hardened seniors on St. John's. Experience trumps efficiency in March."
-   Updated probability: Duke 0.45 ± 0.16
+   "Oracle's historical data ignores St. John's senior leadership (experience 6.0). You can't measure heart with old numbers. This screams upset."
+   Updated probability: Duke 0.48 ± 0.18
 
 👁️ **WHISPER** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Oracle's 78% base rate ignores Duke's critical injury situation; base rates don't account for a missing key rotation player.
+   *Disagrees with:* Oracle cites historical 1-seed dominance, but fails to account for Duke's current injury situation, which is not typical for a top seed.
 
-   *Agrees with:* Road Dog sees the experience factor, but it's compounded by Duke's compromised depth. St. John's senior frontcourt will exploit Ngongba's absence.
+   *Agrees with:* Road Dog highlights experience, but the hidden impact of Duke's injured players on their young roster still isn't fully priced in.
 
-   "Everyone's missing Duke's Ngongba II isn't just sore; he barely played in the last two games. That's a huge frontcourt hole nobody's talking about, especially against St. John's rest advantage."
-   Updated probability: Duke 0.58 ± 0.17
+   "Everyone is missing the silent factor: Duke's limited bench depth with Foster and Ngongba II out. St. John's has more healthy bodies and rest. Something doesn't add up."
+   Updated probability: Duke 0.52 ± 0.17
 
 📜 **ORACLE** (position: WEAKENED):
 
-   *Disagrees with:* Road Dog claims experience wins in March, but historically talented young teams like 2012 Kentucky and 2015 Duke prove otherwise.
+   *Disagrees with:* Tempo Hawk thinks pace control matters against elite talent — tell that to 2018 Virginia who won it all despite slow tempo preferences.
 
-   *Agrees with:* Tempo Hawk correctly identified that Duke's efficiency edge translates even at slower pace, matching historical patterns.
+   *Agrees with:* Whisper's travel analysis reinforces the structural advantages 1-seeds have beyond just talent — every edge compounds in March.
 
-   "Road Dog's experience argument? Duke 2015 won it all with freshmen. Talent trumps age in single elimination since 1985."
-   Updated probability: Duke 0.68 ± 0.14
+   "Tempo Hawk ignores history: 1-seeds are 134-5 vs 8-seeds since 1985. Pace control doesn't overcome talent gaps this massive."
+   Updated probability: Duke 0.78 ± 0.15
 
-🔥 **STREAK** (position: WEAKENED) `[gemini]`:
+🔥 **STREAK** (position: FLIPPED) `[gemini]`:
 
-   *Disagrees with:* Oracle wants to talk about 1985. I want to talk about LAST TUESDAY. St. John's just won 8 straight games, including a conference title, that's not 'base rate' behavior.
+   *Disagrees with:* Oracle is dead wrong, focusing on 1985 ignores St. John's current 8-game winning streak and Big East Championship.
 
-   *Agrees with:* Road Dog sees St. John's senior leadership as an edge. That experience is why they're on an 8-game winning streak and playing their best ball now.
+   *Agrees with:* Glass Cannon highlights Oziyah Sellers, a sniper who can get hot and carry this peaking St. John's team to an upset.
 
-   "St. John's W8 streak is REAL momentum, Oracle's 1v5 base rate is stale history. This team is peaking RIGHT NOW, not playing like a typical underdog."
-   Updated probability: Duke 0.52 ± 0.16
+   "Oracle wants 1985. I want LAST WEEK. St. John's just won the Big East, beating UConn and Marquette on a 8-game streak. Duke's 13-game run is great, but St. John's momentum is undeniable. They're peaking!"
+   Updated probability: Duke 0.48 ± 0.18
 
 
 ### Upset Watch
-**Upset Score: 29.9/100** | Upset score 30/100 for #5 St. John's over #1 Duke. Historical upset rate: 50.0%. Agent support: 2-5 for St. John's.
+**Upset Score: 37.9/100** | Upset score 38/100 for #5 St. John's over #1 Duke. Historical upset rate: 50.0%. Agent support: 2-5 for St. John's.
    *Agent split: 2-5 for St. John's | Historical upset rate: 50.0%*
    *Statistical edges: Tempo mismatch (3.6 poss/game gap)*
 
@@ -109,30 +109,30 @@
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Duke 0.54 ± 0.19
+Combined probability: Duke 0.51 ± 0.23
 
-**PICK: Duke** (54% — genuine toss-up, high uncertainty)
+**PICK: Duke** (51% — genuine toss-up, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Glass Cannon's flip to St. John's shows shooting variance concerns, but Oracle and Tempo Hawk won on efficiency fundamentals. Duke's talent edge survives pace control despite injury concerns. Road Dog and Iron Curtain lost betting against blue blood depth. March madness favors the mathematically superior."
+🎼 **THE CONDUCTOR**: "Road Dog and Streak flipped after seeing St. John's 8-game streak and experience edge neutralize Duke's talent. Oracle's historical dominance crumbled against pace control reality. Winners: Tempo Hawk, Iron Curtain. Losers: Oracle's outdated data. When veterans control tempo, freshmen suffocate."
 
-   *Key factor: Offensive efficiency gap despite pace control*
+   *Key factor: Pace control neutralizing offensive talent*
 
-   *Most weighted: Oracle*
+   *Most weighted: Tempo Hawk*
 
-   *Dissent report: Iron Curtain and Road Dog overvalued experience and defensive parity - Glass Cannon flipped because shooting variance can overcome efficiency, but one hot shooter doesn't negate systematic talent advantages*
+   *Dissent report: Oracle relied on 1985-era historical data (134-5) but failed to account for how pace control and defensive equality (87.1 vs 87.9) neutralize talent gaps in modern basketball*
 
 
 ---
-### Specialist Vote: 4-3 Duke
+### Specialist Vote: 4-3 St. John's
 
-🦅Duke 🛡️St. John's 💥St. John's 🐺St. John's 👁️Duke 📜Duke 🔥Duke
+🦅St. John's 🛡️St. John's 💥Duke 🐺St. John's 👁️Duke 📜Duke 🔥St. John's
 
-CONDUCTOR AGREES: Duke (50%)
+CONDUCTOR OVERRIDE: Duke (50%) — sided with the minority
 
 
 ---
 ### Vote Tally
 
-- **Duke**: Tempo Hawk, Whisper, Oracle, Streak (4 votes)
-- **St. John's**: Iron Curtain, Glass Cannon, Road Dog (3 votes)
+- **St. John's**: Tempo Hawk, Iron Curtain, Road Dog, Streak (4 votes)
+- **Duke**: Glass Cannon, Whisper, Oracle (3 votes)

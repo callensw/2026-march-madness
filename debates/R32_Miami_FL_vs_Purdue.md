@@ -1,132 +1,132 @@
 # 🏀 #7 Miami FL vs #2 Purdue — West Region, Round of 32
-*2026-03-16T17:39:38.506637+00:00*
+*2026-03-16T18:32:40.018419+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Miami's slower tempo forces fewer possessions, compressing Purdue's efficiency edge. Disciplined half-court execution beats talent in grinding games."
-   Win probability: Miami FL 0.32 ± 0.15
+🦅 **TEMPO HAWK**: "Miami's grinding 65.6 tempo vs Purdue's 69.7 creates mismatch. Fewer possessions compress Purdue's efficiency edge. Miami's elite defense controls pace."
+   Win probability: Miami FL 0.42 ± 0.15
    *Key stat: 4.1 possession tempo gap favors Miami's grinding style*
 
-🛡️ **IRON CURTAIN**: "Identical defensive efficiency (90.1 vs 90.0) means ugly grind. Miami's defense travels, Purdue's offense hasn't faced this intensity since Big Ten tourney."
-   Win probability: Miami FL 0.42 ± 0.18
-   *Key stat: Both teams allow 90.0-90.1 points per 100 possessions*
+🛡️ **IRON CURTAIN**: "Identical defensive efficiency means ugly grind. Miami's suffocating defense neutralizes Purdue's offense. Defense travels in March."
+   Win probability: Miami FL 0.48 ± 0.18
+   *Key stat: Miami adj_d 90.1 vs Purdue 90.0 - defensive deadlock*
 
-💥 **GLASS CANNON** `[gemini]`: "Purdue shoots 39.2% from three! That's ELITE. Miami's 34.1% just can't keep up when Purdue gets hot. You can't coach that kind of shooting!"
+💥 **GLASS CANNON** `[gemini]`: "Purdue is SHOOTING 39.2% from three! That's elite, you can't coach that. Miami's 34.1% can't keep up. One hot quarter changes everything!"
    Win probability: Miami FL 0.35 ± 0.15
    *Key stat: Purdue 3PT%: 39.2%*
 
-🐺 **ROAD DOG** `[gemini]`: "Purdue's senior leadership and coach have been here before. Miami's young talent will crack under pressure. Experience wins in March."
-   Win probability: Miami FL 0.48 ± 0.15
-   *Key stat: Purdue experience=8.0/10*
-
-👁️ **WHISPER** `[gemini]`: "Miami's travel is over 500 miles more than Purdue's, and with equal rest days, that fatigue compounds. Nobody's talking about the toll."
-   Win probability: Miami FL 0.58 ± 0.15
-   *Key stat: Miami travel: 2264.0mi vs Purdue travel: 1751.0mi*
-
-📜 **ORACLE**: "7v2 base rate is 39.2% since 1985. Miami's pace control and interior scoring mirrors 2006 Wichita State upset profile."
-   Win probability: Miami FL 0.38 ± 0.12
-   *Key stat: 7-seeds beat 2-seeds 39.2% historically*
-
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — Purdue just won their conference tournament, winning SIX straight! They are peaking, while Miami stumbled. Momentum is REAL!"
+🐺 **ROAD DOG** `[gemini]`: "Purdue's senior-led roster, with Braden Smith and Fletcher Loyer, has been here before. Miami's freshmen will crack under pressure. Experience wins in March."
    Win probability: Miami FL 0.45 ± 0.15
-   *Key stat: Purdue streak: W6*
+   *Key stat: Purdue experience: 8.0/10 vs Miami experience: 6.0/10*
+
+👁️ **WHISPER** `[gemini]`: "Everyone's focused on Purdue's size, but Miami traveled over 500 more miles. That hidden fatigue factor could be the equalizer. The long travel takes a toll."
+   Win probability: Miami FL 0.58 ± 0.15
+   *Key stat: Miami: 2264.0mi travel*
+
+📜 **ORACLE**: "Classic 7v2 upset setup. Miami's pace control and defense mirrors 2013 FGCU over Georgetown. Purdue vulnerable to athletic pressure."
+   Win probability: Miami FL 0.32 ± 0.15
+   *Key stat: 7-seeds beat 2-seeds 22% historically since 1985*
+
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. Purdue is peaking, winning their conference tournament and riding a six-game streak. Miami lost early and is facing a team playing their best basketball RIGHT NOW. Purdue's W6 streak is undeniable."
+   Win probability: Miami FL 0.45 ± 0.15
+   *Key stat: Purdue's W6 streak*
 
 
 ## Round 2 — Cross-Examination
 
-🦅 **TEMPO HAWK** (position: FLIPPED):
+🦅 **TEMPO HAWK** (position: STRENGTHENED):
 
-   *Disagrees with:* Glass Cannon misses that elite shooting percentages become irrelevant when Miami's pace control limits total attempts and creates grinding possessions.
+   *Disagrees with:* Whisper's travel argument ignores that pace control matters more than jet lag in March.
 
-   *Agrees with:* Oracle correctly identifies Miami's pace control as the upset mechanism — fewer possessions compress talent gaps and favor disciplined execution.
+   *Agrees with:* Iron Curtain's defensive deadlock reinforces why tempo becomes the deciding factor in this grind-it-out game.
 
-   "Glass Cannon ignores pace context — Purdue's 39% means nothing in 62-possession games. Miami controls tempo, neutralizes shooting variance."
-   Updated probability: Miami FL 0.68 ± 0.12
+   "Whisper's travel theory is noise. Miami's 65.6 tempo neutralizes Purdue's efficiency edge better than any mileage calculation."
+   Updated probability: Miami FL 0.45 ± 0.16
 
 🛡️ **IRON CURTAIN** (position: FLIPPED):
 
-   *Disagrees with:* Glass Cannon thinks Purdue's 39.2% three-point shooting will save them, but Miami's perimeter defense allows just 31.2% from three — elite shooters go cold against elite defense.
+   *Disagrees with:* Glass Cannon thinks 39.2% three-point shooting matters when Miami's suffocating defense forces contested shots all game long.
 
-   *Agrees with:* Whisper identified a real factor with Miami's extra travel fatigue, but my defensive analysis shows Miami's suffocating perimeter defense neutralizes Purdue's main weapon.
+   *Agrees with:* Tempo Hawk gets it - fewer possessions means Miami's defense can neutralize Purdue's efficiency edge in a grinding game.
 
-   "Glass Cannon is WRONG. Three-point shooting vanishes under pressure. Miami held opponents to 31.2% from three — that defense SUFFOCATES shooters."
-   Updated probability: Miami FL 0.58 ± 0.16
-
-💥 **GLASS CANNON** (position: FLIPPED) `[gemini]`:
-
-   *Disagrees with:* I gotta disagree with Tempo Hawk! Tempo doesn't matter when one team is shooting lights out from deep. You can't coach that variance!
-
-   *Agrees with:* Glass Cannon's initial take on Purdue's shooting was spot on; that 39.2% from three is just elite and changes everything for me!
-
-   "I'm flipping! Purdue's 39.2% 3PT shooting is just TOO good! Miami's 34.1% can't match that firepower. One hot night from Purdue and it's over!"
-   Updated probability: Miami FL 0.65 ± 0.17
-
-🐺 **ROAD DOG** (position: FLIPPED) `[gemini]`:
-
-   *Disagrees with:* Glass Cannon loves the three-ball, but Miami's veteran guards will close out. You can't shoot 39.2% when a hand is in your face.
-
-   *Agrees with:* Whisper's point on travel fatigue is real. Those extra miles wear down young legs, while veterans know how to manage it.
-
-   "Miami's senior guard, Nijel Pack, has seen it all. Purdue's coach, Matt Painter, has a history of early exits. Experience trumps analytics."
+   "Glass Cannon is WRONG. Three-point shooting disappears in March grind. Miami's 90.1 adj_d will force contested shots. Defense travels, offense vanishes."
    Updated probability: Miami FL 0.52 ± 0.16
+
+💥 **GLASS CANNON** (position: WEAKENED) `[gemini]`:
+
+   *Disagrees with:* Iron Curtain keeps talking about defense but doesn't mention Miami's elite perimeter D, holding opponents to just 31.9% from three. That's a huge factor!
+
+   *Agrees with:* Oracle gets it! This 7v2 setup screams variance, just like I'm saying. Anything can happen when shots start falling!
+
+   "Purdue's 39.2% from three is elite, but Miami allows only 31.9% from deep! Their perimeter D is underrated. One cold night for Purdue changes everything!"
+   Updated probability: Miami FL 0.45 ± 0.15
+
+🐺 **ROAD DOG** (position: STRENGTHENED) `[gemini]`:
+
+   *Disagrees with:* Whisper talks about travel, but that's just noise. Real fatigue comes from playing in hostile environments, not a few extra miles.
+
+   *Agrees with:* Streak sees Purdue peaking, and I see a veteran team hitting their stride. That's a dangerous combination in March.
+
+   "Purdue's senior leadership, especially Braden Smith, has been here before. Miami's young guys will crack under March pressure. Experience always wins."
+   Updated probability: Miami FL 0.48 ± 0.16
 
 👁️ **WHISPER** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk is wrong. Tempo doesn't matter when one team is playing on fumes; fatigue will dictate pace, not strategy.
+   *Disagrees with:* Road Dog focuses on 'experience,' but Purdue's seniors just played more games with less rest. Fatigue trumps experience here.
 
-   *Agrees with:* Glass Cannon's focus on shooting is a distraction; tired legs hit fewer threes, regardless of season average.
+   *Agrees with:* No one fully reinforced my view, but many are underestimating the circumstances.
 
-   "Everyone is missing the cumulative fatigue on Purdue's bench, playing heavy minutes. Miami's deeper rotation means fresher legs late. Something doesn't add up."
-   Updated probability: Miami FL 0.62 ± 0.14
+   "Everyone's missing the hidden fatigue from Purdue's deep conference tourney run. That extra game means less rest for the favorite. Miami's travel disadvantage is real, but Purdue's schedule is tougher."
+   Updated probability: Miami FL 0.62 ± 0.16
 
 📜 **ORACLE** (position: STRENGTHENED):
 
-   *Disagrees with:* Glass Cannon completely ignores that shooting percentages crater against elite defenses — just ask 2019 Gonzaga who shot 38% from three all season then went 4-16 against Texas Tech's defense.
+   *Disagrees with:* Whisper's travel fatigue argument ignores that elite defensive teams historically overcome travel - 2018 Loyola is proof.
 
-   *Agrees with:* Iron Curtain nailed it — when defensive efficiency is identical, the game becomes a grind where Miami's half-court execution and interior advantage takes over.
+   *Agrees with:* Iron Curtain nailed it - when defensive efficiency is identical (90.1 vs 90.0), the grinder usually wins in March.
 
-   "Glass Cannon ignores defense! Purdue's 39% shooting means nothing against Miami's elite interior defense. 2013 Florida Gulf Coast shot lights out too."
-   Updated probability: Miami FL 0.42 ± 0.12
+   "Whisper's travel theory is nonsense. 2018 Loyola-Chicago traveled 1,800+ miles, still made Final Four. Defense travels better than fatigue."
+   Updated probability: Miami FL 0.38 ± 0.15
 
-🔥 **STREAK** (position: WEAKENED) `[gemini]`:
+🔥 **STREAK** (position: FLIPPED) `[gemini]`:
 
-   *Disagrees with:* Oracle wants to talk about 1985 base rates. That's stale! Recent form is the only thing that matters, not ancient history.
+   *Disagrees with:* Tempo Hawk wants to talk about tempo, but Miami's W4 streak to win their conference tournament shows they've adapted to any pace and are dominating.
 
-   *Agrees with:* Glass Cannon highlights Purdue's elite shooting; that's a team getting hot at the right time. They're clicking NOW.
+   *Agrees with:* Oracle cites 7v2 upsets; Miami's recent form makes them a prime candidate for that exact scenario, they're playing their best ball now.
 
-   "Purdue's six-game win streak means they're peaking, while Miami is limping in. Oracle wants to talk about 1985, I care about LAST WEEK!"
-   Updated probability: Miami FL 0.40 ± 0.16
+   "I picked Purdue in Round 1, but I'm flipping. Miami's W4 streak and conference title proves they're peaking RIGHT NOW. Purdue's streak is stale. Momentum is with Miami."
+   Updated probability: Miami FL 0.58 ± 0.15
 
 
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Miami FL 0.55 ± 0.18
+Combined probability: Miami FL 0.49 ± 0.17
 
-**PICK: Purdue** (55% — genuine toss-up, high uncertainty)
+**PICK: Purdue** (49% — genuine toss-up, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Tempo Hawk and Iron Curtain won this debate by flipping to Miami after recognizing pace control neutralizes shooting advantages. Glass Cannon's shooting obsession crumbled under defensive pressure arguments. Five agents flipped shows the evidence was compelling. When pace meets defense, grind beats glitter."
+🎼 **THE CONDUCTOR**: "Iron Curtain and Streak flipped to Miami after recognizing defensive parity neutralizes Purdue's efficiency edge. Whisper's travel fatigue theory was weak, but Miami's W4 conference title run shows peak timing. Road Dog's experience argument crumbles against Miami's defensive suffocation. Defense travels, momentum decides."
 
-   *Key factor: pace control neutralizing shooting advantage*
+   *Key factor: Defensive parity with Miami's superior momentum timing*
 
-   *Most weighted: Tempo Hawk*
+   *Most weighted: Iron Curtain*
 
-   *Dissent report: [OVERRIDE: Conductor was overridden — original pick disagreed with 6-1 specialist majority] Glass Cannon and Oracle stuck with Purdue's shooting and historical patterns, but Glass Cannon's flip back to Purdue after initially being swayed shows the shooting argument wasn't as strong as the pace control evidence that convinced most agents to flip to Miami.*
+   *Dissent report: Road Dog and Glass Cannon stuck with Purdue on experience and shooting, but ignored that Miami's 90.1 defensive efficiency matches Purdue's 90.0 exactly, neutralizing both advantages in a grind-it-out game*
 
 
 ---
-### Specialist Vote: 5-2 Miami FL
+### Specialist Vote: 4-3 Purdue
 
-🦅Miami FL 🛡️Miami FL 💥Miami FL 🐺Miami FL 👁️Miami FL 📜Purdue 🔥Purdue
+🦅Purdue 🛡️Miami FL 💥Purdue 🐺Purdue 👁️Miami FL 📜Purdue 🔥Miami FL
 
-CONDUCTOR OVERRIDE: Purdue (64%) — sided with the minority
+CONDUCTOR AGREES: Purdue (50%)
 
 
 ---
 ### Vote Tally
 
-- **Miami FL**: Tempo Hawk, Iron Curtain, Glass Cannon, Road Dog, Whisper (5 votes)
-- **Purdue**: Oracle, Streak (2 votes)
+- **Purdue**: Tempo Hawk, Glass Cannon, Road Dog, Oracle (4 votes)
+- **Miami FL**: Iron Curtain, Whisper, Streak (3 votes)

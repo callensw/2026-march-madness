@@ -1,0 +1,7 @@
+STEP 1 — UPSET THESIS: UCLA forces UConn into a half-court grind with their 66.7 tempo, neutralizing UConn's transition game. UCLA's 91.5 adj_d can get stops against UConn's 123.9 offense, and in a low-possession game, variance increases dramatically.
+
+STEP 2 — RATE THE UPSET THESIS: 5/10. UCLA's defense is solid but not elite. UConn's 87.8 adj_d is significantly better, and they're the more complete team. The pace differential helps UCLA but isn't enough to overcome the talent gap.
+
+STEP 3 — PICK: UConn wins this. Their defense is too good (87.8 vs 91.5), and they limit UCLA to tough shots. UCLA's offense relies on perimeter shooting, but UConn holds opponents to 40.2% shooting. Defense travels, and UConn's travels better.
+
+{"team_a_win_prob": 0.32, "uncertainty": 0.12, "reasoning": "UConn's 87.8 adj_d vs UCLA's 91.5 - better defense wins in March. UConn limits opponents to 40.2% shooting, neutralizes UCLA's perimeter game.", "key_stat": "UConn allows 40.2% opponent FG%, UCLA allows 43.3%"}

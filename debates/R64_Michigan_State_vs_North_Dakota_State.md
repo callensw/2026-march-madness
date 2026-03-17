@@ -1,59 +1,59 @@
 # 🏀 #3 Michigan State vs #14 North Dakota State — East Region, Round of 64
-*2026-03-16T17:26:57.091454+00:00*
+*2026-03-16T18:18:53.981360+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Tempo gap too small (2.5 possessions) for NDSU to neutralize MSU's massive 16.3-point efficiency edge. Spartans win ugly but comfortably."
-   Win probability: Michigan State 0.78 ± 0.12
-   *Key stat: MSU 68.7 tempo vs NDSU 66.2 — insufficient pace differential*
+🦅 **TEMPO HAWK**: "Tempo mismatch minimal at 2.5 possessions difference. MSU's 10.7-point efficiency edge decisive in similar-paced game. Spartans control without pace disruption."
+   Win probability: Michigan State 0.75 ± 0.12
+   *Key stat: MSU 68.7 tempo vs NDSU 66.2 - only 2.5 possession gap*
 
-🛡️ **IRON CURTAIN**: "MSU's elite defense travels but NDSU forces ugly half-court games. Bison's size matches up, Wheeler-Thomas creates shots when offense stalls."
+🛡️ **IRON CURTAIN**: "MSU's elite defense (88.0 adj_d) versus NDSU's weak offense creates 9-point efficiency gap. Bison shoot 32.9% from three against suffocating Spartan D."
+   Win probability: Michigan State 0.72 ± 0.12
+   *Key stat: MSU allows 41.0% FG while NDSU shoots 32.9% from three*
+
+💥 **GLASS CANNON** `[gemini]`: "Michigan State's 3-point shooting is on fire at 36.7%! That's elite. North Dakota State at 32.9% isn't keeping up. You can't coach that kind of offensive firepower!"
+   Win probability: Michigan State 0.85 ± 0.08
+   *Key stat: Michigan State 3PT% = 36.7%*
+
+🐺 **ROAD DOG** `[gemini]`: "Michigan State's coach Izzo has been here 28 times. That experience, combined with their senior leadership, will guide them past a young Bison squad. Analytics don't play the game."
    Win probability: Michigan State 0.68 ± 0.15
-   *Key stat: MSU allows 41% shooting but NDSU plays at 66 tempo*
+   *Key stat: Michigan State coach Tom Izzo: 28 NCAA Tournament appearances*
 
-💥 **GLASS CANNON** `[gemini]`: "Michigan State's 3PT% is strong, and North Dakota State just doesn't have the firepower from deep to keep up. One hot quarter won't change that."
-   Win probability: Michigan State 0.82 ± 0.10
-   *Key stat: Michigan State 3PT%: 36.7%*
+👁️ **WHISPER** `[gemini]`: "Michigan State's early Big Ten exit and L1 streak suggest issues. North Dakota State has less rest (4 days vs 6) and significant travel (1181 miles). Something doesn't add up."
+   Win probability: Michigan State 0.62 ± 0.15
+   *Key stat: NDSU travel: 1181 miles*
 
-🐺 **ROAD DOG** `[gemini]`: "Michigan State's coach has been here before. Their senior leaders, like Jaxon Kohler and Carson Cooper, have seen every kind of March pressure. North Dakota State's inexperience will crack."
-   Win probability: Michigan State 0.68 ± 0.15
-   *Key stat: Michigan State experience: 7.0/10*
+📜 **ORACLE**: "3v14 base rate is 92.6% since 1985. NDSU fits Cinderella profile but 36-point KenPom gap historically decisive."
+   Win probability: Michigan State 0.88 ± 0.12
+   *Key stat: 3-seeds are 125-10 vs 14-seeds since 1985*
 
-👁️ **WHISPER** `[gemini]`: "Michigan State's early Big Ten exit and L1 streak is a red flag. North Dakota State has less rest and traveled far, but MSU’s chemistry is questionable. Something doesn't add up."
-   Win probability: Michigan State 0.61 ± 0.15
-   *Key stat: Michigan State: Lost 3 of last 4 before tourney*
-
-📜 **ORACLE**: "3v14 base rate is 85.2%. NDSU has pace control like 2016 Middle Tennessee, but MSU's experience edge matters in March."
-   Win probability: Michigan State 0.78 ± 0.12
-   *Key stat: MSU has 7.0/10 experience rating vs NDSU's 4.0/10*
-
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. Michigan State is fading, losing 3 of their last 4. North Dakota State is peaking, riding a 5-game winning streak and just won their conference tournament. Momentum is REAL!"
-   Win probability: Michigan State 0.58 ± 0.15
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — North Dakota State is peaking, winning their conference tournament with a 5-game streak. Michigan State lost 3 of their last 4, including an early Big Ten exit. Momentum is real!"
+   Win probability: Michigan State 0.62 ± 0.15
    *Key stat: North Dakota State: W5 streak*
 
 
 ### Devil's Advocate (unanimous vote triggered)
-🛡️ **IRON CURTAIN** *(forced contrarian)*: "Michigan State's 88.0 defensive efficiency is elite. NDSU shoots 43.8% against weak competition - they'll struggle to crack 55 points against this Spartan defense. Defense travels, offense disappears."
-   *Pick: **Michigan State** (72%) | Key stat: MSU allows 41% opponent FG%, NDSU shoots 43.8% vs weak Summit League*
+💥 **GLASS CANNON** *(forced contrarian)*: "Michigan State's shooting (36.7%) is solid, but NDSU's defense against the three is decent. However, NDSU's 3PT% is too low. No upset magic here!"
+   *Pick: **Michigan State** (70%) | Key stat: North Dakota State 3PT% = 32.9%*
 
 
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: Michigan State 0.63 ± 0.25
+Combined probability: Michigan State 0.65 ± 0.25
 
-**PICK: Michigan State** (63% — lean, high uncertainty)
+**PICK: Michigan State** (65% — lean, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Tempo Hawk, Glass Cannon, and Oracle win this debate with their efficiency-focused analysis. The 16.3-point KenPom gap is decisive despite NDSU's pace control ability. Whisper and Streak raise valid momentum concerns but can't overcome the talent chasm. Defense travels, Summit League offense doesn't."
+🎼 **THE CONDUCTOR**: "Oracle and Glass Cannon win this debate with the KenPom gap and shooting disparity. Whisper and Streak lose - their momentum concerns can't overcome a 36-point efficiency chasm. The math is merciless in March."
 
-   *Key factor: Massive efficiency gap (16.3 points) that pace control cannot neutralize*
+   *Key factor: 36-point KenPom efficiency gap*
 
-   *Most weighted: Tempo Hawk*
+   *Most weighted: Oracle*
 
-   *Dissent report: Whisper flagged MSU's chemistry issues and recent struggles, while Streak emphasized NDSU's hot streak vs MSU's fade, but neither provided evidence strong enough to overcome the fundamental talent disparity*
+   *Dissent report: Whisper raised valid concerns about MSU's recent struggles and NDSU's rest advantage, but couldn't provide compelling evidence that momentum overcomes such a massive talent gap in a 3v14 matchup*
 
 
 ---

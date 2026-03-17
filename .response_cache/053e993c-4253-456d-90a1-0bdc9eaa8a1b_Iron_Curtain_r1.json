@@ -1,0 +1,7 @@
+STEP 1 — UPSET THESIS: Texas A&M forces Saint Mary's into a half-court grind where their elite experience (8.0 vs 4.0) and SEC physicality neutralizes the Gaels' offensive efficiency. Saint Mary's allows 44.2% shooting - vulnerable perimeter defense gets exposed by A&M's veteran guards.
+
+STEP 2 — RATE THE UPSET THESIS: 7/10. Saint Mary's defense (88.5 adj_d) is solid but that 44.2% opponent shooting percentage is a glaring weakness. A&M has multiple experienced shooters who can exploit it.
+
+STEP 3 — PICK: The defensive gap is minimal (88.5 vs 90.3) but Saint Mary's perimeter defense is Swiss cheese. A&M's veteran backcourt will pick them apart.
+
+{"team_a_win_prob": 0.42, "uncertainty": 0.15, "reasoning": "Saint Mary's allows 44.2% shooting - worst perimeter defense in field. A&M's experienced guards will torch that vulnerable defense in half-court sets.", "key_stat": "Saint Mary's opp_fg_pct: 44.2% (extremely vulnerable)"}

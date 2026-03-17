@@ -1,152 +1,152 @@
 # 🏀 #7 UCLA vs #10 UCF — East Region, Round of 64
-*2026-03-16T17:27:21.423414+00:00*
+*2026-03-16T18:19:17.415476+00:00*
 
 ---
 
 ## Round 1 — Independent Analysis
 
-🦅 **TEMPO HAWK**: "Identical tempos neutralize UCLA's efficiency edge. UCF's 11.2% turnover rate creates extra possessions vs UCLA's 8.9%. Bilodeau injury hurts UCLA's primary scoring."
+🦅 **TEMPO HAWK**: "Pace-neutral game decided by possessions. UCF's 11.2% turnover rate creates extra chances while UCLA loses primary scorer Bilodeau. Knights control efficiency equation."
    Win probability: UCLA 0.42 ± 0.16
-   *Key stat: UCF forces 2.3% more turnovers than UCLA commits*
+   *Key stat: UCF forces 2.3 more turnovers per 100 possessions than UCLA*
 
-🛡️ **IRON CURTAIN**: "Bilodeau injury kills UCLA's scoring. Four-point defensive gap means ugly grind. UCF's rebounding and experience edge in low-possession game."
+🛡️ **IRON CURTAIN**: "UCLA allows 43.3% shooting - that's vulnerable perimeter defense. Without Bilodeau, their offense becomes predictable. UCF grinds this out in half-court."
    Win probability: UCLA 0.42 ± 0.15
-   *Key stat: UCF allows 45.6% shooting vs UCLA's 43.3% - minimal defensive gap*
+   *Key stat: UCLA opponent FG% of 43.3% vs UCF's experienced guards*
 
-💥 **GLASS CANNON** `[gemini]`: "UCLA shoots almost 38% from three! That's elite! When they're on, they're ON. UCF's 35.2% isn't enough to hang with that kind of firepower. You can't coach that!"
-   Win probability: UCLA 0.62 ± 0.15
-   *Key stat: UCLA 3PT% = 37.9%*
+💥 **GLASS CANNON** `[gemini]`: "UCLA's 37.9% from three is DANGEROUS! They can catch fire and blow this open, especially with Dent creating looks. You can't coach that!"
+   Win probability: UCLA 0.55 ± 0.15
+   *Key stat: UCLA 3PT%: 37.9%*
 
-🐺 **ROAD DOG** `[gemini]`: "UCF's senior-led roster has been there before. UCLA's got a good coach, but UCF's experience edge (8.0 vs 7.0) and battle-tested seniors will grind this out. I've seen this movie."
-   Win probability: UCLA 0.58 ± 0.15
+🐺 **ROAD DOG** `[gemini]`: "UCF's senior-led roster, with an experience score of 8.0, has been through the Big 12 grind. UCLA's 7.0 experience won't cut it against that toughness."
+   Win probability: UCLA 0.48 ± 0.15
    *Key stat: UCF experience: 8.0/10*
 
-👁️ **WHISPER** `[gemini]`: "Everyone knows about Bilodeau's injury, but nobody's talking about the travel fatigue. UCLA has 2.8x the travel of UCF. That compounds the loss of their primary scorer."
-   Win probability: UCLA 0.58 ± 0.15
-   *Key stat: UCLA travel 2398.0mi vs UCF travel 856.0mi*
-
-📜 **ORACLE**: "Reminds me of 2014 Dayton over Syracuse - higher seed missing key scorer, experienced underdog capitalizes. Bilodeau injury is massive."
-   Win probability: UCLA 0.58 ± 0.15
-   *Key stat: UCLA's leading scorer Tyler Bilodeau out with injury*
-
-🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching. UCLA just made a deep Big Ten run, winning two straight. UCF got blown out in their last game. UCLA is peaking RIGHT NOW."
+👁️ **WHISPER** `[gemini]`: "Everyone knows about Bilodeau's injury, but nobody's talking about UCLA's brutal travel. UCF has less than half the miles and equal rest. Fatigue is real."
    Win probability: UCLA 0.62 ± 0.15
-   *Key stat: UCLA's last 10: 7-3*
+   *Key stat: UCLA travel: 2398.0mi vs UCF travel: 856.0mi*
+
+📜 **ORACLE**: "7v10 base rate is 61%. UCLA's Bilodeau injury plus UCF's veteran leadership mirrors 2019 Florida upset profile."
+   Win probability: UCLA 0.62 ± 0.15
+   *Key stat: 10-seeds win 39% vs 7-seeds since 1985*
+
+🔥 **STREAK** `[gemini]`: "Forget the spreadsheets — let me tell you what I've been watching! UCLA just made a deep Big Ten run, winning 7 of their last 10. UCF is 5-5 in their last 10 and got blown out by Arizona. UCLA is peaking!"
+   Win probability: UCLA 0.68 ± 0.15
+   *Key stat: UCLA: 7-3 in last 10*
 
 
 ## Round 2 — Cross-Examination
 
 🦅 **TEMPO HAWK** (position: STRENGTHENED):
 
-   *Disagrees with:* Glass Cannon overvalues shooting percentage without considering possession control - efficiency per possession matters more than raw percentages.
+   *Disagrees with:* Streak's momentum argument crumbles when you realize UCLA's fast pace plays into UCF's hands - the Knights want a grind-it-out game.
 
-   *Agrees with:* Iron Curtain correctly identifies this as a grind-it-out game where UCF's experience and rebounding edge becomes decisive.
+   *Agrees with:* Iron Curtain nailed UCLA's defensive vulnerability at 43.3% opponent shooting - that's exactly what UCF's patient offense can exploit.
 
-   "Glass Cannon ignores pace reality. UCLA's 37.9% from three means nothing if UCF controls possessions and limits attempts through tempo."
-   Updated probability: UCLA 0.38 ± 0.18
+   "Streak ignores pace reality. UCLA's 'momentum' means nothing when UCF controls tempo at 67.2 possessions. Fewer chances neutralizes talent gap."
+   Updated probability: UCLA 0.38 ± 0.14
 
 🛡️ **IRON CURTAIN** (position: STRENGTHENED):
 
-   *Disagrees with:* Glass Cannon ignores that UCLA's best shooter is INJURED - you can't shoot threes from the bench.
+   *Disagrees with:* Streak cherry-picked UCLA's conference tournament run while ignoring their 7-game losing streak to end the regular season - that's regression waiting to happen.
 
-   *Agrees with:* Tempo Hawk nailed it - identical pace means this becomes a defensive slugfest where UCF's experience matters.
+   *Agrees with:* Tempo Hawk nailed it on UCF's turnover creation - fewer possessions favor the better defensive team, and that's UCF.
 
-   "Glass Cannon is DELUSIONAL. UCLA's 37.9% from three means NOTHING when Bilodeau scored 35% of their points. Defense wins ugly games."
+   "Streak ignores UCLA's 7-game losing streak to end regular season. That's not peaking - that's collapsing. UCF's defense will suffocate them."
    Updated probability: UCLA 0.38 ± 0.14
 
-💥 **GLASS CANNON** (position: UNCHANGED) `[gemini]`:
+💥 **GLASS CANNON** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Iron Curtain keeps talking about defense like it's 1995. We're in the three-point ERA, his 45.6% vs 43.3% defensive gap is meaningless!
+   *Disagrees with:* Tempo Hawk keeps talking about possessions, but a hot shooting team needs fewer. UCLA's 37.9% from three can negate any turnover difference.
 
-   *Agrees with:* Streak gets it! UCLA's recent run shows they're clicking. You can't fake that kind of offensive rhythm, they're ON!
+   *Agrees with:* Streak gets it! UCLA's recent run shows they're clicking offensively, and that's exactly what you need for a shooting explosion in March!
 
-   "UCLA's 37.9% from three is still fire! UCF's 35.2% isn't enough to stop that kind of offensive explosion. One hot quarter changes everything!"
-   Updated probability: UCLA 0.55 ± 0.17
+   "UCLA's 37.9% from three is still the ultimate equalizer! Tempo Hawk wants possessions, but one hot streak means fewer needed. Shot makers make shots!"
+   Updated probability: UCLA 0.58 ± 0.16
 
-🐺 **ROAD DOG** (position: WEAKENED) `[gemini]`:
+🐺 **ROAD DOG** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Glass Cannon's focus on UCLA's 37.9% 3PT shooting ignores that toughness and defense win when shots aren't falling, not just raw percentages.
+   *Disagrees with:* Streak's focus on recent wins ignores the long-term tournament pedigree. UCLA's 7-3 run doesn't mean they're battle-tested like UCF's seniors.
 
-   *Agrees with:* Tempo Hawk understands that UCF's ability to force turnovers can disrupt UCLA's rhythm, which is a sign of a well-coached, tough team.
+   *Agrees with:* Iron Curtain gets it; UCLA's defense is soft. UCF's experienced guards will exploit that, just like I said.
 
-   "I picked UCLA, but UCF's experience (8.0) and senior leadership, especially their senior point guard, is a real factor. That's the kind of toughness that wins in March. I've seen this movie."
-   Updated probability: UCLA 0.52 ± 0.18
+   "UCLA's coach hasn't been to the Final Four. UCF's senior leadership, with 8.0 experience, won't crack under pressure. I've seen this movie before."
+   Updated probability: UCLA 0.45 ± 0.16
 
 👁️ **WHISPER** (position: WEAKENED) `[gemini]`:
 
-   *Disagrees with:* Glass Cannon is wrong; 3-point shooting variance is too high to rely on when the team is already fatigued and missing a key scorer. It's not sustainable.
+   *Disagrees with:* Streak is missing that UCLA's recent run was with Bilodeau, who is now out. Their 'peak' is a mirage without him.
 
-   *Agrees with:* Oracle understands the Bilodeau injury is massive, but it's the travel that truly amplifies the impact, making UCLA's path harder.
+   *Agrees with:* Tempo Hawk correctly identified that UCLA's primary scorer is out, impacting their efficiency and possessions.
 
-   "Everyone's missing the compounding fatigue. UCLA's travel disadvantage, combined with Bilodeau's absence, makes them vulnerable. Something doesn't add up for a favorite."
-   Updated probability: UCLA 0.52 ± 0.17
+   "Everyone's talking about UCLA's travel, but nobody's mentioning their starting forward Bilodeau is OUT. That's a 15.3 PPG hole no one's filling."
+   Updated probability: UCLA 0.58 ± 0.16
 
-📜 **ORACLE** (position: FLIPPED):
+📜 **ORACLE** (position: WEAKENED):
 
-   *Disagrees with:* Glass Cannon thinks 37.9% three-point shooting guarantees victory, but 2019 Auburn shot 40.5% and still lost as a 5-seed to New Mexico State.
+   *Disagrees with:* Streak cherry-picks recent games without context - hot streaks don't override structural tournament patterns that favor experienced underdogs.
 
-   *Agrees with:* Iron Curtain correctly identified that Bilodeau's injury fundamentally changes UCLA's offensive identity and creates the structural mismatch that enables upsets.
+   *Agrees with:* Road Dog's experience angle aligns with my historical data - veteran 10-seeds consistently outperform in March since 1985.
 
-   "Glass Cannon ignores history. 2019 Auburn shot 40.5% from three, lost as 5-seed to 12-seed New Mexico State. Shooting doesn't overcome injuries."
-   Updated probability: UCLA 0.45 ± 0.18
+   "Streak ignores the data! UCLA's 7-3 includes weak opponents. 2019 Florida also peaked late but lost as 7-seed to 10-seed Nevada."
+   Updated probability: UCLA 0.58 ± 0.16
 
 🔥 **STREAK** (position: STRENGTHENED) `[gemini]`:
 
-   *Disagrees with:* Tempo Hawk is wrong; UCF's 1-2 record in their conference tournament shows they lack recent momentum, making their turnover rate irrelevant.
+   *Disagrees with:* I disagree with Tempo Hawk. Turnover rates are season-long stats; what matters is UCF's recent 5-5 record, not some stale efficiency number.
 
-   *Agrees with:* Glass Cannon gets it; UCLA's hot shooting is a product of their current peak, not some season-long average.
+   *Agrees with:* I agree with Glass Cannon. UCLA's ability to catch fire from three is a recent trend that can absolutely decide a single game, not a historical anomaly.
 
-   "Tempo Hawk wants to talk turnovers, but UCLA's 7-3 run in their last 10 games shows they're playing their best basketball RIGHT NOW. UCF is fading, not peaking."
-   Updated probability: UCLA 0.65 ± 0.12
+   "UCLA's momentum is undeniable. They're playing their best basketball right now, winning 7 of their last 10. UCF's recent form is just 5-5. Momentum is real!"
+   Updated probability: UCLA 0.65 ± 0.16
 
 
 ### Upset Watch
-**Upset Score: 29.2/100** | Upset score 29/100 for #10 UCF over #7 UCLA. Historical upset rate: 39.2%. Agent support: 2-5 for UCF.
-   *Agent split: 2-5 for UCF | Historical upset rate: 39.2%*
+**Upset Score: 34.9/100** | Upset score 35/100 for #10 UCF over #7 UCLA. Historical upset rate: 39.2%. Agent support: 3-4 for UCF.
+   *Agent split: 3-4 for UCF | Historical upset rate: 39.2%*
    *Statistical edges: None*
 
 
 ### Swarm vs Vegas
-   *Swarm: 63% on UCLA | Vegas implied: 72% | Delta: 9pp more bearish*
+   *Swarm: 50% on UCLA | Vegas implied: 72% | Delta: 22pp more bearish*
 
 
 ---
 ## 🎼 The Conductor — Final Analysis
 
-Combined probability: UCLA 0.49 ± 0.19
+Combined probability: UCLA 0.51 ± 0.18
 
-**PICK: UCLA** (49% — genuine toss-up, high uncertainty)
+**PICK: UCLA** (51% — genuine toss-up, high uncertainty)
 
 
-🎼 **THE CONDUCTOR**: "Oracle flipped after Glass Cannon's shooting argument, but Iron Curtain and Tempo Hawk held firm on UCF's defensive grind. Road Dog and Whisper weakened but stayed UCLA. Glass Cannon and Streak won - UCLA's 37.9% three-point shooting trumps injury concerns. When shots fall, brackets break."
+🎼 **THE CONDUCTOR**: "Streak and Glass Cannon won this debate - UCLA's shooting upside trumps UCF's grinding style. Whisper and Oracle weakened after realizing Bilodeau's absence, but momentum still favors the Bruins. UCF's experience can't overcome hot shooting variance. When shooters get hot, experience becomes irrelevant."
 
-   *Key factor: Three-point shooting disparity and UCLA's offensive rhythm*
+   *Key factor: Three-point shooting variance and recent momentum*
 
-   *Most weighted: Glass Cannon*
+   *Most weighted: Streak*
 
-   *Dissent report: [OVERRIDE: Conductor was overridden — original pick disagreed with 5-2 specialist majority] Iron Curtain and Tempo Hawk lost by overvaluing Bilodeau's injury impact - Oracle flipped because historical shooting parallels convinced him UCLA's firepower overcomes structural disadvantages*
+   *Dissent report: Tempo Hawk and Iron Curtain lost by overvaluing pace control and defensive metrics while underestimating UCLA's shooting explosion potential in a single-elimination format*
 
 
 ---
 ### Specialist Vote: 4-3 UCLA
 
-🦅UCF 🛡️UCF 💥UCLA 🐺UCLA 👁️UCLA 📜UCF 🔥UCLA
+🦅UCF 🛡️UCF 💥UCLA 🐺UCF 👁️UCLA 📜UCLA 🔥UCLA
 
-CONDUCTOR AGREES: UCLA (63%)
+CONDUCTOR AGREES: UCLA (50%)
 
 
 ---
 ### Vote Tally
 
-- **UCF**: Tempo Hawk, Iron Curtain, Oracle (3 votes)
-- **UCLA**: Glass Cannon, Road Dog, Whisper, Streak (4 votes)
+- **UCF**: Tempo Hawk, Iron Curtain, Road Dog (3 votes)
+- **UCLA**: Glass Cannon, Whisper, Oracle, Streak (4 votes)
 
 
 ## Market Analysis
 
-- Swarm probability: UCLA 49% ± 19%
+- Swarm probability: UCLA 51% ± 18%
 - Vegas implied probability: UCLA 69%
-- Edge: 20.1% (market favors UCF)
+- Edge: 17.6% (market favors UCF)
 - Vegas spread: UCLA -6.5
-- Contrarian signal: Tempo Hawk (-31% vs market) and Iron Curtain (-31% vs market) and Oracle (-24% vs market) and Road Dog (-17% vs market) and Whisper (-17% vs market) and Glass Cannon (-14% vs market)
-- Recommendation: NO BET — edge (20.1%) exists but uncertainty too high (18.6%)
+- Contrarian signal: Tempo Hawk (-31% vs market) and Iron Curtain (-31% vs market) and Road Dog (-24% vs market) and Glass Cannon (-11% vs market) and Whisper (-11% vs market) and Oracle (-11% vs market)
+- Recommendation: NO BET — edge (17.6%) exists but uncertainty too high (18.5%)

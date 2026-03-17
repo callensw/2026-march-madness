@@ -1,0 +1,7 @@
+STEP 1 — UPSET THESIS: Siena wins by turning this into a 55-possession rock fight. Their veteran guards (7.0 experience vs Duke's 3.0) control tempo at 64 possessions, force Duke into half-court sets where Cameron Boozer has to create everything. Duke's offense relies on transition and spacing — slow it down, muck it up, and suddenly that 126.7 adj_o becomes mortal.
+
+STEP 2 — RATE THE UPSET THESIS: 3/10. Duke's defense (87.1 adj_d) is elite enough to win ugly games. Even in a grind, they're too talented.
+
+STEP 3 — PICK: Look, I WANT to find the upset angle here. But Duke holds opponents to 39.2% shooting — that's suffocating perimeter defense. Siena shoots 31.5% from three and allows 42.2% — they can't score enough OR get stops. Even missing Foster, Duke's defense travels. This isn't close.
+
+{"team_a_win_prob": 0.97, "uncertainty": 0.05, "reasoning": "Duke holds opponents to 39.2% shooting while Siena allows 42.2%. Elite defense travels, even in ugly games. Not close.", "key_stat": "Duke opp_fg_pct: 39.2% vs Siena opp_fg_pct: 42.2%"}
