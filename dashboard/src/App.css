@@ -1,4 +1,59 @@
-/* App-specific overrides — most styles handled by Tailwind in index.css */
+/* ─── Bracket Game Cards ───────────────────────────────────────────────────── */
+.bracket-game-card {
+  @apply bg-navy-800/90 border border-navy-600/40 rounded-lg overflow-hidden cursor-pointer;
+  min-width: 140px;
+  width: 100%;
+}
+
+.bracket-game-card:hover {
+  @apply border-cyan-400/40;
+}
+
+.bracket-game-card .team-row {
+  @apply flex items-center gap-1.5 px-2.5 py-1.5 text-xs;
+}
+
+.bracket-game-card .team-row.winner {
+  @apply bg-navy-700/60 text-white font-semibold;
+}
+
+.bracket-game-card .team-row.loser {
+  @apply text-gray-500;
+}
+
+.bracket-game-card .team-row .seed {
+  @apply text-gray-500 font-mono text-[10px] w-5 text-right shrink-0;
+}
+
+.bracket-game-card .team-row .name {
+  @apply truncate;
+}
+
+/* ─── Bracket Grid (Desktop) ──────────────────────────────────────────────── */
+.bracket-grid {
+  display: flex;
+  align-items: stretch;
+  gap: 6px;
+  min-height: 520px;
+  overflow-x: auto;
+}
+
+.bracket-round-col {
+  flex: 1;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bracket-round-games {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
+  gap: 4px;
+}
+
+/* ─── Line Clamping ───────────────────────────────────────────────────────── */
 .line-clamp-1 {
   overflow: hidden;
   display: -webkit-box;
@@ -11,4 +66,13 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
+}
+
+/* ─── Hide scrollbar ──────────────────────────────────────────────────────── */
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
 }
