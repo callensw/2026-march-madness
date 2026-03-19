@@ -1,0 +1,178 @@
+# 2026 NCAA Tournament Bracket — Memphis Labs ML Prediction
+
+## Champion: (1) Duke
+
+### ROUND OF 64
+
+#### East Region
+| Matchup | Pick |
+|---------|------|
+| (1) Duke vs (16) Siena | **Duke** |
+| (8) Ohio State vs (9) TCU | **Ohio State** |
+| (5) St. John's vs (12) Northern Iowa | **St. John's** |
+| (4) Kansas vs (13) Cal Baptist | **Kansas** |
+| (6) Louisville vs (11) USF | **USF** |
+| (3) Michigan State vs (14) North Dakota State | **Michigan State** |
+| (7) UCLA vs (10) UCF | **UCLA** |
+| (2) UConn vs (15) Furman | **UConn** |
+
+#### West Region
+| Matchup | Pick |
+|---------|------|
+| (1) Arizona vs (16) LIU | **Arizona** |
+| (8) Villanova vs (9) Utah State | **Villanova** |
+| (5) Wisconsin vs (12) High Point | **High Point** |
+| (4) Arkansas vs (13) Hawaii | **Arkansas** |
+| (6) BYU vs (11) Texas | **Texas** |
+| (3) Gonzaga vs (14) Kennesaw State | **Gonzaga** |
+| (7) Miami FL vs (10) Missouri | **Miami FL** |
+| (2) Purdue vs (15) Queens | **Purdue** |
+
+#### Midwest Region
+| Matchup | Pick |
+|---------|------|
+| (1) Michigan vs (16) Howard | **Michigan** |
+| (8) Georgia vs (9) Saint Louis | **Saint Louis** |
+| (5) Texas Tech vs (12) Akron | **Akron** |
+| (4) Alabama vs (13) Hofstra | **Alabama** |
+| (6) Tennessee vs (11) Miami OH | **Miami OH** |
+| (3) Virginia vs (14) Wright State | **Virginia** |
+| (7) Kentucky vs (10) Santa Clara | **Santa Clara** |
+| (2) Iowa State vs (15) Tennessee State | **Iowa State** |
+
+#### South Region
+| Matchup | Pick |
+|---------|------|
+| (1) Florida vs (16) Prairie View A&M | **Florida** |
+| (8) Clemson vs (9) Iowa | **Iowa** |
+| (5) Vanderbilt vs (12) McNeese | **Vanderbilt** |
+| (4) Nebraska vs (13) Troy | **Nebraska** |
+| (6) UNC vs (11) VCU | **VCU** |
+| (3) Illinois vs (14) Penn | **Illinois** |
+| (7) Saint Mary's vs (10) Texas A&M | **Saint Mary's** |
+| (2) Houston vs (15) Idaho | **Houston** |
+
+---
+
+### ROUND OF 32
+
+#### East
+| Matchup | Pick |
+|---------|------|
+| (1) Duke vs (8) Ohio State | **Duke** |
+| (5) St. John's vs (4) Kansas | **St. John's** |
+| (11) USF vs (3) Michigan State | **Michigan State** |
+| (7) UCLA vs (2) UConn | **UConn** |
+
+#### West
+| Matchup | Pick |
+|---------|------|
+| (1) Arizona vs (8) Villanova | **Villanova** |
+| (12) High Point vs (4) Arkansas | **Arkansas** |
+| (11) Texas vs (3) Gonzaga | **Gonzaga** |
+| (7) Miami FL vs (2) Purdue | **Purdue** |
+
+#### Midwest
+| Matchup | Pick |
+|---------|------|
+| (1) Michigan vs (9) Saint Louis | **Michigan** |
+| (12) Akron vs (4) Alabama | **Alabama** |
+| (11) Miami OH vs (3) Virginia | **Virginia** |
+| (10) Santa Clara vs (2) Iowa State | **Iowa State** |
+
+#### South
+| Matchup | Pick |
+|---------|------|
+| (1) Florida vs (9) Iowa | **Florida** |
+| (5) Vanderbilt vs (4) Nebraska | **Vanderbilt** |
+| (11) VCU vs (3) Illinois | **VCU** |
+| (7) Saint Mary's vs (2) Houston | **Saint Mary's** |
+
+---
+
+### SWEET 16
+
+| Region | Matchup | Pick |
+|--------|---------|------|
+| East | (1) Duke vs (5) St. John's | **Duke** |
+| East | (3) Michigan State vs (2) UConn | **UConn** |
+| West | (8) Villanova vs (4) Arkansas | **Villanova** |
+| West | (3) Gonzaga vs (2) Purdue | **Purdue** |
+| Midwest | (1) Michigan vs (4) Alabama | **Michigan** |
+| Midwest | (3) Virginia vs (2) Iowa State | **Iowa State** |
+| South | (1) Florida vs (5) Vanderbilt | **Florida** |
+| South | (11) VCU vs (7) Saint Mary's | **VCU** |
+
+---
+
+### ELITE 8
+
+| Region | Matchup | Pick |
+|--------|---------|------|
+| East | (1) Duke vs (2) UConn | **Duke** |
+| West | (8) Villanova vs (2) Purdue | **Villanova** |
+| Midwest | (1) Michigan vs (2) Iowa State | **Michigan** |
+| South | (1) Florida vs (11) VCU | **Florida** |
+
+---
+
+### FINAL FOUR
+
+| Matchup | Pick |
+|---------|------|
+| (1) Duke vs (8) Villanova | **Duke** |
+| (1) Michigan vs (1) Florida | **Michigan** |
+
+---
+
+### NATIONAL CHAMPIONSHIP
+
+| Matchup | Pick |
+|---------|------|
+| **(1) Duke vs (1) Michigan** | **Duke** |
+
+---
+
+## Upset Summary
+
+### R64 Upsets (7)
+1. (11) USF over (6) Louisville
+2. (12) High Point over (5) Wisconsin
+3. (11) Texas over (6) BYU
+4. (12) Akron over (5) Texas Tech
+5. (11) Miami OH over (6) Tennessee
+6. (10) Santa Clara over (7) Kentucky
+7. (11) VCU over (6) UNC
+
+### R32 Upsets (3)
+1. (8) Villanova over (1) Arizona
+2. (11) VCU over (3) Illinois
+3. (7) Saint Mary's over (2) Houston
+
+### S16 Upsets (2)
+1. (8) Villanova over (4) Arkansas
+2. (11) VCU over (7) Saint Mary's
+
+### E8 Upsets (1)
+1. (8) Villanova over (2) Purdue
+
+### Total: 13 upsets (historically typical)
+
+---
+
+## Cinderella Watch
+- **VCU (11)** — beats UNC, Illinois, Saint Mary's to reach Elite 8
+- **Villanova (8)** — beats Arizona, Arkansas, Purdue to reach Final Four
+
+## Key Picks
+- All four 1-seeds make Sweet 16 except Arizona (upset by Villanova in R32)
+- Three 1-seeds in Final Four (Duke, Michigan, Florida)
+- Duke wins it all through UConn and Villanova
+- Houston upset by Saint Mary's in R32 (biggest named upset)
+
+---
+
+*Generated by Memphis Labs March Madness ML Pipeline V6*
+*5-model ensemble (LR + XGBoost + Vegas + Agent Swarm + Monte Carlo)*
+*Upset targets calibrated to historical averages (1985-2025)*
+*Built: 2026-03-19*
