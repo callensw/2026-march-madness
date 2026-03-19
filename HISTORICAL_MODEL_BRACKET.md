@@ -1,0 +1,163 @@
+# 2026 NCAA Tournament Bracket — Historical Model Prediction
+
+## Champion: (1) Michigan
+
+---
+
+### ROUND OF 64
+
+#### East Region
+| Matchup | Pick |
+|---------|------|
+| (3) Michigan State vs (14) North Dakota State | **Michigan State** |
+| (4) Kansas vs (13) Cal Baptist | **Kansas** |
+| (2) UConn vs (15) Furman | **UConn** |
+| (7) UCLA vs (10) UCF | **UCLA** |
+| (5) St. John's vs (12) Northern Iowa | **St. John's** |
+| (8) Ohio State vs (9) TCU | **Ohio State** |
+| (6) Louisville vs (11) USF | **USF** |
+| (1) Duke vs (16) Siena | **Duke** |
+
+#### Midwest Region
+| Matchup | Pick |
+|---------|------|
+| (7) Kentucky vs (10) Santa Clara | **Santa Clara** |
+| (6) Tennessee vs (11) Miami OH | **Tennessee** |
+| (5) Texas Tech vs (12) Akron | **Texas Tech** |
+| (8) Georgia vs (9) Saint Louis | **Saint Louis** |
+| (4) Alabama vs (13) Hofstra | **Alabama** |
+| (3) Virginia vs (14) Wright State | **Virginia** |
+| (2) Iowa State vs (15) Tennessee State | **Iowa State** |
+| (1) Michigan vs (16) Howard | **Michigan** |
+
+#### South Region
+| Matchup | Pick |
+|---------|------|
+| (6) UNC vs (11) VCU | **VCU** |
+| (5) Vanderbilt vs (12) McNeese | **Vanderbilt** |
+| (1) Florida vs (16) Prairie View A&M | **Florida** |
+| (8) Clemson vs (9) Iowa | **Iowa** |
+| (7) Saint Mary's vs (10) Texas A&M | **Saint Mary's** |
+| (4) Nebraska vs (13) Troy | **Nebraska** |
+| (3) Illinois vs (14) Penn | **Illinois** |
+| (2) Houston vs (15) Idaho | **Houston** |
+
+#### West Region
+| Matchup | Pick |
+|---------|------|
+| (6) BYU vs (11) Texas | **Texas** |
+| (8) Villanova vs (9) Utah State | **Utah State** |
+| (7) Miami FL vs (10) Missouri | **Miami FL** |
+| (5) Wisconsin vs (12) High Point | **Wisconsin** |
+| (3) Gonzaga vs (14) Kennesaw State | **Gonzaga** |
+| (2) Purdue vs (15) Queens | **Purdue** |
+| (1) Arizona vs (16) LIU | **Arizona** |
+| (4) Arkansas vs (13) Hawaii | **Arkansas** |
+
+### ROUND OF 32
+
+#### East
+| Matchup | Pick |
+|---------|------|
+| (1) Duke vs (8) Ohio State | **Duke** |
+| (5) St. John's vs (4) Kansas | **St. John's** |
+| (11) USF vs (3) Michigan State | **Michigan State** |
+| (7) UCLA vs (2) UConn | **UConn** |
+
+#### Midwest
+| Matchup | Pick |
+|---------|------|
+| (1) Michigan vs (9) Saint Louis | **Michigan** |
+| (5) Texas Tech vs (4) Alabama | **Alabama** |
+| (6) Tennessee vs (3) Virginia | **Virginia** |
+| (10) Santa Clara vs (2) Iowa State | **Iowa State** |
+
+#### South
+| Matchup | Pick |
+|---------|------|
+| (1) Florida vs (9) Iowa | **Florida** |
+| (5) Vanderbilt vs (4) Nebraska | **Vanderbilt** |
+| (11) VCU vs (3) Illinois | **VCU** |
+| (7) Saint Mary's vs (2) Houston | **Houston** |
+
+#### West
+| Matchup | Pick |
+|---------|------|
+| (1) Arizona vs (9) Utah State | **Arizona** |
+| (5) Wisconsin vs (4) Arkansas | **Arkansas** |
+| (11) Texas vs (3) Gonzaga | **Gonzaga** |
+| (7) Miami FL vs (2) Purdue | **Purdue** |
+
+### SWEET 16
+
+| Region | Matchup | Pick |
+|--------|---------|------|
+| East | (1) Duke vs (5) St. John's | **Duke** |
+| East | (3) Michigan State vs (2) UConn | **UConn** |
+| Midwest | (1) Michigan vs (4) Alabama | **Michigan** |
+| Midwest | (3) Virginia vs (2) Iowa State | **Iowa State** |
+| South | (1) Florida vs (5) Vanderbilt | **Florida** |
+| South | (11) VCU vs (2) Houston | **Houston** |
+| West | (1) Arizona vs (4) Arkansas | **Arizona** |
+| West | (3) Gonzaga vs (2) Purdue | **Gonzaga** |
+
+### ELITE 8
+
+| Region | Matchup | Pick |
+|--------|---------|------|
+| East | (1) Duke vs (2) UConn | **UConn** |
+| Midwest | (1) Michigan vs (2) Iowa State | **Michigan** |
+| South | (1) Florida vs (2) Houston | **Florida** |
+| West | (1) Arizona vs (3) Gonzaga | **Arizona** |
+
+### FINAL FOUR
+
+| Matchup | Pick |
+|---------|------|
+| (2) UConn vs (1) Michigan | **Michigan** |
+| (1) Florida vs (1) Arizona | **Florida** |
+
+### NATIONAL CHAMPIONSHIP
+
+| Matchup | Pick |
+|---------|------|
+| **(1) Michigan vs (1) Florida** | **Michigan** |
+
+---
+
+## Upset Summary
+
+### R64 Upsets (7)
+1. (11) Texas over (6) BYU
+2. (9) Utah State over (8) Villanova
+3. (11) VCU over (6) UNC
+4. (9) Iowa over (8) Clemson
+5. (10) Santa Clara over (7) Kentucky
+6. (9) Saint Louis over (8) Georgia
+7. (11) USF over (6) Louisville
+
+### R32 Upsets (3)
+1. (5) St. John's over (4) Kansas
+2. (5) Vanderbilt over (4) Nebraska
+3. (11) VCU over (3) Illinois
+
+### S16 Upsets (1)
+1. (3) Gonzaga over (2) Purdue
+
+### E8 Upsets (1)
+1. (2) UConn over (1) Duke
+
+### Total: 12 upsets
+
+---
+
+## Model Details
+- **Training Data**: Real historical NCAA tournament games (2008-2025, 1072 games)
+- **Models**: 5-model ensemble (LR + XGBoost + Vegas + Agent Swarm + Monte Carlo)
+- **LR 5-fold AUC**: ~0.696 (trained on real outcomes)
+- **XGB 5-fold AUC**: ~0.675 (trained on real outcomes)
+- **Upset targets**: R64=7, R32=3, S16=1, E8=1, F4=0, NCG=0
+- **1/2-seed protection**: Applied in R32+
+- **Built**: 2026-03-19
+
+*Generated by Memphis Labs March Madness ML Pipeline V5 (Historical Model)*

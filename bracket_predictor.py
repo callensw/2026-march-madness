@@ -276,7 +276,28 @@ def compute_delta_features(ta, tb, round_num=1):
     }
 
 
-def generate_historical_data(n_tournaments=22):
+def load_historical_data():
+    """Load REAL historical tournament data (2008-2025, 1072 games).
+    Falls back to synthetic generation if CSV not found."""
+    csv_path = os.path.join(os.path.dirname(__file__), 'historical_tournament_data.csv')
+    if os.path.exists(csv_path):
+        print("\n  Loading REAL historical tournament data...")
+        hist_df = pd.read_csv(csv_path)
+        print(f"  Loaded {len(hist_df)} real tournament games from {hist_df['year'].nunique()} tournaments ({int(hist_df['year'].min())}-{int(hist_df['year'].max())})")
+        print(f"  Upset rate: {((hist_df['seed_a_val'] < hist_df['seed_b_val']) & (hist_df['outcome'] == 0)).sum() + ((hist_df['seed_a_val'] > hist_df['seed_b_val']) & (hist_df['outcome'] == 1)).sum()}/{len(hist_df)} = {(((hist_df['seed_a_val'] < hist_df['seed_b_val']) & (hist_df['outcome'] == 0)).sum() + ((hist_df['seed_a_val'] > hist_df['seed_b_val']) & (hist_df['outcome'] == 1)).sum()) / len(hist_df):.1%}")
+        # Verify all required features exist
+        missing = [f for f in SHARED_FEATURES if f not in hist_df.columns]
+        if missing:
+            print(f"  WARNING: Missing features: {missing}")
+        return hist_df
+    else:
+        print(f"\n  WARNING: Historical CSV not found at {csv_path}")
+        print("  Falling back to synthetic data generation...")
+        return generate_synthetic_historical_data()
+
+
+def generate_synthetic_historical_data(n_tournaments=22):
+    """Legacy synthetic data generation (fallback only)."""
     print("\n  Generating synthetic historical data (V5 expanded features)...")
     r64_matchups = [(1, 16), (8, 9), (5, 12), (4, 13), (2, 15), (7, 10), (3, 14), (6, 11)]
     rows = []
@@ -770,7 +791,7 @@ def main():
     print("=" * 60)
 
     tables, sb = pull_supabase_data()
-    hist_df = generate_historical_data(n_tournaments=22)
+    hist_df = load_historical_data()
     matchups_df, team_lookup, mc_lookup = build_2026_features(tables)
 
     if matchups_df.empty:
