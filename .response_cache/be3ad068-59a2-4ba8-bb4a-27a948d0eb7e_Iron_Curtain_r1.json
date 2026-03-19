@@ -1,0 +1,7 @@
+STEP 1 — UPSET THESIS: High Point forces Wisconsin into a defensive slugfest. Panthers allow just 42.6% shooting - better perimeter defense than Wisconsin's 44.7%. In a low-possession grind (both teams tempo ~66), High Point's superior defense creates enough stops to steal possessions.
+
+STEP 2 — RATE THE UPSET THESIS: 6/10. High Point's defense (100.6 adj_d) isn't elite, but it's better than Wisconsin's opponent shooting defense. In a rock fight, that gap matters.
+
+STEP 3 — PICK: Wisconsin's 91.2 adjusted defense is legitimately good, but High Point shoots better against better defenses than Wisconsin defends. This screams ugly game in the 60s where defense decides it.
+
+{"team_a_win_prob": 0.68, "uncertainty": 0.15, "reasoning": "High Point allows 42.6% shooting vs Wisconsin's 44.7%. In low-possession grind, Panthers' perimeter defense creates enough stops to stay close.", "key_stat": "High Point opp_fg_pct: 42.6% vs Wisconsin: 44.7%"}

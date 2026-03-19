@@ -1,0 +1,7 @@
+STEP 1 — UPSET THESIS: Furman forces UConn into a half-court grind at 65 possessions, neutralizing UConn's talent edge. Their 6-11 frontcourt (Bowser/Johnston) can bang with Reed inside while forcing contested shots. UConn's offense relies on pace and transition - take that away and they become beatable.
+
+STEP 2 — RATE THE UPSET THESIS: 4/10. Furman's defense (102.4 adj_d) is mediocre. They can slow the game but can't consistently get stops against elite talent. UConn's 87.8 adj_d will suffocate Furman's limited offense.
+
+STEP 3 — PICK: UConn's defense is suffocating (87.8 adj_d, .402 opp_fg_pct). Furman allows 42.5% shooting - they can't guard at this level. Defense travels, offense disappears under pressure.
+
+{"team_a_win_prob": 0.78, "uncertainty": 0.12, "reasoning": "UConn's elite defense (87.8 adj_d) will suffocate Furman's mediocre offense. Paladins allow 42.5% shooting - can't guard championship-level talent.", "key_stat": "UConn holds opponents to 40.2% shooting vs Furman's 42.5% allowed"}

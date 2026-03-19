@@ -1,0 +1,7 @@
+STEP 1 — UPSET THESIS: Kennesaw State forces this into a defensive slugfest. Both teams play at identical pace (70.0 vs 70.3). Gonzaga's offense relies heavily on interior scoring through Ike, but without Huff's 17.8 PPG, they lack depth in the paint. Kennesaw's defense (103.5 adj_d) isn't elite, but in a low-possession grind, they can stay within striking distance and steal it late.
+
+STEP 2 — RATE THE UPSET THESIS: 4/10. Gonzaga's defense is legitimately elite (87.7 adj_d, .395 opp_fg_pct) and should dominate Kennesaw's mediocre offense. The pace matchup helps Kennesaw, but the defensive gap is too large.
+
+STEP 3 — PICK: Gonzaga wins, but the Huff injury creates vulnerability in a potential grind-it-out game.
+
+{"team_a_win_prob": 0.75, "uncertainty": 0.12, "reasoning": "Gonzaga's elite defense (.395 opp_fg_pct) should suffocate Kennesaw's offense. Missing Huff hurts but defense travels in March grinders.", "key_stat": "87.7 adj_d vs 103.5 — 16-point defensive gap"}

@@ -1,0 +1,7 @@
+STEP 1 — UPSET THESIS: Iowa State forces Michigan into a half-court grind where their elite three-point shooting (49.6% from Momcilovic) can overcome Michigan's slight defensive edge. Both teams play at identical slow pace (70-71 tempo), neutralizing Michigan's experience advantage.
+
+STEP 2 — RATE THE UPSET THESIS: 6/10. Both defenses are nearly identical (87.0 vs 87.3 adj_d). This will be played in the mud - ugly, physical, low-possession game. In those games, one hot shooter can swing everything.
+
+STEP 3 — PICK: Michigan's defense is marginally better, but barely. Iowa State's opponent field goal percentage of .426 is concerning - they've been vulnerable on the perimeter all season. Michigan holds teams to .384 shooting. That's the difference.
+
+{"team_a_win_prob": 0.62, "uncertainty": 0.15, "reasoning": "Identical defenses but Michigan holds opponents to .384 shooting vs Iowa State's .426. Defense travels in Elite Eight grind games.", "key_stat": "Michigan opp_fg_pct: .384 vs Iowa State's .426"}

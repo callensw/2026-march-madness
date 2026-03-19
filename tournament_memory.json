@@ -1,0 +1,5112 @@
+{
+  "Tempo Hawk": {
+    "agent_name": "Tempo Hawk",
+    "past_picks": [
+      {
+        "game_label": "#1 Duke vs #16 Siena",
+        "pick": "Duke",
+        "probability": 0.98,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#8 Ohio State vs #9 TCU",
+        "pick": "TCU",
+        "probability": 0.48,
+        "round_name": "R64",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 St. John's vs #12 Northern Iowa",
+        "pick": "St. John's",
+        "probability": 0.68,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Kansas vs #13 Cal Baptist",
+        "pick": "Kansas",
+        "probability": 0.72,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 Louisville vs #11 USF",
+        "pick": "USF",
+        "probability": 0.42,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Michigan State vs #14 North Dakota State",
+        "pick": "Michigan State",
+        "probability": 0.75,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 UCLA vs #10 UCF",
+        "pick": "UCF",
+        "probability": 0.42,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#2 UConn vs #15 Furman",
+        "pick": "UConn",
+        "probability": 0.82,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #16 LIU",
+        "pick": "Arizona",
+        "probability": 0.97,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#8 Villanova vs #9 Utah State",
+        "pick": "Utah State",
+        "probability": 0.42,
+        "round_name": "R64",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Wisconsin vs #12 High Point",
+        "pick": "Wisconsin",
+        "probability": 0.68,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Arkansas vs #13 Hawaii",
+        "pick": "Arkansas",
+        "probability": 0.68,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 BYU vs #11 Texas",
+        "pick": "Texas",
+        "probability": 0.48,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Gonzaga vs #14 Kennesaw State",
+        "pick": "Gonzaga",
+        "probability": 0.82,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Miami FL vs #10 Missouri",
+        "pick": "Miami FL",
+        "probability": 0.67,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#2 Purdue vs #15 Queens",
+        "pick": "Purdue",
+        "probability": 0.78,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #16 Howard",
+        "pick": "Michigan",
+        "probability": 0.95,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#8 Georgia vs #9 Saint Louis",
+        "pick": "Saint Louis",
+        "probability": 0.42,
+        "round_name": "R64",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Texas Tech vs #12 Akron",
+        "pick": "Akron",
+        "probability": 0.42,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Alabama vs #13 Hofstra",
+        "pick": "Alabama",
+        "probability": 0.72,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 Tennessee vs #11 Miami OH",
+        "pick": "Miami OH",
+        "probability": 0.35,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Virginia vs #14 Wright State",
+        "pick": "Virginia",
+        "probability": 0.78,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Kentucky vs #10 Santa Clara",
+        "pick": "Santa Clara",
+        "probability": 0.42,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#2 Iowa State vs #15 Tennessee State",
+        "pick": "Iowa State",
+        "probability": 0.82,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Florida vs #16 Prairie View A&M",
+        "pick": "Florida",
+        "probability": 0.94,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#8 Clemson vs #9 Iowa",
+        "pick": "Iowa",
+        "probability": 0.45,
+        "round_name": "R64",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #12 McNeese",
+        "pick": "Vanderbilt",
+        "probability": 0.72,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Nebraska vs #13 Troy",
+        "pick": "Nebraska",
+        "probability": 0.68,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 UNC vs #11 VCU",
+        "pick": "VCU",
+        "probability": 0.42,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Illinois vs #14 Penn",
+        "pick": "Illinois",
+        "probability": 0.82,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Saint Mary's vs #10 Texas A&M",
+        "pick": "Texas A&M",
+        "probability": 0.42,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#2 Houston vs #15 Idaho",
+        "pick": "Houston",
+        "probability": 0.88,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #8 Ohio State",
+        "pick": "Duke",
+        "probability": 0.78,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 St. John's vs #4 Kansas",
+        "pick": "Kansas",
+        "probability": 0.38,
+        "round_name": "R32",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#11 USF vs #3 Michigan State",
+        "pick": "Michigan State",
+        "probability": 0.45,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 UCLA vs #2 UConn",
+        "pick": "UConn",
+        "probability": 0.42,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #9 Utah State",
+        "pick": "Arizona",
+        "probability": 0.72,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Wisconsin vs #4 Arkansas",
+        "pick": "Wisconsin",
+        "probability": 0.58,
+        "round_name": "R32",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 BYU vs #3 Gonzaga",
+        "pick": "Gonzaga",
+        "probability": 0.35,
+        "round_name": "R32",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Miami FL vs #2 Purdue",
+        "pick": "Purdue",
+        "probability": 0.42,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #9 Saint Louis",
+        "pick": "Michigan",
+        "probability": 0.68,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#12 Akron vs #4 Alabama",
+        "pick": "Alabama",
+        "probability": 0.32,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 Tennessee vs #3 Virginia",
+        "pick": "Tennessee",
+        "probability": 0.54,
+        "round_name": "R32",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#10 Santa Clara vs #2 Iowa State",
+        "pick": "Iowa State",
+        "probability": 0.32,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Florida vs #8 Clemson",
+        "pick": "Florida",
+        "probability": 0.72,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #4 Nebraska",
+        "pick": "Vanderbilt",
+        "probability": 0.58,
+        "round_name": "R32",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#11 VCU vs #3 Illinois",
+        "pick": "Illinois",
+        "probability": 0.42,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#10 Texas A&M vs #2 Houston",
+        "pick": "Houston",
+        "probability": 0.32,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #5 St. John's",
+        "pick": "St. John's",
+        "probability": 0.32,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Michigan State vs #2 UConn",
+        "pick": "Michigan State",
+        "probability": 0.52,
+        "round_name": "S16",
+        "game_type": "coin_flip",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #5 Wisconsin",
+        "pick": "Arizona",
+        "probability": 0.72,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Gonzaga vs #2 Purdue",
+        "pick": "Gonzaga",
+        "probability": 0.52,
+        "round_name": "S16",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #12 Akron",
+        "pick": "Michigan",
+        "probability": 0.78,
+        "round_name": "S16",
+        "game_type": "heavy_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 Tennessee vs #2 Iowa State",
+        "pick": "Tennessee",
+        "probability": 0.58,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Florida vs #5 Vanderbilt",
+        "pick": "Vanderbilt",
+        "probability": 0.42,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#11 VCU vs #10 Texas A&M",
+        "pick": "VCU",
+        "probability": 0.54,
+        "round_name": "S16",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #3 Michigan State",
+        "pick": "Michigan State",
+        "probability": 0.48,
+        "round_name": "E8",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #3 Gonzaga",
+        "pick": "Arizona",
+        "probability": 0.68,
+        "round_name": "E8",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #2 Iowa State",
+        "pick": "Michigan",
+        "probability": 0.62,
+        "round_name": "E8",
+        "game_type": "coin_flip",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #11 VCU",
+        "pick": "Vanderbilt",
+        "probability": 0.65,
+        "round_name": "E8",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #1 Arizona",
+        "pick": "Arizona",
+        "probability": 0.45,
+        "round_name": "F4",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #2 Iowa State",
+        "pick": "Vanderbilt",
+        "probability": 0.52,
+        "round_name": "F4",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #5 Vanderbilt",
+        "pick": "Vanderbilt",
+        "probability": 0.45,
+        "round_name": "NCG",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      }
+    ],
+    "accuracy_by_type": {},
+    "biggest_misses": [],
+    "confidence_calibration": [],
+    "cross_attention_memory": [
+      {
+        "game_label": "#4 Kansas vs #13 Cal Baptist",
+        "pick": "Kansas",
+        "probability": 0.72,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Wisconsin vs #12 High Point",
+        "pick": "Wisconsin",
+        "probability": 0.68,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 BYU vs #11 Texas",
+        "pick": "Texas",
+        "probability": 0.48,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Miami FL vs #10 Missouri",
+        "pick": "Miami FL",
+        "probability": 0.67,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Nebraska vs #13 Troy",
+        "pick": "Nebraska",
+        "probability": 0.68,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Illinois vs #14 Penn",
+        "pick": "Illinois",
+        "probability": 0.82,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #8 Ohio State",
+        "pick": "Duke",
+        "probability": 0.78,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#11 USF vs #3 Michigan State",
+        "pick": "Michigan State",
+        "probability": 0.45,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #9 Utah State",
+        "pick": "Arizona",
+        "probability": 0.72,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #9 Saint Louis",
+        "pick": "Michigan",
+        "probability": 0.68,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#10 Texas A&M vs #2 Houston",
+        "pick": "Houston",
+        "probability": 0.32,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Michigan State vs #2 UConn",
+        "pick": "Michigan State",
+        "probability": 0.52,
+        "round_name": "S16",
+        "game_type": "coin_flip",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #2 Iowa State",
+        "pick": "Michigan",
+        "probability": 0.62,
+        "round_name": "E8",
+        "game_type": "coin_flip",
+        "position_change": "weakened",
+        "actual_result": null
+      }
+    ]
+  },
+  "Iron Curtain": {
+    "agent_name": "Iron Curtain",
+    "past_picks": [
+      {
+        "game_label": "#1 Duke vs #16 Siena",
+        "pick": "Duke",
+        "probability": 0.98,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#8 Ohio State vs #9 TCU",
+        "pick": "TCU",
+        "probability": 0.42,
+        "round_name": "R64",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 St. John's vs #12 Northern Iowa",
+        "pick": "St. John's",
+        "probability": 0.68,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Kansas vs #13 Cal Baptist",
+        "pick": "Kansas",
+        "probability": 0.68,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 Louisville vs #11 USF",
+        "pick": "USF",
+        "probability": 0.42,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Michigan State vs #14 North Dakota State",
+        "pick": "Michigan State",
+        "probability": 0.72,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 UCLA vs #10 UCF",
+        "pick": "UCF",
+        "probability": 0.42,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#2 UConn vs #15 Furman",
+        "pick": "UConn",
+        "probability": 0.78,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #16 LIU",
+        "pick": "Arizona",
+        "probability": 0.97,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#8 Villanova vs #9 Utah State",
+        "pick": "Utah State",
+        "probability": 0.42,
+        "round_name": "R64",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Wisconsin vs #12 High Point",
+        "pick": "Wisconsin",
+        "probability": 0.72,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Arkansas vs #13 Hawaii",
+        "pick": "Hawaii",
+        "probability": 0.42,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 BYU vs #11 Texas",
+        "pick": "Texas",
+        "probability": 0.42,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Gonzaga vs #14 Kennesaw State",
+        "pick": "Gonzaga",
+        "probability": 0.75,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Miami FL vs #10 Missouri",
+        "pick": "Miami FL",
+        "probability": 0.68,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#2 Purdue vs #15 Queens",
+        "pick": "Purdue",
+        "probability": 0.88,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #16 Howard",
+        "pick": "Michigan",
+        "probability": 0.92,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#8 Georgia vs #9 Saint Louis",
+        "pick": "Saint Louis",
+        "probability": 0.42,
+        "round_name": "R64",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Texas Tech vs #12 Akron",
+        "pick": "Akron",
+        "probability": 0.42,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Alabama vs #13 Hofstra",
+        "pick": "Alabama",
+        "probability": 0.68,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 Tennessee vs #11 Miami OH",
+        "pick": "Tennessee",
+        "probability": 0.72,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Virginia vs #14 Wright State",
+        "pick": "Virginia",
+        "probability": 0.78,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Kentucky vs #10 Santa Clara",
+        "pick": "Kentucky",
+        "probability": 0.62,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#2 Iowa State vs #15 Tennessee State",
+        "pick": "Iowa State",
+        "probability": 0.82,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Florida vs #16 Prairie View A&M",
+        "pick": "Florida",
+        "probability": 0.95,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#8 Clemson vs #9 Iowa",
+        "pick": "Clemson",
+        "probability": 0.65,
+        "round_name": "R64",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #12 McNeese",
+        "pick": "Vanderbilt",
+        "probability": 0.68,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Nebraska vs #13 Troy",
+        "pick": "Nebraska",
+        "probability": 0.68,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 UNC vs #11 VCU",
+        "pick": "VCU",
+        "probability": 0.42,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Illinois vs #14 Penn",
+        "pick": "Illinois",
+        "probability": 0.78,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Saint Mary's vs #10 Texas A&M",
+        "pick": "Texas A&M",
+        "probability": 0.42,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#2 Houston vs #15 Idaho",
+        "pick": "Houston",
+        "probability": 0.88,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #8 Ohio State",
+        "pick": "Duke",
+        "probability": 0.72,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 St. John's vs #4 Kansas",
+        "pick": "St. John's",
+        "probability": 0.55,
+        "round_name": "R32",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#11 USF vs #3 Michigan State",
+        "pick": "Michigan State",
+        "probability": 0.42,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 UCLA vs #2 UConn",
+        "pick": "UConn",
+        "probability": 0.32,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #9 Utah State",
+        "pick": "Arizona",
+        "probability": 0.73,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Wisconsin vs #4 Arkansas",
+        "pick": "Wisconsin",
+        "probability": 0.58,
+        "round_name": "R32",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 BYU vs #3 Gonzaga",
+        "pick": "BYU",
+        "probability": 0.52,
+        "round_name": "R32",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Miami FL vs #2 Purdue",
+        "pick": "Purdue",
+        "probability": 0.48,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #9 Saint Louis",
+        "pick": "Michigan",
+        "probability": 0.68,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#12 Akron vs #4 Alabama",
+        "pick": "Alabama",
+        "probability": 0.32,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 Tennessee vs #3 Virginia",
+        "pick": "Tennessee",
+        "probability": 0.58,
+        "round_name": "R32",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#10 Santa Clara vs #2 Iowa State",
+        "pick": "Iowa State",
+        "probability": 0.32,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Florida vs #8 Clemson",
+        "pick": "Florida",
+        "probability": 0.73,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #4 Nebraska",
+        "pick": "Nebraska",
+        "probability": 0.42,
+        "round_name": "R32",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#11 VCU vs #3 Illinois",
+        "pick": "VCU",
+        "probability": 0.58,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#10 Texas A&M vs #2 Houston",
+        "pick": "Houston",
+        "probability": 0.42,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #5 St. John's",
+        "pick": "St. John's",
+        "probability": 0.42,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Michigan State vs #2 UConn",
+        "pick": "Michigan State",
+        "probability": 0.52,
+        "round_name": "S16",
+        "game_type": "coin_flip",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #5 Wisconsin",
+        "pick": "Arizona",
+        "probability": 0.68,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Gonzaga vs #2 Purdue",
+        "pick": "Gonzaga",
+        "probability": 0.62,
+        "round_name": "S16",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #12 Akron",
+        "pick": "Michigan",
+        "probability": 0.72,
+        "round_name": "S16",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 Tennessee vs #2 Iowa State",
+        "pick": "Iowa State",
+        "probability": 0.45,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Florida vs #5 Vanderbilt",
+        "pick": "Vanderbilt",
+        "probability": 0.42,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#11 VCU vs #10 Texas A&M",
+        "pick": "VCU",
+        "probability": 0.55,
+        "round_name": "S16",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #3 Michigan State",
+        "pick": "Michigan State",
+        "probability": 0.42,
+        "round_name": "E8",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #3 Gonzaga",
+        "pick": "Gonzaga",
+        "probability": 0.45,
+        "round_name": "E8",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #2 Iowa State",
+        "pick": "Iowa State",
+        "probability": 0.42,
+        "round_name": "E8",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #11 VCU",
+        "pick": "Vanderbilt",
+        "probability": 0.62,
+        "round_name": "E8",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #1 Arizona",
+        "pick": "Arizona",
+        "probability": 0.48,
+        "round_name": "F4",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #2 Iowa State",
+        "pick": "Vanderbilt",
+        "probability": 0.52,
+        "round_name": "F4",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #5 Vanderbilt",
+        "pick": "Arizona",
+        "probability": 0.58,
+        "round_name": "NCG",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      }
+    ],
+    "accuracy_by_type": {},
+    "biggest_misses": [],
+    "confidence_calibration": [],
+    "cross_attention_memory": [
+      {
+        "game_label": "#5 St. John's vs #12 Northern Iowa",
+        "pick": "St. John's",
+        "probability": 0.68,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Kansas vs #13 Cal Baptist",
+        "pick": "Kansas",
+        "probability": 0.68,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Alabama vs #13 Hofstra",
+        "pick": "Alabama",
+        "probability": 0.68,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Kentucky vs #10 Santa Clara",
+        "pick": "Kentucky",
+        "probability": 0.62,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #12 McNeese",
+        "pick": "Vanderbilt",
+        "probability": 0.68,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Nebraska vs #13 Troy",
+        "pick": "Nebraska",
+        "probability": 0.68,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Illinois vs #14 Penn",
+        "pick": "Illinois",
+        "probability": 0.78,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #8 Ohio State",
+        "pick": "Duke",
+        "probability": 0.72,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #9 Utah State",
+        "pick": "Arizona",
+        "probability": 0.73,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Miami FL vs #2 Purdue",
+        "pick": "Purdue",
+        "probability": 0.48,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#12 Akron vs #4 Alabama",
+        "pick": "Alabama",
+        "probability": 0.32,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Florida vs #8 Clemson",
+        "pick": "Florida",
+        "probability": 0.73,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#10 Texas A&M vs #2 Houston",
+        "pick": "Houston",
+        "probability": 0.42,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Michigan State vs #2 UConn",
+        "pick": "Michigan State",
+        "probability": 0.52,
+        "round_name": "S16",
+        "game_type": "coin_flip",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #5 Wisconsin",
+        "pick": "Arizona",
+        "probability": 0.68,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #12 Akron",
+        "pick": "Michigan",
+        "probability": 0.72,
+        "round_name": "S16",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      }
+    ]
+  },
+  "Glass Cannon": {
+    "agent_name": "Glass Cannon",
+    "past_picks": [
+      {
+        "game_label": "#1 Duke vs #16 Siena",
+        "pick": "Duke",
+        "probability": 0.99,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#8 Ohio State vs #9 TCU",
+        "pick": "Ohio State",
+        "probability": 0.6,
+        "round_name": "R64",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 St. John's vs #12 Northern Iowa",
+        "pick": "St. John's",
+        "probability": 0.7,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Kansas vs #13 Cal Baptist",
+        "pick": "Kansas",
+        "probability": 0.7,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 Louisville vs #11 USF",
+        "pick": "Louisville",
+        "probability": 0.55,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Michigan State vs #14 North Dakota State",
+        "pick": "Michigan State",
+        "probability": 0.85,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 UCLA vs #10 UCF",
+        "pick": "UCLA",
+        "probability": 0.55,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#2 UConn vs #15 Furman",
+        "pick": "UConn",
+        "probability": 0.85,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #16 LIU",
+        "pick": "Arizona",
+        "probability": 0.99,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#8 Villanova vs #9 Utah State",
+        "pick": "Utah State",
+        "probability": 0.45,
+        "round_name": "R64",
+        "game_type": "coin_flip",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Wisconsin vs #12 High Point",
+        "pick": "Wisconsin",
+        "probability": 0.62,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Arkansas vs #13 Hawaii",
+        "pick": "Arkansas",
+        "probability": 0.85,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 BYU vs #11 Texas",
+        "pick": "Texas",
+        "probability": 0.48,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Gonzaga vs #14 Kennesaw State",
+        "pick": "Gonzaga",
+        "probability": 0.85,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Miami FL vs #10 Missouri",
+        "pick": "Missouri",
+        "probability": 0.48,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#2 Purdue vs #15 Queens",
+        "pick": "Purdue",
+        "probability": 0.85,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #16 Howard",
+        "pick": "Michigan",
+        "probability": 0.95,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#8 Georgia vs #9 Saint Louis",
+        "pick": "Saint Louis",
+        "probability": 0.45,
+        "round_name": "R64",
+        "game_type": "coin_flip",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Texas Tech vs #12 Akron",
+        "pick": "Akron",
+        "probability": 0.48,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Alabama vs #13 Hofstra",
+        "pick": "Alabama",
+        "probability": 0.62,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 Tennessee vs #11 Miami OH",
+        "pick": "Miami OH",
+        "probability": 0.45,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Virginia vs #14 Wright State",
+        "pick": "Virginia",
+        "probability": 0.85,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Kentucky vs #10 Santa Clara",
+        "pick": "Santa Clara",
+        "probability": 0.45,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#2 Iowa State vs #15 Tennessee State",
+        "pick": "Iowa State",
+        "probability": 0.9,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Florida vs #16 Prairie View A&M",
+        "pick": "Florida",
+        "probability": 0.99,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#8 Clemson vs #9 Iowa",
+        "pick": "Iowa",
+        "probability": 0.48,
+        "round_name": "R64",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #12 McNeese",
+        "pick": "Vanderbilt",
+        "probability": 0.58,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Nebraska vs #13 Troy",
+        "pick": "Nebraska",
+        "probability": 0.62,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 UNC vs #11 VCU",
+        "pick": "VCU",
+        "probability": 0.45,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Illinois vs #14 Penn",
+        "pick": "Illinois",
+        "probability": 0.85,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Saint Mary's vs #10 Texas A&M",
+        "pick": "Saint Mary's",
+        "probability": 0.55,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#2 Houston vs #15 Idaho",
+        "pick": "Houston",
+        "probability": 0.95,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #8 Ohio State",
+        "pick": "Duke",
+        "probability": 0.53,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 St. John's vs #4 Kansas",
+        "pick": "St. John's",
+        "probability": 0.55,
+        "round_name": "R32",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#11 USF vs #3 Michigan State",
+        "pick": "Michigan State",
+        "probability": 0.47,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 UCLA vs #2 UConn",
+        "pick": "UCLA",
+        "probability": 0.55,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #9 Utah State",
+        "pick": "Utah State",
+        "probability": 0.47,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Wisconsin vs #4 Arkansas",
+        "pick": "Arkansas",
+        "probability": 0.47,
+        "round_name": "R32",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 BYU vs #3 Gonzaga",
+        "pick": "Gonzaga",
+        "probability": 0.5,
+        "round_name": "R32",
+        "game_type": "tossup_lean",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Miami FL vs #2 Purdue",
+        "pick": "Purdue",
+        "probability": 0.35,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #9 Saint Louis",
+        "pick": "Saint Louis",
+        "probability": 0.48,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#12 Akron vs #4 Alabama",
+        "pick": "Alabama",
+        "probability": 0.48,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 Tennessee vs #3 Virginia",
+        "pick": "Tennessee",
+        "probability": 0.58,
+        "round_name": "R32",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#10 Santa Clara vs #2 Iowa State",
+        "pick": "Iowa State",
+        "probability": 0.49,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Florida vs #8 Clemson",
+        "pick": "Florida",
+        "probability": 0.58,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #4 Nebraska",
+        "pick": "Vanderbilt",
+        "probability": 0.53,
+        "round_name": "R32",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#11 VCU vs #3 Illinois",
+        "pick": "Illinois",
+        "probability": 0.48,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#10 Texas A&M vs #2 Houston",
+        "pick": "Texas A&M",
+        "probability": 0.53,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #5 St. John's",
+        "pick": "Duke",
+        "probability": 0.52,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Michigan State vs #2 UConn",
+        "pick": "Michigan State",
+        "probability": 0.58,
+        "round_name": "S16",
+        "game_type": "coin_flip",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #5 Wisconsin",
+        "pick": "Arizona",
+        "probability": 0.53,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Gonzaga vs #2 Purdue",
+        "pick": "Purdue",
+        "probability": 0.48,
+        "round_name": "S16",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #12 Akron",
+        "pick": "Akron",
+        "probability": 0.48,
+        "round_name": "S16",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 Tennessee vs #2 Iowa State",
+        "pick": "Iowa State",
+        "probability": 0.48,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Florida vs #5 Vanderbilt",
+        "pick": "Vanderbilt",
+        "probability": 0.45,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#11 VCU vs #10 Texas A&M",
+        "pick": "Texas A&M",
+        "probability": 0.48,
+        "round_name": "S16",
+        "game_type": "coin_flip",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #3 Michigan State",
+        "pick": "Michigan State",
+        "probability": 0.48,
+        "round_name": "E8",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #3 Gonzaga",
+        "pick": "Gonzaga",
+        "probability": 0.48,
+        "round_name": "E8",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #2 Iowa State",
+        "pick": "Iowa State",
+        "probability": 0.48,
+        "round_name": "E8",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #11 VCU",
+        "pick": "Vanderbilt",
+        "probability": 0.62,
+        "round_name": "E8",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #1 Arizona",
+        "pick": "Arizona",
+        "probability": 0.5,
+        "round_name": "F4",
+        "game_type": "coin_flip",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #2 Iowa State",
+        "pick": "Iowa State",
+        "probability": 0.48,
+        "round_name": "F4",
+        "game_type": "tossup_lean",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #5 Vanderbilt",
+        "pick": "Arizona",
+        "probability": 0.52,
+        "round_name": "NCG",
+        "game_type": "moderate_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      }
+    ],
+    "accuracy_by_type": {},
+    "biggest_misses": [],
+    "confidence_calibration": [],
+    "cross_attention_memory": [
+      {
+        "game_label": "#6 Louisville vs #11 USF",
+        "pick": "Louisville",
+        "probability": 0.55,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Wisconsin vs #12 High Point",
+        "pick": "Wisconsin",
+        "probability": 0.62,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 BYU vs #11 Texas",
+        "pick": "Texas",
+        "probability": 0.48,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#8 Georgia vs #9 Saint Louis",
+        "pick": "Saint Louis",
+        "probability": 0.45,
+        "round_name": "R64",
+        "game_type": "coin_flip",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Alabama vs #13 Hofstra",
+        "pick": "Alabama",
+        "probability": 0.62,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #12 McNeese",
+        "pick": "Vanderbilt",
+        "probability": 0.58,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Nebraska vs #13 Troy",
+        "pick": "Nebraska",
+        "probability": 0.62,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Illinois vs #14 Penn",
+        "pick": "Illinois",
+        "probability": 0.85,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #8 Ohio State",
+        "pick": "Duke",
+        "probability": 0.53,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#11 USF vs #3 Michigan State",
+        "pick": "Michigan State",
+        "probability": 0.47,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 UCLA vs #2 UConn",
+        "pick": "UCLA",
+        "probability": 0.55,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 BYU vs #3 Gonzaga",
+        "pick": "Gonzaga",
+        "probability": 0.5,
+        "round_name": "R32",
+        "game_type": "tossup_lean",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Miami FL vs #2 Purdue",
+        "pick": "Purdue",
+        "probability": 0.35,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#12 Akron vs #4 Alabama",
+        "pick": "Alabama",
+        "probability": 0.48,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#10 Santa Clara vs #2 Iowa State",
+        "pick": "Iowa State",
+        "probability": 0.49,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#11 VCU vs #3 Illinois",
+        "pick": "Illinois",
+        "probability": 0.48,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#10 Texas A&M vs #2 Houston",
+        "pick": "Texas A&M",
+        "probability": 0.53,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Florida vs #5 Vanderbilt",
+        "pick": "Vanderbilt",
+        "probability": 0.45,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #11 VCU",
+        "pick": "Vanderbilt",
+        "probability": 0.62,
+        "round_name": "E8",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #1 Arizona",
+        "pick": "Arizona",
+        "probability": 0.5,
+        "round_name": "F4",
+        "game_type": "coin_flip",
+        "position_change": "weakened",
+        "actual_result": null
+      }
+    ]
+  },
+  "Road Dog": {
+    "agent_name": "Road Dog",
+    "past_picks": [
+      {
+        "game_label": "#1 Duke vs #16 Siena",
+        "pick": "Duke",
+        "probability": 0.96,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#8 Ohio State vs #9 TCU",
+        "pick": "Ohio State",
+        "probability": 0.62,
+        "round_name": "R64",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 St. John's vs #12 Northern Iowa",
+        "pick": "St. John's",
+        "probability": 0.55,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Kansas vs #13 Cal Baptist",
+        "pick": "Kansas",
+        "probability": 0.55,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 Louisville vs #11 USF",
+        "pick": "USF",
+        "probability": 0.48,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Michigan State vs #14 North Dakota State",
+        "pick": "Michigan State",
+        "probability": 0.68,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 UCLA vs #10 UCF",
+        "pick": "UCF",
+        "probability": 0.48,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#2 UConn vs #15 Furman",
+        "pick": "UConn",
+        "probability": 0.82,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #16 LIU",
+        "pick": "Arizona",
+        "probability": 0.95,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#8 Villanova vs #9 Utah State",
+        "pick": "Utah State",
+        "probability": 0.48,
+        "round_name": "R64",
+        "game_type": "coin_flip",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Wisconsin vs #12 High Point",
+        "pick": "High Point",
+        "probability": 0.48,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Arkansas vs #13 Hawaii",
+        "pick": "Arkansas",
+        "probability": 0.58,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 BYU vs #11 Texas",
+        "pick": "Texas",
+        "probability": 0.48,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Gonzaga vs #14 Kennesaw State",
+        "pick": "Gonzaga",
+        "probability": 0.82,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Miami FL vs #10 Missouri",
+        "pick": "Missouri",
+        "probability": 0.48,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#2 Purdue vs #15 Queens",
+        "pick": "Purdue",
+        "probability": 0.88,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #16 Howard",
+        "pick": "Michigan",
+        "probability": 0.94,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#8 Georgia vs #9 Saint Louis",
+        "pick": "Saint Louis",
+        "probability": 0.48,
+        "round_name": "R64",
+        "game_type": "coin_flip",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Texas Tech vs #12 Akron",
+        "pick": "Akron",
+        "probability": 0.45,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Alabama vs #13 Hofstra",
+        "pick": "Alabama",
+        "probability": 0.58,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 Tennessee vs #11 Miami OH",
+        "pick": "Tennessee",
+        "probability": 0.58,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Virginia vs #14 Wright State",
+        "pick": "Virginia",
+        "probability": 0.72,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Kentucky vs #10 Santa Clara",
+        "pick": "Kentucky",
+        "probability": 0.62,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#2 Iowa State vs #15 Tennessee State",
+        "pick": "Iowa State",
+        "probability": 0.62,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Florida vs #16 Prairie View A&M",
+        "pick": "Florida",
+        "probability": 0.92,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#8 Clemson vs #9 Iowa",
+        "pick": "Clemson",
+        "probability": 0.52,
+        "round_name": "R64",
+        "game_type": "coin_flip",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #12 McNeese",
+        "pick": "Vanderbilt",
+        "probability": 0.52,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Nebraska vs #13 Troy",
+        "pick": "Nebraska",
+        "probability": 0.52,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 UNC vs #11 VCU",
+        "pick": "VCU",
+        "probability": 0.48,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Illinois vs #14 Penn",
+        "pick": "Illinois",
+        "probability": 0.55,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Saint Mary's vs #10 Texas A&M",
+        "pick": "Texas A&M",
+        "probability": 0.45,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#2 Houston vs #15 Idaho",
+        "pick": "Houston",
+        "probability": 0.9,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #8 Ohio State",
+        "pick": "Duke",
+        "probability": 0.62,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 St. John's vs #4 Kansas",
+        "pick": "St. John's",
+        "probability": 0.62,
+        "round_name": "R32",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#11 USF vs #3 Michigan State",
+        "pick": "USF",
+        "probability": 0.58,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 UCLA vs #2 UConn",
+        "pick": "UCLA",
+        "probability": 0.58,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #9 Utah State",
+        "pick": "Arizona",
+        "probability": 0.52,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Wisconsin vs #4 Arkansas",
+        "pick": "Wisconsin",
+        "probability": 0.62,
+        "round_name": "R32",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 BYU vs #3 Gonzaga",
+        "pick": "Gonzaga",
+        "probability": 0.48,
+        "round_name": "R32",
+        "game_type": "tossup_lean",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Miami FL vs #2 Purdue",
+        "pick": "Purdue",
+        "probability": 0.45,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #9 Saint Louis",
+        "pick": "Michigan",
+        "probability": 0.62,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#12 Akron vs #4 Alabama",
+        "pick": "Akron",
+        "probability": 0.62,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 Tennessee vs #3 Virginia",
+        "pick": "Tennessee",
+        "probability": 0.62,
+        "round_name": "R32",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#10 Santa Clara vs #2 Iowa State",
+        "pick": "Iowa State",
+        "probability": 0.45,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Florida vs #8 Clemson",
+        "pick": "Florida",
+        "probability": 0.58,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #4 Nebraska",
+        "pick": "Vanderbilt",
+        "probability": 0.62,
+        "round_name": "R32",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#11 VCU vs #3 Illinois",
+        "pick": "VCU",
+        "probability": 0.58,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#10 Texas A&M vs #2 Houston",
+        "pick": "Texas A&M",
+        "probability": 0.58,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #5 St. John's",
+        "pick": "Duke",
+        "probability": 0.52,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Michigan State vs #2 UConn",
+        "pick": "Michigan State",
+        "probability": 0.62,
+        "round_name": "S16",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #5 Wisconsin",
+        "pick": "Wisconsin",
+        "probability": 0.48,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Gonzaga vs #2 Purdue",
+        "pick": "Purdue",
+        "probability": 0.48,
+        "round_name": "S16",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #12 Akron",
+        "pick": "Michigan",
+        "probability": 0.52,
+        "round_name": "S16",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 Tennessee vs #2 Iowa State",
+        "pick": "Iowa State",
+        "probability": 0.48,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Florida vs #5 Vanderbilt",
+        "pick": "Vanderbilt",
+        "probability": 0.48,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#11 VCU vs #10 Texas A&M",
+        "pick": "Texas A&M",
+        "probability": 0.48,
+        "round_name": "S16",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #3 Michigan State",
+        "pick": "Duke",
+        "probability": 0.52,
+        "round_name": "E8",
+        "game_type": "tossup_lean",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #3 Gonzaga",
+        "pick": "Gonzaga",
+        "probability": 0.48,
+        "round_name": "E8",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #2 Iowa State",
+        "pick": "Iowa State",
+        "probability": 0.48,
+        "round_name": "E8",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #11 VCU",
+        "pick": "Vanderbilt",
+        "probability": 0.62,
+        "round_name": "E8",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #1 Arizona",
+        "pick": "Arizona",
+        "probability": 0.48,
+        "round_name": "F4",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #2 Iowa State",
+        "pick": "Vanderbilt",
+        "probability": 0.58,
+        "round_name": "F4",
+        "game_type": "tossup_lean",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #5 Vanderbilt",
+        "pick": "Vanderbilt",
+        "probability": 0.48,
+        "round_name": "NCG",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      }
+    ],
+    "accuracy_by_type": {},
+    "biggest_misses": [],
+    "confidence_calibration": [],
+    "cross_attention_memory": [
+      {
+        "game_label": "#5 St. John's vs #12 Northern Iowa",
+        "pick": "St. John's",
+        "probability": 0.55,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Arkansas vs #13 Hawaii",
+        "pick": "Arkansas",
+        "probability": 0.58,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 BYU vs #11 Texas",
+        "pick": "Texas",
+        "probability": 0.48,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 Tennessee vs #11 Miami OH",
+        "pick": "Tennessee",
+        "probability": 0.58,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#8 Clemson vs #9 Iowa",
+        "pick": "Clemson",
+        "probability": 0.52,
+        "round_name": "R64",
+        "game_type": "coin_flip",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #12 McNeese",
+        "pick": "Vanderbilt",
+        "probability": 0.52,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Nebraska vs #13 Troy",
+        "pick": "Nebraska",
+        "probability": 0.52,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #8 Ohio State",
+        "pick": "Duke",
+        "probability": 0.62,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #9 Utah State",
+        "pick": "Arizona",
+        "probability": 0.52,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 BYU vs #3 Gonzaga",
+        "pick": "Gonzaga",
+        "probability": 0.48,
+        "round_name": "R32",
+        "game_type": "tossup_lean",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #9 Saint Louis",
+        "pick": "Michigan",
+        "probability": 0.62,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Florida vs #8 Clemson",
+        "pick": "Florida",
+        "probability": 0.58,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #5 St. John's",
+        "pick": "Duke",
+        "probability": 0.52,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #12 Akron",
+        "pick": "Michigan",
+        "probability": 0.52,
+        "round_name": "S16",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #3 Michigan State",
+        "pick": "Duke",
+        "probability": 0.52,
+        "round_name": "E8",
+        "game_type": "tossup_lean",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #11 VCU",
+        "pick": "Vanderbilt",
+        "probability": 0.62,
+        "round_name": "E8",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #2 Iowa State",
+        "pick": "Vanderbilt",
+        "probability": 0.58,
+        "round_name": "F4",
+        "game_type": "tossup_lean",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #5 Vanderbilt",
+        "pick": "Vanderbilt",
+        "probability": 0.48,
+        "round_name": "NCG",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      }
+    ]
+  },
+  "Whisper": {
+    "agent_name": "Whisper",
+    "past_picks": [
+      {
+        "game_label": "#1 Duke vs #16 Siena",
+        "pick": "Duke",
+        "probability": 0.96,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#8 Ohio State vs #9 TCU",
+        "pick": "Ohio State",
+        "probability": 0.62,
+        "round_name": "R64",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 St. John's vs #12 Northern Iowa",
+        "pick": "St. John's",
+        "probability": 0.62,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Kansas vs #13 Cal Baptist",
+        "pick": "Kansas",
+        "probability": 0.61,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 Louisville vs #11 USF",
+        "pick": "USF",
+        "probability": 0.48,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Michigan State vs #14 North Dakota State",
+        "pick": "Michigan State",
+        "probability": 0.62,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 UCLA vs #10 UCF",
+        "pick": "UCLA",
+        "probability": 0.62,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#2 UConn vs #15 Furman",
+        "pick": "UConn",
+        "probability": 0.69,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #16 LIU",
+        "pick": "Arizona",
+        "probability": 0.94,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#8 Villanova vs #9 Utah State",
+        "pick": "Utah State",
+        "probability": 0.45,
+        "round_name": "R64",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Wisconsin vs #12 High Point",
+        "pick": "Wisconsin",
+        "probability": 0.58,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Arkansas vs #13 Hawaii",
+        "pick": "Arkansas",
+        "probability": 0.65,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 BYU vs #11 Texas",
+        "pick": "BYU",
+        "probability": 0.58,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Gonzaga vs #14 Kennesaw State",
+        "pick": "Gonzaga",
+        "probability": 0.82,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Miami FL vs #10 Missouri",
+        "pick": "Miami FL",
+        "probability": 0.62,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#2 Purdue vs #15 Queens",
+        "pick": "Purdue",
+        "probability": 0.82,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #16 Howard",
+        "pick": "Michigan",
+        "probability": 0.93,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#8 Georgia vs #9 Saint Louis",
+        "pick": "Georgia",
+        "probability": 0.58,
+        "round_name": "R64",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Texas Tech vs #12 Akron",
+        "pick": "Akron",
+        "probability": 0.48,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Alabama vs #13 Hofstra",
+        "pick": "Alabama",
+        "probability": 0.61,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 Tennessee vs #11 Miami OH",
+        "pick": "Tennessee",
+        "probability": 0.58,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Virginia vs #14 Wright State",
+        "pick": "Virginia",
+        "probability": 0.72,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Kentucky vs #10 Santa Clara",
+        "pick": "Kentucky",
+        "probability": 0.58,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#2 Iowa State vs #15 Tennessee State",
+        "pick": "Iowa State",
+        "probability": 0.88,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Florida vs #16 Prairie View A&M",
+        "pick": "Florida",
+        "probability": 0.9,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#8 Clemson vs #9 Iowa",
+        "pick": "Clemson",
+        "probability": 0.58,
+        "round_name": "R64",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #12 McNeese",
+        "pick": "Vanderbilt",
+        "probability": 0.62,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Nebraska vs #13 Troy",
+        "pick": "Nebraska",
+        "probability": 0.62,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 UNC vs #11 VCU",
+        "pick": "VCU",
+        "probability": 0.48,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Illinois vs #14 Penn",
+        "pick": "Illinois",
+        "probability": 0.61,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Saint Mary's vs #10 Texas A&M",
+        "pick": "Texas A&M",
+        "probability": 0.48,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#2 Houston vs #15 Idaho",
+        "pick": "Houston",
+        "probability": 0.94,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #8 Ohio State",
+        "pick": "Duke",
+        "probability": 0.61,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 St. John's vs #4 Kansas",
+        "pick": "St. John's",
+        "probability": 0.68,
+        "round_name": "R32",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#11 USF vs #3 Michigan State",
+        "pick": "USF",
+        "probability": 0.58,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 UCLA vs #2 UConn",
+        "pick": "UConn",
+        "probability": 0.46,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #9 Utah State",
+        "pick": "Arizona",
+        "probability": 0.62,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Wisconsin vs #4 Arkansas",
+        "pick": "Wisconsin",
+        "probability": 0.58,
+        "round_name": "R32",
+        "game_type": "coin_flip",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 BYU vs #3 Gonzaga",
+        "pick": "BYU",
+        "probability": 0.58,
+        "round_name": "R32",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Miami FL vs #2 Purdue",
+        "pick": "Miami FL",
+        "probability": 0.58,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #9 Saint Louis",
+        "pick": "Michigan",
+        "probability": 0.62,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#12 Akron vs #4 Alabama",
+        "pick": "Akron",
+        "probability": 0.61,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 Tennessee vs #3 Virginia",
+        "pick": "Tennessee",
+        "probability": 0.62,
+        "round_name": "R32",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#10 Santa Clara vs #2 Iowa State",
+        "pick": "Iowa State",
+        "probability": 0.46,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Florida vs #8 Clemson",
+        "pick": "Florida",
+        "probability": 0.61,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #4 Nebraska",
+        "pick": "Vanderbilt",
+        "probability": 0.68,
+        "round_name": "R32",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#11 VCU vs #3 Illinois",
+        "pick": "VCU",
+        "probability": 0.62,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#10 Texas A&M vs #2 Houston",
+        "pick": "Texas A&M",
+        "probability": 0.58,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #5 St. John's",
+        "pick": "Duke",
+        "probability": 0.58,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Michigan State vs #2 UConn",
+        "pick": "Michigan State",
+        "probability": 0.61,
+        "round_name": "S16",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #5 Wisconsin",
+        "pick": "Arizona",
+        "probability": 0.61,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Gonzaga vs #2 Purdue",
+        "pick": "Gonzaga",
+        "probability": 0.62,
+        "round_name": "S16",
+        "game_type": "coin_flip",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #12 Akron",
+        "pick": "Michigan",
+        "probability": 0.65,
+        "round_name": "S16",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 Tennessee vs #2 Iowa State",
+        "pick": "Iowa State",
+        "probability": 0.45,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Florida vs #5 Vanderbilt",
+        "pick": "Florida",
+        "probability": 0.58,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#11 VCU vs #10 Texas A&M",
+        "pick": "VCU",
+        "probability": 0.58,
+        "round_name": "S16",
+        "game_type": "coin_flip",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #3 Michigan State",
+        "pick": "Duke",
+        "probability": 0.62,
+        "round_name": "E8",
+        "game_type": "tossup_lean",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #3 Gonzaga",
+        "pick": "Arizona",
+        "probability": 0.58,
+        "round_name": "E8",
+        "game_type": "tossup_lean",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #2 Iowa State",
+        "pick": "Michigan",
+        "probability": 0.58,
+        "round_name": "E8",
+        "game_type": "coin_flip",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #11 VCU",
+        "pick": "Vanderbilt",
+        "probability": 0.58,
+        "round_name": "E8",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #1 Arizona",
+        "pick": "Duke",
+        "probability": 0.55,
+        "round_name": "F4",
+        "game_type": "coin_flip",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #2 Iowa State",
+        "pick": "Vanderbilt",
+        "probability": 0.53,
+        "round_name": "F4",
+        "game_type": "tossup_lean",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #5 Vanderbilt",
+        "pick": "Vanderbilt",
+        "probability": 0.47,
+        "round_name": "NCG",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      }
+    ],
+    "accuracy_by_type": {},
+    "biggest_misses": [],
+    "confidence_calibration": [],
+    "cross_attention_memory": [
+      {
+        "game_label": "#7 Miami FL vs #10 Missouri",
+        "pick": "Miami FL",
+        "probability": 0.62,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Alabama vs #13 Hofstra",
+        "pick": "Alabama",
+        "probability": 0.61,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 Tennessee vs #11 Miami OH",
+        "pick": "Tennessee",
+        "probability": 0.58,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #12 McNeese",
+        "pick": "Vanderbilt",
+        "probability": 0.62,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Nebraska vs #13 Troy",
+        "pick": "Nebraska",
+        "probability": 0.62,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Saint Mary's vs #10 Texas A&M",
+        "pick": "Texas A&M",
+        "probability": 0.48,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #8 Ohio State",
+        "pick": "Duke",
+        "probability": 0.61,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #9 Saint Louis",
+        "pick": "Michigan",
+        "probability": 0.62,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#10 Santa Clara vs #2 Iowa State",
+        "pick": "Iowa State",
+        "probability": 0.46,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Florida vs #8 Clemson",
+        "pick": "Florida",
+        "probability": 0.61,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #5 St. John's",
+        "pick": "Duke",
+        "probability": 0.58,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Gonzaga vs #2 Purdue",
+        "pick": "Gonzaga",
+        "probability": 0.62,
+        "round_name": "S16",
+        "game_type": "coin_flip",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #12 Akron",
+        "pick": "Michigan",
+        "probability": 0.65,
+        "round_name": "S16",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#11 VCU vs #10 Texas A&M",
+        "pick": "VCU",
+        "probability": 0.58,
+        "round_name": "S16",
+        "game_type": "coin_flip",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #3 Michigan State",
+        "pick": "Duke",
+        "probability": 0.62,
+        "round_name": "E8",
+        "game_type": "tossup_lean",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #3 Gonzaga",
+        "pick": "Arizona",
+        "probability": 0.58,
+        "round_name": "E8",
+        "game_type": "tossup_lean",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #2 Iowa State",
+        "pick": "Michigan",
+        "probability": 0.58,
+        "round_name": "E8",
+        "game_type": "coin_flip",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #11 VCU",
+        "pick": "Vanderbilt",
+        "probability": 0.58,
+        "round_name": "E8",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #1 Arizona",
+        "pick": "Duke",
+        "probability": 0.55,
+        "round_name": "F4",
+        "game_type": "coin_flip",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #2 Iowa State",
+        "pick": "Vanderbilt",
+        "probability": 0.53,
+        "round_name": "F4",
+        "game_type": "tossup_lean",
+        "position_change": "weakened",
+        "actual_result": null
+      }
+    ]
+  },
+  "Oracle": {
+    "agent_name": "Oracle",
+    "past_picks": [
+      {
+        "game_label": "#1 Duke vs #16 Siena",
+        "pick": "Duke",
+        "probability": 0.99,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#8 Ohio State vs #9 TCU",
+        "pick": "Ohio State",
+        "probability": 0.52,
+        "round_name": "R64",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 St. John's vs #12 Northern Iowa",
+        "pick": "St. John's",
+        "probability": 0.68,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Kansas vs #13 Cal Baptist",
+        "pick": "Kansas",
+        "probability": 0.75,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 Louisville vs #11 USF",
+        "pick": "Louisville",
+        "probability": 0.58,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Michigan State vs #14 North Dakota State",
+        "pick": "Michigan State",
+        "probability": 0.88,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 UCLA vs #10 UCF",
+        "pick": "UCLA",
+        "probability": 0.62,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#2 UConn vs #15 Furman",
+        "pick": "UConn",
+        "probability": 0.88,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #16 LIU",
+        "pick": "Arizona",
+        "probability": 0.99,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#8 Villanova vs #9 Utah State",
+        "pick": "Utah State",
+        "probability": 0.48,
+        "round_name": "R64",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Wisconsin vs #12 High Point",
+        "pick": "Wisconsin",
+        "probability": 0.68,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Arkansas vs #13 Hawaii",
+        "pick": "Arkansas",
+        "probability": 0.78,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 BYU vs #11 Texas",
+        "pick": "BYU",
+        "probability": 0.58,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Gonzaga vs #14 Kennesaw State",
+        "pick": "Gonzaga",
+        "probability": 0.87,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Miami FL vs #10 Missouri",
+        "pick": "Miami FL",
+        "probability": 0.62,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#2 Purdue vs #15 Queens",
+        "pick": "Purdue",
+        "probability": 0.94,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #16 Howard",
+        "pick": "Michigan",
+        "probability": 0.99,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#8 Georgia vs #9 Saint Louis",
+        "pick": "Saint Louis",
+        "probability": 0.45,
+        "round_name": "R64",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Texas Tech vs #12 Akron",
+        "pick": "Akron",
+        "probability": 0.45,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Alabama vs #13 Hofstra",
+        "pick": "Alabama",
+        "probability": 0.68,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 Tennessee vs #11 Miami OH",
+        "pick": "Tennessee",
+        "probability": 0.58,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Virginia vs #14 Wright State",
+        "pick": "Virginia",
+        "probability": 0.79,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Kentucky vs #10 Santa Clara",
+        "pick": "Santa Clara",
+        "probability": 0.42,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#2 Iowa State vs #15 Tennessee State",
+        "pick": "Iowa State",
+        "probability": 0.94,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Florida vs #16 Prairie View A&M",
+        "pick": "Florida",
+        "probability": 0.99,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#8 Clemson vs #9 Iowa",
+        "pick": "Iowa",
+        "probability": 0.47,
+        "round_name": "R64",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #12 McNeese",
+        "pick": "Vanderbilt",
+        "probability": 0.68,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Nebraska vs #13 Troy",
+        "pick": "Nebraska",
+        "probability": 0.7,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 UNC vs #11 VCU",
+        "pick": "VCU",
+        "probability": 0.45,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Illinois vs #14 Penn",
+        "pick": "Penn",
+        "probability": 0.48,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Saint Mary's vs #10 Texas A&M",
+        "pick": "Texas A&M",
+        "probability": 0.48,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#2 Houston vs #15 Idaho",
+        "pick": "Houston",
+        "probability": 0.94,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #8 Ohio State",
+        "pick": "Duke",
+        "probability": 0.68,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 St. John's vs #4 Kansas",
+        "pick": "St. John's",
+        "probability": 0.58,
+        "round_name": "R32",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#11 USF vs #3 Michigan State",
+        "pick": "Michigan State",
+        "probability": 0.35,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 UCLA vs #2 UConn",
+        "pick": "UConn",
+        "probability": 0.35,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #9 Utah State",
+        "pick": "Arizona",
+        "probability": 0.85,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Wisconsin vs #4 Arkansas",
+        "pick": "Arkansas",
+        "probability": 0.42,
+        "round_name": "R32",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 BYU vs #3 Gonzaga",
+        "pick": "Gonzaga",
+        "probability": 0.28,
+        "round_name": "R32",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Miami FL vs #2 Purdue",
+        "pick": "Purdue",
+        "probability": 0.32,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #9 Saint Louis",
+        "pick": "Michigan",
+        "probability": 0.85,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#12 Akron vs #4 Alabama",
+        "pick": "Alabama",
+        "probability": 0.42,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 Tennessee vs #3 Virginia",
+        "pick": "Virginia",
+        "probability": 0.42,
+        "round_name": "R32",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#10 Santa Clara vs #2 Iowa State",
+        "pick": "Iowa State",
+        "probability": 0.25,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Florida vs #8 Clemson",
+        "pick": "Florida",
+        "probability": 0.82,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #4 Nebraska",
+        "pick": "Nebraska",
+        "probability": 0.42,
+        "round_name": "R32",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#11 VCU vs #3 Illinois",
+        "pick": "Illinois",
+        "probability": 0.32,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#10 Texas A&M vs #2 Houston",
+        "pick": "Houston",
+        "probability": 0.35,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #5 St. John's",
+        "pick": "Duke",
+        "probability": 0.85,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Michigan State vs #2 UConn",
+        "pick": "Michigan State",
+        "probability": 0.58,
+        "round_name": "S16",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #5 Wisconsin",
+        "pick": "Arizona",
+        "probability": 0.78,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Gonzaga vs #2 Purdue",
+        "pick": "Purdue",
+        "probability": 0.48,
+        "round_name": "S16",
+        "game_type": "coin_flip",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #12 Akron",
+        "pick": "Michigan",
+        "probability": 0.75,
+        "round_name": "S16",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 Tennessee vs #2 Iowa State",
+        "pick": "Iowa State",
+        "probability": 0.32,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Florida vs #5 Vanderbilt",
+        "pick": "Vanderbilt",
+        "probability": 0.42,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#11 VCU vs #10 Texas A&M",
+        "pick": "VCU",
+        "probability": 0.58,
+        "round_name": "S16",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #3 Michigan State",
+        "pick": "Duke",
+        "probability": 0.58,
+        "round_name": "E8",
+        "game_type": "tossup_lean",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #3 Gonzaga",
+        "pick": "Gonzaga",
+        "probability": 0.48,
+        "round_name": "E8",
+        "game_type": "tossup_lean",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #2 Iowa State",
+        "pick": "Michigan",
+        "probability": 0.52,
+        "round_name": "E8",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #11 VCU",
+        "pick": "VCU",
+        "probability": 0.48,
+        "round_name": "E8",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #1 Arizona",
+        "pick": "Duke",
+        "probability": 0.52,
+        "round_name": "F4",
+        "game_type": "coin_flip",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #2 Iowa State",
+        "pick": "Iowa State",
+        "probability": 0.48,
+        "round_name": "F4",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #5 Vanderbilt",
+        "pick": "Vanderbilt",
+        "probability": 0.48,
+        "round_name": "NCG",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      }
+    ],
+    "accuracy_by_type": {},
+    "biggest_misses": [],
+    "confidence_calibration": [],
+    "cross_attention_memory": [
+      {
+        "game_label": "#6 Louisville vs #11 USF",
+        "pick": "Louisville",
+        "probability": 0.58,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 UCLA vs #10 UCF",
+        "pick": "UCLA",
+        "probability": 0.62,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Wisconsin vs #12 High Point",
+        "pick": "Wisconsin",
+        "probability": 0.68,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Arkansas vs #13 Hawaii",
+        "pick": "Arkansas",
+        "probability": 0.78,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Alabama vs #13 Hofstra",
+        "pick": "Alabama",
+        "probability": 0.68,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 Tennessee vs #11 Miami OH",
+        "pick": "Tennessee",
+        "probability": 0.58,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Nebraska vs #13 Troy",
+        "pick": "Nebraska",
+        "probability": 0.7,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #9 Utah State",
+        "pick": "Arizona",
+        "probability": 0.85,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #9 Saint Louis",
+        "pick": "Michigan",
+        "probability": 0.85,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Florida vs #8 Clemson",
+        "pick": "Florida",
+        "probability": 0.82,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#10 Texas A&M vs #2 Houston",
+        "pick": "Houston",
+        "probability": 0.35,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #5 St. John's",
+        "pick": "Duke",
+        "probability": 0.85,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #5 Wisconsin",
+        "pick": "Arizona",
+        "probability": 0.78,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Gonzaga vs #2 Purdue",
+        "pick": "Purdue",
+        "probability": 0.48,
+        "round_name": "S16",
+        "game_type": "coin_flip",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #12 Akron",
+        "pick": "Michigan",
+        "probability": 0.75,
+        "round_name": "S16",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #3 Michigan State",
+        "pick": "Duke",
+        "probability": 0.58,
+        "round_name": "E8",
+        "game_type": "tossup_lean",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #3 Gonzaga",
+        "pick": "Gonzaga",
+        "probability": 0.48,
+        "round_name": "E8",
+        "game_type": "tossup_lean",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #1 Arizona",
+        "pick": "Duke",
+        "probability": 0.52,
+        "round_name": "F4",
+        "game_type": "coin_flip",
+        "position_change": "flipped",
+        "actual_result": null
+      }
+    ]
+  },
+  "Streak": {
+    "agent_name": "Streak",
+    "past_picks": [
+      {
+        "game_label": "#1 Duke vs #16 Siena",
+        "pick": "Duke",
+        "probability": 0.98,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#8 Ohio State vs #9 TCU",
+        "pick": "Ohio State",
+        "probability": 0.58,
+        "round_name": "R64",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 St. John's vs #12 Northern Iowa",
+        "pick": "St. John's",
+        "probability": 0.62,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Kansas vs #13 Cal Baptist",
+        "pick": "Cal Baptist",
+        "probability": 0.45,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 Louisville vs #11 USF",
+        "pick": "USF",
+        "probability": 0.45,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Michigan State vs #14 North Dakota State",
+        "pick": "Michigan State",
+        "probability": 0.62,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 UCLA vs #10 UCF",
+        "pick": "UCLA",
+        "probability": 0.68,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#2 UConn vs #15 Furman",
+        "pick": "UConn",
+        "probability": 0.7,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #16 LIU",
+        "pick": "Arizona",
+        "probability": 0.98,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#8 Villanova vs #9 Utah State",
+        "pick": "Utah State",
+        "probability": 0.4,
+        "round_name": "R64",
+        "game_type": "coin_flip",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Wisconsin vs #12 High Point",
+        "pick": "High Point",
+        "probability": 0.45,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Arkansas vs #13 Hawaii",
+        "pick": "Arkansas",
+        "probability": 0.72,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 BYU vs #11 Texas",
+        "pick": "BYU",
+        "probability": 0.65,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Gonzaga vs #14 Kennesaw State",
+        "pick": "Gonzaga",
+        "probability": 0.88,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Miami FL vs #10 Missouri",
+        "pick": "Miami FL",
+        "probability": 0.68,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#2 Purdue vs #15 Queens",
+        "pick": "Purdue",
+        "probability": 0.92,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #16 Howard",
+        "pick": "Michigan",
+        "probability": 0.9,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#8 Georgia vs #9 Saint Louis",
+        "pick": "Georgia",
+        "probability": 0.58,
+        "round_name": "R64",
+        "game_type": "coin_flip",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Texas Tech vs #12 Akron",
+        "pick": "Akron",
+        "probability": 0.48,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Alabama vs #13 Hofstra",
+        "pick": "Hofstra",
+        "probability": 0.48,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 Tennessee vs #11 Miami OH",
+        "pick": "Miami OH",
+        "probability": 0.45,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Virginia vs #14 Wright State",
+        "pick": "Virginia",
+        "probability": 0.65,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Kentucky vs #10 Santa Clara",
+        "pick": "Santa Clara",
+        "probability": 0.45,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#2 Iowa State vs #15 Tennessee State",
+        "pick": "Iowa State",
+        "probability": 0.62,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Florida vs #16 Prairie View A&M",
+        "pick": "Florida",
+        "probability": 0.9,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#8 Clemson vs #9 Iowa",
+        "pick": "Clemson",
+        "probability": 0.68,
+        "round_name": "R64",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #12 McNeese",
+        "pick": "McNeese",
+        "probability": 0.45,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#4 Nebraska vs #13 Troy",
+        "pick": "Troy",
+        "probability": 0.45,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 UNC vs #11 VCU",
+        "pick": "VCU",
+        "probability": 0.45,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Illinois vs #14 Penn",
+        "pick": "Penn",
+        "probability": 0.45,
+        "round_name": "R64",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Saint Mary's vs #10 Texas A&M",
+        "pick": "Saint Mary's",
+        "probability": 0.65,
+        "round_name": "R64",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#2 Houston vs #15 Idaho",
+        "pick": "Houston",
+        "probability": 0.88,
+        "round_name": "R64",
+        "game_type": "blowout",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #8 Ohio State",
+        "pick": "Duke",
+        "probability": 0.7,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 St. John's vs #4 Kansas",
+        "pick": "St. John's",
+        "probability": 0.75,
+        "round_name": "R32",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#11 USF vs #3 Michigan State",
+        "pick": "USF",
+        "probability": 0.62,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 UCLA vs #2 UConn",
+        "pick": "UConn",
+        "probability": 0.48,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #9 Utah State",
+        "pick": "Arizona",
+        "probability": 0.55,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Wisconsin vs #4 Arkansas",
+        "pick": "Arkansas",
+        "probability": 0.4,
+        "round_name": "R32",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 BYU vs #3 Gonzaga",
+        "pick": "Gonzaga",
+        "probability": 0.45,
+        "round_name": "R32",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Miami FL vs #2 Purdue",
+        "pick": "Purdue",
+        "probability": 0.45,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #9 Saint Louis",
+        "pick": "Michigan",
+        "probability": 0.65,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#12 Akron vs #4 Alabama",
+        "pick": "Akron",
+        "probability": 0.62,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 Tennessee vs #3 Virginia",
+        "pick": "Virginia",
+        "probability": 0.45,
+        "round_name": "R32",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#10 Santa Clara vs #2 Iowa State",
+        "pick": "Iowa State",
+        "probability": 0.45,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Florida vs #8 Clemson",
+        "pick": "Florida",
+        "probability": 0.62,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "unchanged",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #4 Nebraska",
+        "pick": "Vanderbilt",
+        "probability": 0.68,
+        "round_name": "R32",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#11 VCU vs #3 Illinois",
+        "pick": "VCU",
+        "probability": 0.68,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#10 Texas A&M vs #2 Houston",
+        "pick": "Houston",
+        "probability": 0.35,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #5 St. John's",
+        "pick": "Duke",
+        "probability": 0.58,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Michigan State vs #2 UConn",
+        "pick": "Michigan State",
+        "probability": 0.58,
+        "round_name": "S16",
+        "game_type": "coin_flip",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #5 Wisconsin",
+        "pick": "Arizona",
+        "probability": 0.62,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Gonzaga vs #2 Purdue",
+        "pick": "Gonzaga",
+        "probability": 0.58,
+        "round_name": "S16",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #12 Akron",
+        "pick": "Michigan",
+        "probability": 0.55,
+        "round_name": "S16",
+        "game_type": "heavy_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#6 Tennessee vs #2 Iowa State",
+        "pick": "Iowa State",
+        "probability": 0.45,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Florida vs #5 Vanderbilt",
+        "pick": "Vanderbilt",
+        "probability": 0.45,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#11 VCU vs #10 Texas A&M",
+        "pick": "VCU",
+        "probability": 0.62,
+        "round_name": "S16",
+        "game_type": "coin_flip",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #3 Michigan State",
+        "pick": "Duke",
+        "probability": 0.62,
+        "round_name": "E8",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #3 Gonzaga",
+        "pick": "Arizona",
+        "probability": 0.55,
+        "round_name": "E8",
+        "game_type": "tossup_lean",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #2 Iowa State",
+        "pick": "Michigan",
+        "probability": 0.55,
+        "round_name": "E8",
+        "game_type": "coin_flip",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #11 VCU",
+        "pick": "VCU",
+        "probability": 0.45,
+        "round_name": "E8",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #1 Arizona",
+        "pick": "Duke",
+        "probability": 0.52,
+        "round_name": "F4",
+        "game_type": "coin_flip",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#5 Vanderbilt vs #2 Iowa State",
+        "pick": "Vanderbilt",
+        "probability": 0.58,
+        "round_name": "F4",
+        "game_type": "tossup_lean",
+        "position_change": "strengthened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #5 Vanderbilt",
+        "pick": "Arizona",
+        "probability": 0.55,
+        "round_name": "NCG",
+        "game_type": "moderate_favorite",
+        "position_change": "strengthened",
+        "actual_result": null
+      }
+    ],
+    "accuracy_by_type": {},
+    "biggest_misses": [],
+    "confidence_calibration": [],
+    "cross_attention_memory": [
+      {
+        "game_label": "#5 St. John's vs #12 Northern Iowa",
+        "pick": "St. John's",
+        "probability": 0.62,
+        "round_name": "R64",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#8 Georgia vs #9 Saint Louis",
+        "pick": "Georgia",
+        "probability": 0.58,
+        "round_name": "R64",
+        "game_type": "coin_flip",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #8 Ohio State",
+        "pick": "Duke",
+        "probability": 0.7,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 UCLA vs #2 UConn",
+        "pick": "UConn",
+        "probability": 0.48,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #9 Utah State",
+        "pick": "Arizona",
+        "probability": 0.55,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#7 Miami FL vs #2 Purdue",
+        "pick": "Purdue",
+        "probability": 0.45,
+        "round_name": "R32",
+        "game_type": "moderate_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #9 Saint Louis",
+        "pick": "Michigan",
+        "probability": 0.65,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#10 Santa Clara vs #2 Iowa State",
+        "pick": "Iowa State",
+        "probability": 0.45,
+        "round_name": "R32",
+        "game_type": "heavy_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #5 St. John's",
+        "pick": "Duke",
+        "probability": 0.58,
+        "round_name": "S16",
+        "game_type": "moderate_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#3 Michigan State vs #2 UConn",
+        "pick": "Michigan State",
+        "probability": 0.58,
+        "round_name": "S16",
+        "game_type": "coin_flip",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #12 Akron",
+        "pick": "Michigan",
+        "probability": 0.55,
+        "round_name": "S16",
+        "game_type": "heavy_favorite",
+        "position_change": "flipped",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Arizona vs #3 Gonzaga",
+        "pick": "Arizona",
+        "probability": 0.55,
+        "round_name": "E8",
+        "game_type": "tossup_lean",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Michigan vs #2 Iowa State",
+        "pick": "Michigan",
+        "probability": 0.55,
+        "round_name": "E8",
+        "game_type": "coin_flip",
+        "position_change": "weakened",
+        "actual_result": null
+      },
+      {
+        "game_label": "#1 Duke vs #1 Arizona",
+        "pick": "Duke",
+        "probability": 0.52,
+        "round_name": "F4",
+        "game_type": "coin_flip",
+        "position_change": "weakened",
+        "actual_result": null
+      }
+    ]
+  }
+}

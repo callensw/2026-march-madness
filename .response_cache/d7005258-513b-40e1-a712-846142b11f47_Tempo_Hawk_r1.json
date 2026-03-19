@@ -1,0 +1,7 @@
+STEP 1 — UPSET THESIS: Texas controls pace at 69.8 vs Purdue's 69.7, creating a rock fight where their superior offensive efficiency (125.8 vs 126.9 is negligible) and tournament momentum from beating Gonzaga neutralizes Purdue's talent edge in a grind-it-out game.
+
+STEP 2 — RATE THE UPSET THESIS: 4/10. The tempo numbers are essentially identical, so there's no pace mismatch advantage for either team. Texas's efficiency numbers are close but still slightly behind, and Purdue's defense is significantly better (90.0 vs 96.3). The upset path exists through hot shooting and tournament confidence, but it's not tempo-based.
+
+STEP 3 — PICK: Purdue. While the pace is identical, Purdue's superior defensive efficiency in a slow game gives them the edge.
+
+{"team_a_win_prob": 0.32, "uncertainty": 0.15, "reasoning": "Identical tempo at 69.8 possessions eliminates pace advantage. Purdue's superior defensive efficiency (90.0 vs 96.3) controls this grind-it-out game.", "key_stat": "Both teams play at 69.8 possessions per game"}

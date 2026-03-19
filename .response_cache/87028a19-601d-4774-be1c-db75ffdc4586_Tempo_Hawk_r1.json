@@ -1,0 +1,7 @@
+STEP 1 — UPSET THESIS: Missouri controls pace at 66.4 vs Miami's 65.6, but the real edge is Miami's superior efficiency margin (33.5 vs 28.3). In a near-identical tempo game, the more efficient team wins.
+
+STEP 2 — RATE THE UPSET THESIS: 4/10. Missouri's path requires Miami's offense to stagnate, but Miami's 123.6 AdjO is significantly better than Missouri's 121.8.
+
+STEP 3 — PICK: Miami's efficiency edge in a pace-neutral matchup gives them control.
+
+{"team_a_win_prob": 0.67, "uncertainty": 0.12, "reasoning": "Identical tempos at 66 possessions favor Miami's superior efficiency margin. 33.5 vs 28.3 AdjEM gap decides this pace-neutral battle.", "key_stat": "Miami's 33.5 efficiency margin vs Missouri's 28.3"}

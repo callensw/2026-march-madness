@@ -1,0 +1,9 @@
+Looking at this matchup, I need to examine the tempo dynamics between these two teams.
+
+STEP 1 — UPSET THESIS: UCF wins by forcing a chaotic, turnover-heavy game. Their 11.2% turnover rate vs UCLA's 8.9% creates extra possessions, and in a similar-tempo game (67.3 vs 66.7), those extra chances neutralize UCLA's efficiency edge. Plus, UCLA's missing Tyler Bilodeau, their primary scorer.
+
+STEP 2 — RATE THE UPSET THESIS: 7/10. This is genuinely plausible. The tempo match is nearly identical, so neither team gets a pace advantage. UCF's higher turnover rate means more possessions, and they're experienced (8.0/10 vs 7.0/10). UCLA's injury to their leading scorer is significant.
+
+STEP 3 — PICK: The tempo numbers are essentially identical, so this comes down to who can create more possessions and capitalize. UCF's ability to force turnovers gives them extra opportunities, and they're healthier. In a pace-neutral game, the team creating more possessions has the edge.
+
+{"team_a_win_prob": 0.42, "uncertainty": 0.16, "reasoning": "Identical tempos neutralize UCLA's efficiency edge. UCF's 11.2% turnover rate creates extra possessions vs UCLA's 8.9%. Bilodeau injury hurts UCLA's primary scoring.", "key_stat": "UCF forces 2.3% more turnovers than UCLA commits"}

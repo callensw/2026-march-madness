@@ -1,0 +1,7 @@
+STEP 1 — UPSET THESIS: Wright State forces Virginia into a half-court grind where their 103.4 defensive efficiency becomes irrelevant. Virginia's offense relies on precision execution at glacial pace (63.9 tempo). One cold shooting night from their role players and they're stuck in the 50s against a confident Wright State team that just swept their entire conference.
+
+STEP 2 — RATE THE UPSET THESIS: 3/10. Wright State's defense is BAD. 103.4 adj_d means they give up easy buckets. Virginia's 88.3 defensive efficiency is ELITE — they'll suffocate Wright State's offense. Even if Virginia goes cold, Wright State can't score enough to capitalize.
+
+STEP 3 — PICK: Virginia's defense is championship-level. Wright State allows 45.7% shooting — that's TERRIBLE. Virginia will grind this into the 50s and win ugly.
+
+{"team_a_win_prob": 0.82, "uncertainty": 0.08, "reasoning": "Virginia's elite 88.3 defensive efficiency versus Wright State's awful 103.4. Defense travels, offense disappears. Virginia grinds this out.", "key_stat": "Wright State allows 45.7% shooting — Virginia's defense will dominate"}

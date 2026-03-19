@@ -1,0 +1,25 @@
+# Secrets
+.env
+dashboard/.env
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+dashboard/node_modules/
+dashboard/dist/
+
+# Generated (can be re-created)
+logs/
+status.json
+game_results.json
+backtest_report.txt
+audio/
+# videos/
+video_assets/fonts/
+
+# OS
+.DS_Store

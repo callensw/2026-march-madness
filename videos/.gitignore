@@ -1,0 +1,5 @@
+# Intermediate files - only push final output + scripts
+assets/
+overlaid/
+concat_list.txt
+test_conductor.mp4

@@ -1,0 +1,7 @@
+STEP 1 — UPSET THESIS: Ohio State forces Duke into a half-court grind where their defensive experience and physicality neutralizes Duke's freshman stars. Buckeyes have faced elite competition all season in the Big Ten while Duke's defense has holes (.439 opp_fg_pct vs .392).
+
+STEP 2 — RATE THE UPSET THESIS: 4/10. Duke's defense is legitimately elite (87.1 adj_d) despite the injury concerns. Ohio State's offense is good but not explosive enough to consistently score against that Duke defense.
+
+STEP 3 — PICK: Duke's defense is too suffocating. Ohio State shoots .439 against opponents - that's vulnerable territory against this Duke defense that held Virginia to 70 in a championship game.
+
+{"team_a_win_prob": 0.72, "uncertainty": 0.12, "reasoning": "Duke's 87.1 adj_d is elite. Ohio State allows .439 opponent shooting - vulnerable against suffocating Duke defense that travels in March.", "key_stat": "Duke allows .392 opponent FG% vs Ohio State's .439"}

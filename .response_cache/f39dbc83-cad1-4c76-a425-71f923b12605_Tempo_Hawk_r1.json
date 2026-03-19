@@ -1,0 +1,7 @@
+STEP 1 — UPSET THESIS: Akron controls tempo at 70.7 possessions, forcing Alabama (71.5) into a grind-it-out game where their talent edge shrinks. Fewer possessions favor the underdog, and Akron's elite defense (96.5 adj_d vs Alabama's 92.6) can keep this close in a rock fight.
+
+STEP 2 — RATE THE UPSET THESIS: 5/10. The tempo difference is minimal (0.8 possessions), so pace control won't be decisive. Alabama's efficiency edge is significant (5.5 points per 100 possessions), and they're better on both ends.
+
+STEP 3 — PICK: Alabama wins. While Akron showed they can hang with power conference teams by beating Texas Tech, Alabama's superior efficiency on both ends of the floor gives them the edge in what should be a similar-paced game.
+
+{"team_a_win_prob": 0.32, "uncertainty": 0.12, "reasoning": "Minimal tempo gap negates Akron's pace advantage. Alabama's 5.5-point efficiency edge decisive in similar-possession game.", "key_stat": "Alabama 126.8 adj_o vs Akron 121.3 — 5.5 point edge per 100 possessions"}

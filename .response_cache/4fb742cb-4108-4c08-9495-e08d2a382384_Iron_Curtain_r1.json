@@ -1,0 +1,9 @@
+**STEP 1 — UPSET THESIS:** Northern Iowa's defense (89.0 adj_d vs St. John's 87.9) can match the Red Storm's intensity. UNI held opponents to 40.7% shooting all season - that's elite perimeter defense. In a grind-it-out game, experience matters and UNI has more seasoned players who just won four straight tournament games.
+
+**STEP 2 — RATE THE UPSET THESIS:** 6/10. This is genuinely plausible. The defensive gap is minimal (1.1 points), UNI has better opponent field goal percentage (.407 vs .421), and they're battle-tested from Arch Madness. St. John's offense can be contained.
+
+**STEP 3 — PICK:** This screams defensive slugfest. When two teams can get stops, possessions matter more. UNI's perimeter defense travels, and they've been in more pressure situations recently.
+
+```json
+{"team_a_win_prob": 0.32, "uncertainty": 0.18, "reasoning": "UNI's 40.7% opponent shooting matches St. John's defensive intensity. Four straight tournament wins in pressure situations. Defense travels in March grinders.", "key_stat": "UNI allows 40.7% shooting vs St. John's 42.1%"}
+```

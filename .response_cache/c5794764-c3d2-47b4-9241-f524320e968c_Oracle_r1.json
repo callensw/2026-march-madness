@@ -1,0 +1,11 @@
+Looking at this 2v15 matchup, I need to check the historical base rate: 2-seeds win 93.8% of the time against 15-seeds.
+
+STEP 1 — UPSET THESIS: Idaho wins by slowing tempo (64.4 vs 68.5), forcing Houston into half-court sets, and hitting timely threes while Houston's offense struggles against packed defenses.
+
+STEP 2 — RATE THE UPSET THESIS: 3/10. Nearly impossible. Houston's defense (87.3 adj_d) is elite, Idaho's offense (108.3 adj_o) is weak, and the 17-point KenPom gap is massive.
+
+STEP 3 — PICK: Houston. This profiles exactly like typical 2v15 blowouts since 1985.
+
+The historical data is crystal clear here. 15-seeds have only beaten 2-seeds 10 times since 1985 - that's roughly 6% of games. Idaho's Cinderella story ends against Houston's suffocating defense that held opponents to 40% shooting all season.
+
+{"team_a_win_prob": 0.94, "uncertainty": 0.05, "reasoning": "2v15 base rate is 94%. Idaho's weak offense meets Houston's elite defense - classic mismatch like 2019 Michigan State-Bradley.", "key_stat": "Houston allows 40% opponent FG%, Idaho shoots 43.1% against weaker competition"}

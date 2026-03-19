@@ -1,0 +1,6 @@
+{
+  "team_a_win_prob": 0.48,
+  "uncertainty": 0.15,
+  "reasoning": "VCU shoots better from three than UNC, and UNC's best player is OUT! VCU is on a winning streak, they're ON! This screams upset!",
+  "key_stat": "VCU 3PT% = 34.4% > UNC 3PT% = 34.2%"
+}

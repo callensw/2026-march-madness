@@ -1,0 +1,7 @@
+STEP 1 — UPSET THESIS: Iowa wins by forcing Clemson into a track meet. Clemson's defense is elite (88.6 adj_d) but they're missing their rim protector Welling. Iowa shoots 47.2% from three through Banks and has the pace advantage. Without interior defense, Clemson can't slow down Iowa's tempo.
+
+STEP 2 — RATE THE UPSET THESIS: 4/10. Clemson's defense is still elite even without Welling. Their opp_fg_pct of .419 shows perimeter lockdown. Iowa's .461 opp_fg_pct is terrible - they can't get stops when games get physical.
+
+STEP 3 — PICK: Clemson's defense travels. Iowa gives up 46.1% shooting - that's pathetic perimeter defense. March games are won by teams that can get stops, not teams that need shootouts.
+
+{"team_a_win_prob": 0.65, "uncertainty": 0.12, "reasoning": "Clemson's elite defense (88.6 adj_d, .419 opp_fg_pct) dominates Iowa's porous perimeter D (.461 opp_fg_pct). Defense travels in March.", "key_stat": "Iowa allows 46.1% field goal shooting"}

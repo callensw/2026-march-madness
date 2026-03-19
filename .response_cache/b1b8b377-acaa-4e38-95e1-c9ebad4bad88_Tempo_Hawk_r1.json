@@ -1,0 +1,7 @@
+STEP 1 — UPSET THESIS: Penn controls pace at 67.1 possessions vs Illinois' 68.8, creating a grind-it-out game where their veteran experience (7.0 vs 5.0) and clutch gene (two OT wins) neutralizes Illinois' talent edge in fewer possessions.
+
+STEP 2 — RATE THE UPSET THESIS: 4/10. The tempo difference is minimal (1.7 possessions), so pace control isn't a real factor here. Penn's missing their leading scorer, and Illinois' efficiency edge is massive (22.9 points per 100 possessions).
+
+STEP 3 — PICK: Illinois wins this. The tempo is nearly identical, so no pace mismatch exists. Illinois gets their normal 69 possessions and wins by their efficiency margin.
+
+{"team_a_win_prob": 0.82, "uncertainty": 0.12, "reasoning": "Identical tempo at 68 possessions eliminates pace advantage. Illinois' 22.9 efficiency edge plays out over normal possession count.", "key_stat": "Illinois 68.8 tempo vs Penn 67.1 - no meaningful pace differential"}

@@ -1,0 +1,7 @@
+STEP 1 — UPSET THESIS: Santa Clara forces Kentucky into a half-court grind where their superior three-point shooting (38.0% vs 34.6%) and better offensive efficiency creates separation. Kentucky's defense allows .425 opponent FG% - that's exploitable for a team shooting 38% from deep.
+
+STEP 2 — RATE THE UPSET THESIS: 7/10. Santa Clara has better offensive numbers AND Kentucky's perimeter defense is vulnerable. In a slow-tempo game, shooting efficiency matters more than talent.
+
+STEP 3 — PICK: Kentucky's 89.2 adj_d is solid, but Santa Clara's offense is actually BETTER (124.6 vs 122.9). The Broncos allow .451 opponent FG% - that's concerning. But Kentucky's inconsistency (5-5 last 10, lost to Florida) suggests their defense isn't reliable under pressure.
+
+{"team_a_win_prob": 0.42, "uncertainty": 0.15, "reasoning": "Kentucky allows .425 opponent FG% - exploitable against Santa Clara's 38% three-point shooting. Broncos' superior offensive efficiency wins slow grind.", "key_stat": "Santa Clara shoots 38.0% from three vs Kentucky's .425 opponent FG%"}

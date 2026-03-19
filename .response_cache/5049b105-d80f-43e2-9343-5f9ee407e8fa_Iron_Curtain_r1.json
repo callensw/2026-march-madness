@@ -1,0 +1,7 @@
+STEP 1 — UPSET THESIS: Wright State forces Virginia into a half-court grind where their 103.4 defensive efficiency becomes less of a liability. Virginia's 88.3 defense is elite, but Wright State has proven they can win ugly games (swept Horizon regular season and tournament). If this becomes a rock fight in the 50s, possessions matter more than talent gaps.
+
+STEP 2 — RATE THE UPSET THESIS: 4/10. Wright State's defense is mediocre (103.4 adj_d, .457 opp_fg_pct) and Virginia's defense is suffocating (88.3 adj_d, .395 opp_fg_pct). The 15-point defensive efficiency gap is massive. Wright State would need Virginia to have an offensive meltdown.
+
+STEP 3 — PICK: Virginia's defense is elite and travels. Wright State allows 45.7% shooting - that's vulnerable against any competent offense. Virginia holds teams to 39.5% - that's lockdown defense that will strangle Wright State's mediocre offense.
+
+{"team_a_win_prob": 0.78, "uncertainty": 0.12, "reasoning": "Virginia's elite defense (88.3 adj_d, .395 opp_fg_pct) will suffocate Wright State's offense. Defense travels, offense disappears under tournament pressure.", "key_stat": "Virginia allows 39.5% shooting vs Wright State's 45.7%"}

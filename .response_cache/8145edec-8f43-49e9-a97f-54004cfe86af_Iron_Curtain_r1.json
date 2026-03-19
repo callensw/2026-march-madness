@@ -1,0 +1,7 @@
+STEP 1 — UPSET THESIS: Clemson controls pace at 64.1 possessions, forces Florida into a half-court grind where their offensive efficiency drops. Without Welling, Clemson plays smaller but faster, potentially neutralizing Florida's size advantage while creating more transition opportunities.
+
+STEP 2 — RATE THE UPSET THESIS: 4/10. Clemson's pace control is real, but Florida's defense (87.4 adj_d) is elite and should handle the slower tempo better than most teams. The Welling injury hurts Clemson's ability to match up in the paint.
+
+STEP 3 — PICK: Florida's defense is suffocating at 87.4 adj_d. Clemson allows 41.9% shooting but Florida holds opponents to 40.8%. In a grind-it-out game, the better defense wins. Clemson's frontcourt loss to injury makes this worse.
+
+{"team_a_win_prob": 0.78, "uncertainty": 0.12, "reasoning": "Florida's elite defense (87.4 adj_d) dominates half-court games. Clemson lost their best interior defender. Defense travels, offense disappears under pressure.", "key_stat": "Florida holds opponents to 40.8% shooting vs Clemson's 41.9%"}
