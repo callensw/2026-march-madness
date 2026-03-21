@@ -15,7 +15,7 @@ from sklearn.model_selection import StratifiedKFold, cross_val_score
 
 # Import everything from V5
 from bracket_predictor import (
-    pull_supabase_data, aggregate_player_features, generate_historical_data,
+    pull_supabase_data, aggregate_player_features, load_historical_data,
     generate_synthetic_team, compute_delta_features, build_2026_features,
     train_models, predict_ensemble, write_to_supabase,
     get_hist_seed_win_rate, moneyline_to_prob, parse_record,
@@ -24,6 +24,7 @@ from bracket_predictor import (
     CEILING_F4, CEILING_CHAMP, CEILING_WINNER,
     AEM_BY_SEED, KENPOM_RANK_BY_SEED, CONF_STRENGTH_BY_SEED, COACH_APPS_BY_SEED,
 )
+generate_historical_data = load_historical_data  # backward compat alias
 from supabase import create_client
 
 np.random.seed(42)
